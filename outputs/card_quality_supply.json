@@ -41,12 +41,12 @@
   },
   "2026": {
     "top11_fighters_on_jan1": 121,
-    "mean_bouts_per_fighter": 1.02,
+    "mean_bouts_per_fighter": 1.05,
     "annualized_bouts_per_fighter": 1.39,
-    "share_with_zero_bouts": 0.24,
-    "share_of_their_bouts_vs_top11": 0.605,
-    "top10_vs_top10_bouts_total": 39,
-    "events": 33,
-    "days_covered": 269
+    "share_with_zero_bouts": 0.231,
+    "share_of_their_bouts_vs_top11": 0.606,
+    "top10_vs_top10_bouts_total": 40,
+    "events": 34,
+    "days_covered": 276
   }
 }

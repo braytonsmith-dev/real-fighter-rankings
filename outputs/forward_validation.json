@@ -1,5 +1,5 @@
 {
-  "snapshots": 127,
+  "snapshots": 128,
   "freeze_date": "2026-10-01",
   "probability_map_slope": 1.36,
   "protocol": "PREREGISTRATION.md",
@@ -147,16 +147,104 @@
   },
   "prospective_since_freeze": {
     "primary_both_scored": {
-      "bouts": 0
+      "bouts": 8,
+      "real_concordance": 0.625,
+      "real_concordance_wilson95": [
+        0.306,
+        0.863
+      ],
+      "real_probability": {
+        "n": 8,
+        "log_loss": 0.6115,
+        "brier": 0.2107,
+        "accuracy": 0.625
+      },
+      "results_only_elo": null,
+      "performance_adjusted_elo": null,
+      "official_board": {
+        "bouts_both_ranked": 2,
+        "official_concordance": 0.5,
+        "official_wilson95": [
+          0.095,
+          0.905
+        ],
+        "real_concordance_same_bouts": 1.0
+      }
     },
     "secondary_both_top30": {
-      "bouts": 0
+      "bouts": 3,
+      "real_concordance": 0.333,
+      "real_concordance_wilson95": [
+        0.061,
+        0.792
+      ],
+      "real_probability": {
+        "n": 3,
+        "log_loss": 0.7204,
+        "brier": 0.2638,
+        "accuracy": 0.3333
+      },
+      "results_only_elo": null,
+      "performance_adjusted_elo": null,
+      "official_board": {
+        "bouts_both_ranked": 1,
+        "official_concordance": 1.0,
+        "official_wilson95": [
+          0.207,
+          1.0
+        ],
+        "real_concordance_same_bouts": 1.0
+      }
     },
     "secondary_both_top15": {
-      "bouts": 0
+      "bouts": 1,
+      "real_concordance": 1.0,
+      "real_concordance_wilson95": [
+        0.207,
+        1.0
+      ],
+      "real_probability": {
+        "n": 1,
+        "log_loss": 0.4373,
+        "brier": 0.1255,
+        "accuracy": 1.0
+      },
+      "results_only_elo": null,
+      "performance_adjusted_elo": null,
+      "official_board": {
+        "bouts_both_ranked": 1,
+        "official_concordance": 1.0,
+        "official_wilson95": [
+          0.207,
+          1.0
+        ],
+        "real_concordance_same_bouts": 1.0
+      }
     },
     "secondary_title_fights": {
-      "bouts": 0
+      "bouts": 1,
+      "real_concordance": 1.0,
+      "real_concordance_wilson95": [
+        0.207,
+        1.0
+      ],
+      "real_probability": {
+        "n": 1,
+        "log_loss": 0.4373,
+        "brier": 0.1255,
+        "accuracy": 1.0
+      },
+      "results_only_elo": null,
+      "performance_adjusted_elo": null,
+      "official_board": {
+        "bouts_both_ranked": 1,
+        "official_concordance": 1.0,
+        "official_wilson95": [
+          0.207,
+          1.0
+        ],
+        "real_concordance_same_bouts": 1.0
+      }
     }
   },
   "note": "Snapshots before the freeze were rebuilt with the v1.0 rules, so the retrospective block is an in-sample reconstruction; only the prospective block is the pre-registered test."
