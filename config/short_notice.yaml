@@ -1,4 +1,6 @@
 # Bouts taken on short notice (about 3 weeks or less). A win counts 1.2x, a loss costs 0.5x.
 # UFCStats does not record this, so entries are added by the weekly review. Format:
 # - {fighter: "Name as on UFCStats", date: YYYY-MM-DD, note: "replaced X, N days notice", source: "url"}
-[]
+- {fighter: "Luis Hernandez", date: 2026-09-26, note: "replaced Mickey Gall vs Sedriques Dumas, about 2 days notice, UFC debut", source: "https://sports.yahoo.com/articles/sedriques-dumas-gets-opponent-ufc-214451163.html"}
+- {fighter: "Anthony Romero", date: 2026-10-03, note: "replaced Bernardo Sopaj vs Marcus McGhee, 3 days notice, UFC debut", source: "https://www.ufc.com/news/updates-to-ufc-332-silva-vs-wang"}
+- {fighter: "Bruce Whitehead", date: 2026-10-03, note: "bout vs Jacobe Smith added Sept 24, 9 days notice, UFC debut", source: "https://boxingnews.com/news/jacobe-smith-ufc-332-nine-days-notice/"}

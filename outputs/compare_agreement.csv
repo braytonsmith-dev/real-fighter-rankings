@@ -8,9 +8,9 @@ ESPN (Jun),Lightweight,8,8,0.6428571428571429
 ESPN (Jun),Middleweight,9,7,0.7857142857142858
 ESPN (Jun),Welterweight,9,9,0.7833333333333333
 ESPN (Jun),Women's Bantamweight,10,9,0.8787878787878788
-ESPN (Jun),Women's Flyweight,9,7,0.5357142857142858
-ESPN (Jun),Women's Strawweight,9,6,0.8833333333333333
-Fight Matrix,Bantamweight,12,9,0.9510489510489512
+ESPN (Jun),Women's Flyweight,8,6,0.4285714285714286
+ESPN (Jun),Women's Strawweight,9,6,0.8666666666666667
+Fight Matrix,Bantamweight,12,9,0.9300699300699302
 Fight Matrix,Featherweight,12,8,0.7320501594135719
 Fight Matrix,Flyweight,12,10,0.7272727272727274
 Fight Matrix,Heavyweight,9,7,0.6428571428571429
@@ -18,19 +18,19 @@ Fight Matrix,Light Heavyweight,13,9,0.6121212121212121
 Fight Matrix,Lightweight,11,10,0.8909090909090911
 Fight Matrix,Middleweight,11,10,0.9181818181818183
 Fight Matrix,Welterweight,12,11,0.8741258741258742
-Fight Matrix,Women's Bantamweight,12,12,0.6923076923076924
-Fight Matrix,Women's Flyweight,10,9,0.8499999999999999
-Fight Matrix,Women's Strawweight,14,11,0.8065934065934066
-Meta,Bantamweight,15,11,0.907142857142857
+Fight Matrix,Women's Bantamweight,12,12,0.6153846153846154
+Fight Matrix,Women's Flyweight,9,8,0.8571428571428572
+Fight Matrix,Women's Strawweight,14,10,0.8373626373626375
+Meta,Bantamweight,15,12,0.8749999999999999
 Meta,Featherweight,15,11,0.7249999999999999
 Meta,Flyweight,15,9,0.7214285714285712
 Meta,Heavyweight,15,11,0.7527472527472527
 Meta,Light Heavyweight,15,12,0.6153846153846153
-Meta,Lightweight,15,12,0.8785714285714284
+Meta,Lightweight,15,13,0.8785714285714284
 Meta,Middleweight,15,11,0.8964285714285712
 Meta,Welterweight,15,12,0.9107142857142855
-Meta,Women's Bantamweight,15,12,0.8725274725274725
-Meta,Women's Flyweight,15,13,0.8241758241758241
+Meta,Women's Bantamweight,15,12,0.8461538461538461
+Meta,Women's Flyweight,14,12,0.8021978021978022
 Meta,Women's Strawweight,15,10,0.8928571428571428
 Sherdog,Bantamweight,8,7,1.0
 Sherdog,Featherweight,8,8,0.4523809523809524
@@ -40,17 +40,17 @@ Sherdog,Light Heavyweight,9,7,0.6428571428571429
 Sherdog,Lightweight,8,7,0.8095238095238096
 Sherdog,Middleweight,8,8,0.7380952380952381
 Sherdog,Welterweight,6,6,0.7714285714285715
-Sherdog,Women's Bantamweight,9,9,0.5833333333333334
-Sherdog,Women's Flyweight,7,6,0.8285714285714287
-Sherdog,Women's Strawweight,9,7,0.6333333333333333
-UFC media,Bantamweight,15,12,0.7249999999999999
+Sherdog,Women's Bantamweight,9,9,0.4666666666666666
+Sherdog,Women's Flyweight,6,5,0.9999999999999999
+Sherdog,Women's Strawweight,9,8,0.7333333333333334
+UFC media,Bantamweight,15,12,0.7214285714285712
 UFC media,Featherweight,16,10,0.8638707268824694
 UFC media,Flyweight,15,11,0.7607142857142856
 UFC media,Heavyweight,15,10,0.7307692307692307
 UFC media,Light Heavyweight,15,10,0.6208791208791209
 UFC media,Lightweight,15,11,0.8749999999999999
 UFC media,Middleweight,15,11,0.8535714285714284
-UFC media,Welterweight,15,13,0.914285714285714
-UFC media,Women's Bantamweight,15,12,0.8373626373626375
-UFC media,Women's Flyweight,15,12,0.907142857142857
-UFC media,Women's Strawweight,15,9,0.9107142857142855
+UFC media,Welterweight,15,12,0.914285714285714
+UFC media,Women's Bantamweight,15,12,0.7978021978021977
+UFC media,Women's Flyweight,14,11,0.8989010989010989
+UFC media,Women's Strawweight,15,10,0.914285714285714

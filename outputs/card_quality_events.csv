@@ -1,4 +1,5 @@
 event,date,top10_bouts,top15_bouts,nontitle_top10_bouts,title_bouts,ranked_appearances,is_numbered,location,bouts,year,card_type,ranked_share,top10_per_10_bouts,nontitle_top10_per_10_bouts
+UFC 332: Silva vs. Wang,2026-10-03,1,1,0,1,5,True,"Salt Lake City, Utah, USA",14,2026,Numbered,0.17857142857142858,0.7142857142857143,0.0
 UFC Fight Night: Rosas Jr. vs. Barcelos,2026-09-26,1,1,1,0,4,False,"Las Vegas, Nevada, USA",12,2026,Fight Night,0.16666666666666666,0.8333333333333334,0.8333333333333334
 UFC 331: Van vs. Pantoja 2,2026-09-19,2,2,1,1,5,True,"Los Angeles, California, USA",12,2026,Numbered,0.20833333333333334,1.6666666666666667,0.8333333333333334
 Noche UFC: Silva vs. Delgado,2026-09-12,2,2,2,0,9,False,"Glendale, Arizona, USA",13,2026,Fight Night,0.34615384615384615,1.5384615384615385,1.5384615384615385

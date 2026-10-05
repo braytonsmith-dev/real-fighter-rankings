@@ -1,6 +1,6 @@
 # REAL Fighter Rankings: Methodology, version 1.0
 
-*Results, Evidence, Analytics, Ledger.* Data through 2026-09-26. This document is generated from the live configuration (`config/weights.yaml`) and the audit trail (`outputs/audit_top30.csv`) on every rebuild.
+*Results, Evidence, Analytics, Ledger.* Data through 2026-10-03. This document is generated from the live configuration (`config/weights.yaml`) and the audit trail (`outputs/audit_top30.csv`) on every rebuild.
 
 ## 1. What the rank means
 
@@ -10,7 +10,7 @@ A resume rank: who has earned the position as of today, updated automatically ea
 
 | Source | What it provides | Coverage | Reliability |
 |---|---|---|---|
-| UFCStats (official UFC statistics), via the Greco1899 open scraper | Every UFC bout: result, method, round, time, judges' scorecards, round-by-round strikes, knockdowns, takedowns, submission attempts, control time | 8,911 bouts, 1994 to 2026-09-26; round stats for 99.8%; all three judges' cards for 98.6% of decisions (100% since 2005) | High for what it records. Strike counts are hand-coded and do not measure damage. Judges' cards are official but can be wrong. |
+| UFCStats (official UFC statistics), via the Greco1899 open scraper | Every UFC bout: result, method, round, time, judges' scorecards, round-by-round strikes, knockdowns, takedowns, submission attempts, control time | 8,925 bouts, 1994 to 2026-10-03; round stats for 99.8%; all three judges' cards for 98.6% of decisions (100% since 2005) | High for what it records. Strike counts are hand-coded and do not measure damage. Judges' cards are official but can be wrong. |
 | Official UFC rankings history (martj42/ufc_rankings_history, every media-panel release Feb 2013 to June 2026, extended with weekly snapshots of ufc.com) | Each opponent's official rank on the day of the fight | 534 releases; about 99% of ranked names matched to UFCStats | High; before Feb 2013 the model's own position is used instead |
 | Hand-kept configuration files | Retirements and releases, documented injury layoffs, announced division moves, vacant titles, interim champions | As maintained, each entry carries its reason and source | Only as current as the last edit; every entry is listed in `config/` |
 | Public boards (UFC media panel, Meta UFC Rankings, Sherdog, Fight Matrix, ESPN) | Comparison only; never an input to the score | Snapshots stored in `data/external/` with their dates | Used to find disagreements, not to copy |
@@ -87,24 +87,24 @@ A **quality win** is valued by the opponent's official rank going into the fight
 
 ## 8. Validation
 
-Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.6 to 1.9 places; the public boards differ from each other by 0.9 to 1.6. Disagreement is expected and reported, not removed: `outputs/compare_flags.csv` lists every large gap with its cause.
+Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.7 to 2.0 places; the public boards differ from each other by 0.9 to 1.6. Disagreement is expected and reported, not removed: `outputs/compare_flags.csv` lists every large gap with its cause.
 
 The separate predictive model (performance-adjusted Elo, the specification a 520-point grid selected on 2010-2019) scores 60.6% accuracy and 0.6631 log loss on 3,390 held-out bouts from 2020 on, against 58.1% and 0.674 for results-only Elo (paired log-loss gain 0.011, 95% event-block bootstrap interval 0.006 to 0.016; McNemar exact p = 0.0025). On the 1,445 held-out bouts with closing odds (2020-2023) the de-vigged market scored 67.1% and 0.6088 against the model's 60.0% and 0.669.
 
-**Retrospective reconstruction of the resume board (not a forward test).** Boards were rebuilt with the v1.0 rules as they would have stood before each of the last 127 events. Across the 942 bouts in which both fighters held a place on that board, the higher-placed fighter won 61.5% (95% Wilson interval 58% to 64%); the frozen score-to-probability map scored 0.6669 log loss against 0.6726 for results-only Elo and 0.6498 for the performance-adjusted model on the same bouts. Restricted to bouts between two top-15 fighters (226 bouts) the figure is 54.4%, against 52.0% for the official board on the 204 bouts it ranked both fighters; ranked-versus-ranked bouts are matched to be close, so every board sits near a coin flip on them and the differences are inside sampling error. Because these boards were reconstructed with today's rules, none of this is evidence of forward validity. The pre-registered prospective test (PREREGISTRATION.md) starts with the first event after 2026-10-01; so far it covers 0 bouts.
+**Retrospective reconstruction of the resume board (not a forward test).** Boards were rebuilt with the v1.0 rules as they would have stood before each of the last 128 events. Across the 942 bouts in which both fighters held a place on that board, the higher-placed fighter won 61.5% (95% Wilson interval 58% to 64%); the frozen score-to-probability map scored 0.6669 log loss against 0.6726 for results-only Elo and 0.6498 for the performance-adjusted model on the same bouts. Restricted to bouts between two top-15 fighters (226 bouts) the figure is 54.4%, against 52.0% for the official board on the 204 bouts it ranked both fighters; ranked-versus-ranked bouts are matched to be close, so every board sits near a coin flip on them and the differences are inside sampling error. Because these boards were reconstructed with today's rules, none of this is evidence of forward validity. The pre-registered prospective test (PREREGISTRATION.md) starts with the first event after 2026-10-01; so far it covers 8 bouts.
 
 ## 9. Worked examples (from this rebuild's audit trail)
 
 | Division | Fighter | Final | How he got there | Rating term | Ledger term | Form | Ledger detail | Last 5 |
 |---|---|---|---|---|---|---|---|---|
-| Bantamweight | Mario Bautista | #5 | score order #5 | +0.48 | +0.23 | -0.00 | +3.6 QW +0.0 proof -1.0 blowout -0.0 weak | 4-1 |
+| Bantamweight | Mario Bautista | #5 | score order #5 | +0.47 | +0.23 | -0.00 | +3.6 QW +0.0 proof -1.0 blowout -0.0 weak | 4-1 |
 | Bantamweight | Cory Sandhagen | #6 | score order #6 | +0.64 | +0.21 | -0.15 | +5.3 QW +0.0 proof -2.0 blowout -1.0 weak | 2-3 |
 | Light Heavyweight | Jiri Prochazka | #4 | score order #2; title cycle -> #4 | +0.54 | +0.29 | -0.00 | +6.5 QW +0.0 proof -2.0 blowout -0.0 weak | 3-2 |
 | Light Heavyweight | Khalil Rountree Jr. | #9 | score order #9 | +0.22 | +0.22 | -0.00 | +3.1 QW +0.0 proof -0.0 blowout -0.0 weak | 3-2 |
-| Heavyweight | Alex Pereira | #4 | score order #1; title cycle -> #4 | +0.73 | +0.46 | -0.00 | +10.5 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
-| Welterweight | Kamaru Usman | #10 | score order #10 | +0.75 | +0.27 | -0.60 | +5.2 QW +0.0 proof -1.0 blowout -0.0 weak | 1-4 |
-| Welterweight | Kevin Holland | #24 | score order #24 | +0.31 | -0.11 | -0.00 | +1.8 QW +0.0 proof -2.0 blowout -3.0 weak | 3-2 |
-| Flyweight | Brandon Moreno | #6 | score order #4; title cycle -> #6 | +0.36 | +0.29 | -0.00 | +6.8 QW +0.0 proof -0.0 blowout -1.0 weak | 3-2 |
+| Heavyweight | Alex Pereira | #4 | score order #1; title cycle -> #4 | +0.74 | +0.46 | -0.00 | +10.5 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
+| Welterweight | Kamaru Usman | #10 | score order #10 | +0.76 | +0.28 | -0.60 | +5.2 QW +0.0 proof -1.0 blowout -0.0 weak | 1-4 |
+| Welterweight | Kevin Holland | #24 | score order #24 | +0.31 | -0.12 | -0.00 | +1.8 QW +0.0 proof -2.0 blowout -3.0 weak | 3-2 |
+| Flyweight | Brandon Moreno | #6 | score order #4; title cycle -> #6 | +0.36 | +0.28 | -0.00 | +6.6 QW +0.0 proof -0.0 blowout -1.0 weak | 3-2 |
 | Lightweight | Max Holloway | #2 | score order #1; head-to-head -> #2 | +0.93 | +0.63 | -0.00 | +8.4 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
 
 ## 10. How REAL compares with published rating systems

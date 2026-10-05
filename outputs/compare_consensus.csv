@@ -1,19 +1,19 @@
 division,key,fighter,boards,sources,median_position,best,worst,lab_position,lab_division,gap_vs_median
-Bantamweight,aiemann zahabi,Aiemann Zahabi,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",7.5,7.0,13.0,15.0,Bantamweight,7.5
+Bantamweight,aiemann zahabi,Aiemann Zahabi,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",7.5,7.0,13.0,14.0,Bantamweight,6.5
 Bantamweight,bryce mitchell,Bryce Mitchell,1,Meta,15.0,15.0,15.0,18.0,Bantamweight,3.0
 Bantamweight,cory sandhagen,Cory Sandhagen,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,4.0,6.0,6.0,Bantamweight,0.0
-Bantamweight,david martinez,David Martinez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,7.0,9.0,10.0,Bantamweight,3.0
-Bantamweight,deiveson figueiredo,Deiveson Figueiredo,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",9.0,8.0,11.0,35.0,Bantamweight,26.0
-Bantamweight,farid basharat,Farid Basharat,2,"Meta, UFC media",11.0,9.0,13.0,16.0,Bantamweight,5.0
+Bantamweight,david martinez,David Martinez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,7.0,9.0,11.0,Bantamweight,4.0
+Bantamweight,deiveson figueiredo,Deiveson Figueiredo,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",9.0,8.0,11.0,47.0,Bantamweight,38.0
+Bantamweight,farid basharat,Farid Basharat,2,"Meta, UFC media",11.0,9.0,13.0,15.0,Bantamweight,4.0
 Bantamweight,jakub wiklacz,Jakub Wiklacz,1,Fight Matrix,12.0,12.0,12.0,26.0,Bantamweight,14.0
-Bantamweight,marcus mcghee,Marcus McGhee,2,"Meta, UFC media",12.5,10.0,15.0,11.0,Bantamweight,-1.5
+Bantamweight,marcus mcghee,Marcus McGhee,2,"Meta, UFC media",12.5,10.0,15.0,8.0,Bantamweight,-4.5
 Bantamweight,mario bautista,Mario Bautista,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,4.0,5.0,5.0,Bantamweight,0.0
-Bantamweight,marlon vera,Marlon Vera,3,"Fight Matrix, Meta, UFC media",11.0,10.0,14.0,52.0,Bantamweight,41.0
+Bantamweight,marlon vera,Marlon Vera,3,"Fight Matrix, Meta, UFC media",11.0,10.0,14.0,51.0,Bantamweight,40.0
 Bantamweight,merab dvalishvili,Merab Dvalishvili,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,1.0,1.0,Bantamweight,0.0
-Bantamweight,montel jackson,Montel Jackson,1,Meta,12.0,12.0,12.0,9.0,Bantamweight,-3.0
-Bantamweight,payton talbott,Payton Talbott,2,"Fight Matrix, UFC media",11.0,10.0,12.0,14.0,Bantamweight,3.0
-Bantamweight,raoni barcelos,Raoni Barcelos,1,UFC media,14.0,14.0,14.0,8.0,Bantamweight,-6.0
-Bantamweight,raul rosas jr,Raul Rosas Jr.,2,"Meta, UFC media",9.5,8.0,11.0,7.0,Bantamweight,-2.5
+Bantamweight,montel jackson,Montel Jackson,1,Meta,12.0,12.0,12.0,7.0,Bantamweight,-5.0
+Bantamweight,payton talbott,Payton Talbott,2,"Fight Matrix, UFC media",11.0,10.0,12.0,9.0,Bantamweight,-2.0
+Bantamweight,raoni barcelos,Raoni Barcelos,1,UFC media,14.0,14.0,14.0,16.0,Bantamweight,2.0
+Bantamweight,raul rosas jr,Raul Rosas Jr.,2,"Meta, UFC media",9.5,8.0,11.0,10.0,Bantamweight,0.5
 Bantamweight,sean omalley,Sean O'Malley,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,2.0,3.0,2.0,Bantamweight,0.0
 Bantamweight,song yadong,Song Yadong,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,6.0,3.0,Bantamweight,0.0
 Bantamweight,umar nurmagomedov,Umar Nurmagomedov,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,3.0,5.0,4.0,Bantamweight,0.0
@@ -36,7 +36,7 @@ Featherweight,pavel andrusca,Pavel Andrusca,1,Meta,8.0,8.0,8.0,26.0,Featherweigh
 Featherweight,steve garcia,Steve Garcia,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",10.0,7.0,13.0,5.0,Featherweight,-5.0
 Featherweight,yair rodriguez,Yair Rodriguez,1,UFC media,6.0,6.0,6.0,7.0,Featherweight,1.0
 Featherweight,youssef zalal,Youssef Zalal,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",8.0,7.0,9.0,10.0,Featherweight,2.0
-Flyweight,alessandro costa,Alessandro Costa,1,Meta,15.0,15.0,15.0,19.0,Flyweight,4.0
+Flyweight,alessandro costa,Alessandro Costa,1,Meta,15.0,15.0,15.0,18.0,Flyweight,3.0
 Flyweight,alex perez,Alex Perez,1,UFC media,15.0,15.0,15.0,26.0,Flyweight,11.0
 Flyweight,alexandre pantoja,Alexandre Pantoja,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,2.0,4.0,Flyweight,3.0
 Flyweight,amir albazi,Amir Albazi,3,"Meta, Sherdog, UFC media",9.0,9.0,10.0,10.0,Flyweight,1.0
@@ -52,14 +52,14 @@ Flyweight,mitch raposo,Mitch Raposo,1,Meta,12.0,12.0,12.0,33.0,Flyweight,21.0
 Flyweight,ramazan temirov,Ramazan Temirov,4,"Fight Matrix, Meta, Sherdog, UFC media",8.0,7.0,10.0,8.0,Flyweight,0.0
 Flyweight,rei tsuruya,Rei Tsuruya,1,Meta,13.0,13.0,13.0,17.0,Flyweight,4.0
 Flyweight,steve erceg,Steve Erceg,2,"Fight Matrix, UFC media",10.5,9.0,12.0,30.0,Flyweight,19.5
-Flyweight,sumudaerji,Sumudaerji,2,"Meta, UFC media",12.0,11.0,13.0,22.0,Flyweight,10.0
+Flyweight,sumudaerji,Sumudaerji,2,"Meta, UFC media",12.0,11.0,13.0,21.0,Flyweight,9.0
 Flyweight,tagir ulanbekov,Tagir Ulanbekov,2,"Fight Matrix, UFC media",13.0,12.0,14.0,12.0,Flyweight,-1.0
 Flyweight,tatsuro taira,Tatsuro Taira,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,3.0,4.0,5.0,Flyweight,1.0
 Flyweight,tim elliott,Tim Elliott,2,"Fight Matrix, UFC media",11.0,11.0,11.0,14.0,Flyweight,3.0
 Heavyweight,aleksandar rakic,Aleksandar Rakić,2,"Meta, UFC media",15.0,15.0,15.0,,Light Heavyweight,
 Heavyweight,alex pereira,Alex Pereira,1,Meta,3.0,3.0,3.0,4.0,Heavyweight,1.0
 Heavyweight,alexander volkov,Alexander Volkov,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,4.0,1.0,Heavyweight,-1.0
-Heavyweight,ante delija,Ante Delija,1,UFC media,10.0,10.0,10.0,26.0,Heavyweight,16.0
+Heavyweight,ante delija,Ante Delija,1,UFC media,10.0,10.0,10.0,28.0,Heavyweight,18.0
 Heavyweight,brando pericic,Brando Peričić,1,Meta,12.0,12.0,12.0,11.0,Heavyweight,-1.0
 Heavyweight,curtis blaydes,Curtis Blaydes,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,5.0,8.0,3.0,Heavyweight,-3.0
 Heavyweight,derrick lewis,Derrick Lewis,1,UFC media,13.0,13.0,13.0,10.0,Heavyweight,-3.0
@@ -68,10 +68,10 @@ Heavyweight,josh hokit,Josh Hokit,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UF
 Heavyweight,mario pinto,Mario Pinto,2,"Meta, UFC media",12.0,10.0,14.0,9.0,Heavyweight,-3.0
 Heavyweight,rizvan kuniev,Rizvan Kuniev,3,"Fight Matrix, Meta, UFC media",5.0,4.0,7.0,8.0,Heavyweight,3.0
 Heavyweight,sergei pavlovich,Sergei Pavlovich,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,4.0,6.0,Heavyweight,3.0
-Heavyweight,serghei spivac,Serghei Spivac,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.0,7.0,13.0,20.0,Heavyweight,11.0
-Heavyweight,shamil gaziev,Shamil Gaziev,1,Meta,14.0,14.0,14.0,21.0,Heavyweight,7.0
+Heavyweight,serghei spivac,Serghei Spivac,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.0,7.0,13.0,21.0,Heavyweight,12.0
+Heavyweight,shamil gaziev,Shamil Gaziev,1,Meta,14.0,14.0,14.0,22.0,Heavyweight,8.0
 Heavyweight,tom aspinall,Tom Aspinall,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,2.0,,Heavyweight,
-Heavyweight,tyrell fortune,Tyrell Fortune,1,UFC media,12.0,12.0,12.0,23.0,Heavyweight,11.0
+Heavyweight,tyrell fortune,Tyrell Fortune,1,UFC media,12.0,12.0,12.0,24.0,Heavyweight,12.0
 Heavyweight,valter walker,Valter Walker,2,"Meta, UFC media",11.0,11.0,11.0,7.0,Heavyweight,-4.0
 Heavyweight,vitor petrino,Vitor Petrino,3,"Fight Matrix, Meta, UFC media",8.0,8.0,9.0,12.0,Heavyweight,4.0
 Heavyweight,waldo cortes acosta,Waldo Cortes Acosta,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,5.0,8.0,5.0,Heavyweight,-1.0
@@ -82,7 +82,7 @@ Light Heavyweight,azamat murzakanov,Azamat Murzakanov,4,"ESPN (Jun), Meta, Sherd
 Light Heavyweight,bogdan guskov,Bogdan Guskov,3,"Fight Matrix, Meta, UFC media",11.0,11.0,12.0,8.0,Light Heavyweight,-3.0
 Light Heavyweight,dominick reyes,Dominick Reyes,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",8.0,7.0,10.0,5.0,Light Heavyweight,-3.0
 Light Heavyweight,dustin jacoby,Dustin Jacoby,1,ESPN (Jun),9.0,9.0,9.0,22.0,Light Heavyweight,13.0
-Light Heavyweight,jamahal hill,Jamahal Hill,3,"Meta, Sherdog, UFC media",7.0,5.0,9.0,17.0,Light Heavyweight,10.0
+Light Heavyweight,jamahal hill,Jamahal Hill,3,"Meta, Sherdog, UFC media",7.0,5.0,9.0,18.0,Light Heavyweight,11.0
 Light Heavyweight,jan blachowicz,Jan Błachowicz,2,"Fight Matrix, UFC media",9.0,9.0,9.0,28.0,Light Heavyweight,19.0
 Light Heavyweight,jiri prochazka,Jiří Procházka,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,3.0,4.0,Light Heavyweight,1.0
 Light Heavyweight,johnny walker,Johnny Walker,2,"Meta, UFC media",13.5,13.0,14.0,12.0,Light Heavyweight,-1.5
@@ -101,40 +101,40 @@ Lightweight,beneil dariush,Beneil Dariush,1,UFC media,15.0,15.0,15.0,65.0,Lightw
 Lightweight,benoit saint denis,Benoît Saint Denis,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,5.0,8.0,7.0,Lightweight,1.0
 Lightweight,charles oliveira,Charles Oliveira,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,3.0,1.0,Lightweight,-2.0
 Lightweight,dan hooker,Dan Hooker,1,UFC media,13.0,13.0,13.0,39.0,Lightweight,26.0
-Lightweight,grant dawson,Grant Dawson,1,Meta,14.0,14.0,14.0,10.0,Lightweight,-4.0
+Lightweight,grant dawson,Grant Dawson,1,Meta,14.0,14.0,14.0,9.0,Lightweight,-5.0
 Lightweight,ilia topuria,Ilia Topuria,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,1.0,3.0,Lightweight,2.0
-Lightweight,jalin turner,Jalin Turner,1,Meta,15.0,15.0,15.0,16.0,Lightweight,1.0
-Lightweight,mateusz gamrot,Mateusz Gamrot,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.5,7.0,10.0,11.0,Lightweight,1.5
-Lightweight,mauricio ruffy,Mauricio Ruffy,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,6.0,10.0,14.0,Lightweight,7.0
+Lightweight,jalin turner,Jalin Turner,1,Meta,15.0,15.0,15.0,15.0,Lightweight,0.0
+Lightweight,mateusz gamrot,Mateusz Gamrot,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.5,7.0,10.0,10.0,Lightweight,0.5
+Lightweight,mauricio ruffy,Mauricio Ruffy,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,6.0,10.0,13.0,Lightweight,6.0
 Lightweight,max holloway,Max Holloway,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,4.0,4.0,2.0,Lightweight,-2.0
 Lightweight,paddy pimblett,Paddy Pimblett,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,5.0,8.0,5.0,Lightweight,0.0
 Lightweight,quillan salkilld,Quillan Salkilld,3,"Fight Matrix, Meta, UFC media",6.0,6.0,7.0,8.0,Lightweight,2.0
-Lightweight,rafael fiziev,Rafael Fiziev,3,"Fight Matrix, Meta, UFC media",11.0,9.0,12.0,15.0,Lightweight,4.0
+Lightweight,rafael fiziev,Rafael Fiziev,3,"Fight Matrix, Meta, UFC media",11.0,9.0,12.0,14.0,Lightweight,3.0
 Lightweight,renato moicano,Renato Moicano,2,"Meta, UFC media",10.0,8.0,12.0,6.0,Lightweight,-4.0
-Lightweight,salahdine parnasse,Salahdine Parnasse,3,"Fight Matrix, Sherdog, UFC media",9.0,8.0,11.0,24.0,Lightweight,15.0
-Lightweight,tofiq musayev,Tofiq Musayev,1,Meta,13.0,13.0,13.0,32.0,Lightweight,19.0
-Lightweight,tom nolan,Tom Nolan,2,"Meta, UFC media",12.5,11.0,14.0,25.0,Lightweight,12.5
+Lightweight,salahdine parnasse,Salahdine Parnasse,3,"Fight Matrix, Sherdog, UFC media",9.0,8.0,11.0,25.0,Lightweight,16.0
+Lightweight,tofiq musayev,Tofiq Musayev,1,Meta,13.0,13.0,13.0,33.0,Lightweight,20.0
+Lightweight,tom nolan,Tom Nolan,2,"Meta, UFC media",12.5,11.0,14.0,28.0,Lightweight,15.5
 Middleweight,abus magomedov,Abus Magomedov,2,"Meta, UFC media",12.5,12.0,13.0,23.0,Middleweight,10.5
 Middleweight,anthony hernandez,Anthony Hernandez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",8.0,5.0,10.0,8.0,Middleweight,0.0
-Middleweight,bo nickal,Bo Nickal,2,"Meta, UFC media",13.0,12.0,14.0,15.0,Middleweight,2.0
+Middleweight,bo nickal,Bo Nickal,2,"Meta, UFC media",13.0,12.0,14.0,14.0,Middleweight,1.0
 Middleweight,brendan allen,Brendan Allen,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,4.0,6.0,4.0,Middleweight,-1.0
 Middleweight,caio borralho,Caio Borralho,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,4.0,7.0,9.0,Middleweight,3.0
 Middleweight,christian leroy duncan,Christian Leroy Duncan,3,"Fight Matrix, Meta, UFC media",10.0,8.0,10.0,10.0,Middleweight,0.0
 Middleweight,dricus du plessis,Dricus Du Plessis,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,2.0,2.0,2.0,Middleweight,0.0
 Middleweight,edmen shahbazyan,Edmen Shahbazyan,1,Meta,14.0,14.0,14.0,20.0,Middleweight,6.0
 Middleweight,gregory rodrigues,Gregory Rodrigues,4,"Fight Matrix, Meta, Sherdog, UFC media",7.0,4.0,7.0,7.0,Middleweight,0.0
-Middleweight,ikram aliskerov,Ikram Aliskerov,2,"Meta, UFC media",12.0,11.0,13.0,13.0,Middleweight,1.0
-Middleweight,israel adesanya,Israel Adesanya,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.0,8.0,11.0,26.0,Middleweight,17.0
-Middleweight,jared cannonier,Jared Cannonier,1,UFC media,11.0,11.0,11.0,59.0,Middleweight,48.0
+Middleweight,ikram aliskerov,Ikram Aliskerov,2,"Meta, UFC media",12.0,11.0,13.0,12.0,Middleweight,0.0
+Middleweight,israel adesanya,Israel Adesanya,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.0,8.0,11.0,27.0,Middleweight,18.0
+Middleweight,jared cannonier,Jared Cannonier,1,UFC media,11.0,11.0,11.0,58.0,Middleweight,47.0
 Middleweight,joe pyfer,Joe Pyfer,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,4.0,8.0,6.0,Middleweight,0.0
 Middleweight,khamzat chimaev,Khamzat Chimaev,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,1.0,1.0,Middleweight,0.0
-Middleweight,michael page,Michael Page,1,Fight Matrix,9.0,9.0,9.0,14.0,Middleweight,5.0
+Middleweight,michael page,Michael Page,1,Fight Matrix,9.0,9.0,9.0,13.0,Middleweight,4.0
 Middleweight,nassourdine imavov,Nassourdine Imavov,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,3.0,3.0,3.0,Middleweight,0.0
 Middleweight,reinier de ridder,Reinier de Ridder,1,ESPN (Jun),9.0,9.0,9.0,,Light Heavyweight,
-Middleweight,shara magomedov,Shara Magomedov,2,"Meta, UFC media",15.0,15.0,15.0,18.0,Middleweight,3.0
+Middleweight,shara magomedov,Shara Magomedov,2,"Meta, UFC media",15.0,15.0,15.0,17.0,Middleweight,2.0
 Welterweight,belal muhammad,Belal Muhammad,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",7.5,7.0,9.0,7.0,Welterweight,-0.5
 Welterweight,carlos prates,Carlos Prates,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,3.0,3.0,Welterweight,1.0
-Welterweight,daniel rodriguez,Daniel Rodriguez,2,"Meta, UFC media",14.5,14.0,15.0,17.0,Welterweight,2.5
+Welterweight,daniel rodriguez,Daniel Rodriguez,2,"Meta, UFC media",14.5,14.0,15.0,18.0,Welterweight,3.5
 Welterweight,gabriel bonfim,Gabriel Bonfim,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,5.0,7.0,6.0,Welterweight,0.0
 Welterweight,ian machado garry,Ian Machado Garry,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,4.0,4.0,Welterweight,2.0
 Welterweight,jack della maddalena,Jack Della Maddalena,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,4.0,6.0,5.0,Welterweight,1.0
@@ -143,17 +143,17 @@ Welterweight,kamaru usman,Kamaru Usman,3,"Fight Matrix, Meta, UFC media",9.0,5.0
 Welterweight,kevin holland,Kevin Holland,1,Meta,14.0,14.0,14.0,24.0,Welterweight,10.0
 Welterweight,leon edwards,Leon Edwards,3,"Fight Matrix, Meta, UFC media",8.0,8.0,10.0,8.0,Welterweight,0.0
 Welterweight,michael morales,Michael Morales,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,1.0,3.0,1.0,Welterweight,-2.0
-Welterweight,mike malott,Mike Malott,2,"Meta, UFC media",12.0,11.0,13.0,13.0,Welterweight,1.0
-Welterweight,neil magny,Neil Magny,1,UFC media,15.0,15.0,15.0,15.0,Welterweight,0.0
+Welterweight,mike malott,Mike Malott,2,"Meta, UFC media",12.0,11.0,13.0,14.0,Welterweight,2.0
+Welterweight,neil magny,Neil Magny,1,UFC media,15.0,15.0,15.0,16.0,Welterweight,1.0
 Welterweight,sean brady,Sean Brady,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,3.0,6.0,2.0,Welterweight,-3.0
-Welterweight,uros medic,Uroš Medić,3,"Fight Matrix, Meta, UFC media",11.0,9.0,12.0,16.0,Welterweight,5.0
-Welterweight,yaroslav amosov,Yaroslav Amosov,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",11.5,9.0,13.0,14.0,Welterweight,2.5
+Welterweight,uros medic,Uroš Medić,3,"Fight Matrix, Meta, UFC media",11.0,9.0,12.0,17.0,Welterweight,6.0
+Welterweight,yaroslav amosov,Yaroslav Amosov,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",11.5,9.0,13.0,15.0,Welterweight,3.5
 Women's Bantamweight,ailin perez,Ailin Perez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,5.0,2.0,Women's Bantamweight,-1.0
-Women's Bantamweight,beatriz mesquita,Bia Mesquita,4,"Fight Matrix, Meta, Sherdog, UFC media",11.0,8.0,12.0,9.0,Women's Bantamweight,-2.0
+Women's Bantamweight,beatriz mesquita,Bia Mesquita,4,"Fight Matrix, Meta, Sherdog, UFC media",11.0,8.0,12.0,8.0,Women's Bantamweight,-3.0
 Women's Bantamweight,daria zhelezniakova,Daria Zhelezniakova,1,Meta,14.0,14.0,14.0,20.0,Women's Bantamweight,6.0
 Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",8.0,7.0,9.0,5.0,Women's Bantamweight,-3.0
 Women's Bantamweight,joselyne edwards,Joselyne Edwards,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,3.0,1.0,Women's Bantamweight,-1.0
-Women's Bantamweight,julianna pena,Julianna Peña,4,"Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,5.0,8.0,Women's Bantamweight,7.0
+Women's Bantamweight,julianna pena,Julianna Peña,4,"Fight Matrix, Meta, Sherdog, UFC media",1.0,1.0,5.0,9.0,Women's Bantamweight,8.0
 Women's Bantamweight,karol rosa,Karol Rosa,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",10.0,9.0,10.0,12.0,Women's Bantamweight,2.0
 Women's Bantamweight,ketlen vieira,Ketlen Vieira,3,"ESPN (Jun), Fight Matrix, Sherdog",3.0,3.0,6.0,4.0,Women's Bantamweight,1.0
 Women's Bantamweight,luana santos,Luana Santos,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,4.0,7.0,7.0,Women's Bantamweight,0.0
@@ -165,44 +165,42 @@ Women's Bantamweight,nora cornolle,Nora Cornolle,3,"ESPN (Jun), Meta, UFC media"
 Women's Bantamweight,norma dumont,Norma Dumont,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,2.0,5.0,3.0,Women's Bantamweight,-1.0
 Women's Bantamweight,raquel pennington,Raquel Pennington,2,"Meta, UFC media",9.5,4.0,15.0,,,
 Women's Bantamweight,yana santos,Yana Santos,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,4.0,6.0,6.0,Women's Bantamweight,0.0
-Women's Flyweight,alexa grasso,Alexa Grasso,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,5.0,1.0,Women's Flyweight,-2.0
-Women's Flyweight,carli judice,Carli Judice,1,Meta,15.0,15.0,15.0,10.0,Women's Flyweight,-5.0
-Women's Flyweight,casey oneill,Casey O'Neill,2,"Meta, UFC media",11.5,11.0,12.0,8.0,Women's Flyweight,-3.5
-Women's Flyweight,eduarda moura,Eduarda Moura,1,UFC media,13.0,13.0,13.0,31.0,Women's Flyweight,18.0
-Women's Flyweight,erin blanchfield,Erin Blanchfield,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,3.0,5.0,5.0,Women's Flyweight,1.0
-Women's Flyweight,gabriella fernandes,Gabriella Fernandes,1,UFC media,15.0,15.0,15.0,23.0,Women's Flyweight,8.0
-Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,7.0,7.0,7.0,Women's Flyweight,0.0
-Women's Flyweight,karine silva,Karine Silva,2,"Meta, UFC media",12.5,11.0,14.0,17.0,Women's Flyweight,4.5
-Women's Flyweight,liz carmouche,Liz Carmouche,1,ESPN (Jun),9.0,9.0,9.0,,,
-Women's Flyweight,manon fiorot,Manon Fiorot,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,4.0,2.0,Women's Flyweight,-1.0
-Women's Flyweight,maycee barber,Maycee Barber,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,6.0,9.0,6.0,Women's Flyweight,0.0
-Women's Flyweight,miranda maverick,Miranda Maverick,2,"Meta, UFC media",11.0,10.0,12.0,11.0,Women's Flyweight,0.0
-Women's Flyweight,natalia silva,Natalia Silva,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,3.0,3.0,Women's Flyweight,1.0
-Women's Flyweight,regina tarin,Regina Tarin,2,"Meta, UFC media",13.5,13.0,14.0,13.0,Women's Flyweight,-0.5
-Women's Flyweight,rose namajunas,Rose Namajunas,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",7.0,5.0,8.0,4.0,Women's Flyweight,-3.0
-Women's Flyweight,tracy cortez,Tracy Cortez,3,"Fight Matrix, Meta, UFC media",10.0,9.0,10.0,14.0,Women's Flyweight,4.0
+Women's Flyweight,alexa grasso,Alexa Grasso,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,4.0,1.0,Women's Flyweight,-1.0
+Women's Flyweight,carli judice,Carli Judice,1,Meta,14.0,14.0,14.0,9.0,Women's Flyweight,-5.0
+Women's Flyweight,casey oneill,Casey O'Neill,2,"Meta, UFC media",10.5,10.0,11.0,7.0,Women's Flyweight,-3.5
+Women's Flyweight,eduarda moura,Eduarda Moura,1,UFC media,12.0,12.0,12.0,30.0,Women's Flyweight,18.0
+Women's Flyweight,erin blanchfield,Erin Blanchfield,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,4.0,4.0,Women's Flyweight,1.0
+Women's Flyweight,gabriella fernandes,Gabriella Fernandes,1,UFC media,14.0,14.0,14.0,22.0,Women's Flyweight,8.0
+Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,6.0,6.0,6.0,Women's Flyweight,0.0
+Women's Flyweight,karine silva,Karine Silva,2,"Meta, UFC media",11.5,10.0,13.0,16.0,Women's Flyweight,4.5
+Women's Flyweight,liz carmouche,Liz Carmouche,1,ESPN (Jun),8.0,8.0,8.0,,,
+Women's Flyweight,manon fiorot,Manon Fiorot,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,2.0,3.0,2.0,Women's Flyweight,0.0
+Women's Flyweight,maycee barber,Maycee Barber,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,5.0,8.0,5.0,Women's Flyweight,0.0
+Women's Flyweight,miranda maverick,Miranda Maverick,2,"Meta, UFC media",10.0,9.0,11.0,10.0,Women's Flyweight,0.0
+Women's Flyweight,regina tarin,Regina Tarin,2,"Meta, UFC media",12.5,12.0,13.0,12.0,Women's Flyweight,-0.5
+Women's Flyweight,rose namajunas,Rose Namajunas,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",6.0,4.0,7.0,3.0,Women's Flyweight,-3.0
+Women's Flyweight,tracy cortez,Tracy Cortez,3,"Fight Matrix, Meta, UFC media",9.0,8.0,9.0,13.0,Women's Flyweight,4.0
 Women's Flyweight,valentina shevchenko,Valentina Shevchenko,3,"ESPN (Jun), Fight Matrix, Sherdog",1.0,1.0,1.0,,Women's Flyweight,
-Women's Flyweight,wang cong,Wang Cong,3,"Fight Matrix, Meta, UFC media",8.0,6.0,9.0,9.0,Women's Flyweight,1.0
-Women's Flyweight,zhang weili,Zhang Weili,1,Meta,5.0,5.0,5.0,,Women's Strawweight,
+Women's Flyweight,wang cong,Wang Cong,3,"Fight Matrix, Meta, UFC media",7.0,5.0,8.0,8.0,Women's Flyweight,1.0
+Women's Flyweight,zhang weili,Zhang Weili,1,Meta,4.0,4.0,4.0,,Women's Strawweight,
 Women's Strawweight,alexia thainara,Alexia Thainara,4,"Fight Matrix, Meta, Sherdog, UFC media",6.5,6.0,9.0,8.0,Women's Strawweight,1.5
-Women's Strawweight,amanda lemos,Amanda Lemos,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",9.0,5.0,15.0,35.0,Women's Strawweight,26.0
+Women's Strawweight,amanda lemos,Amanda Lemos,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",9.0,5.0,15.0,33.0,Women's Strawweight,24.0
 Women's Strawweight,amanda ribas,Amanda Ribas,2,"ESPN (Jun), UFC media",11.0,9.0,13.0,44.0,Women's Strawweight,33.0
 Women's Strawweight,angela hill,Angela Hill,2,"Fight Matrix, UFC media",13.5,13.0,14.0,27.0,Women's Strawweight,13.5
-Women's Strawweight,denise gomes,Denise Gomes,4,"Fight Matrix, Meta, Sherdog, UFC media",4.0,4.0,7.0,7.0,Women's Strawweight,3.0
-Women's Strawweight,fatima kline,Fatima Kline,4,"Fight Matrix, Meta, Sherdog, UFC media",6.5,5.0,7.0,6.0,Women's Strawweight,-0.5
+Women's Strawweight,denise gomes,Denise Gomes,4,"Fight Matrix, Meta, Sherdog, UFC media",4.0,4.0,7.0,6.0,Women's Strawweight,2.0
+Women's Strawweight,fatima kline,Fatima Kline,4,"Fight Matrix, Meta, Sherdog, UFC media",6.5,5.0,7.0,5.0,Women's Strawweight,-1.5
 Women's Strawweight,gillian robertson,Gillian Robertson,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,3.0,5.0,4.0,Women's Strawweight,0.0
-Women's Strawweight,iasmin lucindo,Iasmin Lucindo,3,"ESPN (Jun), Fight Matrix, Sherdog",9.0,7.0,10.0,5.0,Women's Strawweight,-4.0
-Women's Strawweight,jaqueline amorim,Jaqueline Amorim,1,Meta,13.0,13.0,13.0,11.0,Women's Strawweight,-2.0
-Women's Strawweight,jessica andrade,Jéssica Andrade,1,UFC media,10.0,10.0,10.0,10.0,Women's Strawweight,0.0
+Women's Strawweight,iasmin lucindo,Iasmin Lucindo,3,"ESPN (Jun), Fight Matrix, Sherdog",9.0,7.0,10.0,7.0,Women's Strawweight,-2.0
+Women's Strawweight,jaqueline amorim,Jaqueline Amorim,1,Meta,13.0,13.0,13.0,10.0,Women's Strawweight,-3.0
+Women's Strawweight,jessica andrade,Jéssica Andrade,1,UFC media,10.0,10.0,10.0,11.0,Women's Strawweight,1.0
 Women's Strawweight,loopy godinez,Loopy Godinez,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.5,6.0,11.0,9.0,Women's Strawweight,-0.5
-Women's Strawweight,mizuki inoue,Mizuki,2,"Meta, UFC media",12.5,10.0,15.0,22.0,Women's Strawweight,9.5
-Women's Strawweight,piera rodriguez,Piera Rodriguez,2,"Fight Matrix, Meta",11.0,8.0,14.0,15.0,Women's Strawweight,4.0
-Women's Strawweight,tabatha ricci,Tabatha Ricci,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.5,8.0,12.0,21.0,Women's Strawweight,11.5
-Women's Strawweight,talita alencar,Talita Alencar,1,Meta,14.0,14.0,14.0,19.0,Women's Strawweight,5.0
-Women's Strawweight,tatiana suarez,Tatiana Suarez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,3.0,3.0,Women's Strawweight,0.0
+Women's Strawweight,mizuki inoue,Mizuki,2,"Meta, UFC media",12.5,10.0,15.0,23.0,Women's Strawweight,10.5
+Women's Strawweight,piera rodriguez,Piera Rodriguez,2,"Fight Matrix, Meta",11.0,8.0,14.0,16.0,Women's Strawweight,5.0
+Women's Strawweight,tabatha ricci,Tabatha Ricci,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.5,8.0,12.0,20.0,Women's Strawweight,10.5
+Women's Strawweight,talita alencar,Talita Alencar,1,Meta,14.0,14.0,14.0,21.0,Women's Strawweight,7.0
+Women's Strawweight,tatiana suarez,Tatiana Suarez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,2.0,3.0,2.0,Women's Strawweight,-1.0
 Women's Strawweight,tecia pennington,Tecia Pennington,1,Fight Matrix,12.0,12.0,12.0,14.0,Women's Strawweight,2.0
-Women's Strawweight,virna jandiroba,Virna Jandiroba,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,3.0,2.0,Women's Strawweight,0.0
-Women's Strawweight,yan xiaonan,Yan Xiaonan,3,"Meta, Sherdog, UFC media",6.0,5.0,9.0,18.0,Women's Strawweight,12.0
+Women's Strawweight,virna jandiroba,Virna Jandiroba,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,3.0,3.0,Women's Strawweight,1.0
+Women's Strawweight,yan xiaonan,Yan Xiaonan,3,"Meta, Sherdog, UFC media",6.0,5.0,9.0,15.0,Women's Strawweight,9.0
 Women's Strawweight,zhang weili,Zhang Weili,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",1.0,1.0,1.0,1.0,Women's Strawweight,0.0
-Lightweight,king green,King Green,0,,,,,9.0,Lightweight,
 Middleweight,robert whittaker,Robert Whittaker,0,,,,,5.0,Middleweight,
