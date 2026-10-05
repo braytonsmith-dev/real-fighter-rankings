@@ -50,7 +50,8 @@ COLUMNS = ["pick_id", "predicted_at_utc", "data_through", "model", "freeze_commi
            "fighter_a", "fighter_b", "espn_name_a", "espn_name_b", "matched_a", "matched_b",
            "ufc_bouts_a", "ufc_bouts_b", "rating_a", "rating_b", "p_a", "pick", "p_pick", "confidence",
            "provisional", "p_a_classic", "pick_classic", "p_a_real", "pick_real",
-           "status", "winner", "method", "result_date", "bout_url", "correct", "log_loss", "brier", "graded_at_utc", "note"]
+           "status", "winner", "method", "result_date", "bout_url", "correct", "log_loss", "brier", "graded_at_utc", "note",
+           "p_a_v11", "pick_v11", "v11_locked_at_utc", "first_listed_matches"]
 
 
 def _cfg() -> dict:
@@ -161,6 +162,55 @@ def _real_scores() -> dict:
     return {r.fighter: (r.division, float(r.score)) for r in b.itertuples()}
 
 
+class Shadow:
+    """Shadow v1.1 (outputs/shadow_v11.json): walk-forward-tuned Elo with a red-corner term plus a logistic layer
+    on age, layoff, experience, height and five-round bouts. Reported next to v1.0, never substituted for it."""
+
+    def __init__(self):
+        self.ok = False
+        path = OUT / "shadow_v11.json"
+        if not path.exists():
+            return
+        self.spec = json.loads(path.read_text())
+        bouts = pd.read_csv(PROC / "bouts_with_stats.csv", parse_dates=["date"])
+        rated, hist = run_elo(bouts, EloParams(**self.spec["elo_params"]))
+        self.rating = hist.groupby("fighter").tail(1).set_index("fighter")["rating"].to_dict()
+        last = pd.concat([rated[["date", "fighter_a"]].rename(columns={"fighter_a": "fighter"}),
+                          rated[["date", "fighter_b"]].rename(columns={"fighter_b": "fighter"})]).groupby("fighter")["date"].max()
+        self.last_date = last.to_dict()
+        self.bouts_n = pd.concat([rated["fighter_a"], rated["fighter_b"]]).value_counts().to_dict()
+        fighters = pd.read_csv(PROC / "fighters.csv")
+        self.dob = pd.to_datetime(fighters.set_index("fighter")["dob"], errors="coerce").to_dict()
+        self.height = fighters.set_index("fighter")["height_in"].to_dict()
+        self.ok = True
+
+    def prob(self, a: str, b: str, event_date: pd.Timestamp, rounds: int) -> float:
+        lg, corner = self.spec["logistic"], self.spec["elo_params"]["corner_adv"]
+        ra, rb = self.rating.get(a, 1500.0), self.rating.get(b, 1500.0)
+
+        def age(n):
+            d = self.dob.get(n)
+            return (event_date - d).days / 365.25 if d is not None and not pd.isna(d) else None
+
+        def lay(n):
+            d = self.last_date.get(n)
+            return float((event_date - d).days) if d is not None else 365.0
+
+        aa, ab = age(a), age(b)
+        ea, eb = float(self.bouts_n.get(a, 0)), float(self.bouts_n.get(b, 0))
+        ha, hb = self.height.get(a), self.height.get(b)
+        x = {"elo_diff": (ra + corner - rb) / 400.0,
+             "age_diff": (aa - ab) if aa is not None and ab is not None else 0.0,
+             "old_diff": ((max(aa, 33) - 33) if aa is not None else 0.0) - ((max(ab, 33) - 33) if ab is not None else 0.0),
+             "layoff_diff": math.log1p(lay(a)) - math.log1p(lay(b)),
+             "debut_diff": float(ea == 0) - float(eb == 0), "exp_diff": math.log1p(ea) - math.log1p(eb),
+             "height_diff": (ha - hb) if ha is not None and hb is not None and not (pd.isna(ha) or pd.isna(hb)) else 0.0,
+             "five_round": 1.0 if int(rounds) >= 5 else 0.0}
+        x["elo_x_five"] = x["elo_diff"] * x["five_round"]
+        z = lg["weights"][0] + sum(w * (x[f] - m) / sd for f, w, m, sd in zip(lg["features"], lg["weights"][1:], lg["mean"], lg["std"]))
+        return 1.0 / (1.0 + math.exp(-z))
+
+
 def _p(ra: float, rb: float) -> float:
     return 1.0 / (1.0 + 10 ** ((rb - ra) / 400.0))
 
@@ -182,9 +232,30 @@ def load_ledger() -> pd.DataFrame:
     return pd.DataFrame(columns=COLUMNS)
 
 
+def _shadow_fill(ledger: pd.DataFrame, data_through: pd.Timestamp) -> pd.DataFrame:
+    """A pending v1.0 pick locked before the shadow model existed gets a shadow pick of its own, with its own
+    timestamp, as long as the bout has not happened. The v1.0 columns are untouched."""
+    if ledger.empty:
+        return ledger
+    todo = ledger[(ledger["status"] == "pending") & (ledger["p_a_v11"] == "") & (pd.to_datetime(ledger["event_date"]) > data_through)]
+    if todo.empty:
+        return ledger
+    shadow = Shadow()
+    if not shadow.ok:
+        return ledger
+    for i, r in todo.iterrows():
+        p11 = shadow.prob(r["fighter_a"], r["fighter_b"], pd.Timestamp(r["event_date"]), int(r["rounds"] or 3))
+        ledger.loc[i, ["p_a_v11", "pick_v11", "v11_locked_at_utc"]] = [f"{p11:.4f}", r["fighter_a"] if p11 >= 0.5 else r["fighter_b"], _now()]
+    PRED.mkdir(exist_ok=True)
+    ledger.to_csv(LEDGER, index=False)
+    print(f"picks: shadow v1.1 picks added to {len(todo)} pending row(s)")
+    return ledger
+
+
 def lock(upcoming: pd.DataFrame, data_through: pd.Timestamp) -> pd.DataFrame:
     cfg = _cfg()
     ledger = load_ledger()
+    ledger = _shadow_fill(ledger, data_through)
     if upcoming.empty:
         return ledger
     horizon = pd.Timestamp(datetime.now(timezone.utc).date()) + pd.Timedelta(days=cfg["horizon_days"])
@@ -197,6 +268,7 @@ def lock(upcoming: pd.DataFrame, data_through: pd.Timestamp) -> pd.DataFrame:
     roster, aliases = _roster(bouts), _aliases()
     tuned, classic = _ratings()
     real = _real_scores()
+    shadow = Shadow()
     rep = json.loads((OUT / "backtest_report.json").read_text())
     freeze = (OUT / "freeze_hash.txt").read_text().split()[0] if (OUT / "freeze_hash.txt").exists() else ""
     slope = 1.36   # PREREGISTRATION.md section 5
@@ -219,7 +291,10 @@ def lock(upcoming: pd.DataFrame, data_through: pd.Timestamp) -> pd.DataFrame:
         if sa and sb and sa[0] == sb[0]:
             par = 1.0 / (1.0 + math.exp(-slope * (sa[1] - sb[1])))
             pick_real = fa if par >= 0.5 else fb
+        p11 = shadow.prob(fa, fb, pd.Timestamp(r.event_date), r.rounds) if shadow.ok else ""
         rows.append({
+            "p_a_v11": round(p11, 4) if p11 != "" else "", "pick_v11": (fa if p11 >= 0.5 else fb) if p11 != "" else "",
+            "v11_locked_at_utc": _now() if p11 != "" else "", "first_listed_matches": "",
             "pick_id": r.pick_id, "predicted_at_utc": _now(), "data_through": str(data_through.date()),
             "model": "performance-adjusted Elo v1.0 (tuned_params)", "freeze_commit": freeze,
             "event_id": r.event_id, "event": r.event, "event_date": str(r.event_date), "division": r.division, "rounds": r.rounds,
@@ -266,6 +341,7 @@ def grade(ledger: pd.DataFrame, data_through: pd.Timestamp) -> pd.DataFrame:
             continue
         x = m.iloc[0]
         res = x["result_a"]
+        ledger.loc[i, "first_listed_matches"] = str(norm(x["fighter_a"]) == norm(r["fighter_a"]))
         ledger.loc[i, ["result_date", "bout_url", "method", "graded_at_utc"]] = [str(x["date"].date()), x["bout_url"], x["method"], _now()]
         if pd.isna(res) or res == 0.5:
             ledger.loc[i, ["status", "winner", "note"]] = ["void", "", "draw or no contest: not scored"]
@@ -310,7 +386,8 @@ def summarize(ledger: pd.DataFrame) -> dict:
                          "brier": round(float(g["br"].mean()), 4), "coin_flip_log_loss": 0.6931}
         # baselines on exactly the same graded bouts
         base = {}
-        for label, col_pick, col_p in (("results_only_elo", "pick_classic", "p_a_classic"), ("real_board", "pick_real", "p_a_real")):
+        for label, col_pick, col_p in (("results_only_elo", "pick_classic", "p_a_classic"), ("real_board", "pick_real", "p_a_real"),
+                                       ("shadow_v11", "pick_v11", "p_a_v11")):
             h = g[g[col_pick] != ""]
             if len(h):
                 p = h[col_p].astype(float).clip(1e-6, 1 - 1e-6)
@@ -323,6 +400,9 @@ def summarize(ledger: pd.DataFrame) -> dict:
         out["by_confidence"] = [{"band": b, "n": int(len(x)), "accuracy": round(float(x["correct_b"].mean()), 3),
                                  "mean_p_pick": round(float(x["p_pick"].astype(float).mean()), 3)}
                                 for b, x in g.groupby("confidence", sort=True)]
+        flm = g[g["first_listed_matches"] != ""]
+        if len(flm):
+            out["feed_order_matches_ufcstats_first_listed"] = round(float((flm["first_listed_matches"] == "True").mean()), 3)
         out["provisional"] = {"n": int((g["provisional"] == "True").sum()),
                               "accuracy": round(float(g.loc[g["provisional"] == "True", "correct_b"].mean()), 3) if (g["provisional"] == "True").any() else None}
         out["by_event"] = [{"event": e, "date": x["event_date"].iloc[0], "n": int(len(x)), "correct": int(x["correct_b"].sum()),

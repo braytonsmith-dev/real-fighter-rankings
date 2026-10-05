@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from mmalab import ingest, bout_stats, backtest, sensitivity, rankings, resume_board, card_quality, figures, publish, compare, methodology, history, picks
+from mmalab import ingest, bout_stats, backtest, sensitivity, rankings, resume_board, card_quality, figures, publish, compare, methodology, history, picks, shadow
 
 
 def main(quick: bool = False) -> None:
@@ -23,6 +23,7 @@ def main(quick: bool = False) -> None:
     if not quick:
         steps.append(("backtest", backtest.main))
         steps.append(("sensitivity", sensitivity.main))
+        steps.append(("shadow", shadow.main))        # v1.1 walk-forward re-tuning; writes outputs/shadow_v11.json for the picks ledger
     else:
         steps.append(("ratings", backtest.refresh_ratings))   # frozen parameters, new bouts
     cfg = yaml.safe_load((Path(__file__).resolve().parents[2] / "config" / "weights.yaml").read_text())

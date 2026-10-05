@@ -243,6 +243,19 @@ def prediction_page(cfg: dict, site: str, as_of) -> str:
                + (f". On the {mt['matched_bouts']:,} held-out bouts with closing odds (2020-2023) the de-vigged market scored "
                   f"{mt['market_devigged']['accuracy']:.1%} ({mt['market_devigged']['log_loss']}) against this model's "
                   f"{mt['performance_adjusted']['accuracy']:.1%} ({mt['performance_adjusted']['log_loss']})." if mt else "."))
+    shadow = ""
+    sp = OUT / "shadow_v11_report.json"
+    if sp.exists():
+        sr = json.loads(sp.read_text())
+        oo = sr["out_of_sample_for_both"]
+        g = oo["gain_v11_lr_over_v10"]
+        shadow = (f"<h2>Shadow v1.1 (under test, not in use)</h2><p class='meta'>Walk-forward re-tuning over 2011 onward (parameters chosen on every year "
+                  f"before the test year, then scored on it) plus a logistic layer on age, layoff, experience, height, five-round bouts and a red-corner term. "
+                  f"On the {oo['bouts']:,} bouts of {oo['window']} it scored {oo['v1.1_elo_plus_logistic']['log_loss']:.3f} log loss and "
+                  f"{oo['v1.1_elo_plus_logistic']['accuracy']:.1%} accuracy against {oo['v1.0_frozen']['log_loss']:.3f} and {oo['v1.0_frozen']['accuracy']:.1%} "
+                  f"for v1.0 on the same bouts (paired gain {g['delta_log_loss']:.3f}, 95% event-block bootstrap {g['ci95_event_block_bootstrap'][0]:.3f} to "
+                  f"{g['ci95_event_block_bootstrap'][1]:.3f}). Those are development results; v1.1 is graded prospectively in the picks ledger and is adopted "
+                  f"only under PREREGISTRATION.md appendix B. Full report: outputs/shadow_v11_report.json.</p>")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Prediction model</title><style>{CSS}</style></head><body>
 <p class="meta"><a href="index.html">Back to {html.escape(site)}</a></p>
@@ -250,6 +263,7 @@ def prediction_page(cfg: dict, site: str, as_of) -> str:
 <p class="meta">Separate from the REAL resume board. This answers a different question: who would be favored if
 the fight happened today, not who has earned the position. It weighs in-fight dominance heavily and is graded
 on bouts it has not seen. {acc} Data through {as_of}. Win chance is against the top-rated fighter in this list.</p>
+{shadow}
 {''.join(parts)}
 </body></html>"""
 
@@ -318,10 +332,12 @@ def picks_page(site: str, as_of) -> str:
                 rows = "".join(
                     f"<tr><td>{esc(r.division)}{' (5 rounds)' if str(r.rounds) == '5' else ''}</td><td>{esc(r.fighter_a)} vs {esc(r.fighter_b)}</td>"
                     f"<td>{esc(r.pick)}</td><td class='num'>{pct(r.p_pick)}</td><td>{esc(r.confidence)}</td>"
-                    f"<td>{'yes' if r.provisional == 'True' else ''}</td><td class='band'>{esc(r.predicted_at_utc[:16].replace('T', ' '))}</td></tr>"
+                    f"<td>{'yes' if r.provisional == 'True' else ''}</td>"
+                    f"<td class='band'>{(esc(r.pick_v11) + ' ' + pct(max(float(r.p_a_v11), 1 - float(r.p_a_v11)))) if r.p_a_v11 else ''}</td>"
+                    f"<td class='band'>{esc(r.predicted_at_utc[:16].replace('T', ' '))}</td></tr>"
                     for r in g.itertuples())
                 parts.append(f"<h3>{esc(ev)} ({esc(g['event_date'].iloc[0])})</h3><div class='scroll'><table><thead><tr><th>Division</th><th>Bout</th>"
-                             "<th>Pick</th><th class='num'>Win chance</th><th>Band</th><th>Provisional</th><th>Locked (UTC)</th></tr></thead>"
+                             "<th>Pick</th><th class='num'>Win chance</th><th>Band</th><th>Provisional</th><th>Shadow v1.1</th><th>Locked (UTC)</th></tr></thead>"
                              f"<tbody>{rows}</tbody></table></div>")
         done = led[led["status"].isin(["correct", "incorrect", "void"])].sort_values(["event_date"], ascending=False).head(60)
         if not done.empty:
@@ -339,6 +355,8 @@ def picks_page(site: str, as_of) -> str:
 2020-2026, where it was right 60.6% of the time against 67.1% for the closing betting market). Each pick is written to
 <a href="https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/predictions/picks.csv">a public ledger</a> up to three weeks
 before the bout and never edited; results are graded from UFCStats. Expect misses: a 60% pick loses two times in five.
+The shadow v1.1 column is the next model under test (walk-forward tuned on 2011 onward, with age, layoff, experience and a
+red-corner term); it is graded alongside v1.0 and replaces nothing until it meets the criterion in PREREGISTRATION.md appendix B.
 Data through {as_of}. Not betting advice; see the data terms in the repository.</p>
 {''.join(parts)}
 </body></html>"""

@@ -1,0 +1,378 @@
+{
+  "method": "walk-forward: parameters and logistic weights chosen on 2011..Y-1, scored on Y, for Y in 2016..2026; v1.0 scored on the same bouts (note: v1.0 was tuned on 2010-2019, so it is in-sample before 2020)",
+  "space": {
+    "k": [
+      60,
+      80,
+      100,
+      130,
+      160,
+      200
+    ],
+    "k_new_mult": [
+      1.0,
+      1.5,
+      2.0,
+      2.5
+    ],
+    "n_new": [
+      3,
+      5,
+      8
+    ],
+    "split_mult": [
+      0.6,
+      0.8,
+      1.0
+    ],
+    "finish_mult": [
+      1.0,
+      1.25
+    ],
+    "layoff_regress_per_year": [
+      0.0,
+      0.15,
+      0.25,
+      0.4
+    ],
+    "mov_weight": [
+      0.5,
+      0.75,
+      0.9,
+      1.0
+    ],
+    "mov_scale": [
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "win_floor": [
+      0.0,
+      0.5,
+      0.6
+    ],
+    "finish_floor": [
+      0.0,
+      0.6,
+      0.75
+    ],
+    "corner_adv": [
+      0.0,
+      20.0,
+      35.0,
+      50.0,
+      70.0
+    ],
+    "mov_damp": [
+      0.0,
+      0.0005,
+      0.001,
+      0.002
+    ]
+  },
+  "features": [
+    "elo_diff",
+    "age_diff",
+    "old_diff",
+    "layoff_diff",
+    "debut_diff",
+    "exp_diff",
+    "height_diff",
+    "five_round",
+    "elo_x_five"
+  ],
+  "all_test_years": {
+    "window": "2016-2026",
+    "bouts": 5308,
+    "events": 449,
+    "v1.0_frozen": {
+      "n": 5308,
+      "log_loss": 0.6648,
+      "brier": 0.236,
+      "accuracy": 0.5983
+    },
+    "v1.1_elo_walk_forward": {
+      "n": 5308,
+      "log_loss": 0.6641,
+      "brier": 0.2356,
+      "accuracy": 0.6015
+    },
+    "v1.1_elo_recalibrated": {
+      "n": 5308,
+      "log_loss": 0.6639,
+      "brier": 0.2356,
+      "accuracy": 0.5983
+    },
+    "v1.1_elo_plus_logistic": {
+      "n": 5308,
+      "log_loss": 0.6468,
+      "brier": 0.2275,
+      "accuracy": 0.6226
+    },
+    "gain_v11_lr_over_v10": {
+      "delta_log_loss": 0.018,
+      "ci95_event_block_bootstrap": [
+        0.0122,
+        0.0238
+      ]
+    },
+    "picks_fixed_vs_broken": [
+      745,
+      616
+    ],
+    "calibration_in_the_large": {
+      "mean_p_v10": 0.5348,
+      "mean_p_v11_lr": 0.5881,
+      "observed": 0.5697
+    }
+  },
+  "out_of_sample_for_both": {
+    "window": "2020-2026",
+    "bouts": 3404,
+    "events": 288,
+    "v1.0_frozen": {
+      "n": 3404,
+      "log_loss": 0.6632,
+      "brier": 0.2353,
+      "accuracy": 0.6055
+    },
+    "v1.1_elo_walk_forward": {
+      "n": 3404,
+      "log_loss": 0.6597,
+      "brier": 0.2336,
+      "accuracy": 0.6058
+    },
+    "v1.1_elo_recalibrated": {
+      "n": 3404,
+      "log_loss": 0.6598,
+      "brier": 0.2337,
+      "accuracy": 0.5999
+    },
+    "v1.1_elo_plus_logistic": {
+      "n": 3404,
+      "log_loss": 0.6398,
+      "brier": 0.2244,
+      "accuracy": 0.631
+    },
+    "gain_v11_lr_over_v10": {
+      "delta_log_loss": 0.0234,
+      "ci95_event_block_bootstrap": [
+        0.0167,
+        0.03
+      ]
+    },
+    "picks_fixed_vs_broken": [
+      472,
+      385
+    ],
+    "calibration_in_the_large": {
+      "mean_p_v10": 0.5352,
+      "mean_p_v11_lr": 0.5839,
+      "observed": 0.572
+    }
+  },
+  "parameters_by_year": {
+    "2016": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 5,
+      "finish_mult": 1.0,
+      "split_mult": 0.6,
+      "layoff_regress_per_year": 0.0,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 50.0
+    },
+    "2017": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 3,
+      "finish_mult": 1.0,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.0,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 50.0,
+      "mov_damp": 0.002
+    },
+    "2018": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 3,
+      "finish_mult": 1.0,
+      "split_mult": 0.6,
+      "layoff_regress_per_year": 0.0,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 50.0,
+      "mov_damp": 0.001
+    },
+    "2019": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 3,
+      "finish_mult": 1.0,
+      "split_mult": 0.6,
+      "layoff_regress_per_year": 0.0,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0005
+    },
+    "2020": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 3,
+      "finish_mult": 1.0,
+      "split_mult": 0.6,
+      "layoff_regress_per_year": 0.15,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0
+    },
+    "2021": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 3,
+      "finish_mult": 1.0,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.15,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0
+    },
+    "2022": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 3,
+      "finish_mult": 1.0,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.4,
+      "mov_weight": 1.0,
+      "mov_scale": 1.5,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0
+    },
+    "2023": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 5,
+      "finish_mult": 1.0,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.4,
+      "mov_weight": 1.0,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0005
+    },
+    "2024": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 5,
+      "finish_mult": 1.0,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.25,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0
+    },
+    "2025": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 5,
+      "finish_mult": 1.0,
+      "split_mult": 0.6,
+      "layoff_regress_per_year": 0.4,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0
+    },
+    "2026": {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "n_new": 5,
+      "finish_mult": 1.0,
+      "split_mult": 0.6,
+      "layoff_regress_per_year": 0.4,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.6,
+      "corner_adv": 35.0,
+      "mov_damp": 0.0
+    }
+  },
+  "market_same_bouts": {
+    "bouts": 3022,
+    "date_range": [
+      "2016-01-02",
+      "2023-12-16"
+    ],
+    "market": {
+      "n": 3022,
+      "log_loss": 0.6118,
+      "brier": 0.2119,
+      "accuracy": 0.6595
+    },
+    "v1.0": {
+      "n": 3022,
+      "log_loss": 0.6683,
+      "brier": 0.2376,
+      "accuracy": 0.5973
+    },
+    "v1.1_elo_plus_logistic": {
+      "n": 3022,
+      "log_loss": 0.6558,
+      "brier": 0.2315,
+      "accuracy": 0.6188
+    },
+    "blend_v11_market_50_50": {
+      "n": 3022,
+      "log_loss": 0.6235,
+      "brier": 0.2168,
+      "accuracy": 0.6608
+    }
+  },
+  "final_shadow_params": {
+    "k": 130,
+    "k_new_mult": 1.5,
+    "n_new": 5,
+    "finish_mult": 1.0,
+    "split_mult": 0.6,
+    "layoff_days": 365,
+    "layoff_regress_per_year": 0.4,
+    "mov_weight": 0.9,
+    "mov_scale": 2.0,
+    "win_floor": 0.0,
+    "finish_floor": 0.6,
+    "start": 1500.0,
+    "corner_adv": 35.0,
+    "mov_damp": 0.0
+  },
+  "runtime_seconds": 95
+}

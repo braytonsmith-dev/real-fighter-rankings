@@ -39,6 +39,9 @@ class EloParams:
     win_floor: float = 0.0       # winner's effective score is at least this (0 = off)
     finish_floor: float = 0.0    # winner by KO/TKO or SUB scores at least this (0 = off)
     start: float = 1500.0
+    # v1.1 shadow additions; the defaults reproduce v1.0 exactly
+    corner_adv: float = 0.0      # rating points credited to the first-listed (red corner) fighter in the expected score
+    mov_damp: float = 0.0        # FiveThirtyEight-style damping of the dominance weight for favorites: w * 2.2 / (mov_damp * edge + 2.2)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -80,7 +83,7 @@ def run_elo(bouts: pd.DataFrame, p: EloParams | None = None) -> tuple[pd.DataFra
                         else:
                             rb = r
 
-        ea = expected(ra, rb)
+        ea = expected(ra + p.corner_adv, rb)
         pre_a.append(ra); pre_b.append(rb); prob_a.append(ea)
 
         if pd.isna(row.result_a):          # no contest: no rating change
@@ -94,7 +97,12 @@ def run_elo(bouts: pd.DataFrame, p: EloParams | None = None) -> tuple[pd.DataFra
             dom = getattr(row, "dominance_a")
             if dom is not None and not pd.isna(dom):
                 perf = 1.0 / (1.0 + np.exp(-dom / p.mov_scale))
-                sa = (1 - p.mov_weight) * sa + p.mov_weight * perf
+                w = p.mov_weight
+                if p.mov_damp > 0:
+                    # a favorite is expected to dominate: shrink the dominance credit by its pre-fight edge
+                    edge = (ra - rb) if dom > 0 else (rb - ra)
+                    w = w * 2.2 / (p.mov_damp * max(0.0, edge) + 2.2)
+                sa = (1 - w) * sa + w * perf
                 # floors: a win, and especially a finish, is never scored as a loss
                 res = float(row.result_a)
                 is_finish = row.method in ("KO/TKO", "SUB")

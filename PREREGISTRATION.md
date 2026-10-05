@@ -79,3 +79,15 @@ This appendix adds a publication mechanism. It changes no endpoint, population, 
 2. Lock rule: the first automated run (Mondays and Fridays, 13:00 UTC) that sees a scheduled bout inside the next 21 days writes one row to `predictions/picks.csv` with the frozen performance-adjusted Elo probability (`tuned_params`), the results-only Elo probability, the REAL board probability where both fighters hold a place on the same divisional board, the pick, the confidence band, a provisional flag (either fighter with three or fewer UFC bouts), and the UTC timestamp. Rows are never edited; the file's git history is the timestamp proof. A fighter with no UFCStats history is rated 1500 and the row says so.
 3. Grading: a pending pick is matched to a UFCStats result within three days of the scheduled date by the normalised name pair. Correct or incorrect follows the pick; draws and no contests are void; a pick with no matching result ten days after the event date is void (the bout fell through or a name did not match) and is listed for review.
 4. Reporting: `outputs/picks_summary.json` and `docs/picks.html` carry the running record with a Wilson interval, log loss and Brier score, calibration by stated confidence band, per-event results, and the two baselines scored on exactly the same graded bouts. The ledger is a product-level record of the predictive model; the primary endpoints of this protocol remain those in sections 4 to 8 and are computed from `outputs/forward_validation.csv`.
+
+## Appendix B (added Oct 5, 2026): shadow v1.1 and the rule for adopting it
+
+Shadow v1.1 is the predictive model's next version: Elo parameters re-tuned walk-forward over 2011 onward (chosen on every year before each test year, with a red-corner term and optional damping of dominance credit for favorites), plus an L2-regularised logistic layer on rating difference, age, layoff, UFC experience, height and five-round bouts. Its development evidence is `outputs/shadow_v11_report.json`; its fitted form is `outputs/shadow_v11.json`, refitted on all bouts from 2011 to date at each full rebuild and stored alongside each lock in `predictions/picks.csv` (`p_a_v11`, `pick_v11`).
+
+Adoption criterion, fixed before the first shadow pick was locked:
+
+1. At least 300 graded picks in which both v1.0 and shadow v1.1 made a pick, all locked before their bouts.
+2. Mean log loss of shadow v1.1 lower than v1.0 on those bouts, with a 95% event-block bootstrap interval for the paired difference that excludes zero.
+3. Shadow v1.1's calibration-in-the-large error (mean stated probability for the first-listed fighter minus the observed rate) no larger than 3 percentage points in absolute value.
+
+If all three hold, v1.1 may become the model behind the picks ledger and the prediction page, with the change logged in the changelog and the ledger column names kept so the record stays continuous. The REAL resume board and its endpoints in sections 4 to 8 are unaffected. Until then every public pick is v1.0's.
