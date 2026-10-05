@@ -11,13 +11,15 @@ permissions:
 
 jobs:
   rebuild:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
+      - name: Check every import resolves before the rebuild
+        run: PYTHONPATH=src python -c "import mmalab.run_all, tabulate, markdown"
       - run: bash scripts/refresh_data.sh --quick
       - name: Commit outputs
         run: |
