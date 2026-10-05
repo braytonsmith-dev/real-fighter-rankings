@@ -1,0 +1,5 @@
+# ESPN schedule name -> UFCStats name, for the few fighters the two sources spell differently.
+# Keys are compared after normalisation (lower case, accents removed, hyphens to spaces), so
+# "Roberto Soldić" already matches "Roberto Soldic" without an entry here. Add a line only when
+# predictions/unmatched_names.csv reports a miss. Example:
+#   king green: bobby green

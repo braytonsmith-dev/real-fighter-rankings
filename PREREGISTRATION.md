@@ -70,3 +70,12 @@ v1.1 may be developed at any time. Its boards are published only under `shadow_v
 ## 10. Public reporting
 
 After each event the weekly rebuild appends to `outputs/forward_validation.csv` the snapshot date, the bout, both pre-event positions and scores, the frozen baseline predictions where available, the winner, and the inclusion or exclusion reason. The Oct 2027 report is generated from those files by `src/mmalab/history.py` without manual bout selection.
+
+## Appendix A (added Oct 5, 2026): pre-event publication of the predictive model's picks
+
+This appendix adds a publication mechanism. It changes no endpoint, population, baseline or test above.
+
+1. Source of the schedule: ESPN's public UFC schedule feed (names, dates, weight classes only). Contender Series and Road to UFC cards are excluded.
+2. Lock rule: the first automated run (Mondays and Fridays, 13:00 UTC) that sees a scheduled bout inside the next 21 days writes one row to `predictions/picks.csv` with the frozen performance-adjusted Elo probability (`tuned_params`), the results-only Elo probability, the REAL board probability where both fighters hold a place on the same divisional board, the pick, the confidence band, a provisional flag (either fighter with three or fewer UFC bouts), and the UTC timestamp. Rows are never edited; the file's git history is the timestamp proof. A fighter with no UFCStats history is rated 1500 and the row says so.
+3. Grading: a pending pick is matched to a UFCStats result within three days of the scheduled date by the normalised name pair. Correct or incorrect follows the pick; draws and no contests are void; a pick with no matching result ten days after the event date is void (the bout fell through or a name did not match) and is listed for review.
+4. Reporting: `outputs/picks_summary.json` and `docs/picks.html` carry the running record with a Wilson interval, log loss and Brier score, calibration by stated confidence band, per-event results, and the two baselines scored on exactly the same graded bouts. The ledger is a product-level record of the predictive model; the primary endpoints of this protocol remain those in sections 4 to 8 and are computed from `outputs/forward_validation.csv`.

@@ -262,6 +262,88 @@ def favorites_page(bouts: pd.DataFrame, as_of, site: str) -> str:
 </body></html>"""
 
 
+def picks_page(site: str, as_of) -> str:
+    """Pre-event picks from the frozen prediction model and the running record, from predictions/picks.csv
+    and outputs/picks_summary.json. Every pick carries the UTC time it was locked; the file's git history
+    is the proof that it was published before the bout."""
+    ledger_path = ROOT / "predictions" / "picks.csv"
+    summ_path = OUT / "picks_summary.json"
+    led = pd.read_csv(ledger_path, dtype=str, keep_default_na=False) if ledger_path.exists() else pd.DataFrame()
+    summ = json.loads(summ_path.read_text()) if summ_path.exists() else {}
+    rec = summ.get("record")
+    esc = html.escape
+
+    def pct(x):
+        try:
+            return f"{float(x):.0%}"
+        except (TypeError, ValueError):
+            return ""
+
+    parts = []
+    if rec:
+        ci = rec.get("accuracy_wilson95") or ["", ""]
+        parts.append(f"<h2>Record so far</h2><p>{rec['correct']} correct, {rec['incorrect']} incorrect: "
+                     f"{rec['accuracy']:.1%} (95% interval {ci[0]:.0%} to {ci[1]:.0%}) over {summ['graded']} graded bouts. "
+                     f"Log loss {rec['log_loss']:.3f} against 0.693 for a coin flip; Brier {rec['brier']:.3f}. "
+                     f"{summ.get('void', 0)} voided (draws, no contests, cancelled bouts).</p>")
+        base = summ.get("baselines_same_bouts", {})
+        if base:
+            rows = "".join(f"<tr><td>{esc(k.replace('_', ' '))}</td><td class='num'>{v['n']}</td><td class='num'>{v['accuracy']:.1%}</td>"
+                           f"<td class='num'>{v['log_loss']:.3f}</td><td class='num'>{v['model_accuracy_same_bouts']:.1%}</td>"
+                           f"<td class='num'>{v['model_log_loss_same_bouts']:.3f}</td></tr>" for k, v in base.items())
+            parts.append("<h3>Against the baselines, on exactly the same bouts</h3><table><thead><tr><th>Baseline</th><th class='num'>Bouts</th>"
+                         "<th class='num'>Baseline accuracy</th><th class='num'>Baseline log loss</th><th class='num'>This model</th>"
+                         f"<th class='num'>This model log loss</th></tr></thead><tbody>{rows}</tbody></table>")
+        bc = summ.get("by_confidence", [])
+        if bc:
+            rows = "".join(f"<tr><td>{esc(b['band'])}</td><td class='num'>{b['n']}</td><td class='num'>{b['mean_p_pick']:.1%}</td>"
+                           f"<td class='num'>{b['accuracy']:.1%}</td></tr>" for b in bc)
+            parts.append("<h3>Calibration: does a 65% pick win 65% of the time?</h3><table><thead><tr><th>Stated confidence</th><th class='num'>Bouts</th>"
+                         f"<th class='num'>Average stated</th><th class='num'>Actual win rate</th></tr></thead><tbody>{rows}</tbody></table>")
+        be = summ.get("by_event", [])
+        if be:
+            rows = "".join(f"<tr><td>{esc(e['date'])}</td><td>{esc(e['event'])}</td><td class='num'>{e['correct']}/{e['n']}</td>"
+                           f"<td class='num'>{e['log_loss']:.3f}</td></tr>" for e in be)
+            parts.append("<h3>By event</h3><table><thead><tr><th>Date</th><th>Event</th><th class='num'>Correct</th><th class='num'>Log loss</th>"
+                         f"</tr></thead><tbody>{rows}</tbody></table>")
+    else:
+        parts.append("<h2>Record so far</h2><p>No graded bouts yet. The first picks are graded after the next event's results reach UFCStats.</p>")
+
+    if not led.empty:
+        pend = led[led["status"] == "pending"].sort_values(["event_date", "rounds"], ascending=[True, False])
+        if not pend.empty:
+            parts.append("<h2>Upcoming picks</h2><p class='meta'>Locked = the UTC time the pick was written to the public ledger; it is never edited. "
+                         "Provisional = either fighter has three or fewer UFC bouts, so the rating rests on little evidence.</p>")
+            for ev, g in pend.groupby("event", sort=False):
+                rows = "".join(
+                    f"<tr><td>{esc(r.division)}{' (5 rounds)' if str(r.rounds) == '5' else ''}</td><td>{esc(r.fighter_a)} vs {esc(r.fighter_b)}</td>"
+                    f"<td>{esc(r.pick)}</td><td class='num'>{pct(r.p_pick)}</td><td>{esc(r.confidence)}</td>"
+                    f"<td>{'yes' if r.provisional == 'True' else ''}</td><td class='band'>{esc(r.predicted_at_utc[:16].replace('T', ' '))}</td></tr>"
+                    for r in g.itertuples())
+                parts.append(f"<h3>{esc(ev)} ({esc(g['event_date'].iloc[0])})</h3><div class='scroll'><table><thead><tr><th>Division</th><th>Bout</th>"
+                             "<th>Pick</th><th class='num'>Win chance</th><th>Band</th><th>Provisional</th><th>Locked (UTC)</th></tr></thead>"
+                             f"<tbody>{rows}</tbody></table></div>")
+        done = led[led["status"].isin(["correct", "incorrect", "void"])].sort_values(["event_date"], ascending=False).head(60)
+        if not done.empty:
+            rows = "".join(
+                f"<tr><td>{esc(r.event_date)}</td><td>{esc(r.fighter_a)} vs {esc(r.fighter_b)}</td><td>{esc(r.pick)}</td>"
+                f"<td class='num'>{pct(r.p_pick)}</td><td>{esc(r.winner)}</td><td class='{'up' if r.status == 'correct' else ('down' if r.status == 'incorrect' else 'band')}'>{esc(r.status)}</td></tr>"
+                for r in done.itertuples())
+            parts.append("<h2>Most recent graded picks</h2><div class='scroll'><table><thead><tr><th>Date</th><th>Bout</th><th>Pick</th>"
+                         f"<th class='num'>Win chance</th><th>Winner</th><th>Result</th></tr></thead><tbody>{rows}</tbody></table></div>")
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Picks</title><style>{CSS}</style></head><body>
+<p class="meta"><a href="index.html">Back to {esc(site)}</a></p>
+<h1>Pre-event picks</h1>
+<p class="meta">Picks come from the frozen performance-adjusted Elo (the specification selected on 2010-2019 and held out on
+2020-2026, where it was right 60.6% of the time against 67.1% for the closing betting market). Each pick is written to
+<a href="https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/predictions/picks.csv">a public ledger</a> up to three weeks
+before the bout and never edited; results are graded from UFCStats. Expect misses: a 60% pick loses two times in five.
+Data through {as_of}. Not betting advice; see the data terms in the repository.</p>
+{''.join(parts)}
+</body></html>"""
+
+
 def md_table_to_html(md: str) -> str:
     out, in_table = [], False
     for line in md.splitlines():
@@ -292,6 +374,8 @@ def main() -> None:
     wsrc = cfg["resume"]["weights"] if cfg.get("board_model") == "resume" else cfg["weights"]
     w = ", ".join(f"{k.replace('_', ' ')} {v:.0%}" for k, v in wsrc.items())
     site = cfg.get("site_name", "REAL Fighter Rankings")
+    pk = yaml.safe_load((ROOT / "config" / "picks.yaml").read_text()) if (ROOT / "config" / "picks.yaml").exists() else {}
+    picks_link = ' <a href="picks.html">Picks</a> ·' if pk.get("publish_page") else ""
     tagline = cfg.get("site_tagline", "")
 
     summary = pd.read_csv(OUT / "card_quality_summary.csv")
@@ -309,7 +393,7 @@ def main() -> None:
 <h1>{html.escape(site)}</h1>
 <p class="tag">{html.escape(tagline)}</p>
 <p class="meta"><a href="#boards">Divisional boards</a> · <a href="#compare">Side by side</a> ·
-<a href="methodology.html">Methodology</a> · <a href="prediction.html">Prediction model</a> ·
+<a href="methodology.html">Methodology</a> · <a href="prediction.html">Prediction model</a> ·{picks_link}
 <a href="#cards">Card quality</a> · <a href="#backtest">Model accuracy</a></p>
 <p class="meta">Data through {as_of}. Page built {date.today()}. Weights: {w}. Weight band = 10th to 90th
 percentile of the final position across {cfg['resume']['stability_draws']} weight vectors drawn near the configured weights, with
@@ -338,6 +422,7 @@ Separate from the method: <a href="favorites.html">the curator's personal top te
     (DOCS / "index.html").write_text(page)
     (DOCS / "favorites.html").write_text(favorites_page(bouts, as_of, site))
     (DOCS / "prediction.html").write_text(prediction_page(cfg, site, as_of))
+    (DOCS / "picks.html").write_text(picks_page(site, as_of))
     print(f"docs/index.html written (data through {as_of})")
 
 

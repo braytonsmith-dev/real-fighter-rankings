@@ -35,6 +35,10 @@ Card quality, 203 cards from 2022 to Sept 2026: numbered events average 2.19 cha
 
 Resume board (REAL v1.0): a retrospective reconstruction over 127 boards is reported in `METHODOLOGY.md` section 8 and is not a forward test. The prospective test is pre-registered in `PREREGISTRATION.md` and starts with the first event after Oct 1, 2026. Data rights and redistribution basis: `DATA_LICENSE.md`.
 
+## Pre-event picks
+
+Every Monday and Friday the pipeline reads the upcoming UFC schedule, writes a pick for each bout inside the next three weeks to `predictions/picks.csv` (frozen performance-adjusted Elo probability, pick, confidence band, provisional flag, UTC timestamp) and never edits it. After each card the picks are graded from UFCStats and the running record (accuracy with interval, log loss, calibration by confidence band, baselines on the same bouts) goes to `outputs/picks_summary.json` and `docs/picks.html`. Rules: PREREGISTRATION.md, appendix A. Settings: `config/picks.yaml`; `publish_page: true` adds the page to the site navigation.
+
 ## Build it yourself, step by step
 
 Measure twice, cut once. Each step has a check so you know it worked before moving on.

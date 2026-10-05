@@ -159,8 +159,18 @@
         "brier": 0.2107,
         "accuracy": 0.625
       },
-      "results_only_elo": null,
-      "performance_adjusted_elo": null,
+      "results_only_elo": {
+        "n": 8,
+        "log_loss": 0.731,
+        "brier": 0.2698,
+        "accuracy": 0.375
+      },
+      "performance_adjusted_elo": {
+        "n": 8,
+        "log_loss": 0.7984,
+        "brier": 0.2978,
+        "accuracy": 0.375
+      },
       "official_board": {
         "bouts_both_ranked": 2,
         "official_concordance": 0.5,
@@ -184,8 +194,18 @@
         "brier": 0.2638,
         "accuracy": 0.3333
       },
-      "results_only_elo": null,
-      "performance_adjusted_elo": null,
+      "results_only_elo": {
+        "n": 3,
+        "log_loss": 0.735,
+        "brier": 0.2716,
+        "accuracy": 0.3333
+      },
+      "performance_adjusted_elo": {
+        "n": 3,
+        "log_loss": 0.7715,
+        "brier": 0.2888,
+        "accuracy": 0.3333
+      },
       "official_board": {
         "bouts_both_ranked": 1,
         "official_concordance": 1.0,
@@ -209,8 +229,18 @@
         "brier": 0.1255,
         "accuracy": 1.0
       },
-      "results_only_elo": null,
-      "performance_adjusted_elo": null,
+      "results_only_elo": {
+        "n": 1,
+        "log_loss": 0.4135,
+        "brier": 0.1147,
+        "accuracy": 1.0
+      },
+      "performance_adjusted_elo": {
+        "n": 1,
+        "log_loss": 0.616,
+        "brier": 0.2115,
+        "accuracy": 1.0
+      },
       "official_board": {
         "bouts_both_ranked": 1,
         "official_concordance": 1.0,
@@ -234,8 +264,18 @@
         "brier": 0.1255,
         "accuracy": 1.0
       },
-      "results_only_elo": null,
-      "performance_adjusted_elo": null,
+      "results_only_elo": {
+        "n": 1,
+        "log_loss": 0.4135,
+        "brier": 0.1147,
+        "accuracy": 1.0
+      },
+      "performance_adjusted_elo": {
+        "n": 1,
+        "log_loss": 0.616,
+        "brier": 0.2115,
+        "accuracy": 1.0
+      },
       "official_board": {
         "bouts_both_ranked": 1,
         "official_concordance": 1.0,

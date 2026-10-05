@@ -1,0 +1,11 @@
+# Pre-event picks: settings for src/mmalab/picks.py.
+# Kept apart from weights.yaml so the frozen v1.0 configuration hash in PREREGISTRATION.md does not change.
+
+source: "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard"   # public schedule feed; only names, dates and weight classes are read
+horizon_days: 21            # lock a pick the first run that sees the bout inside this window before the event
+void_after_days: 10         # a pick with no matching result this long after the event date is voided (bout fell through or was renamed)
+match_window_days: 3        # a result within this many days of the scheduled date counts as the same bout
+provisional_max_bouts: 3    # either fighter with this many UFC bouts or fewer marks the pick provisional
+exclude_events: ["Contender Series", "Road to UFC"]   # not UFC cards in the sense the model was built for
+publish_page: false         # when true, index.html links to picks.html in the main navigation
+confidence_bands: [0.5, 0.55, 0.6, 0.65, 0.7, 1.0]

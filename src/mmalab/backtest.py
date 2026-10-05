@@ -184,6 +184,20 @@ def calibration(df: pd.DataFrame, bins: int = 10) -> pd.DataFrame:
     return g
 
 
+def refresh_ratings() -> None:
+    """Weekly (--quick) path: rerun the two frozen specifications over the latest bouts and rewrite the
+    per-bout ledger and rating history, without repeating the grid search. Keeps the forward-validation
+    baselines (history.validate) and the prediction page current between full rebuilds."""
+    rep = json.loads((OUT / "backtest_report.json").read_text())
+    bouts = pd.read_csv(PROC / "bouts_with_stats.csv", parse_dates=["date"])
+    rated, hist = run_elo(bouts, EloParams(**rep["tuned_params"]))
+    classic_rated, _ = run_elo(bouts, EloParams(**rep["classic_tuned_params"]))
+    rated["p_a_classic"] = rated["bout_id"].map(dict(zip(classic_rated["bout_id"], classic_rated["p_a"])))
+    rated.to_csv(PROC / "bouts_rated.csv", index=False)
+    hist.to_csv(PROC / "elo_history.csv", index=False)
+    print(f"ratings refreshed with the frozen parameters: {len(rated):,} bouts through {bouts['date'].max().date()}")
+
+
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     bouts = pd.read_csv(PROC / "bouts_with_stats.csv", parse_dates=["date"])

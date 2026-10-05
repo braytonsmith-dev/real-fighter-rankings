@@ -1,9 +1,10 @@
-# Rebuilds the boards every Monday at 13:00 UTC (after the Sunday-night UFCStats
-# refresh) and commits the outputs, so GitHub Pages serves a fresh board each week.
+# Rebuilds the boards every Monday at 13:00 UTC (after the Sunday-night UFCStats refresh) and again on
+# Friday for late card changes, commits the outputs, and locks pre-event picks (predictions/picks.csv).
 name: weekly-boards
 on:
   schedule:
-    - cron: "0 13 * * 1"
+    - cron: "0 13 * * 1"   # Monday: new results in, boards rebuilt, picks locked for the next card
+    - cron: "0 13 * * 5"   # Friday: late-notice bouts and replacements get a pick before the weekend card
   workflow_dispatch:
 
 permissions:
