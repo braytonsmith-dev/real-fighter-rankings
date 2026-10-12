@@ -2,5 +2,4 @@
 # The rankings module derives each champion from the last undisputed title
 # bout; entries here override that. VACANT removes the champion row.
 # Keep the reason so the file audits itself.
-Heavyweight: VACANT            # Aspinall vacated Sept 14, 2026 (eye injury); Ciryl Gane holds the interim belt
-Women's Flyweight: VACANT      # Shevchenko vacated Sept 2026; Natalia Silva vs Wang Cong for the vacant title at UFC 332 (Oct 3)
+Heavyweight: Ciryl Gane        # interim champ promoted after Aspinall vacated Sept 14, 2026; Dana White, UFC 331 presser Sept 20; first defense vs Josh Hokit at UFC 334 (https://khelnow.com/ufc/has-ciryl-gane-been-promoted-to-heavyweight-champion-ahead-of-ufc-334-202609; ufc.com/rankings lists him as Champion)
