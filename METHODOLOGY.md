@@ -87,7 +87,7 @@ A **quality win** is valued by the opponent's official rank going into the fight
 
 ## 8. Validation
 
-Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.7 to 2.0 places; the public boards differ from each other by 0.9 to 1.6. Disagreement is expected and reported, not removed: `outputs/compare_flags.csv` lists every large gap with its cause.
+Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.7 to 2.1 places; the public boards differ from each other by 0.8 to 1.6. Disagreement is expected and reported, not removed: `outputs/compare_flags.csv` lists every large gap with its cause.
 
 The separate predictive model (performance-adjusted Elo, the specification a 520-point grid selected on 2010-2019) scores 60.6% accuracy and 0.6631 log loss on 3,390 held-out bouts from 2020 on, against 58.1% and 0.674 for results-only Elo (paired log-loss gain 0.011, 95% event-block bootstrap interval 0.006 to 0.016; McNemar exact p = 0.0025). On the 1,445 held-out bouts with closing odds (2020-2023) the de-vigged market scored 67.1% and 0.6088 against the model's 60.0% and 0.669.
 

@@ -1,357 +1,357 @@
 source,division,key,fighter,raw_rank,position,excluded,as_of,lab_fighter,lab_division,lab_position,rank_p10,rank_p90,score,lab_position_same_div,gap
 UFC media,Flyweight,joshua van,Joshua Van,0,,title holder,,Joshua Van,Flyweight,,0.0,0.0,0.7441863658478365,,
-UFC media,Flyweight,alexandre pantoja,Alexandre Pantoja,1,1.0,,2026-09-26,Alexandre Pantoja,Flyweight,4.0,4.0,5.0,0.7421138539120509,4.0,3.0
-UFC media,Flyweight,manel kape,Manel Kape,2,2.0,,2026-09-26,Manel Kape,Flyweight,1.0,1.0,1.0,0.7385386820839983,1.0,-1.0
-UFC media,Flyweight,brandon royval,Brandon Royval,3,3.0,,2026-09-26,Brandon Royval,Flyweight,3.0,3.0,7.0,0.3911586745989137,3.0,0.0
-UFC media,Flyweight,tatsuro taira,Tatsuro Taira,4,4.0,,2026-09-26,Tatsuro Taira,Flyweight,5.0,4.0,5.0,0.7360713842752062,5.0,1.0
-UFC media,Flyweight,kyoji horiguchi,Kyoji Horiguchi,5,5.0,,2026-09-26,Kyoji Horiguchi,Flyweight,2.0,2.0,2.0,0.5499188165618467,2.0,-3.0
-UFC media,Flyweight,loneer kavanagh,Lone'er Kavanagh,6,6.0,,2026-09-26,Lone'er Kavanagh,Flyweight,32.0,30.0,34.0,-0.1287991917592985,32.0,26.0
-UFC media,Flyweight,asu almabayev,Asu Almabayev,7,7.0,,2026-09-26,Asu Almabayev,Flyweight,7.0,3.0,7.0,0.3885035644061362,7.0,0.0
-UFC media,Flyweight,brandon moreno,Brandon Moreno,8,8.0,,2026-09-26,Brandon Moreno,Flyweight,6.0,6.0,6.0,0.6432321193210315,6.0,-2.0
-UFC media,Flyweight,amir albazi,Amir Albazi,9,9.0,,2026-09-26,Amir Albazi,Flyweight,10.0,9.0,14.0,0.1613759123037173,10.0,1.0
-UFC media,Flyweight,ramazan temirov,Ramazan Temirov,10,10.0,,2026-09-26,Ramazan Temirov,Flyweight,8.0,8.0,9.0,0.2214066728928855,8.0,-2.0
-UFC media,Flyweight,tim elliott,Tim Elliott,11,11.0,,2026-09-26,Tim Elliott,Flyweight,14.0,11.0,14.0,0.1348776872563933,14.0,3.0
-UFC media,Flyweight,steve erceg,Steve Erceg,12,12.0,,2026-09-26,Steve Erceg,Flyweight,30.0,28.0,31.0,-0.1040038635597628,30.0,18.0
-UFC media,Flyweight,sumudaerji,Sumudaerji,13,13.0,,2026-09-26,Sumudaerji,Flyweight,21.0,21.0,23.0,0.00475317107463,21.0,8.0
-UFC media,Flyweight,tagir ulanbekov,Tagir Ulanbekov,14,14.0,,2026-09-26,Tagir Ulanbekov,Flyweight,12.0,11.0,12.0,0.152762041387775,12.0,-2.0
-UFC media,Flyweight,alex perez,Alex Perez,15,15.0,,2026-09-26,Alex Perez,Flyweight,26.0,22.0,26.0,-0.0146843934385867,26.0,11.0
+UFC media,Flyweight,alexandre pantoja,Alexandre Pantoja,1,1.0,,2026-10-03,Alexandre Pantoja,Flyweight,4.0,4.0,5.0,0.7421138539120509,4.0,3.0
+UFC media,Flyweight,manel kape,Manel Kape,2,2.0,,2026-10-03,Manel Kape,Flyweight,1.0,1.0,1.0,0.7385386820839983,1.0,-1.0
+UFC media,Flyweight,brandon royval,Brandon Royval,3,3.0,,2026-10-03,Brandon Royval,Flyweight,3.0,3.0,7.0,0.3911586745989137,3.0,0.0
+UFC media,Flyweight,tatsuro taira,Tatsuro Taira,4,4.0,,2026-10-03,Tatsuro Taira,Flyweight,5.0,4.0,5.0,0.7360713842752062,5.0,1.0
+UFC media,Flyweight,kyoji horiguchi,Kyoji Horiguchi,5,5.0,,2026-10-03,Kyoji Horiguchi,Flyweight,2.0,2.0,2.0,0.5499188165618467,2.0,-3.0
+UFC media,Flyweight,loneer kavanagh,Lone’er Kavanagh,6,6.0,,2026-10-03,Lone'er Kavanagh,Flyweight,32.0,30.0,34.0,-0.1287991917592985,32.0,26.0
+UFC media,Flyweight,asu almabayev,Asu Almabayev,7,7.0,,2026-10-03,Asu Almabayev,Flyweight,7.0,3.0,7.0,0.3885035644061362,7.0,0.0
+UFC media,Flyweight,brandon moreno,Brandon Moreno,8,8.0,,2026-10-03,Brandon Moreno,Flyweight,6.0,6.0,6.0,0.6432321193210315,6.0,-2.0
+UFC media,Flyweight,amir albazi,Amir Albazi,9,9.0,,2026-10-03,Amir Albazi,Flyweight,10.0,9.0,14.0,0.1613759123037173,10.0,1.0
+UFC media,Flyweight,ramazan temirov,Ramazan Temirov,10,10.0,,2026-10-03,Ramazan Temirov,Flyweight,8.0,8.0,9.0,0.2214066728928855,8.0,-2.0
+UFC media,Flyweight,tim elliott,Tim Elliott,11,11.0,,2026-10-03,Tim Elliott,Flyweight,14.0,11.0,14.0,0.1348776872563933,14.0,3.0
+UFC media,Flyweight,steve erceg,Steve Erceg,12,12.0,,2026-10-03,Steve Erceg,Flyweight,30.0,28.0,31.0,-0.1040038635597628,30.0,18.0
+UFC media,Flyweight,sumudaerji,Sumudaerji,13,13.0,,2026-10-03,Sumudaerji,Flyweight,21.0,21.0,23.0,0.00475317107463,21.0,8.0
+UFC media,Flyweight,tagir ulanbekov,Tagir Ulanbekov,14,14.0,,2026-10-03,Tagir Ulanbekov,Flyweight,12.0,11.0,12.0,0.152762041387775,12.0,-2.0
+UFC media,Flyweight,alex perez,Alex Perez,15,15.0,,2026-10-03,Alex Perez,Flyweight,26.0,22.0,26.0,-0.0146843934385867,26.0,11.0
 UFC media,Bantamweight,petr yan,Petr Yan,0,,title holder,,Petr Yan,Bantamweight,,0.0,0.0,1.2170638481610794,,
-UFC media,Bantamweight,merab dvalishvili,Merab Dvalishvili,1,1.0,,2026-09-26,Merab Dvalishvili,Bantamweight,1.0,1.0,1.0,1.4945438631492436,1.0,0.0
-UFC media,Bantamweight,sean omalley,Sean O'Malley,2,2.0,,2026-09-26,Sean O'Malley,Bantamweight,2.0,2.0,2.0,1.0932899465853525,2.0,0.0
-UFC media,Bantamweight,song yadong,Song Yadong,3,3.0,,2026-09-26,Song Yadong,Bantamweight,3.0,3.0,3.0,1.2370316038738611,3.0,0.0
-UFC media,Bantamweight,umar nurmagomedov,Umar Nurmagomedov,4,4.0,,2026-09-26,Umar Nurmagomedov,Bantamweight,4.0,4.0,4.0,0.9149460933750088,4.0,0.0
-UFC media,Bantamweight,mario bautista,Mario Bautista,5,5.0,,2026-09-26,Mario Bautista,Bantamweight,5.0,5.0,5.0,0.7155248235551568,5.0,0.0
-UFC media,Bantamweight,cory sandhagen,Cory Sandhagen,6,6.0,,2026-09-26,Cory Sandhagen,Bantamweight,6.0,6.0,6.0,0.7082074061849748,6.0,0.0
-UFC media,Bantamweight,aiemann zahabi,Aiemann Zahabi,7,7.0,,2026-09-26,Aiemann Zahabi,Bantamweight,14.0,14.0,18.0,0.3389581253352079,14.0,7.0
-UFC media,Bantamweight,david martinez,David Martinez,8,8.0,,2026-09-26,David Martinez,Bantamweight,11.0,7.0,11.0,0.4964900602140247,11.0,3.0
-UFC media,Bantamweight,deiveson figueiredo,Deiveson Figueiredo,9,9.0,,2026-09-26,Deiveson Figueiredo,Bantamweight,48.0,47.0,52.0,-0.0451663793710608,48.0,39.0
-UFC media,Bantamweight,marlon vera,Marlon Vera,10,10.0,,2026-09-26,Marlon Vera,Bantamweight,52.0,45.0,62.0,-0.0945949047300287,52.0,42.0
-UFC media,Bantamweight,raul rosas jr,Raul Rosas Jr.,11,11.0,,2026-09-26,Raul Rosas Jr.,Bantamweight,10.0,9.0,10.0,0.5292393668599426,10.0,-1.0
-UFC media,Bantamweight,payton talbott,Payton Talbott,12,12.0,,2026-09-26,Payton Talbott,Bantamweight,9.0,8.0,9.0,0.5312729540992376,9.0,-3.0
-UFC media,Bantamweight,farid basharat,Farid Basharat,13,13.0,,2026-09-26,Farid Basharat,Bantamweight,15.0,14.0,17.0,0.3310197339798251,15.0,2.0
-UFC media,Bantamweight,raoni barcelos,Raoni Barcelos,14,14.0,,2026-09-26,Raoni Barcelos,Bantamweight,16.0,11.0,16.0,0.3271260728940755,16.0,2.0
-UFC media,Bantamweight,marcus mcghee,Marcus McGhee,15,15.0,,2026-09-26,Marcus McGhee,Bantamweight,7.0,7.0,8.0,0.5491903904304865,7.0,-8.0
+UFC media,Bantamweight,merab dvalishvili,Merab Dvalishvili,1,1.0,,2026-10-03,Merab Dvalishvili,Bantamweight,1.0,1.0,1.0,1.4945438631492436,1.0,0.0
+UFC media,Bantamweight,sean omalley,Sean O'Malley,2,2.0,,2026-10-03,Sean O'Malley,Bantamweight,2.0,2.0,2.0,1.0932899465853525,2.0,0.0
+UFC media,Bantamweight,song yadong,Song Yadong,3,3.0,,2026-10-03,Song Yadong,Bantamweight,3.0,3.0,3.0,1.2370316038738611,3.0,0.0
+UFC media,Bantamweight,umar nurmagomedov,Umar Nurmagomedov,4,4.0,,2026-10-03,Umar Nurmagomedov,Bantamweight,4.0,4.0,4.0,0.9149460933750088,4.0,0.0
+UFC media,Bantamweight,mario bautista,Mario Bautista,5,5.0,,2026-10-03,Mario Bautista,Bantamweight,5.0,5.0,5.0,0.7155248235551568,5.0,0.0
+UFC media,Bantamweight,cory sandhagen,Cory Sandhagen,6,6.0,,2026-10-03,Cory Sandhagen,Bantamweight,6.0,6.0,6.0,0.7082074061849748,6.0,0.0
+UFC media,Bantamweight,payton talbott,Payton Talbott,7,7.0,,2026-10-03,Payton Talbott,Bantamweight,9.0,8.0,9.0,0.5312729540992376,9.0,2.0
+UFC media,Bantamweight,aiemann zahabi,Aiemann Zahabi,8,8.0,,2026-10-03,Aiemann Zahabi,Bantamweight,14.0,14.0,18.0,0.3389581253352079,14.0,6.0
+UFC media,Bantamweight,david martinez,David Martinez,9,9.0,,2026-10-03,David Martinez,Bantamweight,11.0,7.0,11.0,0.4964900602140247,11.0,2.0
+UFC media,Bantamweight,raul rosas jr,Raul Rosas Jr.,10,10.0,,2026-10-03,Raul Rosas Jr.,Bantamweight,10.0,9.0,10.0,0.5292393668599426,10.0,0.0
+UFC media,Bantamweight,marlon vera,Marlon Vera,11,11.0,,2026-10-03,Marlon Vera,Bantamweight,52.0,45.0,62.0,-0.0945949047300287,52.0,41.0
+UFC media,Bantamweight,deiveson figueiredo,Deiveson Figueiredo,12,12.0,,2026-10-03,Deiveson Figueiredo,Bantamweight,48.0,47.0,52.0,-0.0451663793710608,48.0,36.0
+UFC media,Bantamweight,farid basharat,Farid Basharat,13,13.0,,2026-10-03,Farid Basharat,Bantamweight,15.0,14.0,17.0,0.3310197339798251,15.0,2.0
+UFC media,Bantamweight,marcus mcghee,Marcus McGhee,14,14.0,,2026-10-03,Marcus McGhee,Bantamweight,7.0,7.0,8.0,0.5491903904304865,7.0,-7.0
+UFC media,Bantamweight,raoni barcelos,Raoni Barcelos,15,15.0,,2026-10-03,Raoni Barcelos,Bantamweight,16.0,11.0,16.0,0.3271260728940755,16.0,1.0
 UFC media,Featherweight,alexander volkanovski,Alexander Volkanovski,0,,title holder,,Alexander Volkanovski,Featherweight,,0.0,0.0,1.5086233083732543,,
-UFC media,Featherweight,movsar evloev,Movsar Evloev,1,1.0,,2026-09-26,Movsar Evloev,Featherweight,2.0,2.0,3.0,0.856141356464669,2.0,1.0
-UFC media,Featherweight,diego lopes,Diego Lopes,2,2.0,,2026-09-26,Diego Lopes,Featherweight,3.0,2.0,3.0,0.7658404344244036,3.0,1.0
-UFC media,Featherweight,lerone murphy,Lerone Murphy,3,3.0,,2026-09-26,Lerone Murphy,Featherweight,7.0,5.0,7.0,0.6359306940150546,7.0,4.0
-UFC media,Featherweight,aljamain sterling,Aljamain Sterling,4,4.0,,2026-09-26,Aljamain Sterling,Featherweight,1.0,1.0,1.0,1.5305410505949606,1.0,-3.0
-UFC media,Featherweight,jean silva,Jean Silva,5,5.0,,2026-09-26,Jean Silva,Featherweight,5.0,5.0,7.0,0.664737916750021,5.0,0.0
-UFC media,Featherweight,yair rodriguez,Yair Rodriguez,6,6.0,,2026-09-26,Yair Rodriguez,Featherweight,4.0,4.0,4.0,0.7517499938135934,4.0,-2.0
-UFC media,Featherweight,arnold allen,Arnold Allen,7,7.0,,2026-09-26,Arnold Allen,Featherweight,10.0,9.0,10.0,0.4862599346774231,10.0,3.0
-UFC media,Featherweight,youssef zalal,Youssef Zalal,8,8.0,,2026-09-26,Youssef Zalal,Featherweight,9.0,9.0,11.0,0.4900448336461925,9.0,1.0
-UFC media,Featherweight,kevin vallejos,Kevin Vallejos,9,9.0,,2026-09-26,Kevin Vallejos,Featherweight,8.0,8.0,8.0,0.5133870679671046,8.0,-1.0
-UFC media,Featherweight,steve garcia,Steve Garcia,10,10.0,,2026-09-26,Steve Garcia,Featherweight,6.0,5.0,6.0,0.6534476923969423,6.0,-4.0
-UFC media,Featherweight,aaron pico,Aaron Pico,11,11.0,,2026-09-26,Aaron Pico,Featherweight,44.0,42.0,46.0,-0.0567524633284824,44.0,33.0
-UFC media,Featherweight,melquizael costa,Melquizael Costa,12,12.0,,2026-09-26,Melquizael Costa,Featherweight,25.0,25.0,27.0,0.1636940846336667,25.0,13.0
-UFC media,Featherweight,brian ortega,Brian Ortega,13,13.0,,2026-09-26,Brian Ortega,Featherweight,41.0,40.0,41.0,-0.0086585847651856,41.0,28.0
-UFC media,Featherweight,patricio freire,Patricio Pitbull,14,14.0,,2026-09-26,Patricio Pitbull,Featherweight,46.0,44.0,49.0,-0.0727364780584279,46.0,32.0
-UFC media,Featherweight,patricio freire,Patricio Pitbull,14,14.0,,2026-09-26,Patricio Freire,Featherweight,48.0,43.0,55.0,-0.0823053285614949,48.0,34.0
-UFC media,Featherweight,david onama,David Onama,15,15.0,,2026-09-26,David Onama,Featherweight,21.0,20.0,22.0,0.1998485526800492,21.0,6.0
+UFC media,Featherweight,movsar evloev,Movsar Evloev,1,1.0,,2026-10-03,Movsar Evloev,Featherweight,2.0,2.0,3.0,0.856141356464669,2.0,1.0
+UFC media,Featherweight,diego lopes,Diego Lopes,2,2.0,,2026-10-03,Diego Lopes,Featherweight,3.0,2.0,3.0,0.7658404344244036,3.0,1.0
+UFC media,Featherweight,lerone murphy,Lerone Murphy,3,3.0,,2026-10-03,Lerone Murphy,Featherweight,7.0,5.0,7.0,0.6359306940150546,7.0,4.0
+UFC media,Featherweight,aljamain sterling,Aljamain Sterling,4,4.0,,2026-10-03,Aljamain Sterling,Featherweight,1.0,1.0,1.0,1.5305410505949606,1.0,-3.0
+UFC media,Featherweight,jean silva,Jean Silva,5,5.0,,2026-10-03,Jean Silva,Featherweight,5.0,5.0,7.0,0.664737916750021,5.0,0.0
+UFC media,Featherweight,yair rodriguez,Yair Rodriguez,6,6.0,,2026-10-03,Yair Rodriguez,Featherweight,4.0,4.0,4.0,0.7517499938135934,4.0,-2.0
+UFC media,Featherweight,arnold allen,Arnold Allen,7,7.0,,2026-10-03,Arnold Allen,Featherweight,10.0,9.0,10.0,0.4862599346774231,10.0,3.0
+UFC media,Featherweight,youssef zalal,Youssef Zalal,8,8.0,,2026-10-03,Youssef Zalal,Featherweight,9.0,9.0,11.0,0.4900448336461925,9.0,1.0
+UFC media,Featherweight,kevin vallejos,Kevin Vallejos,9,9.0,,2026-10-03,Kevin Vallejos,Featherweight,8.0,8.0,8.0,0.5133870679671046,8.0,-1.0
+UFC media,Featherweight,steve garcia,Steve Garcia,10,10.0,,2026-10-03,Steve Garcia,Featherweight,6.0,5.0,6.0,0.6534476923969423,6.0,-4.0
+UFC media,Featherweight,aaron pico,Aaron Pico,11,11.0,,2026-10-03,Aaron Pico,Featherweight,44.0,42.0,46.0,-0.0567524633284824,44.0,33.0
+UFC media,Featherweight,melquizael costa,Melquizael Costa,12,12.0,,2026-10-03,Melquizael Costa,Featherweight,25.0,25.0,27.0,0.1636940846336667,25.0,13.0
+UFC media,Featherweight,brian ortega,Brian Ortega,13,13.0,,2026-10-03,Brian Ortega,Featherweight,41.0,40.0,41.0,-0.0086585847651856,41.0,28.0
+UFC media,Featherweight,patricio freire,Patricio Pitbull,14,14.0,,2026-10-03,Patricio Pitbull,Featherweight,46.0,44.0,49.0,-0.0727364780584279,46.0,32.0
+UFC media,Featherweight,patricio freire,Patricio Pitbull,14,14.0,,2026-10-03,Patricio Freire,Featherweight,48.0,43.0,55.0,-0.0823053285614949,48.0,34.0
+UFC media,Featherweight,david onama,David Onama,15,15.0,,2026-10-03,David Onama,Featherweight,21.0,20.0,22.0,0.1998485526800492,21.0,6.0
 UFC media,Lightweight,justin gaethje,Justin Gaethje,0,,title holder,,Justin Gaethje,Lightweight,,0.0,0.0,1.2445343386568792,,
-UFC media,Lightweight,ilia topuria,Ilia Topuria,1,1.0,,2026-09-26,Ilia Topuria,Lightweight,3.0,3.0,3.0,1.24924670067826,3.0,2.0
-UFC media,Lightweight,arman tsarukyan,Arman Tsarukyan,2,2.0,,2026-09-26,Arman Tsarukyan,Lightweight,4.0,4.0,4.0,1.126991822996272,4.0,2.0
-UFC media,Lightweight,charles oliveira,Charles Oliveira,3,3.0,,2026-09-26,Charles Oliveira,Lightweight,1.0,1.0,1.0,1.4823204443200226,1.0,-2.0
-UFC media,Lightweight,max holloway,Max Holloway,4,4.0,,2026-09-26,Max Holloway,Lightweight,2.0,2.0,2.0,1.5381244530030502,2.0,-2.0
-UFC media,Lightweight,paddy pimblett,Paddy Pimblett,5,5.0,,2026-09-26,Paddy Pimblett,Lightweight,5.0,5.0,5.0,0.7308093048542934,5.0,0.0
-UFC media,Lightweight,benoit saint denis,Benoît Saint Denis,6,6.0,,2026-09-26,Benoit Saint Denis,Lightweight,7.0,7.0,8.0,0.6248859664802027,7.0,1.0
-UFC media,Lightweight,quillan salkilld,Quillan Salkilld,7,7.0,,2026-09-26,Quillan Salkilld,Lightweight,8.0,6.0,9.0,0.6184464241582748,8.0,1.0
-UFC media,Lightweight,mauricio ruffy,Mauricio Ruffy,8,8.0,,2026-09-26,Mauricio Ruffy,Lightweight,13.0,12.0,16.0,0.2425617569040016,13.0,5.0
-UFC media,Lightweight,salahdine parnasse,Salahdine Parnasse,9,9.0,,2026-09-26,Salahdine Parnasse,Lightweight,26.0,19.0,31.0,0.139117678848275,26.0,17.0
-UFC media,Lightweight,mateusz gamrot,Mateusz Gamrot,10,10.0,,2026-09-26,Mateusz Gamrot,Lightweight,10.0,10.0,10.0,0.4391489738108425,10.0,0.0
-UFC media,Lightweight,rafael fiziev,Rafael Fiziev,11,11.0,,2026-09-26,Rafael Fiziev,Lightweight,14.0,13.0,18.0,0.2677069506961754,14.0,3.0
-UFC media,Lightweight,renato moicano,Renato Moicano,12,12.0,,2026-09-26,Renato Moicano,Lightweight,6.0,6.0,7.0,0.5702791773738185,6.0,-6.0
-UFC media,Lightweight,dan hooker,Dan Hooker,13,13.0,,2026-09-26,Dan Hooker,Lightweight,39.0,39.0,44.0,-0.0004665825036897,39.0,26.0
-UFC media,Lightweight,tom nolan,Tom Nolan,14,14.0,,2026-09-26,Tom Nolan,Lightweight,27.0,26.0,28.0,0.1215219666587734,27.0,13.0
-UFC media,Lightweight,beneil dariush,Beneil Dariush,15,15.0,,2026-09-26,Beneil Dariush,Lightweight,66.0,56.0,73.0,-0.2125959426775263,66.0,51.0
+UFC media,Lightweight,ilia topuria,Ilia Topuria,1,1.0,,2026-10-03,Ilia Topuria,Lightweight,3.0,3.0,3.0,1.24924670067826,3.0,2.0
+UFC media,Lightweight,arman tsarukyan,Arman Tsarukyan,2,2.0,,2026-10-03,Arman Tsarukyan,Lightweight,4.0,4.0,4.0,1.126991822996272,4.0,2.0
+UFC media,Lightweight,charles oliveira,Charles Oliveira,3,3.0,,2026-10-03,Charles Oliveira,Lightweight,1.0,1.0,1.0,1.4823204443200226,1.0,-2.0
+UFC media,Lightweight,max holloway,Max Holloway,4,4.0,,2026-10-03,Max Holloway,Lightweight,2.0,2.0,2.0,1.5381244530030502,2.0,-2.0
+UFC media,Lightweight,paddy pimblett,Paddy Pimblett,5,5.0,,2026-10-03,Paddy Pimblett,Lightweight,5.0,5.0,5.0,0.7308093048542934,5.0,0.0
+UFC media,Lightweight,benoit saint denis,Benoît Saint Denis,6,6.0,,2026-10-03,Benoit Saint Denis,Lightweight,7.0,7.0,8.0,0.6248859664802027,7.0,1.0
+UFC media,Lightweight,quillan salkilld,Quillan Salkilld,7,7.0,,2026-10-03,Quillan Salkilld,Lightweight,8.0,6.0,9.0,0.6184464241582748,8.0,1.0
+UFC media,Lightweight,mauricio ruffy,Mauricio Ruffy,8,8.0,,2026-10-03,Mauricio Ruffy,Lightweight,13.0,12.0,16.0,0.2425617569040016,13.0,5.0
+UFC media,Lightweight,salahdine parnasse,Salahdine Parnasse,9,9.0,,2026-10-03,Salahdine Parnasse,Lightweight,26.0,19.0,31.0,0.139117678848275,26.0,17.0
+UFC media,Lightweight,mateusz gamrot,Mateusz Gamrot,10,10.0,,2026-10-03,Mateusz Gamrot,Lightweight,10.0,10.0,10.0,0.4391489738108425,10.0,0.0
+UFC media,Lightweight,rafael fiziev,Rafael Fiziev,11,11.0,,2026-10-03,Rafael Fiziev,Lightweight,14.0,13.0,18.0,0.2677069506961754,14.0,3.0
+UFC media,Lightweight,renato moicano,Renato Moicano,12,12.0,,2026-10-03,Renato Moicano,Lightweight,6.0,6.0,7.0,0.5702791773738185,6.0,-6.0
+UFC media,Lightweight,dan hooker,Dan Hooker,13,13.0,,2026-10-03,Dan Hooker,Lightweight,39.0,39.0,44.0,-0.0004665825036897,39.0,26.0
+UFC media,Lightweight,tom nolan,Tom Nolan,14,14.0,,2026-10-03,Tom Nolan,Lightweight,27.0,26.0,28.0,0.1215219666587734,27.0,13.0
+UFC media,Lightweight,beneil dariush,Beneil Dariush,15,15.0,,2026-10-03,Beneil Dariush,Lightweight,66.0,56.0,73.0,-0.2125959426775263,66.0,51.0
 UFC media,Welterweight,islam makhachev,Islam Makhachev,0,,title holder,,Islam Makhachev,Welterweight,,0.0,0.0,1.6459274490188924,,
-UFC media,Welterweight,ian machado garry,Ian Machado Garry,1,1.0,,2026-09-26,Ian Machado Garry,Welterweight,4.0,4.0,4.0,0.7696994854635487,4.0,3.0
-UFC media,Welterweight,carlos prates,Carlos Prates,2,2.0,,2026-09-26,Carlos Prates,Welterweight,3.0,3.0,3.0,0.7804669220512302,3.0,1.0
-UFC media,Welterweight,michael morales,Michael Morales,3,3.0,,2026-09-26,Michael Morales,Welterweight,1.0,1.0,1.0,0.6892521596455798,1.0,-2.0
-UFC media,Welterweight,jack della maddalena,Jack Della Maddalena,4,4.0,,2026-09-26,Jack Della Maddalena,Welterweight,5.0,5.0,6.0,0.547303776073499,5.0,1.0
-UFC media,Welterweight,gabriel bonfim,Gabriel Bonfim,5,5.0,,2026-09-26,Gabriel Bonfim,Welterweight,6.0,6.0,7.0,0.5025060948843145,6.0,1.0
-UFC media,Welterweight,sean brady,Sean Brady,6,6.0,,2026-09-26,Sean Brady,Welterweight,2.0,2.0,2.0,0.7987184135268439,2.0,-4.0
-UFC media,Welterweight,belal muhammad,Belal Muhammad,7,7.0,,2026-09-26,Belal Muhammad,Welterweight,7.0,7.0,8.0,0.5688704157330061,7.0,0.0
-UFC media,Welterweight,leon edwards,Leon Edwards,8,8.0,,2026-09-26,Leon Edwards,Welterweight,8.0,8.0,9.0,0.5422405957856647,8.0,0.0
-UFC media,Welterweight,kamaru usman,Kamaru Usman,9,9.0,,2026-09-26,Kamaru Usman,Welterweight,10.0,10.0,10.0,0.4492063515950665,10.0,1.0
-UFC media,Welterweight,joaquin buckley,Joaquin Buckley,10,10.0,,2026-09-26,Joaquin Buckley,Welterweight,9.0,5.0,9.0,0.5103728774191706,9.0,-1.0
-UFC media,Welterweight,yaroslav amosov,Yaroslav Amosov,11,11.0,,2026-09-26,Yaroslav Amosov,Welterweight,15.0,15.0,23.0,0.2473157782849388,15.0,4.0
-UFC media,Welterweight,uros medic,Uroš Medić,12,12.0,,2026-09-26,Uros Medic,Welterweight,17.0,16.0,18.0,0.2576875438071965,17.0,5.0
-UFC media,Welterweight,mike malott,Mike Malott,13,13.0,,2026-09-26,Mike Malott,Welterweight,14.0,14.0,15.0,0.3016140203809575,14.0,1.0
-UFC media,Welterweight,daniel rodriguez,Daniel Rodriguez,14,14.0,,2026-09-26,Daniel Rodriguez,Welterweight,18.0,17.0,19.0,0.2701998258652328,18.0,4.0
-UFC media,Welterweight,neil magny,Neil Magny,15,15.0,,2026-09-26,Neil Magny,Welterweight,16.0,12.0,16.0,0.2925282238717662,16.0,1.0
+UFC media,Welterweight,ian machado garry,Ian Machado Garry,1,1.0,,2026-10-03,Ian Machado Garry,Welterweight,4.0,4.0,4.0,0.7696994854635487,4.0,3.0
+UFC media,Welterweight,carlos prates,Carlos Prates,2,2.0,,2026-10-03,Carlos Prates,Welterweight,3.0,3.0,3.0,0.7804669220512302,3.0,1.0
+UFC media,Welterweight,michael morales,Michael Morales,3,3.0,,2026-10-03,Michael Morales,Welterweight,1.0,1.0,1.0,0.6892521596455798,1.0,-2.0
+UFC media,Welterweight,jack della maddalena,Jack Della Maddalena,4,4.0,,2026-10-03,Jack Della Maddalena,Welterweight,5.0,5.0,6.0,0.547303776073499,5.0,1.0
+UFC media,Welterweight,gabriel bonfim,Gabriel Bonfim,5,5.0,,2026-10-03,Gabriel Bonfim,Welterweight,6.0,6.0,7.0,0.5025060948843145,6.0,1.0
+UFC media,Welterweight,sean brady,Sean Brady,6,6.0,,2026-10-03,Sean Brady,Welterweight,2.0,2.0,2.0,0.7987184135268439,2.0,-4.0
+UFC media,Welterweight,belal muhammad,Belal Muhammad,7,7.0,,2026-10-03,Belal Muhammad,Welterweight,7.0,7.0,8.0,0.5688704157330061,7.0,0.0
+UFC media,Welterweight,leon edwards,Leon Edwards,8,8.0,,2026-10-03,Leon Edwards,Welterweight,8.0,8.0,9.0,0.5422405957856647,8.0,0.0
+UFC media,Welterweight,kamaru usman,Kamaru Usman,9,9.0,,2026-10-03,Kamaru Usman,Welterweight,10.0,10.0,10.0,0.4492063515950665,10.0,1.0
+UFC media,Welterweight,joaquin buckley,Joaquin Buckley,10,10.0,,2026-10-03,Joaquin Buckley,Welterweight,9.0,5.0,9.0,0.5103728774191706,9.0,-1.0
+UFC media,Welterweight,yaroslav amosov,Yaroslav Amosov,11,11.0,,2026-10-03,Yaroslav Amosov,Welterweight,15.0,15.0,23.0,0.2473157782849388,15.0,4.0
+UFC media,Welterweight,uros medic,Uroš Medić,12,12.0,,2026-10-03,Uros Medic,Welterweight,17.0,16.0,18.0,0.2576875438071965,17.0,5.0
+UFC media,Welterweight,mike malott,Mike Malott,13,13.0,,2026-10-03,Mike Malott,Welterweight,14.0,14.0,15.0,0.3016140203809575,14.0,1.0
+UFC media,Welterweight,daniel rodriguez,Daniel Rodriguez,14,14.0,,2026-10-03,Daniel Rodriguez,Welterweight,18.0,17.0,19.0,0.2701998258652328,18.0,4.0
+UFC media,Welterweight,neil magny,Neil Magny,15,15.0,,2026-10-03,Neil Magny,Welterweight,16.0,12.0,16.0,0.2925282238717662,16.0,1.0
 UFC media,Middleweight,sean strickland,Sean Strickland,0,,title holder,,Sean Strickland,Middleweight,,0.0,0.0,0.9773143361064592,,
-UFC media,Middleweight,khamzat chimaev,Khamzat Chimaev,1,1.0,,2026-09-26,Khamzat Chimaev,Middleweight,1.0,1.0,1.0,0.9970070488373162,1.0,0.0
-UFC media,Middleweight,dricus du plessis,Dricus Du Plessis,2,2.0,,2026-09-26,Dricus Du Plessis,Middleweight,2.0,2.0,2.0,1.138295450129814,2.0,0.0
-UFC media,Middleweight,nassourdine imavov,Nassourdine Imavov,3,3.0,,2026-09-26,Nassourdine Imavov,Middleweight,4.0,3.0,4.0,0.8895085802665785,4.0,1.0
-UFC media,Middleweight,brendan allen,Brendan Allen,4,4.0,,2026-09-26,Brendan Allen,Middleweight,3.0,3.0,4.0,0.9059424769302368,3.0,-1.0
-UFC media,Middleweight,caio borralho,Caio Borralho,5,5.0,,2026-09-26,Caio Borralho,Middleweight,9.0,9.0,9.0,0.4949575261179274,9.0,4.0
-UFC media,Middleweight,joe pyfer,Joe Pyfer,6,6.0,,2026-09-26,Joe Pyfer,Middleweight,6.0,6.0,6.0,0.576438048558003,6.0,0.0
-UFC media,Middleweight,gregory rodrigues,Gregory Rodrigues,7,7.0,,2026-09-26,Gregory Rodrigues,Middleweight,7.0,7.0,7.0,0.5595209758282103,7.0,0.0
-UFC media,Middleweight,anthony hernandez,Anthony Hernandez,8,8.0,,2026-09-26,Anthony Hernandez,Middleweight,8.0,8.0,8.0,0.5464816064210871,8.0,0.0
-UFC media,Middleweight,israel adesanya,Israel Adesanya,9,9.0,,2026-09-26,Israel Adesanya,Middleweight,27.0,23.0,32.0,0.0966538460925364,27.0,18.0
-UFC media,Middleweight,christian leroy duncan,Christian Leroy Duncan,10,10.0,,2026-09-26,Christian Leroy Duncan,Middleweight,10.0,10.0,10.0,0.457015628359018,10.0,0.0
-UFC media,Middleweight,jared cannonier,Jared Cannonier,11,11.0,,2026-09-26,Jared Cannonier,Middleweight,58.0,57.0,58.0,-0.3590779328375977,58.0,47.0
-UFC media,Middleweight,abus magomedov,Abus Magomedov,12,12.0,,2026-09-26,Abus Magomedov,Middleweight,23.0,22.0,24.0,0.1730883165129252,23.0,11.0
-UFC media,Middleweight,ikram aliskerov,Ikram Aliskerov,13,13.0,,2026-09-26,Ikram Aliskerov,Middleweight,12.0,11.0,13.0,0.2783392854025386,12.0,-1.0
-UFC media,Middleweight,bo nickal,Bo Nickal,14,14.0,,2026-09-26,Bo Nickal,Middleweight,14.0,13.0,16.0,0.2602763345200641,14.0,0.0
-UFC media,Middleweight,shara magomedov,Shara Magomedov,15,15.0,,2026-09-26,Shara Magomedov,Middleweight,17.0,15.0,20.0,0.2310172156811116,17.0,2.0
+UFC media,Middleweight,khamzat chimaev,Khamzat Chimaev,1,1.0,,2026-10-03,Khamzat Chimaev,Middleweight,1.0,1.0,1.0,0.9970070488373162,1.0,0.0
+UFC media,Middleweight,dricus du plessis,Dricus Du Plessis,2,2.0,,2026-10-03,Dricus Du Plessis,Middleweight,2.0,2.0,2.0,1.138295450129814,2.0,0.0
+UFC media,Middleweight,nassourdine imavov,Nassourdine Imavov,3,3.0,,2026-10-03,Nassourdine Imavov,Middleweight,4.0,3.0,4.0,0.8895085802665785,4.0,1.0
+UFC media,Middleweight,brendan allen,Brendan Allen,4,4.0,,2026-10-03,Brendan Allen,Middleweight,3.0,3.0,4.0,0.9059424769302368,3.0,-1.0
+UFC media,Middleweight,caio borralho,Caio Borralho,5,5.0,,2026-10-03,Caio Borralho,Middleweight,9.0,9.0,9.0,0.4949575261179274,9.0,4.0
+UFC media,Middleweight,joe pyfer,Joe Pyfer,6,6.0,,2026-10-03,Joe Pyfer,Middleweight,6.0,6.0,6.0,0.576438048558003,6.0,0.0
+UFC media,Middleweight,gregory rodrigues,Gregory Rodrigues,7,7.0,,2026-10-03,Gregory Rodrigues,Middleweight,7.0,7.0,7.0,0.5595209758282103,7.0,0.0
+UFC media,Middleweight,anthony hernandez,Anthony Hernandez,8,8.0,,2026-10-03,Anthony Hernandez,Middleweight,8.0,8.0,8.0,0.5464816064210871,8.0,0.0
+UFC media,Middleweight,israel adesanya,Israel Adesanya,9,9.0,,2026-10-03,Israel Adesanya,Middleweight,27.0,23.0,32.0,0.0966538460925364,27.0,18.0
+UFC media,Middleweight,christian leroy duncan,Christian Leroy Duncan,10,10.0,,2026-10-03,Christian Leroy Duncan,Middleweight,10.0,10.0,10.0,0.457015628359018,10.0,0.0
+UFC media,Middleweight,jared cannonier,Jared Cannonier,11,11.0,,2026-10-03,Jared Cannonier,Middleweight,58.0,57.0,58.0,-0.3590779328375977,58.0,47.0
+UFC media,Middleweight,abus magomedov,Abus Magomedov,12,12.0,,2026-10-03,Abus Magomedov,Middleweight,23.0,22.0,24.0,0.1730883165129252,23.0,11.0
+UFC media,Middleweight,ikram aliskerov,Ikram Aliskerov,13,13.0,,2026-10-03,Ikram Aliskerov,Middleweight,12.0,11.0,13.0,0.2783392854025386,12.0,-1.0
+UFC media,Middleweight,bo nickal,Bo Nickal,14,14.0,,2026-10-03,Bo Nickal,Middleweight,14.0,13.0,16.0,0.2602763345200641,14.0,0.0
+UFC media,Middleweight,shara magomedov,Shara Magomedov,15,15.0,,2026-10-03,Shara Magomedov,Middleweight,17.0,15.0,20.0,0.2310172156811116,17.0,2.0
 UFC media,Light Heavyweight,carlos ulberg,Carlos Ulberg,0,,title holder,,Carlos Ulberg,Light Heavyweight,,0.0,0.0,0.838640901655892,,
-UFC media,Light Heavyweight,magomed ankalaev,Magomed Ankalaev,1,1.0,,2026-09-26,Magomed Ankalaev,Light Heavyweight,1.0,1.0,1.0,1.008895136297413,1.0,0.0
-UFC media,Light Heavyweight,jiri prochazka,Jiří Procházka,2,2.0,,2026-09-26,Jiri Prochazka,Light Heavyweight,4.0,4.0,4.0,0.8360969042168567,4.0,2.0
-UFC media,Light Heavyweight,alex pereira,Alex Pereira,3,3.0,,2026-09-26,Alex Pereira,Heavyweight,4.0,4.0,4.0,1.206068197091574,,
-UFC media,Light Heavyweight,khalil rountree jr,Khalil Rountree Jr.,4,4.0,,2026-09-26,Khalil Rountree Jr.,Light Heavyweight,9.0,7.0,9.0,0.4309597709659954,9.0,5.0
-UFC media,Light Heavyweight,navajo stirling,Navajo Stirling,5,5.0,,2026-09-26,Navajo Stirling,Light Heavyweight,3.0,3.0,5.0,0.5133541150655825,3.0,-2.0
-UFC media,Light Heavyweight,paulo costa,Paulo Costa,6,6.0,,2026-09-26,Paulo Costa,Light Heavyweight,2.0,2.0,2.0,0.7371013965952522,2.0,-4.0
-UFC media,Light Heavyweight,jamahal hill,Jamahal Hill,7,7.0,,2026-09-26,Jamahal Hill,Light Heavyweight,18.0,17.0,22.0,0.0429868409810537,18.0,11.0
-UFC media,Light Heavyweight,azamat murzakanov,Azamat Murzakanov,8,8.0,,2026-09-26,Azamat Murzakanov,Light Heavyweight,7.0,6.0,9.0,0.4610202069629681,7.0,-1.0
-UFC media,Light Heavyweight,jan blachowicz,Jan Błachowicz,9,9.0,,2026-09-26,Jan Blachowicz,Light Heavyweight,27.0,27.0,28.0,-0.0499893760562321,27.0,18.0
-UFC media,Light Heavyweight,dominick reyes,Dominick Reyes,10,10.0,,2026-09-26,Dominick Reyes,Light Heavyweight,5.0,5.0,6.0,0.4963676404648199,5.0,-5.0
-UFC media,Light Heavyweight,bogdan guskov,Bogdan Guskov,11,11.0,,2026-09-26,Bogdan Guskov,Light Heavyweight,8.0,8.0,8.0,0.442871941513455,8.0,-3.0
-UFC media,Light Heavyweight,robert whittaker,Robert Whittaker,12,12.0,,2026-09-26,Robert Whittaker,Middleweight,5.0,5.0,5.0,0.7125476630723131,,
-UFC media,Light Heavyweight,johnny walker,Johnny Walker,13,13.0,,2026-09-26,Johnny Walker,Light Heavyweight,12.0,12.0,12.0,0.2137367642135478,12.0,-1.0
-UFC media,Light Heavyweight,alonzo menifield,Alonzo Menifield,14,14.0,,2026-09-26,Alonzo Menifield,Light Heavyweight,13.0,13.0,24.0,0.0450361962207712,13.0,-1.0
-UFC media,Light Heavyweight,nikita krylov,Nikita Krylov,15,15.0,,2026-09-26,Nikita Krylov,Light Heavyweight,16.0,15.0,20.0,0.0755208307034241,16.0,1.0
+UFC media,Light Heavyweight,magomed ankalaev,Magomed Ankalaev,1,1.0,,2026-10-03,Magomed Ankalaev,Light Heavyweight,1.0,1.0,1.0,1.008895136297413,1.0,0.0
+UFC media,Light Heavyweight,jiri prochazka,Jiří Procházka,2,2.0,,2026-10-03,Jiri Prochazka,Light Heavyweight,4.0,4.0,4.0,0.8360969042168567,4.0,2.0
+UFC media,Light Heavyweight,alex pereira,Alex Pereira,3,3.0,,2026-10-03,Alex Pereira,Heavyweight,4.0,4.0,4.0,1.206068197091574,,
+UFC media,Light Heavyweight,khalil rountree jr,Khalil Rountree Jr.,4,4.0,,2026-10-03,Khalil Rountree Jr.,Light Heavyweight,9.0,7.0,9.0,0.4309597709659954,9.0,5.0
+UFC media,Light Heavyweight,navajo stirling,Navajo Stirling,5,5.0,,2026-10-03,Navajo Stirling,Light Heavyweight,3.0,3.0,5.0,0.5133541150655825,3.0,-2.0
+UFC media,Light Heavyweight,paulo costa,Paulo Costa,6,6.0,,2026-10-03,Paulo Costa,Light Heavyweight,2.0,2.0,2.0,0.7371013965952522,2.0,-4.0
+UFC media,Light Heavyweight,azamat murzakanov,Azamat Murzakanov,7,7.0,,2026-10-03,Azamat Murzakanov,Light Heavyweight,7.0,6.0,9.0,0.4610202069629681,7.0,0.0
+UFC media,Light Heavyweight,dominick reyes,Dominick Reyes,8,8.0,,2026-10-03,Dominick Reyes,Light Heavyweight,5.0,5.0,6.0,0.4963676404648199,5.0,-3.0
+UFC media,Light Heavyweight,jan blachowicz,Jan Błachowicz,9,9.0,,2026-10-03,Jan Blachowicz,Light Heavyweight,27.0,27.0,28.0,-0.0499893760562321,27.0,18.0
+UFC media,Light Heavyweight,bogdan guskov,Bogdan Guskov,10,10.0,,2026-10-03,Bogdan Guskov,Light Heavyweight,8.0,8.0,8.0,0.442871941513455,8.0,-2.0
+UFC media,Light Heavyweight,robert whittaker,Robert Whittaker,11,11.0,,2026-10-03,Robert Whittaker,Middleweight,5.0,5.0,5.0,0.7125476630723131,,
+UFC media,Light Heavyweight,alonzo menifield,Alonzo Menifield,12,12.0,,2026-10-03,Alonzo Menifield,Light Heavyweight,13.0,13.0,24.0,0.0450361962207712,13.0,1.0
+UFC media,Light Heavyweight,muhammad saidov,Muhammad Saidov,13,13.0,,2026-10-03,Muhammad Saidov,Light Heavyweight,15.0,13.0,16.0,0.116418221988638,15.0,2.0
+UFC media,Light Heavyweight,reinier de ridder,Reinier de Ridder,14,14.0,,2026-10-03,Reinier de Ridder,Light Heavyweight,10.0,10.0,10.0,0.3391767809374279,10.0,-4.0
+UFC media,Light Heavyweight,nikita krylov,Nikita Krylov,15,15.0,,2026-10-03,Nikita Krylov,Light Heavyweight,16.0,15.0,20.0,0.0755208307034241,16.0,1.0
 UFC media,Heavyweight,ciryl gane,Ciryl Gane,0,,title holder,,,,,,,,,
-UFC media,Heavyweight,tom aspinall,Tom Aspinall,1,1.0,,2026-09-26,Tom Aspinall,Heavyweight,,0.0,0.0,0.8868491905217489,,
-UFC media,Heavyweight,alexander volkov,Alexander Volkov,2,2.0,,2026-09-26,Alexander Volkov,Heavyweight,1.0,1.0,1.0,1.1321922401031834,1.0,-1.0
-UFC media,Heavyweight,sergei pavlovich,Sergei Pavlovich,3,3.0,,2026-09-26,Sergei Pavlovich,Heavyweight,6.0,6.0,6.0,0.6898547987299023,6.0,3.0
-UFC media,Heavyweight,josh hokit,Josh Hokit,4,4.0,,2026-09-26,Josh Hokit,Heavyweight,2.0,2.0,2.0,0.5426639591560884,2.0,-2.0
-UFC media,Heavyweight,curtis blaydes,Curtis Blaydes,5,5.0,,2026-09-26,Curtis Blaydes,Heavyweight,3.0,3.0,3.0,0.8315305056473403,3.0,-2.0
-UFC media,Heavyweight,waldo cortes acosta,Waldo Cortes Acosta,6,6.0,,2026-09-26,Waldo Cortes Acosta,Heavyweight,5.0,5.0,5.0,0.7223708562982506,5.0,-1.0
-UFC media,Heavyweight,rizvan kuniev,Rizvan Kuniev,7,7.0,,2026-09-26,Rizvan Kuniev,Heavyweight,8.0,7.0,10.0,0.3744598070570051,8.0,1.0
-UFC media,Heavyweight,vitor petrino,Vitor Petrino,8,8.0,,2026-09-26,Vitor Petrino,Heavyweight,12.0,11.0,12.0,0.2860024844767371,12.0,4.0
-UFC media,Heavyweight,serghei spivac,Serghei Spivac,9,9.0,,2026-09-26,Serghei Spivac,Heavyweight,20.0,19.0,22.0,0.0284979193313363,20.0,11.0
-UFC media,Heavyweight,ante delija,Ante Delija,10,10.0,,2026-09-26,Ante Delija,Heavyweight,28.0,26.0,27.0,-0.0383492183777087,28.0,18.0
-UFC media,Heavyweight,valter walker,Valter Walker,11,11.0,,2026-09-26,Valter Walker,Heavyweight,7.0,7.0,9.0,0.3819977992266708,7.0,-4.0
-UFC media,Heavyweight,tyrell fortune,Tyrell Fortune,12,12.0,,2026-09-26,Tyrell Fortune,Heavyweight,23.0,22.0,32.0,-0.0611459229319558,23.0,11.0
-UFC media,Heavyweight,derrick lewis,Derrick Lewis,13,13.0,,2026-09-26,Derrick Lewis,Heavyweight,10.0,8.0,12.0,0.3531902819099907,10.0,-3.0
-UFC media,Heavyweight,mario pinto,Mario Pinto,14,14.0,,2026-09-26,Mario Pinto,Heavyweight,9.0,8.0,10.0,0.356895350753165,9.0,-5.0
-UFC media,Heavyweight,aleksandar rakic,Aleksandar Rakić,15,15.0,,2026-09-26,Aleksandar Rakic,Light Heavyweight,33.0,32.0,35.0,-0.1962829725854303,,
+UFC media,Heavyweight,tom aspinall,Tom Aspinall,1,1.0,,2026-10-03,Tom Aspinall,Heavyweight,,0.0,0.0,0.8868491905217489,,
+UFC media,Heavyweight,alexander volkov,Alexander Volkov,2,2.0,,2026-10-03,Alexander Volkov,Heavyweight,1.0,1.0,1.0,1.1321922401031834,1.0,-1.0
+UFC media,Heavyweight,sergei pavlovich,Sergei Pavlovich,3,3.0,,2026-10-03,Sergei Pavlovich,Heavyweight,6.0,6.0,6.0,0.6898547987299023,6.0,3.0
+UFC media,Heavyweight,josh hokit,Josh Hokit,4,4.0,,2026-10-03,Josh Hokit,Heavyweight,2.0,2.0,2.0,0.5426639591560884,2.0,-2.0
+UFC media,Heavyweight,curtis blaydes,Curtis Blaydes,5,5.0,,2026-10-03,Curtis Blaydes,Heavyweight,3.0,3.0,3.0,0.8315305056473403,3.0,-2.0
+UFC media,Heavyweight,waldo cortes acosta,Waldo Cortes Acosta,6,6.0,,2026-10-03,Waldo Cortes Acosta,Heavyweight,5.0,5.0,5.0,0.7223708562982506,5.0,-1.0
+UFC media,Heavyweight,rizvan kuniev,Rizvan Kuniev,7,7.0,,2026-10-03,Rizvan Kuniev,Heavyweight,8.0,7.0,10.0,0.3744598070570051,8.0,1.0
+UFC media,Heavyweight,vitor petrino,Vitor Petrino,8,8.0,,2026-10-03,Vitor Petrino,Heavyweight,12.0,11.0,12.0,0.2860024844767371,12.0,4.0
+UFC media,Heavyweight,serghei spivac,Serghei Spivac,9,9.0,,2026-10-03,Serghei Spivac,Heavyweight,20.0,19.0,22.0,0.0284979193313363,20.0,11.0
+UFC media,Heavyweight,ante delija,Ante Delija,10,10.0,,2026-10-03,Ante Delija,Heavyweight,28.0,26.0,27.0,-0.0383492183777087,28.0,18.0
+UFC media,Heavyweight,valter walker,Valter Walker,11,11.0,,2026-10-03,Valter Walker,Heavyweight,7.0,7.0,9.0,0.3819977992266708,7.0,-4.0
+UFC media,Heavyweight,tyrell fortune,Tyrell Fortune,12,12.0,,2026-10-03,Tyrell Fortune,Heavyweight,23.0,22.0,32.0,-0.0611459229319558,23.0,11.0
+UFC media,Heavyweight,derrick lewis,Derrick Lewis,13,13.0,,2026-10-03,Derrick Lewis,Heavyweight,10.0,8.0,12.0,0.3531902819099907,10.0,-3.0
+UFC media,Heavyweight,aleksandar rakic,Aleksandar Rakić,14,14.0,,2026-10-03,Aleksandar Rakic,Light Heavyweight,33.0,32.0,35.0,-0.1962829725854303,,
+UFC media,Heavyweight,mario pinto,Mario Pinto,15,15.0,,2026-10-03,Mario Pinto,Heavyweight,9.0,8.0,10.0,0.356895350753165,9.0,-6.0
 UFC media,Women's Strawweight,mackenzie dern,Mackenzie Dern,0,,title holder,,Mackenzie Dern,Women's Strawweight,,0.0,0.0,0.7629046573209493,,
-UFC media,Women's Strawweight,zhang weili,Zhang Weili,1,1.0,,2026-09-26,Zhang Weili,Women's Strawweight,1.0,1.0,1.0,0.9492287998685692,1.0,0.0
-UFC media,Women's Strawweight,tatiana suarez,Tatiana Suarez,2,2.0,,2026-09-26,Tatiana Suarez,Women's Strawweight,2.0,2.0,3.0,0.803841057772591,2.0,0.0
-UFC media,Women's Strawweight,virna jandiroba,Virna Jandiroba,3,3.0,,2026-09-26,Virna Jandiroba,Women's Strawweight,3.0,2.0,3.0,0.7872684976651526,3.0,0.0
-UFC media,Women's Strawweight,denise gomes,Denise Gomes,4,4.0,,2026-09-26,Denise Gomes,Women's Strawweight,7.0,6.0,8.0,0.3918043477528032,7.0,3.0
-UFC media,Women's Strawweight,gillian robertson,Gillian Robertson,5,5.0,,2026-09-26,Gillian Robertson,Women's Strawweight,4.0,4.0,4.0,0.5251427879943233,4.0,-1.0
-UFC media,Women's Strawweight,yan xiaonan,Yan Xiaonan,6,6.0,,2026-09-26,Yan Xiaonan,Women's Strawweight,15.0,15.0,18.0,0.066679549450413,15.0,9.0
-UFC media,Women's Strawweight,fatima kline,Fatima Kline,7,7.0,,2026-09-26,Fatima Kline,Women's Strawweight,6.0,5.0,9.0,0.407392303718833,6.0,-1.0
-UFC media,Women's Strawweight,loopy godinez,Loopy Godinez,8,8.0,,2026-09-26,Loopy Godinez,Women's Strawweight,5.0,5.0,7.0,0.4237798086062797,5.0,-3.0
-UFC media,Women's Strawweight,alexia thainara,Alexia Thainara,9,9.0,,2026-09-26,Alexia Thainara,Women's Strawweight,8.0,7.0,9.0,0.3821184365347809,8.0,-1.0
-UFC media,Women's Strawweight,jessica andrade,Jéssica Andrade,10,10.0,,2026-09-26,Jessica Andrade,Women's Strawweight,11.0,10.0,13.0,0.2180764330995611,11.0,1.0
-UFC media,Women's Strawweight,tabatha ricci,Tabatha Ricci,11,11.0,,2026-09-26,Tabatha Ricci,Women's Strawweight,20.0,19.0,22.0,0.0153305821202508,20.0,9.0
-UFC media,Women's Strawweight,amanda lemos,Amanda Lemos,12,12.0,,2026-09-26,Amanda Lemos,Women's Strawweight,33.0,32.0,33.0,-0.2734646074243452,33.0,21.0
-UFC media,Women's Strawweight,amanda ribas,Amanda Ribas,13,13.0,,2026-09-26,Amanda Ribas,Women's Strawweight,44.0,44.0,44.0,-0.6385474607712207,44.0,31.0
-UFC media,Women's Strawweight,angela hill,Angela Hill,14,14.0,,2026-09-26,Angela Hill,Women's Strawweight,26.0,23.0,26.0,-0.0825084081697192,26.0,12.0
-UFC media,Women's Strawweight,mizuki inoue,Mizuki,15,15.0,,2026-09-26,Mizuki,Women's Strawweight,23.0,21.0,25.0,-0.0309819869126927,23.0,8.0
-UFC media,Women's Flyweight,valentina shevchenko,Valentina Shevchenko,0,,title holder,,Valentina Shevchenko,Women's Flyweight,,0.0,0.0,1.1244290059966993,,
-UFC media,Women's Flyweight,natalia silva,Natalia Silva,1,,title holder,,Natalia Silva,Women's Flyweight,,0.0,0.0,0.7470651728395625,,
-UFC media,Women's Flyweight,alexa grasso,Alexa Grasso,2,1.0,,2026-09-26,Alexa Grasso,Women's Flyweight,1.0,1.0,1.0,0.5618583517423474,1.0,0.0
-UFC media,Women's Flyweight,manon fiorot,Manon Fiorot,3,2.0,,2026-09-26,Manon Fiorot,Women's Flyweight,2.0,2.0,2.0,0.7835532852657685,2.0,0.0
-UFC media,Women's Flyweight,erin blanchfield,Erin Blanchfield,4,3.0,,2026-09-26,Erin Blanchfield,Women's Flyweight,4.0,3.0,4.0,0.7227137605312671,4.0,1.0
-UFC media,Women's Flyweight,rose namajunas,Rose Namajunas,5,4.0,,2026-09-26,Rose Namajunas,Women's Flyweight,3.0,3.0,4.0,0.7708755885677615,3.0,-1.0
-UFC media,Women's Flyweight,maycee barber,Maycee Barber,6,5.0,,2026-09-26,Maycee Barber,Women's Flyweight,5.0,5.0,5.0,0.488263913705838,5.0,0.0
-UFC media,Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,7,6.0,,2026-09-26,Jasmine Jasudavicius,Women's Flyweight,6.0,6.0,7.0,0.3735291158642385,6.0,0.0
-UFC media,Women's Flyweight,wang cong,Wang Cong,8,7.0,,2026-09-26,Wang Cong,Women's Flyweight,8.0,7.0,8.0,0.3059374854806267,8.0,1.0
-UFC media,Women's Flyweight,tracy cortez,Tracy Cortez,9,8.0,,2026-09-26,Tracy Cortez,Women's Flyweight,13.0,13.0,15.0,0.0213657950395443,13.0,5.0
-UFC media,Women's Flyweight,miranda maverick,Miranda Maverick,10,9.0,,2026-09-26,Miranda Maverick,Women's Flyweight,10.0,10.0,10.0,0.1601144422383351,10.0,1.0
-UFC media,Women's Flyweight,karine silva,Karine Silva,11,10.0,,2026-09-26,Karine Silva,Women's Flyweight,17.0,17.0,18.0,-0.0375893894833153,17.0,7.0
-UFC media,Women's Flyweight,casey oneill,Casey O'Neill,12,11.0,,2026-09-26,Casey O'Neill,Women's Flyweight,7.0,6.0,8.0,0.3340525006381811,7.0,-4.0
-UFC media,Women's Flyweight,eduarda moura,Eduarda Moura,13,12.0,,2026-09-26,Eduarda Moura,Women's Flyweight,31.0,29.0,32.0,-0.3257810594951004,31.0,19.0
-UFC media,Women's Flyweight,regina tarin,Regina Tarin,14,13.0,,2026-09-26,Regina Tarin,Women's Flyweight,12.0,11.0,12.0,0.0531595041533836,12.0,-1.0
-UFC media,Women's Flyweight,gabriella fernandes,Gabriella Fernandes,15,14.0,,2026-09-26,Gabriella Fernandes,Women's Flyweight,24.0,24.0,24.0,-0.1788421178831697,24.0,10.0
-UFC media,Women's Bantamweight,kayla harrison,Kayla Harrison,0,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.4354488922212022,,
-UFC media,Women's Bantamweight,julianna pena,Julianna Peña,1,1.0,,2026-09-26,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.2351713074336142,9.0,8.0
-UFC media,Women's Bantamweight,joselyne edwards,Joselyne Edwards,2,2.0,,2026-09-26,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3254789875295874,1.0,-1.0
-UFC media,Women's Bantamweight,ailin perez,Ailin Perez,3,3.0,,2026-09-26,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.362715320638537,2.0,-1.0
-UFC media,Women's Bantamweight,raquel pennington,Raquel Pennington,3,4.0,,2026-09-26,,,,,,,,
-UFC media,Women's Bantamweight,norma dumont,Norma Dumont,5,5.0,,2026-09-26,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3998694055292565,3.0,-2.0
-UFC media,Women's Bantamweight,yana santos,Yana Santos,6,6.0,,2026-09-26,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2649383781021995,6.0,0.0
-UFC media,Women's Bantamweight,luana santos,Luana Santos,7,7.0,,2026-09-26,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2586995367442944,7.0,0.0
-UFC media,Women's Bantamweight,macy chiasson,Macy Chiasson,8,8.0,,2026-09-26,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.176292848319808,10.0,2.0
-UFC media,Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,9,9.0,,2026-09-26,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2870197472473346,5.0,-4.0
-UFC media,Women's Bantamweight,karol rosa,Karol Rosa,10,10.0,,2026-09-26,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.014714309349809,13.0,3.0
-UFC media,Women's Bantamweight,beatriz mesquita,Bia Mesquita,11,11.0,,2026-09-26,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.2423581615000344,8.0,-3.0
-UFC media,Women's Bantamweight,michelle montague,Michelle Montague,12,12.0,,2026-09-26,Michelle Montague,Women's Bantamweight,12.0,11.0,13.0,0.0012978212058158,12.0,0.0
-UFC media,Women's Bantamweight,nora cornolle,Nora Cornolle,13,13.0,,2026-09-26,Nora Cornolle,Women's Bantamweight,16.0,16.0,17.0,-0.2401549588317881,16.0,3.0
-UFC media,Women's Bantamweight,miesha tate,Miesha Tate,14,14.0,,2026-09-26,Miesha Tate,Women's Bantamweight,17.0,16.0,17.0,-0.2974319689047012,17.0,3.0
-UFC media,Women's Bantamweight,melissa croden,Melissa Croden,15,15.0,,2026-09-26,Melissa Croden,Women's Bantamweight,14.0,14.0,15.0,-0.0613908097080829,14.0,-1.0
+UFC media,Women's Strawweight,zhang weili,Zhang Weili,1,1.0,,2026-10-03,Zhang Weili,Women's Strawweight,1.0,1.0,1.0,0.9492287998685692,1.0,0.0
+UFC media,Women's Strawweight,tatiana suarez,Tatiana Suarez,2,2.0,,2026-10-03,Tatiana Suarez,Women's Strawweight,2.0,2.0,3.0,0.803841057772591,2.0,0.0
+UFC media,Women's Strawweight,virna jandiroba,Virna Jandiroba,3,3.0,,2026-10-03,Virna Jandiroba,Women's Strawweight,3.0,2.0,3.0,0.7872684976651526,3.0,0.0
+UFC media,Women's Strawweight,denise gomes,Denise Gomes,4,4.0,,2026-10-03,Denise Gomes,Women's Strawweight,7.0,6.0,8.0,0.3918043477528032,7.0,3.0
+UFC media,Women's Strawweight,gillian robertson,Gillian Robertson,5,5.0,,2026-10-03,Gillian Robertson,Women's Strawweight,4.0,4.0,4.0,0.5251427879943233,4.0,-1.0
+UFC media,Women's Strawweight,yan xiaonan,Yan Xiaonan,6,6.0,,2026-10-03,Yan Xiaonan,Women's Strawweight,15.0,15.0,18.0,0.066679549450413,15.0,9.0
+UFC media,Women's Strawweight,fatima kline,Fatima Kline,7,7.0,,2026-10-03,Fatima Kline,Women's Strawweight,6.0,5.0,9.0,0.407392303718833,6.0,-1.0
+UFC media,Women's Strawweight,loopy godinez,Loopy Godinez,8,8.0,,2026-10-03,Loopy Godinez,Women's Strawweight,5.0,5.0,7.0,0.4237798086062797,5.0,-3.0
+UFC media,Women's Strawweight,alexia thainara,Alexia Thainara,9,9.0,,2026-10-03,Alexia Thainara,Women's Strawweight,8.0,7.0,9.0,0.3821184365347809,8.0,-1.0
+UFC media,Women's Strawweight,jessica andrade,Jéssica Andrade,10,10.0,,2026-10-03,Jessica Andrade,Women's Strawweight,11.0,10.0,13.0,0.2180764330995611,11.0,1.0
+UFC media,Women's Strawweight,tabatha ricci,Tabatha Ricci,11,11.0,,2026-10-03,Tabatha Ricci,Women's Strawweight,20.0,19.0,22.0,0.0153305821202508,20.0,9.0
+UFC media,Women's Strawweight,amanda lemos,Amanda Lemos,12,12.0,,2026-10-03,Amanda Lemos,Women's Strawweight,33.0,32.0,33.0,-0.2734646074243452,33.0,21.0
+UFC media,Women's Strawweight,amanda ribas,Amanda Ribas,13,13.0,,2026-10-03,Amanda Ribas,Women's Strawweight,44.0,44.0,44.0,-0.6385474607712207,44.0,31.0
+UFC media,Women's Strawweight,angela hill,Angela Hill,14,14.0,,2026-10-03,Angela Hill,Women's Strawweight,26.0,23.0,26.0,-0.0825084081697192,26.0,12.0
+UFC media,Women's Strawweight,mizuki inoue,Mizuki,15,15.0,,2026-10-03,Mizuki,Women's Strawweight,23.0,21.0,25.0,-0.0309819869126927,23.0,8.0
+UFC media,Women's Flyweight,natalia silva,Natalia Silva,0,,title holder,,Natalia Silva,Women's Flyweight,,0.0,0.0,0.7470651728395625,,
+UFC media,Women's Flyweight,valentina shevchenko,Valentina Shevchenko,1,1.0,,2026-10-03,Valentina Shevchenko,Women's Flyweight,,0.0,0.0,1.1244290059966993,,
+UFC media,Women's Flyweight,alexa grasso,Alexa Grasso,2,2.0,,2026-10-03,Alexa Grasso,Women's Flyweight,1.0,1.0,1.0,0.5618583517423474,1.0,-1.0
+UFC media,Women's Flyweight,manon fiorot,Manon Fiorot,3,3.0,,2026-10-03,Manon Fiorot,Women's Flyweight,2.0,2.0,2.0,0.7835532852657685,2.0,-1.0
+UFC media,Women's Flyweight,erin blanchfield,Erin Blanchfield,4,4.0,,2026-10-03,Erin Blanchfield,Women's Flyweight,4.0,3.0,4.0,0.7227137605312671,4.0,0.0
+UFC media,Women's Flyweight,rose namajunas,Rose Namajunas,5,5.0,,2026-10-03,Rose Namajunas,Women's Flyweight,3.0,3.0,4.0,0.7708755885677615,3.0,-2.0
+UFC media,Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,6,6.0,,2026-10-03,Jasmine Jasudavicius,Women's Flyweight,6.0,6.0,7.0,0.3735291158642385,6.0,0.0
+UFC media,Women's Flyweight,maycee barber,Maycee Barber,6,7.0,,2026-10-03,Maycee Barber,Women's Flyweight,5.0,5.0,5.0,0.488263913705838,5.0,-2.0
+UFC media,Women's Flyweight,wang cong,Wang Cong,8,8.0,,2026-10-03,Wang Cong,Women's Flyweight,8.0,7.0,8.0,0.3059374854806267,8.0,0.0
+UFC media,Women's Flyweight,tracy cortez,Tracy Cortez,9,9.0,,2026-10-03,Tracy Cortez,Women's Flyweight,13.0,13.0,15.0,0.0213657950395443,13.0,4.0
+UFC media,Women's Flyweight,miranda maverick,Miranda Maverick,10,10.0,,2026-10-03,Miranda Maverick,Women's Flyweight,10.0,10.0,10.0,0.1601144422383351,10.0,0.0
+UFC media,Women's Flyweight,karine silva,Karine Silva,11,11.0,,2026-10-03,Karine Silva,Women's Flyweight,17.0,17.0,18.0,-0.0375893894833153,17.0,6.0
+UFC media,Women's Flyweight,casey oneill,Casey O'Neill,12,12.0,,2026-10-03,Casey O'Neill,Women's Flyweight,7.0,6.0,8.0,0.3340525006381811,7.0,-5.0
+UFC media,Women's Flyweight,eduarda moura,Eduarda Moura,13,13.0,,2026-10-03,Eduarda Moura,Women's Flyweight,31.0,29.0,32.0,-0.3257810594951004,31.0,18.0
+UFC media,Women's Flyweight,regina tarin,Regina Tarin,14,14.0,,2026-10-03,Regina Tarin,Women's Flyweight,12.0,11.0,12.0,0.0531595041533836,12.0,-2.0
+UFC media,Women's Flyweight,gabriella fernandes,Gabriella Fernandes,15,15.0,,2026-10-03,Gabriella Fernandes,Women's Flyweight,24.0,24.0,24.0,-0.1788421178831697,24.0,9.0
+UFC media,Women's Bantamweight,kayla harrison,Kayla Harrison,0,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.5763408668878313,,
+UFC media,Women's Bantamweight,julianna pena,Julianna Peña,1,1.0,,2026-10-03,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.233494648953083,9.0,8.0
+UFC media,Women's Bantamweight,joselyne edwards,Joselyne Edwards,2,2.0,,2026-10-03,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3215580961503108,1.0,-1.0
+UFC media,Women's Bantamweight,ailin perez,Ailin Perez,3,3.0,,2026-10-03,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.3596147679183739,2.0,-1.0
+UFC media,Women's Bantamweight,raquel pennington,Raquel Pennington,4,4.0,,2026-10-03,,,,,,,,
+UFC media,Women's Bantamweight,norma dumont,Norma Dumont,5,5.0,,2026-10-03,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3964106430434234,3.0,-2.0
+UFC media,Women's Bantamweight,yana santos,Yana Santos,6,6.0,,2026-10-03,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2632590245930368,6.0,0.0
+UFC media,Women's Bantamweight,luana santos,Luana Santos,7,7.0,,2026-10-03,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2547556891437481,7.0,0.0
+UFC media,Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,8,8.0,,2026-10-03,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2840321636700831,5.0,-3.0
+UFC media,Women's Bantamweight,macy chiasson,Macy Chiasson,9,9.0,,2026-10-03,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.1722901495824874,10.0,1.0
+UFC media,Women's Bantamweight,karol rosa,Karol Rosa,10,10.0,,2026-10-03,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.0164991251305237,13.0,3.0
+UFC media,Women's Bantamweight,beatriz mesquita,Bia Mesquita,11,11.0,,2026-10-03,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.238663436469856,8.0,-3.0
+UFC media,Women's Bantamweight,michelle montague,Michelle Montague,12,12.0,,2026-10-03,Michelle Montague,Women's Bantamweight,12.0,11.0,13.0,0.001972037403425,12.0,0.0
+UFC media,Women's Bantamweight,nora cornolle,Nora Cornolle,13,13.0,,2026-10-03,Nora Cornolle,Women's Bantamweight,16.0,16.0,17.0,-0.2405155592050885,16.0,3.0
+UFC media,Women's Bantamweight,melissa croden,Melissa Croden,14,14.0,,2026-10-03,Melissa Croden,Women's Bantamweight,14.0,14.0,15.0,-0.0611489145299358,14.0,0.0
+UFC media,Women's Bantamweight,daria zhelezniakova,Daria Zhelezniakova,15,15.0,,2026-10-03,Daria Zhelezniakova,Women's Bantamweight,24.0,24.0,24.0,-0.7137669543232663,24.0,9.0
 Meta,Flyweight,joshua van,Joshua Van,0,,title holder,,Joshua Van,Flyweight,,0.0,0.0,0.7441863658478365,,
-Meta,Flyweight,manel kape,Manel Kape,1,1.0,,2026-09-26,Manel Kape,Flyweight,1.0,1.0,1.0,0.7385386820839983,1.0,0.0
-Meta,Flyweight,alexandre pantoja,Alexandre Pantoja,2,2.0,,2026-09-26,Alexandre Pantoja,Flyweight,4.0,4.0,5.0,0.7421138539120509,4.0,2.0
-Meta,Flyweight,brandon royval,Brandon Royval,3,3.0,,2026-09-26,Brandon Royval,Flyweight,3.0,3.0,7.0,0.3911586745989137,3.0,0.0
-Meta,Flyweight,tatsuro taira,Tatsuro Taira,4,4.0,,2026-09-26,Tatsuro Taira,Flyweight,5.0,4.0,5.0,0.7360713842752062,5.0,1.0
-Meta,Flyweight,asu almabayev,Asu Almabayev,5,5.0,,2026-09-26,Asu Almabayev,Flyweight,7.0,3.0,7.0,0.3885035644061362,7.0,2.0
-Meta,Flyweight,loneer kavanagh,Lone'er Kavanagh,6,6.0,,2026-09-26,Lone'er Kavanagh,Flyweight,32.0,30.0,34.0,-0.1287991917592985,32.0,26.0
-Meta,Flyweight,ramazan temirov,Ramazan Temirov,7,7.0,,2026-09-26,Ramazan Temirov,Flyweight,8.0,8.0,9.0,0.2214066728928855,8.0,1.0
-Meta,Flyweight,kyoji horiguchi,Kyoji Horiguchi,8,8.0,,2026-09-26,Kyoji Horiguchi,Flyweight,2.0,2.0,2.0,0.5499188165618467,2.0,-6.0
-Meta,Flyweight,brandon moreno,Brandon Moreno,9,9.0,,2026-09-26,Brandon Moreno,Flyweight,6.0,6.0,6.0,0.6432321193210315,6.0,-3.0
-Meta,Flyweight,amir albazi,Amir Albazi,10,10.0,,2026-09-26,Amir Albazi,Flyweight,10.0,9.0,14.0,0.1613759123037173,10.0,0.0
-Meta,Flyweight,sumudaerji,Sumudaerji,11,11.0,,2026-09-26,Sumudaerji,Flyweight,21.0,21.0,23.0,0.00475317107463,21.0,10.0
-Meta,Flyweight,mitch raposo,Mitch Raposo,12,12.0,,2026-09-26,Mitch Raposo,Flyweight,33.0,32.0,34.0,-0.1433118760088567,33.0,21.0
-Meta,Flyweight,rei tsuruya,Rei Tsuruya,13,13.0,,2026-09-26,Rei Tsuruya,Flyweight,17.0,17.0,17.0,0.0584509500760175,17.0,4.0
-Meta,Flyweight,charles johnson,Charles Johnson,14,14.0,,2026-09-26,Charles Johnson,Flyweight,31.0,28.0,37.0,-0.1065753414747605,31.0,17.0
-Meta,Flyweight,alessandro costa,Alessandro Costa,15,15.0,,2026-09-26,Alessandro Costa,Flyweight,18.0,16.0,20.0,0.0394583177376129,18.0,3.0
+Meta,Flyweight,manel kape,Manel Kape,1,1.0,,2026-10-03,Manel Kape,Flyweight,1.0,1.0,1.0,0.7385386820839983,1.0,0.0
+Meta,Flyweight,alexandre pantoja,Alexandre Pantoja,2,2.0,,2026-10-03,Alexandre Pantoja,Flyweight,4.0,4.0,5.0,0.7421138539120509,4.0,2.0
+Meta,Flyweight,brandon royval,Brandon Royval,3,3.0,,2026-10-03,Brandon Royval,Flyweight,3.0,3.0,7.0,0.3911586745989137,3.0,0.0
+Meta,Flyweight,tatsuro taira,Tatsuro Taira,4,4.0,,2026-10-03,Tatsuro Taira,Flyweight,5.0,4.0,5.0,0.7360713842752062,5.0,1.0
+Meta,Flyweight,asu almabayev,Asu Almabayev,5,5.0,,2026-10-03,Asu Almabayev,Flyweight,7.0,3.0,7.0,0.3885035644061362,7.0,2.0
+Meta,Flyweight,loneer kavanagh,Lone’er Kavanagh,6,6.0,,2026-10-03,Lone'er Kavanagh,Flyweight,32.0,30.0,34.0,-0.1287991917592985,32.0,26.0
+Meta,Flyweight,ramazan temirov,Ramazan Temirov,7,7.0,,2026-10-03,Ramazan Temirov,Flyweight,8.0,8.0,9.0,0.2214066728928855,8.0,1.0
+Meta,Flyweight,kyoji horiguchi,Kyoji Horiguchi,8,8.0,,2026-10-03,Kyoji Horiguchi,Flyweight,2.0,2.0,2.0,0.5499188165618467,2.0,-6.0
+Meta,Flyweight,amir albazi,Amir Albazi,9,9.0,,2026-10-03,Amir Albazi,Flyweight,10.0,9.0,14.0,0.1613759123037173,10.0,1.0
+Meta,Flyweight,brandon moreno,Brandon Moreno,10,10.0,,2026-10-03,Brandon Moreno,Flyweight,6.0,6.0,6.0,0.6432321193210315,6.0,-4.0
+Meta,Flyweight,sumudaerji,Sumudaerji,11,11.0,,2026-10-03,Sumudaerji,Flyweight,21.0,21.0,23.0,0.00475317107463,21.0,10.0
+Meta,Flyweight,mitch raposo,Mitch Raposo,12,12.0,,2026-10-03,Mitch Raposo,Flyweight,33.0,32.0,34.0,-0.1433118760088567,33.0,21.0
+Meta,Flyweight,imanol rodriguez,Imanol Rodriguez,13,13.0,,2026-10-03,Imanol Rodriguez,Flyweight,13.0,10.0,13.0,0.1491041923884476,13.0,0.0
+Meta,Flyweight,rei tsuruya,Rei Tsuruya,14,14.0,,2026-10-03,Rei Tsuruya,Flyweight,17.0,17.0,17.0,0.0584509500760175,17.0,3.0
+Meta,Flyweight,charles johnson,Charles Johnson,15,15.0,,2026-10-03,Charles Johnson,Flyweight,31.0,28.0,37.0,-0.1065753414747605,31.0,16.0
 Meta,Bantamweight,petr yan,Petr Yan,0,,title holder,,Petr Yan,Bantamweight,,0.0,0.0,1.2170638481610794,,
-Meta,Bantamweight,merab dvalishvili,Merab Dvalishvili,1,1.0,,2026-09-26,Merab Dvalishvili,Bantamweight,1.0,1.0,1.0,1.4945438631492436,1.0,0.0
-Meta,Bantamweight,song yadong,Song Yadong,2,2.0,,2026-09-26,Song Yadong,Bantamweight,3.0,3.0,3.0,1.2370316038738611,3.0,1.0
-Meta,Bantamweight,sean omalley,Sean O'Malley,3,3.0,,2026-09-26,Sean O'Malley,Bantamweight,2.0,2.0,2.0,1.0932899465853525,2.0,-1.0
-Meta,Bantamweight,mario bautista,Mario Bautista,4,4.0,,2026-09-26,Mario Bautista,Bantamweight,5.0,5.0,5.0,0.7155248235551568,5.0,1.0
-Meta,Bantamweight,umar nurmagomedov,Umar Nurmagomedov,5,5.0,,2026-09-26,Umar Nurmagomedov,Bantamweight,4.0,4.0,4.0,0.9149460933750088,4.0,-1.0
-Meta,Bantamweight,cory sandhagen,Cory Sandhagen,6,6.0,,2026-09-26,Cory Sandhagen,Bantamweight,6.0,6.0,6.0,0.7082074061849748,6.0,0.0
-Meta,Bantamweight,david martinez,David Martinez,7,7.0,,2026-09-26,David Martinez,Bantamweight,11.0,7.0,11.0,0.4964900602140247,11.0,4.0
-Meta,Bantamweight,raul rosas jr,Raul Rosas Jr.,8,8.0,,2026-09-26,Raul Rosas Jr.,Bantamweight,10.0,9.0,10.0,0.5292393668599426,10.0,2.0
-Meta,Bantamweight,farid basharat,Farid Basharat,9,9.0,,2026-09-26,Farid Basharat,Bantamweight,15.0,14.0,17.0,0.3310197339798251,15.0,6.0
-Meta,Bantamweight,marcus mcghee,Marcus McGhee,10,10.0,,2026-09-26,Marcus McGhee,Bantamweight,7.0,7.0,8.0,0.5491903904304865,7.0,-3.0
-Meta,Bantamweight,deiveson figueiredo,Deiveson Figueiredo,11,11.0,,2026-09-26,Deiveson Figueiredo,Bantamweight,48.0,47.0,52.0,-0.0451663793710608,48.0,37.0
-Meta,Bantamweight,montel jackson,Montel Jackson,12,12.0,,2026-09-26,Montel Jackson,Bantamweight,8.0,7.0,12.0,0.5421366268923709,8.0,-4.0
-Meta,Bantamweight,aiemann zahabi,Aiemann Zahabi,13,13.0,,2026-09-26,Aiemann Zahabi,Bantamweight,14.0,14.0,18.0,0.3389581253352079,14.0,1.0
-Meta,Bantamweight,marlon vera,Marlon Vera,14,14.0,,2026-09-26,Marlon Vera,Bantamweight,52.0,45.0,62.0,-0.0945949047300287,52.0,38.0
-Meta,Bantamweight,bryce mitchell,Bryce Mitchell,15,15.0,,2026-09-26,Bryce Mitchell,Bantamweight,18.0,16.0,19.0,0.2891629249055175,18.0,3.0
+Meta,Bantamweight,merab dvalishvili,Merab Dvalishvili,1,1.0,,2026-10-03,Merab Dvalishvili,Bantamweight,1.0,1.0,1.0,1.4945438631492436,1.0,0.0
+Meta,Bantamweight,song yadong,Song Yadong,2,2.0,,2026-10-03,Song Yadong,Bantamweight,3.0,3.0,3.0,1.2370316038738611,3.0,1.0
+Meta,Bantamweight,sean omalley,Sean O'Malley,3,3.0,,2026-10-03,Sean O'Malley,Bantamweight,2.0,2.0,2.0,1.0932899465853525,2.0,-1.0
+Meta,Bantamweight,mario bautista,Mario Bautista,4,4.0,,2026-10-03,Mario Bautista,Bantamweight,5.0,5.0,5.0,0.7155248235551568,5.0,1.0
+Meta,Bantamweight,umar nurmagomedov,Umar Nurmagomedov,5,5.0,,2026-10-03,Umar Nurmagomedov,Bantamweight,4.0,4.0,4.0,0.9149460933750088,4.0,-1.0
+Meta,Bantamweight,cory sandhagen,Cory Sandhagen,6,6.0,,2026-10-03,Cory Sandhagen,Bantamweight,6.0,6.0,6.0,0.7082074061849748,6.0,0.0
+Meta,Bantamweight,david martinez,David Martinez,7,7.0,,2026-10-03,David Martinez,Bantamweight,11.0,7.0,11.0,0.4964900602140247,11.0,4.0
+Meta,Bantamweight,raul rosas jr,Raul Rosas Jr.,8,8.0,,2026-10-03,Raul Rosas Jr.,Bantamweight,10.0,9.0,10.0,0.5292393668599426,10.0,2.0
+Meta,Bantamweight,farid basharat,Farid Basharat,9,9.0,,2026-10-03,Farid Basharat,Bantamweight,15.0,14.0,17.0,0.3310197339798251,15.0,6.0
+Meta,Bantamweight,marcus mcghee,Marcus McGhee,10,10.0,,2026-10-03,Marcus McGhee,Bantamweight,7.0,7.0,8.0,0.5491903904304865,7.0,-3.0
+Meta,Bantamweight,payton talbott,Payton Talbott,11,11.0,,2026-10-03,Payton Talbott,Bantamweight,9.0,8.0,9.0,0.5312729540992376,9.0,-2.0
+Meta,Bantamweight,montel jackson,Montel Jackson,12,12.0,,2026-10-03,Montel Jackson,Bantamweight,8.0,7.0,12.0,0.5421366268923709,8.0,-4.0
+Meta,Bantamweight,aiemann zahabi,Aiemann Zahabi,13,13.0,,2026-10-03,Aiemann Zahabi,Bantamweight,14.0,14.0,18.0,0.3389581253352079,14.0,1.0
+Meta,Bantamweight,marlon vera,Marlon Vera,14,14.0,,2026-10-03,Marlon Vera,Bantamweight,52.0,45.0,62.0,-0.0945949047300287,52.0,38.0
+Meta,Bantamweight,bryce mitchell,Bryce Mitchell,15,15.0,,2026-10-03,Bryce Mitchell,Bantamweight,18.0,16.0,19.0,0.2891629249055175,18.0,3.0
 Meta,Featherweight,alexander volkanovski,Alexander Volkanovski,0,,title holder,,Alexander Volkanovski,Featherweight,,0.0,0.0,1.5086233083732543,,
-Meta,Featherweight,movsar evloev,Movsar Evloev,1,1.0,,2026-09-26,Movsar Evloev,Featherweight,2.0,2.0,3.0,0.856141356464669,2.0,1.0
-Meta,Featherweight,diego lopes,Diego Lopes,2,2.0,,2026-09-26,Diego Lopes,Featherweight,3.0,2.0,3.0,0.7658404344244036,3.0,1.0
-Meta,Featherweight,lerone murphy,Lerone Murphy,3,3.0,,2026-09-26,Lerone Murphy,Featherweight,7.0,5.0,7.0,0.6359306940150546,7.0,4.0
-Meta,Featherweight,aljamain sterling,Aljamain Sterling,4,4.0,,2026-09-26,Aljamain Sterling,Featherweight,1.0,1.0,1.0,1.5305410505949606,1.0,-3.0
-Meta,Featherweight,jean silva,Jean Silva,5,5.0,,2026-09-26,Jean Silva,Featherweight,5.0,5.0,7.0,0.664737916750021,5.0,0.0
-Meta,Featherweight,arnold allen,Arnold Allen,6,6.0,,2026-09-26,Arnold Allen,Featherweight,10.0,9.0,10.0,0.4862599346774231,10.0,4.0
-Meta,Featherweight,pat sabatini,Pat Sabatini,7,7.0,,2026-09-26,Pat Sabatini,Featherweight,11.0,11.0,13.0,0.3568036132927095,11.0,4.0
-Meta,Featherweight,pavel andrusca,Pavel Andrusca,8,8.0,,2026-09-26,Pavel Andrusca,Featherweight,26.0,23.0,29.0,0.1307719514642407,26.0,18.0
-Meta,Featherweight,youssef zalal,Youssef Zalal,9,9.0,,2026-09-26,Youssef Zalal,Featherweight,9.0,9.0,11.0,0.4900448336461925,9.0,0.0
-Meta,Featherweight,kevin vallejos,Kevin Vallejos,10,10.0,,2026-09-26,Kevin Vallejos,Featherweight,8.0,8.0,8.0,0.5133870679671046,8.0,-2.0
-Meta,Featherweight,joanderson brito,Joanderson Brito,11,11.0,,2026-09-26,Joanderson Brito,Featherweight,12.0,11.0,14.0,0.3938126324470059,12.0,1.0
-Meta,Featherweight,melquizael costa,Melquizael Costa,12,12.0,,2026-09-26,Melquizael Costa,Featherweight,25.0,25.0,27.0,0.1636940846336667,25.0,13.0
-Meta,Featherweight,steve garcia,Steve Garcia,13,13.0,,2026-09-26,Steve Garcia,Featherweight,6.0,5.0,6.0,0.6534476923969423,6.0,-7.0
-Meta,Featherweight,aaron pico,Aaron Pico,14,14.0,,2026-09-26,Aaron Pico,Featherweight,44.0,42.0,46.0,-0.0567524633284824,44.0,30.0
-Meta,Featherweight,jamall emmers,Jamall Emmers,15,15.0,,2026-09-26,Jamall Emmers,Featherweight,20.0,19.0,21.0,0.216596243448155,20.0,5.0
+Meta,Featherweight,movsar evloev,Movsar Evloev,1,1.0,,2026-10-03,Movsar Evloev,Featherweight,2.0,2.0,3.0,0.856141356464669,2.0,1.0
+Meta,Featherweight,diego lopes,Diego Lopes,2,2.0,,2026-10-03,Diego Lopes,Featherweight,3.0,2.0,3.0,0.7658404344244036,3.0,1.0
+Meta,Featherweight,lerone murphy,Lerone Murphy,3,3.0,,2026-10-03,Lerone Murphy,Featherweight,7.0,5.0,7.0,0.6359306940150546,7.0,4.0
+Meta,Featherweight,aljamain sterling,Aljamain Sterling,4,4.0,,2026-10-03,Aljamain Sterling,Featherweight,1.0,1.0,1.0,1.5305410505949606,1.0,-3.0
+Meta,Featherweight,jean silva,Jean Silva,5,5.0,,2026-10-03,Jean Silva,Featherweight,5.0,5.0,7.0,0.664737916750021,5.0,0.0
+Meta,Featherweight,arnold allen,Arnold Allen,6,6.0,,2026-10-03,Arnold Allen,Featherweight,10.0,9.0,10.0,0.4862599346774231,10.0,4.0
+Meta,Featherweight,pat sabatini,Pat Sabatini,7,7.0,,2026-10-03,Pat Sabatini,Featherweight,11.0,11.0,13.0,0.3568036132927095,11.0,4.0
+Meta,Featherweight,pavel andrusca,Pavel Andrusca,8,8.0,,2026-10-03,Pavel Andrusca,Featherweight,26.0,23.0,29.0,0.1307719514642407,26.0,18.0
+Meta,Featherweight,youssef zalal,Youssef Zalal,9,9.0,,2026-10-03,Youssef Zalal,Featherweight,9.0,9.0,11.0,0.4900448336461925,9.0,0.0
+Meta,Featherweight,kevin vallejos,Kevin Vallejos,10,10.0,,2026-10-03,Kevin Vallejos,Featherweight,8.0,8.0,8.0,0.5133870679671046,8.0,-2.0
+Meta,Featherweight,joanderson brito,Joanderson Brito,11,11.0,,2026-10-03,Joanderson Brito,Featherweight,12.0,11.0,14.0,0.3938126324470059,12.0,1.0
+Meta,Featherweight,melquizael costa,Melquizael Costa,12,12.0,,2026-10-03,Melquizael Costa,Featherweight,25.0,25.0,27.0,0.1636940846336667,25.0,13.0
+Meta,Featherweight,steve garcia,Steve Garcia,13,13.0,,2026-10-03,Steve Garcia,Featherweight,6.0,5.0,6.0,0.6534476923969423,6.0,-7.0
+Meta,Featherweight,aaron pico,Aaron Pico,14,14.0,,2026-10-03,Aaron Pico,Featherweight,44.0,42.0,46.0,-0.0567524633284824,44.0,30.0
+Meta,Featherweight,jamall emmers,Jamall Emmers,15,15.0,,2026-10-03,Jamall Emmers,Featherweight,20.0,19.0,21.0,0.216596243448155,20.0,5.0
 Meta,Lightweight,justin gaethje,Justin Gaethje,0,,title holder,,Justin Gaethje,Lightweight,,0.0,0.0,1.2445343386568792,,
-Meta,Lightweight,ilia topuria,Ilia Topuria,1,1.0,,2026-09-26,Ilia Topuria,Lightweight,3.0,3.0,3.0,1.24924670067826,3.0,2.0
-Meta,Lightweight,arman tsarukyan,Arman Tsarukyan,2,2.0,,2026-09-26,Arman Tsarukyan,Lightweight,4.0,4.0,4.0,1.126991822996272,4.0,2.0
-Meta,Lightweight,charles oliveira,Charles Oliveira,3,3.0,,2026-09-26,Charles Oliveira,Lightweight,1.0,1.0,1.0,1.4823204443200226,1.0,-2.0
-Meta,Lightweight,max holloway,Max Holloway,4,4.0,,2026-09-26,Max Holloway,Lightweight,2.0,2.0,2.0,1.5381244530030502,2.0,-2.0
-Meta,Lightweight,paddy pimblett,Paddy Pimblett,5,5.0,,2026-09-26,Paddy Pimblett,Lightweight,5.0,5.0,5.0,0.7308093048542934,5.0,0.0
-Meta,Lightweight,quillan salkilld,Quillan Salkilld,6,6.0,,2026-09-26,Quillan Salkilld,Lightweight,8.0,6.0,9.0,0.6184464241582748,8.0,2.0
-Meta,Lightweight,benoit saint denis,Benoît Saint Denis,7,7.0,,2026-09-26,Benoit Saint Denis,Lightweight,7.0,7.0,8.0,0.6248859664802027,7.0,0.0
-Meta,Lightweight,renato moicano,Renato Moicano,8,8.0,,2026-09-26,Renato Moicano,Lightweight,6.0,6.0,7.0,0.5702791773738185,6.0,-2.0
-Meta,Lightweight,mateusz gamrot,Mateusz Gamrot,9,9.0,,2026-09-26,Mateusz Gamrot,Lightweight,10.0,10.0,10.0,0.4391489738108425,10.0,1.0
-Meta,Lightweight,mauricio ruffy,Mauricio Ruffy,10,10.0,,2026-09-26,Mauricio Ruffy,Lightweight,13.0,12.0,16.0,0.2425617569040016,13.0,3.0
-Meta,Lightweight,tom nolan,Tom Nolan,11,11.0,,2026-09-26,Tom Nolan,Lightweight,27.0,26.0,28.0,0.1215219666587734,27.0,16.0
-Meta,Lightweight,rafael fiziev,Rafael Fiziev,12,12.0,,2026-09-26,Rafael Fiziev,Lightweight,14.0,13.0,18.0,0.2677069506961754,14.0,2.0
-Meta,Lightweight,tofiq musayev,Tofiq Musayev,13,13.0,,2026-09-26,Tofiq Musayev,Lightweight,33.0,32.0,34.0,0.0473522643404976,33.0,20.0
-Meta,Lightweight,grant dawson,Grant Dawson,14,14.0,,2026-09-26,Grant Dawson,Lightweight,9.0,6.0,9.0,0.5564700351482121,9.0,-5.0
-Meta,Lightweight,jalin turner,Jalin Turner,15,15.0,,2026-09-26,Jalin Turner,Lightweight,15.0,13.0,16.0,0.267011251850217,15.0,0.0
+Meta,Lightweight,ilia topuria,Ilia Topuria,1,1.0,,2026-10-03,Ilia Topuria,Lightweight,3.0,3.0,3.0,1.24924670067826,3.0,2.0
+Meta,Lightweight,arman tsarukyan,Arman Tsarukyan,2,2.0,,2026-10-03,Arman Tsarukyan,Lightweight,4.0,4.0,4.0,1.126991822996272,4.0,2.0
+Meta,Lightweight,charles oliveira,Charles Oliveira,3,3.0,,2026-10-03,Charles Oliveira,Lightweight,1.0,1.0,1.0,1.4823204443200226,1.0,-2.0
+Meta,Lightweight,max holloway,Max Holloway,4,4.0,,2026-10-03,Max Holloway,Lightweight,2.0,2.0,2.0,1.5381244530030502,2.0,-2.0
+Meta,Lightweight,paddy pimblett,Paddy Pimblett,5,5.0,,2026-10-03,Paddy Pimblett,Lightweight,5.0,5.0,5.0,0.7308093048542934,5.0,0.0
+Meta,Lightweight,quillan salkilld,Quillan Salkilld,6,6.0,,2026-10-03,Quillan Salkilld,Lightweight,8.0,6.0,9.0,0.6184464241582748,8.0,2.0
+Meta,Lightweight,benoit saint denis,Benoît Saint Denis,7,7.0,,2026-10-03,Benoit Saint Denis,Lightweight,7.0,7.0,8.0,0.6248859664802027,7.0,0.0
+Meta,Lightweight,renato moicano,Renato Moicano,8,8.0,,2026-10-03,Renato Moicano,Lightweight,6.0,6.0,7.0,0.5702791773738185,6.0,-2.0
+Meta,Lightweight,mateusz gamrot,Mateusz Gamrot,9,9.0,,2026-10-03,Mateusz Gamrot,Lightweight,10.0,10.0,10.0,0.4391489738108425,10.0,1.0
+Meta,Lightweight,mauricio ruffy,Mauricio Ruffy,10,10.0,,2026-10-03,Mauricio Ruffy,Lightweight,13.0,12.0,16.0,0.2425617569040016,13.0,3.0
+Meta,Lightweight,tom nolan,Tom Nolan,11,11.0,,2026-10-03,Tom Nolan,Lightweight,27.0,26.0,28.0,0.1215219666587734,27.0,16.0
+Meta,Lightweight,rafael fiziev,Rafael Fiziev,12,12.0,,2026-10-03,Rafael Fiziev,Lightweight,14.0,13.0,18.0,0.2677069506961754,14.0,2.0
+Meta,Lightweight,tofiq musayev,Tofiq Musayev,13,13.0,,2026-10-03,Tofiq Musayev,Lightweight,33.0,32.0,34.0,0.0473522643404976,33.0,20.0
+Meta,Lightweight,grant dawson,Grant Dawson,14,14.0,,2026-10-03,Grant Dawson,Lightweight,9.0,6.0,9.0,0.5564700351482121,9.0,-5.0
+Meta,Lightweight,esteban ribovics,Esteban Ribovics,15,15.0,,2026-10-03,Esteban Ribovics,Lightweight,23.0,19.0,23.0,0.1618344887432269,23.0,8.0
 Meta,Welterweight,islam makhachev,Islam Makhachev,0,,title holder,,Islam Makhachev,Welterweight,,0.0,0.0,1.6459274490188924,,
-Meta,Welterweight,carlos prates,Carlos Prates,1,1.0,,2026-09-26,Carlos Prates,Welterweight,3.0,3.0,3.0,0.7804669220512302,3.0,2.0
-Meta,Welterweight,ian machado garry,Ian Machado Garry,2,2.0,,2026-09-26,Ian Machado Garry,Welterweight,4.0,4.0,4.0,0.7696994854635487,4.0,2.0
-Meta,Welterweight,michael morales,Michael Morales,3,3.0,,2026-09-26,Michael Morales,Welterweight,1.0,1.0,1.0,0.6892521596455798,1.0,-2.0
-Meta,Welterweight,jack della maddalena,Jack Della Maddalena,4,4.0,,2026-09-26,Jack Della Maddalena,Welterweight,5.0,5.0,6.0,0.547303776073499,5.0,1.0
-Meta,Welterweight,sean brady,Sean Brady,5,5.0,,2026-09-26,Sean Brady,Welterweight,2.0,2.0,2.0,0.7987184135268439,2.0,-3.0
-Meta,Welterweight,gabriel bonfim,Gabriel Bonfim,6,6.0,,2026-09-26,Gabriel Bonfim,Welterweight,6.0,6.0,7.0,0.5025060948843145,6.0,0.0
-Meta,Welterweight,belal muhammad,Belal Muhammad,7,7.0,,2026-09-26,Belal Muhammad,Welterweight,7.0,7.0,8.0,0.5688704157330061,7.0,0.0
-Meta,Welterweight,joaquin buckley,Joaquin Buckley,8,8.0,,2026-09-26,Joaquin Buckley,Welterweight,9.0,5.0,9.0,0.5103728774191706,9.0,1.0
-Meta,Welterweight,uros medic,Uroš Medić,9,9.0,,2026-09-26,Uros Medic,Welterweight,17.0,16.0,18.0,0.2576875438071965,17.0,8.0
-Meta,Welterweight,leon edwards,Leon Edwards,10,10.0,,2026-09-26,Leon Edwards,Welterweight,8.0,8.0,9.0,0.5422405957856647,8.0,-2.0
-Meta,Welterweight,mike malott,Mike Malott,11,11.0,,2026-09-26,Mike Malott,Welterweight,14.0,14.0,15.0,0.3016140203809575,14.0,3.0
-Meta,Welterweight,kamaru usman,Kamaru Usman,12,12.0,,2026-09-26,Kamaru Usman,Welterweight,10.0,10.0,10.0,0.4492063515950665,10.0,-2.0
-Meta,Welterweight,yaroslav amosov,Yaroslav Amosov,13,13.0,,2026-09-26,Yaroslav Amosov,Welterweight,15.0,15.0,23.0,0.2473157782849388,15.0,2.0
-Meta,Welterweight,kevin holland,Kevin Holland,14,14.0,,2026-09-26,Kevin Holland,Welterweight,24.0,16.0,26.0,0.1924469837301948,24.0,10.0
-Meta,Welterweight,daniel rodriguez,Daniel Rodriguez,15,15.0,,2026-09-26,Daniel Rodriguez,Welterweight,18.0,17.0,19.0,0.2701998258652328,18.0,3.0
+Meta,Welterweight,carlos prates,Carlos Prates,1,1.0,,2026-10-03,Carlos Prates,Welterweight,3.0,3.0,3.0,0.7804669220512302,3.0,2.0
+Meta,Welterweight,ian machado garry,Ian Machado Garry,2,2.0,,2026-10-03,Ian Machado Garry,Welterweight,4.0,4.0,4.0,0.7696994854635487,4.0,2.0
+Meta,Welterweight,michael morales,Michael Morales,3,3.0,,2026-10-03,Michael Morales,Welterweight,1.0,1.0,1.0,0.6892521596455798,1.0,-2.0
+Meta,Welterweight,jack della maddalena,Jack Della Maddalena,4,4.0,,2026-10-03,Jack Della Maddalena,Welterweight,5.0,5.0,6.0,0.547303776073499,5.0,1.0
+Meta,Welterweight,sean brady,Sean Brady,5,5.0,,2026-10-03,Sean Brady,Welterweight,2.0,2.0,2.0,0.7987184135268439,2.0,-3.0
+Meta,Welterweight,gabriel bonfim,Gabriel Bonfim,6,6.0,,2026-10-03,Gabriel Bonfim,Welterweight,6.0,6.0,7.0,0.5025060948843145,6.0,0.0
+Meta,Welterweight,belal muhammad,Belal Muhammad,7,7.0,,2026-10-03,Belal Muhammad,Welterweight,7.0,7.0,8.0,0.5688704157330061,7.0,0.0
+Meta,Welterweight,joaquin buckley,Joaquin Buckley,8,8.0,,2026-10-03,Joaquin Buckley,Welterweight,9.0,5.0,9.0,0.5103728774191706,9.0,1.0
+Meta,Welterweight,uros medic,Uroš Medić,9,9.0,,2026-10-03,Uros Medic,Welterweight,17.0,16.0,18.0,0.2576875438071965,17.0,8.0
+Meta,Welterweight,leon edwards,Leon Edwards,10,10.0,,2026-10-03,Leon Edwards,Welterweight,8.0,8.0,9.0,0.5422405957856647,8.0,-2.0
+Meta,Welterweight,mike malott,Mike Malott,11,11.0,,2026-10-03,Mike Malott,Welterweight,14.0,14.0,15.0,0.3016140203809575,14.0,3.0
+Meta,Welterweight,kamaru usman,Kamaru Usman,12,12.0,,2026-10-03,Kamaru Usman,Welterweight,10.0,10.0,10.0,0.4492063515950665,10.0,-2.0
+Meta,Welterweight,yaroslav amosov,Yaroslav Amosov,13,13.0,,2026-10-03,Yaroslav Amosov,Welterweight,15.0,15.0,23.0,0.2473157782849388,15.0,2.0
+Meta,Welterweight,kevin holland,Kevin Holland,14,14.0,,2026-10-03,Kevin Holland,Welterweight,24.0,16.0,26.0,0.1924469837301948,24.0,10.0
+Meta,Welterweight,daniel rodriguez,Daniel Rodriguez,15,15.0,,2026-10-03,Daniel Rodriguez,Welterweight,18.0,17.0,19.0,0.2701998258652328,18.0,3.0
 Meta,Middleweight,sean strickland,Sean Strickland,0,,title holder,,Sean Strickland,Middleweight,,0.0,0.0,0.9773143361064592,,
-Meta,Middleweight,khamzat chimaev,Khamzat Chimaev,1,1.0,,2026-09-26,Khamzat Chimaev,Middleweight,1.0,1.0,1.0,0.9970070488373162,1.0,0.0
-Meta,Middleweight,dricus du plessis,Dricus Du Plessis,2,2.0,,2026-09-26,Dricus Du Plessis,Middleweight,2.0,2.0,2.0,1.138295450129814,2.0,0.0
-Meta,Middleweight,nassourdine imavov,Nassourdine Imavov,3,3.0,,2026-09-26,Nassourdine Imavov,Middleweight,4.0,3.0,4.0,0.8895085802665785,4.0,1.0
-Meta,Middleweight,joe pyfer,Joe Pyfer,4,4.0,,2026-09-26,Joe Pyfer,Middleweight,6.0,6.0,6.0,0.576438048558003,6.0,2.0
-Meta,Middleweight,brendan allen,Brendan Allen,5,5.0,,2026-09-26,Brendan Allen,Middleweight,3.0,3.0,4.0,0.9059424769302368,3.0,-2.0
-Meta,Middleweight,caio borralho,Caio Borralho,6,6.0,,2026-09-26,Caio Borralho,Middleweight,9.0,9.0,9.0,0.4949575261179274,9.0,3.0
-Meta,Middleweight,gregory rodrigues,Gregory Rodrigues,7,7.0,,2026-09-26,Gregory Rodrigues,Middleweight,7.0,7.0,7.0,0.5595209758282103,7.0,0.0
-Meta,Middleweight,anthony hernandez,Anthony Hernandez,8,8.0,,2026-09-26,Anthony Hernandez,Middleweight,8.0,8.0,8.0,0.5464816064210871,8.0,0.0
-Meta,Middleweight,israel adesanya,Israel Adesanya,9,9.0,,2026-09-26,Israel Adesanya,Middleweight,27.0,23.0,32.0,0.0966538460925364,27.0,18.0
-Meta,Middleweight,christian leroy duncan,Christian Leroy Duncan,10,10.0,,2026-09-26,Christian Leroy Duncan,Middleweight,10.0,10.0,10.0,0.457015628359018,10.0,0.0
-Meta,Middleweight,ikram aliskerov,Ikram Aliskerov,11,11.0,,2026-09-26,Ikram Aliskerov,Middleweight,12.0,11.0,13.0,0.2783392854025386,12.0,1.0
-Meta,Middleweight,bo nickal,Bo Nickal,12,12.0,,2026-09-26,Bo Nickal,Middleweight,14.0,13.0,16.0,0.2602763345200641,14.0,2.0
-Meta,Middleweight,abus magomedov,Abus Magomedov,13,13.0,,2026-09-26,Abus Magomedov,Middleweight,23.0,22.0,24.0,0.1730883165129252,23.0,10.0
-Meta,Middleweight,edmen shahbazyan,Edmen Shahbazyan,14,14.0,,2026-09-26,Edmen Shahbazyan,Middleweight,20.0,18.0,20.0,0.2277444609202748,20.0,6.0
-Meta,Middleweight,shara magomedov,Shara Magomedov,15,15.0,,2026-09-26,Shara Magomedov,Middleweight,17.0,15.0,20.0,0.2310172156811116,17.0,2.0
+Meta,Middleweight,khamzat chimaev,Khamzat Chimaev,1,1.0,,2026-10-03,Khamzat Chimaev,Middleweight,1.0,1.0,1.0,0.9970070488373162,1.0,0.0
+Meta,Middleweight,dricus du plessis,Dricus Du Plessis,2,2.0,,2026-10-03,Dricus Du Plessis,Middleweight,2.0,2.0,2.0,1.138295450129814,2.0,0.0
+Meta,Middleweight,nassourdine imavov,Nassourdine Imavov,3,3.0,,2026-10-03,Nassourdine Imavov,Middleweight,4.0,3.0,4.0,0.8895085802665785,4.0,1.0
+Meta,Middleweight,joe pyfer,Joe Pyfer,4,4.0,,2026-10-03,Joe Pyfer,Middleweight,6.0,6.0,6.0,0.576438048558003,6.0,2.0
+Meta,Middleweight,brendan allen,Brendan Allen,5,5.0,,2026-10-03,Brendan Allen,Middleweight,3.0,3.0,4.0,0.9059424769302368,3.0,-2.0
+Meta,Middleweight,caio borralho,Caio Borralho,6,6.0,,2026-10-03,Caio Borralho,Middleweight,9.0,9.0,9.0,0.4949575261179274,9.0,3.0
+Meta,Middleweight,gregory rodrigues,Gregory Rodrigues,7,7.0,,2026-10-03,Gregory Rodrigues,Middleweight,7.0,7.0,7.0,0.5595209758282103,7.0,0.0
+Meta,Middleweight,anthony hernandez,Anthony Hernandez,8,8.0,,2026-10-03,Anthony Hernandez,Middleweight,8.0,8.0,8.0,0.5464816064210871,8.0,0.0
+Meta,Middleweight,israel adesanya,Israel Adesanya,9,9.0,,2026-10-03,Israel Adesanya,Middleweight,27.0,23.0,32.0,0.0966538460925364,27.0,18.0
+Meta,Middleweight,christian leroy duncan,Christian Leroy Duncan,10,10.0,,2026-10-03,Christian Leroy Duncan,Middleweight,10.0,10.0,10.0,0.457015628359018,10.0,0.0
+Meta,Middleweight,ikram aliskerov,Ikram Aliskerov,11,11.0,,2026-10-03,Ikram Aliskerov,Middleweight,12.0,11.0,13.0,0.2783392854025386,12.0,1.0
+Meta,Middleweight,bo nickal,Bo Nickal,12,12.0,,2026-10-03,Bo Nickal,Middleweight,14.0,13.0,16.0,0.2602763345200641,14.0,2.0
+Meta,Middleweight,abus magomedov,Abus Magomedov,13,13.0,,2026-10-03,Abus Magomedov,Middleweight,23.0,22.0,24.0,0.1730883165129252,23.0,10.0
+Meta,Middleweight,roman kopylov,Roman Kopylov,14,14.0,,2026-10-03,Roman Kopylov,Middleweight,24.0,23.0,34.0,0.0645304677786874,24.0,10.0
+Meta,Middleweight,edmen shahbazyan,Edmen Shahbazyan,15,15.0,,2026-10-03,Edmen Shahbazyan,Middleweight,20.0,18.0,20.0,0.2277444609202748,20.0,5.0
 Meta,Light Heavyweight,carlos ulberg,Carlos Ulberg,0,,title holder,,Carlos Ulberg,Light Heavyweight,,0.0,0.0,0.838640901655892,,
-Meta,Light Heavyweight,alex pereira,Alex Pereira,1,1.0,,2026-09-26,Alex Pereira,Heavyweight,4.0,4.0,4.0,1.206068197091574,,
-Meta,Light Heavyweight,magomed ankalaev,Magomed Ankalaev,2,2.0,,2026-09-26,Magomed Ankalaev,Light Heavyweight,1.0,1.0,1.0,1.008895136297413,1.0,-1.0
-Meta,Light Heavyweight,jiri prochazka,Jiří Procházka,3,3.0,,2026-09-26,Jiri Prochazka,Light Heavyweight,4.0,4.0,4.0,0.8360969042168567,4.0,1.0
-Meta,Light Heavyweight,paulo costa,Paulo Costa,4,4.0,,2026-09-26,Paulo Costa,Light Heavyweight,2.0,2.0,2.0,0.7371013965952522,2.0,-2.0
-Meta,Light Heavyweight,jamahal hill,Jamahal Hill,5,5.0,,2026-09-26,Jamahal Hill,Light Heavyweight,18.0,17.0,22.0,0.0429868409810537,18.0,13.0
-Meta,Light Heavyweight,khalil rountree jr,Khalil Rountree Jr.,6,6.0,,2026-09-26,Khalil Rountree Jr.,Light Heavyweight,9.0,7.0,9.0,0.4309597709659954,9.0,3.0
-Meta,Light Heavyweight,navajo stirling,Navajo Stirling,7,7.0,,2026-09-26,Navajo Stirling,Light Heavyweight,3.0,3.0,5.0,0.5133541150655825,3.0,-4.0
-Meta,Light Heavyweight,dominick reyes,Dominick Reyes,8,8.0,,2026-09-26,Dominick Reyes,Light Heavyweight,5.0,5.0,6.0,0.4963676404648199,5.0,-3.0
-Meta,Light Heavyweight,reinier de ridder,Reinier de Ridder,9,9.0,,2026-09-26,Reinier de Ridder,Light Heavyweight,10.0,10.0,10.0,0.3391767809374279,10.0,1.0
-Meta,Light Heavyweight,azamat murzakanov,Azamat Murzakanov,10,10.0,,2026-09-26,Azamat Murzakanov,Light Heavyweight,7.0,6.0,9.0,0.4610202069629681,7.0,-3.0
-Meta,Light Heavyweight,alonzo menifield,Alonzo Menifield,11,11.0,,2026-09-26,Alonzo Menifield,Light Heavyweight,13.0,13.0,24.0,0.0450361962207712,13.0,2.0
-Meta,Light Heavyweight,bogdan guskov,Bogdan Guskov,12,12.0,,2026-09-26,Bogdan Guskov,Light Heavyweight,8.0,8.0,8.0,0.442871941513455,8.0,-4.0
-Meta,Light Heavyweight,robert whittaker,Robert Whittaker,13,13.0,,2026-09-26,Robert Whittaker,Middleweight,5.0,5.0,5.0,0.7125476630723131,,
-Meta,Light Heavyweight,johnny walker,Johnny Walker,14,14.0,,2026-09-26,Johnny Walker,Light Heavyweight,12.0,12.0,12.0,0.2137367642135478,12.0,-2.0
-Meta,Light Heavyweight,muhammad saidov,Muhammad Saidov,15,15.0,,2026-09-26,Muhammad Saidov,Light Heavyweight,15.0,13.0,16.0,0.116418221988638,15.0,0.0
+Meta,Light Heavyweight,alex pereira,Alex Pereira,1,1.0,,2026-10-03,Alex Pereira,Heavyweight,4.0,4.0,4.0,1.206068197091574,,
+Meta,Light Heavyweight,magomed ankalaev,Magomed Ankalaev,2,2.0,,2026-10-03,Magomed Ankalaev,Light Heavyweight,1.0,1.0,1.0,1.008895136297413,1.0,-1.0
+Meta,Light Heavyweight,jiri prochazka,Jiří Procházka,3,3.0,,2026-10-03,Jiri Prochazka,Light Heavyweight,4.0,4.0,4.0,0.8360969042168567,4.0,1.0
+Meta,Light Heavyweight,paulo costa,Paulo Costa,4,4.0,,2026-10-03,Paulo Costa,Light Heavyweight,2.0,2.0,2.0,0.7371013965952522,2.0,-2.0
+Meta,Light Heavyweight,khalil rountree jr,Khalil Rountree Jr.,5,5.0,,2026-10-03,Khalil Rountree Jr.,Light Heavyweight,9.0,7.0,9.0,0.4309597709659954,9.0,4.0
+Meta,Light Heavyweight,navajo stirling,Navajo Stirling,6,6.0,,2026-10-03,Navajo Stirling,Light Heavyweight,3.0,3.0,5.0,0.5133541150655825,3.0,-3.0
+Meta,Light Heavyweight,dominick reyes,Dominick Reyes,7,7.0,,2026-10-03,Dominick Reyes,Light Heavyweight,5.0,5.0,6.0,0.4963676404648199,5.0,-2.0
+Meta,Light Heavyweight,reinier de ridder,Reinier de Ridder,8,8.0,,2026-10-03,Reinier de Ridder,Light Heavyweight,10.0,10.0,10.0,0.3391767809374279,10.0,2.0
+Meta,Light Heavyweight,azamat murzakanov,Azamat Murzakanov,9,9.0,,2026-10-03,Azamat Murzakanov,Light Heavyweight,7.0,6.0,9.0,0.4610202069629681,7.0,-2.0
+Meta,Light Heavyweight,alonzo menifield,Alonzo Menifield,10,10.0,,2026-10-03,Alonzo Menifield,Light Heavyweight,13.0,13.0,24.0,0.0450361962207712,13.0,3.0
+Meta,Light Heavyweight,bogdan guskov,Bogdan Guskov,11,11.0,,2026-10-03,Bogdan Guskov,Light Heavyweight,8.0,8.0,8.0,0.442871941513455,8.0,-3.0
+Meta,Light Heavyweight,robert whittaker,Robert Whittaker,12,12.0,,2026-10-03,Robert Whittaker,Middleweight,5.0,5.0,5.0,0.7125476630723131,,
+Meta,Light Heavyweight,muhammad saidov,Muhammad Saidov,13,13.0,,2026-10-03,Muhammad Saidov,Light Heavyweight,15.0,13.0,16.0,0.116418221988638,15.0,2.0
+Meta,Light Heavyweight,modestas bukauskas,Modestas Bukauskas,14,14.0,,2026-10-03,Modestas Bukauskas,Light Heavyweight,23.0,20.0,23.0,-0.0314784186885926,23.0,9.0
+Meta,Light Heavyweight,abdul rakhman yakhyaev,Abdul Rakhman Yakhyaev,15,15.0,,2026-10-03,Abdul Rakhman Yakhyaev,Light Heavyweight,11.0,11.0,11.0,0.2574674501869768,11.0,-4.0
 Meta,Heavyweight,ciryl gane,Ciryl Gane,0,,title holder,,,,,,,,,
-Meta,Heavyweight,tom aspinall,Tom Aspinall,1,1.0,,2026-09-26,Tom Aspinall,Heavyweight,,0.0,0.0,0.8868491905217489,,
-Meta,Heavyweight,sergei pavlovich,Sergei Pavlovich,2,2.0,,2026-09-26,Sergei Pavlovich,Heavyweight,6.0,6.0,6.0,0.6898547987299023,6.0,4.0
-Meta,Heavyweight,alex pereira,Alex Pereira,3,3.0,,2026-09-26,Alex Pereira,Heavyweight,4.0,4.0,4.0,1.206068197091574,4.0,1.0
-Meta,Heavyweight,alexander volkov,Alexander Volkov,4,4.0,,2026-09-26,Alexander Volkov,Heavyweight,1.0,1.0,1.0,1.1321922401031834,1.0,-3.0
-Meta,Heavyweight,rizvan kuniev,Rizvan Kuniev,5,5.0,,2026-09-26,Rizvan Kuniev,Heavyweight,8.0,7.0,10.0,0.3744598070570051,8.0,3.0
-Meta,Heavyweight,josh hokit,Josh Hokit,6,6.0,,2026-09-26,Josh Hokit,Heavyweight,2.0,2.0,2.0,0.5426639591560884,2.0,-4.0
-Meta,Heavyweight,curtis blaydes,Curtis Blaydes,7,7.0,,2026-09-26,Curtis Blaydes,Heavyweight,3.0,3.0,3.0,0.8315305056473403,3.0,-4.0
-Meta,Heavyweight,waldo cortes acosta,Waldo Cortes Acosta,8,8.0,,2026-09-26,Waldo Cortes Acosta,Heavyweight,5.0,5.0,5.0,0.7223708562982506,5.0,-3.0
-Meta,Heavyweight,vitor petrino,Vitor Petrino,9,9.0,,2026-09-26,Vitor Petrino,Heavyweight,12.0,11.0,12.0,0.2860024844767371,12.0,3.0
-Meta,Heavyweight,mario pinto,Mario Pinto,10,10.0,,2026-09-26,Mario Pinto,Heavyweight,9.0,8.0,10.0,0.356895350753165,9.0,-1.0
-Meta,Heavyweight,valter walker,Valter Walker,11,11.0,,2026-09-26,Valter Walker,Heavyweight,7.0,7.0,9.0,0.3819977992266708,7.0,-4.0
-Meta,Heavyweight,brando pericic,Brando Peričić,12,12.0,,2026-09-26,Brando Pericic,Heavyweight,11.0,9.0,11.0,0.3483743346722084,11.0,-1.0
-Meta,Heavyweight,serghei spivac,Serghei Spivac,13,13.0,,2026-09-26,Serghei Spivac,Heavyweight,20.0,19.0,22.0,0.0284979193313363,20.0,7.0
-Meta,Heavyweight,shamil gaziev,Shamil Gaziev,14,14.0,,2026-09-26,Shamil Gaziev,Heavyweight,21.0,20.0,28.0,0.0057933311906443,21.0,7.0
-Meta,Heavyweight,aleksandar rakic,Aleksandar Rakić,15,15.0,,2026-09-26,Aleksandar Rakic,Light Heavyweight,33.0,32.0,35.0,-0.1962829725854303,,
+Meta,Heavyweight,tom aspinall,Tom Aspinall,1,1.0,,2026-10-03,Tom Aspinall,Heavyweight,,0.0,0.0,0.8868491905217489,,
+Meta,Heavyweight,sergei pavlovich,Sergei Pavlovich,2,2.0,,2026-10-03,Sergei Pavlovich,Heavyweight,6.0,6.0,6.0,0.6898547987299023,6.0,4.0
+Meta,Heavyweight,alex pereira,Alex Pereira,3,3.0,,2026-10-03,Alex Pereira,Heavyweight,4.0,4.0,4.0,1.206068197091574,4.0,1.0
+Meta,Heavyweight,alexander volkov,Alexander Volkov,4,4.0,,2026-10-03,Alexander Volkov,Heavyweight,1.0,1.0,1.0,1.1321922401031834,1.0,-3.0
+Meta,Heavyweight,rizvan kuniev,Rizvan Kuniev,5,5.0,,2026-10-03,Rizvan Kuniev,Heavyweight,8.0,7.0,10.0,0.3744598070570051,8.0,3.0
+Meta,Heavyweight,josh hokit,Josh Hokit,6,6.0,,2026-10-03,Josh Hokit,Heavyweight,2.0,2.0,2.0,0.5426639591560884,2.0,-4.0
+Meta,Heavyweight,curtis blaydes,Curtis Blaydes,7,7.0,,2026-10-03,Curtis Blaydes,Heavyweight,3.0,3.0,3.0,0.8315305056473403,3.0,-4.0
+Meta,Heavyweight,waldo cortes acosta,Waldo Cortes Acosta,8,8.0,,2026-10-03,Waldo Cortes Acosta,Heavyweight,5.0,5.0,5.0,0.7223708562982506,5.0,-3.0
+Meta,Heavyweight,vitor petrino,Vitor Petrino,9,9.0,,2026-10-03,Vitor Petrino,Heavyweight,12.0,11.0,12.0,0.2860024844767371,12.0,3.0
+Meta,Heavyweight,mario pinto,Mario Pinto,10,10.0,,2026-10-03,Mario Pinto,Heavyweight,9.0,8.0,10.0,0.356895350753165,9.0,-1.0
+Meta,Heavyweight,valter walker,Valter Walker,11,11.0,,2026-10-03,Valter Walker,Heavyweight,7.0,7.0,9.0,0.3819977992266708,7.0,-4.0
+Meta,Heavyweight,johnny walker,Johnny Walker,12,12.0,,2026-10-03,Johnny Walker,Light Heavyweight,12.0,12.0,12.0,0.2137367642135478,,
+Meta,Heavyweight,brando pericic,Brando Peričić,13,13.0,,2026-10-03,Brando Pericic,Heavyweight,11.0,9.0,11.0,0.3483743346722084,11.0,-2.0
+Meta,Heavyweight,serghei spivac,Serghei Spivac,14,14.0,,2026-10-03,Serghei Spivac,Heavyweight,20.0,19.0,22.0,0.0284979193313363,20.0,6.0
+Meta,Heavyweight,anthony wint,Anthony Wint,15,15.0,,2026-10-03,Anthony Wint,Heavyweight,13.0,13.0,13.0,0.2230357976984145,13.0,-2.0
 Meta,Women's Strawweight,mackenzie dern,Mackenzie Dern,0,,title holder,,Mackenzie Dern,Women's Strawweight,,0.0,0.0,0.7629046573209493,,
-Meta,Women's Strawweight,zhang weili,Zhang Weili,1,1.0,,2026-09-26,Zhang Weili,Women's Strawweight,1.0,1.0,1.0,0.9492287998685692,1.0,0.0
-Meta,Women's Strawweight,virna jandiroba,Virna Jandiroba,2,2.0,,2026-09-26,Virna Jandiroba,Women's Strawweight,3.0,2.0,3.0,0.7872684976651526,3.0,1.0
-Meta,Women's Strawweight,tatiana suarez,Tatiana Suarez,3,3.0,,2026-09-26,Tatiana Suarez,Women's Strawweight,2.0,2.0,3.0,0.803841057772591,2.0,-1.0
-Meta,Women's Strawweight,denise gomes,Denise Gomes,4,4.0,,2026-09-26,Denise Gomes,Women's Strawweight,7.0,6.0,8.0,0.3918043477528032,7.0,3.0
-Meta,Women's Strawweight,gillian robertson,Gillian Robertson,5,5.0,,2026-09-26,Gillian Robertson,Women's Strawweight,4.0,4.0,4.0,0.5251427879943233,4.0,-1.0
-Meta,Women's Strawweight,fatima kline,Fatima Kline,6,6.0,,2026-09-26,Fatima Kline,Women's Strawweight,6.0,5.0,9.0,0.407392303718833,6.0,0.0
-Meta,Women's Strawweight,alexia thainara,Alexia Thainara,7,7.0,,2026-09-26,Alexia Thainara,Women's Strawweight,8.0,7.0,9.0,0.3821184365347809,8.0,1.0
-Meta,Women's Strawweight,piera rodriguez,Piera Rodriguez,8,8.0,,2026-09-26,Piera Rodriguez,Women's Strawweight,16.0,15.0,18.0,0.0623044219514256,16.0,8.0
-Meta,Women's Strawweight,yan xiaonan,Yan Xiaonan,9,9.0,,2026-09-26,Yan Xiaonan,Women's Strawweight,15.0,15.0,18.0,0.066679549450413,15.0,6.0
-Meta,Women's Strawweight,mizuki inoue,Mizuki,10,10.0,,2026-09-26,Mizuki,Women's Strawweight,23.0,21.0,25.0,-0.0309819869126927,23.0,13.0
-Meta,Women's Strawweight,loopy godinez,Loopy Godinez,11,11.0,,2026-09-26,Loopy Godinez,Women's Strawweight,5.0,5.0,7.0,0.4237798086062797,5.0,-6.0
-Meta,Women's Strawweight,tabatha ricci,Tabatha Ricci,12,12.0,,2026-09-26,Tabatha Ricci,Women's Strawweight,20.0,19.0,22.0,0.0153305821202508,20.0,8.0
-Meta,Women's Strawweight,jaqueline amorim,Jaqueline Amorim,13,13.0,,2026-09-26,Jaqueline Amorim,Women's Strawweight,10.0,10.0,11.0,0.2392012199615516,10.0,-3.0
-Meta,Women's Strawweight,talita alencar,Talita Alencar,14,14.0,,2026-09-26,Talita Alencar,Women's Strawweight,21.0,17.0,21.0,0.0138703894828661,21.0,7.0
-Meta,Women's Strawweight,amanda lemos,Amanda Lemos,15,15.0,,2026-09-26,Amanda Lemos,Women's Strawweight,33.0,32.0,33.0,-0.2734646074243452,33.0,18.0
-Meta,Women's Flyweight,valentina shevchenko,Valentina Shevchenko,0,,title holder,,Valentina Shevchenko,Women's Flyweight,,0.0,0.0,1.1244290059966993,,
-Meta,Women's Flyweight,natalia silva,Natalia Silva,1,,title holder,,Natalia Silva,Women's Flyweight,,0.0,0.0,0.7470651728395625,,
-Meta,Women's Flyweight,alexa grasso,Alexa Grasso,2,1.0,,2026-09-26,Alexa Grasso,Women's Flyweight,1.0,1.0,1.0,0.5618583517423474,1.0,0.0
-Meta,Women's Flyweight,erin blanchfield,Erin Blanchfield,3,2.0,,2026-09-26,Erin Blanchfield,Women's Flyweight,4.0,3.0,4.0,0.7227137605312671,4.0,2.0
-Meta,Women's Flyweight,manon fiorot,Manon Fiorot,4,3.0,,2026-09-26,Manon Fiorot,Women's Flyweight,2.0,2.0,2.0,0.7835532852657685,2.0,-1.0
-Meta,Women's Flyweight,zhang weili,Zhang Weili,5,4.0,,2026-09-26,Zhang Weili,Women's Strawweight,1.0,1.0,1.0,0.9492287998685692,,
-Meta,Women's Flyweight,wang cong,Wang Cong,6,5.0,,2026-09-26,Wang Cong,Women's Flyweight,8.0,7.0,8.0,0.3059374854806267,8.0,3.0
-Meta,Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,7,6.0,,2026-09-26,Jasmine Jasudavicius,Women's Flyweight,6.0,6.0,7.0,0.3735291158642385,6.0,0.0
-Meta,Women's Flyweight,rose namajunas,Rose Namajunas,8,7.0,,2026-09-26,Rose Namajunas,Women's Flyweight,3.0,3.0,4.0,0.7708755885677615,3.0,-4.0
-Meta,Women's Flyweight,maycee barber,Maycee Barber,9,8.0,,2026-09-26,Maycee Barber,Women's Flyweight,5.0,5.0,5.0,0.488263913705838,5.0,-3.0
-Meta,Women's Flyweight,tracy cortez,Tracy Cortez,10,9.0,,2026-09-26,Tracy Cortez,Women's Flyweight,13.0,13.0,15.0,0.0213657950395443,13.0,4.0
-Meta,Women's Flyweight,casey oneill,Casey O'Neill,11,10.0,,2026-09-26,Casey O'Neill,Women's Flyweight,7.0,6.0,8.0,0.3340525006381811,7.0,-3.0
-Meta,Women's Flyweight,miranda maverick,Miranda Maverick,12,11.0,,2026-09-26,Miranda Maverick,Women's Flyweight,10.0,10.0,10.0,0.1601144422383351,10.0,-1.0
-Meta,Women's Flyweight,regina tarin,Regina Tarin,13,12.0,,2026-09-26,Regina Tarin,Women's Flyweight,12.0,11.0,12.0,0.0531595041533836,12.0,0.0
-Meta,Women's Flyweight,karine silva,Karine Silva,14,13.0,,2026-09-26,Karine Silva,Women's Flyweight,17.0,17.0,18.0,-0.0375893894833153,17.0,4.0
-Meta,Women's Flyweight,carli judice,Carli Judice,15,14.0,,2026-09-26,Carli Judice,Women's Flyweight,9.0,9.0,9.0,0.2087120963019646,9.0,-5.0
-Meta,Women's Bantamweight,kayla harrison,Kayla Harrison,0,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.4354488922212022,,
-Meta,Women's Bantamweight,joselyne edwards,Joselyne Edwards,1,1.0,,2026-09-26,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3254789875295874,1.0,0.0
-Meta,Women's Bantamweight,ailin perez,Ailin Perez,2,2.0,,2026-09-26,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.362715320638537,2.0,0.0
-Meta,Women's Bantamweight,norma dumont,Norma Dumont,3,3.0,,2026-09-26,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3998694055292565,3.0,0.0
-Meta,Women's Bantamweight,luana santos,Luana Santos,4,4.0,,2026-09-26,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2586995367442944,7.0,3.0
-Meta,Women's Bantamweight,julianna pena,Julianna Peña,5,5.0,,2026-09-26,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.2351713074336142,9.0,4.0
-Meta,Women's Bantamweight,yana santos,Yana Santos,6,6.0,,2026-09-26,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2649383781021995,6.0,0.0
-Meta,Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,7,7.0,,2026-09-26,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2870197472473346,5.0,-2.0
-Meta,Women's Bantamweight,michelle montague,Michelle Montague,8,8.0,,2026-09-26,Michelle Montague,Women's Bantamweight,12.0,11.0,13.0,0.0012978212058158,12.0,4.0
-Meta,Women's Bantamweight,melissa croden,Melissa Croden,9,9.0,,2026-09-26,Melissa Croden,Women's Bantamweight,14.0,14.0,15.0,-0.0613908097080829,14.0,5.0
-Meta,Women's Bantamweight,karol rosa,Karol Rosa,10,10.0,,2026-09-26,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.014714309349809,13.0,3.0
-Meta,Women's Bantamweight,beatriz mesquita,Bia Mesquita,11,11.0,,2026-09-26,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.2423581615000344,8.0,-3.0
-Meta,Women's Bantamweight,nora cornolle,Nora Cornolle,12,12.0,,2026-09-26,Nora Cornolle,Women's Bantamweight,16.0,16.0,17.0,-0.2401549588317881,16.0,4.0
-Meta,Women's Bantamweight,macy chiasson,Macy Chiasson,13,13.0,,2026-09-26,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.176292848319808,10.0,-3.0
-Meta,Women's Bantamweight,daria zhelezniakova,Daria Zhelezniakova,14,14.0,,2026-09-26,Daria Zhelezniakova,Women's Bantamweight,24.0,24.0,24.0,-0.7203803393849753,24.0,10.0
-Meta,Women's Bantamweight,raquel pennington,Raquel Pennington,15,15.0,,2026-09-26,,,,,,,,
+Meta,Women's Strawweight,zhang weili,Zhang Weili,1,1.0,,2026-10-03,Zhang Weili,Women's Strawweight,1.0,1.0,1.0,0.9492287998685692,1.0,0.0
+Meta,Women's Strawweight,virna jandiroba,Virna Jandiroba,2,2.0,,2026-10-03,Virna Jandiroba,Women's Strawweight,3.0,2.0,3.0,0.7872684976651526,3.0,1.0
+Meta,Women's Strawweight,tatiana suarez,Tatiana Suarez,3,3.0,,2026-10-03,Tatiana Suarez,Women's Strawweight,2.0,2.0,3.0,0.803841057772591,2.0,-1.0
+Meta,Women's Strawweight,denise gomes,Denise Gomes,4,4.0,,2026-10-03,Denise Gomes,Women's Strawweight,7.0,6.0,8.0,0.3918043477528032,7.0,3.0
+Meta,Women's Strawweight,gillian robertson,Gillian Robertson,5,5.0,,2026-10-03,Gillian Robertson,Women's Strawweight,4.0,4.0,4.0,0.5251427879943233,4.0,-1.0
+Meta,Women's Strawweight,fatima kline,Fatima Kline,6,6.0,,2026-10-03,Fatima Kline,Women's Strawweight,6.0,5.0,9.0,0.407392303718833,6.0,0.0
+Meta,Women's Strawweight,alexia thainara,Alexia Thainara,7,7.0,,2026-10-03,Alexia Thainara,Women's Strawweight,8.0,7.0,9.0,0.3821184365347809,8.0,1.0
+Meta,Women's Strawweight,piera rodriguez,Piera Rodriguez,8,8.0,,2026-10-03,Piera Rodriguez,Women's Strawweight,16.0,15.0,18.0,0.0623044219514256,16.0,8.0
+Meta,Women's Strawweight,yan xiaonan,Yan Xiaonan,9,9.0,,2026-10-03,Yan Xiaonan,Women's Strawweight,15.0,15.0,18.0,0.066679549450413,15.0,6.0
+Meta,Women's Strawweight,mizuki inoue,Mizuki,10,10.0,,2026-10-03,Mizuki,Women's Strawweight,23.0,21.0,25.0,-0.0309819869126927,23.0,13.0
+Meta,Women's Strawweight,loopy godinez,Loopy Godinez,11,11.0,,2026-10-03,Loopy Godinez,Women's Strawweight,5.0,5.0,7.0,0.4237798086062797,5.0,-6.0
+Meta,Women's Strawweight,tabatha ricci,Tabatha Ricci,12,12.0,,2026-10-03,Tabatha Ricci,Women's Strawweight,20.0,19.0,22.0,0.0153305821202508,20.0,8.0
+Meta,Women's Strawweight,jaqueline amorim,Jaqueline Amorim,13,13.0,,2026-10-03,Jaqueline Amorim,Women's Strawweight,10.0,10.0,11.0,0.2392012199615516,10.0,-3.0
+Meta,Women's Strawweight,talita alencar,Talita Alencar,14,14.0,,2026-10-03,Talita Alencar,Women's Strawweight,21.0,17.0,21.0,0.0138703894828661,21.0,7.0
+Meta,Women's Strawweight,amanda lemos,Amanda Lemos,15,15.0,,2026-10-03,Amanda Lemos,Women's Strawweight,33.0,32.0,33.0,-0.2734646074243452,33.0,18.0
+Meta,Women's Flyweight,natalia silva,Natalia Silva,0,,title holder,,Natalia Silva,Women's Flyweight,,0.0,0.0,0.7470651728395625,,
+Meta,Women's Flyweight,valentina shevchenko,Valentina Shevchenko,1,1.0,,2026-10-03,Valentina Shevchenko,Women's Flyweight,,0.0,0.0,1.1244290059966993,,
+Meta,Women's Flyweight,alexa grasso,Alexa Grasso,2,2.0,,2026-10-03,Alexa Grasso,Women's Flyweight,1.0,1.0,1.0,0.5618583517423474,1.0,-1.0
+Meta,Women's Flyweight,erin blanchfield,Erin Blanchfield,3,3.0,,2026-10-03,Erin Blanchfield,Women's Flyweight,4.0,3.0,4.0,0.7227137605312671,4.0,1.0
+Meta,Women's Flyweight,manon fiorot,Manon Fiorot,4,4.0,,2026-10-03,Manon Fiorot,Women's Flyweight,2.0,2.0,2.0,0.7835532852657685,2.0,-2.0
+Meta,Women's Flyweight,zhang weili,Zhang Weili,5,5.0,,2026-10-03,Zhang Weili,Women's Strawweight,1.0,1.0,1.0,0.9492287998685692,,
+Meta,Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,6,6.0,,2026-10-03,Jasmine Jasudavicius,Women's Flyweight,6.0,6.0,7.0,0.3735291158642385,6.0,0.0
+Meta,Women's Flyweight,rose namajunas,Rose Namajunas,7,7.0,,2026-10-03,Rose Namajunas,Women's Flyweight,3.0,3.0,4.0,0.7708755885677615,3.0,-4.0
+Meta,Women's Flyweight,wang cong,Wang Cong,8,8.0,,2026-10-03,Wang Cong,Women's Flyweight,8.0,7.0,8.0,0.3059374854806267,8.0,0.0
+Meta,Women's Flyweight,maycee barber,Maycee Barber,9,9.0,,2026-10-03,Maycee Barber,Women's Flyweight,5.0,5.0,5.0,0.488263913705838,5.0,-4.0
+Meta,Women's Flyweight,tracy cortez,Tracy Cortez,10,10.0,,2026-10-03,Tracy Cortez,Women's Flyweight,13.0,13.0,15.0,0.0213657950395443,13.0,3.0
+Meta,Women's Flyweight,casey oneill,Casey O'Neill,11,11.0,,2026-10-03,Casey O'Neill,Women's Flyweight,7.0,6.0,8.0,0.3340525006381811,7.0,-4.0
+Meta,Women's Flyweight,miranda maverick,Miranda Maverick,12,12.0,,2026-10-03,Miranda Maverick,Women's Flyweight,10.0,10.0,10.0,0.1601144422383351,10.0,-2.0
+Meta,Women's Flyweight,regina tarin,Regina Tarin,13,13.0,,2026-10-03,Regina Tarin,Women's Flyweight,12.0,11.0,12.0,0.0531595041533836,12.0,-1.0
+Meta,Women's Flyweight,karine silva,Karine Silva,14,14.0,,2026-10-03,Karine Silva,Women's Flyweight,17.0,17.0,18.0,-0.0375893894833153,17.0,3.0
+Meta,Women's Flyweight,carli judice,Carli Judice,15,15.0,,2026-10-03,Carli Judice,Women's Flyweight,9.0,9.0,9.0,0.2087120963019646,9.0,-6.0
+Meta,Women's Bantamweight,kayla harrison,Kayla Harrison,0,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.5763408668878313,,
+Meta,Women's Bantamweight,joselyne edwards,Joselyne Edwards,1,1.0,,2026-10-03,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3215580961503108,1.0,0.0
+Meta,Women's Bantamweight,ailin perez,Ailin Perez,2,2.0,,2026-10-03,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.3596147679183739,2.0,0.0
+Meta,Women's Bantamweight,norma dumont,Norma Dumont,3,3.0,,2026-10-03,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3964106430434234,3.0,0.0
+Meta,Women's Bantamweight,luana santos,Luana Santos,4,4.0,,2026-10-03,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2547556891437481,7.0,3.0
+Meta,Women's Bantamweight,julianna pena,Julianna Peña,5,5.0,,2026-10-03,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.233494648953083,9.0,4.0
+Meta,Women's Bantamweight,yana santos,Yana Santos,6,6.0,,2026-10-03,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2632590245930368,6.0,0.0
+Meta,Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,7,7.0,,2026-10-03,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2840321636700831,5.0,-2.0
+Meta,Women's Bantamweight,michelle montague,Michelle Montague,8,8.0,,2026-10-03,Michelle Montague,Women's Bantamweight,12.0,11.0,13.0,0.001972037403425,12.0,4.0
+Meta,Women's Bantamweight,melissa croden,Melissa Croden,9,9.0,,2026-10-03,Melissa Croden,Women's Bantamweight,14.0,14.0,15.0,-0.0611489145299358,14.0,5.0
+Meta,Women's Bantamweight,karol rosa,Karol Rosa,10,10.0,,2026-10-03,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.0164991251305237,13.0,3.0
+Meta,Women's Bantamweight,beatriz mesquita,Bia Mesquita,11,11.0,,2026-10-03,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.238663436469856,8.0,-3.0
+Meta,Women's Bantamweight,nora cornolle,Nora Cornolle,12,12.0,,2026-10-03,Nora Cornolle,Women's Bantamweight,16.0,16.0,17.0,-0.2405155592050885,16.0,4.0
+Meta,Women's Bantamweight,macy chiasson,Macy Chiasson,13,13.0,,2026-10-03,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.1722901495824874,10.0,-3.0
+Meta,Women's Bantamweight,daria zhelezniakova,Daria Zhelezniakova,14,14.0,,2026-10-03,Daria Zhelezniakova,Women's Bantamweight,24.0,24.0,24.0,-0.7137669543232663,24.0,10.0
+Meta,Women's Bantamweight,raquel pennington,Raquel Pennington,15,15.0,,2026-10-03,,,,,,,,
 Sherdog,Flyweight,joshua van,Joshua Van,1,,title holder,,Joshua Van,Flyweight,,0.0,0.0,0.7441863658478365,,
 Sherdog,Flyweight,alexandre pantoja,Alexandre Pantoja,2,1.0,,2026-09-14,Alexandre Pantoja,Flyweight,4.0,4.0,5.0,0.7421138539120509,4.0,3.0
 Sherdog,Flyweight,manel kape,Manel Kape,3,2.0,,2026-09-14,Manel Kape,Flyweight,1.0,1.0,1.0,0.7385386820839983,1.0,-1.0
@@ -452,16 +452,16 @@ Sherdog,Women's Flyweight,liz carmouche,Liz Carmouche,7,,non-UFC,,,,,,,,,
 Sherdog,Women's Flyweight,maycee barber,Maycee Barber,8,5.0,,2026-09-14,Maycee Barber,Women's Flyweight,5.0,5.0,5.0,0.488263913705838,5.0,0.0
 Sherdog,Women's Flyweight,jasmine jasudavicius,Jasmine Jasudavicius,9,6.0,,2026-09-14,Jasmine Jasudavicius,Women's Flyweight,6.0,6.0,7.0,0.3735291158642385,6.0,0.0
 Sherdog,Women's Flyweight,sabrinna de sousa,Sabrinna De Sousa,10,,non-UFC,,,,,,,,,
-Sherdog,Women's Bantamweight,kayla harrison,Kayla Harrison,1,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.4354488922212022,,
-Sherdog,Women's Bantamweight,julianna pena,Julianna Pena,2,1.0,,2026-09-14,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.2351713074336142,9.0,8.0
-Sherdog,Women's Bantamweight,ailin perez,Ailin Perez,3,2.0,,2026-09-14,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.362715320638537,2.0,0.0
-Sherdog,Women's Bantamweight,joselyne edwards,Joselyne Edwards,4,3.0,,2026-09-14,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3254789875295874,1.0,-2.0
-Sherdog,Women's Bantamweight,yana santos,Yana Santos,5,4.0,,2026-09-14,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2649383781021995,6.0,2.0
-Sherdog,Women's Bantamweight,norma dumont,Norma Dumont,6,5.0,,2026-09-14,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3998694055292565,3.0,-2.0
-Sherdog,Women's Bantamweight,ketlen vieira,Ketlen Vieira,7,6.0,,2026-09-14,Ketlen Vieira,Women's Bantamweight,4.0,4.0,6.0,0.1979613711648346,4.0,-2.0
-Sherdog,Women's Bantamweight,luana santos,Luana Santos,8,7.0,,2026-09-14,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2586995367442944,7.0,0.0
-Sherdog,Women's Bantamweight,beatriz mesquita,Beatriz Mesquita,9,8.0,,2026-09-14,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.2423581615000344,8.0,0.0
-Sherdog,Women's Bantamweight,karol rosa,Karol Rosa,10,9.0,,2026-09-14,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.014714309349809,13.0,4.0
+Sherdog,Women's Bantamweight,kayla harrison,Kayla Harrison,1,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.5763408668878313,,
+Sherdog,Women's Bantamweight,julianna pena,Julianna Pena,2,1.0,,2026-09-14,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.233494648953083,9.0,8.0
+Sherdog,Women's Bantamweight,ailin perez,Ailin Perez,3,2.0,,2026-09-14,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.3596147679183739,2.0,0.0
+Sherdog,Women's Bantamweight,joselyne edwards,Joselyne Edwards,4,3.0,,2026-09-14,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3215580961503108,1.0,-2.0
+Sherdog,Women's Bantamweight,yana santos,Yana Santos,5,4.0,,2026-09-14,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2632590245930368,6.0,2.0
+Sherdog,Women's Bantamweight,norma dumont,Norma Dumont,6,5.0,,2026-09-14,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3964106430434234,3.0,-2.0
+Sherdog,Women's Bantamweight,ketlen vieira,Ketlen Vieira,7,6.0,,2026-09-14,Ketlen Vieira,Women's Bantamweight,4.0,4.0,6.0,0.1977194759866876,4.0,-2.0
+Sherdog,Women's Bantamweight,luana santos,Luana Santos,8,7.0,,2026-09-14,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2547556891437481,7.0,0.0
+Sherdog,Women's Bantamweight,beatriz mesquita,Beatriz Mesquita,9,8.0,,2026-09-14,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.238663436469856,8.0,0.0
+Sherdog,Women's Bantamweight,karol rosa,Karol Rosa,10,9.0,,2026-09-14,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.0164991251305237,13.0,4.0
 Fight Matrix,Flyweight,joshua van,Joshua Van,1,,title holder,,Joshua Van,Flyweight,,0.0,0.0,0.7441863658478365,,
 Fight Matrix,Flyweight,manel kape,Manel Kape,2,1.0,,2026-09-27,Manel Kape,Flyweight,1.0,1.0,1.0,0.7385386820839983,1.0,0.0
 Fight Matrix,Flyweight,alexandre pantoja,Alexandre Pantoja,3,2.0,,2026-09-27,Alexandre Pantoja,Flyweight,4.0,4.0,5.0,0.7421138539120509,4.0,2.0
@@ -613,21 +613,21 @@ Fight Matrix,Women's Flyweight,sabrinna de sousa,Sabrinna de Sousa,12,,non-UFC,,
 Fight Matrix,Women's Flyweight,tracy cortez,Tracy Cortez,13,9.0,,2026-09-06,Tracy Cortez,Women's Flyweight,13.0,13.0,15.0,0.0213657950395443,13.0,4.0
 Fight Matrix,Women's Flyweight,jena bishop,Jena Bishop,14,,non-UFC,,,,,,,,,
 Fight Matrix,Women's Flyweight,viviane araujo,Viviane Araujo,15,,non-UFC,,Viviane Araujo,Women's Flyweight,21.0,19.0,23.0,-0.133670466192337,21.0,
-Fight Matrix,Women's Bantamweight,kayla harrison,Kayla Harrison,1,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.4354488922212022,,
-Fight Matrix,Women's Bantamweight,julianna pena,Julianna Pena,2,1.0,,2026-08-02,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.2351713074336142,9.0,8.0
-Fight Matrix,Women's Bantamweight,joselyne edwards,Joselyne Edwards,3,2.0,,2026-08-02,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3254789875295874,1.0,-1.0
-Fight Matrix,Women's Bantamweight,ketlen vieira,Ketlen Vieira,4,3.0,,2026-08-02,Ketlen Vieira,Women's Bantamweight,4.0,4.0,6.0,0.1979613711648346,4.0,1.0
-Fight Matrix,Women's Bantamweight,norma dumont,Norma Dumont,5,4.0,,2026-08-02,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3998694055292565,3.0,-1.0
-Fight Matrix,Women's Bantamweight,ailin perez,Ailin Perez,6,5.0,,2026-08-02,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.362715320638537,2.0,-3.0
-Fight Matrix,Women's Bantamweight,yana santos,Yana Santos,7,6.0,,2026-08-02,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2649383781021995,6.0,0.0
-Fight Matrix,Women's Bantamweight,luana santos,Luana Santos,8,7.0,,2026-08-02,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2586995367442944,7.0,0.0
+Fight Matrix,Women's Bantamweight,kayla harrison,Kayla Harrison,1,,title holder,,Kayla Harrison,Women's Bantamweight,,0.0,0.0,0.5763408668878313,,
+Fight Matrix,Women's Bantamweight,julianna pena,Julianna Pena,2,1.0,,2026-08-02,Julianna Pena,Women's Bantamweight,9.0,7.0,9.0,0.233494648953083,9.0,8.0
+Fight Matrix,Women's Bantamweight,joselyne edwards,Joselyne Edwards,3,2.0,,2026-08-02,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3215580961503108,1.0,-1.0
+Fight Matrix,Women's Bantamweight,ketlen vieira,Ketlen Vieira,4,3.0,,2026-08-02,Ketlen Vieira,Women's Bantamweight,4.0,4.0,6.0,0.1977194759866876,4.0,1.0
+Fight Matrix,Women's Bantamweight,norma dumont,Norma Dumont,5,4.0,,2026-08-02,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3964106430434234,3.0,-1.0
+Fight Matrix,Women's Bantamweight,ailin perez,Ailin Perez,6,5.0,,2026-08-02,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.3596147679183739,2.0,-3.0
+Fight Matrix,Women's Bantamweight,yana santos,Yana Santos,7,6.0,,2026-08-02,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2632590245930368,6.0,0.0
+Fight Matrix,Women's Bantamweight,luana santos,Luana Santos,8,7.0,,2026-08-02,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2547556891437481,7.0,0.0
 Fight Matrix,Women's Bantamweight,jaeleen robledo,Jaeleen Robledo,9,,non-UFC,,,,,,,,,
-Fight Matrix,Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,10,8.0,,2026-08-02,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2870197472473346,5.0,-3.0
-Fight Matrix,Women's Bantamweight,michelle montague,Michelle Montague,11,9.0,,2026-08-02,Michelle Montague,Women's Bantamweight,12.0,11.0,13.0,0.0012978212058158,12.0,3.0
+Fight Matrix,Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,10,8.0,,2026-08-02,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2840321636700831,5.0,-3.0
+Fight Matrix,Women's Bantamweight,michelle montague,Michelle Montague,11,9.0,,2026-08-02,Michelle Montague,Women's Bantamweight,12.0,11.0,13.0,0.001972037403425,12.0,3.0
 Fight Matrix,Women's Bantamweight,lucia szabova,Lucia Szabova,12,,non-UFC,,,,,,,,,
-Fight Matrix,Women's Bantamweight,karol rosa,Karol Rosa,13,10.0,,2026-08-02,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.014714309349809,13.0,3.0
-Fight Matrix,Women's Bantamweight,macy chiasson,Macy Chiasson,14,11.0,,2026-08-02,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.176292848319808,10.0,-1.0
-Fight Matrix,Women's Bantamweight,beatriz mesquita,Beatriz Mesquita,15,12.0,,2026-08-02,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.2423581615000344,8.0,-4.0
+Fight Matrix,Women's Bantamweight,karol rosa,Karol Rosa,13,10.0,,2026-08-02,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.0164991251305237,13.0,3.0
+Fight Matrix,Women's Bantamweight,macy chiasson,Macy Chiasson,14,11.0,,2026-08-02,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.1722901495824874,10.0,-1.0
+Fight Matrix,Women's Bantamweight,beatriz mesquita,Beatriz Mesquita,15,12.0,,2026-08-02,Bia Mesquita,Women's Bantamweight,8.0,5.0,9.0,0.238663436469856,8.0,-4.0
 ESPN (Jun),Heavyweight,ciryl gane,Ciryl Gane,1,,title holder,,,,,,,,,
 ESPN (Jun),Heavyweight,tom aspinall,Tom Aspinall,2,1.0,,2026-06-23,Tom Aspinall,Heavyweight,,0.0,0.0,0.8868491905217489,,
 ESPN (Jun),Heavyweight,francis ngannou,Francis Ngannou,3,2.0,,2026-06-23,,,,,,,,
@@ -708,16 +708,16 @@ ESPN (Jun),Flyweight,loneer kavanagh,Lone'er Kavanagh,7,6.0,,2026-06-23,Lone'er 
 ESPN (Jun),Flyweight,brandon moreno,Brandon Moreno,8,7.0,,2026-06-23,Brandon Moreno,Flyweight,6.0,6.0,6.0,0.6432321193210315,6.0,-1.0
 ESPN (Jun),Flyweight,kai kara france,Kai Kara-France,9,8.0,,2026-06-23,Kai Kara-France,Flyweight,9.0,8.0,12.0,0.2078991624047679,9.0,1.0
 ESPN (Jun),Flyweight,muhammad mokaev,Muhammad Mokaev,10,,non-UFC,,,,,,,,,
-ESPN (Jun),Women's Bantamweight,joselyne edwards,Joselyne Edwards,1,1.0,,2026-06-23,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3254789875295874,1.0,0.0
-ESPN (Jun),Women's Bantamweight,norma dumont,Norma Dumont,2,2.0,,2026-06-23,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3998694055292565,3.0,1.0
-ESPN (Jun),Women's Bantamweight,ketlen vieira,Ketlen Vieira,3,3.0,,2026-06-23,Ketlen Vieira,Women's Bantamweight,4.0,4.0,6.0,0.1979613711648346,4.0,1.0
-ESPN (Jun),Women's Bantamweight,ailin perez,Ailin Perez,4,4.0,,2026-06-23,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.362715320638537,2.0,-2.0
-ESPN (Jun),Women's Bantamweight,yana santos,Yana Santos,5,5.0,,2026-06-23,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2649383781021995,6.0,1.0
-ESPN (Jun),Women's Bantamweight,macy chiasson,Macy Chiasson,6,6.0,,2026-06-23,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.176292848319808,10.0,4.0
-ESPN (Jun),Women's Bantamweight,luana santos,Luana Santos,7,7.0,,2026-06-23,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2586995367442944,7.0,0.0
-ESPN (Jun),Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,8,8.0,,2026-06-23,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2870197472473346,5.0,-3.0
-ESPN (Jun),Women's Bantamweight,karol rosa,Karol Rosa,9,9.0,,2026-06-23,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.014714309349809,13.0,4.0
-ESPN (Jun),Women's Bantamweight,nora cornolle,Nora Cornolle,10,10.0,,2026-06-23,Nora Cornolle,Women's Bantamweight,16.0,16.0,17.0,-0.2401549588317881,16.0,6.0
+ESPN (Jun),Women's Bantamweight,joselyne edwards,Joselyne Edwards,1,1.0,,2026-06-23,Joselyne Edwards,Women's Bantamweight,1.0,1.0,1.0,0.3215580961503108,1.0,0.0
+ESPN (Jun),Women's Bantamweight,norma dumont,Norma Dumont,2,2.0,,2026-06-23,Norma Dumont,Women's Bantamweight,3.0,3.0,3.0,0.3964106430434234,3.0,1.0
+ESPN (Jun),Women's Bantamweight,ketlen vieira,Ketlen Vieira,3,3.0,,2026-06-23,Ketlen Vieira,Women's Bantamweight,4.0,4.0,6.0,0.1977194759866876,4.0,1.0
+ESPN (Jun),Women's Bantamweight,ailin perez,Ailin Perez,4,4.0,,2026-06-23,Ailin Perez,Women's Bantamweight,2.0,2.0,2.0,0.3596147679183739,2.0,-2.0
+ESPN (Jun),Women's Bantamweight,yana santos,Yana Santos,5,5.0,,2026-06-23,Yana Santos,Women's Bantamweight,6.0,4.0,8.0,0.2632590245930368,6.0,1.0
+ESPN (Jun),Women's Bantamweight,macy chiasson,Macy Chiasson,6,6.0,,2026-06-23,Macy Chiasson,Women's Bantamweight,10.0,10.0,10.0,0.1722901495824874,10.0,4.0
+ESPN (Jun),Women's Bantamweight,luana santos,Luana Santos,7,7.0,,2026-06-23,Luana Santos,Women's Bantamweight,7.0,4.0,8.0,0.2547556891437481,7.0,0.0
+ESPN (Jun),Women's Bantamweight,jacqueline cavalcanti,Jacqueline Cavalcanti,8,8.0,,2026-06-23,Jacqueline Cavalcanti,Women's Bantamweight,5.0,5.0,7.0,0.2840321636700831,5.0,-3.0
+ESPN (Jun),Women's Bantamweight,karol rosa,Karol Rosa,9,9.0,,2026-06-23,Karol Rosa,Women's Bantamweight,13.0,12.0,13.0,-0.0164991251305237,13.0,4.0
+ESPN (Jun),Women's Bantamweight,nora cornolle,Nora Cornolle,10,10.0,,2026-06-23,Nora Cornolle,Women's Bantamweight,16.0,16.0,17.0,-0.2405155592050885,16.0,6.0
 ESPN (Jun),Women's Flyweight,valentina shevchenko,Valentina Shevchenko,1,1.0,,2026-06-23,Valentina Shevchenko,Women's Flyweight,,0.0,0.0,1.1244290059966993,,
 ESPN (Jun),Women's Flyweight,manon fiorot,Manon Fiorot,2,2.0,,2026-06-23,Manon Fiorot,Women's Flyweight,2.0,2.0,2.0,0.7835532852657685,2.0,0.0
 ESPN (Jun),Women's Flyweight,natalia silva,Natalia Silva,3,,title holder,,Natalia Silva,Women's Flyweight,,0.0,0.0,0.7470651728395625,,

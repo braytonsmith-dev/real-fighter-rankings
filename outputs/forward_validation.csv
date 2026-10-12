@@ -950,7 +950,7 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2026-09-26,2026-10-03,True,Welterweight,False,Court McGee,78,-0.7656,Eric Nolan,66,-0.4365,0.0,Eric Nolan,1.0,0.3899,False,False,99.0,99.0,,0.7590565346970857,0.5867360718311138,KO/TKO
 2026-09-26,2026-10-03,True,Middleweight,False,Ateba Gautier,12,0.2795,Roman Kopylov,34,-0.0141,0.0,Roman Kopylov,0.0,0.5985,False,False,99.0,99.0,,0.5823916217776167,0.5997809690079964,KO/TKO
 2026-10-03,2026-10-10,True,Lightweight,False,Matheus Camilo,52,-0.0974,Jai Herbert,56,-0.1277,0.0,Jai Herbert,0.0,0.5103,False,False,99.0,99.0,,0.504134888810802,0.5462246024932892,U-DEC
-2026-10-03,2026-10-10,True,Women's Bantamweight,False,Alice Pereira,16,-0.1438,Daria Zhelezniakova,20,-0.3572,1.0,Alice Pereira,1.0,0.5721,True,False,99.0,99.0,,0.4652999613828291,0.4939779119567792,KO/TKO
+2026-10-03,2026-10-10,True,Women's Bantamweight,False,Alice Pereira,16,-0.1438,Daria Zhelezniakova,20,-0.3572,1.0,Alice Pereira,1.0,0.5721,True,False,99.0,15.0,,0.4652999613828291,0.4939779119567792,KO/TKO
 2026-10-03,2026-10-10,True,Women's Strawweight,False,Loopy Godinez,9,0.2744,Ketlen Souza,25,-0.0456,1.0,Loopy Godinez,1.0,0.6071,True,False,8.0,99.0,,0.6351955187625951,0.5669937642818018,U-DEC
 2026-10-03,2026-10-10,True,Middleweight,False,Brendan Allen,4,0.7727,Christian Leroy Duncan,10,0.4029,1.0,Brendan Allen,1.0,0.6232,True,True,4.0,10.0,1.0,0.431790122818711,0.625242771391404,SUB
 2026-10-03,2026-10-10,True,Light Heavyweight,False,Felipe Franco,26,-0.0047,Brendson Ribeiro,51,-1.1886,0.0,Brendson Ribeiro,0.0,0.8334,False,False,99.0,99.0,,0.7145758980365366,0.6442598358691077,SUB

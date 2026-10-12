@@ -21,16 +21,16 @@ Fight Matrix,Welterweight,12,11,0.8741258741258742
 Fight Matrix,Women's Bantamweight,12,12,0.6153846153846154
 Fight Matrix,Women's Flyweight,9,8,0.8571428571428572
 Fight Matrix,Women's Strawweight,14,10,0.7846153846153847
-Meta,Bantamweight,15,12,0.8821428571428571
+Meta,Bantamweight,15,13,0.8714285714285712
 Meta,Featherweight,15,11,0.7142857142857142
-Meta,Flyweight,15,9,0.7214285714285712
-Meta,Heavyweight,15,11,0.7527472527472527
-Meta,Light Heavyweight,15,12,0.6153846153846153
-Meta,Lightweight,15,13,0.8785714285714284
-Meta,Middleweight,15,11,0.8892857142857141
+Meta,Flyweight,15,10,0.7178571428571427
+Meta,Heavyweight,15,12,0.7472527472527472
+Meta,Light Heavyweight,15,12,0.8406593406593407
+Meta,Lightweight,15,12,0.8785714285714284
+Meta,Middleweight,15,11,0.8928571428571428
 Meta,Welterweight,15,12,0.9107142857142855
 Meta,Women's Bantamweight,15,12,0.8461538461538461
-Meta,Women's Flyweight,14,12,0.8021978021978022
+Meta,Women's Flyweight,15,12,0.8406593406593407
 Meta,Women's Strawweight,15,10,0.8357142857142855
 Sherdog,Bantamweight,8,7,1.0
 Sherdog,Featherweight,8,8,0.4047619047619048
@@ -43,14 +43,14 @@ Sherdog,Welterweight,6,6,0.7714285714285715
 Sherdog,Women's Bantamweight,9,9,0.4666666666666666
 Sherdog,Women's Flyweight,6,5,0.9999999999999999
 Sherdog,Women's Strawweight,9,8,0.7833333333333333
-UFC media,Bantamweight,15,12,0.7214285714285712
+UFC media,Bantamweight,15,12,0.8464285714285712
 UFC media,Featherweight,16,10,0.860927385393943
 UFC media,Flyweight,15,11,0.7607142857142856
 UFC media,Heavyweight,15,10,0.7307692307692307
-UFC media,Light Heavyweight,15,10,0.6208791208791209
+UFC media,Light Heavyweight,15,11,0.7747252747252747
 UFC media,Lightweight,15,11,0.8749999999999999
 UFC media,Middleweight,15,11,0.8499999999999999
 UFC media,Welterweight,15,12,0.914285714285714
-UFC media,Women's Bantamweight,15,12,0.7978021978021977
-UFC media,Women's Flyweight,14,11,0.8989010989010989
+UFC media,Women's Bantamweight,15,12,0.8285714285714285
+UFC media,Women's Flyweight,15,11,0.8945054945054945
 UFC media,Women's Strawweight,15,10,0.8999999999999999

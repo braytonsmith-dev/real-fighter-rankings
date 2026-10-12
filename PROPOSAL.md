@@ -29,13 +29,22 @@ Events covered: **UFC Fight Night: Allen vs. Duncan** (UFC Vegas 122, Oct 10, 20
 | 12 | `config/layoffs.yaml` | Add Yair Rodriguez | His last bout was Apr 12, 2025, so on this rebuild he crossed the 540-day line and fell off the Featherweight board (was #7). It is a documented injury layoff: left-hand surgery in Oct 2025, then an injury forced him out of the Noche UFC headliner in Aug 2026. The layoff rule keeps him eligible to 730 days (Apr 2027) and removes the inactivity penalty. See section 2. | https://www.si.com/fannation/mma/news/ufc-champion-yair-rodriguez-significant-layoff-hand-surgery ; https://sports.yahoo.com/articles/yair-rodriguez-reveals-injury-forced-143051101.html |
 | 13 | `data/raw/*`, `data/processed/*`, `outputs/*`, `docs/*`, `predictions/picks.csv` | Refreshed UFCStats data and rebuilt with `run_all --quick` | Adds UFC Vegas 122. The picks step graded the 12 locked picks for that card (no new picks were written; the schedule feed was unreachable, so the saved copy was used). | Greco1899/scrape_ufc_stats |
 
-**Not done: ufc.com rankings refresh.** The fetch of https://www.ufc.com/rankings was refused in this unattended run (a permission prompt with no one to answer it), so `ufc_media.csv` and `ufc_meta.csv` keep the Sept 26 snapshot plus change 8. Official ranks at fight time for UFC 332 and UFC Vegas 122 therefore use the Sept 26 release, which was the live one for UFC 332 as of last week. The snapshot-handling note from last week still applies before the next refresh.
+### Added in the second pass (Oct 12, evening run)
+
+| # | File | Change | Why | Source |
+|---|---|---|---|---|
+| 14 | `data/external/ufc_media.csv`, `data/external/ufc_meta.csv` | Appended the ufc.com release dated Oct 3, 2026 (as_of 2026-10-03), keeping the Sept 26 rows | The morning run could not fetch ufc.com. This release (Silva champion at 125, Talbott up five at 135, Saidov and de Ridder new at 205, Zhelezniakova new at women's 135) was the live one for UFC Vegas 122. Women's Flyweight lists a tie at #6 (Jasudavicius, Barber), stored as two rank-6 rows. Gane stored as champion (visible label; only a stale photo caption says interim). | https://www.ufc.com/rankings |
+| 15 | `src/mmalab/compare.py`, `src/mmalab/publish.py` | When an external file holds several dated snapshots, keep only the latest per division (two lines each) | Fixes the snapshot problem flagged on Oct 5: `official_ranks.py` already reads every dated snapshot, so Sept 26 still serves UFC 332 bouts and Oct 3 serves Vegas 122, but the comparison pages would have double-counted. It also removes an existing double-count: `fightmatrix.csv` already held five dated snapshots, which is why Patricio Pitbull showed "Fight Matrix, Fight Matrix" in the old vast-deviation table. Loading code only; no weight or rule changes. | n/a (code) |
+| 16 | `config/layoffs.yaml` | Add Kayla Harrison | Neck surgery for herniated discs in Jan 2026 forced her out of UFC 324 (Jan 24); coach says she is back in full training and targeting UFC 334, Nov 14, 2026. Without this, the Women's Bantamweight champion would cross the 540-day line around Nov 29. | https://www.lowkickmma.com/kayla-harrison-withdraws-from-ufc-324-following-neck-surgery-against-amanda-nunes/ ; https://heavy.com/sports/ufc/kayla-harrison-ufc-334-return-date/ |
+
+Effect of 14-16 on the boards: no top-15 position changes in any division. Harrison's score rises 0.44 -> 0.58 (inactivity penalty removed; she stays C). Alice Pereira's Oct 10 win over Zhelezniakova now counts as a top-15 win (she was #15 on the Oct 3 release), so her ledger goes -1.0 -> -0.5; she stays #11. Forward-validation headline numbers are unchanged; one row in `forward_validation.csv` now records Zhelezniakova's official rank as 15 instead of unranked.
 
 ## 2. Needs Brayton's judgment
 
 - **Yair Rodriguez (change 12).** With the layoff entry he returns at **Featherweight #4**, not his old #7, because a documented layoff also removes the 50-point inactivity penalty he was carrying. This follows the stated rule, but it means 18 months out moves him up three places. Two alternatives: reject change 12 (he stays off the board until he fights), or accept it as is. Part of his time out was by choice (waiting on a title shot in 2025), which argues against.
 - **Niko Price (change 10).** RotoWire says he "sort of walked back" retiring, with no confirmation either way. Removing the exclusion is accurate today (he fought on Oct 10). If he confirms retirement, re-add him.
-- **Kayla Harrison (Women's Bantamweight champion), Julianna Pena (#9), Jose Aldo (Bantamweight #13).** 491, 491 and 519 days inactive. Aldo will drop off around Oct 31 and Harrison and Pena around Nov 28 unless they fight or a documented injury is added. I did not research these this week.
+- **Kayla Harrison (change 16)** is now covered by a documented layoff. **Julianna Pena (#9, 491 days)** and **Jose Aldo (Bantamweight #13, 519 days)** are not: no reputable source found for an injury or booking. Aldo drops off around Oct 31 and Pena around Nov 28 unless they fight.
+- **Change 15 is a small code edit**, not config. It is outside the usual config-only scope, so approve it separately in your mind; reverting it would restore the Fight Matrix double-count and double the UFC rows once both snapshots are present.
 - **Last week's open items** (Rafael dos Anjos retirement, Jacobe Smith short notice, Aspinall and Shevchenko reserved spots) are unchanged and still need a decision.
 
 ## 3. Board movements, top 15 (main -> this branch)
@@ -85,4 +94,4 @@ Pre-event picks for UFC Vegas 122 were graded in `outputs/picks_summary.json` (o
 
 ## 6. Merge note
 
-Merging this branch approves changes 1-13. Then delete `weekly-review/2026-10-05`.
+Merging this branch approves changes 1-16. Then delete `weekly-review/2026-10-05`.

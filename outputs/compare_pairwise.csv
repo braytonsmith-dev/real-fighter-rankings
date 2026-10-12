@@ -1,13 +1,13 @@
 a,b,shared,mean_abs_gap,top10_overlap_pct
-UFC media,Meta,138,1.54,0.855
-UFC media,Sherdog,82,0.88,0.727
-UFC media,Fight Matrix,119,1.35,0.845
-UFC media,ESPN (Jun),87,1.2,0.745
-UFC media,Our board,120,1.83,0.809
-Meta,Sherdog,81,1.38,0.7
-Meta,Fight Matrix,109,1.5,0.818
-Meta,ESPN (Jun),86,1.63,0.691
-Meta,Our board,125,2.02,0.818
+UFC media,Meta,138,1.5,0.864
+UFC media,Sherdog,82,0.85,0.718
+UFC media,Fight Matrix,121,1.38,0.855
+UFC media,ESPN (Jun),88,1.2,0.745
+UFC media,Our board,121,1.79,0.836
+Meta,Sherdog,80,1.27,0.7
+Meta,Fight Matrix,110,1.46,0.827
+Meta,ESPN (Jun),86,1.58,0.7
+Meta,Our board,127,2.08,0.809
 Sherdog,Fight Matrix,82,1.15,0.907
 Sherdog,ESPN (Jun),74,0.91,0.86
 Sherdog,Our board,78,1.71,0.86
