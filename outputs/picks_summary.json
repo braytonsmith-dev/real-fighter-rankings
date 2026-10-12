@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-10-12T20:22:29Z",
+  "updated_utc": "2026-10-12T21:30:18Z",
   "graded": 11,
-  "pending": 23,
+  "pending": 37,
   "void": 1,
   "protocol": "PREREGISTRATION.md, appendix A",
   "record": {
@@ -89,14 +89,20 @@
     {
       "event": "UFC Fight Night: Buckley vs. Malott",
       "date": "2026-10-17",
-      "picks": 13,
+      "picks": 15,
       "locked_at_utc": "2026-10-05T21:29:43Z"
     },
     {
       "event": "UFC 333: Volkanovski vs. Evloev",
       "date": "2026-10-24",
-      "picks": 10,
+      "picks": 11,
       "locked_at_utc": "2026-10-05T21:29:43Z"
+    },
+    {
+      "event": "UFC Fight Night: Moicano vs. Nolan",
+      "date": "2026-10-31",
+      "picks": 11,
+      "locked_at_utc": "2026-10-12T21:30:18Z"
     }
   ]
 }
