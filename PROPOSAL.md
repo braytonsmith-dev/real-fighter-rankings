@@ -26,7 +26,7 @@ Events covered: **UFC Fight Night: Allen vs. Duncan** (UFC Vegas 122, Oct 10, 20
 | 9 | `config/roster_exclusions.yaml` | Add Gerald Meerschaert | Announced his retirement in the cage after his R2 TKO loss to Julius Walker on Oct 10 ("Can't fight forever"). No visible board effect. | https://www.mmanews.com/article/gerald-meerschaert-retires-ufc-vegas-122-60-fights ; https://sports.yahoo.com/articles/ufc-veteran-retires-60-fights-010539220.html |
 | 10 | `config/roster_exclusions.yaml` | Remove Niko Price | The entry said he retired Mar 28, 2026. He came back, beat Leon Shahbazyan by R1 TKO on Oct 10, and then walked back his plan to retire again. No visible board effect (Welterweight, last five 1-4). See section 2. | https://heavy.com/sports/ufc/niko-price-returns-after-brief-retirement/ ; https://www.rotowire.com/mma/player/niko-price-1044 |
 | 11 | `config/short_notice.yaml` | Brendson Ribeiro, 2026-10-10 (win) | Replaced Alexander Poppeck against Felipe Franco. First reported Sept 29, about 11 days out. Won by R1 guillotine. (Ismael Bonfim's replacement of Artur Minev was reported Sept 10, 30 days out, so it was not added.) | https://www.fightbookmma.com/ufc-meta-apex-allen-duncan-moicano-nolan-bonfim-brady/ ; https://en.wikipedia.org/wiki/UFC_Fight_Night:_Allen_vs._Duncan |
-| 12 | `config/layoffs.yaml` | Add Yair Rodriguez | His last bout was Apr 12, 2025, so on this rebuild he crossed the 540-day line and fell off the Featherweight board (was #7). It is a documented injury layoff: left-hand surgery in Oct 2025, then an injury forced him out of the Noche UFC headliner in Aug 2026. The layoff rule keeps him eligible to 730 days (Apr 2027) and removes the inactivity penalty. See section 2. | https://www.si.com/fannation/mma/news/ufc-champion-yair-rodriguez-significant-layoff-hand-surgery ; https://sports.yahoo.com/articles/yair-rodriguez-reveals-injury-forced-143051101.html |
+| 12 | ~~`config/layoffs.yaml`~~ | **Withdrawn at Brayton's direction (Oct 12).** Yair Rodriguez last fought Apr 12, 2025 and has no booking, so he drops off the board under the 540-day rule like anyone else who is not fighting. | n/a |
 | 13 | `data/raw/*`, `data/processed/*`, `outputs/*`, `docs/*`, `predictions/picks.csv` | Refreshed UFCStats data and rebuilt with `run_all --quick` | Adds UFC Vegas 122. The picks step graded the 12 locked picks for that card (no new picks were written; the schedule feed was unreachable, so the saved copy was used). | Greco1899/scrape_ufc_stats |
 
 ### Added in the second pass (Oct 12, evening run)
@@ -39,9 +39,18 @@ Events covered: **UFC Fight Night: Allen vs. Duncan** (UFC Vegas 122, Oct 10, 20
 
 Effect of 14-16 on the boards: no top-15 position changes in any division. Harrison's score rises 0.44 -> 0.58 (inactivity penalty removed; she stays C). Alice Pereira's Oct 10 win over Zhelezniakova now counts as a top-15 win (she was #15 on the Oct 3 release), so her ledger goes -1.0 -> -0.5; she stays #11. Forward-validation headline numbers are unchanged; one row in `forward_validation.csv` now records Zhelezniakova's official rank as 15 instead of unranked.
 
+### Added at Brayton's direction (Oct 12, night)
+
+| # | File | Change | Why | Source |
+|---|---|---|---|---|
+| 17 | `src/mmalab/rankings.py` | **Bug fix: a champion override can no longer outlive a title bout.** Each entry in `champions_override.yaml` must now carry `since YYYY-MM-DD`. Any undisputed title bout in the data after that date supersedes the entry, and the build prints a reminder to delete it. An entry without a date stops the build with a clear error. Entries dated after the build date are ignored, so historical rebuilds see the state as of their own date. | Root cause of the Women's Flyweight problem: the old code applied overrides after the data, unconditionally. `Women's Flyweight: VACANT` therefore beat Natalia Silva's UFC 332 title win, so main shows the title vacant with Shevchenko (R) on top. Tested: re-adding `Women's Flyweight: VACANT since 2026-09-15` now yields Silva as champion with the supersede warning; an undated entry raises the error. | n/a (code) |
+| 18 | `config/champions_override.yaml`, `README.md` | Heavyweight entry dated (`Ciryl Gane since 2026-09-20`); header and README explain the date rule | Required by 17. If Gane loses to Hokit at UFC 334, the data will crown Hokit without anyone editing the file. | Dana White, UFC 331 presser (source already in the entry) |
+
+**Women's Flyweight on this branch:** C Natalia Silva, R Valentina Shevchenko, then 1 Alexa Grasso, 2 Manon Fiorot. Main still shows "(title vacant)" until this branch is merged.
+
 ## 2. Needs Brayton's judgment
 
-- **Yair Rodriguez (change 12).** With the layoff entry he returns at **Featherweight #4**, not his old #7, because a documented layoff also removes the 50-point inactivity penalty he was carrying. This follows the stated rule, but it means 18 months out moves him up three places. Two alternatives: reject change 12 (he stays off the board until he fights), or accept it as is. Part of his time out was by choice (waiting on a title shot in 2025), which argues against.
+- **Yair Rodriguez:** resolved. Change 12 withdrawn; he is off the Featherweight board until he fights.
 - **Niko Price (change 10).** RotoWire says he "sort of walked back" retiring, with no confirmation either way. Removing the exclusion is accurate today (he fought on Oct 10). If he confirms retirement, re-add him.
 - **Kayla Harrison (change 16)** is now covered by a documented layoff. **Julianna Pena (#9, 491 days)** and **Jose Aldo (Bantamweight #13, 519 days)** are not: no reputable source found for an injury or booking. Aldo drops off around Oct 31 and Pena around Nov 28 unless they fight.
 - **Change 15 is a small code edit**, not config. It is outside the usual config-only scope, so review it on its own; reverting it would restore the Fight Matrix double-count and double the UFC rows once both snapshots are present.
@@ -55,9 +64,8 @@ Effect of 14-16 on the boards: no top-15 position changes in any division. Harri
 | Women's Flyweight | Natalia Silva | 3 | C | change 1 |
 | Women's Flyweight | Namajunas, Blanchfield, Barber, Jasudavicius, O'Neill, Wang Cong, Judice, Maverick, Barbosa, Tarin, Cortez, Aldrich, Horth | 4-16 | 3-15 | each up one as Silva leaves the numbered board |
 | Women's Flyweight | Melissa Gatto | WBW 13 | WFW 16 | majority draw with Kareckaite at 125 moved her division |
-| Featherweight | Yair Rodriguez | 7 | 4 | change 12 (would be off the board without it) |
-| Featherweight | Jean Silva, Steve Garcia, Lerone Murphy | 4, 5, 6 | 5, 6, 7 | knock-on of Yair |
-| Featherweight | Youssef Zalal / Arnold Allen | 10 / 9 | 9 / 10 | small rescale; no bouts |
+| Featherweight | Yair Rodriguez | 7 | off | last bout Apr 12, 2025 (548 days); no layoff entry, so the 540-day rule removes him |
+| Featherweight | Kevin Vallejos / Arnold Allen | 8 / 9 | 7 / 8 | knock-on of Yair leaving; Jean Silva, Garcia and Murphy hold 4, 5, 6 |
 | Middleweight | Brendan Allen | 4 | 3 | R5 RNC of Christian Leroy Duncan |
 | Middleweight | Nassourdine Imavov | 3 | 4 | passed by Allen; no bout |
 | Women's Strawweight | Loopy Godinez | 9 | 5 | UD over Ketlen Souza; last five improves to 3-2, so the form penalty drops |
@@ -67,7 +75,7 @@ Effect of 14-16 on the boards: no top-15 position changes in any division. Harri
 | Bantamweight | Marcus McGhee / Montel Jackson | 8 / 7 | 7 / 8 | rescale only (scores 0.549 vs 0.542); no bouts |
 | Bantamweight | Brady Hiestand / Jose Aldo | 13 / 12 | 12 / 13 | Aldo's inactivity penalty grows (42 -> 44) |
 
-Brayton's favorites: **Lerone Murphy** 6 -> 7 and **Nassourdine Imavov** (HM) 3 -> 4; neither fought. No other listed favorite moved.
+Brayton's favorites: **Lerone Murphy** stays at 6 and **Nassourdine Imavov** (HM) goes 3 -> 4; neither fought. No other listed favorite moved.
 
 ## 4. Audit-trail items that look wrong
 
@@ -94,4 +102,4 @@ Pre-event picks for UFC Vegas 122 were graded in `outputs/picks_summary.json` (o
 
 ## 6. Merge note
 
-Merging this branch approves changes 1-16. Then delete `weekly-review/2026-10-05`.
+Merging this branch approves changes 1-11 and 13-18 (12 is withdrawn). Then delete `weekly-review/2026-10-05`.

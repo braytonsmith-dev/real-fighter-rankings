@@ -94,7 +94,7 @@ PYTHONPATH=src python3 -m mmalab.rankings 2025-12-31 # as of any past date
 
 Edit `config/weights.yaml` to change the six weights (they must sum to 1), the active window, or the Elo parameters, then rerun. The stability band per fighter comes from 300 random weight vectors near yours, so you can see which placements are robust and which are a coin flip.
 
-Check: `outputs/composite_boards.md` lists a champion (C) above each numbered board. If a division's champion holds the belt without a title bout in the data (promotion from interim), add them to `config/champions_override.yaml`.
+Check: `outputs/composite_boards.md` lists a champion (C) above each numbered board. If a division's champion holds the belt without a title bout in the data (promotion from interim), add them to `config/champions_override.yaml` as `Name since YYYY-MM-DD` (or `VACANT since YYYY-MM-DD`); a later undisputed title bout in the data supersedes the entry automatically.
 
 ### Phase 5: card-quality index (10 seconds)
 

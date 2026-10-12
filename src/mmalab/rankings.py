@@ -24,6 +24,7 @@ across random weight vectors drawn around the configured weights, so a
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import numpy as np
@@ -186,21 +187,45 @@ def build_features(rated: pd.DataFrame, hist: pd.DataFrame, cfg: dict, as_of: pd
     return f.reset_index().rename(columns={"index": "fighter"})
 
 
+def _parse_override(v) -> tuple[str, pd.Timestamp | None]:
+    """'Name' or 'VACANT', optionally followed by 'since YYYY-MM-DD' (the date the entry took effect)."""
+    m = re.match(r"^(.*?)\s+since\s+(\d{4}-\d{2}-\d{2})\s*$", str(v).strip())
+    return (m.group(1).strip(), pd.Timestamp(m.group(2))) if m else (str(v).strip(), None)
+
+
 def champions(rated: pd.DataFrame, as_of: pd.Timestamp) -> dict[str, str]:
-    """Winner of the most recent undisputed UFC title bout in each division."""
+    """Winner of the most recent undisputed UFC title bout in each division.
+
+    config/champions_override.yaml covers what bout data cannot see (a vacated belt, an
+    interim champion promoted). An override only stands until the next undisputed title
+    bout in its division: once the data holds a title bout dated after the override's
+    'since' date, the bout result wins and the stale override is reported, so a belt
+    filled in the cage can never stay VACANT on the board.
+    """
     t = rated[rated["title_fight"] & ~rated["interim"] & (rated["date"] <= as_of)
               & rated["result_a"].isin([0.0, 1.0]) & rated["division"].isin(RANKED_DIVISIONS)]
-    champs = {}
+    champs, last_title = {}, {}
     for div, g in t.sort_values("date").groupby("division"):
         row = g.iloc[-1]
         champs[div] = row["fighter_a"] if row["result_a"] == 1.0 else row["fighter_b"]
+        last_title[div] = row["date"]
     override = ROOT / "config" / "champions_override.yaml"
     if override.exists():
         for k, v in (yaml.safe_load(override.read_text()) or {}).items():
-            if str(v).upper() == "VACANT":
+            holder, since = _parse_override(v)
+            if since is None:
+                raise ValueError(f"champions_override.yaml: '{k}' needs a date, e.g. '{holder} since YYYY-MM-DD', "
+                                 "so a later title bout can supersede it")
+            if since > as_of:
+                continue                         # not yet in effect on this date
+            if k in last_title and last_title[k] > since:
+                print(f"[champions] override '{k}: {v}' superseded by the title bout of "
+                      f"{last_title[k].date()} ({champs[k]}); remove it from champions_override.yaml")
+                continue
+            if holder.upper() == "VACANT":
                 champs.pop(k, None)
             else:
-                champs[k] = v
+                champs[k] = holder
     return champs
 
 

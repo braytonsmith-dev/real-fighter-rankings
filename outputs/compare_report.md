@@ -9,19 +9,19 @@ Name fixes applied by fuzzy match: jan bachowicz -> jan blachowicz
 | UFC media    | Sherdog      |       82 |           0.85 |               0.718 |
 | UFC media    | Fight Matrix |      121 |           1.38 |               0.855 |
 | UFC media    | ESPN (Jun)   |       88 |           1.2  |               0.745 |
-| UFC media    | Our board    |      121 |           1.79 |               0.836 |
+| UFC media    | Our board    |      120 |           1.79 |               0.827 |
 | Meta         | Sherdog      |       80 |           1.27 |               0.7   |
 | Meta         | Fight Matrix |      110 |           1.46 |               0.827 |
 | Meta         | ESPN (Jun)   |       86 |           1.58 |               0.7   |
-| Meta         | Our board    |      127 |           2.08 |               0.809 |
+| Meta         | Our board    |      127 |           2.06 |               0.818 |
 | Sherdog      | Fight Matrix |       82 |           1.15 |               0.907 |
 | Sherdog      | ESPN (Jun)   |       74 |           0.91 |               0.86  |
-| Sherdog      | Our board    |       78 |           1.71 |               0.86  |
+| Sherdog      | Our board    |       78 |           1.67 |               0.86  |
 | Fight Matrix | ESPN (Jun)   |       86 |           1.33 |               0.743 |
-| Fight Matrix | Our board    |      104 |           1.84 |               0.78  |
-| ESPN (Jun)   | Our board    |       80 |           1.86 |               0.781 |
+| Fight Matrix | Our board    |      104 |           1.83 |               0.78  |
+| ESPN (Jun)   | Our board    |       80 |           1.84 |               0.781 |
 
-## Vast deviations (34)
+## Vast deviations (35)
 | division             | fighter              | type                                  |   lab_position |   median_external | external_range   |   boards | sources                                            |   lab_full_position | reason                                                                    |
 |:---------------------|:---------------------|:--------------------------------------|---------------:|------------------:|:-----------------|---------:|:---------------------------------------------------|--------------------:|:--------------------------------------------------------------------------|
 | Heavyweight          | Tom Aspinall         | Consensus ranked, our board has #0    |            nan |               1   | 1-2              |        5 | ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media |                   0 | 351 days since last bout                                                  |
@@ -30,12 +30,13 @@ Name fixes applied by fuzzy match: jan bachowicz -> jan blachowicz
 | Light Heavyweight    | Alex Pereira         | Consensus ranked, ours outside top 15 |            nan |               1   | 1-3              |        5 | ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media |                   4 | Model places this fighter in Heavyweight (division of most recent bout)   |
 | Middleweight         | Robert Whittaker     | Our top 10, unranked on every board   |              5 |             nan   |                  |        0 |                                                    |                   5 | rating 1723, last five 3-2                                                |
 | Bantamweight         | Marcus McGhee        | Ours higher                           |              7 |              12   | 10-14            |        2 | Meta, UFC media                                    |                   7 | no quality wins                                                           |
+| Featherweight        | Steve Garcia         | Ours higher                           |              5 |              10   | 7-13             |        5 | ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media |                   5 | no quality wins                                                           |
 | Bantamweight         | Marlon Vera          | Ours lower                            |             52 |              11   | 11-14            |        3 | Fight Matrix, Meta, UFC media                      |                  52 | last five 1-4                                                             |
 | Bantamweight         | Deiveson Figueiredo  | Ours lower                            |             48 |               8.5 | 8-12             |        4 | ESPN (Jun), Fight Matrix, Sherdog, UFC media       |                  48 | last five 1-4                                                             |
-| Featherweight        | Patricio Pitbull     | Ours lower                            |             46 |              11.5 | 9-14             |        2 | Fight Matrix, Fight Matrix, UFC media, UFC media   |                  48 | only 2 UFC bouts; no quality wins                                         |
-| Featherweight        | Aaron Pico           | Ours lower                            |             44 |              11   | 10-14            |        3 | Fight Matrix, Meta, UFC media                      |                  44 | only 2 UFC bouts; no quality wins                                         |
+| Featherweight        | Patricio Pitbull     | Ours lower                            |             45 |              11.5 | 9-14             |        2 | Fight Matrix, Fight Matrix, UFC media, UFC media   |                  47 | only 2 UFC bouts; no quality wins                                         |
 | Women's Strawweight  | Amanda Ribas         | Ours lower                            |             44 |              11   | 9-13             |        2 | ESPN (Jun), UFC media                              |                  44 | 442 days since last bout; last five 1-4                                   |
-| Featherweight        | Brian Ortega         | Ours lower                            |             41 |              10   | 7-13             |        2 | Fight Matrix, UFC media                            |                  41 | 414 days since last bout; last five 1-4                                   |
+| Featherweight        | Aaron Pico           | Ours lower                            |             43 |              11   | 10-14            |        3 | Fight Matrix, Meta, UFC media                      |                  43 | only 2 UFC bouts; no quality wins                                         |
+| Featherweight        | Brian Ortega         | Ours lower                            |             39 |              10   | 7-13             |        2 | Fight Matrix, UFC media                            |                  39 | 414 days since last bout; last five 1-4                                   |
 | Flyweight            | Lone’er Kavanagh     | Ours lower                            |             32 |               6   | 6-6              |        5 | ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media |                  32 | rating 1476, last five 3-2                                                |
 | Women's Strawweight  | Amanda Lemos         | Ours lower                            |             33 |               9   | 5-15             |        5 | ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media |                  33 | last five 1-4                                                             |
 | Flyweight            | Steve Erceg          | Ours lower                            |             30 |              10.5 | 9-12             |        2 | Fight Matrix, UFC media                            |                  30 | last five 2-3                                                             |
@@ -43,8 +44,8 @@ Name fixes applied by fuzzy match: jan bachowicz -> jan blachowicz
 | Middleweight         | Israel Adesanya      | Ours lower                            |             27 |               9   | 8-11             |        4 | ESPN (Jun), Fight Matrix, Meta, UFC media          |                  27 | last five 1-4                                                             |
 | Lightweight          | Salahdine Parnasse   | Ours lower                            |             26 |               9   | 8-11             |        3 | Fight Matrix, Sherdog, UFC media                   |                  26 | only 1 UFC bouts                                                          |
 | Lightweight          | Tom Nolan            | Ours lower                            |             27 |              12.5 | 11-14            |        2 | Meta, UFC media                                    |                  27 | no quality wins                                                           |
-| Featherweight        | Melquizael Costa     | Ours lower                            |             25 |              12   | 12-12            |        2 | Meta, UFC media                                    |                  25 | no quality wins                                                           |
 | Women's Strawweight  | Angela Hill          | Ours lower                            |             26 |              13.5 | 13-14            |        2 | Fight Matrix, UFC media                            |                  26 | last five 2-3                                                             |
+| Featherweight        | Melquizael Costa     | Ours lower                            |             24 |              12   | 12-12            |        2 | Meta, UFC media                                    |                  24 | no quality wins                                                           |
 | Heavyweight          | Serghei Spivac       | Ours lower                            |             20 |               9   | 7-14             |        4 | ESPN (Jun), Fight Matrix, Meta, UFC media          |                  20 | last five 2-3                                                             |
 | Middleweight         | Abus Magomedov       | Ours lower                            |             23 |              12.5 | 12-13            |        2 | Meta, UFC media                                    |                  23 | no quality wins                                                           |
 | Women's Strawweight  | Mizuki               | Ours lower                            |             23 |              12.5 | 10-15            |        2 | Meta, UFC media                                    |                  23 | no quality wins; 351 days since last bout                                 |
