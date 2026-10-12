@@ -156,6 +156,8 @@ def comparison_section() -> str:
         pth = ext_dir / fname
         if pth.exists():
             d = pd.read_csv(pth)
+            if "as_of" in d.columns:        # latest snapshot per division
+                d = d[d["as_of"] == d.groupby("division")["as_of"].transform("max")]
             boards[label] = d
     if not boards:
         return ""

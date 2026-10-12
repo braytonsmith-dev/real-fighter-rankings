@@ -75,6 +75,8 @@ def load_external() -> pd.DataFrame:
         if not p.exists():
             continue
         d = pd.read_csv(p)
+        if "as_of" in d.columns:            # a file may hold several dated snapshots; keep the latest per division
+            d = d[d["as_of"] == d.groupby("division")["as_of"].transform("max")]
         d["source"] = label
         if "promotion" not in d.columns:
             d["promotion"] = "UFC"

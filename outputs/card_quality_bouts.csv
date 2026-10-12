@@ -2445,3 +2445,15 @@ date,event,division,fighter_a,pos_a,fighter_b,pos_b,top10_bout,top15_bout,title_
 2026-10-03,UFC 332: Silva vs. Wang,Welterweight,Court McGee,43,Eric Nolan,82,False,False,False,False,KO/TKO
 2026-10-03,UFC 332: Silva vs. Wang,Heavyweight,Johnny Walker,999,Mick Parkin,999,False,False,False,False,KO/TKO
 2026-10-03,UFC 332: Silva vs. Wang,Middleweight,Ateba Gautier,21,Roman Kopylov,33,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Lightweight,Francisco Prado,999,Ismael Bonfim,83,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Lightweight,Matheus Camilo,44,Jai Herbert,45,False,False,False,False,U-DEC
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Women's Bantamweight,Alice Pereira,22,Daria Zhelezniakova,20,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Women's Strawweight,Loopy Godinez,11,Ketlen Souza,31,False,False,False,False,U-DEC
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Middleweight,Brendan Allen,14,Christian Leroy Duncan,7,False,True,False,False,SUB
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Light Heavyweight,Felipe Franco,25,Brendson Ribeiro,45,False,False,False,False,SUB
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Bantamweight,Malcolm Wellmaker,63,Otari Tanzilovi,999,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Welterweight,Niko Price,80,Leon Shahbazyan,84,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Women's Flyweight,Ernesta Kareckaite,999,Melissa Gatto,20,False,False,False,False,M-DEC
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Featherweight,Andre Fili,72,Kai Kamaka III,84,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Heavyweight,Allen Frye Jr.,43,RJ Harris,22,False,False,False,False,KO/TKO
+2026-10-10,UFC Fight Night: Allen vs. Duncan,Light Heavyweight,Julius Walker,43,Gerald Meerschaert,999,False,False,False,False,KO/TKO

@@ -1,16 +1,91 @@
 {
-  "updated_utc": "2026-10-09T18:44:04Z",
-  "graded": 0,
-  "pending": 35,
-  "void": 0,
+  "updated_utc": "2026-10-12T20:22:29Z",
+  "graded": 11,
+  "pending": 23,
+  "void": 1,
   "protocol": "PREREGISTRATION.md, appendix A",
-  "upcoming": [
+  "record": {
+    "correct": 4,
+    "incorrect": 7,
+    "accuracy": 0.364,
+    "accuracy_wilson95": [
+      0.152,
+      0.646
+    ],
+    "log_loss": 0.7601,
+    "brier": 0.2813,
+    "coin_flip_log_loss": 0.6931
+  },
+  "baselines_same_bouts": {
+    "results_only_elo": {
+      "n": 11,
+      "accuracy": 0.364,
+      "log_loss": 0.7494,
+      "model_accuracy_same_bouts": 0.364,
+      "model_log_loss_same_bouts": 0.7601
+    },
+    "real_board": {
+      "n": 6,
+      "accuracy": 0.5,
+      "log_loss": 0.8191,
+      "model_accuracy_same_bouts": 0.167,
+      "model_log_loss_same_bouts": 0.8509
+    },
+    "shadow_v11": {
+      "n": 11,
+      "accuracy": 0.545,
+      "log_loss": 0.7609,
+      "model_accuracy_same_bouts": 0.364,
+      "model_log_loss_same_bouts": 0.7601
+    }
+  },
+  "by_confidence": [
+    {
+      "band": "50%-55%",
+      "n": 5,
+      "accuracy": 0.2,
+      "mean_p_pick": 0.524
+    },
+    {
+      "band": "55%-60%",
+      "n": 3,
+      "accuracy": 0.667,
+      "mean_p_pick": 0.566
+    },
+    {
+      "band": "60%-65%",
+      "n": 1,
+      "accuracy": 1.0,
+      "mean_p_pick": 0.635
+    },
+    {
+      "band": "65%-70%",
+      "n": 1,
+      "accuracy": 0.0,
+      "mean_p_pick": 0.664
+    },
+    {
+      "band": "70%+",
+      "n": 1,
+      "accuracy": 0.0,
+      "mean_p_pick": 0.715
+    }
+  ],
+  "feed_order_matches_ufcstats_first_listed": 1.0,
+  "provisional": {
+    "n": 7,
+    "accuracy": 0.286
+  },
+  "by_event": [
     {
       "event": "UFC Fight Night: Allen vs. Duncan",
       "date": "2026-10-10",
-      "picks": 12,
-      "locked_at_utc": "2026-10-05T21:29:43Z"
-    },
+      "n": 11,
+      "correct": 4,
+      "log_loss": 0.7601
+    }
+  ],
+  "upcoming": [
     {
       "event": "UFC Fight Night: Buckley vs. Malott",
       "date": "2026-10-17",
