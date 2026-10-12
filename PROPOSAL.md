@@ -44,7 +44,7 @@ Effect of 14-16 on the boards: no top-15 position changes in any division. Harri
 - **Yair Rodriguez (change 12).** With the layoff entry he returns at **Featherweight #4**, not his old #7, because a documented layoff also removes the 50-point inactivity penalty he was carrying. This follows the stated rule, but it means 18 months out moves him up three places. Two alternatives: reject change 12 (he stays off the board until he fights), or accept it as is. Part of his time out was by choice (waiting on a title shot in 2025), which argues against.
 - **Niko Price (change 10).** RotoWire says he "sort of walked back" retiring, with no confirmation either way. Removing the exclusion is accurate today (he fought on Oct 10). If he confirms retirement, re-add him.
 - **Kayla Harrison (change 16)** is now covered by a documented layoff. **Julianna Pena (#9, 491 days)** and **Jose Aldo (Bantamweight #13, 519 days)** are not: no reputable source found for an injury or booking. Aldo drops off around Oct 31 and Pena around Nov 28 unless they fight.
-- **Change 15 is a small code edit**, not config. It is outside the usual config-only scope, so approve it separately in your mind; reverting it would restore the Fight Matrix double-count and double the UFC rows once both snapshots are present.
+- **Change 15 is a small code edit**, not config. It is outside the usual config-only scope, so review it on its own; reverting it would restore the Fight Matrix double-count and double the UFC rows once both snapshots are present.
 - **Last week's open items** (Rafael dos Anjos retirement, Jacobe Smith short notice, Aspinall and Shevchenko reserved spots) are unchanged and still need a decision.
 
 ## 3. Board movements, top 15 (main -> this branch)
