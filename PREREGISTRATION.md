@@ -5,7 +5,7 @@ Posted Oct 1, 2026, before the first bout it covers. Nothing in this file may be
 ## 1. What is frozen
 
 - Method: REAL v1.0 as written in `METHODOLOGY.md` (sections 1 to 9), generated from `config/weights.yaml`.
-- Code: branch `release/v1.0`, `VERSION` = 1.0. Freeze commit on `main`: recorded in `outputs/freeze_hash.txt` by the publishing commit.
+- Code: branch `release/v1.0`, `VERSION` = 1.0. Freeze commit on `main`: recorded in `outputs/freeze_hash.txt` by the publishing commit, together with the commit's tree hash (8efb08ca2913a77e8f8fa0690fedb622356af193), which fingerprints the frozen contents and is unaffected by any later rewrite of commit messages.
 - Configuration (SHA-256 at freeze):
   - `config/weights.yaml` ea1a823c00533496e89b08afaa0869a2e71ca324584c49d05cb0c7c47be15cc2
   - `config/layoffs.yaml` 9b967f3d57a70e3522af5b5f402de07e7c4cb73d748d47ba11fd760c56cf64a1

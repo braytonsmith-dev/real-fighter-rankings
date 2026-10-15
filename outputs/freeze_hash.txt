@@ -1,2 +1,4 @@
 1d20d6ff437794127ddcde0868c28e3d7efb3f5a
-REAL v1.0 freeze commit on main: 1d20d6ff437794127ddcde0868c28e3d7efb3f5a (Oct 1, 2026). Recorded by the following commit, as PREREGISTRATION.md section 1 states.
+tree 8efb08ca2913a77e8f8fa0690fedb622356af193
+REAL v1.0 freeze on main, Oct 1, 2026. Line 1 is the freeze commit; line 2 is that commit's tree hash, the fingerprint of the
+frozen file contents, which stays the same even if commit messages are later rewritten (git rev-parse <commit>^{tree}).

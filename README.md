@@ -35,6 +35,10 @@ Card quality, 203 cards from 2022 to Sept 2026: numbered events average 2.19 cha
 
 Resume board (REAL v1.0): a retrospective reconstruction over 127 boards is reported in `METHODOLOGY.md` section 8 and is not a forward test. The prospective test is pre-registered in `PREREGISTRATION.md` and starts with the first event after Oct 1, 2026. Data rights and redistribution basis: `DATA_LICENSE.md`.
 
+## How this was built
+
+The author designed the ranking principles, made every modelling decision recorded in METHODOLOGY.md and PREREGISTRATION.md, and reviewed all outputs. The code, documentation and analysis were written with the help of an AI assistant (Anthropic's Claude) working under the author's direction; commits carry a Co-Authored-By trailer to record that. Mistakes are the author's responsibility.
+
 ## Pre-event picks
 
 Every Monday and Friday the pipeline reads the upcoming UFC schedule, writes a pick for each bout inside the next three weeks to `predictions/picks.csv` (frozen performance-adjusted Elo probability, pick, confidence band, provisional flag, UTC timestamp) and never edits it. After each card the picks are graded from UFCStats and the running record (accuracy with interval, log loss, calibration by confidence band, baselines on the same bouts) goes to `outputs/picks_summary.json` and `docs/picks.html`. Each row also carries the pick of shadow v1.1 (`src/mmalab/shadow.py`: Elo re-tuned walk-forward over 2011 onward with a red-corner term, plus a logistic layer on age, layoff, experience, height and five-round bouts; development results in `outputs/shadow_v11_report.json`), which is graded alongside v1.0 and adopted only under PREREGISTRATION.md appendix B. Rules: PREREGISTRATION.md, appendices A and B. Settings: `config/picks.yaml`; `publish_page: true` adds the page to the site navigation.
