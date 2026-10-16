@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-10-12T21:30:18Z",
+  "updated_utc": "2026-10-16T17:15:48Z",
   "graded": 11,
-  "pending": 37,
+  "pending": 38,
   "void": 1,
   "protocol": "PREREGISTRATION.md, appendix A",
   "record": {
@@ -95,7 +95,7 @@
     {
       "event": "UFC 333: Volkanovski vs. Evloev",
       "date": "2026-10-24",
-      "picks": 11,
+      "picks": 12,
       "locked_at_utc": "2026-10-05T21:29:43Z"
     },
     {

@@ -1,693 +1,7 @@
 {
- "fetched_at_utc": "2026-10-12T21:30:17Z",
- "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261012-20261102",
+ "fetched_at_utc": "2026-10-16T17:15:48Z",
+ "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261016-20261106",
  "events": [
-  {
-   "id": "600060741",
-   "uid": "s:3301~l:3321~e:600060741",
-   "date": "2026-10-13T23:00Z",
-   "name": "Dana White's Contender Series: Season 10, Week 10",
-   "shortName": "Dana White's Contender Series",
-   "season": {
-    "year": 2026,
-    "type": 2,
-    "slug": "regular-season"
-   },
-   "competitions": [
-    {
-     "id": "401928740",
-     "uid": "s:3301~l:3321~e:600060741~c:401928740",
-     "date": "2026-10-13T23:00Z",
-     "endDate": "2026-10-13T23:00Z",
-     "type": {
-      "id": "986",
-      "abbreviation": "Lightweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "5454992",
-       "uid": "s:3301~a:5454992",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Jason Asher",
-        "displayName": "Jason Asher",
-        "shortName": "J. Asher",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "5-0-0"
-        }
-       ]
-      },
-      {
-       "id": "5455116",
-       "uid": "s:3301~a:5455116",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Greg Foster",
-        "displayName": "Greg Foster",
-        "shortName": "G. Foster",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "8-1-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Tue, October 13th at 7:00 PM EDT",
-       "shortDetail": "10/13 - 7:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-13T23:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401928739",
-     "uid": "s:3301~l:3321~e:600060741~c:401928739",
-     "date": "2026-10-13T23:00Z",
-     "endDate": "2026-10-13T23:00Z",
-     "type": {
-      "id": "972",
-      "abbreviation": "Middleweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "5367388",
-       "uid": "s:3301~a:5367388",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Davi Cabral",
-        "displayName": "Davi Cabral",
-        "shortName": "D. Cabral",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "7-0-0"
-        }
-       ]
-      },
-      {
-       "id": "5401598",
-       "uid": "s:3301~a:5401598",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Douglas da Lapa",
-        "displayName": "Douglas da Lapa",
-        "shortName": "D. da Lapa",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "6-0-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Tue, October 13th at 7:00 PM EDT",
-       "shortDetail": "10/13 - 7:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-13T23:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401928738",
-     "uid": "s:3301~l:3321~e:600060741~c:401928738",
-     "date": "2026-10-13T23:00Z",
-     "endDate": "2026-10-13T23:00Z",
-     "type": {
-      "id": "969",
-      "abbreviation": "Welterweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "5310099",
-       "uid": "s:3301~a:5310099",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Will Rentz",
-        "displayName": "Will Rentz",
-        "shortName": "W. Rentz",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "8-2-0"
-        }
-       ]
-      },
-      {
-       "id": "5401060",
-       "uid": "s:3301~a:5401060",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Luis Francischinelli",
-        "displayName": "Luis Francischinelli",
-        "shortName": "L. Francischinelli",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "6-1-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Tue, October 13th at 7:00 PM EDT",
-       "shortDetail": "10/13 - 7:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-13T23:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401928737",
-     "uid": "s:3301~l:3321~e:600060741~c:401928737",
-     "date": "2026-10-13T23:00Z",
-     "endDate": "2026-10-13T23:00Z",
-     "type": {
-      "id": "1003",
-      "abbreviation": "W Bantamweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "5110864",
-       "uid": "s:3301~a:5110864",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Aline Pereira",
-        "displayName": "Aline Pereira",
-        "shortName": "A. Pereira",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "3-2-0"
-        }
-       ]
-      },
-      {
-       "id": "5402155",
-       "uid": "s:3301~a:5402155",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Smilla Sundell",
-        "displayName": "Smilla Sundell",
-        "shortName": "S. Sundell",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-         "alt": "Sweden",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "2-0-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Tue, October 13th at 7:00 PM EDT",
-       "shortDetail": "10/13 - 7:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-13T23:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401891665",
-     "uid": "s:3301~l:3321~e:600060741~c:401891665",
-     "date": "2026-10-13T23:00Z",
-     "endDate": "2026-10-13T23:00Z",
-     "type": {
-      "id": "999",
-      "abbreviation": "Featherweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "4886803",
-       "uid": "s:3301~a:4886803",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Ilias Bulaid",
-        "displayName": "Ilias Bulaid",
-        "shortName": "I. Bulaid",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-         "alt": "Morocco",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "9-0-0"
-        }
-       ]
-      },
-      {
-       "id": "5077314",
-       "uid": "s:3301~a:5077314",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Erick Visconde",
-        "displayName": "Erick Visconde",
-        "shortName": "E. Visconde",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "17-3-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Tue, October 13th at 7:00 PM EDT",
-       "shortDetail": "10/13 - 7:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-13T23:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    }
-   ],
-   "links": [
-    {
-     "language": "en-US",
-     "rel": [
-      "summary",
-      "desktop",
-      "event"
-     ],
-     "href": "https://www.espn.com/mma/fightcenter/_/id/600060741/league/ufc",
-     "text": "Gamecast",
-     "shortText": "Gamecast",
-     "isExternal": false,
-     "isPremium": false
-    }
-   ],
-   "venues": [
-    {
-     "id": "6176",
-     "fullName": "Meta APEX",
-     "address": {
-      "city": "Las Vegas",
-      "state": "NV",
-      "country": "USA"
-     }
-    }
-   ],
-   "status": {
-    "type": {
-     "id": "1",
-     "name": "STATUS_SCHEDULED",
-     "state": "pre",
-     "completed": false,
-     "description": "Scheduled",
-     "detail": "Scheduled",
-     "shortDetail": "Scheduled"
-    }
-   }
-  },
   {
    "id": "600060773",
    "uid": "s:3301~l:3321~e:600060773",
@@ -1890,7 +1204,7 @@
          "name": "overall",
          "abbreviation": "TOT",
          "type": "total",
-         "summary": "16-5-0"
+         "summary": "17-5-0"
         }
        ]
       },
@@ -2403,6 +1717,132 @@
    },
    "competitions": [
     {
+     "id": "401930357",
+     "uid": "s:3301~l:3321~e:600061267~c:401930357",
+     "date": "2026-10-24T14:00Z",
+     "endDate": "2026-10-24T14:00Z",
+     "type": {
+      "id": "972",
+      "abbreviation": "Middleweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "7126",
+      "fullName": "Etihad Arena",
+      "address": {
+       "city": "Abu Dhabi",
+       "country": "United Arab Emirates"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "3960340",
+       "uid": "s:3301~a:3960340",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Abubakar Vagaev",
+        "displayName": "Abubakar Vagaev",
+        "shortName": "A. Vagaev",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+         "alt": "Russia",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "25-4-0"
+        }
+       ]
+      },
+      {
+       "id": "4687434",
+       "uid": "s:3301~a:4687434",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Jacob Malkoun",
+        "displayName": "Jacob Malkoun",
+        "shortName": "J. Malkoun",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+         "alt": "Australia",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "10-3-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 24th at 10:00 AM EDT",
+       "shortDetail": "10/24 - 10:00 AM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-24T14:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
      "id": "401928047",
      "uid": "s:3301~l:3321~e:600061267~c:401928047",
      "date": "2026-10-24T14:00Z",
@@ -2475,7 +1915,7 @@
          "name": "overall",
          "abbreviation": "TOT",
          "type": "total",
-         "summary": "8-0-0"
+         "summary": "11-0-0"
         }
        ]
       }
@@ -3732,13 +3172,13 @@
    },
    "competitions": [
     {
-     "id": "401928110",
-     "uid": "s:3301~l:3321~e:600061420~c:401928110",
+     "id": "401914105",
+     "uid": "s:3301~l:3321~e:600061420~c:401914105",
      "date": "2026-10-31T21:00Z",
      "endDate": "2026-10-31T21:00Z",
      "type": {
-      "id": "999",
-      "abbreviation": "Featherweight"
+      "id": "1007",
+      "abbreviation": "W Flyweight"
      },
      "timeValid": true,
      "neutralSite": false,
@@ -3756,18 +3196,18 @@
      },
      "competitors": [
       {
-       "id": "4393818",
-       "uid": "s:3301~a:4393818",
+       "id": "4418809",
+       "uid": "s:3301~a:4418809",
        "type": "athlete",
        "order": 2,
        "winner": false,
        "athlete": {
-        "fullName": "Gaston Bola\u00f1os",
-        "displayName": "Gaston Bola\u00f1os",
-        "shortName": "G. Bola\u00f1os",
+        "fullName": "Tainara Lisboa",
+        "displayName": "Tainara Lisboa",
+        "shortName": "T. Lisboa",
         "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
-         "alt": "Peru",
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
          "rel": [
           "country-flag"
          ]
@@ -3778,20 +3218,247 @@
          "name": "overall",
          "abbreviation": "TOT",
          "type": "total",
-         "summary": "9-5-0"
+         "summary": "7-4-0"
         }
        ]
       },
       {
-       "id": "5060394",
-       "uid": "s:3301~a:5060394",
+       "id": "5130185",
+       "uid": "s:3301~a:5130185",
        "type": "athlete",
        "order": 1,
        "winner": false,
        "athlete": {
-        "fullName": "Francis Marshall",
-        "displayName": "Francis Marshall",
-        "shortName": "F. Marshall",
+        "fullName": "Lucia Szabov\u00e1",
+        "displayName": "Lucia Szabov\u00e1",
+        "shortName": "L. Szabov\u00e1",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
+         "alt": "Slovakia",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "12-0-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 5:00 PM EDT",
+       "shortDetail": "10/31 - 5:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401928105",
+     "uid": "s:3301~l:3321~e:600061420~c:401928105",
+     "date": "2026-10-31T21:00Z",
+     "endDate": "2026-10-31T21:00Z",
+     "type": {
+      "id": "1006",
+      "abbreviation": "W Strawweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4816066",
+       "uid": "s:3301~a:4816066",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Piera Rodriguez",
+        "displayName": "Piera Rodriguez",
+        "shortName": "P. Rodriguez",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
+         "alt": "Venezuela",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "12-2-0"
+        }
+       ]
+      },
+      {
+       "id": "5139556",
+       "uid": "s:3301~a:5139556",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Talita Alencar",
+        "displayName": "Talita Alencar",
+        "shortName": "T. Alencar",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "8-1-1"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 5:00 PM EDT",
+       "shortDetail": "10/31 - 5:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401914106",
+     "uid": "s:3301~l:3321~e:600061420~c:401914106",
+     "date": "2026-10-31T21:00Z",
+     "endDate": "2026-10-31T21:00Z",
+     "type": {
+      "id": "972",
+      "abbreviation": "Middleweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4687604",
+       "uid": "s:3301~a:4687604",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Joe Kropschot",
+        "displayName": "Joe Kropschot",
+        "shortName": "J. Kropschot",
         "flag": {
          "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
          "alt": "USA",
@@ -3805,7 +3472,34 @@
          "name": "overall",
          "abbreviation": "TOT",
          "type": "total",
-         "summary": "10-3-0"
+         "summary": "9-3-0"
+        }
+       ]
+      },
+      {
+       "id": "5134399",
+       "uid": "s:3301~a:5134399",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Nick Klein",
+        "displayName": "Nick Klein",
+        "shortName": "N. Klein",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "6-3-0"
         }
        ]
       }
@@ -3986,260 +3680,6 @@
      "highlights": []
     },
     {
-     "id": "401928108",
-     "uid": "s:3301~l:3321~e:600061420~c:401928108",
-     "date": "2026-10-31T21:00Z",
-     "endDate": "2026-10-31T21:00Z",
-     "type": {
-      "id": "972",
-      "abbreviation": "Middleweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "4697476",
-       "uid": "s:3301~a:4697476",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Andre Petroski",
-        "displayName": "Andre Petroski",
-        "shortName": "A. Petroski",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "13-7-0"
-        }
-       ]
-      },
-      {
-       "id": "5123963",
-       "uid": "s:3301~a:5123963",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Azamat Bekoev",
-        "displayName": "Azamat Bekoev",
-        "shortName": "A. Bekoev",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
-         "alt": "Russia",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "20-5-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Sat, October 31st at 5:00 PM EDT",
-       "shortDetail": "10/31 - 5:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-31T21:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401928107",
-     "uid": "s:3301~l:3321~e:600061420~c:401928107",
-     "date": "2026-10-31T21:00Z",
-     "endDate": "2026-10-31T21:00Z",
-     "type": {
-      "id": "969",
-      "abbreviation": "Welterweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "4629138",
-       "uid": "s:3301~a:4629138",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Jean-Paul Lebosnoyani",
-        "displayName": "Jean-Paul Lebosnoyani",
-        "shortName": "J. Lebosnoyani",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "11-2-0"
-        }
-       ]
-      },
-      {
-       "id": "5350562",
-       "uid": "s:3301~a:5350562",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Farman Hasanov",
-        "displayName": "Farman Hasanov",
-        "shortName": "F. Hasanov",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
-         "alt": "Azerbaijan",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "6-0-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Sat, October 31st at 5:00 PM EDT",
-       "shortDetail": "10/31 - 5:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-31T21:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
      "id": "401928106",
      "uid": "s:3301~l:3321~e:600061420~c:401928106",
      "date": "2026-10-31T21:00Z",
@@ -4367,13 +3807,13 @@
      "highlights": []
     },
     {
-     "id": "401928105",
-     "uid": "s:3301~l:3321~e:600061420~c:401928105",
+     "id": "401928108",
+     "uid": "s:3301~l:3321~e:600061420~c:401928108",
      "date": "2026-10-31T21:00Z",
      "endDate": "2026-10-31T21:00Z",
      "type": {
-      "id": "1006",
-      "abbreviation": "W Strawweight"
+      "id": "972",
+      "abbreviation": "Middleweight"
      },
      "timeValid": true,
      "neutralSite": false,
@@ -4391,18 +3831,18 @@
      },
      "competitors": [
       {
-       "id": "4816066",
-       "uid": "s:3301~a:4816066",
+       "id": "4697476",
+       "uid": "s:3301~a:4697476",
        "type": "athlete",
        "order": 2,
        "winner": false,
        "athlete": {
-        "fullName": "Piera Rodriguez",
-        "displayName": "Piera Rodriguez",
-        "shortName": "P. Rodriguez",
+        "fullName": "Andre Petroski",
+        "displayName": "Andre Petroski",
+        "shortName": "A. Petroski",
         "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/ven.png",
-         "alt": "Venezuela",
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
          "rel": [
           "country-flag"
          ]
@@ -4413,23 +3853,23 @@
          "name": "overall",
          "abbreviation": "TOT",
          "type": "total",
-         "summary": "12-2-0"
+         "summary": "13-7-0"
         }
        ]
       },
       {
-       "id": "5139556",
-       "uid": "s:3301~a:5139556",
+       "id": "5123963",
+       "uid": "s:3301~a:5123963",
        "type": "athlete",
        "order": 1,
        "winner": false,
        "athlete": {
-        "fullName": "Talita Alencar",
-        "displayName": "Talita Alencar",
-        "shortName": "T. Alencar",
+        "fullName": "Azamat Bekoev",
+        "displayName": "Azamat Bekoev",
+        "shortName": "A. Bekoev",
         "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/rus.png",
+         "alt": "Russia",
          "rel": [
           "country-flag"
          ]
@@ -4440,7 +3880,7 @@
          "name": "overall",
          "abbreviation": "TOT",
          "type": "total",
-         "summary": "8-1-1"
+         "summary": "20-5-0"
         }
        ]
       }
@@ -4473,6 +3913,260 @@
       }
      },
      "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401928110",
+     "uid": "s:3301~l:3321~e:600061420~c:401928110",
+     "date": "2026-10-31T21:00Z",
+     "endDate": "2026-10-31T21:00Z",
+     "type": {
+      "id": "999",
+      "abbreviation": "Featherweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4393818",
+       "uid": "s:3301~a:4393818",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Gaston Bola\u00f1os",
+        "displayName": "Gaston Bola\u00f1os",
+        "shortName": "G. Bola\u00f1os",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/per.png",
+         "alt": "Peru",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "9-5-0"
+        }
+       ]
+      },
+      {
+       "id": "5060394",
+       "uid": "s:3301~a:5060394",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Francis Marshall",
+        "displayName": "Francis Marshall",
+        "shortName": "F. Marshall",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "10-3-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 5:00 PM EDT",
+       "shortDetail": "10/31 - 5:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-31T21:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401928107",
+     "uid": "s:3301~l:3321~e:600061420~c:401928107",
+     "date": "2026-11-01T00:00Z",
+     "endDate": "2026-11-01T00:00Z",
+     "type": {
+      "id": "969",
+      "abbreviation": "Welterweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "6176",
+      "fullName": "Meta APEX",
+      "address": {
+       "city": "Las Vegas",
+       "state": "NV",
+       "country": "USA"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4629138",
+       "uid": "s:3301~a:4629138",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Jean-Paul Lebosnoyani",
+        "displayName": "Jean-Paul Lebosnoyani",
+        "shortName": "J. Lebosnoyani",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "11-2-0"
+        }
+       ]
+      },
+      {
+       "id": "5350562",
+       "uid": "s:3301~a:5350562",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Farman Hasanov",
+        "displayName": "Farman Hasanov",
+        "shortName": "F. Hasanov",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/aze.png",
+         "alt": "Azerbaijan",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "6-0-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 31st at 8:00 PM EDT",
+       "shortDetail": "10/31 - 8:00 PM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-11-01T00:00Z",
      "broadcast": "Paramount+",
      "geoBroadcasts": [
       {
@@ -4727,260 +4421,6 @@
       }
      },
      "startDate": "2026-11-01T00:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401914105",
-     "uid": "s:3301~l:3321~e:600061420~c:401914105",
-     "date": "2026-10-31T21:00Z",
-     "endDate": "2026-10-31T21:00Z",
-     "type": {
-      "id": "1007",
-      "abbreviation": "W Flyweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "4418809",
-       "uid": "s:3301~a:4418809",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Tainara Lisboa",
-        "displayName": "Tainara Lisboa",
-        "shortName": "T. Lisboa",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-         "alt": "Brazil",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "7-4-0"
-        }
-       ]
-      },
-      {
-       "id": "5130185",
-       "uid": "s:3301~a:5130185",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Lucia Szabova",
-        "displayName": "Lucia Szabova",
-        "shortName": "L. Szabova",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/svk.png",
-         "alt": "Slovakia",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "1-0-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Sat, October 31st at 5:00 PM EDT",
-       "shortDetail": "10/31 - 5:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-31T21:00Z",
-     "broadcast": "Paramount+",
-     "geoBroadcasts": [
-      {
-       "type": {
-        "id": "4",
-        "shortName": "Streaming"
-       },
-       "market": {
-        "id": "1",
-        "type": "National"
-       },
-       "media": {
-        "shortName": "Paramount+"
-       },
-       "lang": "en",
-       "region": "us"
-      }
-     ],
-     "highlights": []
-    },
-    {
-     "id": "401914106",
-     "uid": "s:3301~l:3321~e:600061420~c:401914106",
-     "date": "2026-10-31T21:00Z",
-     "endDate": "2026-10-31T21:00Z",
-     "type": {
-      "id": "972",
-      "abbreviation": "Middleweight"
-     },
-     "timeValid": true,
-     "neutralSite": false,
-     "playByPlayAvailable": false,
-     "recent": false,
-     "venue": {
-      "id": "6176",
-      "fullName": "Meta APEX",
-      "address": {
-       "city": "Las Vegas",
-       "state": "NV",
-       "country": "USA"
-      },
-      "indoor": true
-     },
-     "competitors": [
-      {
-       "id": "4687604",
-       "uid": "s:3301~a:4687604",
-       "type": "athlete",
-       "order": 2,
-       "winner": false,
-       "athlete": {
-        "fullName": "Joe Kropschot",
-        "displayName": "Joe Kropschot",
-        "shortName": "J. Kropschot",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "9-3-0"
-        }
-       ]
-      },
-      {
-       "id": "5134399",
-       "uid": "s:3301~a:5134399",
-       "type": "athlete",
-       "order": 1,
-       "winner": false,
-       "athlete": {
-        "fullName": "Nick Klein",
-        "displayName": "Nick Klein",
-        "shortName": "N. Klein",
-        "flag": {
-         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-         "alt": "USA",
-         "rel": [
-          "country-flag"
-         ]
-        }
-       },
-       "records": [
-        {
-         "name": "overall",
-         "abbreviation": "TOT",
-         "type": "total",
-         "summary": "6-3-0"
-        }
-       ]
-      }
-     ],
-     "status": {
-      "clock": 0.0,
-      "displayClock": "-",
-      "period": 0,
-      "type": {
-       "id": "1",
-       "name": "STATUS_SCHEDULED",
-       "state": "pre",
-       "completed": false,
-       "description": "Scheduled",
-       "detail": "Sat, October 31st at 5:00 PM EDT",
-       "shortDetail": "10/31 - 5:00 PM EDT"
-      }
-     },
-     "broadcasts": [
-      {
-       "market": "national",
-       "names": [
-        "Paramount+"
-       ]
-      }
-     ],
-     "format": {
-      "regulation": {
-       "periods": 3
-      }
-     },
-     "startDate": "2026-10-31T21:00Z",
      "broadcast": "Paramount+",
      "geoBroadcasts": [
       {
