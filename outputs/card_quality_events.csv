@@ -1,4 +1,5 @@
 event,date,top10_bouts,top15_bouts,nontitle_top10_bouts,title_bouts,ranked_appearances,is_numbered,location,bouts,year,card_type,ranked_share,top10_per_10_bouts,nontitle_top10_per_10_bouts
+UFC Fight Night: Buckley vs. Malott,2026-10-17,1,2,1,0,5,False,"Edmonton, Alberta, Canada",13,2026,Fight Night,0.19230769230769232,0.7692307692307693,0.7692307692307693
 UFC Fight Night: Allen vs. Duncan,2026-10-10,0,1,0,0,3,False,"Las Vegas, Nevada, USA",12,2026,Fight Night,0.125,0.0,0.0
 UFC 332: Silva vs. Wang,2026-10-03,1,1,0,1,5,True,"Salt Lake City, Utah, USA",14,2026,Numbered,0.17857142857142858,0.7142857142857143,0.0
 UFC Fight Night: Rosas Jr. vs. Barcelos,2026-09-26,1,1,1,0,4,False,"Las Vegas, Nevada, USA",12,2026,Fight Night,0.16666666666666666,0.8333333333333334,0.8333333333333334

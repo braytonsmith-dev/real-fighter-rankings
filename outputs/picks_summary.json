@@ -1,82 +1,89 @@
 {
-  "updated_utc": "2026-10-16T17:15:48Z",
-  "graded": 11,
+  "updated_utc": "2026-10-19T18:56:27Z",
+  "graded": 24,
   "pending": 38,
   "void": 1,
   "protocol": "PREREGISTRATION.md, appendix A",
   "record": {
-    "correct": 4,
-    "incorrect": 7,
-    "accuracy": 0.364,
+    "correct": 9,
+    "incorrect": 15,
+    "accuracy": 0.375,
     "accuracy_wilson95": [
-      0.152,
-      0.646
+      0.212,
+      0.573
     ],
-    "log_loss": 0.7601,
-    "brier": 0.2813,
+    "log_loss": 0.7631,
+    "brier": 0.2827,
     "coin_flip_log_loss": 0.6931
   },
   "baselines_same_bouts": {
     "results_only_elo": {
-      "n": 11,
-      "accuracy": 0.364,
-      "log_loss": 0.7494,
-      "model_accuracy_same_bouts": 0.364,
-      "model_log_loss_same_bouts": 0.7601
+      "n": 24,
+      "accuracy": 0.375,
+      "log_loss": 0.7371,
+      "model_accuracy_same_bouts": 0.375,
+      "model_log_loss_same_bouts": 0.7631
     },
     "real_board": {
-      "n": 6,
-      "accuracy": 0.5,
-      "log_loss": 0.8191,
-      "model_accuracy_same_bouts": 0.167,
-      "model_log_loss_same_bouts": 0.8509
+      "n": 11,
+      "accuracy": 0.364,
+      "log_loss": 0.8802,
+      "model_accuracy_same_bouts": 0.273,
+      "model_log_loss_same_bouts": 0.8825
     },
     "shadow_v11": {
-      "n": 11,
-      "accuracy": 0.545,
-      "log_loss": 0.7609,
-      "model_accuracy_same_bouts": 0.364,
-      "model_log_loss_same_bouts": 0.7601
+      "n": 24,
+      "accuracy": 0.458,
+      "log_loss": 0.8058,
+      "model_accuracy_same_bouts": 0.375,
+      "model_log_loss_same_bouts": 0.7631
     }
   },
   "by_confidence": [
     {
       "band": "50%-55%",
-      "n": 5,
-      "accuracy": 0.2,
-      "mean_p_pick": 0.524
+      "n": 11,
+      "accuracy": 0.273,
+      "mean_p_pick": 0.522
     },
     {
       "band": "55%-60%",
-      "n": 3,
-      "accuracy": 0.667,
-      "mean_p_pick": 0.566
+      "n": 5,
+      "accuracy": 0.6,
+      "mean_p_pick": 0.579
     },
     {
       "band": "60%-65%",
-      "n": 1,
+      "n": 2,
       "accuracy": 1.0,
-      "mean_p_pick": 0.635
+      "mean_p_pick": 0.641
     },
     {
       "band": "65%-70%",
-      "n": 1,
-      "accuracy": 0.0,
-      "mean_p_pick": 0.664
+      "n": 4,
+      "accuracy": 0.25,
+      "mean_p_pick": 0.665
     },
     {
       "band": "70%+",
-      "n": 1,
+      "n": 2,
       "accuracy": 0.0,
-      "mean_p_pick": 0.715
+      "mean_p_pick": 0.714
     }
   ],
   "feed_order_matches_ufcstats_first_listed": 1.0,
   "provisional": {
-    "n": 7,
-    "accuracy": 0.286
+    "n": 16,
+    "accuracy": 0.312
   },
   "by_event": [
+    {
+      "event": "UFC Fight Night: Buckley vs. Malott",
+      "date": "2026-10-17",
+      "n": 13,
+      "correct": 5,
+      "log_loss": 0.7656
+    },
     {
       "event": "UFC Fight Night: Allen vs. Duncan",
       "date": "2026-10-10",
@@ -89,7 +96,7 @@
     {
       "event": "UFC Fight Night: Buckley vs. Malott",
       "date": "2026-10-17",
-      "picks": 15,
+      "picks": 2,
       "locked_at_utc": "2026-10-05T21:29:43Z"
     },
     {
@@ -103,6 +110,12 @@
       "date": "2026-10-31",
       "picks": 11,
       "locked_at_utc": "2026-10-12T21:30:18Z"
+    },
+    {
+      "event": "UFC Fight Night: Bonfim vs. Brady",
+      "date": "2026-11-07",
+      "picks": 13,
+      "locked_at_utc": "2026-10-19T18:56:27Z"
     }
   ]
 }
