@@ -955,3 +955,8 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2026-10-03,2026-10-10,True,Middleweight,False,Brendan Allen,4,0.7727,Christian Leroy Duncan,10,0.4029,1.0,Brendan Allen,1.0,0.6232,True,True,4.0,10.0,1.0,0.431790122818711,0.625242771391404,SUB
 2026-10-03,2026-10-10,True,Light Heavyweight,False,Felipe Franco,26,-0.0047,Brendson Ribeiro,51,-1.1886,0.0,Brendson Ribeiro,0.0,0.8334,False,False,99.0,99.0,,0.7145758980365366,0.6442598358691077,SUB
 2026-10-03,2026-10-10,True,Heavyweight,False,Allen Frye Jr.,36,-0.1421,RJ Harris,16,0.1083,1.0,Allen Frye Jr.,0.0,0.4157,False,False,99.0,99.0,,0.3358316083015193,0.3798630667640413,KO/TKO
+2026-10-10,2026-10-17,True,Women's Flyweight,False,Erin Blanchfield,4,0.7227,Jasmine Jasudavicius,6,0.3735,0.0,Jasmine Jasudavicius,0.0,0.6165,True,True,4.0,6.0,0.0,0.680123521603182,0.6273326992247578,U-DEC
+2026-10-10,2026-10-17,True,Middleweight,False,Marc-Andre Barriault,74,-0.9807,Kyle Daukaus,51,-0.2607,1.0,Marc-Andre Barriault,0.0,0.273,False,False,99.0,99.0,,0.3422578266689057,0.4052109337734527,KO/TKO
+2026-10-10,2026-10-17,True,Heavyweight,False,Tanner Boser,27,-0.0357,Jhonata Diniz,36,-0.1235,1.0,Tanner Boser,1.0,0.5298,False,False,99.0,99.0,,0.5987853322580988,0.4066183310622354,KO/TKO
+2026-10-10,2026-10-17,True,Welterweight,False,Joaquin Buckley,9,0.5104,Mike Malott,14,0.3016,0.0,Mike Malott,0.0,0.5705,True,True,10.0,13.0,0.0,0.4683934948928477,0.4602648801621876,KO/TKO
+2026-10-10,2026-10-17,True,Women's Bantamweight,False,Melissa Croden,14,-0.0611,Chelsea Chandler,20,-0.4782,0.0,Chelsea Chandler,0.0,0.6381,True,False,14.0,99.0,,0.7123568653222592,0.5969158763536214,SUB
