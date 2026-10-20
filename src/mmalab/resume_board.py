@@ -232,9 +232,50 @@ def title_cycle(cont: pd.DataFrame, out: pd.DataFrame, as_of: pd.Timestamp, tc: 
     return cont.drop(columns=["pos"]).merge(fixed, on=["division", "fighter"]), notes
 
 
-def build(as_of: str | None = None, weights: dict | None = None, stability: bool = True) -> tuple[pd.DataFrame, dict]:
+def _merge(base: dict, over: dict | None) -> dict:
+    out = dict(base)
+    for k, v in (over or {}).items():
+        out[k] = _merge(base[k], v) if isinstance(v, dict) and isinstance(base.get(k), dict) else v
+    return out
+
+
+def tiered_form_penalty(out: pd.DataFrame, tiers: list, cap: float) -> pd.Series:
+    """Per fighter: the sum over losses in the last five decided bouts of a cost set by the opponent's rank at the
+    time (champion and top 5 cheapest, unranked dearest), capped. One opponent-aware form rule instead of record buckets."""
+    d = out[out["result_a"].isin([0.0, 1.0])]
+    long = pd.concat([
+        pd.DataFrame({"fighter": d["fighter_a"], "date": d["date"], "bout_id": d["bout_id"], "lost": d["result_a"] == 0.0, "opp_pos": d["rank_b"]}),
+        pd.DataFrame({"fighter": d["fighter_b"], "date": d["date"], "bout_id": d["bout_id"], "lost": d["result_a"] == 1.0, "opp_pos": d["rank_a"]}),
+    ]).sort_values(["date", "bout_id"])
+    last5 = long.groupby("fighter").tail(5)
+    t = sorted((int(a), float(b)) for a, b in tiers)
+
+    def cost(pos: float) -> float:
+        for limit, c in t:
+            if pos <= limit:
+                return c
+        return t[-1][1]
+    pen = last5["lost"].astype(float) * last5["opp_pos"].fillna(999).map(cost)
+    return pen.groupby(last5["fighter"]).sum().clip(upper=cap)
+
+
+def bad_losses_last_five(out: pd.DataFrame, rank_above: int) -> pd.Series:
+    """Per fighter: losses among the last five decided bouts to an opponent whose effective rank at the time was
+    worse than `rank_above` (or unranked). A loss to a champion or top-10 fighter is not a bad loss."""
+    d = out[out["result_a"].isin([0.0, 1.0])]
+    long = pd.concat([
+        pd.DataFrame({"fighter": d["fighter_a"], "date": d["date"], "bout_id": d["bout_id"], "lost": d["result_a"] == 0.0, "opp_pos": d["rank_b"]}),
+        pd.DataFrame({"fighter": d["fighter_b"], "date": d["date"], "bout_id": d["bout_id"], "lost": d["result_a"] == 1.0, "opp_pos": d["rank_a"]}),
+    ]).sort_values(["date", "bout_id"])
+    last5 = long.groupby("fighter").tail(5)
+    bad = last5["lost"] & (last5["opp_pos"].fillna(999) > rank_above)
+    return bad.groupby(last5["fighter"]).sum()
+
+
+def build(as_of: str | None = None, weights: dict | None = None, stability: bool = True,
+          overrides: dict | None = None) -> tuple[pd.DataFrame, dict]:
     cfg = yaml.safe_load((CFG / "weights.yaml").read_text())
-    rc = cfg["resume"]
+    rc = _merge(cfg["resume"], overrides)
     w = weights or rc["weights"]
     bouts = pd.read_csv(PROC / "bouts_with_stats.csv", parse_dates=["date"])
     as_of_ts = pd.Timestamp(as_of) if as_of else bouts["date"].max() + pd.Timedelta(days=1)
@@ -274,9 +315,23 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     d["qw_weighted"] = d["hw"] * d["qw_value"]
     qw = d[d["quality_win"]].groupby("winner")["qw_weighted"].sum() * L["quality_win"]
     proof = d[d["proof"]].groupby("loser")["hw"].sum() * L["proof_of_concept"]
-    dl = d[d["decisive_loss"] & recent].groupby("loser")["hw"].sum() * L["dominant_loss"]
-    weak = d[recent & ~d["decisive_loss"] & ~d["proof"] & (d["winner_pos"] > rc["engine"].get("proof_top_n", 5))]
-    wl = weak.groupby("loser")["hw"].sum() * L["loss_outside_top5"]
+    if L.get("loss_tiers"):
+        # v1.1: a loss costs by the opponent's rank at the time (mirror of the win tiers); a blowout adds a little more
+        tiers = sorted((int(a), float(b)) for a, b in L["loss_tiers"])
+
+        def tier_cost(pos: float) -> float:
+            for limit, cost in tiers:
+                if pos <= limit:
+                    return cost
+            return tiers[-1][1]
+        losses = d[recent & ~d["proof"]].copy()
+        losses["cost"] = losses["winner_pos"].fillna(999).map(tier_cost) + np.where(losses["decisive_loss"], float(L.get("dominant_extra", 0.0)), 0.0)
+        dl = losses[losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["hw"] * g["cost"]).sum()))
+        wl = losses[~losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["hw"] * g["cost"]).sum()))
+    else:
+        dl = d[d["decisive_loss"] & recent].groupby("loser")["hw"].sum() * L["dominant_loss"]
+        weak = d[recent & ~d["decisive_loss"] & ~d["proof"] & (d["winner_pos"] > rc["engine"].get("proof_top_n", 5))]
+        wl = weak.groupby("loser")["hw"].sum() * L["loss_outside_top5"]
     q15 = d[d["quality_win"] & (d["age"] <= 15)].groupby("winner").size()
     t10 = d[d["top10_win"] & (d["age"] <= 15)].groupby("winner").size()
     t15 = d[d["top15_win"] & (d["age"] <= 15)].groupby("winner").size()
@@ -298,6 +353,16 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
 
     fp = {str(k): float(v) for k, v in rc["form_penalty"].items()}
     f["form_penalty"] = f["last5"].map(lambda r: fp.get(r, 0.0)).fillna(0.0)
+    ft = rc.get("form_loss_tiers")
+    if ft:
+        # v1.1 candidate: replaces the record buckets with one opponent-aware rule
+        f["form_penalty"] = tiered_form_penalty(out, ft["tiers"], float(ft["cap"])).reindex(f["fighter"]).fillna(0.0).to_numpy()
+    fb = rc.get("form_bad_loss")
+    if fb:
+        # v1.1 add-on: each loss in the last five to an opponent outside the top `rank_above` costs extra, so a losing run
+        # against elite opposition is treated differently from one against mid-card opposition
+        bad = bad_losses_last_five(out, int(fb["rank_above"])).reindex(f["fighter"]).fillna(0).to_numpy()
+        f["form_penalty"] = f["form_penalty"] + np.minimum(bad * float(fb["per_loss"]), float(fb["cap"]))
 
     champs = champions(out, as_of_ts)
     interim = _yaml("interim_champions.yaml")
