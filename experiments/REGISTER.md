@@ -16,7 +16,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-06](#exp-2026-10-20-06) | 2026-10-20 | Walk-forward tuning, second pass: coupled coordinates, free and resume presets | running |
 | [EXP-2026-10-20-07](#exp-2026-10-20-07) | 2026-10-20 | Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks) | running |
 | [EXP-2026-10-20-08](#exp-2026-10-20-08) | 2026-10-20 | v1.1 retrospective reconstruction (its own snapshot directory) | informational |
-| [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | parked |
+| [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | rejected |
 | [EXP-2026-10-20-10](#exp-2026-10-20-10) | 2026-10-20 | Glicko-1 rating deviation for the resume rating: parameter derivation and calibration | adopted |
 
 ## EXP-2026-09-30-01
@@ -376,7 +376,7 @@ Files: `experiments/results/EXP-2026-10-20-08/forward_validation_v1_1.json`
 ## EXP-2026-10-20-09
 
 Age and the rating channel: older favourites lose more often than they win  
-Date 2026-10-20, decision: parked, code at commit `ead380b`.
+Date 2026-10-20, decision: rejected, code at commit `ead380b`.
 
 Question. Does the board over-rank older fighters? Split the bouts by the higher-scored fighter's age and last-five losses and see how often he wins; then test a rating discount by age.
 
@@ -415,7 +415,7 @@ Candidate. `{"diagnostic": "favourite's age x last-five losses", "remedy tested"
 | welterweight top 10 at 33 / 20 | Makhachev C, Prates, Morales, Brady, Garry, Della Maddalena, Bonfim, Edwards, Usman, Malott, Donchenko |
 | conflict | the curator wants long resumes (Adesanya, Blachowicz, Ortega) to stay in the top 15; every age setting that helps accuracy moves them down |
 
-Decision. parked: The largest single effect found so far, three to four points of concordance and six at the top 15, and it is the arithmetic behind the Usman case (age 39). It changes what the board is: the rating term becomes current ability, not resume. Proposed as the v1.2 candidate after walk-forward tuning of from_age and the slope (this entry is in-sample) and the curator's decision on the resume question; never applied to v1.0 or v1.1.
+Decision. rejected: Rejected for the board by the curator on principle (Oct 20, 2026): REAL ranks who has earned the spot as of now, not who wins next. A resume rank lags ability by construction, since a contender earns the higher spot by beating the man who holds it, and an older top-10 fighter loses more often because he is matched against the best, which is the point of the board. Predictive concordance therefore punishes the lag and is a descriptive check, not the objective (PREREGISTRATION.md section 8). The finding stays as a measured property for the paper, and age belongs in the prediction model (the shadow model carries age terms). What would change the verdict: a decision to publish a separate contender board; the age_discount option in build() and the harness remains available for that.
 
 Files: `experiments/results/EXP-2026-10-20-09/age_grid_in_sample.csv`, `experiments/results/EXP-2026-10-20-09/age_grid_extended.csv`
 
