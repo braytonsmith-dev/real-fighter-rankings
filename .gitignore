@@ -9,3 +9,4 @@ outputs/backtest_stdout.txt
 
 # agent worktrees and local tool state
 .claude/
+.pytest_cache/

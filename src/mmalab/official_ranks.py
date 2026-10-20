@@ -5,6 +5,13 @@ Source: martj42/ufc_rankings_history (every release 2013-02-04 to 2026-06-16), e
 with any later snapshots saved in data/external/ufc_media.csv. Rank 0 = champion.
 Before Feb 2013, or for a division with no release yet, callers fall back to the
 model's own position.
+
+Name matching, in order: config/official_rank_aliases.yaml (ranking name -> UFCStats
+name), then the normalised spelling, then a strict fuzzy match. Blank fighter rows
+(vacant titles) are dropped. Any ranking name still unmatched must be listed in
+config/official_rank_unmatched_ok.yaml (fighters with no UFCStats bouts); otherwise
+the constructor raises ValueError, so a data refresh cannot silently turn a ranked
+fighter into an unranked one.
 """
 from __future__ import annotations
 
@@ -13,34 +20,83 @@ import difflib
 from pathlib import Path
 
 import pandas as pd
+import yaml
 
 from mmalab.compare import norm
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 EXT = ROOT / "data" / "external"
+CONFIG = ROOT / "config"
+ALIASES_PATH = CONFIG / "official_rank_aliases.yaml"
+UNMATCHED_OK_PATH = CONFIG / "official_rank_unmatched_ok.yaml"
 
 DIVS = {"Flyweight", "Bantamweight", "Featherweight", "Lightweight", "Welterweight", "Middleweight",
         "Light Heavyweight", "Heavyweight", "Women's Strawweight", "Women's Flyweight",
         "Women's Bantamweight", "Women's Featherweight"}
 
 
+def load_aliases(path: Path = ALIASES_PATH) -> dict[str, str]:
+    """Ranking-history name -> UFCStats name. Empty when the file is missing or blank."""
+    if not path.exists():
+        return {}
+    data = yaml.safe_load(path.read_text()) or {}
+    if not isinstance(data, dict):
+        raise ValueError(f"{path.name} must be a mapping of ranking name -> UFCStats name")
+    return {str(k).strip(): str(v).strip() for k, v in data.items()}
+
+
+def load_unmatched_ok(path: Path = UNMATCHED_OK_PATH) -> set[str]:
+    """Ranking-history names allowed to stay unmatched (no UFCStats bouts). Accepts a
+    mapping of name -> reason or a plain list of names."""
+    if not path.exists():
+        return set()
+    data = yaml.safe_load(path.read_text()) or {}
+    items = data.keys() if isinstance(data, dict) else data
+    return {str(x).strip() for x in items}
+
+
+def load_releases() -> pd.DataFrame:
+    """Every ranking release row (date, weightclass, fighter, rank) for the ranked divisions,
+    with blank fighter rows (vacant titles) removed."""
+    r = pd.read_csv(RAW / "ufc_rankings_history.csv")
+    r = r[r["weightclass"].isin(DIVS)].copy()
+    r["date"] = pd.to_datetime(r["date"])
+    if (EXT / "ufc_media.csv").exists():
+        m = pd.read_csv(EXT / "ufc_media.csv")
+        m = pd.DataFrame({"date": pd.to_datetime(m["as_of"]), "weightclass": m["division"],
+                          "fighter": m["fighter"], "rank": m["rank"]})
+        r = pd.concat([r, m[m["date"] > r["date"].max()]], ignore_index=True)
+    r = r.dropna(subset=["fighter"])
+    r["fighter"] = r["fighter"].astype(str).str.strip()
+    return r[r["fighter"] != ""].reset_index(drop=True)
+
+
 class OfficialRanks:
     def __init__(self, ufc_names: list[str]):
-        r = pd.read_csv(RAW / "ufc_rankings_history.csv")
-        r = r[r["weightclass"].isin(DIVS)].copy()
-        r["date"] = pd.to_datetime(r["date"])
-        if (EXT / "ufc_media.csv").exists():
-            m = pd.read_csv(EXT / "ufc_media.csv")
-            m = pd.DataFrame({"date": pd.to_datetime(m["as_of"]), "weightclass": m["division"],
-                              "fighter": m["fighter"], "rank": m["rank"]})
-            r = pd.concat([r, m[m["date"] > r["date"].max()]], ignore_index=True)
-        # map ranking names onto UFCStats names
+        r = load_releases()
+        ufc_names = [str(n).strip() for n in ufc_names if pd.notna(n) and str(n).strip()]
+        name_set = set(ufc_names)
+        aliases = load_aliases()
+        bad_targets = sorted({t for t in aliases.values() if t not in name_set})
+        if bad_targets:
+            raise ValueError(
+                f"{ALIASES_PATH.name}: alias targets not found among the UFCStats names: "
+                + ", ".join(bad_targets) + ". Fix the target spelling or remove the entry.")
+        alias_norm = {norm(k): v for k, v in aliases.items()}
+        # map ranking names onto UFCStats names: alias, then normalised spelling, then strict fuzzy
         known = {norm(n): n for n in ufc_names}
         keys = list(known)
-        mapping, self.unmatched = {}, set()
+        mapping: dict[str, str] = {}
+        self.unmatched: set[str] = set()
         for name in r["fighter"].unique():
             k = norm(name)
+            if name in aliases:
+                mapping[name] = aliases[name]
+                continue
+            if k in alias_norm:
+                mapping[name] = alias_norm[k]
+                continue
             if k in known:
                 mapping[name] = known[k]
                 continue
@@ -50,6 +106,13 @@ class OfficialRanks:
                 mapping[name] = known[c[0]]
             else:
                 self.unmatched.add(name)
+        offenders = sorted(self.unmatched - load_unmatched_ok())
+        if offenders:
+            raise ValueError(
+                "official ranking names with no UFCStats match: " + ", ".join(offenders)
+                + f". Add each to config/{ALIASES_PATH.name} (ranking name -> UFCStats name) or, "
+                f"if the fighter has no UFCStats bouts, to config/{UNMATCHED_OK_PATH.name}.")
+        n_names = r["fighter"].nunique()
         r["ufc_name"] = r["fighter"].map(mapping)
         r = r.dropna(subset=["ufc_name"])
         self.dates = sorted(r["date"].unique())
@@ -61,7 +124,7 @@ class OfficialRanks:
                 "any": g.groupby("ufc_name")["rank"].min().astype(int).to_dict(),
                 "divs": set(g["weightclass"]),
             }
-        self.match_rate = 1 - len(self.unmatched) / max(r["fighter"].nunique() + len(self.unmatched), 1)
+        self.match_rate = 1 - len(self.unmatched) / max(n_names, 1)
 
     def release_before(self, date) -> pd.Timestamp | None:
         i = bisect.bisect_left(self.dates, pd.Timestamp(date)) - 1

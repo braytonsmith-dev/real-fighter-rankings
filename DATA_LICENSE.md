@@ -19,7 +19,7 @@ Judges' scorecards are not a separate source. UFCStats prints each judge's total
 
 ## Name matching and manual files
 
-Fighter names are matched across sources by normalisation plus a strict fuzzy rule (`src/mmalab/official_ranks.py`, `compare.py`). Thirteen historical ranked names remain unmatched and are treated as unranked; they are listed by `OfficialRanks.unmatched` at build time. Manual files (`config/layoffs.yaml`, `roster_exclusions.yaml`, `division_overrides.yaml`, `champions_override.yaml`, `interim_champions.yaml`, `reserved.yaml`, `short_notice.yaml`) record current state; from v1.1 every entry will carry an effective date and a source URL so that historical rebuilds can query the state as of that date.
+Fighter names are matched across sources by normalisation plus a strict fuzzy rule (`src/mmalab/official_ranks.py`, `compare.py`). Official ranking names that the two sources spell differently are mapped by hand in `config/official_rank_aliases.yaml` (11 fighters, each with how the identity was confirmed); the only ranked name without a UFCStats match is a fighter who never fought in the UFC, listed in `config/official_rank_unmatched_ok.yaml`. The build raises an error for any other unmatched name, so a data refresh cannot silently treat a ranked fighter as unranked. Manual files (`config/layoffs.yaml`, `roster_exclusions.yaml`, `division_overrides.yaml`, `champions_override.yaml`, `interim_champions.yaml`, `reserved.yaml`, `short_notice.yaml`) record current state; from v1.1 every entry will carry an effective date and a source URL so that historical rebuilds can query the state as of that date.
 
 ## Trademarks and likenesses
 

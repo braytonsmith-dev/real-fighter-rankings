@@ -1,0 +1,10 @@
+# Official UFC ranking-history names that are allowed to stay unmatched because the fighter has no
+# UFCStats bouts (ranked before ever fighting in the UFC, or genuinely absent from UFCStats).
+# Format: ranking-history name: reason. src/mmalab/official_ranks.py raises ValueError for any
+# unmatched name that is not listed here, so a data refresh cannot silently drop a ranked fighter.
+# Add a name only after checking that it has no bouts in data/processed/bouts.csv; if it later
+# fights, it will match on its own and the entry should be removed (tests/test_official_ranks.py
+# flags a listed name that has bouts).
+# Blank fighter rows (123 vacant-champion rows, rank 0 with no name, e.g. Welterweight Dec 2013 to
+# Jan 2014 and Women's Bantamweight Nov 2023 to Jan 2024) are dropped in code and need no entry.
+Jaime Alvarez: ranked Flyweight #15 in the single 2019-04-03 release; UFCStats lists him (fighter-details/4438482bd1d5a029, 125 lb) but he has no UFC bouts in ufc_fight_results.csv or bouts.csv
