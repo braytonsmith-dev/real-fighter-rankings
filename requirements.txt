@@ -1,7 +1,13 @@
-pandas>=2.2
-numpy>=1.26
-pyyaml>=6.0
-matplotlib>=3.8
-scipy>=1.11
-tabulate>=0.9
-markdown>=3.5
+# Exact pins, refreshed deliberately and never floated. The weekly rebuild installs from this file
+# on a fresh runner, so a `>=` floor let any new pandas or numpy release change results or break the
+# Monday run with nobody watching (audit finding E2). To move a version: upgrade locally, run
+# `pytest -q -m "not slow"` and a full rebuild, compare the boards, then change the pin here in its
+# own commit. Every package the code imports is listed; python-dateutil, pillow and the other
+# transitive dependencies still float.
+pandas==3.0.2
+numpy==2.4.4
+PyYAML==6.0.3
+matplotlib==3.10.9
+scipy==1.17.1
+tabulate==0.10.0
+Markdown==3.10.2

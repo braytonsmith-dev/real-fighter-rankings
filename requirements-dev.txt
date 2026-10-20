@@ -1,0 +1,3 @@
+# Test and development dependencies, pinned like requirements.txt and refreshed with it.
+-r requirements.txt
+pytest==9.1.1

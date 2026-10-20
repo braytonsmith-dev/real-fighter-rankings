@@ -6,3 +6,4 @@ raw_jansen/
 data/processed/round_stats.csv
 outputs/backtest_stdout.txt
 .DS_Store
+.pytest_cache/

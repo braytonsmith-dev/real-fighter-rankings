@@ -21,6 +21,10 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Check every import resolves before the rebuild
         run: PYTHONPATH=src python -c "import mmalab.run_all, tabulate, markdown"
+      - name: Run the fast test suite before the rebuild
+        run: |
+          pip install -r requirements-dev.txt
+          python -m pytest -q -m "not slow"
       - run: bash scripts/refresh_data.sh --quick
       - name: Commit outputs
         run: |
