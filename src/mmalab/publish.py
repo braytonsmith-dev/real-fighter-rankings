@@ -430,20 +430,28 @@ def version_page(v: dict, cfg: dict, site: str, as_of) -> str:
                       f"(95% interval {ci[0]:.0%} to {ci[1]:.0%}) on {pro['bouts']} bouts between two fighters on the same v{v['version']} board. "
                       + (f"The registered v1.0 board scored {reg_pro['real_concordance']:.1%} on {reg_pro['bouts']} bouts over its own period since Oct 1, 2026. "
                          if reg_pro.get('bouts') else "")
-                      + "Adoption needs the paired comparison in PREREGISTRATION.md appendix C, not this line.</p>")
+                      + f"Adoption needs the paired comparison in PREREGISTRATION.md {esc(v.get('adoption_rule', 'appendix C'))}, not this line.</p>")
         else:
             record = (f"<h2>Forward record since {esc(str(v['since']))}</h2><p>No prospective bouts graded yet. "
                       + (f"Retrospective reconstruction (rules chosen after the bouts, in-sample): concordance {ret['real_concordance']:.1%} "
                          f"on {ret['bouts']} bouts." if ret.get("bouts") else "") + "</p>")
     changes = "".join(f"<li><code>{esc(k)}</code>: {esc(json.dumps(val))}</li>" for k, val in (v.get("overrides") or {}).items())
+    rule = esc(v.get("adoption_rule", "appendix C"))
+    desc = f"<p>{esc(v['description'])}</p>" if v.get("description") else ""
+    others = [o for o in shadow_versions() if o["version"] != v["version"]]
+    other_links = "".join(f' · <a href="board_v{str(o["version"]).replace(".", "_")}.html">Board v{o["version"]} ({esc(o.get("label", "shadow"))})</a>' for o in others)
+    evidence = (f"<p class='meta'>Evidence: {', '.join(esc(x) for x in v['evidence'])} in <a href='https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/experiments/REGISTER.md'>the experiment register</a>.</p>"
+                if v.get("evidence") else "")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(label)}</title><style>{CSS}</style></head><body>
-<p class="meta"><a href="index.html">Back to {esc(site)} (registered v1.0 board)</a></p>
+<p class="meta"><a href="index.html">Back to {esc(site)} (registered v1.0 board)</a>{other_links}</p>
 <h1>{esc(label)}</h1>
+{desc}
 <p class="meta">This is a candidate version published beside the registered board, not in place of it. v1.0 stays the board under
 the pre-registered forward test through Sept 30, 2027; this board is graded on the same bouts over the same period and replaces
-v1.0 only if it meets the criterion written in PREREGISTRATION.md appendix C before its first snapshot. Every rule of v1.0 that is
+v1.0 only if it meets the criterion written in PREREGISTRATION.md {rule} before its first snapshot. Every rule of v1.0 that is
 not listed below is unchanged. Data through {as_of}.</p>
+{evidence}
 <details open><summary>What v{esc(str(v['version']))} changes (overrides over the frozen configuration)</summary><ul>{changes}</ul></details>
 {record}
 {moves}

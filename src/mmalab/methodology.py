@@ -268,18 +268,39 @@ def build_text() -> str:
     a("- Weights and thresholds were set by stated judgment and checked against the public boards (which makes those boards an informal tuning target); section 11 reports what each engine constant costs out of sample, and none has been fitted to any outcome.")
     a("- Card-quality and matchmaking analyses use the predictive model's positions, not these boards.")
     a("")
-    a("## 13. Changelog")
+    a("## 13. Shadow versions under test")
     a("")
-    a("- **1.0 (Oct 1, 2026).** Method frozen for forward grading. Official rank at fight time (2013+); tiered quality wins; "
-      "proof-of-concept credit for close losses to top-5 fighters; early-finish and war rules; drug-test overturns count as losses; "
-      "short-notice credit; last-five form penalty; division, head-to-head, title-cycle and reserved-spot rules; audit trail; "
-      "prediction model published separately.")
-    a("- **1.0.1 (Oct 1, 2026, display and documentation only; no ranking rule changed).** Weight band recomputed after the head-to-head "
-      "and title-cycle rules so every published rank lies inside its own band; prediction page and card-quality positions switched to the "
-      "specification the grid selected on 2010-2019 (one model in the paper); paired bootstrap and McNemar tests, the market on the held-out "
-      "overlap, the constants sensitivity table (section 11), PREREGISTRATION.md and DATA_LICENSE.md added; favorites page moved out of the "
-      "research navigation.")
-    a("- **0.x (Sept 29-30, 2026).** Composite of six percentile dimensions, replaced after review because four dimensions carried no ranking signal and losses were counted three times.")
+    a("A new board version is never substituted for the registered one during the pre-registered period (PREREGISTRATION.md "
+      "section 9; GOVERNANCE.md). It is built from its own override file over the frozen configuration, published beside the "
+      "registered board under its own label, snapshotted to its own directory and graded on the same bouts. The versions currently "
+      "under test:")
+    a("")
+    from mmalab.board_versions import load_version, version_files
+    shadows = [load_version(pth) for pth in version_files()]
+    shadows = [v for v in shadows if v.get("label") in ("shadow", "candidate")]
+    if not shadows:
+        a("- none")
+    for v in shadows:
+        a(f"- **v{v['version']}** ({v.get('label')}, since {v['since']}; `{v['path'].relative_to(ROOT)}`; page `docs/board_v{str(v['version']).replace('.', '_')}.html`; "
+          f"adoption rule in PREREGISTRATION.md {v.get('adoption_rule', 'appendix C')}"
+          + (f"; evidence {', '.join(v['evidence'])} in experiments/REGISTER.md" if v.get("evidence") else "") + "). Overrides over the frozen configuration:")
+        for k, val in (v.get("overrides") or {}).items():
+            a(f"  - `{k}`: `{json.dumps(val)}`")
+        fv = OUT / f"forward_validation{v['suffix']}.json"
+        if fv.exists():
+            r = json.loads(fv.read_text())
+            pro = r.get("prospective_since_freeze", {}).get("primary_both_scored", {})
+            ret = r.get("retrospective_reconstruction", {}).get("primary_both_scored", {})
+            a(f"  - record: prospective {pro.get('bouts', 0)} bouts" + (f", concordance {pro['real_concordance']:.3f}" if pro.get("bouts") else "")
+              + (f"; retrospective reconstruction (in-sample) {ret['bouts']} bouts, concordance {ret['real_concordance']:.3f}" if ret.get("bouts") else "") + ".")
+    a("")
+    a("## 14. Changelog")
+    a("")
+    log = ROOT / "CHANGELOG.md"
+    if log.exists():
+        body = log.read_text().split("\n", 1)[1] if log.read_text().startswith("#") else log.read_text()
+        for line in body.strip().splitlines():
+            a(line.replace("## ", "### ", 1) if line.startswith("## ") else line)
     a("")
     a("Independent fan and research project. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete.")
     return "\n".join(t)
@@ -295,9 +316,12 @@ def main() -> None:
            "display:block;overflow-x:auto}th,td{border-bottom:1px solid #e1e0d9;padding:5px 8px;text-align:left;vertical-align:top}"
            "@media (prefers-color-scheme: dark){body{color:#fff;background:#1a1a19}th,td{border-color:#2c2c2a}}")
     DOCS.mkdir(exist_ok=True)
+    from mmalab.publish import footer
+    bouts = pd.read_csv(ROOT / "data" / "processed" / "bouts.csv", parse_dates=["date"])
     (DOCS / "methodology.html").write_text(
         f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
-        f"<title>Methodology</title><style>{css}</style></head><body><p><a href='index.html'>Back to the boards</a></p>{body}</body></html>")
+        f"<title>Methodology</title><style>{css}</style></head><body><p><a href='index.html'>Back to the boards</a></p>{body}"
+        f"{footer(bouts['date'].max().date())}</body></html>")
     print("METHODOLOGY.md and docs/methodology.html written")
 
 
