@@ -185,10 +185,14 @@ def build_features(rated: pd.DataFrame, hist: pd.DataFrame, cfg: dict, as_of: pd
     return f.reset_index().rename(columns={"index": "fighter"})
 
 
-def _parse_override(v) -> tuple[str, pd.Timestamp | None]:
-    """'Name' or 'VACANT', optionally followed by 'since YYYY-MM-DD' (the date the entry took effect)."""
-    m = re.match(r"^(.*?)\s+since\s+(\d{4}-\d{2}-\d{2})\s*$", str(v).strip())
-    return (m.group(1).strip(), pd.Timestamp(m.group(2))) if m else (str(v).strip(), None)
+def _parse_override(v) -> tuple[str, pd.Timestamp | None, pd.Timestamp | None]:
+    """'Name' or 'VACANT', followed by 'since YYYY-MM-DD' (the date the entry took effect) and optionally
+    'until YYYY-MM-DD' (the first date it no longer applies), so the file keeps a dated history of belts the bout data
+    cannot see and historical rebuilds use the holder of the day."""
+    m = re.match(r"^(.*?)\s+since\s+(\d{4}-\d{2}-\d{2})(?:\s+until\s+(\d{4}-\d{2}-\d{2}))?\s*$", str(v).strip())
+    if not m:
+        return (str(v).strip(), None, None)
+    return (m.group(1).strip(), pd.Timestamp(m.group(2)), pd.Timestamp(m.group(3)) if m.group(3) else None)
 
 
 def champions(rated: pd.DataFrame, as_of: pd.Timestamp) -> dict[str, str]:
@@ -209,17 +213,24 @@ def champions(rated: pd.DataFrame, as_of: pd.Timestamp) -> dict[str, str]:
         last_title[div] = row["date"]
     override = ROOT / "config" / "champions_override.yaml"
     if override.exists():
-        for k, v in (yaml.safe_load(override.read_text()) or {}).items():
-            holder, since = _parse_override(v)
-            if since is None:
-                raise ValueError(f"champions_override.yaml: '{k}' needs a date, e.g. '{holder} since YYYY-MM-DD', "
-                                 "so a later title bout can supersede it")
-            if since > as_of:
-                continue                         # not yet in effect on this date
-            if k in last_title and last_title[k] > since:
-                print(f"[champions] override '{k}: {v}' superseded by the title bout of "
-                      f"{last_title[k].date()} ({champs[k]}); remove it from champions_override.yaml")
+        for k, entries in (yaml.safe_load(override.read_text()) or {}).items():
+            applicable = []
+            for v in (entries if isinstance(entries, list) else [entries]):
+                holder, since, until = _parse_override(v)
+                if since is None:
+                    raise ValueError(f"champions_override.yaml: '{k}: {v}' needs a date, e.g. '{holder} since YYYY-MM-DD', "
+                                     "so a later title bout can supersede it")
+                if since > as_of or (until is not None and as_of >= until):
+                    continue                     # not in effect on this date
+                if k in last_title and last_title[k] > since:
+                    if until is None:
+                        print(f"[champions] override '{k}: {v}' superseded by the title bout of "
+                              f"{last_title[k].date()} ({champs[k]}); close it with 'until' in champions_override.yaml")
+                    continue                     # the cage decided after this entry took effect
+                applicable.append((since, holder))
+            if not applicable:
                 continue
+            holder = max(applicable)[1]           # the latest entry in effect wins
             if holder.upper() == "VACANT":
                 champs.pop(k, None)
             else:

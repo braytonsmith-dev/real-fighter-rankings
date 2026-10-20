@@ -40,7 +40,8 @@ import yaml
 from mmalab.official_ranks import OfficialRanks
 from mmalab.rankings import RANKED_DIVISIONS, champions
 from mmalab.resume import ResumeParams, run_resume
-from mmalab.resume_board import assign_divisions, _yaml
+from mmalab.resume_board import (assign_divisions, division_overrides_as_of, exclusions_as_of, interim_as_of,
+                                 layoffs_as_of, reserved_as_of)
 
 ROOT = Path(__file__).resolve().parents[2]
 PROC = ROOT / "data" / "processed"
@@ -147,11 +148,6 @@ class Panel:
             dates = dates.append(pd.DatetimeIndex([last_bout + pd.Timedelta(days=1)]))
         self.dates = list(dates)
 
-        injured = set(_yaml("layoffs.yaml"))
-        gone = set(_yaml("roster_exclusions.yaml"))
-        div_over = _yaml("division_overrides.yaml")
-        interim = _yaml("interim_champions.yaml")
-        reserved = _yaml("reserved.yaml")
         names = pd.concat([out["fighter_a"], out["fighter_b"]]).dropna().unique().tolist()
         official = OfficialRanks(names)
 
@@ -184,6 +180,9 @@ class Panel:
             return h.groupby("fighter")["rating"].last()
 
         for di, d in enumerate(self.dates):
+            # roster facts as they stood on the board date (dated override files), never today's state
+            injured, gone = set(layoffs_as_of(d)), set(exclusions_as_of(d))
+            div_over, interim, reserved = division_overrides_as_of(d), interim_as_of(d), reserved_as_of(d)
             r = rating_before(d)
             rating_now_cache[di] = r
             o = out[out["date"] < d]

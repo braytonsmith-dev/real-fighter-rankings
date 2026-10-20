@@ -486,8 +486,18 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     d["age"] = (as_of_ts - d["date"]).dt.days / 365.25
     hz = {float(k): v for k, v in rc["horizons"].items()}
     d["hw"] = d["age"].apply(lambda a: horizon_weight(a, hz))
+    hd = rc.get("horizon_decay")
+    if hd:
+        # continuous alternative to the step horizons: full credit for `full_years`, then exponential decay with time
+        # constant `tau` (years), nothing after `max_years`
+        age = d["age"].to_numpy()
+        hw_exp = np.where(age <= float(hd["full_years"]), 1.0, np.exp(-(age - float(hd["full_years"])) / float(hd["tau"])))
+        d["hw"] = np.where(age <= float(hd.get("max_years", 15)), hw_exp, 0.0)
     L = rc["ledger"]
     recent = d["age"] <= rc.get("decisive_loss_years", 3)
+    # loss weight inside the window: "horizon" fades a loss on the win schedule (v1.0: identical to flat inside 3 years);
+    # "flat" charges every loss inside the window in full
+    d["lw"] = d["hw"] if L.get("loss_decay", "horizon") == "horizon" else 1.0
     hs = rc.get("hindsight") or {}
     if hs.get("mode"):
         # v1.1: results are re-graded in hindsight. The value of a win or the cost of a loss blends the opponent's
@@ -515,12 +525,12 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
         else:
             losses["cost"] = cost_then
         losses["cost"] = losses["cost"] + np.where(losses["decisive_loss"], float(L.get("dominant_extra", 0.0)), 0.0)
-        dl = losses[losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["hw"] * g["cost"]).sum()))
-        wl = losses[~losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["hw"] * g["cost"]).sum()))
+        dl = losses[losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["lw"] * g["cost"]).sum()))
+        wl = losses[~losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["lw"] * g["cost"]).sum()))
     else:
-        dl = d[d["decisive_loss"] & recent].groupby("loser")["hw"].sum() * L["dominant_loss"]
+        dl = d[d["decisive_loss"] & recent].groupby("loser")["lw"].sum() * L["dominant_loss"]
         weak = d[recent & ~d["decisive_loss"] & ~d["proof"] & (d["winner_pos"] > rc["engine"].get("proof_top_n", 5))]
-        wl = weak.groupby("loser")["hw"].sum() * L["loss_outside_top5"]
+        wl = weak.groupby("loser")["lw"].sum() * L["loss_outside_top5"]
     q15 = d[d["quality_win"] & (d["age"] <= 15)].groupby("winner").size()
     t10 = d[d["top10_win"] & (d["age"] <= 15)].groupby("winner").size()
     t15 = d[d["top15_win"] & (d["age"] <= 15)].groupby("winner").size()

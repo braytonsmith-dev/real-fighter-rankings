@@ -1,8 +1,13 @@
 # Champions that bout data cannot see (title promotions, vacated belts).
-# The rankings module derives each champion from the last undisputed title
-# bout; entries here override that. VACANT removes the champion row.
-# Every entry needs 'since YYYY-MM-DD' (the date it took effect). An undisputed title
-# bout in the data after that date supersedes the entry automatically, and the build
-# prints a reminder to delete it.
-# Keep the reason so the file audits itself.
-Heavyweight: Ciryl Gane since 2026-09-20   # interim champ promoted after Aspinall vacated Sept 14, 2026; Dana White, UFC 331 presser Sept 20; first defense vs Josh Hokit at UFC 334 (https://khelnow.com/ufc/has-ciryl-gane-been-promoted-to-heavyweight-champion-ahead-of-ufc-334-202609; ufc.com/rankings lists him as Champion)
+# The rankings module derives each champion from the last undisputed title bout; entries here override that.
+# Every entry needs 'since YYYY-MM-DD' (the date it took effect) and, once it has ended, 'until YYYY-MM-DD' (the
+# first date it no longer applies), so the file keeps a dated history and a rebuild for a past date uses the holder
+# of that day instead of today's. VACANT removes the champion row. An undisputed title bout in the data after an
+# entry's 'since' date supersedes it automatically; close the entry with 'until' when that happens.
+# A division may hold one entry or a list. Keep the reason and the source on each line.
+Heavyweight:
+  - Tom Aspinall since 2025-06-21 until 2026-09-14   # interim champion promoted to undisputed when Jon Jones retired, June 21, 2025 (ufc.com/news, Dana White at the UFC Baku post-fight presser); the Oct 25, 2025 defence vs Gane was a no contest; vacated Sept 14, 2026 with the recurring eye injury (cagesidepress.com/2026/09/14)
+  - VACANT since 2026-09-14 until 2026-09-20         # belt vacant between Aspinall's announcement and Gane's promotion
+  - Ciryl Gane since 2026-09-20                       # interim champ (won June 14, 2026) promoted after Aspinall vacated; Dana White, UFC 331 presser Sept 20; first defense vs Josh Hokit at UFC 334 (https://khelnow.com/ufc/has-ciryl-gane-been-promoted-to-heavyweight-champion-ahead-of-ufc-334-202609; ufc.com/rankings lists him as Champion)
+Light Heavyweight:
+  - VACANT since 2026-02-27 until 2026-04-12         # Pereira vacated to move to heavyweight, Feb 27, 2026 (cagesidepress.com/2026/02/27); Prochazka vs Ulberg filled the belt Apr 11, 2026 and the bout data takes over

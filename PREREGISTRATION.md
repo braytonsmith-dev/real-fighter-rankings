@@ -91,3 +91,42 @@ Adoption criterion, fixed before the first shadow pick was locked:
 3. Shadow v1.1's calibration-in-the-large error (mean stated probability for the first-listed fighter minus the observed rate) no larger than 3 percentage points in absolute value.
 
 If all three hold, v1.1 may become the model behind the picks ledger and the prediction page, with the change logged in the changelog and the ledger column names kept so the record stays continuous. The REAL resume board and its endpoints in sections 4 to 8 are unaffected. Until then every public pick is v1.0's.
+
+## Appendix C (added Oct 20, 2026, before the first v1.1 board snapshot): shadow board v1.1 and the rule for adopting it
+
+Section 9 allows a new board version under its own label. REAL board v1.1 is defined by `config/board_v1_1.yaml`, merged over the
+frozen `config/weights.yaml` at build time (the frozen file and its hash are unchanged). The changes are listed in CHANGELOG.md:
+ledger loss costs tiered by the winner's rank at the time (0.25 / 0.50 / 0.75 / 1.00), a smaller last-five penalty (0.10 / 0.30 /
+0.40) plus 0.10 per last-five loss to an opponent outside the top 10 (capped at 0.30), and a protected-loss multiplier of 0.30 in
+the rating engine instead of 0.15. Nothing else differs from v1.0.
+
+Publication: built by the same weekly runs as v1.0, snapshotted to `outputs/history_v1.1/`, published at `docs/board_v1_1.html`
+labelled as a candidate, with `outputs/forward_validation_v1_1.{csv,json}` produced by the same code as v1.0's files. Snapshots dated
+before Oct 20, 2026 in that directory are retrospective reconstructions and are labelled so; the prospective record starts with the
+first bout after this appendix was committed. The v1.1 probability slope is fitted once on its retrospective reconstruction (the way
+v1.0's 1.36 was fitted on Oct 1, 2026), recorded in `config/board_v1_1.yaml` as `prob_slope`, and frozen from then on.
+
+Adoption criterion, fixed before the first shadow snapshot:
+
+1. At least 300 prospective primary-population bouts (section 4) in which both fighters hold a place on the same divisional board in
+   both the v1.0 and the v1.1 snapshot preceding the bout.
+2. Paired concordance difference, v1.1 minus v1.0, on those bouts with a 95% event-block bootstrap interval whose lower bound is above
+   -0.02 (non-inferiority), and mean log loss of v1.1 no higher than v1.0's on the same bouts with each version's own frozen slope.
+3. No more than one of the secondary populations (both top 30, both top 15, title fights) showing a paired concordance deficit for v1.1
+   whose 95% interval excludes zero.
+
+The criterion is non-inferiority rather than superiority because the change was adopted for face validity at equal measured accuracy
+(CHANGELOG.md, 1.1): the retrospective instrument cannot separate the two rule sets, so the forward test's job is to make sure the
+board people find more sensible is not less accurate. If all three hold, v1.1 may become the registered board (VERSION 1.1) for the
+display and for a new registered period, with the change logged; v1.0 snapshots continue to be written through Sept 30, 2027 so the
+original test in sections 2 to 8 completes regardless. Until then v1.0 remains the board quoted as REAL's ranking.
+
+## Appendix D (added Oct 20, 2026): no pick within two points of 50%
+
+From the first run after this appendix was committed, a bout whose frozen performance-adjusted Elo probability for the first-listed
+fighter lies within 0.02 of 0.50 is written to `predictions/picks.csv` with pick `none` and confidence band `no pick`. Such a row is
+graded `no pick` when the bout happens: it is excluded from the accuracy, log loss and Brier of the pick record and counted
+separately. The same rule applies, separately, to the shadow model's pick. Rows locked before this date keep their recorded pick and
+grade (one bout locked at exactly 0.5000 on Oct 5, 2026 stays graded as recorded). The appendix changes no endpoint, population,
+baseline or test of sections 4 to 8 and leaves appendix B's counts unaffected except that a bout with no pick from either model
+does not count toward its 300.

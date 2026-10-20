@@ -20,6 +20,28 @@ from mmalab.rankings import RANKED_DIVISIONS
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "outputs"
 DOCS = ROOT / "docs"
+PROVISIONAL_MAX_BOUTS = 3      # a fighter with this many UFC bouts or fewer is labelled provisional on every board
+
+
+def build_stamp() -> dict:
+    """Version and build identifiers shown in every page footer, so a screenshot can be tied to a build."""
+    import subprocess
+    version = (ROOT / "VERSION").read_text().splitlines()[0].strip() if (ROOT / "VERSION").exists() else "?"
+    try:
+        commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True, text=True, timeout=10).stdout.strip() or "local"
+    except Exception:
+        commit = "local"
+    return {"version": version, "commit": commit, "built": str(date.today())}
+
+
+def footer(as_of, board_version: str | None = None) -> str:
+    st = build_stamp()
+    ver = f"REAL v{st['version']} (registered method)" if board_version is None else board_version
+    return (f"<p class='meta'>{ver} · build {st['commit']} · data through {as_of} · page built {st['built']} · "
+            f"<a href='https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/CHANGELOG.md'>changelog</a>. "
+            "Independent fan research project built on public UFCStats data. Not affiliated with, sponsored or endorsed by UFC, "
+            "Zuffa, LLC, TKO Group Holdings, or any athlete. All trademarks belong to their owners and are used only to identify "
+            "athletes and events.</p>")
 
 CSS = """
 :root{--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--line:#e1e0d9;--surface:#fcfcfb;--blue:#2a78d6}
@@ -68,21 +90,25 @@ def _row(r, prev: dict | None = None) -> str:
     ent = " E" if bool(getattr(r, "entrenched", False)) else ""
     inj = " <span class='band'>(injury)</span>" if bool(getattr(r, "injury", False)) else ""
     res = " <span class='band'>(vacated, owed a title shot)</span>" if reserved else ""
+    nb = getattr(r, "ufc_bouts", None)
+    prov = (f" <span class='band' title='Three or fewer UFC bouts: the rating rests on little evidence'>(provisional, "
+            f"{int(nb)} UFC {'bout' if int(nb) == 1 else 'bouts'})</span>") if nb is not None and not pd.isna(nb) and int(nb) <= PROVISIONAL_MAX_BOUTS else ""
     band = "" if (r.champion or interim or reserved) else f"{int(r.rank_p10)}-{int(r.rank_p90)}"
-    return (f"<tr{cls}><td>{label}</td><td>{_move(r, prev or {})}</td><td>{html.escape(r.fighter)}{inj}{res}</td>"
+    return (f"<tr{cls}><td>{label}</td><td>{_move(r, prev or {})}</td><td>{html.escape(r.fighter)}{prov}{inj}{res}</td>"
             f"<td class='num'>{r.score:+.2f}</td><td class='num'>{r.rating:.0f}</td>"
             f"<td>{last5}</td><td class='num'>{qw:.1f}</td>"
             f"<td class='num'>{int(r.top15_wins)}{ent}</td><td class='num'>{int(r.days_since)}</td>"
             f"<td class='band'>{band}</td></tr>")
 
 
-def board_tables(cfg: dict) -> str:
+def board_tables(cfg: dict, board_path: Path | None = None, hist_root: Path | None = None) -> str:
     """Title holders (C, IC) and reserved spots (R) above; top 10 visible; 11 to 30 behind a dropdown.
-    Move = change since the board before the most recent event."""
+    Move = change since the board before the most recent event. A shadow version passes its own board file
+    and snapshot directory."""
     from mmalab.history import previous_positions
-    b = pd.read_csv(OUT / "composite_rankings_full.csv")
+    b = pd.read_csv(board_path or (OUT / "composite_rankings_full.csv"))
     bouts = pd.read_csv(ROOT / "data" / "processed" / "bouts.csv", parse_dates=["date"])
-    prev = previous_positions(bouts["date"].max())
+    prev = previous_positions(bouts["date"].max(), root=hist_root)
     top = b[b["rank"] <= cfg["board_size"]]
     parts = []
     for div in RANKED_DIVISIONS:
@@ -267,6 +293,7 @@ the fight happened today, not who has earned the position. It weighs in-fight do
 on bouts it has not seen. {acc} Data through {as_of}. Win chance is against the top-rated fighter in this list.</p>
 {shadow}
 {''.join(parts)}
+{footer(as_of)}
 </body></html>"""
 
 
@@ -275,6 +302,7 @@ def favorites_page(bouts: pd.DataFrame, as_of, site: str) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal Top Ten</title><style>{CSS}</style></head><body>
 <p class="meta"><a href="index.html">Back to {html.escape(site)}</a></p>
 {favorites_section(bouts, as_of)}
+{footer(as_of)}
 </body></html>"""
 
 
@@ -298,10 +326,16 @@ def picks_page(site: str, as_of) -> str:
     parts = []
     if rec:
         ci = rec.get("accuracy_wilson95") or ["", ""]
+        no_pick = summ.get("no_pick", 0)
         parts.append(f"<h2>Record so far</h2><p>{rec['correct']} correct, {rec['incorrect']} incorrect: "
                      f"{rec['accuracy']:.1%} (95% interval {ci[0]:.0%} to {ci[1]:.0%}) over {summ['graded']} graded bouts. "
                      f"Log loss {rec['log_loss']:.3f} against 0.693 for a coin flip; Brier {rec['brier']:.3f}. "
-                     f"{summ.get('void', 0)} voided (draws, no contests, cancelled bouts).</p>")
+                     f"{summ.get('void', 0)} voided (draws, no contests, cancelled bouts)"
+                     + (f"; {no_pick} recorded as no pick (model within 2 points of 50%, since Oct 20, 2026)." if no_pick else ".") + "</p>")
+        chart = OUT / "picks_cumulative.svg"
+        if chart.exists():
+            parts.append(f"<div style='max-width:680px'>{chart.read_text()}</div>"
+                         "<p class='meta'>Cumulative accuracy of the v1.0 pick with its 95% Wilson interval; the dashed line is the shadow model on the same bouts.</p>")
         base = summ.get("baselines_same_bouts", {})
         if base:
             rows = "".join(f"<tr><td>{esc(k.replace('_', ' '))}</td><td class='num'>{v['n']}</td><td class='num'>{v['accuracy']:.1%}</td>"
@@ -333,7 +367,7 @@ def picks_page(site: str, as_of) -> str:
             for ev, g in pend.groupby("event", sort=False):
                 rows = "".join(
                     f"<tr><td>{esc(r.division)}{' (5 rounds)' if str(r.rounds) == '5' else ''}</td><td>{esc(r.fighter_a)} vs {esc(r.fighter_b)}</td>"
-                    f"<td>{esc(r.pick)}</td><td class='num'>{pct(r.p_pick)}</td><td>{esc(r.confidence)}</td>"
+                    f"<td>{'no pick' if r.pick == 'none' else esc(r.pick)}</td><td class='num'>{pct(r.p_pick)}</td><td>{esc(r.confidence)}</td>"
                     f"<td>{'yes' if r.provisional == 'True' else ''}</td>"
                     f"<td class='band'>{(esc(r.pick_v11) + ' ' + pct(max(float(r.p_a_v11), 1 - float(r.p_a_v11)))) if r.p_a_v11 else ''}</td>"
                     f"<td class='band'>{esc(r.predicted_at_utc[:16].replace('T', ' '))}</td></tr>"
@@ -341,10 +375,10 @@ def picks_page(site: str, as_of) -> str:
                 parts.append(f"<h3>{esc(ev)} ({esc(g['event_date'].iloc[0])})</h3><div class='scroll'><table><thead><tr><th>Division</th><th>Bout</th>"
                              "<th>Pick</th><th class='num'>Win chance</th><th>Band</th><th>Provisional</th><th>Shadow v1.1</th><th>Locked (UTC)</th></tr></thead>"
                              f"<tbody>{rows}</tbody></table></div>")
-        done = led[led["status"].isin(["correct", "incorrect", "void"])].sort_values(["event_date"], ascending=False).head(60)
+        done = led[led["status"].isin(["correct", "incorrect", "void", "no pick"])].sort_values(["event_date"], ascending=False).head(60)
         if not done.empty:
             rows = "".join(
-                f"<tr><td>{esc(r.event_date)}</td><td>{esc(r.fighter_a)} vs {esc(r.fighter_b)}</td><td>{esc(r.pick)}</td>"
+                f"<tr><td>{esc(r.event_date)}</td><td>{esc(r.fighter_a)} vs {esc(r.fighter_b)}</td><td>{'no pick' if r.pick == 'none' else esc(r.pick)}</td>"
                 f"<td class='num'>{pct(r.p_pick)}</td><td>{esc(r.winner)}</td><td class='{'up' if r.status == 'correct' else ('down' if r.status == 'incorrect' else 'band')}'>{esc(r.status)}</td></tr>"
                 for r in done.itertuples())
             parts.append("<h2>Most recent graded picks</h2><div class='scroll'><table><thead><tr><th>Date</th><th>Bout</th><th>Pick</th>"
@@ -354,14 +388,78 @@ def picks_page(site: str, as_of) -> str:
 <p class="meta"><a href="index.html">Back to {esc(site)}</a></p>
 <h1>Pre-event picks</h1>
 <p class="meta">Picks come from the frozen performance-adjusted Elo (the specification selected on 2010-2019 and held out on
-2020-2026, where it was right 60.6% of the time against 67.1% for the closing betting market). Each pick is written to
+2020-2026, where it was right 60.6% of the time against 67.1% for the closing betting market). Since Oct 20, 2026 a bout the model
+puts within two points of 50% is recorded as no pick rather than a coin toss. Each pick is written to
 <a href="https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/predictions/picks.csv">a public ledger</a> up to three weeks
 before the bout and never edited; results are graded from UFCStats. Expect misses: a 60% pick loses two times in five.
 The shadow v1.1 column is the next model under test (walk-forward tuned on 2011 onward, with age, layoff, experience and a
 red-corner term); it is graded alongside v1.0 and replaces nothing until it meets the criterion in PREREGISTRATION.md appendix B.
 Data through {as_of}. Not betting advice; see the data terms in the repository.</p>
 {''.join(parts)}
+{footer(as_of)}
 </body></html>"""
+
+
+def version_page(v: dict, cfg: dict, site: str, as_of) -> str:
+    """A shadow board version, published beside the registered board and labelled as such (PREREGISTRATION.md
+    section 9 and appendix C). Reads the version's own board file and snapshot directory."""
+    esc = html.escape
+    label = f"REAL v{v['version']} ({v.get('label', 'shadow')} board)"
+    diff_path = v["board_root"] / "diff_vs_v1_0.json"
+    diff = json.loads(diff_path.read_text()) if diff_path.exists() else {}
+    moves = ""
+    if diff.get("largest_moves"):
+        key_new = f"v{v['version']}"
+        rows = "".join(f"<tr><td>{esc(m['division'])}</td><td>{esc(m['fighter'])}</td><td class='num'>{m['v1.0']}</td>"
+                       f"<td class='num'>{m[key_new]}</td></tr>" for m in diff["largest_moves"])
+        moves = (f"<h2>Where it differs from v1.0 today</h2><p class='meta'>{diff['top15_slots_changed']} of {diff['top15_slots_compared']} "
+                 f"top-15 slots differ from the registered board built from the same data. Largest moves:</p>"
+                 f"<table><thead><tr><th>Division</th><th>Fighter</th><th class='num'>v1.0</th><th class='num'>v{v['version']}</th></tr></thead>"
+                 f"<tbody>{rows}</tbody></table>")
+    fv_path = OUT / f"forward_validation{v['suffix']}.json"
+    record = ""
+    if fv_path.exists():
+        fv = json.loads(fv_path.read_text())
+        pro = fv.get("prospective_since_freeze", {}).get("primary_both_scored", {})
+        ret = fv.get("retrospective_reconstruction", {}).get("primary_both_scored", {})
+        reg = json.loads((OUT / "forward_validation.json").read_text()) if (OUT / "forward_validation.json").exists() else {}
+        reg_pro = reg.get("prospective_since_freeze", {}).get("primary_both_scored", {})
+        if pro.get("bouts"):
+            ci = pro.get("real_concordance_wilson95") or ["", ""]
+            record = (f"<h2>Forward record since {esc(str(v['since']))}</h2><p>Pre-event concordance {pro['real_concordance']:.1%} "
+                      f"(95% interval {ci[0]:.0%} to {ci[1]:.0%}) on {pro['bouts']} bouts between two fighters on the same v{v['version']} board. "
+                      + (f"The registered v1.0 board scored {reg_pro['real_concordance']:.1%} on {reg_pro['bouts']} bouts over its own period since Oct 1, 2026. "
+                         if reg_pro.get('bouts') else "")
+                      + "Adoption needs the paired comparison in PREREGISTRATION.md appendix C, not this line.</p>")
+        else:
+            record = (f"<h2>Forward record since {esc(str(v['since']))}</h2><p>No prospective bouts graded yet. "
+                      + (f"Retrospective reconstruction (rules chosen after the bouts, in-sample): concordance {ret['real_concordance']:.1%} "
+                         f"on {ret['bouts']} bouts." if ret.get("bouts") else "") + "</p>")
+    changes = "".join(f"<li><code>{esc(k)}</code>: {esc(json.dumps(val))}</li>" for k, val in (v.get("overrides") or {}).items())
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(label)}</title><style>{CSS}</style></head><body>
+<p class="meta"><a href="index.html">Back to {esc(site)} (registered v1.0 board)</a></p>
+<h1>{esc(label)}</h1>
+<p class="meta">This is a candidate version published beside the registered board, not in place of it. v1.0 stays the board under
+the pre-registered forward test through Sept 30, 2027; this board is graded on the same bouts over the same period and replaces
+v1.0 only if it meets the criterion written in PREREGISTRATION.md appendix C before its first snapshot. Every rule of v1.0 that is
+not listed below is unchanged. Data through {as_of}.</p>
+<details open><summary>What v{esc(str(v['version']))} changes (overrides over the frozen configuration)</summary><ul>{changes}</ul></details>
+{record}
+{moves}
+<div id='boards'></div>{board_tables(cfg, v['board_root'] / 'composite_rankings_full.csv', v['history_root'])}
+{footer(as_of, label)}
+</body></html>"""
+
+
+def shadow_versions() -> list[dict]:
+    from mmalab.board_versions import load_version, version_files
+    out = []
+    for p in version_files():
+        v = load_version(p)
+        if v.get("label") in ("shadow", "candidate") and (v["board_root"] / "composite_rankings_full.csv").exists():
+            out.append(v)
+    return out
 
 
 def md_table_to_html(md: str) -> str:
@@ -397,6 +495,13 @@ def main() -> None:
     pk = yaml.safe_load((ROOT / "config" / "picks.yaml").read_text()) if (ROOT / "config" / "picks.yaml").exists() else {}
     picks_link = ' <a href="picks.html">Picks</a> ·' if pk.get("publish_page") else ""
     tagline = cfg.get("site_tagline", "")
+    versions = shadow_versions()
+    version_links = "".join(f' <a href="board_v{str(v["version"]).replace(".", "_")}.html">Board v{v["version"]} (shadow)</a> ·' for v in versions)
+    version_note = ("" if not versions else
+                    "<p class='meta'>Versions: this page is the registered v1.0 board under the pre-registered forward test. "
+                    + " ".join(f"<a href='board_v{str(v['version']).replace('.', '_')}.html'>v{v['version']}</a> is a candidate published beside it since {v['since']}"
+                               for v in versions)
+                    + "; the two are graded on the same bouts and a candidate replaces v1.0 only under PREREGISTRATION.md appendix C.</p>")
 
     summary = pd.read_csv(OUT / "card_quality_summary.csv")
     summary = summary[summary["year"] >= 2022]
@@ -413,8 +518,9 @@ def main() -> None:
 <h1>{html.escape(site)}</h1>
 <p class="tag">{html.escape(tagline)}</p>
 <p class="meta"><a href="#boards">Divisional boards</a> · <a href="#compare">Side by side</a> ·
-<a href="methodology.html">Methodology</a> · <a href="prediction.html">Prediction model</a> ·{picks_link}
+<a href="methodology.html">Methodology</a> · <a href="prediction.html">Prediction model</a> ·{picks_link}{version_links}
 <a href="#cards">Card quality</a> · <a href="#backtest">Model accuracy</a></p>
+{version_note}
 <p class="meta">Data through {as_of}. Page built {date.today()}. Weights: {w}. Weight band = 10th to 90th
 percentile of the final position across {cfg['resume']['stability_draws']} weight vectors drawn near the configured weights, with
 every placement rule applied; it shows how much a spot depends on the 70/30 choice, not skill uncertainty, and the published
@@ -436,10 +542,12 @@ Full rules, weights and worked examples: <a href="methodology.html">methodology<
 <h2 id='backtest'>Does the rating predict?</h2>
 <img src="fig_backtest.png" alt="Backtest log loss by year and calibration">
 {md_table_to_html(table_md)}
-<p class='meta'>Independent fan research project built on public UFCStats data. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete. All trademarks belong to their owners and are used only to identify athletes and events.
-Separate from the method: <a href="favorites.html">the curator's personal top ten</a>, a fan list that plays no part in any board above.</p>
+<p class='meta'>Separate from the method: <a href="favorites.html">the curator's personal top ten</a>, a fan list that plays no part in any board above.</p>
+{footer(as_of)}
 </body></html>"""
     (DOCS / "index.html").write_text(page)
+    for v in versions:
+        (DOCS / f"board_v{str(v['version']).replace('.', '_')}.html").write_text(version_page(v, cfg, site, as_of))
     (DOCS / "favorites.html").write_text(favorites_page(bouts, as_of, site))
     (DOCS / "prediction.html").write_text(prediction_page(cfg, site, as_of))
     (DOCS / "picks.html").write_text(picks_page(site, as_of))

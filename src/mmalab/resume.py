@@ -63,6 +63,9 @@ class ResumeParams:
     dominant_loss_mult: float = 0.75     # top-3 / title-fight loss that was dominant
     heavy_favorite_p: float = 0.75       # winner's pre-fight win probability (about 3-1)
     consecutive_loss_mult: float = 0.6   # protection is weaker when the previous bout was also a loss
+    protection_ladder: tuple | None = None  # v1.1 option: multiplier for a protected non-dominant loss by the number of
+                                            # losses among the fighter's previous four bouts, e.g. (0.3, 0.6, 1.0): the
+                                            # first loss in a run is protected, the third is not. None = v1.0 rule.
     no_card_decision_s: float = 0.75
     card_weight: float = 0.5             # decisions: share of the score from the judges; the rest from fight stats
     stat_scale: float = 2.0              # dominance per minute that maps to ~73% on the stats side
@@ -173,6 +176,7 @@ def run_resume(bouts: pd.DataFrame, p: ResumeParams | None = None) -> tuple[pd.D
     last_date: dict[str, pd.Timestamp] = {}
     last_div: dict[str, str] = {}
     last_result: dict[str, str] = {}
+    recent_results: dict[str, list] = {}       # last four W/L marks per fighter, for the protection ladder
     active_days = pd.Timedelta(days=p.active_days)
 
     # per-division index keeps position() cheap
@@ -275,7 +279,12 @@ def run_resume(bouts: pd.DataFrame, p: ResumeParams | None = None) -> tuple[pd.D
                 else:
                     mult = p.protected_loss_mult
                     loser_name = a if loser == "a" else b
-                    if last_result.get(loser_name) == "L":
+                    if p.protection_ladder:
+                        # protection is for an isolated loss: it shrinks with every loss among the previous four bouts
+                        n_prev = sum(1 for x in recent_results.get(loser_name, []) if x == "L")
+                        ladder = tuple(p.protection_ladder)
+                        mult = max(mult, float(ladder[min(n_prev, len(ladder) - 1)]))
+                    elif last_result.get(loser_name) == "L":
                         mult = max(mult, p.consecutive_loss_mult)   # a losing streak is not a one-off
                 if loser == "a" and da < 0:
                     da *= mult
@@ -329,6 +338,8 @@ def run_resume(bouts: pd.DataFrame, p: ResumeParams | None = None) -> tuple[pd.D
             wins[f] = wins.get(f, 0) + int(won)
             losses[f] = losses.get(f, 0) + int(res in (0.0, 1.0) and not won)
             last_result[f] = "W" if won else ("L" if res in (0.0, 1.0) else "D")
+            if res in (0.0, 1.0):
+                recent_results[f] = (recent_results.get(f, []) + ["W" if won else "L"])[-4:]
             if last_div.get(f) != div and f in last_div:
                 div_members.get(last_div[f], set()).discard(f)
             last_div[f], last_date[f] = div, d
