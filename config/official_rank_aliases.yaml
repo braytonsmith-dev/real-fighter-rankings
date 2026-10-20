@@ -5,7 +5,7 @@
 # UFCStats fighter cannot silently fall back to unranked. Each line says how the identity was confirmed
 # (ranking-history divisions and dates checked against the UFCStats bouts under the target name).
 Antonio Rogerio Nogueira: Rogerio Nogueira       # ranked LHW 2013-2018; UFCStats "Rogerio Nogueira" has 13 LHW bouts 2009-2020 (Lil Nog; his twin Antonio Rodrigo is the HW)
-Bruno Gustavo da Silva: Bruno Silva              # ranked Flyweight 2023-2026; UFCStats "Bruno Silva" (125 lb, fighter-details/294aa73dbf37d281) has his Flyweight bouts 2020-2026. Caveat: bouts.csv also files the middleweight Bruno "Blindado" Silva under this same name
+Bruno Gustavo da Silva: Bruno Silva              # ranked Flyweight 2023-2026; UFCStats "Bruno Silva" (125 lb, fighter-details/294aa73dbf37d281) has his Flyweight bouts 2020-2026. The middleweight Bruno "Blindado" Silva is "Bruno Silva (Blindado)" in bouts.csv (config/fighter_disambiguation.yaml), so this alias reaches only the flyweight
 Costas Philippou: Constantinos Philippou         # ranked MW 2013-2015; UFCStats "Constantinos Philippou" has 10 MW bouts 2011-2015 (Costas is the short form)
 Cris Cyborg: Cristiane Justino                   # ranked WFW champion 2017-2018; UFCStats "Cristiane Justino" has her 7 UFC bouts 2016-2019 incl. the Nunes title loss on 2018-12-29
 Francisco Rivera Jr.: Francisco Rivera           # ranked BW 2013-2016; UFCStats "Francisco Rivera" has 11 BW bouts 2011-2016 (the "Jr." suffix breaks the token-count fuzzy rule)

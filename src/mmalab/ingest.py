@@ -9,6 +9,14 @@ produce three clean tables:
 Why this layer exists: every downstream module (Elo, features, rankings,
 card quality) reads these three files and nothing else, so a change in the
 scraper only ever touches this file.
+
+Same-name fighters (data finding D8): UFCStats gives a few distinct fighters
+(different fighter-details URLs) one display name, and the bout files carry only
+the name. config/fighter_disambiguation.yaml assigns every bout of a shared name
+to one fighter (explicit bout URLs first, then the bout's division) and gives each
+fighter but one a suffixed display name, written here into all three tables. A
+shared name the file does not list, or a bout no entry claims, stops ingest with
+an error, so a data refresh can never silently merge two careers again.
 """
 from __future__ import annotations
 
@@ -17,9 +25,12 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import yaml
 
 RAW = Path(__file__).resolve().parents[2] / "data" / "raw"
 PROC = Path(__file__).resolve().parents[2] / "data" / "processed"
+CONFIG = Path(__file__).resolve().parents[2] / "config"
+DISAMBIGUATION_PATH = CONFIG / "fighter_disambiguation.yaml"
 
 DIVISIONS = [
     "Women's Strawweight", "Women's Flyweight", "Women's Bantamweight", "Women's Featherweight",
@@ -28,6 +39,19 @@ DIVISIONS = [
 ]
 # Order matters: check women's first so "Women's Flyweight" is not read as "Flyweight".
 _DIV_PATTERNS = [(d, re.compile(re.escape(d), re.I)) for d in DIVISIONS]
+# Every label parse_division can emit; the disambiguation file may only name these.
+DIVISION_LABELS = DIVISIONS + ["Catch Weight", "Open Weight", "Unknown"]
+
+# Known naming mismatches between the results file and the events file. The round stats carry the
+# results file's spelling; bout_stats.py applies the same map before joining them to bouts.csv.
+EVENT_ALIASES = {
+    "UFC Fight Night: Grasso vs. Shevchenko 2": "Noche UFC: Grasso vs. Shevchenko 2",
+    "UFC Fight Night: Lopes vs. Silva": "Noche UFC: Lopes vs. Silva",
+}
+
+
+class DisambiguationError(ValueError):
+    """config/fighter_disambiguation.yaml does not settle a shared fighter name."""
 
 
 def parse_division(weightclass: str) -> str:
@@ -97,11 +121,6 @@ def build_bouts() -> pd.DataFrame:
     ev["date"] = pd.to_datetime(ev["DATE"], format="%B %d, %Y", errors="coerce")
     ev = ev.rename(columns={"LOCATION": "location", "URL": "event_url"})[["EVENT", "date", "location", "event_url"]]
 
-    # Known naming mismatches between the results file and the events file.
-    EVENT_ALIASES = {
-        "UFC Fight Night: Grasso vs. Shevchenko 2": "Noche UFC: Grasso vs. Shevchenko 2",
-        "UFC Fight Night: Lopes vs. Silva": "Noche UFC: Lopes vs. Silva",
-    }
     res["EVENT"] = res["EVENT"].replace(EVENT_ALIASES)
     # the scraper lists two Noche UFC cards under both of their names; keep one copy of each bout
     res = res.drop_duplicates(subset="URL", keep="first")
@@ -167,9 +186,19 @@ def build_round_stats() -> pd.DataFrame:
     return out
 
 
-def build_fighters() -> pd.DataFrame:
+def read_fighter_files() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """The two raw fighter files (tale of the tape, name details) with stripped column names."""
     t = pd.read_csv(RAW / "ufc_fighter_tott.csv")
     t.columns = [c.strip() for c in t.columns]
+    d = pd.read_csv(RAW / "ufc_fighter_details.csv")
+    d.columns = [c.strip() for c in d.columns]
+    return t, d
+
+
+def build_fighters(tott: pd.DataFrame | None = None, names_by_url: dict[str, str] | None = None) -> pd.DataFrame:
+    """Tale of the tape, one row per display name. `names_by_url` (fighter URL -> display name, from
+    the disambiguation file) renames a same-name fighter's row before duplicates are dropped."""
+    t = read_fighter_files()[0] if tott is None else tott
     f = pd.DataFrame({
         "fighter": t["FIGHTER"].astype(str).str.strip(),
         "height_in": _inches(t["HEIGHT"]),
@@ -179,14 +208,198 @@ def build_fighters() -> pd.DataFrame:
         "dob": pd.to_datetime(t["DOB"], format="%b %d, %Y", errors="coerce"),
         "fighter_url": t["URL"],
     })
+    if names_by_url:
+        idx = f.index[f["fighter_url"].isin(names_by_url)]
+        f.loc[idx, "fighter"] = f.loc[idx, "fighter_url"].map(names_by_url).to_numpy()
     return f.drop_duplicates("fighter", keep="first").reset_index(drop=True)
+
+
+# ---------- same-name fighters ----------
+
+def load_disambiguation(path: Path = DISAMBIGUATION_PATH) -> dict[str, list[dict]]:
+    """Shared display name -> entries, each {url, name, divisions, bout_urls}, checked for shape: at
+    least two entries per name, exactly one of them keeping the plain name and the rest suffixed as
+    'Name (suffix)', distinct URLs and names, known division labels, no division or bout URL claimed
+    twice. A missing or empty file means nothing is settled."""
+    if not path.exists():
+        return {}
+    data = yaml.safe_load(path.read_text()) or {}
+    if not isinstance(data, dict):
+        raise DisambiguationError(f"{path.name} must map each shared name to a list of entries")
+    out: dict[str, list[dict]] = {}
+    for raw_name, entries in data.items():
+        shared = str(raw_name).strip()
+        if not isinstance(entries, list) or len(entries) < 2:
+            raise DisambiguationError(f"{path.name}: {shared!r} needs a list of at least two entries, one per fighter URL")
+        clean: list[dict] = []
+        for e in entries:
+            if not isinstance(e, dict) or not e.get("url") or not e.get("name"):
+                raise DisambiguationError(f"{path.name}: every entry under {shared!r} needs 'url' and 'name'")
+            divisions = [str(d).strip() for d in (e.get("divisions") or [])]
+            bad = sorted(set(divisions) - set(DIVISION_LABELS))
+            if bad:
+                raise DisambiguationError(f"{path.name}: {shared!r} lists unknown divisions {bad}; use {DIVISION_LABELS}")
+            clean.append({"url": str(e["url"]).strip(), "name": str(e["name"]).strip(), "divisions": divisions,
+                          "bout_urls": [str(u).strip() for u in (e.get("bout_urls") or [])]})
+        names = [e["name"] for e in clean]
+        if len(set(names)) != len(names):
+            raise DisambiguationError(f"{path.name}: {shared!r} gives two entries the same display name")
+        if sum(n == shared for n in names) != 1:
+            raise DisambiguationError(f"{path.name}: exactly one entry under {shared!r} must keep the plain name {shared!r}")
+        for n in names:
+            if n != shared and not (n.startswith(shared + " (") and n.endswith(")") and len(n) > len(shared) + 3):
+                raise DisambiguationError(f"{path.name}: {n!r} must be {shared!r} followed by a suffix in parentheses")
+        urls = [e["url"] for e in clean]
+        if len(set(urls)) != len(urls):
+            raise DisambiguationError(f"{path.name}: {shared!r} lists a fighter URL twice")
+        for key in ("divisions", "bout_urls"):
+            claimed: dict[str, str] = {}
+            for e in clean:
+                for v in e[key]:
+                    if v in claimed and claimed[v] != e["name"]:
+                        raise DisambiguationError(f"{path.name}: {shared!r} claims {v!r} for both {claimed[v]!r} and {e['name']!r}")
+                    claimed[v] = e["name"]
+        out[shared] = clean
+    return out
+
+
+def shared_display_names(tott: pd.DataFrame, details: pd.DataFrame | None = None) -> dict[str, set[str]]:
+    """Display names that a fighter file gives to more than one fighter URL, with those URLs. Both
+    files are checked on their own (ufc_fighter_tott.csv names the fighter page, ufc_fighter_details.csv
+    carries first and last name), so a name shared in either one is caught."""
+    frames = [pd.DataFrame({"name": tott["FIGHTER"].astype(str).str.strip(), "url": tott["URL"]})]
+    if details is not None:
+        full = (details["FIRST"].fillna("").astype(str).str.strip() + " "
+                + details["LAST"].fillna("").astype(str).str.strip()).str.strip()
+        frames.append(pd.DataFrame({"name": full, "url": details["URL"]}))
+    out: dict[str, set[str]] = {}
+    for f in frames:
+        f = f.dropna().drop_duplicates()
+        f = f[f["name"] != ""]
+        counts = f.groupby("name")["url"].nunique()
+        for name in counts[counts > 1].index:
+            out.setdefault(str(name), set()).update(f.loc[f["name"] == name, "url"])
+    return out
+
+
+def check_disambiguation(config: dict[str, list[dict]], shared: dict[str, set[str]], taken: set[str]) -> None:
+    """Every shared name has entries for exactly its fighter URLs, no entry is stale, and no suffixed
+    display name (`taken`: every name in the fighter and bout files) already belongs to someone."""
+    missing = sorted(set(shared) - set(config))
+    if missing:
+        detail = "; ".join(f"{n} ({', '.join(sorted(u.rsplit('/', 1)[-1] for u in shared[n]))})" for n in missing)
+        raise DisambiguationError(
+            f"shared display names with no entry in {DISAMBIGUATION_PATH.name}: {detail}. "
+            "Add one entry per fighter URL (name, divisions or bout_urls) so their bouts are not merged.")
+    stale = sorted(set(config) - set(shared))
+    if stale:
+        raise DisambiguationError(
+            f"{DISAMBIGUATION_PATH.name} lists names the fighter files no longer share: {', '.join(stale)}. "
+            "Remove the entries or correct the name.")
+    for name, entries in config.items():
+        urls = {e["url"] for e in entries}
+        if urls != shared[name]:
+            raise DisambiguationError(
+                f"{DISAMBIGUATION_PATH.name}: {name!r} fighter URLs differ from the fighter files; "
+                f"only in config: {sorted(urls - shared[name])}, only in the files: {sorted(shared[name] - urls)}")
+        for e in entries:
+            if e["name"] != name and e["name"] in taken:
+                raise DisambiguationError(f"{DISAMBIGUATION_PATH.name}: display name {e['name']!r} already belongs to another fighter")
+
+
+def assign_shared_bouts(bouts: pd.DataFrame, config: dict[str, list[dict]]) -> pd.DataFrame:
+    """One row per (bout_url, side) that carries a shared name, with the display name that side takes:
+    an entry's explicit bout_urls win, then the bout's division. A bout no entry claims, an explicit
+    bout URL that is not one of the name's bouts, or a bout listing the name on both sides is an error."""
+    rows = []
+    for shared, entries in config.items():
+        by_url = {u: e["name"] for e in entries for u in e["bout_urls"]}
+        by_div = {d: e["name"] for e in entries for d in e["divisions"]}
+        is_a, is_b = bouts["fighter_a"] == shared, bouts["fighter_b"] == shared
+        both = bouts.loc[is_a & is_b, "bout_url"].tolist()
+        if both:
+            raise DisambiguationError(f"{shared}: {both} list the name on both sides; the bout files cannot tell the two apart")
+        unknown = sorted(set(by_url) - set(bouts.loc[is_a | is_b, "bout_url"]))
+        if unknown:
+            raise DisambiguationError(f"{shared}: bout_urls {unknown} are not bouts of this name in the results file")
+        for side, mask in (("fighter_a", is_a), ("fighter_b", is_b)):
+            sub = bouts.loc[mask, ["bout_url", "division", "event", "date", "fighter_a", "fighter_b"]]
+            new = [by_url.get(u) or by_div.get(d) for u, d in zip(sub["bout_url"], sub["division"])]
+            lost = [r for r, n in zip(sub.itertuples(index=False), new) if n is None]
+            if lost:
+                lines = [f"{str(r.date)[:10]} {r.event}: {r.fighter_a} vs. {r.fighter_b} ({r.division}) {r.bout_url}" for r in lost]
+                raise DisambiguationError(
+                    f"{shared}: {len(lost)} bout(s) claimed by no entry in {DISAMBIGUATION_PATH.name}; add the division to "
+                    "the right entry's divisions or the bout URL to its bout_urls:\n  " + "\n  ".join(lines))
+            rows.append(pd.DataFrame({"bout_url": sub["bout_url"].to_numpy(), "side": side, "old": shared, "new": new}))
+    if not rows:
+        return pd.DataFrame(columns=["bout_url", "side", "old", "new"])
+    return pd.concat(rows, ignore_index=True)
+
+
+def rename_shared(bouts: pd.DataFrame, rounds: pd.DataFrame, assigned: pd.DataFrame,
+                  shared_names: set[str]) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Write the assigned display names into bouts (fighter_a / fighter_b) and into the round stats
+    (fighter and the 'A vs. B' bout label bout_stats.py joins on). Every other row is left untouched.
+    A round-stat row of a shared name whose bout is not in `bouts` is an error."""
+    bouts, rounds = bouts.copy(), rounds.copy()
+    by_side: dict[str, dict[str, str]] = {"fighter_a": {}, "fighter_b": {}}
+    for r in assigned.itertuples(index=False):
+        by_side[r.side][r.bout_url] = r.new
+    hit = bouts["bout_url"].isin(set(assigned["bout_url"]))
+    old = bouts.loc[hit, ["event", "fighter_a", "fighter_b"]].copy()
+    for side, names in by_side.items():
+        idx = bouts.index[bouts["bout_url"].isin(names)]
+        bouts.loc[idx, side] = bouts.loc[idx, "bout_url"].map(names).to_numpy()
+    new = bouts.loc[hit, ["fighter_a", "fighter_b"]]
+    label = {(ev, f"{oa} vs. {ob}"): (oa, ob, na, nb)
+             for (ev, oa, ob), (na, nb) in zip(old.itertuples(index=False), new.itertuples(index=False))}
+
+    keys = list(zip(rounds["event"].replace(EVENT_ALIASES), rounds["bout"]))
+    fighters = rounds["fighter"].tolist()
+    i_bout, i_fighter = rounds.columns.get_loc("bout"), rounds.columns.get_loc("fighter")
+    orphans = []
+    for i, key in enumerate(keys):
+        if key in label:
+            oa, ob, na, nb = label[key]
+            rounds.iat[i, i_bout] = f"{na} vs. {nb}"
+            if fighters[i] == oa:
+                rounds.iat[i, i_fighter] = na
+            elif fighters[i] == ob:
+                rounds.iat[i, i_fighter] = nb
+        elif fighters[i] in shared_names:
+            orphans.append(f"{key[0]}: {key[1]}")
+    if orphans:
+        raise DisambiguationError(
+            "round stats of a shared name belong to no bout in the results file, so they cannot be assigned: "
+            + "; ".join(sorted(set(orphans))))
+    return bouts, rounds
+
+
+def disambiguate(bouts: pd.DataFrame, rounds: pd.DataFrame, tott: pd.DataFrame, details: pd.DataFrame | None,
+                 config: dict[str, list[dict]]) -> tuple[pd.DataFrame, pd.DataFrame, dict[str, str], pd.DataFrame]:
+    """Settle every shared display name: validate `config` against the fighter files, assign the bouts,
+    rename bouts and round stats. Returns (bouts, rounds, fighter URL -> display name, assignments)."""
+    shared = shared_display_names(tott, details)
+    taken = set(tott["FIGHTER"].dropna().astype(str).str.strip()) | set(bouts["fighter_a"]) | set(bouts["fighter_b"])
+    if details is not None:
+        taken |= set((details["FIRST"].fillna("").astype(str).str.strip() + " "
+                      + details["LAST"].fillna("").astype(str).str.strip()).str.strip())
+    check_disambiguation(config, shared, taken)
+    assigned = assign_shared_bouts(bouts, config)
+    bouts, rounds = rename_shared(bouts, rounds, assigned, set(config))
+    names_by_url = {e["url"]: e["name"] for entries in config.values() for e in entries}
+    return bouts, rounds, names_by_url, assigned
 
 
 def main() -> None:
     PROC.mkdir(parents=True, exist_ok=True)
     bouts = build_bouts()
     rounds = build_round_stats()
-    fighters = build_fighters()
+    tott, details = read_fighter_files()
+    config = load_disambiguation()
+    bouts, rounds, names_by_url, assigned = disambiguate(bouts, rounds, tott, details, config)
+    fighters = build_fighters(tott, names_by_url)
     bouts.to_csv(PROC / "bouts.csv", index=False)
     rounds.to_csv(PROC / "round_stats.csv", index=False)
     fighters.to_csv(PROC / "fighters.csv", index=False)
@@ -194,6 +407,10 @@ def main() -> None:
     print(f"  no-contests dropped later: {bouts['result_a'].isna().sum()}, draws: {(bouts['result_a']==0.5).sum()}")
     print(f"  unmatched event dates: {bouts['date'].isna().sum()}")
     print(f"round_stats: {len(rounds):,} rows;  fighters: {len(fighters):,}")
+    renamed = assigned[assigned["old"] != assigned["new"]]
+    detail = ", ".join(f"{n} x{c}" for n, c in renamed["new"].value_counts().items())
+    print(f"shared names: {len(config)} settled over {len(names_by_url)} fighter pages; "
+          f"{len(assigned)} bouts assigned, {len(renamed)} renamed" + (f" ({detail})" if detail else ""))
     print(bouts["division"].value_counts().to_string())
 
 

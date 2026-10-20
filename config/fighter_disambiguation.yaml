@@ -1,0 +1,181 @@
+# Same-name fighters on UFCStats (data finding D8).
+#
+# UFCStats gives a few distinct fighters (different fighter-details URLs) the same display name, and
+# the bout files (ufc_fight_results.csv, ufc_fight_stats.csv) carry only that name, so without this
+# file ingest.py merges two careers into one: the flyweight Bruno "Bulldog" Silva and the middleweight
+# Bruno "Blindado" Silva were one 23-bout "Bruno Silva" on the boards.
+#
+# src/mmalab/ingest.py reads this file. For every shared name it lists each fighter URL with the
+# processed display name and the evidence that assigns bouts to him:
+#   url         the UFCStats fighter page (the identity). The URLs under a name must be exactly the
+#               pages that carry that name in ufc_fighter_tott.csv / ufc_fighter_details.csv.
+#   name        the display name written to bouts.csv, round_stats.csv and fighters.csv. The fighter
+#               with the larger UFC footprint keeps the plain name (more UFC bouts; ties go to the more
+#               recent or the ranked fighter); each other one gets a suffix in parentheses, the UFCStats
+#               nickname when there is one, else the birth year, else the listed weight, else the start
+#               of the UFCStats fighter id. Exactly one entry per name keeps the plain name.
+#   divisions   bouts of the shared name in these divisions belong to this fighter. The lists of one
+#               name's entries must not overlap. Empty means the fighter has no UFC bouts yet.
+#   bout_urls   optional explicit assignments (ufcstats.com/fight-details/...) that win over divisions,
+#               for a catch weight or a bout in a division both fighters have used.
+#   nickname, dob, weight_lb, ufc_bouts, reason   documentation for the reviewer, not read by code.
+# A bout of a shared name that no entry claims stops ingest with an error that names the bout, as does a
+# shared name in the fighter files that is missing here, an entry whose URLs no longer match the files,
+# or a suffixed name that already belongs to another fighter, so a refresh cannot silently merge careers
+# again. Downstream, config/official_rank_aliases.yaml and the hand-kept roster files refer to the plain
+# name, so the plain name must stay with the fighter they mean (Bruno Gustavo da Silva is the flyweight).
+# Assignments were checked against the bout division, the fighters' listed weights and birth dates, and
+# press coverage of the two 2026 debuts (ufcstats.com is not reachable from the build sandbox):
+# cagesidepress.com and heavy.com, 2026-10-03, for Anthony Romero (Up Next Fighting bantamweight champion
+# from the California circuit, moved up to featherweight on short notice); cagesidepress.com and
+# bolavip.com, 2026-04-25, for Victor Valenzuela (the Chilean "Sikosis", a 2025 Contender Series loser).
+# Bout counts are as of the 2026-10-17 data.
+
+Anthony Figueroa:
+  - url: http://ufcstats.com/fighter-details/daff32bc96d1eabf
+    name: Anthony Figueroa
+    weight_lb: 135
+    ufc_bouts: 0
+    divisions: []
+    reason: Neither Anthony Figueroa has a UFC bout in the data; the 135 lb page (height and stance listed) keeps the plain name, the bare 155 lb page takes the weight suffix.
+  - url: http://ufcstats.com/fighter-details/35e3a24591f4e2cd
+    name: Anthony Figueroa (155 lbs)
+    weight_lb: 155
+    ufc_bouts: 0
+    divisions: []
+    reason: No UFC bouts; no nickname or date of birth on UFCStats, so the suffix is the listed weight.
+
+Anthony Romero:
+  - url: http://ufcstats.com/fighter-details/4419acb81e6f0ea4
+    name: Anthony Romero
+    nickname: The Bully
+    weight_lb: 145
+    ufc_bouts: 1
+    divisions: [Featherweight]
+    reason: The 2026-10-03 UFC 332 featherweight debut vs Marcus McGhee, taken on three days' notice by the Up Next Fighting bantamweight champion from California (cagesidepress.com, heavy.com, 2026-10-03); matches this 5' 5", 145 lb page, not the 5' 11" lightweight.
+  - url: http://ufcstats.com/fighter-details/6f81399074fcdbba
+    name: Anthony Romero (The Genius)
+    nickname: The Genius
+    dob: 1997-02-25
+    weight_lb: 155
+    ufc_bouts: 0
+    divisions: []
+    reason: 5' 11" lightweight born 1997 with a UFCStats page but no UFC bout in the data.
+
+Bruno Silva:
+  - url: http://ufcstats.com/fighter-details/294aa73dbf37d281
+    name: Bruno Silva
+    nickname: Bulldog
+    dob: 1990-03-16
+    weight_lb: 125
+    ufc_bouts: 12
+    divisions: [Flyweight, Bantamweight]
+    reason: 11 flyweight bouts 2020-03-14 to 2026-06-06 plus the 2019-10-05 bantamweight no contest vs Khalid Taha (his UFC debut, one class above his 125 lb listing). Larger footprint and the more recent fighter, so he keeps the plain name; the official rankings list him as Bruno Gustavo da Silva (config/official_rank_aliases.yaml).
+  - url: http://ufcstats.com/fighter-details/12ebd7d157e91701
+    name: Bruno Silva (Blindado)
+    nickname: Blindado
+    dob: 1989-07-13
+    weight_lb: 185
+    ufc_bouts: 11
+    divisions: [Middleweight]
+    reason: 11 middleweight bouts 2021-06-19 (Turman) to 2025-05-10 (Barriault), all at 185 lb; the flyweight never fought above bantamweight.
+
+Jean Silva:
+  - url: http://ufcstats.com/fighter-details/52ef95b5860fb28c
+    name: Jean Silva
+    nickname: Lord
+    dob: 1996-12-27
+    weight_lb: 145
+    ufc_bouts: 8
+    divisions: [Featherweight, Lightweight]
+    reason: All 8 bouts 2024-01-13 to 2026-09-12 are his, 7 at featherweight plus the 2024-07-13 lightweight bout vs Drew Dober; ranked featherweight (Fighting Nerds), keeps the plain name.
+  - url: http://ufcstats.com/fighter-details/9211aae062b799d6
+    name: Jean Silva (White Bear)
+    nickname: White Bear
+    dob: 1977-10-08
+    weight_lb: 160
+    ufc_bouts: 0
+    divisions: []
+    reason: Born 1977, 160 lb; no UFC bout in the data (he would have been 46 at the first Jean Silva bout).
+
+Joey Gomez:
+  - url: http://ufcstats.com/fighter-details/0778f94eb5d588a5
+    name: Joey Gomez
+    nickname: KO King
+    dob: 1986-07-21
+    weight_lb: 135
+    ufc_bouts: 2
+    divisions: [Bantamweight]
+    reason: Both bantamweight bouts of 2016 (Rob Font 2016-01-17, Jose Quinonez 2016-09-17) are the 135 lb bantamweight born 1986; the other page is a 155 lb fighter.
+  - url: http://ufcstats.com/fighter-details/3a28e1e641366308
+    name: Joey Gomez (1989)
+    dob: 1989-08-29
+    weight_lb: 155
+    ufc_bouts: 0
+    divisions: []
+    reason: 155 lb, born 1989, no UFC bout in the data; no nickname on UFCStats, so the suffix is the birth year.
+
+Michael McDonald:
+  - url: http://ufcstats.com/fighter-details/d0314416a7f26527
+    name: Michael McDonald
+    nickname: Mayday
+    dob: 1991-01-15
+    weight_lb: 135
+    ufc_bouts: 9
+    divisions: [Bantamweight]
+    reason: All 9 bantamweight bouts 2011-03-26 to 2016-07-13 (interim title bout vs Barao 2013-02-16); ranked bantamweight 2013-2017, keeps the plain name.
+  - url: http://ufcstats.com/fighter-details/d52ef694108f8235
+    name: Michael McDonald (The Black Sniper)
+    nickname: The Black Sniper
+    dob: 1965-02-06
+    weight_lb: 205
+    ufc_bouts: 0
+    divisions: []
+    reason: Born 1965, 205 lb; no UFC bout in the data (he would have been 46 at the first Michael McDonald bout).
+
+Mike Davis:
+  - url: http://ufcstats.com/fighter-details/fb3e61720be4690c
+    name: Mike Davis
+    nickname: Beast Boy
+    dob: 1992-10-07
+    weight_lb: 155
+    ufc_bouts: 8
+    divisions: [Lightweight]
+    reason: All 8 lightweight bouts 2019-04-27 (Gilbert Burns) to 2026-07-25 (Nurullo Aliev) are his.
+  - url: http://ufcstats.com/fighter-details/c8661e204c66f325
+    name: Mike Davis (c8661e20)
+    ufc_bouts: 0
+    divisions: []
+    reason: Empty UFCStats page (no nickname, date of birth, weight or height) and no UFC bout in the data; the suffix is the start of the UFCStats fighter id because nothing else distinguishes him.
+
+Tony Johnson:
+  - url: http://ufcstats.com/fighter-details/3641a0d117e9bc6c
+    name: Tony Johnson
+    dob: 1983-05-02
+    weight_lb: 205
+    ufc_bouts: 0
+    divisions: []
+    reason: Neither Tony Johnson has a UFC bout in the data; the 205 lb page with a date of birth and full tale of the tape keeps the plain name.
+  - url: http://ufcstats.com/fighter-details/a45bab49951a45cd
+    name: Tony Johnson (265 lbs)
+    weight_lb: 265
+    ufc_bouts: 0
+    divisions: []
+    reason: 265 lb heavyweight page with no nickname or date of birth and no UFC bout in the data; the suffix is the listed weight.
+
+Victor Valenzuela:
+  - url: http://ufcstats.com/fighter-details/078695e385ec2f57
+    name: Victor Valenzuela
+    nickname: Psicosis
+    dob: 1994-02-09
+    weight_lb: 170
+    ufc_bouts: 1
+    divisions: [Welterweight]
+    reason: The 2026-04-25 welterweight debut win over Max Griffin was the Chilean Victor "Sikosis" Valenzuela (cagesidepress.com, bolavip.com, 2026-04-25); matches this 170 lb page born 1994.
+  - url: http://ufcstats.com/fighter-details/de277a4abcfeea46
+    name: Victor Valenzuela (Joe Boxer)
+    nickname: Joe Boxer
+    weight_lb: 155
+    ufc_bouts: 0
+    divisions: []
+    reason: 155 lb page with no date of birth and no UFC bout in the data.
