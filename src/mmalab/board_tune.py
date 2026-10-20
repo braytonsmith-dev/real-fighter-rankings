@@ -70,6 +70,7 @@ def v10_params() -> dict:
         "form": {"mode": "buckets", "buckets": {str(k): float(v) for k, v in rc["form_penalty"].items()},
                  "tiers": [0.05, 0.1, 0.15, 0.2], "cap": 0.45,          # used only when mode is "tiered"
                  "bad_loss": {"rank_above": 10, "per_loss": 0.0, "cap": 0.3}},
+        "age_discount": None,                                          # v1.2 candidate: {"from_age": 33, "points_per_year": 20}
     }
 
 
@@ -426,6 +427,15 @@ def prepare(panel: Panel) -> Panel:
     g = panel.L5["_key"].to_numpy()
     panel._l5_wins = np.bincount(g, weights=1 - lost, minlength=len(F)).astype(int)
     panel._l5_losses = np.bincount(g, weights=lost, minlength=len(F)).astype(int)
+    # age at each board date, for the age-discount coordinate (NaN when the date of birth is unknown: no discount)
+    if "age" not in F.columns:
+        from mmalab.resume_board import fighter_ages
+        dates = np.array([np.datetime64(d) for d in panel.dates])
+        ages = np.full(len(F), np.nan)
+        for di, idx in F.groupby("di").indices.items():
+            ages[idx] = fighter_ages(F["fighter"].to_numpy()[idx], pd.Timestamp(dates[di])).to_numpy()
+        F["age"] = ages
+    panel._age_cache = {}
     return panel
 
 
@@ -452,11 +462,20 @@ def score_panel(panel: Panel, p: dict) -> np.ndarray:
     F = panel.F
     n = len(F)
     grp = F["_grp"].to_numpy()
-    if not hasattr(panel, "_rating_scaled"):
-        panel._rating_scaled = idr_scale_groups(F["rating"].to_numpy(dtype=float), grp, panel._n_groups)
+    ad = p.get("age_discount")
+    key = json.dumps(ad, sort_keys=True) if ad else "none"
+    cache = getattr(panel, "_age_cache", None)
+    if cache is None:
+        cache = panel._age_cache = {}
+    if key not in cache:
+        rating = F["rating"].to_numpy(dtype=float)
+        if ad:
+            years = np.nan_to_num(np.maximum(0.0, F["age"].to_numpy(dtype=float) - float(ad["from_age"])), nan=0.0)
+            rating = rating - years * float(ad["points_per_year"]) - years ** 2 * float(ad.get("points_per_year_squared", 0.0))
+        cache[key] = idr_scale_groups(rating, grp, panel._n_groups)
     ledger = np.bincount(panel.I["_key"].to_numpy(), weights=ledger_values(panel.I, p), minlength=n)
     form = form_penalties(panel.L5, F.index, p, panel)
-    rating_term = p["w_rating"] * panel._rating_scaled
+    rating_term = p["w_rating"] * cache[key]
     ledger_term = (1.0 - p["w_rating"]) * idr_scale_groups(ledger, grp, panel._n_groups)
     return rating_term + ledger_term - form
 
@@ -585,6 +604,7 @@ def default_space(preset: str = "free") -> dict:
         ("form", "cap"): [0.3, 0.45, 0.6],
         ("form", "bad_loss", "per_loss"): [0.0, 0.05, 0.1, 0.15],
         ("form", "bad_loss", "rank_above"): [10, 15],
+        ("age_discount",): [None] + [{"from_age": a0, "points_per_year": pp} for a0 in (28, 30, 32, 33, 34, 35) for pp in (10, 20, 30, 40)],
     }
 
 
@@ -715,7 +735,8 @@ def stability_of_choices(tuned_by_year: dict) -> dict:
                 "loss.years": p["loss"]["years"], "loss.decay": p["loss"]["decay"], "hindsight.mode": p["hindsight"]["mode"],
                 "hindsight.alpha_win": p["hindsight"]["alpha_win"], "hindsight.alpha_loss": p["hindsight"]["alpha_loss"],
                 "form.mode": p["form"]["mode"], "form.buckets": json.dumps(p["form"]["buckets"], sort_keys=True),
-                "form.bad_loss": json.dumps(p["form"]["bad_loss"], sort_keys=True)}
+                "form.bad_loss": json.dumps(p["form"]["bad_loss"], sort_keys=True),
+                "age_discount": json.dumps(p.get("age_discount"), sort_keys=True)}
         for k, v in flat.items():
             out.setdefault(k, {}).setdefault(str(v), []).append(yr)
     return out

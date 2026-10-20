@@ -16,6 +16,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-06](#exp-2026-10-20-06) | 2026-10-20 | Walk-forward tuning, second pass: coupled coordinates, free and resume presets | running |
 | [EXP-2026-10-20-07](#exp-2026-10-20-07) | 2026-10-20 | Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks) | running |
 | [EXP-2026-10-20-08](#exp-2026-10-20-08) | 2026-10-20 | v1.1 retrospective reconstruction (its own snapshot directory) | informational |
+| [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | parked |
 
 ## EXP-2026-09-30-01
 
@@ -370,3 +371,45 @@ Candidate. v1.1 as in config/board_v1_1.yaml
 Decision. informational: In-sample for both versions; the prospective record from Oct 20, 2026 is the test (PREREGISTRATION.md appendix C).
 
 Files: `experiments/results/EXP-2026-10-20-08/forward_validation_v1_1.json`
+
+## EXP-2026-10-20-09
+
+Age and the rating channel: older favourites lose more often than they win  
+Date 2026-10-20, decision: parked, code at commit `ead380b`.
+
+Question. Does the board over-rank older fighters? Split the bouts by the higher-scored fighter's age and last-five losses and see how often he wins; then test a rating discount by age.
+
+| Method | |
+|---|---|
+| instrument | board_tune panel rebuilt Oct 20 (as-of roster files, official-rank aliases): one rating pass, boards every 14 days, score order without placement rules |
+| window | 2014-01-05 to 2026-10-18, 335 board dates |
+| bouts | 3,748 decided bouts between two fighters on the same divisional board; favourite = the higher v1.1 score |
+| ages | date of birth from UFCStats (99.8% of fighter-dates) |
+| metric | share of bouts won by the favourite (Wilson 95%); then concordance and log loss with the discount applied before interdecile scaling, in-sample |
+| baseline | v1.1 rules (B+0) with no age term |
+| interval | paired event-block bootstrap, 500 to 1,000 draws |
+
+Candidate. `{"diagnostic": "favourite's age x last-five losses", "remedy tested": "rating - points_per_year x max(0, age - from_age), grid from_age 28 to 36, 5 to 80 points per year, plus quadratic forms"}`
+
+| Result | |
+|---|---|
+| favourite 35+ (713 bouts) | won 45.2% (41.5 to 48.8) |
+| favourite 35+ with 2+ losses in last five (442) | 44.6% (40.0 to 49.2) |
+| favourite under 35 with 3+ losses (207) | 59.4% (52.6 to 65.9) |
+| by age band, any record | under 30: 64%; 30-33: 59%; 33-36: 57%; 36+: 42 to 46% |
+| overall favourite win rate | 57.8% |
+| age discount 33 / 20 points per year | concordance 0.5977 vs 0.5795; log loss 0.6666 vs 0.6748 (diff -0.0082, CI -0.0108 to -0.0057); top 15 0.5581 vs 0.5343 |
+| age discount 32 / 30 | 0.6102 / 0.6616 (diff -0.0132, CI -0.0182 to -0.0083); top 15 0.5728 |
+| age discount 28 / 20 to 30 (best in-sample) | 0.6134 to 0.6150 / 0.6590 (diff -0.0157); top 15 0.589 to 0.598 |
+| shape | the gain grows down to from_age 28 and flattens between 20 and 40 points per year; quadratic forms are no better |
+
+| Face validity | |
+|---|---|
+| today, 33 / 20 (mildest) | Usman 8 (v1.1: 5), Buckley 13, Edwards 7, Muhammad 14, Adesanya 25 (14), Whittaker 10, Blachowicz 34 (13), Vera 15, Ortega 26 (15), Cejudo 52, Oliveira 1, Holloway 2, Jim Miller 63 (19), Perez 27, Chiasson 7 |
+| today, 32 / 30 | Usman 16, Buckley 12, Adesanya 28, Blachowicz 42, Vera 21, Ortega 35 |
+| welterweight top 10 at 33 / 20 | Makhachev C, Prates, Morales, Brady, Garry, Della Maddalena, Bonfim, Edwards, Usman, Malott, Donchenko |
+| conflict | the curator wants long resumes (Adesanya, Blachowicz, Ortega) to stay in the top 15; every age setting that helps accuracy moves them down |
+
+Decision. parked: The largest single effect found so far, three to four points of concordance and six at the top 15, and it is the arithmetic behind the Usman case (age 39). It changes what the board is: the rating term becomes current ability, not resume. Proposed as the v1.2 candidate after walk-forward tuning of from_age and the slope (this entry is in-sample) and the curator's decision on the resume question; never applied to v1.0 or v1.1.
+
+Files: `experiments/results/EXP-2026-10-20-09/age_grid_in_sample.csv`, `experiments/results/EXP-2026-10-20-09/age_grid_extended.csv`

@@ -149,6 +149,16 @@ def interim_as_of(as_of: pd.Timestamp) -> dict[str, str]:
             for e in dated_entries("interim_champions.yaml", as_of, ("division", "fighter"))}
 
 
+def fighter_ages(names, as_of: pd.Timestamp) -> pd.Series:
+    """Age in years at `as_of` from data/processed/fighters.csv (NaN when the date of birth is unknown)."""
+    p = PROC / "fighters.csv"
+    if not p.exists():
+        return pd.Series(np.nan, index=names)
+    t = pd.read_csv(p, usecols=["fighter", "dob"], parse_dates=["dob"])
+    dob = t.drop_duplicates("fighter").set_index("fighter")["dob"].reindex(names)
+    return ((pd.Timestamp(as_of) - dob).dt.days / 365.25).rename("age")
+
+
 def horizon_weight(age_years: float, horizons: dict) -> float:
     for limit in sorted(horizons):
         if age_years <= float(limit):
@@ -479,6 +489,14 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     over = ((f["days_since"] - inact["grace_days"]) / (inact["max_days"] - inact["grace_days"])).clip(0, 1)
     f["inactivity_penalty"] = np.where(f["injury"], 0.0, over * inact["max_penalty_points"])
     f["rating"] = f["rating_raw"] - f["inactivity_penalty"]
+    ad = rc.get("age_discount")
+    if ad:
+        # v1.2 candidate: the rating term is read as current ability, discounted by age. Measured Oct 20, 2026: fighters
+        # ranked above their opponent won 45% of bouts when aged 35+ against 60% under 35 (EXP-2026-10-20-09).
+        f["age"] = fighter_ages(f.index, as_of_ts)
+        years_past = (f["age"] - float(ad["from_age"])).clip(lower=0).fillna(0.0)
+        f["age_discount"] = years_past * float(ad["points_per_year"]) + years_past ** 2 * float(ad.get("points_per_year_squared", 0.0))
+        f["rating"] = f["rating"] - f["age_discount"]
 
     # quality wins net of dominant losses, horizon weighted
     d = out[out["result_a"].isin([0.0, 1.0])].copy()
