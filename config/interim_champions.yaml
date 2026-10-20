@@ -1,3 +1,14 @@
-# Interim title holders, shown as IC above the numbered board.
-# Ciryl Gane (interim HW, won June 14, 2026) was promoted to undisputed champion Sept 20, 2026: see champions_override.yaml
-{}
+# Interim title holders, shown as IC above the numbered board. Bout data flags the interim title bout but
+# the rankings module only derives undisputed champions, so the interim reign is recorded here with dates;
+# a historical rebuild then shows the IC only for the dates of the reign. When an interim champion is
+# promoted, unified or stripped, set `until` to that date instead of deleting the line.
+#
+# Format: one entry per line. Every entry needs `since` and `source`.
+# - {division: "Heavyweight", fighter: "Name as on UFCStats", since: YYYY-MM-DD, until: YYYY-MM-DD or null, reason: "...", source: "url or publication"}
+#   since   first board date of the reign. A board built for date D holds the bouts before D only, so a belt
+#           won on fight night D shows from D + 1.
+#   until   null while the reign lasts; the date it ended (promotion, unification bout, or the belt was stripped).
+#           A promotion to undisputed champion continues in champions_override.yaml from the same date.
+# An entry applies to a board built for date D when since <= D and (until is null or D < until).
+# The old undated form `Division: Name` still loads but is applied to every date; the build prints a note.
+- {division: "Heavyweight", fighter: "Ciryl Gane", since: 2026-06-15, until: 2026-09-20, reason: "won the interim belt vs Alex Pereira at UFC Freedom 250 on June 14, 2026; promoted to undisputed champion Sept 20, 2026 after Aspinall vacated (see champions_override.yaml)", source: "https://thescore.com/mma/news/3553975 ; https://cagesidepress.com/2026/06/15/ufc-freedom-250-ciryl-gane-lights-up-devastates-alex-pereira-spoiling-heavyweight-debut/ ; https://khelnow.com/ufc/has-ciryl-gane-been-promoted-to-heavyweight-champion-ahead-of-ufc-334-202609"}

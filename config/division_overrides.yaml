@@ -1,5 +1,14 @@
-# Announced or clear division moves the 3-year rule cannot see. Keep the reason.
-Alex Pereira: Heavyweight          # vacated the LHW title and fought Gane for the interim HW title (June 2026)
-Paulo Costa: Light Heavyweight     # moved up and beat Murzakanov (Apr 2026); UFC lists him at LHW
-Reinier de Ridder: Light Heavyweight   # moved up and beat Dolidze (Aug 2026)
-Kamaru Usman: Welterweight         # lost at 185 to Du Plessis (July 2026); his only recent win is at 170
+# Announced or clear division moves the 3-year rule cannot see. Each one is dated so a historical rebuild
+# places the fighter where he stood on that date, not where he stands today. Keep the reason.
+#
+# Format: one entry per line. Every entry needs `since` and `source`.
+# - {fighter: "Name as on UFCStats", division: "Welterweight", since: YYYY-MM-DD, until: YYYY-MM-DD or null, reason: "...", source: "url or publication"}
+#   since   first board date the override applies (the day the move was announced or became clear)
+#   until   null while it holds; the date it stopped holding (he moved again, or the record now settles it)
+# An entry applies to a board built for date D when since <= D and (until is null or D < until).
+# A title holder is always ranked in his title's division, whatever this file says.
+# The old undated form `Name: Division` still loads but is applied to every date; the build prints a note.
+- {fighter: "Alex Pereira", division: "Heavyweight", since: 2026-02-27, until: null, reason: "vacated the LHW title Feb 27, 2026 to move up; Pereira vs Gane for the interim HW title was announced Mar 7, 2026 (UFC 326 broadcast); lost to Gane June 14, 2026", source: "https://cagesidepress.com/2026/02/27/poatan-vacates-ufc-327-adds-jiri-prochazka-vs-carlos-ulberg-title-fight ; https://www.postwrestling.com/?p=131058"}
+- {fighter: "Paulo Costa", division: "Light Heavyweight", since: 2026-01-14, until: null, reason: "move to 205 vs Azamat Murzakanov at UFC 327 (Apr 11, 2026) first reported Jan 14, 2026; won by KO; UFC lists him at LHW", source: "https://www.lowkickmma.com/paulo-costa-vs-azamat-murzakanov-ufc-327/"}
+- {fighter: "Reinier de Ridder", division: "Light Heavyweight", since: 2026-07-29, until: null, reason: "move to 205 vs Roman Dolidze at UFC Sacramento (Aug 22, 2026) announced by the UFC on July 29, 2026; won by KO", source: "https://mmasucka.com/news/reinier-de-ridder-returns-to-light-heavyweight-in-clash-with-roman-dolidze/ ; https://cagesidepress.com/2026/08/22/reinier-de-ridder-stops-dolidze-earns-first-ufc-light-heavyweight-win/"}
+- {fighter: "Kamaru Usman", division: "Welterweight", since: 2026-07-19, until: null, reason: "the loss at 185 to Du Plessis on July 18, 2026 was a one-off; his only recent win is at 170 and his manager wants him back at welterweight (Aug 6, 2026); in effect from the first board that holds the 185 bout", source: "https://bettorsinsider.com/mma/2026/07/19/kamaru-usman-suffers-lopsided-loss-to-dricus-du-plessis-in-middleweight-return-at-ufc-fight-night-281/ ; https://mmasucka.com/news/kamaru-usmans-manager-rules-out-retirement-for-former-ufc-champion/"}

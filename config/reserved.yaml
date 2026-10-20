@@ -1,4 +1,12 @@
-# Former champions who vacated because of injury: shown above the numbered board as R (reserved),
-# owed a title shot on return. Remove once they fight again or the situation changes.
-Heavyweight: Tom Aspinall              # vacated Sept 14, 2026, eye injury
-Women's Flyweight: Valentina Shevchenko # vacated Sept 2026, injury, out about a year
+# Former champions who vacated because of injury: shown above the numbered board as R (reserved), owed a
+# title shot on return. Each spot is dated, so a historical rebuild shows the R only for the dates it held.
+# When the fighter fights again or the situation changes, set `until` to that date instead of deleting the line.
+#
+# Format: one entry per line. Every entry needs `since` and `source`.
+# - {division: "Heavyweight", fighter: "Name as on UFCStats", since: YYYY-MM-DD, until: YYYY-MM-DD or null, reason: "...", source: "url or publication"}
+#   since   first board date the spot is reserved (the day the title was vacated)
+#   until   null while it holds; the date it ended once he fights again or the UFC withdraws the promise
+# An entry applies to a board built for date D when since <= D and (until is null or D < until).
+# The old undated form `Division: Name` still loads but is applied to every date; the build prints a note.
+- {division: "Heavyweight", fighter: "Tom Aspinall", since: 2026-09-14, until: null, reason: "vacated the heavyweight title Sept 14, 2026 because of recurring eye injury; owed a title shot on return", source: "https://cagesidepress.com/2026/09/14/tom-aspinall-vacates-ufc-heavyweight-title/"}
+- {division: "Women's Flyweight", fighter: "Valentina Shevchenko", since: 2026-09-05, until: null, reason: "the UFC vacated her title Sept 5, 2026, injury, out about a year; the UFC says she gets a title shot on return", source: "https://bleacherreport.com/articles/25496527-valentina-shevchenko-vacates-ufc-belt-due-injury-new-title-fight-announced-ufc-332-card ; https://heavy.com/sports/ufc/valentina-shevchenko-vacates-womens-flyweight-title/"}

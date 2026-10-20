@@ -1,7 +1,15 @@
-# Documented injury layoffs. Fighters listed here are exempt from the inactivity
-# penalty and stay eligible up to resume.inactivity.injury_max_days since their
-# last bout. Remove an entry once the fighter competes again.
-Petr Yan: back surgery; booked for the Merab Dvalishvili trilogy at UFC 333 (lowkickmma.com)
-Tom Aspinall: recurring eye injury; vacated the heavyweight title Sept 14, 2026 (cagesidepress.com)
-Valentina Shevchenko: injury, expected out about a year; vacated the flyweight title Sept 2026 (thescore.com)
-Kayla Harrison: neck surgery for herniated discs, Jan 2026; withdrew from UFC 324; targeting UFC 334, Nov 14, 2026 (https://www.lowkickmma.com/kayla-harrison-withdraws-from-ufc-324-following-neck-surgery-against-amanda-nunes/ ; https://heavy.com/sports/ufc/kayla-harrison-ufc-334-return-date/)
+# Documented injury layoffs. A fighter listed here is exempt from the inactivity penalty and stays
+# eligible up to resume.inactivity.injury_max_days since his last bout, for every board date the
+# entry covers. Set `until` to the date he competes again (or the layoff ends) instead of deleting
+# the line, so a historical rebuild keeps the exemption for the dates it was true.
+#
+# Format: one entry per line. Every entry needs `since` and `source`.
+# - {fighter: "Name as on UFCStats", since: YYYY-MM-DD, until: YYYY-MM-DD or null, reason: "...", source: "url or publication"}
+#   since   first board date the exemption applies (the announcement of the injury or surgery)
+#   until   null while the layoff lasts; the date it ended once he is back (the entry stops applying from that date)
+# An entry applies to a board built for date D when since <= D and (until is null or D < until).
+# The old undated form `Name: reason` still loads but is applied to every date; the build prints a note.
+- {fighter: "Petr Yan", since: 2026-01-28, until: null, reason: "nine-hour lower-back surgery on Jan 27, 2026, announced Jan 28; booked for the Merab Dvalishvili trilogy at UFC 333, Oct 24, 2026", source: "https://thebodylockmma.com/ufc/news-ufc/petr-yan-undergoes-9-hour-back-surgery-targets-late-2026-return/ ; https://bloodyelbow.com/2026/01/28/ufc-champion-provides-optimistic-return-timeline-after-undergoing-brutal-9-hour-surgery/ ; booking: lowkickmma.com"}
+- {fighter: "Tom Aspinall", since: 2025-12-29, until: null, reason: "eye poke at UFC 321 (Oct 25, 2025) led to multiple eye surgeries, first confirmed Dec 29, 2025; vacated the heavyweight title Sept 14, 2026", source: "https://www.si.com/fannation/mma/news/ufc-champion-tom-aspinall-grim-medical-update-eye-injuries ; https://cagesidepress.com/2026/09/14/tom-aspinall-vacates-ufc-heavyweight-title/"}
+- {fighter: "Valentina Shevchenko", since: 2026-09-05, until: null, reason: "injury, expected out about a year; the UFC vacated her flyweight title on Sept 5, 2026 and booked Silva vs Wang Cong for the vacant belt at UFC 332", source: "https://bleacherreport.com/articles/25496527-valentina-shevchenko-vacates-ufc-belt-due-injury-new-title-fight-announced-ufc-332-card ; https://thesunpapers.com/2026/09/05/shevchenko-out-for-a-year-silva-and-wang-cong-to-fight-for-vacant-flyweight/ ; thescore.com"}
+- {fighter: "Kayla Harrison", since: 2026-01-14, until: null, reason: "neck surgery for herniated discs; withdrawal from UFC 324 confirmed by the UFC on Jan 14, 2026; targeting UFC 334, Nov 14, 2026", source: "https://cagesidepress.com/2026/01/14/kayla-harrison-out-of-ufc-324-fight-with-nunes-postponed ; https://www.lowkickmma.com/kayla-harrison-withdraws-from-ufc-324-following-neck-surgery-against-amanda-nunes/ ; https://heavy.com/sports/ufc/kayla-harrison-ufc-334-return-date/"}

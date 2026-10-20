@@ -1,9 +1,20 @@
-# Fighters removed from the boards because they are no longer on the UFC roster.
-# UFCStats has no roster field, so releases and retirements are entered here by hand.
-# Format: UFCStats name: reason and date, with a source.
-Jailton Almeida: released Feb 11, 2026 after loss to Rizvan Kuniev; signed with ACA (cagesidepress.com/2026/02/11)
-Dustin Poirier: retired after UFC 318 vs Max Holloway, July 19, 2025 (announced retirement fight)
-Michael Chiesa: retired after submitting Niko Price at UFC Seattle, Mar 28, 2026 (cagesidepress.com/2026/03/28)
-Court McGee: retired after KO loss to Eric Nolan at UFC 332, Oct 3, 2026 (https://www.si.com/fannation/mma/news/25-fight-ufc-veteran-confirms-retirement-after-knockout-loss-at-ufc-332)
-Gerald Meerschaert: retired in the cage after TKO loss to Julius Walker at UFC Vegas 122, Oct 10, 2026 (https://www.mmanews.com/article/gerald-meerschaert-retires-ufc-vegas-122-60-fights)
-# Niko Price removed Oct 12, 2026: returned from his Mar 2026 retirement and beat Leon Shahbazyan Oct 10, 2026, then walked back retiring again (https://www.rotowire.com/mma/player/niko-price-1044)
+# Fighters removed from the boards because they are no longer on the UFC roster (released or retired).
+# UFCStats has no roster field, so these are entered by hand, with the date each one took effect, and a
+# historical rebuild only removes a fighter for the dates he was actually gone.
+#
+# Format: one entry per line. Every entry needs `since` and `source`.
+# - {fighter: "Name as on UFCStats", since: YYYY-MM-DD, until: YYYY-MM-DD or null, reason: "released/retired ...", source: "url or publication"}
+#   since   first board date the fighter is off the roster. A board built for date D holds the bouts before D
+#           only, so a retirement announced in the cage on fight night D takes effect on D + 1 (the fighter was
+#           still active when that night's board was drawn); a release announced on a non-fight day takes effect
+#           that day.
+#   until   null while he stays gone; if he comes back, the date the return was announced. Keep the entry: it
+#           records that he was off the roster between the two dates (see Niko Price).
+# An entry applies to a board built for date D when since <= D and (until is null or D < until).
+# The old undated form `Name: reason` still loads but is applied to every date; the build prints a note.
+- {fighter: "Jailton Almeida", since: 2026-02-11, until: null, reason: "released Feb 11, 2026 after the loss to Rizvan Kuniev (Feb 7); signed with ACA", source: "https://cagesidepress.com/2026/02/11/jailton-almeida-released-by-ufc-following-loss-to-rizvan-kuniev-at-ufc-vegas-113"}
+- {fighter: "Dustin Poirier", since: 2025-07-20, until: null, reason: "retired after his announced retirement fight, the loss to Max Holloway at UFC 318 on July 19, 2025", source: "https://www.aljazeera.com/sports/2025/7/20/poirier-loses-to-holloway-in-ufc-318-retirement-fight ; https://cagesidepress.com/2025/04/25/max-holloway-vs-dustin-poirier-3-announced-for-ufc-318-in-louisiana"}
+- {fighter: "Michael Chiesa", since: 2026-03-29, until: null, reason: "retired in the cage after submitting Niko Price at UFC Seattle on Mar 28, 2026", source: "https://cagesidepress.com/2026/03/28/ufc-seattle-michael-chiesa-closes-out-career-with-sub-of-niko-price-also-retiring"}
+- {fighter: "Niko Price", since: 2026-03-29, until: 2026-09-09, reason: "retired in the cage after the loss to Michael Chiesa on Mar 28, 2026; his return vs Leon Shahbazyan (UFC Vegas 122, Oct 10, 2026) was reported Sept 9, 2026; he won and then walked back retiring again", source: "https://cagesidepress.com/2026/03/28/ufc-seattle-michael-chiesa-closes-out-career-with-sub-of-niko-price-also-retiring ; https://www.rotowire.com/mma/player/niko-price-1044 ; https://heavy.com/sports/ufc/niko-price-returns-after-brief-retirement/"}
+- {fighter: "Court McGee", since: 2026-10-04, until: null, reason: "retired after the KO loss to Eric Nolan at UFC 332 on Oct 3, 2026", source: "https://www.si.com/fannation/mma/news/25-fight-ufc-veteran-confirms-retirement-after-knockout-loss-at-ufc-332"}
+- {fighter: "Gerald Meerschaert", since: 2026-10-11, until: null, reason: "retired in the cage after the TKO loss to Julius Walker at UFC Vegas 122 on Oct 10, 2026", source: "https://www.mmanews.com/article/gerald-meerschaert-retires-ufc-vegas-122-60-fights"}
