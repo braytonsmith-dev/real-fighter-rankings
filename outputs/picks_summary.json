@@ -1,9 +1,14 @@
 {
-  "updated_utc": "2026-10-19T18:56:27Z",
+  "updated_utc": "2026-10-20T19:17:19Z",
   "graded": 24,
   "pending": 38,
   "void": 1,
+  "no_pick": 0,
   "protocol": "PREREGISTRATION.md, appendix A",
+  "feed_status": {
+    "ok": true,
+    "checked_at_utc": "2026-10-20T19:17:19Z"
+  },
   "record": {
     "correct": 9,
     "incorrect": 15,
@@ -22,21 +27,24 @@
       "accuracy": 0.375,
       "log_loss": 0.7371,
       "model_accuracy_same_bouts": 0.375,
-      "model_log_loss_same_bouts": 0.7631
+      "model_log_loss_same_bouts": 0.7631,
+      "no_pick": 0
     },
     "real_board": {
       "n": 11,
       "accuracy": 0.364,
       "log_loss": 0.8802,
       "model_accuracy_same_bouts": 0.273,
-      "model_log_loss_same_bouts": 0.8825
+      "model_log_loss_same_bouts": 0.8825,
+      "no_pick": 0
     },
     "shadow_v11": {
       "n": 24,
       "accuracy": 0.458,
       "log_loss": 0.8058,
       "model_accuracy_same_bouts": 0.375,
-      "model_log_loss_same_bouts": 0.7631
+      "model_log_loss_same_bouts": 0.7631,
+      "no_pick": 0
     }
   },
   "by_confidence": [
@@ -82,6 +90,7 @@
       "date": "2026-10-17",
       "n": 13,
       "correct": 5,
+      "no_pick": 0,
       "log_loss": 0.7656
     },
     {
@@ -89,6 +98,7 @@
       "date": "2026-10-10",
       "n": 11,
       "correct": 4,
+      "no_pick": 0,
       "log_loss": 0.7601
     }
   ],
@@ -97,24 +107,28 @@
       "event": "UFC Fight Night: Buckley vs. Malott",
       "date": "2026-10-17",
       "picks": 2,
+      "no_pick": 0,
       "locked_at_utc": "2026-10-05T21:29:43Z"
     },
     {
       "event": "UFC 333: Volkanovski vs. Evloev",
       "date": "2026-10-24",
       "picks": 12,
+      "no_pick": 0,
       "locked_at_utc": "2026-10-05T21:29:43Z"
     },
     {
       "event": "UFC Fight Night: Moicano vs. Nolan",
       "date": "2026-10-31",
       "picks": 11,
+      "no_pick": 0,
       "locked_at_utc": "2026-10-12T21:30:18Z"
     },
     {
       "event": "UFC Fight Night: Bonfim vs. Brady",
       "date": "2026-11-07",
       "picks": 13,
+      "no_pick": 0,
       "locked_at_utc": "2026-10-19T18:56:27Z"
     }
   ]
