@@ -375,6 +375,7 @@ def hindsight_regrade(d: pd.DataFrame, f: pd.DataFrame, last: pd.DataFrame, hist
     mode now_rating:  the opponent's current rating, placed among today's eligible fighters in the bout's division.
     mode post_rating: the opponent's rating `post_years` after the bout (or today, if sooner), placed the same way,
                       so a decline many years later does not re-grade an old result.
+    mode now_official: the opponent's official UFC rank as of the board date (unranked or retired counts as unranked).
     alpha_win / alpha_loss: weight on the fight-night grade (1.0 = no hindsight).
     Adds qw_value_then, qw_value_now, winner_pos_now; rewrites qw_value and quality_win."""
     d = d.copy()
@@ -399,10 +400,23 @@ def hindsight_regrade(d: pd.DataFrame, f: pd.DataFrame, last: pd.DataFrame, hist
                     vals[i] = arr[1][j]
             return vals
         opp_rating = {"winner": rating_at(d["loser"]), "loser": rating_at(d["winner"])}
+    elif mode == "now_official":
+        # the opponent's official UFC rank as of the board date (0 champion, 1-15, 99 unranked or retired); the
+        # tiers below read a rating position and an official rank alike, since both count from the top
+        from mmalab.official_ranks import OfficialRanks
+        names = pd.concat([d["winner"], d["loser"]]).unique().tolist()
+        official = OfficialRanks(names)
+
+        def rank_now(opps: pd.Series) -> np.ndarray:
+            return np.array([official.rank(n, dv, as_of) if official.rank(n, dv, as_of) is not None else 999.0
+                             for n, dv in zip(opps.to_numpy(), d["division"].to_numpy())], dtype=float)
+        loser_pos_now = rank_now(d["loser"])
+        d["winner_pos_now"] = rank_now(d["winner"])
     else:
-        raise ValueError(f"hindsight.mode {mode!r}: use now_rating or post_rating")
-    loser_pos_now = rating_positions(f, d["division"], pd.Series(opp_rating["winner"]))
-    d["winner_pos_now"] = rating_positions(f, d["division"], pd.Series(opp_rating["loser"]))
+        raise ValueError(f"hindsight.mode {mode!r}: use now_rating, post_rating or now_official")
+    if mode != "now_official":
+        loser_pos_now = rating_positions(f, d["division"], pd.Series(opp_rating["winner"]))
+        d["winner_pos_now"] = rating_positions(f, d["division"], pd.Series(opp_rating["loser"]))
 
     def win_value(pos: np.ndarray) -> np.ndarray:
         v = np.zeros(len(pos))

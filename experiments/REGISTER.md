@@ -22,6 +22,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-12](#exp-2026-10-20-12) | 2026-10-20 | v1.1 as shipped (loss tiers, form, protection 0.30, placement solver) on 43 full boards, corrected data | adopted |
 | [EXP-2026-10-20-13](#exp-2026-10-20-13) | 2026-10-20 | Literature sweep: aging, damage accumulation, style and longevity, time-varying rating models, finding the outlier | informational |
 | [EXP-2026-10-20-14](#exp-2026-10-20-14) | 2026-10-20 | Fighter profiles: do career statistics add to age in predicting bouts? | rejected |
+| [EXP-2026-10-20-15](#exp-2026-10-20-15) | 2026-10-20 | v1.2 candidate from the resume-preset walk-forward: face validity on today's board | rejected |
 
 ## EXP-2026-09-30-01
 
@@ -601,3 +602,35 @@ Candidate. `{"M0": "logit(p_elo) only", "M1": "M0 + shadow features", "M2": "M1 
 Decision. rejected: Career statistics as linear differences, with or without age interactions, add nothing reliable to what age, layoff and experience already say about the next result, overall or for older fighters. This agrees with Kotrba (2023): individual susceptibility dominates population damage counts. The descriptive profile (mileage, damage, style, trajectory) is still worth showing beside the resume rank for human judgment, labelled as not validated as a predictor; the next modelling attempt should follow the literature instead of linear aggregates: per-fighter random slopes with shrinkage, an age spline inside the rating state, and performance (strike differential) rather than win/loss as the outcome.
 
 Files: `experiments/results/EXP-2026-10-20-14/profiles_report.json`, `experiments/results/EXP-2026-10-20-14/profiles_by_year.csv`, `experiments/results/EXP-2026-10-20-14/profiles_grid.csv`
+
+## EXP-2026-10-20-15
+
+v1.2 candidate from the resume-preset walk-forward: face validity on today's board  
+Date 2026-10-20, decision: rejected, code at commit `ce2be76`.
+
+Question. Do the rules the resume-preset walk-forward chose (rating weight 0.80, three-year full credit then fast decay, loss tiers 0.25/0.25/0.5/0.75 with a 1.0 blowout surcharge over six years, hindsight by current official rank at alpha 0.25, tiered form penalty 0.05 to 0.15) produce a board the curator would publish?
+
+| Method | |
+|---|---|
+| instrument | resume_board.build for Oct 18, 2026 with the fitted parameters as overrides (plus the v1.1 engine and solver), compared with v1.1 on the anchor placements and the largest top-15 moves |
+| metric | face validity only; the held-out accuracy is in EXP-2026-10-20-06 (59.1% vs 57.5% concordance) |
+
+Candidate. `{"overrides": "weights rating 0.80; ledger proof 0.25, loss_tiers [[0,0.25],[5,0.25],[10,0.25],[15,0.5],[999,0.75]], dominant_extra 1.0, loss_decay flat; decisive_loss_years 6; horizon_decay full 3 years, tau 1.0; hindsight now_official alpha 0.25/0.25; form_loss_tiers 0.05/0.05/0.1/0.1/0.15 cap 0.6; placement solver; protected_loss_mult 0.30"}`
+
+| Result | |
+|---|---|
+| Usman (WW) | 1 (v1.1: 5); without hindsight also 1 |
+| Buckley | 27 (15) |
+| Edwards | 9 (6) |
+| Della Maddalena | 11 (7) |
+| Adesanya | 21 (14) |
+| Vera | 24 (14) |
+| Ortega | 23 (15) |
+| Blachowicz | 15 (13) |
+| Derrick Lewis (HW) | 17 (7) |
+| Jamahal Hill (LHW) | 27 (14) |
+| Jessica Andrade (WSW) | 25 (10) |
+| top-15 slots changed vs v1.1 | 131 of 180 |
+| welterweight | Makhachev C, Usman 1, Prates, Morales, Garry, Brady, Bonfim, Malott, Donchenko, Edwards, Smith |
+
+Decision. rejected: The accuracy-optimal rules inside the resume constraints are rating-heavy with a near-zero form penalty, which is the exact opposite of the curator's judgment on losing runs (Usman to 1, Buckley to 27, long resumes down). This is the matchmaking argument made concrete: the walk-forward rewards whoever the rating says is strongest, and a resume board is not that. v1.1 stays; the 1.6-point held-out gain is recorded as the measured price of the resume board's purpose. Individual pieces of the fit are not cherry-picked by taste.
