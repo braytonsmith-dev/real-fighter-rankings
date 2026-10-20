@@ -27,6 +27,7 @@ from mmalab.compare import norm
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 EXT = ROOT / "data" / "external"
+PROC = ROOT / "data" / "processed"
 CONFIG = ROOT / "config"
 ALIASES_PATH = CONFIG / "official_rank_aliases.yaml"
 UNMATCHED_OK_PATH = CONFIG / "official_rank_unmatched_ok.yaml"
@@ -72,13 +73,26 @@ def load_releases() -> pd.DataFrame:
     return r[r["fighter"] != ""].reset_index(drop=True)
 
 
+def _ufc_name_universe() -> set[str]:
+    """Every fighter name in data/processed/bouts.csv, or an empty set before the first ingest."""
+    p = PROC / "bouts.csv"
+    if not p.exists():
+        return set()
+    b = pd.read_csv(p, usecols=["fighter_a", "fighter_b"])
+    return set(pd.concat([b["fighter_a"], b["fighter_b"]]).dropna().astype(str).str.strip())
+
+
 class OfficialRanks:
     def __init__(self, ufc_names: list[str]):
         r = load_releases()
         ufc_names = [str(n).strip() for n in ufc_names if pd.notna(n) and str(n).strip()]
         name_set = set(ufc_names)
         aliases = load_aliases()
-        bad_targets = sorted({t for t in aliases.values() if t not in name_set})
+        # The guards below protect a full refresh. A caller rating a slice of bouts (tests, sensitivity runs) passes a
+        # subset of the names, so the guards are checked against the whole processed roster when one exists.
+        universe = _ufc_name_universe()
+        strict = not universe or name_set >= universe
+        bad_targets = sorted({t for t in aliases.values() if t not in name_set and t not in universe})
         if bad_targets:
             raise ValueError(
                 f"{ALIASES_PATH.name}: alias targets not found among the UFCStats names: "
@@ -106,7 +120,7 @@ class OfficialRanks:
                 mapping[name] = known[c[0]]
             else:
                 self.unmatched.add(name)
-        offenders = sorted(self.unmatched - load_unmatched_ok())
+        offenders = sorted(self.unmatched - load_unmatched_ok()) if strict else []
         if offenders:
             raise ValueError(
                 "official ranking names with no UFCStats match: " + ", ".join(offenders)
