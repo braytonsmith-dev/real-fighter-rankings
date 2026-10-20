@@ -42,6 +42,16 @@ dependencies (E1, E2); dated, sourced override files read as of the board date (
 
 ## Data corrections (logged as facts, not rules)
 
+- 2026-10-20: same-name fighters split (finding D8). UFCStats gives nine display names to two fighter pages each, and the
+  bout files carry only the name, so ingest merged the flyweight Bruno "Bulldog" Silva and the middleweight Bruno "Blindado"
+  Silva into one 23-bout "Bruno Silva". `config/fighter_disambiguation.yaml` now assigns every bout of a shared name to one
+  fighter page by division (or by explicit bout URL) and names the smaller career with a suffix; ingest stops on any shared
+  name or bout the file does not settle. Effect on the Oct 17, 2026 data: the 11 middleweight bouts become "Bruno Silva
+  (Blindado)" (Middleweight 79, 0-5, inactivity penalty); the flyweight "Bruno Silva" keeps 12 bouts, rating 1,480 to 1,550,
+  ledger -7.05 to -3.20, Flyweight 49 to 47. Direct opponents move by at most 10 rating points (HyunSung Park +9.7, 30 to 28
+  at flyweight; Naurdiev -8.0, 21 to 23, and Shara Magomedov -3.5, 17 to 20, at middleweight); 13 top-30 placements shift by
+  one to three spots, no top-15 holder changes. fighters.csv gains the second page of each shared name, so Jean Silva, Michael McDonald, Mike
+  Davis, Anthony Romero and Victor Valenzuela now carry their own height, reach and date of birth instead of their namesake's.
 - 2026-10-20: eleven official-ranking names that never matched UFCStats spellings now match through `config/official_rank_aliases.yaml`
   (Cris Cyborg = Cristiane Justino, Jacare Souza, Costas Philippou = Constantinos Philippou, Tim Johnson = Timothy Johnson, Ulka Sasaki = Yuta Sasaki,
   Antonio Rogerio Nogueira = Rogerio Nogueira, Francisco Rivera Jr., Luis Henrique Barbosa = Luis Henrique, Magomed Bibulatov, Mara Borella,
