@@ -115,13 +115,30 @@ def check_boards(path: Path = OUT / "composite_rankings_full.csv", label: str = 
 
 
 def check_history(ref: str) -> list[str]:
+    """A committed snapshot may change only while no bout has yet followed it (its event has not happened, so a
+    data correction before the event is allowed); once a decided bout postdates it, it is frozen."""
     probs = []
+    last_bout = None
+    p = ROOT / "data" / "processed" / "bouts.csv"
+    if p.exists():
+        b = pd.read_csv(p, usecols=["date", "result_a"])
+        dec = b[b["result_a"].isin([0.0, 0.5, 1.0])]
+        last_bout = pd.to_datetime(dec["date"], errors="coerce").max() if len(dec) else None
     dirs = [OUT / "history"] + sorted(OUT.glob("history_v*"))
     for d in dirs:
         rel = str(d.relative_to(ROOT))
-        changed = git_changed(rel, ref)
+        changed = []
+        for item in git_changed(rel, ref):
+            name = Path(item.split(" ", 1)[1]).stem
+            try:
+                snap_date = pd.Timestamp(name.split("_")[1])
+            except (IndexError, ValueError):
+                changed.append(item)
+                continue
+            if item.startswith("D") or last_bout is None or last_bout > snap_date:
+                changed.append(item)          # deleted, or already followed by a bout: frozen
         if changed:
-            probs.append(f"history: {len(changed)} committed snapshot(s) in {rel} changed or disappeared: {', '.join(changed[:5])}")
+            probs.append(f"history: {len(changed)} committed snapshot(s) in {rel} changed or disappeared after their event: {', '.join(changed[:5])}")
         for p in d.glob("board_*.csv"):
             if not re.fullmatch(r"board_\d{4}-\d{2}-\d{2}\.csv", p.name):
                 probs.append(f"history: unexpected file name {p.name} in {rel}")
