@@ -129,6 +129,7 @@ Or everything at once: `PYTHONPATH=src python3 -m mmalab.run_all` (add `--quick`
 ```
 config/weights.yaml            all tunable numbers, documented inline
 config/champions_override.yaml champions the bout data cannot infer
+config/official_rank_aliases.yaml   official ranking name -> UFCStats name (with the allowlist official_rank_unmatched_ok.yaml)
 data/raw/                      UFCStats CSVs and the odds file
 data/processed/                clean tables (bouts.csv, bouts_with_stats.csv, ...)
 src/mmalab/ingest.py           raw CSVs -> clean tables
@@ -146,6 +147,7 @@ src/mmalab/card_quality.py     top-10 vs top-10 bouts per card, supply facts
 src/mmalab/figures.py          paper figures and table
 src/mmalab/publish.py          docs/index.html for GitHub Pages
 src/mmalab/run_all.py          the whole pipeline in order
+tests/test_official_ranks.py   pytest: every official ranking name resolves to a UFCStats name (run: PYTHONPATH=src python3 -m pytest tests)
 scripts/refresh_data.sh        download fresh CSVs and rebuild
 paper/abstract_ssac27.md       the SSAC27 abstract (under 500 words)
 ```
