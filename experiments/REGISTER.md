@@ -19,6 +19,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | rejected |
 | [EXP-2026-10-20-10](#exp-2026-10-20-10) | 2026-10-20 | Glicko-1 rating deviation for the resume rating: parameter derivation and calibration | adopted |
 | [EXP-2026-10-20-11](#exp-2026-10-20-11) | 2026-10-20 | Placement layer as one constrained order (solver) versus the sequential head-to-head and title-cycle loops | adopted |
+| [EXP-2026-10-20-12](#exp-2026-10-20-12) | 2026-10-20 | v1.1 as shipped (loss tiers, form, protection 0.30, placement solver) on 43 full boards, corrected data | adopted |
 
 ## EXP-2026-09-30-01
 
@@ -490,3 +491,31 @@ Candidate. `{"semantics kept": "most recent meeting within 3 years lifts the win
 Decision. adopted: Adopted for board v1.1 (config resume.placement: solver), amended into PREREGISTRATION.md appendix C before the first v1.1 snapshot; the sequential loops stay as v1.0's frozen rule. The solver honours the same rules without order dependence; every difference from the sequential result is a case where the sequential result broke one of its own constraints or applied a lift that did not qualify.
 
 Files: `experiments/results/EXP-2026-10-20-11/final_verify.txt`, `experiments/results/EXP-2026-10-20-11/verify_recent.txt`, `experiments/results/EXP-2026-10-20-11/verify_none.txt`, `experiments/results/EXP-2026-10-20-11/verify_all_nowaive.txt`
+
+## EXP-2026-10-20-12
+
+v1.1 as shipped (loss tiers, form, protection 0.30, placement solver) on 43 full boards, corrected data  
+Date 2026-10-20, decision: adopted, code at commit `d368984`.
+
+Question. With the dated roster files, the official-rank aliases and the same-name split in place, and the placement solver included, is v1.1 at least as accurate as v1.0 on full event-eve boards?
+
+| Method | |
+|---|---|
+| instrument | resume_board.build at every third event date with every placement rule applied (v1.0: sequential loops; v1.1: solver), published order |
+| window | Oct 2023 to Oct 17, 2026, 43 event-eve boards |
+| bouts | 979 decided bouts between two fighters on the same divisional board (973 to 979 depending on eligibility under each version; paired by bout) |
+| metric | concordance of the published order; log loss with the frozen slope 1.36 |
+| baseline | v1.0 on the same bouts and the same corrected data |
+| interval | paired event-block bootstrap, 5,000 draws |
+
+Candidate. config/board_v1_1.yaml as committed on Oct 20, 2026 (overrides: protected_loss_mult 0.30; loss_tiers [[5,0.25],[10,0.5],[15,0.75],[999,1.0]], dominant_extra 0; form_penalty 0.10/0.30/0.40; form_bad_loss rank_above 10, 0.10 per loss, cap 0.30; placement solver)
+
+| Result | |
+|---|---|
+| v1.0 | 0.6067 / 0.6694; top 30 0.5608 / 0.6877; top 15 0.5372 / 0.7028 |
+| v1.1 | 0.6057 / 0.6649; top 30 0.5642 / 0.6826; top 15 0.5488 / 0.6958 |
+| paired v1.1 minus v1.0 | concordance -0.0010 (CI -0.0189 to +0.0164); log loss -0.0045 (CI -0.0093 to +0.0001); top-15 concordance +0.0000 (CI -0.034 to +0.035) on 246 bouts |
+
+Decision. adopted: Equal measured accuracy with a small log-loss edge; v1.1 ships as the shadow resume board under appendix C (non-inferiority). Supersedes the numbers in EXP-2026-10-20-01 for the changelog.
+
+Files: `experiments/results/EXP-2026-10-20-12/eval_v11s.json`, `experiments/results/EXP-2026-10-20-12/eval_v11s.csv`, `experiments/results/EXP-2026-10-20-12/eval_v10_corrected.json`, `experiments/results/EXP-2026-10-20-12/eval_v10_corrected.csv`

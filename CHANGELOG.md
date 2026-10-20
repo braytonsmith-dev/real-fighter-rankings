@@ -24,11 +24,7 @@ Rule changes: opponent-aware versions of existing v1.0 rules, and the placement 
 | Rating cost of a non-dominant loss to a top-3 fighter or in a title fight | 15% of the normal drop | 30% of the normal drop |
 | Placement rules (head-to-head lifts, title-cycle caps) | applied one after the other, each loop on the order the previous one left | solved together as one constrained order with the same rules, windows and allowances (`src/mmalab/placement.py`); the sequential loops broke their own constraints in 10 of the cases checked on seven boards, for example Topuria below Oliveira sixteen months after knocking him out (EXP-2026-10-20-11) |
 
-Evidence: 43 event-eve boards (947 bouts, Oct 2023 to Sept 2026) rebuilt under each candidate with every placement rule applied;
-concordance of the published order with the winner was 0.606 for v1.1 against 0.608 for v1.0 and log loss 0.666 against 0.671,
-differences inside noise (paired 95% intervals straddle zero), so the change is adopted for face validity at equal measured
-accuracy. On the 14-day tuning panel (335 boards, 3,656 bouts, 2014 to 2026, score order without placement rules) the same rules
-scored 0.581 concordance and 0.6745 log loss against 0.574 and 0.6771 for v1.0 (`src/mmalab/board_tune.py`).
+Evidence: 43 event-eve boards (979 bouts, Oct 2023 to Oct 17, 2026, rebuilt on the corrected data with every placement rule applied) score concordance 0.606 for v1.1 against 0.607 for v1.0 and log loss 0.665 against 0.669 (paired differences -0.001, 95% interval -0.019 to +0.016, and -0.0045, interval -0.0093 to +0.0001); top-15 bouts 0.549 against 0.537 (EXP-2026-10-20-12). On the 14-day tuning panel (335 boards, 3,748 bouts, 2014 to 2026, score order without placement rules) the same ledger and form rules scored 0.580 concordance and 0.6748 log loss against 0.573 and 0.6772 for v1.0 (EXP-2026-10-20-03). The change is adopted for face validity at equal measured accuracy.
 
 Effect on the Oct 17, 2026 board: 111 of 194 top-15 slots differ in holder or position. Largest moves: Vera 54 to 14, Ortega 40
 to 15, Blachowicz 27 to 13, Adesanya 27 to 14, Buckley 21 to 15; Jim Miller 11 to 19, Jalin Turner 15 to 23, Neil Magny 15 to 22.

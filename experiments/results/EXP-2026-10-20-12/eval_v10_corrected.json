@@ -1,0 +1,19 @@
+{
+ "variant": "v10",
+ "snapshots": 43,
+ "all": {
+  "bouts": 979,
+  "concordance": 0.6067,
+  "log_loss": 0.6694
+ },
+ "top30": {
+  "bouts": 485,
+  "concordance": 0.5608,
+  "log_loss": 0.6877
+ },
+ "top15": {
+  "bouts": 242,
+  "concordance": 0.5372,
+  "log_loss": 0.7028
+ }
+}
