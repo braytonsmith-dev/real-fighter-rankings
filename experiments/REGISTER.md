@@ -403,6 +403,10 @@ Candidate. `{"diagnostic": "favourite's age x last-five losses", "remedy tested"
 | age discount 32 / 30 | 0.6102 / 0.6616 (diff -0.0132, CI -0.0182 to -0.0083); top 15 0.5728 |
 | age discount 28 / 20 to 30 (best in-sample) | 0.6134 to 0.6150 / 0.6590 (diff -0.0157); top 15 0.589 to 0.598 |
 | shape | the gain grows down to from_age 28 and flattens between 20 and 40 points per year; quadratic forms are no better |
+| stability by period (favourite 35+) | 2014-2019: 45.9% of 257 (40 to 52); 2020-2026: 45.4% of 454 (41 to 50); under-35 favourites 58% and 63% |
+| by division (favourite 35+) | welterweight 42% (121), heavyweight 45% (115), middleweight 48% (90), lightweight 41% (83), light heavyweight 50% (80), bantamweight 39% (61), featherweight 49% (53) |
+| age difference gradient (favourite minus underdog) | favourite 5+ years younger: wins 70.0% (729); 2-5 younger 64.9% (690); within 2 years 57.3% (1,048); 2-5 older 53.6% (623); 5+ older 40.7% (627) |
+| large score gaps only (above the median gap) | favourite 35+ wins 49.9% (355) against 65% for younger favourites: the board's confidence in an older fighter is worth nothing |
 
 | Face validity | |
 |---|---|
