@@ -9,3 +9,6 @@ provisional_max_bouts: 3    # either fighter with this many UFC bouts or fewer m
 exclude_events: ["Contender Series", "Road to UFC"]   # not UFC cards in the sense the model was built for
 publish_page: false         # when true, index.html links to picks.html in the main navigation
 confidence_bands: [0.5, 0.55, 0.6, 0.65, 0.7, 1.0]
+no_pick_band: 0.02          # |p_a - 0.5| inside this half-width means no pick: the row records pick "none" and band "no pick"
+                            # (the same rule is applied separately to the shadow pick from p_a_v11); 0.5200 is still a pick
+no_pick_since: 2026-10-20   # the no-pick band applies to rows locked on or after this UTC date; earlier rows keep their picks and grades
