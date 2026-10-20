@@ -232,6 +232,78 @@ def title_cycle(cont: pd.DataFrame, out: pd.DataFrame, as_of: pd.Timestamp, tc: 
     return cont.drop(columns=["pos"]).merge(fixed, on=["division", "fighter"]), notes
 
 
+WIN_TIER_LIMITS = ((1, 2.0), (5, 1.5), (10, 1.0), (15, 0.5))   # rating position in the division -> win value
+
+
+def rating_positions(f: pd.DataFrame, divisions: pd.Series, ratings: pd.Series) -> np.ndarray:
+    """1 + number of eligible fighters (rows of f) in the same division whose raw rating exceeds `ratings`.
+    999 when the rating is unknown. Retired or inactive opponents keep their last rating, so a win over a
+    champion who left the sport at the top is not written down to nothing."""
+    pos = np.full(len(divisions), 999.0)
+    div_arr, r_arr = divisions.to_numpy(), ratings.to_numpy(dtype=float)
+    for dv, g in f.groupby("division"):
+        m = div_arr == dv
+        if not m.any():
+            continue
+        sorted_r = np.sort(g["rating_raw"].to_numpy(dtype=float))
+        rr = r_arr[m]
+        p = (len(sorted_r) - np.searchsorted(sorted_r, rr, side="right")) + 1.0
+        p[np.isnan(rr)] = 999.0
+        pos[m] = p
+    return pos
+
+
+def hindsight_regrade(d: pd.DataFrame, f: pd.DataFrame, last: pd.DataFrame, hist: pd.DataFrame,
+                      as_of: pd.Timestamp, hs: dict) -> pd.DataFrame:
+    """Blend each result's fight-night grade with the opponent's later standing.
+
+    mode now_rating:  the opponent's current rating, placed among today's eligible fighters in the bout's division.
+    mode post_rating: the opponent's rating `post_years` after the bout (or today, if sooner), placed the same way,
+                      so a decline many years later does not re-grade an old result.
+    alpha_win / alpha_loss: weight on the fight-night grade (1.0 = no hindsight).
+    Adds qw_value_then, qw_value_now, winner_pos_now; rewrites qw_value and quality_win."""
+    d = d.copy()
+    mode = hs["mode"]
+    if mode == "now_rating":
+        opp_rating = {"winner": last["rating"].reindex(d["loser"]).to_numpy(),
+                      "loser": last["rating"].reindex(d["winner"]).to_numpy()}
+    elif mode == "post_rating":
+        post = float(hs.get("post_years", 2.0))
+        h = hist.sort_values("date")
+        by_f = {n: (g["date"].to_numpy(), g["rating"].to_numpy()) for n, g in h.groupby("fighter")}
+        t_post = np.minimum((d["date"] + pd.to_timedelta(post * 365.25, unit="D")).to_numpy(), np.datetime64(as_of))
+
+        def rating_at(names: pd.Series) -> np.ndarray:
+            vals = np.full(len(names), np.nan)
+            for i, (n, t) in enumerate(zip(names.to_numpy(), t_post)):
+                arr = by_f.get(n)
+                if arr is None:
+                    continue
+                j = np.searchsorted(arr[0], t, side="right") - 1
+                if j >= 0:
+                    vals[i] = arr[1][j]
+            return vals
+        opp_rating = {"winner": rating_at(d["loser"]), "loser": rating_at(d["winner"])}
+    else:
+        raise ValueError(f"hindsight.mode {mode!r}: use now_rating or post_rating")
+    loser_pos_now = rating_positions(f, d["division"], pd.Series(opp_rating["winner"]))
+    d["winner_pos_now"] = rating_positions(f, d["division"], pd.Series(opp_rating["loser"]))
+
+    def win_value(pos: np.ndarray) -> np.ndarray:
+        v = np.zeros(len(pos))
+        for limit, val in reversed(WIN_TIER_LIMITS):
+            v = np.where(pos <= limit, val, v)
+        return v
+    vet = (d["qw_value"].to_numpy() == 0.25).astype(float) * 0.25        # proven-veteran credit survives as the floor
+    now = np.maximum(win_value(loser_pos_now), vet)
+    aw = float(hs.get("alpha_win", 1.0))
+    d["qw_value_then"] = d["qw_value"]
+    d["qw_value_now"] = now
+    d["qw_value"] = aw * d["qw_value_then"].to_numpy() + (1 - aw) * now
+    d["quality_win"] = d["qw_value"] > 0
+    return d
+
+
 def _merge(base: dict, over: dict | None) -> dict:
     out = dict(base)
     for k, v in (over or {}).items():
@@ -312,6 +384,12 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     d["hw"] = d["age"].apply(lambda a: horizon_weight(a, hz))
     L = rc["ledger"]
     recent = d["age"] <= rc.get("decisive_loss_years", 3)
+    hs = rc.get("hindsight") or {}
+    if hs.get("mode"):
+        # v1.1: results are re-graded in hindsight. The value of a win or the cost of a loss blends the opponent's
+        # standing on fight night with his standing afterwards (rating position in the bout's division), so a win over
+        # a fighter who then collapsed, or a loss to one who did, is worth what it turned out to be worth.
+        d = hindsight_regrade(d, f, last, hist, as_of_ts, hs)
     d["qw_weighted"] = d["hw"] * d["qw_value"]
     qw = d[d["quality_win"]].groupby("winner")["qw_weighted"].sum() * L["quality_win"]
     proof = d[d["proof"]].groupby("loser")["hw"].sum() * L["proof_of_concept"]
@@ -325,7 +403,14 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
                     return cost
             return tiers[-1][1]
         losses = d[recent & ~d["proof"]].copy()
-        losses["cost"] = losses["winner_pos"].fillna(999).map(tier_cost) + np.where(losses["decisive_loss"], float(L.get("dominant_extra", 0.0)), 0.0)
+        cost_then = losses["winner_pos"].fillna(999).map(tier_cost)
+        if hs.get("mode"):
+            al = float(hs.get("alpha_loss", 1.0))
+            cost_now = losses["winner_pos_now"].fillna(999).map(tier_cost)
+            losses["cost"] = al * cost_then + (1 - al) * cost_now
+        else:
+            losses["cost"] = cost_then
+        losses["cost"] = losses["cost"] + np.where(losses["decisive_loss"], float(L.get("dominant_extra", 0.0)), 0.0)
         dl = losses[losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["hw"] * g["cost"]).sum()))
         wl = losses[~losses["decisive_loss"]].groupby("loser").apply(lambda g: float((g["hw"] * g["cost"]).sum()))
     else:

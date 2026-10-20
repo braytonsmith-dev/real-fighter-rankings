@@ -1,0 +1,21 @@
+# REAL resume board, version 1.1 (shadow). Adopted as a candidate on 2026-10-20; see CHANGELOG.md and
+# PREREGISTRATION.md appendix C. config/weights.yaml is the frozen v1.0 method and is never edited for a new
+# version: resume_board.build(overrides=...) merges this file's `overrides` block over weights.yaml's `resume`
+# block, so this file is the complete list of what v1.1 changes.
+#
+# Rationale (audit finding 1, Oct 20, 2026): one loss entered three channels with opponent-blind costs, so a losing
+# run against elite opposition was punished like one against mid-card opposition. v1.1 keeps every v1.0 principle
+# and makes three of the costs opponent-aware.
+version: "1.1"
+label: shadow                  # shadow: published beside v1.0, never substituted for it during the registered period
+since: 2026-10-20
+history_dir: outputs/history_v1.1
+board_dir: outputs/boards/v1.1
+overrides:
+  engine:
+    protected_loss_mult: 0.30  # was 0.15: a non-dominant loss to a top-3 fighter or in a title fight now costs 30% of the normal drop
+  ledger:
+    loss_tiers: [[5, 0.25], [10, 0.5], [15, 0.75], [999, 1.0]]   # ledger cost of a loss by the winner's rank at the time (was a flat 1.0, or 0 for a non-blowout loss to a top-5 fighter)
+    dominant_extra: 0.0        # a blowout adds this much on top of the tier cost
+  form_penalty: {"2-3": 0.10, "1-4": 0.30, "0-5": 0.40}          # was 0.15 / 0.60 / 0.80
+  form_bad_loss: {rank_above: 10, per_loss: 0.10, cap: 0.30}      # each last-five loss to an opponent outside the top 10 adds 0.10, capped

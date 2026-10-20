@@ -39,11 +39,14 @@ def board_position(row) -> int:
     return int(row["rank"])
 
 
-def snapshot(board: pd.DataFrame, as_of: pd.Timestamp) -> Path:
-    HIST.mkdir(parents=True, exist_ok=True)
+def snapshot(board: pd.DataFrame, as_of: pd.Timestamp, root: Path | None = None) -> Path:
+    """Write one board snapshot. `root` defaults to outputs/history (the registered v1.0 board); shadow versions
+    pass their own directory so the two forward records never mix."""
+    root = Path(root) if root is not None else HIST
+    root.mkdir(parents=True, exist_ok=True)
     b = board.copy()
     b["position"] = b.apply(board_position, axis=1)
-    path = HIST / f"board_{pd.Timestamp(as_of).date()}.csv"
+    path = root / f"board_{pd.Timestamp(as_of).date()}.csv"
     b[["division", "fighter", "position", "rank", "score"]].to_csv(path, index=False)
     return path
 
@@ -61,9 +64,10 @@ def backfill(months: int = 12) -> list[Path]:
     return paths
 
 
-def previous_positions(before: pd.Timestamp) -> dict:
+def previous_positions(before: pd.Timestamp, root: Path | None = None) -> dict:
     """Positions from the latest snapshot strictly before `before`."""
-    snaps = sorted(HIST.glob("board_*.csv"))
+    root = Path(root) if root is not None else HIST
+    snaps = sorted(root.glob("board_*.csv"))
     prior = [p for p in snaps if pd.Timestamp(p.stem.split("_")[1]) < pd.Timestamp(before)]
     if not prior:
         return {}
@@ -115,9 +119,15 @@ def _summary(df: pd.DataFrame) -> dict:
     return out
 
 
-def validate() -> dict:
+def validate(root: Path | None = None, freeze_date: pd.Timestamp | None = None, slope: float | None = None,
+             suffix: str = "", label: str = "v1.0") -> dict:
+    """Score every snapshot in `root` against the bouts that followed it. The defaults are the registered v1.0 board;
+    a shadow version passes its own snapshot directory, first-snapshot date, probability slope and file suffix."""
+    root = Path(root) if root is not None else HIST
+    freeze_date = pd.Timestamp(freeze_date) if freeze_date is not None else FREEZE_DATE
+    slope = float(slope) if slope is not None else PROB_SLOPE
     bouts = pd.read_csv(PROC / "bouts.csv", parse_dates=["date"])
-    snaps = sorted(HIST.glob("board_*.csv"))
+    snaps = sorted(root.glob("board_*.csv"))
     names = pd.concat([bouts["fighter_a"], bouts["fighter_b"]]).dropna().unique().tolist()
     off = OfficialRanks(names)
     pred, classic = {}, {}
@@ -142,13 +152,13 @@ def validate() -> dict:
             diff = sa - sb
             # concordance uses the published order: champion (0) first, then rank; two title holders tie at 0.5
             concordant = 0.5 if pa == pb else float((pa < pb) == (x.result_a == 1.0))
-            p_real = 1.0 / (1.0 + math.exp(-PROB_SLOPE * diff))
+            p_real = 1.0 / (1.0 + math.exp(-slope * diff))
             oa, ob = off.rank(x.fighter_a, x.division, x.date), off.rank(x.fighter_b, x.division, x.date)
             off_right = None
             if oa is not None and ob is not None and oa != ob and max(oa, ob) < 99:
                 off_right = float((oa < ob) == (x.result_a == 1.0))
             top = lambda n: (1 <= pa <= n or pa == 0) and (1 <= pb <= n or pb == 0)
-            rows.append({"snapshot": t0.date(), "date": x.date.date(), "prospective": x.date > FREEZE_DATE,
+            rows.append({"snapshot": t0.date(), "date": x.date.date(), "prospective": x.date > freeze_date,
                          "division": x.division, "title_fight": bool(x.title_fight),
                          "fighter_a": x.fighter_a, "pos_a": pa, "score_a": round(sa, 4),
                          "fighter_b": x.fighter_b, "pos_b": pb, "score_b": round(sb, 4),
@@ -160,8 +170,8 @@ def validate() -> dict:
                          "method": x.method})
     df = pd.DataFrame(rows)
     OUT.mkdir(exist_ok=True)
-    df.to_csv(OUT / "forward_validation.csv", index=False)
-    res = {"snapshots": len(snaps), "freeze_date": str(FREEZE_DATE.date()), "probability_map_slope": PROB_SLOPE,
+    df.to_csv(OUT / f"forward_validation{suffix}.csv", index=False)
+    res = {"version": label, "snapshots": len(snaps), "freeze_date": str(freeze_date.date()), "probability_map_slope": slope,
            "protocol": "PREREGISTRATION.md"}
     if not df.empty:
         for label, mask in (("retrospective_reconstruction", ~df["prospective"]), ("prospective_since_freeze", df["prospective"])):
@@ -170,9 +180,9 @@ def validate() -> dict:
                           "secondary_both_top30": _summary(part[part["both_top30"]]),
                           "secondary_both_top15": _summary(part[part["both_top15"]]),
                           "secondary_title_fights": _summary(part[part["title_fight"]])}
-    res["note"] = ("Snapshots before the freeze were rebuilt with the v1.0 rules, so the retrospective block is an "
+    res["note"] = (f"Snapshots before the freeze were rebuilt with the {label} rules, so the retrospective block is an "
                    "in-sample reconstruction; only the prospective block is the pre-registered test.")
-    (OUT / "forward_validation.json").write_text(json.dumps(res, indent=2, default=str))
+    (OUT / f"forward_validation{suffix}.json").write_text(json.dumps(res, indent=2, default=str))
     return res
 
 
