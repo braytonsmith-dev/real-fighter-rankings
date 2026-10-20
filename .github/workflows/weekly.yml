@@ -26,10 +26,15 @@ jobs:
           pip install -r requirements-dev.txt
           python -m pytest -q -m "not slow"
       - run: bash scripts/refresh_data.sh --quick
+      - name: Sanity checks before anything is committed
+        # Fails the job (and so publishes nothing) if a board is malformed, a committed snapshot changed, a locked pick
+        # was edited, the data shrank, or the site has a dead link. See src/mmalab/checks.py.
+        run: PYTHONPATH=src python -m mmalab.checks --ref HEAD
       - name: Commit outputs
         run: |
           git config user.name "real-fighter-rankings bot"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          git commit -m "Weekly rebuild $(date -u +%F)" || echo "nothing to commit"
+          summary=$(PYTHONPATH=src python -c "import json,pandas as pd;b=pd.read_csv('data/processed/bouts.csv');s=json.load(open('outputs/picks_summary.json'));print(f\"bouts {len(b)} through {b['date'].max()}; picks graded {s.get('graded',0)}, pending {s.get('pending',0)}, no pick {s.get('no_pick',0)}; feed ok {s.get('feed_status',{}).get('ok','?')}\")" 2>/dev/null || echo "summary unavailable")
+          git commit -m "Weekly rebuild $(date -u +%F)" -m "$summary" || echo "nothing to commit"
           git push
