@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-20T19:17:19Z",
+  "updated_utc": "2026-10-20T20:15:30Z",
   "graded": 24,
   "pending": 38,
   "void": 1,
@@ -7,7 +7,7 @@
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-10-20T19:17:19Z"
+    "checked_at_utc": "2026-10-20T20:15:30Z"
   },
   "record": {
     "correct": 9,
@@ -131,5 +131,16 @@
       "no_pick": 0,
       "locked_at_utc": "2026-10-19T18:56:27Z"
     }
-  ]
+  ],
+  "market": {
+    "provider": "the-odds-api",
+    "attribution": "Market probabilities are derived from bookmaker odds supplied by The Odds API (the-odds-api.com): the de-vigged consensus across books, not the price of any one bookmaker. Not betting advice.",
+    "ledger": "predictions/market_at_lock.csv",
+    "store_raw_prices": false,
+    "favourite_rule": "fighter_a when p_a_market >= 0.5, same convention as the model's pick",
+    "graded_with_market": 0,
+    "graded_without_market": 24,
+    "baselines_same_bouts": {},
+    "detail": {}
+  }
 }

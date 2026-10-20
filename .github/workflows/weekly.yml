@@ -26,6 +26,8 @@ jobs:
           pip install -r requirements-dev.txt
           python -m pytest -q -m "not slow"
       - run: bash scripts/refresh_data.sh --quick
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}   # market consensus at lock time; unset until the owner creates the key (MARKET_BASELINE.md)
       - name: Sanity checks before anything is committed
         # Fails the job (and so publishes nothing) if a board is malformed, a committed snapshot changed, a locked pick
         # was edited, the data shrank, or the site has a dead link. See src/mmalab/checks.py.

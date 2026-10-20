@@ -42,6 +42,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
+from mmalab import odds
 from mmalab.compare import norm
 from mmalab.elo import EloParams, run_elo
 
@@ -549,6 +550,9 @@ def summarize(ledger: pd.DataFrame, feed_status: dict | None = None) -> dict:
                         "no_pick": int((x["pick"] == NO_PICK).sum()), "locked_at_utc": x["predicted_at_utc"].min()}
                        for e, x in pending.groupby("event", sort=False)]
     out["upcoming"].sort(key=lambda d: d["date"])
+    mk = odds.market_baseline(ledger, odds.load_market())        # the market scored on the same graded bouts
+    out["market"] = mk
+    out.setdefault("baselines_same_bouts", {}).update(mk.get("baselines_same_bouts", {}))
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "picks_summary.json").write_text(json.dumps(out, indent=2, default=str))
     return out
@@ -708,6 +712,7 @@ def main() -> None:
         for p in problems:
             print(f"  - {p}")
     ledger = lock(upcoming, data_through)   # with no upcoming bouts this only fills missing shadow picks
+    odds.snapshot(ledger)                   # market consensus for pending picks (config/odds.yaml; off until a key exists)
     ledger = grade(ledger, data_through)
     s = summarize(ledger, feed_status)
     OUT.mkdir(parents=True, exist_ok=True)
