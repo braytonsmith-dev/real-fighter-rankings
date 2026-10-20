@@ -19,6 +19,10 @@ so a 70-point rating gap counts more than a 5-point one (percentiles would not).
 Display-only: last five (W-L), streak, entrenched (5+ quality wins in 15 years),
 danger-adjusted durability (KO/TKO losses weighted by how dangerous the opponent was).
 
+The five hand-kept roster files (layoffs, roster_exclusions, division_overrides, reserved,
+interim_champions) hold dated entries and are read as of the board date, so a historical
+rebuild applies the roster state of that date rather than today's (see *_as_of below).
+
 Writes outputs/composite_rankings_full.csv (same columns publish.py and
 compare.py read), composite_top15_by_division.csv and composite_boards.md.
 """
@@ -39,9 +43,109 @@ OUT = ROOT / "outputs"
 CFG = ROOT / "config"
 
 
-def _yaml(name: str) -> dict:
+def _yaml(name: str) -> dict | list:
+    """Raw contents of config/<name> ({} when the file is missing or empty)."""
     p = CFG / name
     return (yaml.safe_load(p.read_text()) or {}) if p.exists() else {}
+
+
+_LEGACY_NOTED: set[str] = set()      # files already reported as using the undated format
+
+
+def _entry_date(value, name: str, field: str) -> pd.Timestamp:
+    """A YAML date or 'YYYY-MM-DD' string as a Timestamp."""
+    try:
+        ts = pd.Timestamp(value)
+    except (TypeError, ValueError) as e:
+        raise ValueError(f"{name}: '{field}' must be a date YYYY-MM-DD, got {value!r}") from e
+    if pd.isna(ts):
+        raise ValueError(f"{name}: '{field}' must be a date YYYY-MM-DD, got {value!r}")
+    return ts
+
+
+def dated_entries(name: str, as_of: pd.Timestamp, old_keys: tuple[str, str]) -> list[dict]:
+    """Entries of config/<name> in effect at `as_of`.
+
+    New format: a list of mappings, each with `since` (required), `until` (null or a date), `reason` and
+    `source`. An entry applies when since <= as_of and (until is null or as_of < until).
+    Old format: a plain mapping `key: value`, or a one-key item `- key: value` inside the list. Such entries
+    carry no dates, are treated as always in effect, and come back as {old_keys[0]: key, old_keys[1]: value}
+    with a one-line deprecation note (printed once per file per process).
+    """
+    raw = _yaml(name)
+    as_of = pd.Timestamp(as_of)
+    items: list[dict] = []
+    if isinstance(raw, dict) and "since" in raw:
+        raw = [raw]                                             # one dated entry written without the leading dash
+    if isinstance(raw, dict):
+        items = [{old_keys[0]: k, old_keys[1]: v, "_legacy": True} for k, v in raw.items()]
+    elif isinstance(raw, list):
+        for e in raw:
+            if not isinstance(e, dict):
+                raise ValueError(f"{name}: every entry must be a mapping, got {e!r}")
+            if "since" in e:
+                items.append(e)
+            elif len(e) == 1:                                   # an old-style line added to the new list
+                (k, v), = e.items()
+                items.append({old_keys[0]: k, old_keys[1]: v, "_legacy": True})
+            else:
+                raise ValueError(f"{name}: entry {e!r} needs a 'since' date YYYY-MM-DD")
+    else:
+        raise ValueError(f"{name}: expected a list of dated entries, got {type(raw).__name__}")
+    out, legacy = [], False
+    for e in items:
+        if e.get("_legacy"):
+            legacy = True
+            out.append(e)
+            continue
+        since = _entry_date(e["since"], name, "since")
+        until = e.get("until")
+        until = None if until is None else _entry_date(until, name, "until")
+        if not e.get("source"):
+            print(f"[{name}] entry {e.get(old_keys[0])!r} (since {since.date()}) has no source; every entry needs one")
+        if since <= as_of and (until is None or as_of < until):
+            out.append(e)
+    if legacy and name not in _LEGACY_NOTED:
+        _LEGACY_NOTED.add(name)
+        print(f"[{name}] deprecated: undated '{old_keys[0]}: {old_keys[1]}' entries apply to every board date; "
+              f"rewrite them as '- {{{old_keys[0]}: ..., since: YYYY-MM-DD, until: null, reason: ..., source: ...}}'")
+    return out
+
+
+def _field(e: dict, key: str, name: str) -> str:
+    if key not in e or e[key] in (None, ""):
+        raise ValueError(f"{name}: entry {e!r} has no '{key}'")
+    return str(e[key])
+
+
+def layoffs_as_of(as_of: pd.Timestamp) -> set[str]:
+    """Fighters on a documented injury layoff at `as_of` (config/layoffs.yaml): no inactivity penalty."""
+    return {_field(e, "fighter", "layoffs.yaml") for e in dated_entries("layoffs.yaml", as_of, ("fighter", "reason"))}
+
+
+def exclusions_as_of(as_of: pd.Timestamp) -> set[str]:
+    """Fighters off the UFC roster at `as_of` (config/roster_exclusions.yaml): released or retired, not back."""
+    return {_field(e, "fighter", "roster_exclusions.yaml")
+            for e in dated_entries("roster_exclusions.yaml", as_of, ("fighter", "reason"))}
+
+
+def division_overrides_as_of(as_of: pd.Timestamp) -> dict[str, str]:
+    """fighter -> division for announced moves in effect at `as_of` (config/division_overrides.yaml).
+    If two entries for one fighter overlap, the later one in the file wins."""
+    return {_field(e, "fighter", "division_overrides.yaml"): _field(e, "division", "division_overrides.yaml")
+            for e in dated_entries("division_overrides.yaml", as_of, ("fighter", "division"))}
+
+
+def reserved_as_of(as_of: pd.Timestamp) -> dict[str, str]:
+    """division -> fighter holding a reserved spot at `as_of` (config/reserved.yaml)."""
+    return {_field(e, "division", "reserved.yaml"): _field(e, "fighter", "reserved.yaml")
+            for e in dated_entries("reserved.yaml", as_of, ("division", "fighter"))}
+
+
+def interim_as_of(as_of: pd.Timestamp) -> dict[str, str]:
+    """division -> interim champion at `as_of` (config/interim_champions.yaml)."""
+    return {_field(e, "division", "interim_champions.yaml"): _field(e, "fighter", "interim_champions.yaml")
+            for e in dated_entries("interim_champions.yaml", as_of, ("division", "fighter"))}
 
 
 def horizon_weight(age_years: float, horizons: dict) -> float:
@@ -282,14 +386,14 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     bouts = bouts[bouts["date"] < as_of_ts]
     out, hist = run_resume(bouts, ResumeParams(**rc["engine"]))
 
-    injured = _yaml("layoffs.yaml")
-    gone = _yaml("roster_exclusions.yaml")
+    injured = layoffs_as_of(as_of_ts)          # roster files are read as of the board date, not today
+    gone = exclusions_as_of(as_of_ts)
     inact = rc["inactivity"]
 
     last = hist.groupby("fighter").tail(1).set_index("fighter")
     f = pd.DataFrame({"rating_raw": last["rating"], "last_fight": last["date"]})
     f["division"] = assign_divisions(out, as_of_ts).reindex(f.index)
-    for name, div in _yaml("division_overrides.yaml").items():
+    for name, div in division_overrides_as_of(as_of_ts).items():
         if name in f.index:
             f.loc[name, "division"] = div
     # last appearance includes no-contests
@@ -365,12 +469,12 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
         f["form_penalty"] = f["form_penalty"] + np.minimum(bad * float(fb["per_loss"]), float(fb["cap"]))
 
     champs = champions(out, as_of_ts)
-    interim = _yaml("interim_champions.yaml")
+    interim = interim_as_of(as_of_ts)
     for div, name in list(champs.items()) + list(interim.items()):
         f.loc[f["fighter"] == name, "division"] = div      # a title holder is ranked in his title's division
     f["champion"] = f.apply(lambda r: champs.get(r["division"]) == r["fighter"], axis=1)
     f["interim"] = f.apply(lambda r: interim.get(r["division"]) == r["fighter"], axis=1)
-    reserved = _yaml("reserved.yaml")
+    reserved = reserved_as_of(as_of_ts)
     for div, name in reserved.items():
         f.loc[f["fighter"] == name, "division"] = div
     f["reserved"] = f.apply(lambda r: reserved.get(r["division"]) == r["fighter"], axis=1)
@@ -427,7 +531,7 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     board["slot"] = np.where(board["champion"], 0, np.where(board["interim"], 1, np.where(board["reserved"], 2, 3)))
     board = board.sort_values(["division", "slot", "rank"])
 
-    overrides = _yaml("division_overrides.yaml")
+    overrides = division_overrides_as_of(as_of_ts)
     board["division_source"] = np.where(board["champion"] | board["interim"] | board["reserved"], "title holder or reserved",
                                 np.where(board["fighter"].isin(list(overrides)), "override (config)", "fight record"))
     def why(r) -> str:

@@ -179,11 +179,9 @@ def build_features(rated: pd.DataFrame, hist: pd.DataFrame, cfg: dict, as_of: pd
     # eligibility
     f = f[(f["days_since"] <= cfg["active_window_days"]) & (f["ufc_bouts"] >= cfg["min_ufc_bouts"])]
     f = f[f["division"].isin(RANKED_DIVISIONS)]
-    # fighters no longer on the UFC roster (released, retired); bout data cannot see this
-    roster = ROOT / "config" / "roster_exclusions.yaml"
-    if roster.exists():
-        gone = set((yaml.safe_load(roster.read_text()) or {}).keys())
-        f = f[~f.index.isin(gone)]
+    # fighters no longer on the UFC roster (released, retired) as of the board date; bout data cannot see this
+    from mmalab.resume_board import exclusions_as_of      # local import: resume_board imports this module
+    f = f[~f.index.isin(exclusions_as_of(as_of))]
     return f.reset_index().rename(columns={"index": "fighter"})
 
 
