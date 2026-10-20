@@ -558,14 +558,18 @@ def default_space(preset: str = "free") -> dict:
     """Each entry: (path into the params dict, list of candidate values). Coordinates whose meaning depends on a
     mode switch are listed in IMPLIES; the hindsight rule is one coordinate (mode and both blends together).
 
-    preset "free": everything the harness can express.
-    preset "resume": the same, minus the choices that would turn the board into a pure recency ranking: a quality
-    win keeps full value for at least three years (v1.0's first horizon step) and a loss counts against the ledger
-    for at most six years. These two constraints are the resume principles the curator holds fixed; the gap between
-    the two presets is the measured accuracy price of holding them."""
+    preset "free": everything the harness can express, including the age discount on the rating term.
+    preset "resume": minus the choices that would turn the board into a pure recency ranking: a quality win keeps
+    full value for at least three years (v1.0's first horizon step), a loss counts against the ledger for at most
+    six years, and no age discount (the rating stays a resume rating). These are the resume principles the curator
+    holds fixed; the gap between the presets is the measured accuracy price of holding them.
+    preset "ability": the resume constraints plus the age discount (the v1.2 candidate: rating as current ability,
+    ledger as resume)."""
     horizons = [{"kind": "steps", "steps": {3.0: 1.0, 5.0: 0.6, 10.0: 0.3, 15.0: 0.1}},
                 {"kind": "steps", "steps": {3.0: 1.0, 6.0: 0.75, 10.0: 0.5, 15.0: 0.25}},
                 {"kind": "steps", "steps": {2.0: 1.0, 4.0: 0.6, 8.0: 0.3, 15.0: 0.1}}]
+    if preset not in ("free", "resume", "ability"):
+        raise ValueError(f"unknown preset {preset!r}")
     fulls = (1.0, 2.0, 3.0, 4.0) if preset == "free" else (3.0, 4.0)
     for full in fulls:
         for tau in (1.0, 1.5, 2.5, 4.0, 6.0):
@@ -604,7 +608,8 @@ def default_space(preset: str = "free") -> dict:
         ("form", "cap"): [0.3, 0.45, 0.6],
         ("form", "bad_loss", "per_loss"): [0.0, 0.05, 0.1, 0.15],
         ("form", "bad_loss", "rank_above"): [10, 15],
-        ("age_discount",): [None] + [{"from_age": a0, "points_per_year": pp} for a0 in (28, 30, 32, 33, 34, 35) for pp in (10, 20, 30, 40)],
+        ("age_discount",): ([None] + [{"from_age": a0, "points_per_year": pp} for a0 in (28, 30, 32, 33, 34, 35) for pp in (10, 20, 30, 40)])
+                           if preset in ("free", "ability") else [None],
     }
 
 
@@ -808,7 +813,7 @@ def main(argv: list[str] | None = None) -> None:
     import argparse
     ap = argparse.ArgumentParser(description="REAL board tuning harness; every run is written to experiments/register.jsonl")
     ap.add_argument("--walk-forward", action="store_true")
-    ap.add_argument("--preset", default="resume", choices=["free", "resume"])
+    ap.add_argument("--preset", default="resume", choices=["free", "resume", "ability"])
     ap.add_argument("--engine", default="{}", help='JSON overrides for the rating engine, e.g. {"protected_loss_mult": 0.3}')
     ap.add_argument("--first-test-year", type=int, default=2017)
     ap.add_argument("--sweeps", type=int, default=3)
