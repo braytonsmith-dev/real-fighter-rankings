@@ -1,0 +1,234 @@
+{
+ "params": {
+  "w_rating": 0.7,
+  "horizon": {
+   "kind": "exp",
+   "full_years": 2.0,
+   "tau": 1.0,
+   "max_years": 15.0
+  },
+  "proof_value": 0.25,
+  "loss": {
+   "mode": "tiers",
+   "years": 15.0,
+   "tiers": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+   ],
+   "dominant_extra": 1.0,
+   "decay": "flat"
+  },
+  "hindsight": {
+   "mode": "now_official",
+   "alpha_win": 0.5,
+   "alpha_loss": 0.25
+  },
+  "form": {
+   "mode": "tiered",
+   "buckets": {
+    "2-3": 0.15,
+    "1-4": 0.6,
+    "0-5": 0.8
+   },
+   "tiers": [
+    0.05,
+    0.1,
+    0.1,
+    0.2
+   ],
+   "cap": 0.3,
+   "bad_loss": {
+    "rank_above": 10,
+    "per_loss": 0.0,
+    "cap": 0.3
+   }
+  }
+ },
+ "in_sample": {
+  "bouts": 3748,
+  "concordance": 0.6043223052294557,
+  "log_loss": 0.6639626844782932,
+  "brier": 0.235659688489754,
+  "slope": 1.3540648729160778,
+  "top30": {
+   "bouts": 1900,
+   "concordance": 0.5794736842105264,
+   "log_loss": 0.6713018940026027
+  },
+  "top15": {
+   "bouts": 913,
+   "concordance": 0.5553121577217963,
+   "log_loss": 0.6789821260176531
+  }
+ },
+ "trail": [
+  [
+   "start",
+   0.6771807305655517
+  ],
+  [
+   "sweep 1 w_rating -> 0.75",
+   0.67659149899032
+  ],
+  [
+   "sweep 1 w_rating -> 0.8",
+   0.6761167925403354
+  ],
+  [
+   "sweep 1 w_rating -> 0.85",
+   0.6757738677737672
+  ],
+  [
+   "sweep 1 w_rating -> 0.9",
+   0.6755741826446009
+  ],
+  [
+   "sweep 1 horizon -> {'kind': 'steps', 'steps': {2.0: 1.0, 4.0: 0.6, 8.0: 0.3, 15.0: 0.1}}",
+   0.6751738318438646
+  ],
+  [
+   "sweep 1 horizon -> {'kind': 'exp', 'full_years': 1.0, 'tau': 1.0, 'max_years': 15.0}",
+   0.6742296209689311
+  ],
+  [
+   "sweep 1 loss.dominant_extra -> 0.5",
+   0.6741849017300537
+  ],
+  [
+   "sweep 1 loss.dominant_extra -> 1.0",
+   0.6741199761521636
+  ],
+  [
+   "sweep 1 loss.years -> 4.0",
+   0.6740208129441893
+  ],
+  [
+   "sweep 1 loss.years -> 6.0",
+   0.6735767977003774
+  ],
+  [
+   "sweep 1 loss.years -> 10.0",
+   0.6727219619835438
+  ],
+  [
+   "sweep 1 loss.years -> 15.0",
+   0.6725265751060485
+  ],
+  [
+   "sweep 1 hindsight -> {'mode': 'now_rating', 'alpha_win': 0.5, 'alpha_loss': 0.25}",
+   0.672505847331817
+  ],
+  [
+   "sweep 1 hindsight -> {'mode': 'now_rating', 'alpha_win': 0.75, 'alpha_loss': 0.25}",
+   0.6724816103362248
+  ],
+  [
+   "sweep 1 hindsight -> {'mode': 'now_rating', 'alpha_win': 1.0, 'alpha_loss': 0.25}",
+   0.6724608722413707
+  ],
+  [
+   "sweep 1 hindsight -> {'mode': 'now_official', 'alpha_win': 0.25, 'alpha_loss': 0.25}",
+   0.6723342122868221
+  ],
+  [
+   "sweep 1 hindsight -> {'mode': 'now_official', 'alpha_win': 0.5, 'alpha_loss': 0.25}",
+   0.6723311750166976
+  ],
+  [
+   "sweep 1 form.mode -> tiered",
+   0.6680355586514226
+  ],
+  [
+   "sweep 1 form.tiers -> [0.05, 0.05, 0.15, 0.15]",
+   0.6679732749264121
+  ],
+  [
+   "sweep 1 form.tiers -> [0.05, 0.1, 0.1, 0.15]",
+   0.6678437127230973
+  ],
+  [
+   "sweep 1 form.tiers -> [0.05, 0.1, 0.15, 0.15]",
+   0.6677758066954654
+  ],
+  [
+   "sweep 1 form.cap -> 0.6",
+   0.6677277172565623
+  ],
+  [
+   "sweep 2 w_rating -> 0.55",
+   0.6675930168828198
+  ],
+  [
+   "sweep 2 w_rating -> 0.6",
+   0.6668442242598801
+  ],
+  [
+   "sweep 2 w_rating -> 0.65",
+   0.6662744200305291
+  ],
+  [
+   "sweep 2 w_rating -> 0.7",
+   0.6659382657276872
+  ],
+  [
+   "sweep 2 w_rating -> 0.75",
+   0.6658865098442959
+  ],
+  [
+   "sweep 2 horizon -> {'kind': 'exp', 'full_years': 1.0, 'tau': 1.5, 'max_years': 15.0}",
+   0.6658826552048277
+  ],
+  [
+   "sweep 2 horizon -> {'kind': 'exp', 'full_years': 2.0, 'tau': 1.0, 'max_years': 15.0}",
+   0.665842060498639
+  ],
+  [
+   "sweep 2 loss.tiers -> [0.0, 0.25, 0.5, 0.75]",
+   0.6653099083221783
+  ],
+  [
+   "sweep 2 loss.tiers -> [0.0, 0.25, 0.5, 1.0]",
+   0.6653083761369774
+  ],
+  [
+   "sweep 2 form.tiers -> [0.05, 0.05, 0.1, 0.15]",
+   0.6652314668368081
+  ],
+  [
+   "sweep 2 form.tiers -> [0.05, 0.1, 0.1, 0.15]",
+   0.6650981560403819
+  ],
+  [
+   "sweep 2 form.cap -> 0.3",
+   0.6647719771046801
+  ],
+  [
+   "sweep 3 w_rating -> 0.6",
+   0.6647319541163135
+  ],
+  [
+   "sweep 3 w_rating -> 0.65",
+   0.6644235006322419
+  ],
+  [
+   "sweep 3 w_rating -> 0.7",
+   0.6644215623953927
+  ],
+  [
+   "sweep 3 proof_value -> 0.25",
+   0.6644076084392911
+  ],
+  [
+   "sweep 3 form.tiers -> [0.05, 0.05, 0.1, 0.2]",
+   0.6642109844467422
+  ],
+  [
+   "sweep 3 form.tiers -> [0.05, 0.1, 0.1, 0.2]",
+   0.6639626844782932
+  ]
+ ],
+ "engine": {},
+ "preset": "free"
+}

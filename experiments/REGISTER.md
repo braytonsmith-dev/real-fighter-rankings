@@ -13,8 +13,8 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-03](#exp-2026-10-20-03) | 2026-10-20 | Panel comparison: v1.0 rules vs B+0 under two engines | informational |
 | [EXP-2026-10-20-04](#exp-2026-10-20-04) | 2026-10-20 | Walk-forward tuning of the board rules, first pass (search blind spot) | superseded |
 | [EXP-2026-10-20-05](#exp-2026-10-20-05) | 2026-10-20 | Hindsight re-grading of results (curator's idea) | parked |
-| [EXP-2026-10-20-06](#exp-2026-10-20-06) | 2026-10-20 | Walk-forward tuning, second pass: coupled coordinates, free and resume presets | running |
-| [EXP-2026-10-20-07](#exp-2026-10-20-07) | 2026-10-20 | Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks) | running |
+| [EXP-2026-10-20-06](#exp-2026-10-20-06) | 2026-10-20 | Walk-forward tuning, second pass: coupled coordinates, free and resume presets | informational |
+| [EXP-2026-10-20-07](#exp-2026-10-20-07) | 2026-10-20 | Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks) | informational |
 | [EXP-2026-10-20-08](#exp-2026-10-20-08) | 2026-10-20 | v1.1 retrospective reconstruction (its own snapshot directory) | informational |
 | [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | rejected |
 | [EXP-2026-10-20-10](#exp-2026-10-20-10) | 2026-10-20 | Glicko-1 rating deviation for the resume rating: parameter derivation and calibration | adopted |
@@ -303,7 +303,7 @@ Decision. parked: Small real gain, but it does the one thing the curator ruled o
 ## EXP-2026-10-20-06
 
 Walk-forward tuning, second pass: coupled coordinates, free and resume presets  
-Date 2026-10-20, decision: running, code at commit `d4a9325`.
+Date 2026-10-20, decision: informational, code at commit `d4a9325`.
 
 Question. With the search blind spot fixed, how much held-out accuracy is available (a) with every rule free and (b) holding the resume principles fixed (quality wins keep full value for three or more years; losses count for at most six years), under the v1.0 engine and the 0.30-protection engine?
 
@@ -319,14 +319,24 @@ Question. With the search blind spot fixed, how much held-out accuracy is availa
 
 Candidate. `{"driver": "scratchpad tune_driver.py calling board_tune.walk_forward(space=default_space(preset))"}`
 
-Results. running
+| Result | |
+|---|---|
+| free preset, held out 2017-2026 (2,903 bouts) | tuned 0.6052 / 0.6668; v1.0 0.5753 / 0.6784; B+0 0.5787 / 0.6756; tuned minus v1.0: log loss -0.0115 CI [-0.0162, -0.0068], concordance +0.0300 CI [0.0171, 0.0427]; top 15 (755): tuned 0.5669 vs v1.0 0.5364 |
+| resume preset, held out 2017-2026 (2,903 bouts) | tuned 0.5911 / 0.6713; v1.0 0.5753 / 0.6784; B+0 0.5787 / 0.6756; tuned minus v1.0: log loss -0.0070 CI [-0.0108, -0.0034], concordance +0.0158 CI [0.0035, 0.0281]; top 15 (755): tuned 0.5669 vs v1.0 0.5364 |
+| free full-sample fit (in-sample 0.6043 / 0.6640) | {"w_rating": 0.7, "horizon": {"kind": "exp", "full_years": 2.0, "tau": 1.0, "max_years": 15.0}, "proof_value": 0.25, "loss": {"mode": "tiers", "years": 15.0, "tiers": [0.0, 0.25, 0.5, 1.0], "dominant_extra": 1.0, "decay": "flat"}, "hindsight": {"mode": "now_official", "alpha_win": 0.5, "alpha_loss": 0.25}, "form": {"mode": "tiered", "buckets": {"2-3": 0.15, "1-4": 0.6, "0-5": 0.8}, "tiers": [0.05, 0.1, 0.1, 0.2], "cap": 0.3, "bad_loss": {"rank_above": 10, "per_loss": 0.0, "cap": 0.3}}} |
+| resume full-sample fit (in-sample 0.5894 / 0.6683) | {"w_rating": 0.8, "horizon": {"kind": "exp", "full_years": 3.0, "tau": 1.0, "max_years": 15.0}, "proof_value": 0.25, "loss": {"mode": "tiers", "years": 6.0, "tiers": [0.25, 0.25, 0.5, 0.75], "dominant_extra": 1.0, "decay": "flat"}, "hindsight": {"mode": "now_official", "alpha_win": 0.25, "alpha_loss": 0.25}, "form": {"mode": "tiered", "buckets": {"2-3": 0.15, "1-4": 0.6, "0-5": 0.8}, "tiers": [0.05, 0.1, 0.1, 0.15], "cap": 0.6, "bad_loss": {"rank_above": 10, "per_loss": 0.0, "cap": 0.3}}} |
+| stability of choices (free) | horizon fast decay in 9 of 10 folds; loss tiers [0, 0.25, 0.5, 0.75] in 9 of 10; loss window 10 to 15 years; hindsight now_official in all 10 folds; rating weight 0.60 to 0.65 |
+| price of the resume principles | about 1.4 points of concordance and 0.0045 log loss held out (free 0.6052 / 0.6668 vs resume 0.5911 / 0.6713) |
+| note | the 0.30-protection engine runs were dropped after the engine sweep (EXP-2026-10-20-07) showed the engine levers accuracy-neutral |
 
-Decision. running: Registered before the result; results are filled in by update() when the run finishes.
+Decision. informational: Both presets beat v1.0 out of sample (free +3.0 points, resume +1.6 points of concordance). The free rules are recency plus hindsight plus a long memory of losses, which the curator rejects for a resume board; the resume preset keeps three-year full credit and a six-year loss memory and still gains 1.6 points, but it chose hindsight (alpha 0.25) and a 1.0 blowout surcharge, so its face validity must be checked before it becomes a v1.2 proposal. No change to v1.1.
+
+Files: `experiments/results/EXP-2026-10-20-06/walkforward_free.json`, `experiments/results/EXP-2026-10-20-06/walkforward_resume.json`, `experiments/results/EXP-2026-10-20-06/fullfit_free.json`, `experiments/results/EXP-2026-10-20-06/fullfit_resume.json`, `experiments/results/EXP-2026-10-20-06/pooled_free.csv`, `experiments/results/EXP-2026-10-20-06/pooled_resume.csv`
 
 ## EXP-2026-10-20-07
 
 Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks)  
-Date 2026-10-20, decision: running, code at commit `d4a9325`.
+Date 2026-10-20, decision: informational, code at commit `d4a9325`.
 
 Question. Which rating-engine settings predict better on the 2014-2026 panel with the v1.1 board rules fixed, and which of them move the anchors (Usman, Buckley, Adesanya, Vera)?
 
@@ -342,9 +352,26 @@ Question. Which rating-engine settings predict better on the 2014-2026 panel wit
 
 Candidate. `{"variants": {"base": {}, "p30": {"protected_loss_mult": 0.3}, "p50": {"protected_loss_mult": 0.5}, "p100": {"protected_loss_mult": 1.0}, "cons100": {"consecutive_loss_mult": 1.0}, "ladder_30_60_100": {"protection_ladder": [0.3, 0.6, 1.0]}, "ladder_15_50_100": {"protection_ladder": [0.15, 0.5, 1.0]}, "k80": {"k": 80}, "k100": {"k": 100}, "k80_p30": {"k": 80, "protected_loss_mult": 0.3}, "dom100": {"dominant_loss_mult": 1.0}, "noprot": "no protection at all", "official_off": {"use_official_ranks": false}}}`
 
-Results. running
+| Result | |
+|---|---|
+| base | v1.1 rules 0.5795 / 0.6748 (top 15 0.5343); v1.0 rules 0.5734 / 0.6772; Usman 4, Adesanya 14, Vera 14 |
+| p30 | v1.1 rules 0.5811 / 0.6748 (top 15 0.5397); v1.0 rules 0.5742 / 0.6771; Usman 4, Adesanya 14, Vera 13 |
+| p50 | v1.1 rules 0.5811 / 0.6746 (top 15 0.5385); v1.0 rules 0.5731 / 0.6770; Usman 4, Adesanya 14, Vera 13 |
+| p100 | v1.1 rules 0.5830 / 0.6743 (top 15 0.5433); v1.0 rules 0.5760 / 0.6766; Usman 5, Adesanya 18, Vera 14 |
+| cons100 | v1.1 rules 0.5800 / 0.6748 (top 15 0.5354); v1.0 rules 0.5728 / 0.6771; Usman 4, Adesanya 14, Vera 14 |
+| ladder_30_60_100 | v1.1 rules 0.5795 / 0.6745 (top 15 0.5307); v1.0 rules 0.5723 / 0.6769; Usman 4, Adesanya 18, Vera 13 |
+| ladder_15_50_100 | v1.1 rules 0.5814 / 0.6745 (top 15 0.5352); v1.0 rules 0.5734 / 0.6769; Usman 4, Adesanya 18, Vera 13 |
+| k80 | v1.1 rules 0.5822 / 0.6743 (top 15 0.5370); v1.0 rules 0.5742 / 0.6768; Usman 4, Adesanya 14, Vera 14 |
+| k100 | v1.1 rules 0.5814 / 0.6742 (top 15 0.5398); v1.0 rules 0.5737 / 0.6767; Usman 5, Adesanya 14, Vera 15 |
+| k80_p30 | v1.1 rules 0.5819 / 0.6743 (top 15 0.5385); v1.0 rules 0.5747 / 0.6768; Usman 4, Adesanya 14, Vera 14 |
+| dom100 | v1.1 rules 0.5811 / 0.6746 (top 15 0.5402); v1.0 rules 0.5710 / 0.6770; Usman 4, Adesanya 15, Vera 14 |
+| noprot | v1.1 rules 0.5811 / 0.6740 (top 15 0.5419); v1.0 rules 0.5753 / 0.6765; Usman 5, Adesanya 20, Vera 15 |
+| official_off | v1.1 rules 0.5771 / 0.6752 (top 15 0.5499); v1.0 rules 0.5715 / 0.6776; Usman 1, Adesanya 15, Vera 23 |
+| reading | every engine lever is accuracy-neutral (largest log-loss change 0.0008); the protection multipliers, the ladder, K and the dominant-loss multiplier do not move the anchors except that removing official ranks (M4) puts Usman first in score order; the last six variants ran on data with five more bouts (same-name split merged mid-sweep), so their paired intervals are omitted |
 
-Decision. running: Registered before the result; results are filled in by update() when the run finishes.
+Decision. informational: The rating engine's protections are a cheap resume principle in predictive terms, as section 11 of the methodology already said; nothing here changes v1.1. M4 (model positions instead of official ranks) is neutral on accuracy and remains a philosophical option for a later version.
+
+Files: `experiments/results/EXP-2026-10-20-07/engine_sweep.csv`
 
 ## EXP-2026-10-20-08
 
