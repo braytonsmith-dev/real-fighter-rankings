@@ -1,6 +1,6 @@
 # Data sources, rights and redistribution basis
 
-Last reviewed Oct 1, 2026. This file records, for every dataset in the repository, where it came from, how it was obtained, the upstream terms as far as they are published, what the repository redistributes, and what it only regenerates. It is a disclosure, not a legal opinion. The author is an independent fan researcher with no affiliation to UFC, Zuffa, LLC, TKO Group Holdings, Meta, Sherdog, ESPN, Fight Matrix or any athlete.
+Last reviewed Oct 20, 2026. This file records, for every dataset in the repository, where it came from, how it was obtained, the upstream terms as far as they are published, what the repository redistributes, and what it only regenerates. It is a disclosure, not a legal opinion. The author is an independent fan researcher with no affiliation to UFC, Zuffa, LLC, TKO Group Holdings, Meta, Sherdog, ESPN, Fight Matrix or any athlete.
 
 ## Summary table
 
@@ -19,7 +19,7 @@ Judges' scorecards are not a separate source. UFCStats prints each judge's total
 
 ## Name matching and manual files
 
-Fighter names are matched across sources by normalisation plus a strict fuzzy rule (`src/mmalab/official_ranks.py`, `compare.py`). Official ranking names that the two sources spell differently are mapped by hand in `config/official_rank_aliases.yaml` (11 fighters, each with how the identity was confirmed); the only ranked name without a UFCStats match is a fighter who never fought in the UFC, listed in `config/official_rank_unmatched_ok.yaml`. The build raises an error for any other unmatched name, so a data refresh cannot silently treat a ranked fighter as unranked. Manual files (`config/layoffs.yaml`, `roster_exclusions.yaml`, `division_overrides.yaml`, `champions_override.yaml`, `interim_champions.yaml`, `reserved.yaml`, `short_notice.yaml`) record current state; from v1.1 every entry will carry an effective date and a source URL so that historical rebuilds can query the state as of that date.
+Fighter names are matched across sources by normalisation plus a strict fuzzy rule (`src/mmalab/official_ranks.py`, `compare.py`). Official ranking names that the two sources spell differently are mapped by hand in `config/official_rank_aliases.yaml` (11 fighters, each with how the identity was confirmed); the only ranked name without a UFCStats match is a fighter who never fought in the UFC, listed in `config/official_rank_unmatched_ok.yaml`. The build raises an error for any other unmatched name, so a data refresh cannot silently treat a ranked fighter as unranked. Manual files (`config/layoffs.yaml`, `roster_exclusions.yaml`, `division_overrides.yaml`, `champions_override.yaml`, `interim_champions.yaml`, `reserved.yaml`, `short_notice.yaml`) carry an effective date (`since`, optional `until`) and a source on every entry since Oct 20, 2026, and the build reads them as of the board date, so a historical rebuild applies the roster state of that date rather than today's.
 
 ## Trademarks and likenesses
 
@@ -28,3 +28,25 @@ Fighter and event names are used only to identify athletes and events. The site 
 ## Conference disclosure
 
 The MIT Sloan Sports Analytics Conference requires a public repository with the data used and makes authors responsible for permission to reproduce third-party material. This file is the author's disclosure for that requirement. Before the full paper, the author will (1) ask SSAC whether reproducible acquisition scripts plus derived data satisfy the open-data rule where raw redistribution rights are uncertain, (2) request a license statement from the two GitHub maintainers, and (3) remove any raw snapshot on request from its owner.
+
+## Requests drafted Oct 20, 2026 (to be posted by the author under his own account)
+
+The three messages below are ready to send. They are kept here so the request, the date it was sent and the answer are all in one place; the answer goes in the summary table's "Open item" column when it arrives.
+
+### 1. To martj42/ufc_rankings_history (GitHub issue, title: "License for the rankings history data?")
+
+Hello, and thank you for maintaining this archive. I use `rankings_history.csv` in an open-source, non-commercial research project, REAL Fighter Rankings (github.com/braytonsmith-dev/real-fighter-rankings), to look up each fighter's official rank on the day of a fight. The repository currently redistributes a snapshot of your file for reproducibility, with attribution to this repository and to UFC as the publisher of the rankings. The project is also the basis of a paper submitted to the MIT Sloan Sports Analytics Conference, which asks authors to publish the data they used.
+
+Could you add a license to the repository (for example CC BY 4.0 or ODbL for the data), or state here how you would like the file to be used and credited? If you would rather it not be redistributed, I will remove the snapshot and point readers to this repository with a download script instead. Either answer is fine; I would just like to record it accurately. Thank you.
+
+### 2. To jansen88/ufc-data (GitHub issue, title: "Terms for cleaned_odds.csv?")
+
+Hello, and thank you for publishing this dataset. I use `data/cleaned_odds.csv` (closing odds, Nov 2014 to Dec 2023) in an open-source, non-commercial research project, REAL Fighter Rankings (github.com/braytonsmith-dev/real-fighter-rankings), only to benchmark a rating model against the de-vigged market, and the repository currently redistributes a snapshot of the file for reproducibility with attribution to this repository. The README says the odds were scraped from betmma.tips.
+
+Could you say under what terms the file may be reused and redistributed (a license file would be ideal), and whether you obtained any permission from betmma.tips that I should also credit? If redistribution is not something you want, I will remove the snapshot and keep only the derived comparison numbers with a citation to this repository. Thank you.
+
+### 3. To the SSAC27 organisers (email, subject: "Open-data requirement where raw redistribution rights are uncertain")
+
+I submitted an abstract in the Other Sports track (REAL Fighter Rankings, Brayton Smith, independent researcher). The project's code is MIT-licensed and public, and every number in the paper is regenerated by a script from public sources. Two of the raw inputs, a community archive of the official UFC rankings and a community file of closing odds, carry no license statement upstream, and UFC's own terms restrict redistribution of content from its statistics site. I have asked both maintainers for a license statement and will follow their answer.
+
+Question: for the conference's open-data requirement, is it acceptable to publish (a) the acquisition scripts that reproduce the raw files from upstream in minutes, plus (b) the derived datasets and all outputs, while removing any raw snapshot whose owner objects? If the conference needs the raw files themselves in the repository, I would like to know before the full-paper deadline so the data section can be written accordingly. Thank you.
