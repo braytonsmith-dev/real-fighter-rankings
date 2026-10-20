@@ -17,6 +17,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-07](#exp-2026-10-20-07) | 2026-10-20 | Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks) | running |
 | [EXP-2026-10-20-08](#exp-2026-10-20-08) | 2026-10-20 | v1.1 retrospective reconstruction (its own snapshot directory) | informational |
 | [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | parked |
+| [EXP-2026-10-20-10](#exp-2026-10-20-10) | 2026-10-20 | Glicko-1 rating deviation for the resume rating: parameter derivation and calibration | adopted |
 
 ## EXP-2026-09-30-01
 
@@ -413,3 +414,37 @@ Candidate. `{"diagnostic": "favourite's age x last-five losses", "remedy tested"
 Decision. parked: The largest single effect found so far, three to four points of concordance and six at the top 15, and it is the arithmetic behind the Usman case (age 39). It changes what the board is: the rating term becomes current ability, not resume. Proposed as the v1.2 candidate after walk-forward tuning of from_age and the slope (this entry is in-sample) and the curator's decision on the resume question; never applied to v1.0 or v1.1.
 
 Files: `experiments/results/EXP-2026-10-20-09/age_grid_in_sample.csv`, `experiments/results/EXP-2026-10-20-09/age_grid_extended.csv`
+
+## EXP-2026-10-20-10
+
+Glicko-1 rating deviation for the resume rating: parameter derivation and calibration  
+Date 2026-10-20, decision: adopted, code at commit `bde66dd`.
+
+Question. Can a per-fighter rating deviation (RD) be attached to the resume rating that separates a one-bout newcomer from a twenty-bout veteran, and are its widths consistent with outcomes?
+
+| Method | |
+|---|---|
+| instrument | src/mmalab/uncertainty.py (Glicko-1 formulas on the engine's pre-fight ratings; display only, never ordering) |
+| window | all 8,950 bouts to Oct 17, 2026 (2,776 fighters); calibration on 5,817 decided bouts since 2015 |
+| metric | RD distribution by career bouts; favourite win rate by standardised rating gap in 8 equal-count bins against the Glicko expectation; log loss of the plain gap vs the Glicko-shrunk gap |
+| baseline | the plain 400-scale Elo expectation |
+| interval | bin standard error about 0.018; mean bias standard error about 0.006 |
+
+Candidate. `{"shipped": {"rd_start": 350, "rd_min": 40, "c_per_year": 37.3, "rule": "information balance: RD^2 added between bouts at the median cadence equals what one typical bout removes from an established fighter"}, "rejected": {"c_per_year": 130.2, "rule": "Glicko's t = 5 years from the median 10th-bout RD, iterated to a fixed point"}}`
+
+| Result | |
+|---|---|
+| RD by career bouts at the fighter's last bout, c = 37.3 (median) | 1 bout 290; 2-3 bouts 228; 4-9 bouts 169; 10+ bouts 121 |
+| same at c = 130.2 | 290; 247; 215; 199 (a 20-bout veteran no better measured than a 7-bout fighter: rejected) |
+| today's board | rd >= 200 flags exactly the 212 fighters with 1-3 bouts plus 7 four-bout fighters; median RD 235 for top-30 slots held by fighters with 3 or fewer bouts vs 120 for 10+ |
+| band width | a 1-RD band spans 5 or more positions for 99% of the board because the within-division rating SD (about 95) is about one veteran RD; median span 56 positions (42 in the top 30) |
+| calibration | favourites win more often than the Glicko expectation in 7 of 8 bins (bias +0.019 at c = 37.3, +0.026 at c = 130; the plain Elo gap is unbiased at +0.003 and has the lower log loss, 0.6781 vs 0.6795 to 0.6802); gap slope 0.95 of nominal (0.87 when both fighters have 3+ bouts) |
+| no-mutation check | run_resume outputs byte-identical with and without the module |
+
+| Face validity | |
+|---|---|
+| Lightweight today | Oliveira 1860 RD 105 band ranks 1-4; Topuria 1792 RD 132 band 1-14; Pimblett 1720 RD 132 band 3-31; a one-bout newcomer at 1545 RD 291 spans the whole division |
+
+Decision. adopted: RD is attached to every board row as a measurement-information statement (bouts fought, opponents' certainty, time idle) and drives nothing in the order. It is not a predictive shrinkage: applying g() to an Elo-type gap double-shrinks, and debutants are over-rated at 1500 (a bias, not a variance). Showing rank bands would mislead (almost every band spans 5+ places); the experience contrast is the usable signal and backs the provisional label.
+
+Notes. Worth remembering: Glicko's t = 5 rule is incompatible with a usable experience gradient in UFC data (about 2 bouts a year, d of about 412 points per bout). A grace-period inflation (idle time beyond 0.5 years at c of about 146) would give both a gradient at normal cadence and a reset after a long layoff; not implemented.
