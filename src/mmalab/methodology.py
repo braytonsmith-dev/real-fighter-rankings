@@ -267,6 +267,18 @@ def build_text() -> str:
     a("- Division overrides, injuries and retirements are hand-kept and need weekly review.")
     a("- Weights and thresholds were set by stated judgment and checked against the public boards (which makes those boards an informal tuning target); section 11 reports what each engine constant costs out of sample, and none has been fitted to any outcome.")
     a("- Card-quality and matchmaking analyses use the predictive model's positions, not these boards.")
+    a("- Age. The board carries no age term, on purpose. Measured on 3,748 bouts between two board fighters from 2014 to 2026, "
+      "the higher-ranked fighter won 45% of bouts when aged 35 or older against 58 to 63% when younger, in every period and division, "
+      "and a rating discount by age would raise concordance by three to four points (experiments/REGISTER.md, EXP-2026-10-20-09). "
+      "It was rejected for the board because a resume rank lags ability by construction: a contender earns the higher spot by beating "
+      "the man who holds it, and an older top-10 fighter loses more often because he is matched against the best. Predictive concordance "
+      "is therefore reported as a descriptive check, never used as the objective (PREREGISTRATION.md section 8). Age belongs in the "
+      "prediction model, and a per-fighter decline and rise profile built from career statistics is under development to be shown "
+      "beside the resume rank, not inside it.")
+    a("- Resume-board tests. Because prediction is not the objective, the board's own tests are published every week in "
+      "`outputs/board_quality.json`: top-15 turnover, moves of more than three places without a bout, head-to-head results the "
+      "placement rules leave unresolved (with the reason each was left), published ranks outside their own weight band, roster facts "
+      "added in the last seven days, and agreement with each public board. None of them is a tuning target.")
     a("")
     a("## 13. Shadow versions under test")
     a("")
