@@ -36,6 +36,7 @@ import yaml
 
 from mmalab.resume import ResumeParams, run_resume
 from mmalab.rankings import RANKED_DIVISIONS, champions
+from mmalab.uncertainty import board_bands
 
 ROOT = Path(__file__).resolve().parents[2]
 PROC = ROOT / "data" / "processed"
@@ -625,6 +626,8 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     board["rank"] = board["pos"].fillna(0).astype(int)
     board["slot"] = np.where(board["champion"], 0, np.where(board["interim"], 1, np.where(board["reserved"], 2, 3)))
     board = board.sort_values(["division", "slot", "rank"])
+    # measurement uncertainty (Glicko-1 deviation track, config/uncertainty.yaml): display and audit only, never ordering
+    board = board.join(board_bands(out, board, as_of_ts, z=1.0))
 
     overrides = division_overrides_as_of(as_of_ts)
     board["division_source"] = np.where(board["champion"] | board["interim"] | board["reserved"], "title holder or reserved",
