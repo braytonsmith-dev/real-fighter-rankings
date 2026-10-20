@@ -1,0 +1,28 @@
+# Glicko-1 rating deviation (RD) for the resume rating (src/mmalab/uncertainty.py).
+# Display only: the track reads the engine's pre-fight ratings and never changes a rating
+# or a rank. v1.0 stays frozen. Reproduce every number below with
+#   PYTHONPATH=src python -m mmalab.uncertainty
+
+rd_start: 350        # a debutant's RD (Glicko default); inflation is capped here
+rd_min: 40           # floor on RD after a bout (never reached in the data: minimum 58 with c = 0)
+c_per_year: 37.3     # inflation while idle: RD_pre = min(sqrt(RD_post^2 + c^2 * years_idle), rd_start)
+
+# How c was chosen (data through 2026-10-17, 8,950 UFC bouts, 2,776 fighters).
+#
+# Information balance (shipped). For a fighter on the median UFC cadence (one bout every 0.460 years),
+# the RD^2 added between bouts equals the RD^2 one typical bout removes from an established fighter:
+#   veteran RD        103.7  median rd_post at the last bout of fighters with 10+ bouts, no inflation
+#   median d per bout 412    sqrt(d^2), Glicko's information in one bout
+#   one bout removes  640    of RD^2 at the veteran RD
+#   c = sqrt(640 / 0.460) = 37.3
+# Regular activity holds a veteran near RD 104 (120 with the inflation running); only idle time beyond
+# the usual cadence widens the band: 104 -> 113 at the board's 540-day cutoff, 116 at two years,
+# 133 at five years (return to 350 takes about 80 idle years).
+#
+# Glicko's rule (reported, not shipped): c = sqrt((rd_start^2 - rd_typical^2) / t), t = 5 years,
+# rd_typical = median rd_post at a fighter's tenth bout. First pass (no inflation) rd_typical = 123.5
+# gives c = 146.4; solved self-consistently (rd_typical depends on c) it converges in six steps to
+# c = 130.2 with rd_typical = 194.2. With fewer than two bouts a year and one Bernoulli observation per
+# bout, that inflation swamps the information: the median RD is flat near 192 from the seventh bout on,
+# the 10+ bout group (199) sits barely below the 2-3 bout group (247), and the calibration check shows
+# those RDs are too wide (favourites win more often than the Glicko expectation in 7 of 8 bins).
