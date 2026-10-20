@@ -43,6 +43,8 @@ The author designed the ranking principles, made every modelling decision record
 
 Every Monday and Friday the pipeline reads the upcoming UFC schedule, writes a pick for each bout inside the next three weeks to `predictions/picks.csv` (frozen performance-adjusted Elo probability, pick, confidence band, provisional flag, UTC timestamp) and never edits it. After each card the picks are graded from UFCStats and the running record (accuracy with interval, log loss, calibration by confidence band, baselines on the same bouts) goes to `outputs/picks_summary.json` and `docs/picks.html`. Each row also carries the pick of shadow v1.1 (`src/mmalab/shadow.py`: Elo re-tuned walk-forward over 2011 onward with a red-corner term, plus a logistic layer on age, layoff, experience, height and five-round bouts; development results in `outputs/shadow_v11_report.json`), which is graded alongside v1.0 and adopted only under PREREGISTRATION.md appendix B. Rules: PREREGISTRATION.md, appendices A and B. Settings: `config/picks.yaml`; `publish_page: true` adds the page to the site navigation.
 
+Market baseline (off by default): `src/mmalab/odds.py` can record the de-vigged bookmaker consensus for every pending pick, once at lock time and once on the last run before the event, to `predictions/market_at_lock.csv`, so each miss can be read against the market on the same bout. It needs a free key from The Odds API in the GitHub Actions secret `ODDS_API_KEY` and `enabled: true` in `config/odds.yaml`; only derived probabilities and the number of books are stored publicly. Setup, what is stored, and the terms with citations: MARKET_BASELINE.md.
+
 ## Build it yourself, step by step
 
 Measure twice, cut once. Each step has a check so you know it worked before moving on.
@@ -145,6 +147,7 @@ src/mmalab/rankings.py         legacy six-dimension composite (v0.x)
 src/mmalab/card_quality.py     top-10 vs top-10 bouts per card, supply facts
 src/mmalab/figures.py          paper figures and table
 src/mmalab/publish.py          docs/index.html for GitHub Pages
+src/mmalab/odds.py             market baseline for the picks (The Odds API client, de-vigged consensus, append-only ledger); config/odds.yaml
 src/mmalab/run_all.py          the whole pipeline in order
 scripts/refresh_data.sh        download fresh CSVs and rebuild
 paper/abstract_ssac27.md       the SSAC27 abstract (under 500 words)

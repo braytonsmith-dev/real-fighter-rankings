@@ -1,0 +1,47 @@
+# Market baseline for the picks ledger: settings for src/mmalab/odds.py.
+# Off by default. To turn it on: create a key at https://the-odds-api.com, add it to the repository as the
+# GitHub Actions secret ODDS_API_KEY, and set enabled: true. The key is read from that environment variable
+# only; it is never read from, or written to, a file in this repository. See MARKET_BASELINE.md.
+
+enabled: false
+
+provider: "the-odds-api"                     # The Odds API Pty Ltd, https://the-odds-api.com
+base_url: "https://api.the-odds-api.com/v4"  # documented at https://the-odds-api.com/liveapi/guides/v4/
+sport_key: "mma_mixed_martial_arts"          # the one MMA key; UFC bouts are matched to the picks ledger by name pair and date
+regions: ["us", "uk", "eu"]                  # bookmaker regions to average; valid: us, us2, uk, eu, au
+markets: ["h2h"]                             # head to head (moneyline) only; the ledger has no use for totals or props
+odds_format: "decimal"
+timeout_seconds: 30
+
+# Budget. One call costs (number of regions) x (number of markets) credits; the free Starter plan has 500
+# credits per month and the weekly job makes one call per run (about nine runs a month). The run is skipped,
+# with a message, if the call would cost more than max_requests_per_run or if the account reports fewer
+# credits remaining than min_remaining_credits.
+max_requests_per_run: 5
+min_remaining_credits: 20
+
+# Matching. A market bout is the same bout as a ledger row when the normalised name pair matches
+# (config/name_aliases.yaml applied, exactly as picks.py does for the ESPN feed) and the bout's commence
+# time (UTC) is within window_days of the ledger's event date.
+window_days: 2
+min_books: 2                                 # a consensus needs at least this many books with a two-way price
+
+# What is stored publicly. The Odds API terms (last updated 31 August 2026) permit storing the data, displaying
+# it, using it in research papers and "calculating and displaying values you derive from our data", but prohibit
+# redistributing it "as a standalone data product", including "downloadable files ... intended to serve as a
+# source of raw data for others". A CSV of per-bookmaker prices in a public repository is close enough to that
+# line that the ledger keeps only derived values: the de-vigged consensus probability per fighter, the market
+# favourite and the number of books. With store_raw_prices: true the ledger also carries the min and max decimal
+# price per fighter across books, and predictions/market_books.csv keeps one row per bookmaker. Raw API
+# responses are never written to disk either way.
+store_raw_prices: false
+ledger: "predictions/market_at_lock.csv"
+books_ledger: "predictions/market_books.csv"
+
+# The schedule of .github/workflows/weekly.yml (UTC), used to decide which run is the last one before an event:
+# a run is "last_before_event" for a bout when the next scheduled run falls after the bout's commence time.
+schedule_utc:
+  weekdays: [0, 4]                           # Monday and Friday (Monday = 0)
+  hour: 13
+
+attribution: "Market probabilities are derived from bookmaker odds supplied by The Odds API (the-odds-api.com): the de-vigged consensus across books, not the price of any one bookmaker. Not betting advice."
