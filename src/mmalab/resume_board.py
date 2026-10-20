@@ -611,12 +611,21 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     cont = board[board["pos"].notna()].copy()
     cont["pos_score"] = cont["pos"]
     h2h = rc["head_to_head"]
-    cont, h2h_notes = head_to_head(cont, out, as_of_ts, h2h["max_gap"], h2h["max_years"],
-                                   h2h.get("max_gap_recent"))
-
-    cont["pos_h2h"] = cont["pos"]
-    cont, cycle_notes = title_cycle(cont, out, as_of_ts, rc["title_cycle"])
-    h2h_notes += cycle_notes
+    use_solver = rc.get("placement", "sequential") == "solver"
+    placement_report: dict = {}
+    if use_solver:
+        # v1.1: the head-to-head and title-cycle rules solved as one constrained order (src/mmalab/placement.py), so
+        # the result no longer depends on the order the rules are applied in; the sequential loop stays for v1.0
+        from mmalab.placement import apply_to_board, build_context
+        ctx = build_context(out, as_of_ts, rc)
+        cont, h2h_notes, placement_report = apply_to_board(cont, out, as_of_ts, rc, ctx)
+        cont["pos_h2h"] = cont["pos"]
+    else:
+        cont, h2h_notes = head_to_head(cont, out, as_of_ts, h2h["max_gap"], h2h["max_years"],
+                                       h2h.get("max_gap_recent"))
+        cont["pos_h2h"] = cont["pos"]
+        cont, cycle_notes = title_cycle(cont, out, as_of_ts, rc["title_cycle"])
+        h2h_notes += cycle_notes
 
     # weight-sensitivity band: 10th to 90th percentile of the FINAL position (score order, then the
     # head-to-head and title-cycle rules, exactly as published) across weight vectors drawn near the
@@ -631,8 +640,11 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
             wv = dict(zip(keys, rng.dirichlet(base * rc["stability_concentration"])))
             s = score(f, wv)
             c = s[s["pos"].notna()].copy()
-            c, _ = head_to_head(c, out, as_of_ts, h2h["max_gap"], h2h["max_years"], h2h.get("max_gap_recent"))
-            c, _ = title_cycle(c, out, as_of_ts, rc["title_cycle"])
+            if use_solver:
+                c, _, _ = apply_to_board(c, out, as_of_ts, rc, ctx)
+            else:
+                c, _ = head_to_head(c, out, as_of_ts, h2h["max_gap"], h2h["max_years"], h2h.get("max_gap_recent"))
+                c, _ = title_cycle(c, out, as_of_ts, rc["title_cycle"])
             draws.append(c[["division", "fighter", "pos"]])
         dd = pd.concat(draws).groupby(["division", "fighter"])["pos"].quantile([0.1, 0.9]).unstack()
         dd.columns = ["rank_p10", "rank_p90"]
@@ -656,6 +668,10 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
         if r["reserved"]:
             return "reserved: vacated with injury, owed a title shot"
         steps = [f"score order #{int(r['pos_score'])}"]
+        if use_solver:
+            if r["rank"] != r["pos_score"]:
+                steps.append(f"placement rules -> #{int(r['rank'])}")
+            return "; ".join(steps)
         if r["pos_h2h"] != r["pos_score"]:
             steps.append(f"head-to-head -> #{int(r['pos_h2h'])}")
         if r["rank"] != r["pos_h2h"]:
@@ -667,7 +683,7 @@ def build(as_of: str | None = None, weights: dict | None = None, stability: bool
     board["record_3y"] = board["last5"]
     board["top15_wins"] = board["top10_wins_15y"]   # site column: top-10 wins in 15 years
     meta = {"as_of": as_of_ts - pd.Timedelta(days=1), "weights": w, "h2h": h2h_notes, "champs": champs,
-            "interim": interim}
+            "interim": interim, "placement": placement_report}
     return board, meta
 
 
