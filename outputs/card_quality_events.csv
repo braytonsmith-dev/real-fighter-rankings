@@ -8,7 +8,7 @@ Noche UFC: Silva vs. Delgado,2026-09-12,2,2,2,0,9,False,"Glendale, Arizona, USA"
 UFC Fight Night: Hooker vs. Parnasse,2026-09-05,0,0,0,0,2,False,"Paris, Ile-de-France, France",14,2026,Fight Night,0.07142857142857142,0.0,0.0
 UFC Fight Night: Nurmagomedov vs. Song,2026-08-29,2,3,2,0,7,False,"Shanghai, China",13,2026,Fight Night,0.2692307692307692,1.5384615384615385,1.5384615384615385
 UFC Fight Night: Hernandez vs. Rodrigues,2026-08-22,1,2,1,0,5,False,"Sacramento, California, USA",13,2026,Fight Night,0.19230769230769232,0.7692307692307693,0.7692307692307693
-UFC 330: Makhachev vs. Machado Garry,2026-08-15,2,2,0,2,6,True,"Philadelphia, Pennsylvania, USA",12,2026,Numbered,0.25,1.6666666666666667,0.0
+UFC 330: Makhachev vs. Machado Garry,2026-08-15,2,2,0,2,5,True,"Philadelphia, Pennsylvania, USA",12,2026,Numbered,0.20833333333333334,1.6666666666666667,0.0
 UFC Fight Night: Gamrot vs. Salkilld,2026-08-08,2,2,2,0,4,False,"Las Vegas, Nevada, USA",12,2026,Fight Night,0.16666666666666666,1.6666666666666667,1.6666666666666667
 UFC Fight Night: Medic vs. Rodriguez,2026-08-01,1,1,1,0,2,False,"Belgrade, Vojvodina, Serbia",14,2026,Fight Night,0.07142857142857142,0.7142857142857143,0.7142857142857143
 UFC Fight Night: Ankalaev vs. Guskov,2026-07-25,0,2,0,0,7,False,"Abu Dhabi, Abu Dhabi, United Arab Emirates",12,2026,Fight Night,0.2916666666666667,0.0,0.0
@@ -64,7 +64,7 @@ UFC Fight Night: Blanchfield vs. Barber,2025-05-31,0,0,0,0,2,False,"Las Vegas, N
 UFC Fight Night: Burns vs. Morales,2025-05-17,0,0,0,0,3,False,"Las Vegas, Nevada, USA",11,2025,Fight Night,0.13636363636363635,0.0,0.0
 UFC 315: Muhammad vs. Della Maddalena,2025-05-10,4,4,2,2,9,True,"Montreal, Quebec, Canada",12,2025,Numbered,0.375,3.3333333333333335,1.6666666666666667
 UFC Fight Night: Sandhagen vs. Figueiredo,2025-05-03,1,4,1,0,8,False,"Des Moines, Iowa, USA",12,2025,Fight Night,0.3333333333333333,0.8333333333333334,0.8333333333333334
-UFC Fight Night: Machado Garry vs. Prates,2025-04-26,0,0,0,0,6,False,"Kansas City, Missouri, USA",14,2025,Fight Night,0.21428571428571427,0.0,0.0
+UFC Fight Night: Machado Garry vs. Prates,2025-04-26,0,1,0,0,6,False,"Kansas City, Missouri, USA",14,2025,Fight Night,0.21428571428571427,0.0,0.0
 UFC 314: Volkanovski vs. Lopes,2025-04-12,2,3,1,1,11,True,"Miami, Florida, USA",13,2025,Numbered,0.4230769230769231,1.5384615384615385,0.7692307692307693
 UFC Fight Night: Emmett vs. Murphy,2025-04-05,0,0,0,0,2,False,"Las Vegas, Nevada, USA",12,2025,Fight Night,0.08333333333333333,0.0,0.0
 UFC Fight Night: Moreno vs. Erceg,2025-03-29,0,0,0,0,2,False,"Mexico City, Distrito Federal, Mexico",12,2025,Fight Night,0.08333333333333333,0.0,0.0
@@ -76,9 +76,9 @@ UFC Fight Night: Cejudo vs. Song,2025-02-22,0,2,0,0,4,False,"Seattle, Washington
 UFC Fight Night: Cannonier vs. Rodrigues,2025-02-15,0,1,0,0,5,False,"Las Vegas, Nevada, USA",12,2025,Fight Night,0.20833333333333334,0.0,0.0
 UFC 312: Du Plessis vs. Strickland 2,2025-02-08,1,1,0,2,3,True,"Sydney, New South Wales, Australia",12,2025,Numbered,0.125,0.8333333333333334,0.0
 UFC Fight Night: Adesanya vs. Imavov,2025-02-01,2,2,2,0,6,False,"Riyadh, Riyadh, Saudi Arabia",11,2025,Fight Night,0.2727272727272727,1.8181818181818181,1.8181818181818181
-UFC 311: Makhachev vs. Moicano,2025-01-18,6,7,4,2,15,True,"Inglewood, California, USA",13,2025,Numbered,0.5769230769230769,4.615384615384615,3.076923076923077
+UFC 311: Makhachev vs. Moicano,2025-01-18,6,7,4,2,16,True,"Inglewood, California, USA",13,2025,Numbered,0.6153846153846154,4.615384615384615,3.076923076923077
 UFC Fight Night: Dern vs. Ribas 2,2025-01-11,0,0,0,0,1,False,"Las Vegas, Nevada, USA",14,2025,Fight Night,0.03571428571428571,0.0,0.0
-UFC Fight Night: Covington vs. Buckley,2024-12-14,1,1,1,0,5,False,"Tampa, Florida, USA",13,2024,Fight Night,0.19230769230769232,0.7692307692307693,0.7692307692307693
+UFC Fight Night: Covington vs. Buckley,2024-12-14,2,2,2,0,6,False,"Tampa, Florida, USA",13,2024,Fight Night,0.23076923076923078,1.5384615384615385,1.5384615384615385
 UFC 310: Pantoja vs. Asakura,2024-12-07,3,3,3,1,11,True,"Las Vegas, Nevada, USA",14,2024,Numbered,0.39285714285714285,2.142857142857143,2.142857142857143
 UFC Fight Night: Yan vs. Figueiredo,2024-11-23,2,3,2,3,6,False,"Macau, China",13,2024,Fight Night,0.23076923076923078,1.5384615384615385,1.5384615384615385
 UFC 309: Jones vs. Miocic,2024-11-16,0,1,0,1,5,True,"New York City, New York, USA",12,2024,Numbered,0.20833333333333334,0.0,0.0
@@ -88,7 +88,7 @@ UFC 308: Topuria vs. Holloway,2024-10-26,2,2,2,1,8,True,"Abu Dhabi, Abu Dhabi, U
 UFC Fight Night: Hernandez vs. Pereira,2024-10-19,0,1,0,0,5,False,"Las Vegas, Nevada, USA",11,2024,Fight Night,0.22727272727272727,0.0,0.0
 UFC Fight Night: Royval vs. Taira,2024-10-12,1,1,1,0,4,False,"Las Vegas, Nevada, USA",12,2024,Fight Night,0.16666666666666666,0.8333333333333334,0.8333333333333334
 UFC 307: Pereira vs. Rountree Jr.,2024-10-05,2,5,2,2,13,True,"Salt Lake City, Utah, USA",12,2024,Numbered,0.5416666666666666,1.6666666666666667,1.6666666666666667
-UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,2,4,2,0,9,False,"Paris, Ile-de-France, France",14,2024,Fight Night,0.32142857142857145,1.4285714285714286,1.4285714285714286
+UFC Fight Night: Moicano vs. Saint Denis,2024-09-28,1,4,1,0,9,False,"Paris, Ile-de-France, France",14,2024,Fight Night,0.32142857142857145,0.7142857142857143,0.7142857142857143
 UFC 306: Riyadh Season Noche UFC,2024-09-14,3,3,1,2,8,True,"Las Vegas, Nevada, USA",10,2024,Numbered,0.4,3.0,1.0
 UFC Fight Night: Burns vs. Brady,2024-09-07,0,1,0,0,5,False,"Las Vegas, Nevada, USA",12,2024,Fight Night,0.20833333333333334,0.0,0.0
 UFC Fight Night: Cannonier vs. Borralho,2024-08-24,0,2,0,0,5,False,"Las Vegas, Nevada, USA",11,2024,Fight Night,0.22727272727272727,0.0,0.0
@@ -96,8 +96,8 @@ UFC 305: Du Plessis vs. Adesanya,2024-08-17,1,2,0,1,7,True,"Perth, Western Austr
 UFC Fight Night: Tybura vs. Spivac 2,2024-08-10,1,1,1,0,6,False,"Las Vegas, Nevada, USA",10,2024,Fight Night,0.3,1.0,1.0
 UFC Fight Night: Sandhagen vs. Nurmagomedov,2024-08-03,0,1,0,0,5,False,"Abu Dhabi, Abu Dhabi, United Arab Emirates",13,2024,Fight Night,0.19230769230769232,0.0,0.0
 UFC 304: Edwards vs. Muhammad 2,2024-07-27,4,5,2,2,10,True,"Manchester, England, United Kingdom",14,2024,Numbered,0.35714285714285715,2.857142857142857,1.4285714285714286
-UFC Fight Night: Lemos vs. Jandiroba,2024-07-20,1,1,1,0,5,False,"Las Vegas, Nevada, USA",11,2024,Fight Night,0.22727272727272727,0.9090909090909091,0.9090909090909091
-UFC Fight Night: Namajunas vs. Cortez,2024-07-13,0,2,0,0,5,False,"Denver, Colorado, USA",12,2024,Fight Night,0.20833333333333334,0.0,0.0
+UFC Fight Night: Lemos vs. Jandiroba,2024-07-20,1,2,1,0,6,False,"Las Vegas, Nevada, USA",11,2024,Fight Night,0.2727272727272727,0.9090909090909091,0.9090909090909091
+UFC Fight Night: Namajunas vs. Cortez,2024-07-13,0,1,0,0,4,False,"Denver, Colorado, USA",12,2024,Fight Night,0.16666666666666666,0.0,0.0
 UFC 303: Pereira vs. Prochazka 2,2024-06-29,1,1,0,1,6,True,"Las Vegas, Nevada, USA",13,2024,Numbered,0.23076923076923078,0.7692307692307693,0.0
 UFC Fight Night: Whittaker vs. Aliskerov,2024-06-22,2,3,2,0,7,False,"Riyadh, Riyadh, Saudi Arabia",11,2024,Fight Night,0.3181818181818182,1.8181818181818181,1.8181818181818181
 UFC Fight Night: Perez vs. Taira,2024-06-15,0,1,0,0,4,False,"Las Vegas, Nevada, USA",11,2024,Fight Night,0.18181818181818182,0.0,0.0
@@ -126,7 +126,7 @@ UFC Fight Night: Dariush vs. Tsarukyan,2023-12-02,1,2,1,0,5,False,"Austin, Texas
 UFC Fight Night: Allen vs. Craig,2023-11-18,1,1,1,0,5,False,"Las Vegas, Nevada, USA",14,2023,Fight Night,0.17857142857142858,0.7142857142857143,0.7142857142857143
 UFC 295: Prochazka vs. Pereira,2023-11-11,3,4,1,2,9,True,"New York City, New York, USA",13,2023,Numbered,0.34615384615384615,2.3076923076923075,0.7692307692307693
 UFC Fight Night: Almeida vs. Lewis,2023-11-04,1,2,1,0,5,False,"Sao Paulo, Sao Paulo, Brazil",10,2023,Fight Night,0.25,1.0,1.0
-UFC 294: Makhachev vs. Volkanovski 2,2023-10-21,2,2,2,1,8,True,"Abu Dhabi, Abu Dhabi, United Arab Emirates",13,2023,Numbered,0.3076923076923077,1.5384615384615385,1.5384615384615385
+UFC 294: Makhachev vs. Volkanovski 2,2023-10-21,1,2,1,1,8,True,"Abu Dhabi, Abu Dhabi, United Arab Emirates",13,2023,Numbered,0.3076923076923077,0.7692307692307693,0.7692307692307693
 UFC Fight Night: Yusuff vs. Barboza,2023-10-14,0,0,0,0,5,False,"Las Vegas, Nevada, USA",11,2023,Fight Night,0.22727272727272727,0.0,0.0
 UFC Fight Night: Dawson vs. Green,2023-10-07,1,1,1,0,2,False,"Las Vegas, Nevada, USA",10,2023,Fight Night,0.1,1.0,1.0
 UFC Fight Night: Fiziev vs. Gamrot,2023-09-23,1,2,1,0,7,False,"Las Vegas, Nevada, USA",11,2023,Fight Night,0.3181818181818182,0.9090909090909091,0.9090909090909091
@@ -145,7 +145,7 @@ UFC Fight Night: Strickland vs. Magomedov,2023-07-01,0,0,0,0,4,False,"Las Vegas,
 UFC Fight Night: Emmett vs. Topuria,2023-06-24,1,1,1,0,5,False,"Jacksonville, Florida, USA",13,2023,Fight Night,0.19230769230769232,0.7692307692307693,0.7692307692307693
 UFC Fight Night: Vettori vs. Cannonier,2023-06-17,1,1,1,0,3,False,"Las Vegas, Nevada, USA",12,2023,Fight Night,0.125,0.8333333333333334,0.8333333333333334
 UFC 289: Nunes vs. Aldana,2023-06-10,1,1,1,1,5,True,"Vancouver, British Columbia, Canada",11,2023,Numbered,0.22727272727272727,0.9090909090909091,0.9090909090909091
-UFC Fight Night: Kara-France vs. Albazi,2023-06-03,1,1,1,0,4,False,"Las Vegas, Nevada, USA",13,2023,Fight Night,0.15384615384615385,0.7692307692307693,0.7692307692307693
+UFC Fight Night: Kara-France vs. Albazi,2023-06-03,1,1,1,0,3,False,"Las Vegas, Nevada, USA",13,2023,Fight Night,0.11538461538461539,0.7692307692307693,0.7692307692307693
 UFC Fight Night: Dern vs. Hill,2023-05-20,0,1,0,0,5,False,"Las Vegas, Nevada, USA",12,2023,Fight Night,0.20833333333333334,0.0,0.0
 UFC Fight Night: Rozenstruik vs. Almeida,2023-05-13,1,2,1,0,6,False,"Charlotte, North Carolina, USA",11,2023,Fight Night,0.2727272727272727,0.9090909090909091,0.9090909090909091
 UFC 288: Sterling vs. Cejudo,2023-05-06,1,2,1,1,10,True,"Newark, New Jersey, USA",12,2023,Numbered,0.4166666666666667,0.8333333333333334,0.8333333333333334

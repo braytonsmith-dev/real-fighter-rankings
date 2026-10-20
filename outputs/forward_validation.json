@@ -6,29 +6,29 @@
   "protocol": "PREREGISTRATION.md",
   "retrospective_reconstruction": {
     "primary_both_scored": {
-      "bouts": 942,
+      "bouts": 940,
       "real_concordance": 0.615,
       "real_concordance_wilson95": [
         0.583,
         0.645
       ],
       "real_probability": {
-        "n": 942,
-        "log_loss": 0.6669,
-        "brier": 0.237,
-        "accuracy": 0.6072
+        "n": 940,
+        "log_loss": 0.6671,
+        "brier": 0.2371,
+        "accuracy": 0.6074
       },
       "results_only_elo": {
-        "n": 942,
-        "log_loss": 0.6726,
-        "brier": 0.2399,
-        "accuracy": 0.5711
+        "n": 940,
+        "log_loss": 0.6729,
+        "brier": 0.2401,
+        "accuracy": 0.5713
       },
       "performance_adjusted_elo": {
-        "n": 942,
-        "log_loss": 0.6498,
-        "brier": 0.229,
-        "accuracy": 0.6242
+        "n": 940,
+        "log_loss": 0.6502,
+        "brier": 0.2292,
+        "accuracy": 0.6223
       },
       "official_board": {
         "bouts_both_ranked": 268,
@@ -55,15 +55,15 @@
       },
       "results_only_elo": {
         "n": 468,
-        "log_loss": 0.6812,
-        "brier": 0.2442,
-        "accuracy": 0.547
+        "log_loss": 0.681,
+        "brier": 0.2441,
+        "accuracy": 0.5491
       },
       "performance_adjusted_elo": {
         "n": 468,
-        "log_loss": 0.6574,
-        "brier": 0.2327,
-        "accuracy": 0.6068
+        "log_loss": 0.6564,
+        "brier": 0.2321,
+        "accuracy": 0.609
       },
       "official_board": {
         "bouts_both_ranked": 245,
@@ -90,15 +90,15 @@
       },
       "results_only_elo": {
         "n": 226,
-        "log_loss": 0.6795,
-        "brier": 0.2434,
-        "accuracy": 0.5487
+        "log_loss": 0.679,
+        "brier": 0.2432,
+        "accuracy": 0.5531
       },
       "performance_adjusted_elo": {
         "n": 226,
-        "log_loss": 0.6558,
-        "brier": 0.232,
-        "accuracy": 0.6239
+        "log_loss": 0.6535,
+        "brier": 0.2309,
+        "accuracy": 0.6283
       },
       "official_board": {
         "bouts_both_ranked": 204,
@@ -125,14 +125,14 @@
       },
       "results_only_elo": {
         "n": 42,
-        "log_loss": 0.6557,
-        "brier": 0.2321,
+        "log_loss": 0.6544,
+        "brier": 0.2315,
         "accuracy": 0.5952
       },
       "performance_adjusted_elo": {
         "n": 42,
-        "log_loss": 0.6386,
-        "brier": 0.2235,
+        "log_loss": 0.6338,
+        "brier": 0.2212,
         "accuracy": 0.6905
       },
       "official_board": {
@@ -162,14 +162,14 @@
       },
       "results_only_elo": {
         "n": 19,
-        "log_loss": 0.7736,
-        "brier": 0.2899,
-        "accuracy": 0.3158
+        "log_loss": 0.7754,
+        "brier": 0.2908,
+        "accuracy": 0.2632
       },
       "performance_adjusted_elo": {
         "n": 19,
-        "log_loss": 0.8471,
-        "brier": 0.3217,
+        "log_loss": 0.8517,
+        "brier": 0.324,
         "accuracy": 0.3158
       },
       "official_board": {
@@ -197,14 +197,14 @@
       },
       "results_only_elo": {
         "n": 9,
-        "log_loss": 0.7177,
-        "brier": 0.2623,
+        "log_loss": 0.7182,
+        "brier": 0.2625,
         "accuracy": 0.4444
       },
       "performance_adjusted_elo": {
         "n": 9,
-        "log_loss": 0.8212,
-        "brier": 0.3109,
+        "log_loss": 0.8227,
+        "brier": 0.3116,
         "accuracy": 0.3333
       },
       "official_board": {
@@ -232,14 +232,14 @@
       },
       "results_only_elo": {
         "n": 4,
-        "log_loss": 0.6217,
-        "brier": 0.2151,
+        "log_loss": 0.6227,
+        "brier": 0.2156,
         "accuracy": 0.75
       },
       "performance_adjusted_elo": {
         "n": 4,
-        "log_loss": 0.8069,
-        "brier": 0.3041,
+        "log_loss": 0.8102,
+        "brier": 0.3057,
         "accuracy": 0.5
       },
       "official_board": {

@@ -26,11 +26,7 @@ Rule changes: opponent-aware versions of existing v1.0 rules, and the placement 
 
 Evidence: 43 event-eve boards (979 bouts, Oct 2023 to Oct 17, 2026, rebuilt on the corrected data with every placement rule applied) score concordance 0.606 for v1.1 against 0.607 for v1.0 and log loss 0.665 against 0.669 (paired differences -0.001, 95% interval -0.019 to +0.016, and -0.0045, interval -0.0093 to +0.0001); top-15 bouts 0.549 against 0.537 (EXP-2026-10-20-12). On the 14-day tuning panel (335 boards, 3,748 bouts, 2014 to 2026, score order without placement rules) the same ledger and form rules scored 0.580 concordance and 0.6748 log loss against 0.573 and 0.6772 for v1.0 (EXP-2026-10-20-03). The change is adopted for face validity at equal measured accuracy.
 
-Effect on the Oct 17, 2026 board: 111 of 194 top-15 slots differ in holder or position. Largest moves: Vera 54 to 14, Ortega 40
-to 15, Blachowicz 27 to 13, Adesanya 27 to 14, Buckley 21 to 15; Jim Miller 11 to 19, Jalin Turner 15 to 23, Neil Magny 15 to 22.
-Kamaru Usman moves from 9 to 5 at welterweight: his rating (1,807) is the division's highest because his four losses in five were
-to Edwards (twice), Chimaev and Du Plessis, which the rating protects by design; the curator's own view is that 7 is closer to
-right, and that gap is an open item for v1.2, not a reason to hand-place him.
+Effect on the Oct 17, 2026 board: 111 of 194 top-15 slots differ in holder or position. Largest moves: Vera 54 to 14, Ortega 40 to 15, Blachowicz 27 to 13, Adesanya 27 to 14, Buckley 21 to 15, Hill 20 to 14; Jim Miller 11 to 19, Jalin Turner 15 to 23, Neil Magny 15 to 22, Bo Nickal 14 to 20. The placement solver puts Topuria first at lightweight (the sequential loops left him third, below the man he knocked out in June 2025). Kamaru Usman moves from 9 to 5 at welterweight: his rating (1,807) is the division's highest below the champion because his four losses in five were to Edwards (twice), Chimaev and Du Plessis, which the rating protects by design; the curator's own view is that 7 is closer to right, and that gap is an open item, not a reason to hand-place him (EXP-2026-10-20-02).
 
 Also in this release, no rule change: provisional label on every board for fighters with three or fewer UFC bouts (finding D3);
 version, build commit and data date in every page footer (G4); the picks ledger records no pick when the model is within two

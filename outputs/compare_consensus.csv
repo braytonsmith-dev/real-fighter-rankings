@@ -42,7 +42,7 @@ Flyweight,amir albazi,Amir Albazi,3,"Meta, Sherdog, UFC media",9.0,9.0,9.0,10.0,
 Flyweight,asu almabayev,Asu Almabayev,3,"Fight Matrix, Meta, UFC media",7.0,5.0,10.0,7.0,Flyweight,0.0
 Flyweight,brandon moreno,Brandon Moreno,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",7.0,7.0,10.0,6.0,Flyweight,-1.0
 Flyweight,brandon royval,Brandon Royval,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,3.0,4.0,3.0,Flyweight,0.0
-Flyweight,charles johnson,Charles Johnson,1,Meta,15.0,15.0,15.0,31.0,Flyweight,16.0
+Flyweight,charles johnson,Charles Johnson,1,Meta,15.0,15.0,15.0,29.0,Flyweight,14.0
 Flyweight,imanol rodriguez,Imanol Rodriguez,1,Meta,13.0,13.0,13.0,13.0,Flyweight,0.0
 Flyweight,kai kara france,Kai Kara-France,1,ESPN (Jun),8.0,8.0,8.0,9.0,Flyweight,1.0
 Flyweight,kyoji horiguchi,Kyoji Horiguchi,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,5.0,8.0,2.0,Flyweight,-3.0
@@ -52,7 +52,7 @@ Flyweight,mitch raposo,Mitch Raposo,1,Meta,12.0,12.0,12.0,33.0,Flyweight,21.0
 Flyweight,ramazan temirov,Ramazan Temirov,4,"Fight Matrix, Meta, Sherdog, UFC media",8.0,7.0,10.0,8.0,Flyweight,0.0
 Flyweight,rei tsuruya,Rei Tsuruya,1,Meta,14.0,14.0,14.0,17.0,Flyweight,3.0
 Flyweight,steve erceg,Steve Erceg,2,"Fight Matrix, UFC media",10.5,9.0,12.0,30.0,Flyweight,19.5
-Flyweight,sumudaerji,Sumudaerji,2,"Meta, UFC media",12.0,11.0,13.0,21.0,Flyweight,9.0
+Flyweight,sumudaerji,Sumudaerji,2,"Meta, UFC media",12.0,11.0,13.0,22.0,Flyweight,10.0
 Flyweight,tagir ulanbekov,Tagir Ulanbekov,2,"Fight Matrix, UFC media",13.0,12.0,14.0,12.0,Flyweight,-1.0
 Flyweight,tatsuro taira,Tatsuro Taira,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",4.0,3.0,4.0,5.0,Flyweight,1.0
 Flyweight,tim elliott,Tim Elliott,2,"Fight Matrix, UFC media",11.0,11.0,11.0,14.0,Flyweight,3.0
@@ -116,14 +116,14 @@ Lightweight,renato moicano,Renato Moicano,2,"Meta, UFC media",10.0,8.0,12.0,6.0,
 Lightweight,salahdine parnasse,Salahdine Parnasse,3,"Fight Matrix, Sherdog, UFC media",9.0,8.0,11.0,26.0,Lightweight,17.0
 Lightweight,tofiq musayev,Tofiq Musayev,1,Meta,13.0,13.0,13.0,34.0,Lightweight,21.0
 Lightweight,tom nolan,Tom Nolan,2,"Meta, UFC media",12.5,11.0,14.0,27.0,Lightweight,14.5
-Middleweight,abus magomedov,Abus Magomedov,2,"Meta, UFC media",12.5,12.0,13.0,23.0,Middleweight,10.5
+Middleweight,abus magomedov,Abus Magomedov,2,"Meta, UFC media",12.5,12.0,13.0,22.0,Middleweight,9.5
 Middleweight,anthony hernandez,Anthony Hernandez,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",8.0,5.0,10.0,8.0,Middleweight,0.0
 Middleweight,bo nickal,Bo Nickal,2,"Meta, UFC media",13.0,12.0,14.0,14.0,Middleweight,1.0
 Middleweight,brendan allen,Brendan Allen,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",5.0,4.0,6.0,3.0,Middleweight,-2.0
 Middleweight,caio borralho,Caio Borralho,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",6.0,4.0,7.0,9.0,Middleweight,3.0
 Middleweight,christian leroy duncan,Christian Leroy Duncan,3,"Fight Matrix, Meta, UFC media",10.0,8.0,10.0,10.0,Middleweight,0.0
 Middleweight,dricus du plessis,Dricus Du Plessis,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,2.0,2.0,2.0,Middleweight,0.0
-Middleweight,edmen shahbazyan,Edmen Shahbazyan,1,Meta,15.0,15.0,15.0,20.0,Middleweight,5.0
+Middleweight,edmen shahbazyan,Edmen Shahbazyan,1,Meta,15.0,15.0,15.0,19.0,Middleweight,4.0
 Middleweight,gregory rodrigues,Gregory Rodrigues,4,"Fight Matrix, Meta, Sherdog, UFC media",7.0,4.0,7.0,7.0,Middleweight,0.0
 Middleweight,ikram aliskerov,Ikram Aliskerov,2,"Meta, UFC media",12.0,11.0,13.0,12.0,Middleweight,0.0
 Middleweight,israel adesanya,Israel Adesanya,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",9.0,8.0,11.0,27.0,Middleweight,18.0
@@ -134,7 +134,7 @@ Middleweight,michael page,Michael Page,1,Fight Matrix,9.0,9.0,9.0,13.0,Middlewei
 Middleweight,nassourdine imavov,Nassourdine Imavov,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",3.0,3.0,3.0,4.0,Middleweight,1.0
 Middleweight,reinier de ridder,Reinier de Ridder,1,ESPN (Jun),9.0,9.0,9.0,,Light Heavyweight,
 Middleweight,roman kopylov,Roman Kopylov,1,Meta,14.0,14.0,14.0,24.0,Middleweight,10.0
-Middleweight,shara magomedov,Shara Magomedov,1,UFC media,15.0,15.0,15.0,17.0,Middleweight,2.0
+Middleweight,shara magomedov,Shara Magomedov,1,UFC media,15.0,15.0,15.0,20.0,Middleweight,5.0
 Welterweight,belal muhammad,Belal Muhammad,4,"ESPN (Jun), Fight Matrix, Meta, UFC media",7.5,7.0,9.0,7.0,Welterweight,-0.5
 Welterweight,carlos prates,Carlos Prates,5,"ESPN (Jun), Fight Matrix, Meta, Sherdog, UFC media",2.0,1.0,3.0,3.0,Welterweight,1.0
 Welterweight,daniel rodriguez,Daniel Rodriguez,2,"Meta, UFC media",14.5,14.0,15.0,17.0,Welterweight,2.5

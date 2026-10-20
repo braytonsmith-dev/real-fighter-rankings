@@ -1,0 +1,445 @@
+{
+  "version": "v1.0",
+  "as_of": "2026-10-17",
+  "previous_snapshot": "2026-10-10",
+  "turnover": {
+    "top15_slots": 165,
+    "new_holders": 4,
+    "share": 0.024
+  },
+  "moves_without_bout": {
+    "count": 3,
+    "fighters": [
+      {
+        "division": "Heavyweight",
+        "fighter": "Tyrell Fortune",
+        "from": 23,
+        "to": 31
+      },
+      {
+        "division": "Bantamweight",
+        "fighter": "Adrian Yanez",
+        "from": 33,
+        "to": 26
+      },
+      {
+        "division": "Flyweight",
+        "fighter": "Alden Coria",
+        "from": 22,
+        "to": 18
+      }
+    ]
+  },
+  "h2h_conflicts": {
+    "count": 154,
+    "within_top15": 43,
+    "pairs": [
+      {
+        "division": "Bantamweight",
+        "winner": "Deiveson Figueiredo",
+        "winner_rank": 50,
+        "loser": "Montel Jackson",
+        "loser_rank": 8,
+        "won_on": "2025-10-11",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Raoni Barcelos",
+        "winner_rank": 16,
+        "loser": "Montel Jackson",
+        "loser_rank": 8,
+        "won_on": "2026-04-25",
+        "left_as_is_because": "gap 8 exceeds the rule's allowance"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Raoni Barcelos",
+        "winner_rank": 16,
+        "loser": "Payton Talbott",
+        "loser_rank": 9,
+        "won_on": "2025-01-18",
+        "left_as_is_because": "gap 7 exceeds the rule's allowance"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Aiemann Zahabi",
+        "winner_rank": 14,
+        "loser": "Jose Aldo",
+        "loser_rank": 13,
+        "won_on": "2025-05-10",
+        "left_as_is_because": "gap 1 exceeds the rule's allowance"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Charles Jourdain",
+        "winner_rank": 32,
+        "loser": "Davey Grant",
+        "loser_rank": 22,
+        "won_on": "2025-10-18",
+        "left_as_is_because": "gap 10 exceeds the rule's allowance"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Deiveson Figueiredo",
+        "winner_rank": 50,
+        "loser": "Rob Font",
+        "loser_rank": 23,
+        "won_on": "2023-12-02",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Marlon Vera",
+        "winner_rank": 54,
+        "loser": "Charles Jourdain",
+        "loser_rank": 32,
+        "won_on": "2026-09-19",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Muin Gafurov",
+        "winner_rank": 77,
+        "loser": "Rinya Nakamura",
+        "loser_rank": 36,
+        "won_on": "2025-01-18",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Timmy Cuamba",
+        "winner_rank": 64,
+        "loser": "ChangHo Lee",
+        "loser_rank": 42,
+        "won_on": "2025-11-01",
+        "left_as_is_because": "gap 22 exceeds the rule's allowance"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Deiveson Figueiredo",
+        "winner_rank": 50,
+        "loser": "Cody Garbrandt",
+        "loser_rank": 44,
+        "won_on": "2024-04-13",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Ricky Simon",
+        "winner_rank": 55,
+        "loser": "Javid Basharat",
+        "loser_rank": 51,
+        "won_on": "2025-02-22",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Lawrence Lui",
+        "winner_rank": 68,
+        "loser": "Sulangrangbo",
+        "loser_rank": 56,
+        "won_on": "2026-01-31",
+        "left_as_is_because": "gap 12 exceeds the rule's allowance"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Ramon Taveras",
+        "winner_rank": 82,
+        "loser": "Serhiy Sidey",
+        "loser_rank": 65,
+        "won_on": "2024-01-20",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Quang Le",
+        "winner_rank": 79,
+        "loser": "Gaston Bolanos",
+        "loser_rank": 74,
+        "won_on": "2025-05-03",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Xiao Long",
+        "winner_rank": 91,
+        "loser": "Quang Le",
+        "loser_rank": 79,
+        "won_on": "2024-11-23",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Bantamweight",
+        "winner": "Malcolm Wellmaker",
+        "winner_rank": 86,
+        "loser": "Cameron Saaiman",
+        "loser_rank": 84,
+        "won_on": "2025-04-26",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Movsar Evloev",
+        "winner_rank": 2,
+        "loser": "Aljamain Sterling",
+        "loser_rank": 1,
+        "won_on": "2024-12-07",
+        "left_as_is_because": "gap 1 exceeds the rule's allowance"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "William Gomis",
+        "winner_rank": 38,
+        "loser": "Joanderson Brito",
+        "loser_rank": 11,
+        "won_on": "2024-09-28",
+        "left_as_is_because": "gap 27 exceeds the rule's allowance"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Andre Fili",
+        "winner_rank": 74,
+        "loser": "Cub Swanson",
+        "loser_rank": 12,
+        "won_on": "2024-06-29",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Nate Landwehr",
+        "winner_rank": 93,
+        "loser": "Jamall Emmers",
+        "loser_rank": 19,
+        "won_on": "2024-03-30",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Jordan Leavitt",
+        "winner_rank": 42,
+        "loser": "Yadier del Valle",
+        "loser_rank": 21,
+        "won_on": "2026-02-21",
+        "left_as_is_because": "gap 21 exceeds the rule's allowance"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Patricio Pitbull",
+        "winner_rank": 45,
+        "loser": "Dooho Choi",
+        "loser_rank": 22,
+        "won_on": "2026-09-19",
+        "left_as_is_because": "gap 23 exceeds the rule's allowance"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Muhammad Naimov",
+        "winner_rank": 77,
+        "loser": "Nathaniel Wood",
+        "loser_rank": 26,
+        "won_on": "2023-10-21",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Dan Ige",
+        "winner_rank": 88,
+        "loser": "Sean Woodson",
+        "loser_rank": 27,
+        "won_on": "2025-04-12",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Hyder Amil",
+        "winner_rank": 78,
+        "loser": "William Gomis",
+        "loser_rank": 38,
+        "won_on": "2025-03-01",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Julian Erosa",
+        "winner_rank": 56,
+        "loser": "Darren Elkins",
+        "loser_rank": 41,
+        "won_on": "2025-04-12",
+        "left_as_is_because": "gap 15 exceeds the rule's allowance"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Christian Rodriguez",
+        "winner_rank": 59,
+        "loser": "Isaac Dulgarian",
+        "loser_rank": 44,
+        "won_on": "2024-03-16",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Muhammad Naimov",
+        "winner_rank": 77,
+        "loser": "Bogdan Grad",
+        "loser_rank": 46,
+        "won_on": "2025-06-21",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Muhammad Naimov",
+        "winner_rank": 77,
+        "loser": "Kaan Ofli",
+        "loser_rank": 51,
+        "won_on": "2025-02-01",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Christian Rodriguez",
+        "winner_rank": 59,
+        "loser": "Austin Bashi",
+        "loser_rank": 53,
+        "won_on": "2025-01-11",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Andre Fili",
+        "winner_rank": 74,
+        "loser": "Christian Rodriguez",
+        "loser_rank": 59,
+        "won_on": "2025-08-09",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Michael Aswell Jr.",
+        "winner_rank": 73,
+        "loser": "JooSang Yoo",
+        "loser_rank": 60,
+        "won_on": "2026-09-19",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Dan Ige",
+        "winner_rank": 88,
+        "loser": "Andre Fili",
+        "loser_rank": 74,
+        "won_on": "2024-02-10",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Featherweight",
+        "winner": "Dennis Buzukja",
+        "winner_rank": 94,
+        "loser": "Connor Matthews",
+        "loser_rank": 89,
+        "won_on": "2024-03-30",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Flyweight",
+        "winner": "Alexandre Pantoja",
+        "winner_rank": 4,
+        "loser": "Brandon Royval",
+        "loser_rank": 3,
+        "won_on": "2023-12-16",
+        "left_as_is_because": "gap 1 exceeds the rule's allowance"
+      },
+      {
+        "division": "Flyweight",
+        "winner": "Lone'er Kavanagh",
+        "winner_rank": 32,
+        "loser": "Brandon Moreno",
+        "loser_rank": 6,
+        "won_on": "2026-02-28",
+        "left_as_is_because": "gap 26 exceeds the rule's allowance"
+      },
+      {
+        "division": "Flyweight",
+        "winner": "Mitch Raposo",
+        "winner_rank": 33,
+        "loser": "Allan Nascimento",
+        "loser_rank": 11,
+        "won_on": "2026-06-20",
+        "left_as_is_because": "gap 22 exceeds the rule's allowance"
+      },
+      {
+        "division": "Flyweight",
+        "winner": "Steve Erceg",
+        "winner_rank": 30,
+        "loser": "Tim Elliott",
+        "loser_rank": 14,
+        "won_on": "2026-05-02",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Flyweight",
+        "winner": "Kevin Borjas",
+        "winner_rank": 48,
+        "loser": "Andre Lima",
+        "loser_rank": 15,
+        "won_on": "2026-06-20",
+        "left_as_is_because": "winner's last five is negative"
+      },
+      {
+        "division": "Flyweight",
+        "winner": "Steve Erceg",
+        "winner_rank": 30,
+        "loser": "Alessandro Costa",
+        "loser_rank": 19,
+        "won_on": "2023-11-11",
+        "left_as_is_because": "winner's last five is negative"
+      }
+    ]
+  },
+  "band_outliers": {
+    "count": 2,
+    "fighters": [
+      "Bantamweight: Ramon Taveras #82 band 78-81",
+      "Featherweight: Calvin Kattar #87 band 88-88"
+    ]
+  },
+  "overrides_recent": {
+    "count": 2,
+    "entries": [
+      "roster_exclusions.yaml: Gerald Meerschaert since 2026-10-11",
+      "short_notice.yaml: Brendson Ribeiro since 2026-10-10"
+    ]
+  },
+  "external_agreement": [
+    {
+      "board": "UFC media",
+      "shared": 119,
+      "mean_abs_gap": 1.82,
+      "top10_overlap": 0.809
+    },
+    {
+      "board": "Meta",
+      "shared": 125,
+      "mean_abs_gap": 2.05,
+      "top10_overlap": 0.809
+    },
+    {
+      "board": "Sherdog",
+      "shared": 78,
+      "mean_abs_gap": 1.72,
+      "top10_overlap": 0.86
+    },
+    {
+      "board": "Fight Matrix",
+      "shared": 103,
+      "mean_abs_gap": 1.85,
+      "top10_overlap": 0.771
+    },
+    {
+      "board": "ESPN (Jun)",
+      "shared": 79,
+      "mean_abs_gap": 1.9,
+      "top10_overlap": 0.771
+    }
+  ]
+}

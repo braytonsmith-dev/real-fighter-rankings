@@ -1,0 +1,978 @@
+snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b,pos_b,score_b,result_a,winner,real_concordant,p_real,both_top30,both_top15,official_a,official_b,official_correct,p_predictive,p_classic,method
+2023-10-20,2023-10-21,False,Women's Strawweight,False,Viktoriia Dudakova,15,0.0815,Jinh Yu Frey,47,-0.8099,1.0,Viktoriia Dudakova,1.0,0.7707,False,False,99.0,99.0,,0.7487758010232298,0.6605459821157559,U-DEC
+2023-10-20,2023-10-21,False,Lightweight,False,Mike Breeden,96,-0.9217,Anshul Jubli,24,0.1627,1.0,Mike Breeden,0.0,0.1862,False,False,99.0,99.0,,0.2318892394098101,0.2889037983194276,KO/TKO
+2023-10-20,2023-10-21,False,Flyweight,False,Tim Elliott,18,0.101,Muhammad Mokaev,6,0.5584,0.0,Muhammad Mokaev,1.0,0.3493,True,False,10.0,11.0,0.0,0.4501746873492183,0.3473924837313545,SUB
+2023-10-20,2023-10-21,False,Bantamweight,False,Said Nurmagomedov,17,0.2141,Muin Gafurov,52,-0.2468,1.0,Said Nurmagomedov,1.0,0.6518,False,False,99.0,99.0,,0.7635098435870287,0.7520699159173687,SUB
+2023-11-03,2023-11-04,False,Heavyweight,False,Rodrigo Nascimento,19,-0.099,Don'Tale Mayes,22,-0.204,1.0,Rodrigo Nascimento,1.0,0.5357,True,False,99.0,99.0,,0.5999024675406089,0.5972989069048342,U-DEC
+2023-11-03,2023-11-04,False,Welterweight,False,Gabriel Bonfim,20,0.1041,Nicolas Dalby,42,-0.0916,0.0,Nicolas Dalby,0.0,0.5662,False,False,99.0,99.0,,0.4558159990170519,0.4438455018793591,KO/TKO
+2023-11-03,2023-11-04,False,Light Heavyweight,False,Vitor Petrino,15,0.0468,Modestas Bukauskas,40,-0.749,1.0,Vitor Petrino,1.0,0.7469,False,False,99.0,99.0,,0.6050005027496128,0.5807524050426776,KO/TKO
+2023-11-03,2023-11-04,False,Middleweight,False,Caio Borralho,13,0.2108,Abus Magomedov,32,-0.0912,1.0,Caio Borralho,1.0,0.6012,False,False,99.0,99.0,,0.6276037400617104,0.7143938009021308,U-DEC
+2023-11-03,2023-11-04,False,Women's Strawweight,False,Angela Hill,27,-0.2424,Denise Gomes,18,0.0114,1.0,Angela Hill,0.0,0.4145,True,False,12.0,99.0,,0.3745408064606204,0.4298326994454436,U-DEC
+2023-11-03,2023-11-04,False,Heavyweight,False,Jailton Almeida,6,0.4367,Derrick Lewis,12,0.0972,1.0,Jailton Almeida,1.0,0.6134,True,True,9.0,10.0,1.0,0.6905119541293736,0.544228565228996,U-DEC
+2023-11-10,2023-11-11,False,Featherweight,False,Diego Lopes,29,0.0712,Pat Sabatini,25,0.1783,1.0,Diego Lopes,0.0,0.4636,True,False,99.0,99.0,,0.4966788398603403,0.3715206327037125,KO/TKO
+2023-11-10,2023-11-11,False,Featherweight,False,Dennis Buzukja,55,-0.3013,Jamall Emmers,67,-0.4015,0.0,Jamall Emmers,0.0,0.534,False,False,99.0,99.0,,0.3137788032278111,0.4559479488755044,KO/TKO
+2023-11-10,2023-11-11,False,Lightweight,False,Jared Gordon,41,-0.1544,Mark Madsen,34,-0.0199,1.0,Jared Gordon,0.0,0.4544,False,False,99.0,99.0,,0.6380051353408531,0.4411467503004282,KO/TKO
+2023-11-10,2023-11-11,False,Flyweight,False,Steve Erceg,15,0.1776,Alessandro Costa,19,0.0699,1.0,Steve Erceg,1.0,0.5365,True,False,14.0,99.0,,0.4838448169003974,0.5465527831835396,U-DEC
+2023-11-10,2023-11-11,False,Women's Strawweight,False,Jessica Andrade,5,0.5825,Mackenzie Dern,10,0.4266,1.0,Jessica Andrade,1.0,0.5528,True,True,5.0,7.0,1.0,0.4432140580014308,0.4844114852992883,KO/TKO
+2023-11-10,2023-11-11,False,Lightweight,False,Matt Frevola,51,-0.2366,Benoit Saint Denis,17,0.3131,0.0,Benoit Saint Denis,1.0,0.3214,False,False,14.0,99.0,,0.3931470300234549,0.4179339915074048,KO/TKO
+2023-11-10,2023-11-11,False,Women's Strawweight,False,Tabatha Ricci,14,0.0867,Loopy Godinez,13,0.0954,0.0,Loopy Godinez,1.0,0.4971,True,True,10.0,13.0,0.0,0.4979516512670106,0.549234421861939,S-DEC
+2023-11-10,2023-11-11,False,Heavyweight,True,Sergei Pavlovich,1,0.5718,Tom Aspinall,4,0.5275,0.0,Tom Aspinall,0.0,0.5151,True,True,2.0,4.0,0.0,0.5510292616260828,0.5027380766575308,KO/TKO
+2023-11-17,2023-11-18,False,Middleweight,False,Christian Leroy Duncan,32,-0.1473,Denis Tiuliulin,62,-0.7246,1.0,Christian Leroy Duncan,1.0,0.6868,False,False,99.0,99.0,,0.6755707219593281,0.5859884948018084,KO/TKO
+2023-11-17,2023-11-18,False,Featherweight,False,Jonathan Pearce,10,0.5088,Joanderson Brito,19,0.2074,0.0,Joanderson Brito,0.0,0.6011,True,False,99.0,99.0,,0.4559220063897111,0.6105557327222767,SUB
+2023-11-17,2023-11-18,False,Women's Bantamweight,False,Lucie Pudilova,27,-0.7661,Ailin Perez,21,-0.2305,0.0,Ailin Perez,1.0,0.3256,True,False,99.0,99.0,,0.4076814220796368,0.4293259681859066,U-DEC
+2023-11-17,2023-11-18,False,Welterweight,False,Michael Morales,19,0.164,Jake Matthews,36,-0.0667,1.0,Michael Morales,1.0,0.5778,False,False,99.0,99.0,,0.586868489658706,0.4938699788530898,U-DEC
+2023-11-17,2023-11-18,False,Bantamweight,False,Chad Anheliger,52,-0.2555,Jose Johnson,55,-0.3291,0.0,Jose Johnson,0.0,0.525,False,False,99.0,99.0,,0.5877747568443296,0.5613341163907035,SUB
+2023-12-01,2023-12-02,False,Middleweight,False,Punahele Soriano,52,-0.5449,Dustin Stoltzfus,72,-1.2549,0.0,Dustin Stoltzfus,0.0,0.7243,False,False,99.0,99.0,,0.5993859947848399,0.6305862195423393,SUB
+2023-12-01,2023-12-02,False,Lightweight,False,Jalin Turner,20,0.2647,King Green,10,0.4716,1.0,Jalin Turner,0.0,0.4301,True,False,12.0,13.0,1.0,0.3256794317681635,0.4265804205342201,KO/TKO
+2023-12-01,2023-12-02,False,Lightweight,False,Clay Guida,72,-0.4724,Joaquim Silva,60,-0.3035,0.0,Joaquim Silva,1.0,0.4428,False,False,99.0,99.0,,0.5402104280306923,0.5277096876362957,U-DEC
+2023-12-01,2023-12-02,False,Lightweight,False,Beneil Dariush,4,1.2629,Arman Tsarukyan,7,0.5472,0.0,Arman Tsarukyan,0.0,0.7258,True,True,4.0,8.0,0.0,0.4520500069983978,0.5771730411295373,KO/TKO
+2023-12-01,2023-12-02,False,Lightweight,False,Drakkar Klose,28,0.051,Joe Solecki,22,0.2524,1.0,Drakkar Klose,0.0,0.4319,True,False,99.0,99.0,,0.4925073290513894,0.4821539733214997,KO/TKO
+2023-12-08,2023-12-09,False,Middleweight,False,JunYong Park,25,-0.0164,Andre Muniz,17,0.079,0.0,Andre Muniz,1.0,0.4676,True,False,99.0,99.0,,0.5584528453195476,0.4604685495231169,S-DEC
+2023-12-08,2023-12-09,False,Flyweight,False,HyunSung Park,13,0.2296,Shannon Ross,46,-0.5202,1.0,HyunSung Park,1.0,0.7349,False,False,99.0,99.0,,0.7722214023852509,0.6891125765593445,KO/TKO
+2023-12-08,2023-12-09,False,Welterweight,False,Song Kenan,56,-0.3224,Kevin Jousset,26,0.0364,0.0,Kevin Jousset,1.0,0.3804,False,False,99.0,99.0,,0.5024039222417115,0.5029548475226661,U-DEC
+2023-12-08,2023-12-09,False,Flyweight,False,Tatsuro Taira,7,0.5439,Carlos Hernandez,28,-0.1393,1.0,Tatsuro Taira,1.0,0.7169,True,False,99.0,99.0,,0.7046971553965335,0.6639597484706883,KO/TKO
+2023-12-08,2023-12-09,False,Light Heavyweight,False,Anthony Smith,7,0.4008,Khalil Rountree Jr.,17,-0.0752,0.0,Khalil Rountree Jr.,0.0,0.6564,True,False,8.0,11.0,0.0,0.5698601265509192,0.5734068689212687,KO/TKO
+2023-12-08,2023-12-09,False,Lightweight,False,Nasrat Haqparast,28,0.0535,Jamie Mullarkey,55,-0.2797,1.0,Nasrat Haqparast,1.0,0.6114,False,False,99.0,99.0,,0.4556797833523093,0.5684776841694524,KO/TKO
+2023-12-08,2023-12-09,False,Bantamweight,False,Song Yadong,8,0.5221,Chris Gutierrez,15,0.2961,1.0,Song Yadong,1.0,0.5762,True,True,7.0,15.0,1.0,0.5160590478564705,0.5693175613805148,U-DEC
+2023-12-15,2023-12-16,False,Welterweight,False,Shavkat Rakhmonov,4,0.6589,Stephen Thompson,7,0.5518,1.0,Shavkat Rakhmonov,1.0,0.5364,True,True,5.0,6.0,1.0,0.6182086020724991,0.5805320493498181,SUB
+2023-12-15,2023-12-16,False,Featherweight,False,Josh Emmett,9,0.54,Bryce Mitchell,11,0.3369,1.0,Josh Emmett,1.0,0.5686,True,True,6.0,10.0,1.0,0.3472873382097523,0.4566326142703251,KO/TKO
+2023-12-15,2023-12-16,False,Flyweight,True,Alexandre Pantoja,0,1.1195,Brandon Royval,2,0.6414,1.0,Alexandre Pantoja,1.0,0.6571,True,True,0.0,2.0,1.0,0.6455515989471643,0.6247441740655524,U-DEC
+2023-12-15,2023-12-16,False,Flyweight,False,Tagir Ulanbekov,19,0.0439,Cody Durden,23,-0.0091,1.0,Tagir Ulanbekov,1.0,0.518,True,False,12.0,15.0,1.0,0.4589988083670561,0.4676123449035886,SUB
+2023-12-15,2023-12-16,False,Light Heavyweight,False,Alonzo Menifield,9,0.1678,Dustin Jacoby,20,-0.2351,1.0,Alonzo Menifield,1.0,0.6337,True,False,14.0,15.0,1.0,0.430381875985788,0.4706892744517697,U-DEC
+2023-12-15,2023-12-16,False,Women's Bantamweight,False,Irene Aldana,4,0.5443,Karol Rosa,10,0.1156,1.0,Irene Aldana,1.0,0.6418,True,True,5.0,9.0,1.0,0.4999952585952861,0.5328887744409376,U-DEC
+2023-12-15,2023-12-16,False,Featherweight,False,Andre Fili,68,-0.4642,Lucas Almeida,46,-0.1777,1.0,Andre Fili,0.0,0.4038,False,False,99.0,99.0,,0.5471330366031352,0.5314011184777593,KO/TKO
+2023-12-15,2023-12-16,False,Lightweight,False,Tony Ferguson,38,-0.1105,Paddy Pimblett,11,0.4344,0.0,Paddy Pimblett,1.0,0.3228,False,False,99.0,99.0,,0.4852855184912898,0.4376449347611792,U-DEC
+2023-12-15,2023-12-16,False,Women's Flyweight,False,Casey O'Neill,10,0.3644,Ariane da Silva,24,-0.317,0.0,Ariane da Silva,0.0,0.7164,True,False,12.0,99.0,,0.6721417944278637,0.5779392843724095,SUB
+2024-01-12,2024-01-13,False,Bantamweight,False,Marcus McGhee,24,0.1129,Gaston Bolanos,31,-0.0163,1.0,Marcus McGhee,1.0,0.5438,False,False,99.0,99.0,,0.5204778200026209,0.531779929398787,KO/TKO
+2024-01-12,2024-01-13,False,Bantamweight,False,Farid Basharat,28,0.0561,Taylor Lapilus,26,0.0998,1.0,Farid Basharat,0.0,0.4851,True,False,99.0,99.0,,0.5527865569484693,0.5574105022358076,U-DEC
+2024-01-12,2024-01-13,False,Welterweight,False,Matthew Semelsberger,69,-0.5974,Preston Parsons,61,-0.3908,0.0,Preston Parsons,1.0,0.4302,False,False,99.0,99.0,,0.5813605898889562,0.6072394501819561,U-DEC
+2024-01-12,2024-01-13,False,Heavyweight,False,Andrei Arlovski,29,-0.3299,Waldo Cortes Acosta,17,-0.0299,0.0,Waldo Cortes Acosta,1.0,0.3994,True,False,99.0,99.0,,0.3090904139817326,0.4901154255553117,U-DEC
+2024-01-12,2024-01-13,False,Bantamweight,False,Ricky Simon,11,0.3583,Mario Bautista,21,0.1464,0.0,Mario Bautista,0.0,0.5716,True,False,13.0,99.0,,0.528795868665929,0.5099087385592763,U-DEC
+2024-01-12,2024-01-13,False,Middleweight,False,Phil Hawes,52,-0.5575,Brunno Ferreira,36,-0.2201,0.0,Brunno Ferreira,1.0,0.3873,False,False,99.0,99.0,,0.6130146100430076,0.5320398049328614,KO/TKO
+2024-01-12,2024-01-13,False,Light Heavyweight,False,Magomed Ankalaev,4,0.6403,Johnny Walker,6,0.2653,1.0,Magomed Ankalaev,1.0,0.6248,True,True,3.0,7.0,1.0,0.6051183943122458,0.6573985295741778,KO/TKO
+2024-01-19,2024-01-20,False,Middleweight,True,Sean Strickland,0,0.7006,Dricus Du Plessis,2,0.8014,0.0,Dricus Du Plessis,0.0,0.4658,True,True,0.0,2.0,0.0,0.353982660749723,0.470410553655989,S-DEC
+2024-01-19,2024-01-20,False,Featherweight,False,Arnold Allen,2,0.8215,Movsar Evloev,7,0.5663,0.0,Movsar Evloev,0.0,0.5859,True,True,4.0,9.0,0.0,0.4290148562275946,0.5012759747615145,U-DEC
+2024-01-19,2024-01-20,False,Featherweight,False,Charles Jourdain,30,-0.0593,Sean Woodson,29,-0.0333,0.0,Sean Woodson,1.0,0.4912,True,False,99.0,99.0,,0.5745880164610104,0.4975012248341667,S-DEC
+2024-01-19,2024-01-20,False,Bantamweight,False,Brad Katona,52,-0.2804,Garrett Armfield,50,-0.2446,0.0,Garrett Armfield,1.0,0.4878,False,False,99.0,99.0,,0.4565453478567953,0.5543101068533169,U-DEC
+2024-01-19,2024-01-20,False,Welterweight,False,Neil Magny,40,-0.0816,Mike Malott,20,0.1483,1.0,Neil Magny,0.0,0.4225,False,False,13.0,99.0,,0.44343654501964,0.6059583960290146,KO/TKO
+2024-01-19,2024-01-20,False,Flyweight,False,Malcolm Gordon,52,-0.7583,Jimmy Flick,44,-0.4731,0.0,Jimmy Flick,1.0,0.4042,False,False,99.0,99.0,,0.6327755112429824,0.5312613860178963,SUB
+2024-01-19,2024-01-20,False,Middleweight,False,Chris Curtis,18,0.0902,Marc-Andre Barriault,35,-0.2062,1.0,Chris Curtis,1.0,0.5994,False,False,14.0,99.0,,0.5770979300594329,0.5870806701820264,S-DEC
+2024-01-19,2024-01-20,False,Women's Strawweight,False,Gillian Robertson,20,0.0037,Polyana Viana,30,-0.234,1.0,Gillian Robertson,1.0,0.5801,True,False,99.0,99.0,,0.4969225594188065,0.6378708962032682,KO/TKO
+2024-01-19,2024-01-20,False,Women's Bantamweight,True,Raquel Pennington,1,0.7331,Mayra Bueno Silva,10,0.1146,1.0,Raquel Pennington,1.0,0.6987,True,True,2.0,3.0,1.0,0.6942382635354647,0.6439162281795422,U-DEC
+2024-02-02,2024-02-03,False,Welterweight,False,Gilbert Urbina,49,-0.2721,Charles Radtke,41,-0.0899,0.0,Charles Radtke,1.0,0.4384,False,False,99.0,99.0,,0.5988264471380295,0.4679841776799892,KO/TKO
+2024-02-02,2024-02-03,False,Welterweight,False,Themba Gorimbo,54,-0.3163,Pete Rodriguez,63,-0.3906,1.0,Themba Gorimbo,1.0,0.5253,False,False,99.0,99.0,,0.453795004505231,0.471898831917208,KO/TKO
+2024-02-02,2024-02-03,False,Lightweight,False,Renato Moicano,18,0.2882,Drew Dober,23,0.1555,1.0,Renato Moicano,1.0,0.545,True,False,13.0,15.0,1.0,0.4411078947528855,0.4800934194255096,U-DEC
+2024-02-02,2024-02-03,False,Middleweight,False,Roman Dolidze,8,0.3692,Nassourdine Imavov,16,0.1215,0.0,Nassourdine Imavov,0.0,0.5834,True,False,8.0,11.0,0.0,0.5544502958294771,0.5212660280162876,M-DEC
+2024-02-02,2024-02-03,False,Women's Flyweight,False,Viviane Araujo,12,0.151,Natalia Silva,7,0.4253,0.0,Natalia Silva,1.0,0.4078,True,True,7.0,9.0,0.0,0.3010357782025532,0.4176715943084158,U-DEC
+2024-02-02,2024-02-03,False,Welterweight,False,Randy Brown,26,0.0108,Muslim Salikhov,43,-0.1702,1.0,Randy Brown,1.0,0.5612,False,False,99.0,99.0,,0.5414843062737162,0.5551853494420838,KO/TKO
+2024-02-02,2024-02-03,False,Flyweight,False,Azat Maksum,18,0.0544,Charles Johnson,49,-0.6767,0.0,Charles Johnson,0.0,0.7299,False,False,99.0,99.0,,0.5109321051637475,0.6433032917050812,U-DEC
+2024-02-02,2024-02-03,False,Featherweight,False,JeongYeong Lee,32,-0.0804,Blake Bilder,45,-0.2671,1.0,JeongYeong Lee,1.0,0.5631,False,False,99.0,99.0,,0.51055203669235,0.579278457863047,U-DEC
+2024-02-09,2024-02-10,False,Welterweight,False,Max Griffin,31,0.0108,Jeremiah Wells,27,0.027,1.0,Max Griffin,0.0,0.4945,False,False,99.0,99.0,,0.4090873031606135,0.4198214616045985,S-DEC
+2024-02-09,2024-02-10,False,Featherweight,False,Dan Ige,32,-0.0657,Andre Fili,55,-0.4297,1.0,Dan Ige,1.0,0.6213,False,False,13.0,99.0,,0.6461317413166955,0.5916019133178387,KO/TKO
+2024-02-09,2024-02-10,False,Middleweight,False,Jack Hermansson,32,-0.0864,Joe Pyfer,11,0.2923,1.0,Jack Hermansson,0.0,0.374,False,False,11.0,99.0,,0.6589048202482559,0.5160409655915604,U-DEC
+2024-02-09,2024-02-10,False,Middleweight,False,Rodolfo Vieira,34,-0.135,Armen Petrosyan,25,-0.0237,1.0,Rodolfo Vieira,0.0,0.4622,False,False,99.0,99.0,,0.2769503233316317,0.4514949875135006,SUB
+2024-02-09,2024-02-10,False,Light Heavyweight,False,Zac Pauga,31,-0.5613,Bogdan Guskov,23,-0.3269,0.0,Bogdan Guskov,1.0,0.421,False,False,99.0,99.0,,0.5891629412165913,0.4804511902288095,KO/TKO
+2024-02-09,2024-02-10,False,Women's Strawweight,False,Loma Lookboonmee,18,0.0521,Bruna Brasil,30,-0.2532,1.0,Loma Lookboonmee,1.0,0.6023,True,False,99.0,99.0,,0.6544401717384052,0.5893934260161835,U-DEC
+2024-02-09,2024-02-10,False,Light Heavyweight,False,Devin Clark,36,-0.7599,Marcin Prachnio,33,-0.5766,0.0,Marcin Prachnio,1.0,0.438,False,False,99.0,99.0,,0.4771994832553171,0.5818352803114826,U-DEC
+2024-02-09,2024-02-10,False,Middleweight,False,Brad Tavares,28,-0.111,Gregory Rodrigues,26,-0.0357,0.0,Gregory Rodrigues,1.0,0.4744,True,False,99.0,99.0,,0.4134558019433416,0.5020689477591611,KO/TKO
+2024-02-16,2024-02-17,False,Heavyweight,False,Marcos Rogerio de Lima,16,-0.022,Junior Tafa,20,-0.1127,1.0,Marcos Rogerio de Lima,1.0,0.5308,True,False,15.0,99.0,,0.5257214971364115,0.5968738730222799,KO/TKO
+2024-02-16,2024-02-17,False,Women's Strawweight,False,Amanda Lemos,6,0.5968,Mackenzie Dern,9,0.284,1.0,Amanda Lemos,1.0,0.6048,True,True,3.0,7.0,1.0,0.6096086050206974,0.5841990480748884,U-DEC
+2024-02-16,2024-02-17,False,Welterweight,False,Geoff Neal,17,0.2456,Ian Machado Garry,9,0.4613,0.0,Ian Machado Garry,1.0,0.4272,True,False,8.0,10.0,0.0,0.3637331310347628,0.4279430544338826,S-DEC
+2024-02-16,2024-02-17,False,Bantamweight,False,Merab Dvalishvili,5,0.8254,Henry Cejudo,3,0.8494,1.0,Merab Dvalishvili,0.0,0.4918,True,True,2.0,3.0,1.0,0.7231822086098182,0.6722084709320537,U-DEC
+2024-02-16,2024-02-17,False,Women's Flyweight,False,Andrea Lee,14,-0.0036,Miranda Maverick,18,-0.042,0.0,Miranda Maverick,0.0,0.5131,True,False,15.0,99.0,,0.4874449493182439,0.4082689934021487,U-DEC
+2024-02-16,2024-02-17,False,Featherweight,True,Alexander Volkanovski,0,1.6477,Ilia Topuria,2,0.7262,0.0,Ilia Topuria,0.0,0.7779,True,True,0.0,3.0,0.0,0.6955505191305189,0.6148341923827305,KO/TKO
+2024-02-16,2024-02-17,False,Middleweight,False,Anthony Hernandez,14,0.2111,Roman Kopylov,20,0.1378,1.0,Anthony Hernandez,1.0,0.5249,True,False,15.0,99.0,,0.5434027242250697,0.5285608300001189,SUB
+2024-02-23,2024-02-24,False,Bantamweight,False,Cristian Quinonez,51,-0.1726,Raoni Barcelos,81,-0.636,0.0,Raoni Barcelos,0.0,0.6525,False,False,99.0,99.0,,0.3632668811462232,0.3967850880407019,SUB
+2024-02-23,2024-02-24,False,Flyweight,False,Edgar Chairez,27,-0.158,Daniel Lacerda,52,-1.0473,1.0,Edgar Chairez,1.0,0.7702,False,False,99.0,99.0,,0.7080382241562467,0.6742213219651956,SUB
+2024-02-23,2024-02-24,False,Featherweight,False,Erik Silva,58,-0.4742,Muhammad Naimov,15,0.1573,0.0,Muhammad Naimov,1.0,0.2976,False,False,99.0,99.0,,0.3417707190535282,0.2892324981882238,KO/TKO
+2024-02-23,2024-02-24,False,Lightweight,False,Manuel Torres,18,0.2744,Chris Duncan,24,0.1351,1.0,Manuel Torres,1.0,0.5472,True,False,99.0,99.0,,0.5522340621398201,0.4964145153675551,SUB
+2024-02-23,2024-02-24,False,Women's Strawweight,False,Yazmin Jauregui,25,-0.0751,Sam Hughes,33,-0.3203,1.0,Yazmin Jauregui,1.0,0.5826,False,False,99.0,99.0,,0.4556793645367731,0.5323166556605817,U-DEC
+2024-02-23,2024-02-24,False,Flyweight,False,Brandon Moreno,4,1.2012,Brandon Royval,7,0.5507,0.0,Brandon Royval,0.0,0.7078,True,True,1.0,3.0,0.0,0.6580521128544841,0.6401912527942353,S-DEC
+2024-02-23,2024-02-24,False,Flyweight,False,Victor Altamirano,32,-0.2247,Felipe dos Santos,20,0.0036,0.0,Felipe dos Santos,1.0,0.423,False,False,99.0,99.0,,0.5416139985639998,0.5462911279261321,S-DEC
+2024-02-23,2024-02-24,False,Lightweight,False,Claudio Puelles,31,0.0137,Fares Ziam,46,-0.1786,0.0,Fares Ziam,0.0,0.565,False,False,99.0,99.0,,0.445956684677781,0.5474036266634024,S-DEC
+2024-02-23,2024-02-24,False,Flyweight,False,Jesus Aguilar,24,-0.1215,Mateus Mendonca,44,-0.5227,1.0,Jesus Aguilar,1.0,0.6331,False,False,99.0,99.0,,0.7610455980124072,0.6123967975498327,S-DEC
+2024-02-23,2024-02-24,False,Lightweight,False,Daniel Zellhuber,32,-0.0096,Francisco Prado,45,-0.1516,1.0,Daniel Zellhuber,1.0,0.5481,False,False,99.0,99.0,,0.4686889092090722,0.5588019536046049,U-DEC
+2024-03-01,2024-03-02,False,Flyweight,False,Matt Schnell,26,-0.1427,Steve Erceg,13,0.2062,0.0,Steve Erceg,1.0,0.3835,True,False,9.0,12.0,0.0,0.3871012700274258,0.4466863231178235,KO/TKO
+2024-03-01,2024-03-02,False,Middleweight,False,Eryk Anders,52,-0.5259,Jamie Pickett,69,-1.2929,1.0,Eryk Anders,1.0,0.7395,False,False,99.0,99.0,,0.7007828048130513,0.6725254943867017,U-DEC
+2024-03-01,2024-03-02,False,Middleweight,False,Christian Leroy Duncan,30,-0.0422,Claudio Ribeiro,47,-0.4425,1.0,Christian Leroy Duncan,1.0,0.6328,False,False,99.0,99.0,,0.5554563893673802,0.6046912036295643,KO/TKO
+2024-03-01,2024-03-02,False,Heavyweight,False,Jairzinho Rozenstruik,9,0.1418,Shamil Gaziev,12,0.0705,1.0,Jairzinho Rozenstruik,1.0,0.5242,True,True,12.0,99.0,,0.5881668687428664,0.5784333505137449,KO/TKO
+2024-03-01,2024-03-02,False,Bantamweight,False,Aiemann Zahabi,47,-0.1498,Javid Basharat,22,0.1875,1.0,Aiemann Zahabi,0.0,0.3873,False,False,99.0,99.0,,0.3930720928619736,0.4446934945103889,U-DEC
+2024-03-01,2024-03-02,False,Light Heavyweight,False,Vitor Petrino,13,0.1519,Tyson Pedro,19,-0.1933,1.0,Vitor Petrino,1.0,0.6153,True,False,99.0,99.0,,0.4779501610204144,0.6264314742889895,U-DEC
+2024-03-08,2024-03-09,False,Heavyweight,False,Curtis Blaydes,5,0.8061,Jailton Almeida,6,0.5347,1.0,Curtis Blaydes,1.0,0.5913,True,True,5.0,7.0,1.0,0.4945116266739937,0.5433671708746775,KO/TKO
+2024-03-08,2024-03-09,False,Women's Flyweight,False,Katlyn Cerminara,7,0.448,Maycee Barber,5,0.5456,0.0,Maycee Barber,1.0,0.4669,True,True,4.0,6.0,0.0,0.3734432140971951,0.5046866861036505,U-DEC
+2024-03-08,2024-03-09,False,Women's Flyweight,False,Joanne Wood,14,0.0705,Maryna Moroz,20,-0.2125,1.0,Joanne Wood,1.0,0.595,True,False,99.0,99.0,,0.6554979119486252,0.505342750906945,S-DEC
+2024-03-08,2024-03-09,False,Flyweight,False,CJ Vergara,35,-0.2616,Asu Almabayev,16,0.1832,0.0,Asu Almabayev,1.0,0.3532,False,False,99.0,99.0,,0.4084875723968197,0.4699124414105702,U-DEC
+2024-03-08,2024-03-09,False,Welterweight,False,Gilbert Burns,8,0.5729,Jack Della Maddalena,13,0.3427,0.0,Jack Della Maddalena,0.0,0.5776,True,True,4.0,11.0,0.0,0.4943210599350729,0.5419822433728589,KO/TKO
+2024-03-08,2024-03-09,False,Lightweight,False,Dustin Poirier,3,1.5968,Benoit Saint Denis,11,0.5514,1.0,Dustin Poirier,1.0,0.8056,True,True,3.0,12.0,1.0,0.5358187906520369,0.6577781172935194,KO/TKO
+2024-03-08,2024-03-09,False,Light Heavyweight,False,Ion Cutelaba,34,-0.6609,Philipe Lins,22,-0.2755,0.0,Philipe Lins,1.0,0.3719,False,False,99.0,99.0,,0.5488626861927338,0.4007074725256405,U-DEC
+2024-03-08,2024-03-09,False,Bantamweight,True,Sean O'Malley,0,0.7034,Marlon Vera,4,0.8468,1.0,Sean O'Malley,1.0,0.4514,True,True,0.0,5.0,1.0,0.6805435263861004,0.503399317176819,U-DEC
+2024-03-08,2024-03-09,False,Bantamweight,False,Petr Yan,19,0.2316,Song Yadong,7,0.6876,1.0,Petr Yan,0.0,0.3497,True,False,4.0,7.0,1.0,0.4728111195473429,0.4174077719538847,U-DEC
+2024-03-08,2024-03-09,False,Bantamweight,False,Pedro Munhoz,14,0.3105,Kyler Phillips,21,0.1851,0.0,Kyler Phillips,0.0,0.5425,True,False,13.0,99.0,,0.4584951000692377,0.4708876360475057,U-DEC
+2024-03-15,2024-03-16,False,Light Heavyweight,False,Ovince Saint Preux,29,-0.4477,Kennedy Nzechukwu,21,-0.2288,1.0,Ovince Saint Preux,0.0,0.4261,True,False,99.0,99.0,,0.3268315572040527,0.425454409558464,S-DEC
+2024-03-15,2024-03-16,False,Flyweight,False,Jafel Filho,24,-0.0963,Ode Osbourne,45,-0.5253,1.0,Jafel Filho,1.0,0.6419,False,False,99.0,99.0,,0.5487814422749813,0.528110997053579,SUB
+2024-03-15,2024-03-16,False,Lightweight,False,Natan Levy,51,-0.1863,Mike Davis,39,-0.0839,0.0,Mike Davis,1.0,0.4653,False,False,99.0,99.0,,0.4421546366128337,0.4369573401799648,SUB
+2024-03-15,2024-03-16,False,Women's Strawweight,False,Jaqueline Amorim,24,-0.0665,Cory McKenna,25,-0.0903,1.0,Jaqueline Amorim,1.0,0.5081,True,False,99.0,99.0,,0.4915079660653903,0.3920841851499046,SUB
+2024-03-15,2024-03-16,False,Heavyweight,False,Tai Tuivasa,11,0.1405,Marcin Tybura,7,0.2954,0.0,Marcin Tybura,1.0,0.4475,True,True,9.0,10.0,0.0,0.4923436917672382,0.4224299321151556,SUB
+2024-03-22,2024-03-23,False,Bantamweight,False,Payton Talbott,25,0.1031,Cameron Saaiman,28,0.0259,1.0,Payton Talbott,1.0,0.5262,True,False,99.0,99.0,,0.3922797907372497,0.4670522642401441,KO/TKO
+2024-03-22,2024-03-23,False,Heavyweight,False,Mohammed Usman,13,0.0533,Mick Parkin,15,0.0292,0.0,Mick Parkin,0.0,0.5082,True,True,99.0,99.0,,0.4545105528145535,0.5309796181042101,U-DEC
+2024-03-22,2024-03-23,False,Bantamweight,False,Miles Johns,60,-0.2879,Cody Gibson,90,-0.7858,1.0,Miles Johns,1.0,0.6631,False,False,99.0,99.0,,0.5491243817744431,0.6291542903212353,U-DEC
+2024-03-22,2024-03-23,False,Featherweight,False,Ricardo Ramos,59,-0.4251,Julian Erosa,69,-0.6196,0.0,Julian Erosa,0.0,0.5657,False,False,99.0,99.0,,0.6141602489207388,0.6010561750435374,SUB
+2024-03-22,2024-03-23,False,Heavyweight,False,Karl Williams,12,0.058,Justin Tafa,24,-0.187,1.0,Karl Williams,1.0,0.5826,True,False,99.0,99.0,,0.4589276608494684,0.5478241347424343,U-DEC
+2024-03-22,2024-03-23,False,Middleweight,False,Edmen Shahbazyan,53,-0.5548,AJ Dobson,49,-0.4659,1.0,Edmen Shahbazyan,0.0,0.4698,False,False,99.0,99.0,,0.6396661790593133,0.6121017706555903,KO/TKO
+2024-03-22,2024-03-23,False,Lightweight,False,Kurt Holobaugh,96,-0.7321,Trey Ogden,71,-0.3382,0.0,Trey Ogden,1.0,0.3692,False,False,99.0,99.0,,0.6061203610924673,0.5677864700565569,U-DEC
+2024-03-29,2024-03-30,False,Featherweight,False,Nate Landwehr,37,-0.1287,Jamall Emmers,41,-0.1798,1.0,Nate Landwehr,1.0,0.5174,False,False,99.0,99.0,,0.398372985672303,0.553072752045694,KO/TKO
+2024-03-29,2024-03-30,False,Middleweight,False,Chris Weidman,31,-0.0415,Bruno Silva (Blindado),61,-0.8061,1.0,Chris Weidman,1.0,0.7388,False,False,99.0,99.0,,0.6506316335622641,0.6041864396832678,U-DEC
+2024-03-29,2024-03-30,False,Featherweight,False,Bill Algeo,23,0.1135,Kyle Nelson,62,-0.4177,0.0,Kyle Nelson,0.0,0.6731,False,False,99.0,99.0,,0.688582519991656,0.6488617729729667,KO/TKO
+2024-03-29,2024-03-30,False,Women's Strawweight,False,Virna Jandiroba,6,0.4023,Loopy Godinez,9,0.217,1.0,Virna Jandiroba,1.0,0.5627,True,True,5.0,10.0,1.0,0.4339380188662812,0.4610755107121735,U-DEC
+2024-03-29,2024-03-30,False,Middleweight,False,Andre Petroski,22,0.0957,Jacob Malkoun,34,-0.191,0.0,Jacob Malkoun,0.0,0.5963,False,False,99.0,99.0,,0.3800010213733744,0.668267211579266,KO/TKO
+2024-03-29,2024-03-30,False,Welterweight,False,Vicente Luque,7,0.5854,Joaquin Buckley,38,-0.0686,0.0,Joaquin Buckley,0.0,0.7088,False,False,11.0,99.0,,0.6183810918191484,0.6983405823707867,KO/TKO
+2024-03-29,2024-03-30,False,Middleweight,False,Nursulton Ruziboev,26,0.0347,Sedriques Dumas,39,-0.2844,1.0,Nursulton Ruziboev,1.0,0.6068,False,False,99.0,99.0,,0.6811474162881804,0.5273732988297062,KO/TKO
+2024-03-29,2024-03-30,False,Women's Flyweight,False,Erin Blanchfield,2,0.7124,Manon Fiorot,3,0.5905,0.0,Manon Fiorot,0.0,0.5414,True,True,2.0,3.0,0.0,0.5452606819314991,0.5094828056083667,U-DEC
+2024-04-05,2024-04-06,False,Welterweight,False,Court McGee,66,-0.564,Alex Morono,39,-0.0118,0.0,Alex Morono,1.0,0.3206,False,False,99.0,99.0,,0.4299564753962623,0.2932045588136615,U-DEC
+2024-04-05,2024-04-06,False,Women's Bantamweight,False,Melissa Mullins,14,-0.0217,Nora Cornolle,13,-0.0062,0.0,Nora Cornolle,1.0,0.4947,True,True,15.0,99.0,,0.5098338226199818,0.5000681998743323,KO/TKO
+2024-04-05,2024-04-06,False,Featherweight,False,Morgan Charriere,26,0.0868,Chepe Mariscal,16,0.2163,0.0,Chepe Mariscal,1.0,0.4561,True,False,99.0,99.0,,0.5051390854111474,0.4242554531029042,S-DEC
+2024-04-05,2024-04-06,False,Middleweight,False,Brendan Allen,6,0.5482,Chris Curtis,21,0.1376,1.0,Brendan Allen,1.0,0.6361,True,False,6.0,14.0,1.0,0.6757124661991804,0.6701499596942601,S-DEC
+2024-04-05,2024-04-06,False,Lightweight,False,Trevor Peek,38,-0.079,Charlie Campbell,23,0.1611,0.0,Charlie Campbell,1.0,0.4191,False,False,99.0,99.0,,0.4230736524607944,0.4827087141597156,U-DEC
+2024-04-05,2024-04-06,False,Lightweight,False,Ignacio Bahamondes,37,-0.0644,Christos Giagos,94,-0.6492,1.0,Ignacio Bahamondes,1.0,0.689,False,False,99.0,99.0,,0.5843686170464518,0.5581963141607122,KO/TKO
+2024-04-12,2024-04-13,False,Lightweight,False,Charles Oliveira,1,1.8467,Arman Tsarukyan,4,0.7428,0.0,Arman Tsarukyan,0.0,0.8178,True,True,1.0,4.0,0.0,0.539797806563735,0.6596459764910616,S-DEC
+2024-04-12,2024-04-13,False,Middleweight,False,Bo Nickal,19,0.1493,Cody Brundage,54,-0.6355,1.0,Bo Nickal,1.0,0.7441,False,False,99.0,99.0,,0.6157292568141756,0.6070829464575604,SUB
+2024-04-12,2024-04-13,False,Lightweight,False,Jalin Turner,16,0.3898,Renato Moicano,10,0.5209,0.0,Renato Moicano,1.0,0.4555,True,False,10.0,13.0,0.0,0.6986343641196954,0.4524988066288151,KO/TKO
+2024-04-12,2024-04-13,False,Featherweight,False,Sodiq Yusuff,15,0.2739,Diego Lopes,22,0.1426,0.0,Diego Lopes,0.0,0.5445,True,False,13.0,99.0,,0.5660146296889316,0.5660039584126837,KO/TKO
+2024-04-12,2024-04-13,False,Women's Strawweight,False,Jessica Andrade,4,0.8139,Marina Rodriguez,7,0.6482,1.0,Jessica Andrade,1.0,0.5561,True,True,4.0,6.0,1.0,0.4574336522840627,0.5314725482545902,S-DEC
+2024-04-12,2024-04-13,False,Women's Strawweight,True,Zhang Weili,0,1.0165,Yan Xiaonan,3,0.5675,1.0,Zhang Weili,1.0,0.6481,True,True,0.0,1.0,1.0,0.715919211819506,0.5764891247502938,U-DEC
+2024-04-12,2024-04-13,False,Light Heavyweight,True,Alex Pereira,0,0.8004,Jamahal Hill,2,0.3651,1.0,Alex Pereira,1.0,0.6438,True,True,0.0,1.0,1.0,0.5794794199635868,0.5790475735057411,KO/TKO
+2024-04-12,2024-04-13,False,Lightweight,False,King Green,27,0.1268,Jim Miller,12,0.503,1.0,King Green,0.0,0.3748,True,False,14.0,99.0,,0.632618168510346,0.4637182540749515,U-DEC
+2024-04-26,2024-04-27,False,Lightweight,False,Gabriel Benitez,82,-0.4949,Maheshate,83,-0.4952,0.0,Maheshate,0.0,0.5001,False,False,99.0,99.0,,0.7103235523547818,0.5649031872330728,S-DEC
+2024-04-26,2024-04-27,False,Women's Flyweight,False,Ivana Petrovic,24,-0.2712,Liang Na,39,-0.8357,1.0,Ivana Petrovic,1.0,0.683,False,False,99.0,99.0,,0.6686824023457111,0.6083603749269431,SUB
+2024-04-26,2024-04-27,False,Heavyweight,False,Don'Tale Mayes,30,-0.3223,Caio Machado,23,-0.1865,1.0,Don'Tale Mayes,0.0,0.454,True,False,99.0,99.0,,0.4581327430772847,0.5363609665717617,U-DEC
+2024-04-26,2024-04-27,False,Women's Flyweight,False,Ariane da Silva,16,-0.1551,Karine Silva,9,0.2634,0.0,Karine Silva,1.0,0.3614,True,False,12.0,13.0,0.0,0.3819970252616706,0.4143912511960971,U-DEC
+2024-04-26,2024-04-27,False,Bantamweight,False,Rani Yahya,36,-0.0307,Victor Henry,34,-0.0276,0.0,Victor Henry,1.0,0.4989,False,False,99.0,99.0,,0.3943829215901911,0.5824882167025826,KO/TKO
+2024-04-26,2024-04-27,False,Welterweight,False,Tim Means,60,-0.476,Uros Medic,56,-0.3141,0.0,Uros Medic,1.0,0.4452,False,False,99.0,99.0,,0.6905341675194882,0.5500192405316724,KO/TKO
+2024-04-26,2024-04-27,False,Featherweight,False,Jonathan Pearce,20,0.1491,David Onama,36,-0.1025,0.0,David Onama,0.0,0.5847,False,False,99.0,99.0,,0.7102053566366822,0.6206102871423153,U-DEC
+2024-04-26,2024-04-27,False,Flyweight,False,Matheus Nicolau,7,0.4477,Alex Perez,10,0.3283,0.0,Alex Perez,0.0,0.5405,True,True,5.0,8.0,0.0,0.4371140498702009,0.5788287903164067,KO/TKO
+2024-04-26,2024-04-27,False,Light Heavyweight,False,Ryan Spann,18,-0.0397,Bogdan Guskov,22,-0.1998,0.0,Bogdan Guskov,0.0,0.5542,True,False,11.0,99.0,,0.7118758619249937,0.6316555620812008,KO/TKO
+2024-05-03,2024-05-04,False,Middleweight,False,Paul Craig,27,0.0258,Caio Borralho,13,0.2598,0.0,Caio Borralho,1.0,0.4211,True,False,13.0,14.0,0.0,0.3907185137569395,0.3420623024053496,KO/TKO
+2024-05-03,2024-05-04,False,Lightweight,False,Joaquim Silva,55,-0.2309,Drakkar Klose,21,0.2443,0.0,Drakkar Klose,1.0,0.3438,False,False,99.0,99.0,,0.3180386140562122,0.3645023265970595,U-DEC
+2024-05-03,2024-05-04,False,Flyweight,True,Alexandre Pantoja,0,1.1459,Steve Erceg,9,0.4091,1.0,Alexandre Pantoja,1.0,0.7314,True,True,0.0,10.0,1.0,0.6080878045664314,0.6360392719038496,U-DEC
+2024-05-03,2024-05-04,False,Light Heavyweight,False,Anthony Smith,15,0.0196,Vitor Petrino,11,0.1713,1.0,Anthony Smith,0.0,0.4486,True,True,10.0,99.0,,0.5844359712790073,0.4623342739780764,SUB
+2024-05-03,2024-05-04,False,Women's Strawweight,False,Karolina Kowalkiewicz,20,0.044,Iasmin Lucindo,15,0.1009,0.0,Iasmin Lucindo,1.0,0.4807,True,False,13.0,99.0,,0.5622482962747489,0.5551073257280921,U-DEC
+2024-05-03,2024-05-04,False,Flyweight,False,Alessandro Costa,27,-0.1431,Kevin Borjas,31,-0.22,1.0,Alessandro Costa,1.0,0.5261,False,False,99.0,99.0,,0.6035088144258215,0.523571048935412,KO/TKO
+2024-05-10,2024-05-11,False,Lightweight,False,Chase Hooper,48,-0.1583,Viacheslav Borshchev,57,-0.2655,1.0,Chase Hooper,1.0,0.5364,False,False,99.0,99.0,,0.4314154860170245,0.5585388121311731,SUB
+2024-05-10,2024-05-11,False,Flyweight,False,Charles Johnson,46,-0.6795,Jake Hadley,31,-0.2497,1.0,Charles Johnson,0.0,0.3579,False,False,99.0,99.0,,0.4797643012864378,0.4636226158156061,U-DEC
+2024-05-10,2024-05-11,False,Lightweight,False,Diego Ferreira,38,-0.0279,Mateusz Rebecki,15,0.4098,1.0,Diego Ferreira,0.0,0.3554,False,False,99.0,99.0,,0.4611074715711984,0.4947747719118657,KO/TKO
+2024-05-10,2024-05-11,False,Heavyweight,False,Derrick Lewis,23,-0.1755,Rodrigo Nascimento,16,-0.0577,1.0,Derrick Lewis,0.0,0.46,True,False,12.0,15.0,1.0,0.6845385783232574,0.5409727641362738,KO/TKO
+2024-05-10,2024-05-11,False,Featherweight,False,Alex Caceres,17,0.1653,Sean Woodson,28,0.0128,0.0,Sean Woodson,0.0,0.5516,True,False,99.0,99.0,,0.6129339408059734,0.5248825472562463,U-DEC
+2024-05-10,2024-05-11,False,Lightweight,False,Terrance McKinney,60,-0.2999,Esteban Ribovics,42,-0.1299,0.0,Esteban Ribovics,1.0,0.4425,False,False,99.0,99.0,,0.6175316674501526,0.5594436194711132,KO/TKO
+2024-05-10,2024-05-11,False,Light Heavyweight,False,Alonzo Menifield,11,0.1442,Carlos Ulberg,8,0.1738,0.0,Carlos Ulberg,1.0,0.4899,True,True,11.0,99.0,,0.3803052168037061,0.4932188195971005,KO/TKO
+2024-05-10,2024-05-11,False,Women's Flyweight,False,JJ Aldrich,26,-0.2944,Veronica Hardy,28,-0.3948,0.0,Veronica Hardy,0.0,0.5341,True,False,99.0,99.0,,0.4708748975144435,0.5928080860838127,U-DEC
+2024-05-10,2024-05-11,False,Heavyweight,False,Waldo Cortes Acosta,18,-0.0273,Robelis Despaigne,15,0.0324,1.0,Waldo Cortes Acosta,0.0,0.4797,True,False,99.0,99.0,,0.526004790285236,0.586784924792264,U-DEC
+2024-05-10,2024-05-11,False,Welterweight,False,Billy Ray Goff,32,0.019,Trey Waters,34,0.0168,0.0,Trey Waters,0.0,0.5008,False,False,99.0,99.0,,0.4767695932811466,0.4839217962660189,U-DEC
+2024-05-17,2024-05-18,False,Women's Strawweight,False,Vanessa Demopoulos,32,-0.3091,Emily Ducote,31,-0.2634,1.0,Vanessa Demopoulos,0.0,0.4845,False,False,99.0,99.0,,0.3698615445199344,0.5740867114699628,S-DEC
+2024-05-17,2024-05-18,False,Featherweight,False,Edson Barboza,11,0.347,Lerone Murphy,12,0.3442,0.0,Lerone Murphy,0.0,0.501,True,True,12.0,99.0,,0.5683506891376469,0.4919981901432043,U-DEC
+2024-05-17,2024-05-18,False,Women's Strawweight,False,Luana Pinheiro,18,0.0728,Angela Hill,19,0.0678,0.0,Angela Hill,0.0,0.5017,True,False,9.0,12.0,0.0,0.3565534941008918,0.5078333565387596,SUB
+2024-05-17,2024-05-18,False,Welterweight,False,Khaos Williams,35,-0.0043,Carlston Harris,22,0.0773,1.0,Khaos Williams,0.0,0.4723,False,False,99.0,99.0,,0.5429900477518527,0.4937141585983093,KO/TKO
+2024-05-17,2024-05-18,False,Lightweight,False,Victor Martinez,74,-0.3873,Tom Nolan,58,-0.2844,0.0,Tom Nolan,1.0,0.4651,False,False,99.0,99.0,,0.5545145481386065,0.5139776398241412,KO/TKO
+2024-05-31,2024-06-01,False,Lightweight,True,Islam Makhachev,0,1.8334,Dustin Poirier,4,1.684,1.0,Islam Makhachev,1.0,0.5506,True,True,0.0,4.0,1.0,0.7895101631840505,0.6160932611859753,SUB
+2024-05-31,2024-06-01,False,Women's Bantamweight,False,Ailin Perez,21,-0.2172,Joselyne Edwards,27,-0.4002,1.0,Ailin Perez,1.0,0.5619,True,False,99.0,99.0,,0.5560600208807246,0.5337641277999506,U-DEC
+2024-05-31,2024-06-01,False,Middleweight,False,Sean Strickland,1,0.8247,Paulo Costa,10,0.4018,1.0,Sean Strickland,1.0,0.6399,True,True,1.0,7.0,1.0,0.703700957137709,0.6340178414206128,S-DEC
+2024-05-31,2024-06-01,False,Welterweight,False,Niko Price,76,-0.8069,Alex Morono,38,-0.0458,1.0,Niko Price,0.0,0.2621,False,False,99.0,99.0,,0.3678033783088673,0.3469157020701088,U-DEC
+2024-05-31,2024-06-01,False,Welterweight,False,Phil Rowe,35,-0.0094,Jake Matthews,53,-0.2831,0.0,Jake Matthews,0.0,0.592,False,False,99.0,99.0,,0.3971881337965595,0.4491945049766678,U-DEC
+2024-05-31,2024-06-01,False,Heavyweight,False,Jailton Almeida,5,0.5877,Alexandr Romanov,11,0.1587,1.0,Jailton Almeida,1.0,0.6419,True,True,7.0,13.0,1.0,0.6859403948854133,0.5889107694690113,SUB
+2024-05-31,2024-06-01,False,Lightweight,False,Grant Dawson,13,0.4917,Joe Solecki,41,-0.0396,1.0,Grant Dawson,1.0,0.6732,False,False,99.0,99.0,,0.5746736381618385,0.6576101178140334,U-DEC
+2024-05-31,2024-06-01,False,Middleweight,False,Cesar Almeida,23,0.0699,Roman Kopylov,28,-0.0059,0.0,Roman Kopylov,0.0,0.5258,True,False,99.0,99.0,,0.4236473627293131,0.4646274515447247,S-DEC
+2024-05-31,2024-06-01,False,Welterweight,False,Randy Brown,22,0.132,Elizeu Zaleski dos Santos,25,0.0508,1.0,Randy Brown,1.0,0.5276,True,False,99.0,99.0,,0.544492142475333,0.5602000983695938,U-DEC
+2024-06-07,2024-06-08,False,Middleweight,False,Jared Cannonier,4,0.7255,Nassourdine Imavov,9,0.399,0.0,Nassourdine Imavov,0.0,0.6092,True,True,4.0,7.0,0.0,0.6061558750625202,0.6000983366667161,KO/TKO
+2024-06-07,2024-06-08,False,Lightweight,False,Thiago Moises,54,-0.2087,Ludovit Klein,34,0.0225,0.0,Ludovit Klein,1.0,0.422,False,False,99.0,99.0,,0.3833970162297689,0.51631948102493,U-DEC
+2024-06-07,2024-06-08,False,Middleweight,False,Julian Marquez,49,-0.5373,Zach Reese,40,-0.3314,0.0,Zach Reese,1.0,0.4305,False,False,99.0,99.0,,0.5052838132760231,0.5557578058133192,KO/TKO
+2024-06-07,2024-06-08,False,Bantamweight,False,Cody Stamann,64,-0.393,Taylor Lapilus,37,-0.1101,0.0,Taylor Lapilus,1.0,0.405,False,False,99.0,99.0,,0.6112093181147703,0.5848626959488732,U-DEC
+2024-06-07,2024-06-08,False,Women's Strawweight,False,Eduarda Moura,15,0.1606,Denise Gomes,19,-0.1268,0.0,Denise Gomes,0.0,0.5965,True,False,99.0,99.0,,0.4503445479927636,0.5433412202725694,S-DEC
+2024-06-07,2024-06-08,False,Welterweight,False,Charles Radtke,25,0.0571,Carlos Prates,29,0.0258,0.0,Carlos Prates,0.0,0.5106,True,False,99.0,99.0,,0.6468736550402122,0.5375481101829527,KO/TKO
+2024-06-07,2024-06-08,False,Women's Flyweight,False,Andrea Lee,28,-0.4388,Montana De La Rosa,36,-0.6607,0.0,Montana De La Rosa,0.0,0.5749,False,False,99.0,99.0,,0.5952061925803286,0.4652068071459325,S-DEC
+2024-06-07,2024-06-08,False,Middleweight,False,Brunno Ferreira,31,-0.1018,Dustin Stoltzfus,60,-0.8408,1.0,Brunno Ferreira,1.0,0.732,False,False,99.0,99.0,,0.6173969936861817,0.6429928572295345,KO/TKO
+2024-06-07,2024-06-08,False,Bantamweight,False,John Castaneda,36,-0.0717,Daniel Marcos,26,0.0739,0.0,Daniel Marcos,1.0,0.4507,False,False,99.0,99.0,,0.5195684947731357,0.5146609702761856,U-DEC
+2024-06-14,2024-06-15,False,Bantamweight,False,Douglas Silva de Andrade,40,-0.1054,Miles Johns,56,-0.2733,0.0,Miles Johns,0.0,0.5568,False,False,99.0,99.0,,0.5805757572453378,0.5254035077547587,U-DEC
+2024-06-14,2024-06-15,False,Flyweight,False,Jimmy Flick,37,-0.3367,Nate Maness,28,-0.1717,0.0,Nate Maness,1.0,0.4441,False,False,99.0,99.0,,0.3043816219446282,0.4091447591493899,U-DEC
+2024-06-14,2024-06-15,False,Flyweight,False,Alex Perez,7,0.5128,Tatsuro Taira,4,0.5861,0.0,Tatsuro Taira,1.0,0.4751,True,True,5.0,13.0,0.0,0.3552392299396624,0.3799097673943568,KO/TKO
+2024-06-14,2024-06-15,False,Welterweight,False,Josh Quinlan,64,-0.5684,Adam Fugitt,61,-0.5456,0.0,Adam Fugitt,1.0,0.4922,False,False,99.0,99.0,,0.3310485925139934,0.4565435570837395,S-DEC
+2024-06-14,2024-06-15,False,Featherweight,False,Jeka Saragih,40,-0.1638,Westin Wilson,74,-0.6634,0.0,Westin Wilson,0.0,0.6636,False,False,99.0,99.0,,0.6155407993067835,0.6189581801834453,SUB
+2024-06-14,2024-06-15,False,Bantamweight,False,Brady Hiestand,39,-0.1,Garrett Armfield,47,-0.1701,1.0,Brady Hiestand,1.0,0.5238,False,False,99.0,99.0,,0.4453964542736289,0.4999271522558427,SUB
+2024-06-21,2024-06-22,False,Lightweight,False,Nasrat Haqparast,28,0.118,Jared Gordon,41,-0.0608,1.0,Nasrat Haqparast,1.0,0.5605,False,False,99.0,99.0,,0.4763085929138739,0.5110787589945802,S-DEC
+2024-06-21,2024-06-22,False,Bantamweight,False,Kyung Ho Kang,40,-0.1481,Muin Gafurov,66,-0.4481,0.0,Muin Gafurov,0.0,0.6006,False,False,99.0,99.0,,0.6282850285385754,0.6849638267766797,U-DEC
+2024-06-21,2024-06-22,False,Light Heavyweight,False,Johnny Walker,9,0.207,Volkan Oezdemir,16,0.0204,0.0,Volkan Oezdemir,0.0,0.5631,True,False,7.0,9.0,0.0,0.5248661383282394,0.5373841913281864,KO/TKO
+2024-06-21,2024-06-22,False,Heavyweight,False,Sergei Pavlovich,6,0.5529,Alexander Volkov,4,0.6939,0.0,Alexander Volkov,1.0,0.4522,True,True,3.0,5.0,0.0,0.4695993062071564,0.4291811319994074,U-DEC
+2024-06-21,2024-06-22,False,Welterweight,False,Rinat Fakhretdinov,15,0.274,Nicolas Dalby,30,0.0196,1.0,Rinat Fakhretdinov,1.0,0.5856,True,False,99.0,99.0,,0.5952742977204278,0.4649521571487397,S-DEC
+2024-06-21,2024-06-22,False,Middleweight,False,Robert Whittaker,3,0.8519,Ikram Aliskerov,19,0.1395,1.0,Robert Whittaker,1.0,0.7249,True,False,3.0,99.0,,0.6815634851596147,0.7503011920350303,KO/TKO
+2024-06-28,2024-06-29,False,Featherweight,False,Cub Swanson,20,0.1398,Andre Fili,75,-0.574,0.0,Andre Fili,0.0,0.7253,False,False,99.0,99.0,,0.6544475100707292,0.6620529051569977,S-DEC
+2024-06-28,2024-06-29,False,Women's Strawweight,False,Michelle Waterson-Gomez,37,-0.5047,Gillian Robertson,14,0.1845,0.0,Gillian Robertson,1.0,0.2815,False,False,14.0,15.0,0.0,0.4101636140863338,0.3538267781097604,U-DEC
+2024-06-28,2024-06-29,False,Featherweight,False,Charles Jourdain,57,-0.3807,Jean Silva,23,0.0854,0.0,Jean Silva,1.0,0.3466,False,False,99.0,99.0,,0.52353108755949,0.5131399070810946,KO/TKO
+2024-06-28,2024-06-29,False,Heavyweight,False,Andrei Arlovski,35,-0.4919,Martin Buday,21,-0.1471,0.0,Martin Buday,1.0,0.3848,False,False,99.0,99.0,,0.5329760167091296,0.4229547335538671,S-DEC
+2024-06-28,2024-06-29,False,Women's Bantamweight,False,Mayra Bueno Silva,11,0.1484,Macy Chiasson,3,0.5599,0.0,Macy Chiasson,1.0,0.3636,True,True,3.0,7.0,0.0,0.3476514423447481,0.4511408987914755,KO/TKO
+2024-06-28,2024-06-29,False,Bantamweight,False,Ricky Simon,24,0.1493,Vinicius Oliveira,28,0.0881,0.0,Vinicius Oliveira,0.0,0.5208,True,False,99.0,99.0,,0.6191171285398946,0.6152945273220435,U-DEC
+2024-06-28,2024-06-29,False,Light Heavyweight,True,Alex Pereira,0,0.8778,Jiri Prochazka,3,0.6785,1.0,Alex Pereira,1.0,0.5674,True,True,0.0,1.0,1.0,0.6694523298032177,0.6427854680876329,KO/TKO
+2024-06-28,2024-06-29,False,Middleweight,False,Joe Pyfer,21,0.1122,Marc-Andre Barriault,38,-0.2561,1.0,Joe Pyfer,1.0,0.6227,False,False,99.0,99.0,,0.6449905969814631,0.5688382541499754,KO/TKO
+2024-06-28,2024-06-29,False,Welterweight,False,Ian Machado Garry,6,0.6165,Michael Page,32,-0.0046,1.0,Ian Machado Garry,1.0,0.6994,False,False,7.0,14.0,1.0,0.7967030272884508,0.7454304268434293,U-DEC
+2024-07-12,2024-07-13,False,Women's Flyweight,False,Rose Namajunas,3,0.6768,Tracy Cortez,10,0.2276,1.0,Rose Namajunas,1.0,0.6482,True,True,6.0,11.0,1.0,0.6624566783999036,0.515178887813584,U-DEC
+2024-07-12,2024-07-13,False,Bantamweight,False,Montel Jackson,17,0.2599,Da'Mon Blackshear,41,-0.1425,1.0,Montel Jackson,1.0,0.6335,False,False,99.0,99.0,,0.5927213704480304,0.6817157075816506,KO/TKO
+2024-07-12,2024-07-13,False,Flyweight,False,Joshua Van,12,0.3142,Charles Johnson,42,-0.6073,0.0,Charles Johnson,0.0,0.7779,False,False,99.0,99.0,,0.6059109015481521,0.6372818302137941,KO/TKO
+2024-07-12,2024-07-13,False,Middleweight,False,Josh Fremd,56,-0.7375,Andre Petroski,34,-0.1571,0.0,Andre Petroski,1.0,0.3123,False,False,99.0,99.0,,0.4577429486795321,0.3090156091602281,U-DEC
+2024-07-12,2024-07-13,False,Welterweight,False,Gabriel Bonfim,44,-0.1748,Ange Loosa,49,-0.2402,1.0,Gabriel Bonfim,1.0,0.5222,False,False,99.0,99.0,,0.5949640848246415,0.525913379157174,U-DEC
+2024-07-12,2024-07-13,False,Welterweight,False,Santiago Ponzinibbio,55,-0.3543,Muslim Salikhov,58,-0.4831,0.0,Muslim Salikhov,0.0,0.5437,False,False,99.0,99.0,,0.5919577224189604,0.4963207688282261,S-DEC
+2024-07-19,2024-07-20,False,Bantamweight,False,Brian Kelleher,81,-0.5451,Cody Gibson,89,-0.8864,0.0,Cody Gibson,0.0,0.614,False,False,99.0,99.0,,0.4166109866376075,0.6118896056682783,SUB
+2024-07-19,2024-07-20,False,Women's Strawweight,False,Amanda Lemos,3,0.6713,Virna Jandiroba,5,0.5856,0.0,Virna Jandiroba,0.0,0.5291,True,True,3.0,5.0,0.0,0.5685568690097667,0.572333734926252,SUB
+2024-07-19,2024-07-20,False,Featherweight,False,JeongYeong Lee,24,0.0541,Hyder Amil,23,0.0677,0.0,Hyder Amil,1.0,0.4954,True,False,99.0,99.0,,0.4760168244972328,0.5632792015304096,KO/TKO
+2024-07-19,2024-07-20,False,Heavyweight,False,Mohammed Usman,18,-0.0979,Thomas Petersen,25,-0.2171,0.0,Thomas Petersen,0.0,0.5405,True,False,99.0,99.0,,0.5489038819693141,0.6516308778927355,U-DEC
+2024-07-19,2024-07-20,False,Flyweight,False,Cody Durden,27,-0.1258,Bruno Silva,16,0.0655,0.0,Bruno Silva,1.0,0.4353,True,False,14.0,99.0,,0.4067342322494744,0.5015001224643262,KO/TKO
+2024-07-19,2024-07-20,False,Lightweight,False,Loik Radzhabov,43,-0.1511,Trey Ogden,56,-0.3096,0.0,Trey Ogden,0.0,0.5537,False,False,99.0,99.0,,0.4012188145767381,0.5217582604309238,U-DEC
+2024-07-19,2024-07-20,False,Women's Flyweight,False,Miranda Maverick,12,0.1558,Dione Barbosa,19,-0.0593,1.0,Miranda Maverick,1.0,0.5726,True,False,99.0,99.0,,0.6912246840759613,0.5665458118179562,U-DEC
+2024-07-19,2024-07-20,False,Featherweight,False,Dooho Choi,53,-0.3801,Bill Algeo,36,-0.1076,1.0,Dooho Choi,0.0,0.4084,False,False,99.0,99.0,,0.3362781763899936,0.3995720794240318,KO/TKO
+2024-07-26,2024-07-27,False,Light Heavyweight,False,Modestas Bukauskas,38,-0.8335,Marcin Prachnio,31,-0.4932,1.0,Modestas Bukauskas,0.0,0.3863,False,False,99.0,99.0,,0.3531641814583978,0.48714625431415,SUB
+2024-07-26,2024-07-27,False,Welterweight,False,Oban Elliott,32,-0.0277,Preston Parsons,47,-0.2075,1.0,Oban Elliott,1.0,0.5608,False,False,99.0,99.0,,0.4123035416894579,0.4980944474358543,U-DEC
+2024-07-26,2024-07-27,False,Welterweight,False,Sam Patterson,51,-0.277,Kiefer Crosbie,55,-0.398,1.0,Sam Patterson,1.0,0.541,False,False,99.0,99.0,,0.4926070323658759,0.5638781719733817,SUB
+2024-07-26,2024-07-27,False,Lightweight,False,King Green,12,0.2845,Paddy Pimblett,9,0.5469,0.0,Paddy Pimblett,1.0,0.4117,True,True,15.0,99.0,,0.6310440831873518,0.4189276533610073,SUB
+2024-07-26,2024-07-27,False,Featherweight,False,Nathaniel Wood,22,0.0707,Daniel Pineda,48,-0.3331,1.0,Nathaniel Wood,1.0,0.6339,False,False,99.0,99.0,,0.6292888581827646,0.6286576361444983,U-DEC
+2024-07-26,2024-07-27,False,Featherweight,False,Arnold Allen,5,0.7315,Giga Chikadze,8,0.5794,1.0,Arnold Allen,1.0,0.5515,True,True,6.0,10.0,1.0,0.5497360324386054,0.5355156506743786,U-DEC
+2024-07-26,2024-07-27,False,Heavyweight,False,Mick Parkin,13,0.0765,Lukasz Brzeski,36,-0.5764,1.0,Mick Parkin,1.0,0.7085,False,False,99.0,99.0,,0.6321778251171889,0.7428591793284824,KO/TKO
+2024-07-26,2024-07-27,False,Flyweight,False,Muhammad Mokaev,4,0.8128,Manel Kape,7,0.4453,1.0,Muhammad Mokaev,1.0,0.6224,True,True,6.0,8.0,1.0,0.4942754456026194,0.6390523839166659,U-DEC
+2024-07-26,2024-07-27,False,Heavyweight,True,Tom Aspinall,2,0.668,Curtis Blaydes,1,0.9045,1.0,Tom Aspinall,0.0,0.4203,True,True,1.0,4.0,1.0,0.6612237955118901,0.4428490504386482,KO/TKO
+2024-07-26,2024-07-27,False,Welterweight,True,Leon Edwards,0,1.0682,Belal Muhammad,3,0.8989,0.0,Belal Muhammad,0.0,0.5573,True,True,0.0,2.0,0.0,0.4262754446642822,0.4695251428185245,U-DEC
+2024-07-26,2024-07-27,False,Middleweight,False,Christian Leroy Duncan,24,0.0477,Gregory Rodrigues,19,0.172,0.0,Gregory Rodrigues,1.0,0.4578,True,False,99.0,99.0,,0.4749148756947734,0.3919801769192365,U-DEC
+2024-08-02,2024-08-03,False,Lightweight,False,Mohammad Yahya,53,-0.2778,Kaue Fernandes,46,-0.2114,0.0,Kaue Fernandes,1.0,0.4774,False,False,99.0,99.0,,0.4345739712392945,0.4856474948085377,KO/TKO
+2024-08-02,2024-08-03,False,Bantamweight,False,Cory Sandhagen,3,0.9259,Umar Nurmagomedov,9,0.4988,0.0,Umar Nurmagomedov,0.0,0.6412,True,True,2.0,10.0,0.0,0.629121424614852,0.6004883700864396,U-DEC
+2024-08-02,2024-08-03,False,Heavyweight,False,Shamil Gaziev,18,-0.1145,Don'Tale Mayes,27,-0.2825,1.0,Shamil Gaziev,1.0,0.5569,True,False,99.0,99.0,,0.5776547557766223,0.5123575582594301,U-DEC
+2024-08-02,2024-08-03,False,Middleweight,False,Shara Magomedov,20,0.1679,Michal Oleksiejczuk,53,-0.6212,1.0,Shara Magomedov,1.0,0.7452,False,False,99.0,99.0,,0.5706198834758789,0.5709465586875587,U-DEC
+2024-08-02,2024-08-03,False,Bantamweight,False,Marlon Vera,7,0.7365,Deiveson Figueiredo,2,1.0147,0.0,Deiveson Figueiredo,1.0,0.4065,True,True,4.0,6.0,0.0,0.4808617413433374,0.4229154788117162,U-DEC
+2024-08-02,2024-08-03,False,Women's Strawweight,False,Mackenzie Dern,10,0.3075,Loopy Godinez,8,0.3963,1.0,Mackenzie Dern,0.0,0.4699,True,True,7.0,10.0,1.0,0.410171563105255,0.4701308891313134,U-DEC
+2024-08-02,2024-08-03,False,Lightweight,False,Joel Alvarez,14,0.2717,Elves Brener,30,0.0264,1.0,Joel Alvarez,1.0,0.5826,True,False,99.0,99.0,,0.6447418676256045,0.5845268638225969,KO/TKO
+2024-08-02,2024-08-03,False,Middleweight,False,Sedriques Dumas,44,-0.5509,Denis Tiuliulin,67,-1.1805,1.0,Sedriques Dumas,1.0,0.7019,False,False,99.0,99.0,,0.5930475811963425,0.6302486838946161,U-DEC
+2024-08-02,2024-08-03,False,Women's Strawweight,False,Viktoriia Dudakova,15,0.1437,Sam Hughes,37,-0.3551,0.0,Sam Hughes,0.0,0.6634,False,False,99.0,99.0,,0.5865916703507553,0.6287753622596809,S-DEC
+2024-08-02,2024-08-03,False,Light Heavyweight,False,Azamat Murzakanov,14,0.04,Alonzo Menifield,11,0.0944,1.0,Azamat Murzakanov,0.0,0.4815,True,True,14.0,15.0,1.0,0.5376260887079666,0.5200791698033786,KO/TKO
+2024-08-09,2024-08-10,False,Bantamweight,False,Toshiomi Kazama,73,-0.4762,Charalampos Grigoriou,51,-0.2365,1.0,Toshiomi Kazama,0.0,0.4192,False,False,99.0,99.0,,0.3802237320945937,0.4455733214861561,SUB
+2024-08-09,2024-08-10,False,Heavyweight,False,Jhonata Diniz,14,0.0513,Karl Williams,12,0.1248,1.0,Jhonata Diniz,0.0,0.475,True,True,99.0,99.0,,0.3058462644051543,0.4017538635925703,U-DEC
+2024-08-09,2024-08-10,False,Heavyweight,False,Marcin Tybura,7,0.374,Serghei Spivac,8,0.1307,0.0,Serghei Spivac,0.0,0.582,True,True,8.0,9.0,0.0,0.4736904675099821,0.5632418988972211,SUB
+2024-08-09,2024-08-10,False,Women's Bantamweight,False,Karol Rosa,11,0.0917,Pannie Kianzad,21,-0.1788,1.0,Karol Rosa,1.0,0.5909,True,False,8.0,11.0,1.0,0.5617152859796418,0.5446721107029848,U-DEC
+2024-08-09,2024-08-10,False,Featherweight,False,Youssef Zalal,44,-0.2816,Jarno Errens,54,-0.4089,1.0,Youssef Zalal,1.0,0.5432,False,False,99.0,99.0,,0.6351484462015279,0.5657488699674307,SUB
+2024-08-09,2024-08-10,False,Women's Bantamweight,False,Yana Santos,13,0.0036,Chelsea Chandler,16,-0.1141,1.0,Yana Santos,1.0,0.5399,True,False,12.0,14.0,1.0,0.4237674343527426,0.4193793506828298,U-DEC
+2024-08-09,2024-08-10,False,Featherweight,False,Damon Jackson,39,-0.2459,Chepe Mariscal,16,0.1779,0.0,Chepe Mariscal,1.0,0.3598,False,False,99.0,99.0,,0.4932622616398804,0.4558300736948712,U-DEC
+2024-08-16,2024-08-17,False,Lightweight,False,Mateusz Gamrot,6,0.8562,Dan Hooker,10,0.5121,0.0,Dan Hooker,0.0,0.6149,True,True,5.0,11.0,0.0,0.6295105434392463,0.6100111492715984,S-DEC
+2024-08-16,2024-08-17,False,Featherweight,False,Josh Culibao,49,-0.3572,Ricardo Ramos,73,-0.6163,0.0,Ricardo Ramos,0.0,0.5872,False,False,99.0,99.0,,0.4786105031588956,0.5272173062875448,S-DEC
+2024-08-16,2024-08-17,False,Middleweight,True,Dricus Du Plessis,0,0.9252,Israel Adesanya,2,1.1603,1.0,Dricus Du Plessis,1.0,0.4208,True,True,0.0,2.0,1.0,0.6532289657096256,0.4963496335396854,SUB
+2024-08-16,2024-08-17,False,Women's Flyweight,False,Casey O'Neill,16,0.0071,Luana Santos,10,0.2348,1.0,Casey O'Neill,0.0,0.4232,True,False,15.0,99.0,,0.3573400711568976,0.4058799521147828,U-DEC
+2024-08-16,2024-08-17,False,Flyweight,False,Kai Kara-France,7,0.4609,Steve Erceg,10,0.3732,1.0,Kai Kara-France,1.0,0.5298,True,True,4.0,7.0,1.0,0.5273018133923201,0.4929673429977214,KO/TKO
+2024-08-16,2024-08-17,False,Featherweight,False,Jack Jenkins,47,-0.3225,Herbert Burns,77,-0.7827,1.0,Jack Jenkins,1.0,0.6516,False,False,99.0,99.0,,0.663715492994464,0.6127373405638467,KO/TKO
+2024-08-16,2024-08-17,False,Lightweight,False,Tom Nolan,42,-0.159,Alex Reyes,79,-0.5246,1.0,Tom Nolan,1.0,0.6218,False,False,99.0,99.0,,0.5755039834129398,0.5603688006150425,U-DEC
+2024-08-16,2024-08-17,False,Heavyweight,False,Tai Tuivasa,22,-0.1476,Jairzinho Rozenstruik,10,0.1639,0.0,Jairzinho Rozenstruik,1.0,0.3956,True,False,10.0,12.0,0.0,0.2750620366121798,0.3869278755232471,S-DEC
+2024-08-16,2024-08-17,False,Heavyweight,False,Junior Tafa,27,-0.3005,Valter Walker,25,-0.212,0.0,Valter Walker,1.0,0.4699,True,False,99.0,99.0,,0.557233927426911,0.5515035828904691,SUB
+2024-08-23,2024-08-24,False,Middleweight,False,Jared Cannonier,5,0.5961,Caio Borralho,9,0.3837,0.0,Caio Borralho,0.0,0.5717,True,True,5.0,12.0,0.0,0.5819277899048748,0.4479592193503893,U-DEC
+2024-08-23,2024-08-24,False,Middleweight,False,Edmen Shahbazyan,38,-0.2785,Gerald Meerschaert,36,-0.1797,0.0,Gerald Meerschaert,1.0,0.4665,False,False,99.0,99.0,,0.5496832006508615,0.4837566447954138,SUB
+2024-08-23,2024-08-24,False,Women's Strawweight,False,Angela Hill,11,0.3139,Tabatha Ricci,14,0.202,0.0,Tabatha Ricci,0.0,0.538,True,True,9.0,11.0,0.0,0.5233076200069126,0.4177259335088404,U-DEC
+2024-08-23,2024-08-24,False,Welterweight,False,Neil Magny,13,0.2748,Michael Morales,14,0.2623,0.0,Michael Morales,0.0,0.5042,True,True,12.0,99.0,,0.3902664948058314,0.5591999783934058,KO/TKO
+2024-08-23,2024-08-24,False,Lightweight,False,Viacheslav Borshchev,86,-0.6395,James Llontop,62,-0.3486,1.0,Viacheslav Borshchev,0.0,0.4024,False,False,99.0,99.0,,0.5308432132768252,0.5385287469841804,S-DEC
+2024-09-06,2024-09-07,False,Featherweight,False,Steve Garcia,18,0.1348,Kyle Nelson,49,-0.3496,1.0,Steve Garcia,1.0,0.659,False,False,99.0,99.0,,0.6237964205454102,0.6154858286016951,KO/TKO
+2024-09-06,2024-09-07,False,Flyweight,False,Felipe dos Santos,22,-0.0263,Andre Lima,15,0.0861,0.0,Andre Lima,1.0,0.4619,True,False,99.0,99.0,,0.4724110065428447,0.3984644848579222,U-DEC
+2024-09-06,2024-09-07,False,Lightweight,False,Trevor Peek,66,-0.3826,Yanal Ashmouz,46,-0.2237,0.0,Yanal Ashmouz,1.0,0.4462,False,False,99.0,99.0,,0.5375333716964821,0.4866128199589582,U-DEC
+2024-09-06,2024-09-07,False,Welterweight,False,Gilbert Burns,17,0.2204,Sean Brady,9,0.4591,0.0,Sean Brady,1.0,0.4195,True,False,6.0,8.0,0.0,0.5248853689742298,0.5011640443236504,U-DEC
+2024-09-06,2024-09-07,False,Women's Strawweight,False,Jaqueline Amorim,16,0.0899,Vanessa Demopoulos,33,-0.2529,1.0,Jaqueline Amorim,1.0,0.6145,False,False,99.0,99.0,,0.7376652264797747,0.4733487292959833,SUB
+2024-09-06,2024-09-07,False,Middleweight,False,Andre Petroski,34,-0.134,Dylan Budka,43,-0.3854,1.0,Andre Petroski,1.0,0.5846,False,False,99.0,99.0,,0.6358248454174364,0.7268781367079614,U-DEC
+2024-09-13,2024-09-14,False,Featherweight,False,Brian Ortega,3,0.8647,Diego Lopes,13,0.3421,0.0,Diego Lopes,0.0,0.6706,True,True,3.0,13.0,0.0,0.3304266088992767,0.4737435932860925,U-DEC
+2024-09-13,2024-09-14,False,Women's Bantamweight,False,Irene Aldana,3,0.6243,Norma Dumont,4,0.348,0.0,Norma Dumont,0.0,0.5928,True,True,5.0,8.0,0.0,0.4070760029582609,0.465003321119487,U-DEC
+2024-09-13,2024-09-14,False,Lightweight,False,Daniel Zellhuber,31,0.0102,Esteban Ribovics,35,-0.039,0.0,Esteban Ribovics,0.0,0.5167,False,False,99.0,99.0,,0.4156841647992823,0.547578722859737,S-DEC
+2024-09-13,2024-09-14,False,Bantamweight,True,Sean O'Malley,0,0.8276,Merab Dvalishvili,3,0.9007,0.0,Merab Dvalishvili,0.0,0.4752,True,True,0.0,1.0,0.0,0.4805040488972289,0.4828963157498107,U-DEC
+2024-09-13,2024-09-14,False,Lightweight,False,Manuel Torres,13,0.3701,Ignacio Bahamondes,23,0.1498,0.0,Ignacio Bahamondes,0.0,0.5743,True,False,99.0,99.0,,0.5631801427554131,0.5628358265301469,KO/TKO
+2024-09-13,2024-09-14,False,Bantamweight,False,Raul Rosas Jr.,29,0.0834,Aoriqileng,61,-0.365,1.0,Raul Rosas Jr.,1.0,0.6479,False,False,99.0,99.0,,0.66360052151995,0.6038037249881218,U-DEC
+2024-09-13,2024-09-14,False,Women's Flyweight,True,Alexa Grasso,0,0.5781,Valentina Shevchenko,1,0.9427,0.0,Valentina Shevchenko,0.0,0.3785,True,True,0.0,1.0,0.0,0.3687987170230365,0.4208899023776407,U-DEC
+2024-09-13,2024-09-14,False,Flyweight,False,Ronaldo Rodriguez,14,0.1393,Ode Osbourne,48,-0.8811,1.0,Ronaldo Rodriguez,1.0,0.8002,False,False,99.0,99.0,,0.5641444688051906,0.5897657447762013,U-DEC
+2024-09-13,2024-09-14,False,Women's Strawweight,False,Yazmin Jauregui,20,0.03,Ketlen Souza,24,-0.1364,0.0,Ketlen Souza,0.0,0.5563,True,False,99.0,99.0,,0.557689367378241,0.5816381072599071,SUB
+2024-09-13,2024-09-14,False,Flyweight,False,Edgar Chairez,24,-0.1024,Joshua Van,23,-0.0976,0.0,Joshua Van,1.0,0.4984,True,False,99.0,99.0,,0.3745309335125117,0.4341281327297463,U-DEC
+2024-09-27,2024-09-28,False,Featherweight,False,William Gomis,22,0.0817,Joanderson Brito,10,0.4671,1.0,William Gomis,0.0,0.3719,True,False,99.0,99.0,,0.3122399634115531,0.3949591351114576,S-DEC
+2024-09-27,2024-09-28,False,Light Heavyweight,False,Oumar Sy,15,-0.0259,Da Woon Jung,32,-0.5245,1.0,Oumar Sy,1.0,0.6633,False,False,99.0,99.0,,0.4326949528359501,0.4752018651223856,U-DEC
+2024-09-27,2024-09-28,False,Welterweight,False,Kevin Jousset,20,0.1392,Bryan Battle,25,0.0562,0.0,Bryan Battle,0.0,0.5282,True,False,99.0,99.0,,0.4545163619379342,0.4591698288344595,KO/TKO
+2024-09-27,2024-09-28,False,Flyweight,False,Daniel Barez,35,-0.353,Victor Altamirano,39,-0.5155,1.0,Daniel Barez,1.0,0.555,False,False,99.0,99.0,,0.4258854437172785,0.4928805835632132,U-DEC
+2024-09-27,2024-09-28,False,Middleweight,False,Nassourdine Imavov,5,0.5631,Brendan Allen,3,0.5687,1.0,Nassourdine Imavov,0.0,0.4981,True,True,4.0,8.0,1.0,0.5487849615215302,0.3734575746508555,U-DEC
+2024-09-27,2024-09-28,False,Women's Bantamweight,False,Ailin Perez,17,-0.1092,Daria Zhelezniakova,15,-0.0461,1.0,Ailin Perez,0.0,0.4786,True,False,15.0,99.0,,0.6180369144089644,0.5460477596015937,SUB
+2024-09-27,2024-09-28,False,Lightweight,False,Renato Moicano,8,0.658,Benoit Saint Denis,10,0.5326,1.0,Renato Moicano,1.0,0.5425,True,True,11.0,12.0,1.0,0.4570492514812195,0.5596171169002253,KO/TKO
+2024-09-27,2024-09-28,False,Women's Bantamweight,False,Nora Cornolle,10,0.2058,Jacqueline Cavalcanti,13,0.1127,0.0,Jacqueline Cavalcanti,0.0,0.5316,True,True,99.0,99.0,,0.4797371899753884,0.5328110509322079,S-DEC
+2024-09-27,2024-09-28,False,Lightweight,False,Fares Ziam,40,-0.16,Matt Frevola,47,-0.2281,1.0,Fares Ziam,1.0,0.5231,False,False,99.0,99.0,,0.4139683422805097,0.5486499211528343,KO/TKO
+2024-09-27,2024-09-28,False,Lightweight,False,Ludovit Klein,22,0.1779,Roosevelt Roberts,75,-0.5146,1.0,Ludovit Klein,1.0,0.7195,False,False,99.0,99.0,,0.7594913795628397,0.6699796832116929,U-DEC
+2024-09-27,2024-09-28,False,Lightweight,False,Bolaji Oki,30,0.0168,Chris Duncan,43,-0.2038,0.0,Chris Duncan,0.0,0.5745,False,False,99.0,99.0,,0.4789389001519548,0.499108191743021,SUB
+2024-09-27,2024-09-28,False,Featherweight,False,Morgan Charriere,34,-0.0905,Gabriel Miranda,49,-0.3126,1.0,Morgan Charriere,1.0,0.575,False,False,99.0,99.0,,0.5926734122014888,0.5220959060020539,KO/TKO
+2024-10-04,2024-10-05,False,Bantamweight,False,Jose Aldo,5,0.8464,Mario Bautista,12,0.3484,0.0,Mario Bautista,0.0,0.6631,True,True,10.0,11.0,0.0,0.4980929268448178,0.5587537722101608,S-DEC
+2024-10-04,2024-10-05,False,Light Heavyweight,False,Ryan Spann,23,-0.2665,Ovince Saint Preux,27,-0.3461,1.0,Ryan Spann,1.0,0.527,True,False,99.0,99.0,,0.6203484461532917,0.5131025841725733,SUB
+2024-10-04,2024-10-05,False,Welterweight,False,Stephen Thompson,10,0.4023,Joaquin Buckley,15,0.2244,0.0,Joaquin Buckley,0.0,0.5602,True,True,9.0,11.0,0.0,0.4745828118967878,0.5068658720075544,KO/TKO
+2024-10-04,2024-10-05,False,Welterweight,False,Court McGee,63,-0.5788,Tim Means,78,-0.7849,1.0,Court McGee,1.0,0.5696,False,False,99.0,99.0,,0.3975018517070925,0.3767740560048902,SUB
+2024-10-04,2024-10-05,False,Light Heavyweight,True,Alex Pereira,0,1.1372,Khalil Rountree Jr.,9,0.248,1.0,Alex Pereira,1.0,0.7702,True,True,0.0,8.0,1.0,0.7919242628882286,0.7064892016201352,KO/TKO
+2024-10-04,2024-10-05,False,Women's Bantamweight,False,Ketlen Vieira,9,0.2637,Kayla Harrison,5,0.2653,0.0,Kayla Harrison,1.0,0.4995,True,True,2.0,3.0,0.0,0.409662917449916,0.5839395335715435,U-DEC
+2024-10-04,2024-10-05,False,Women's Strawweight,False,Marina Rodriguez,5,0.5664,Iasmin Lucindo,12,0.2393,0.0,Iasmin Lucindo,0.0,0.6094,True,True,6.0,14.0,0.0,0.5456192023805667,0.5214075345075697,S-DEC
+2024-10-04,2024-10-05,False,Middleweight,False,Cesar Almeida,34,-0.1149,Ihor Potieria,62,-0.8455,1.0,Cesar Almeida,1.0,0.7298,False,False,99.0,99.0,,0.5600387516235025,0.5460264831006506,U-DEC
+2024-10-11,2024-10-12,False,Women's Strawweight,False,Julia Polastri,27,-0.1769,Cory McKenna,31,-0.2265,1.0,Julia Polastri,1.0,0.5169,False,False,99.0,99.0,,0.4520268352216077,0.4098916566592466,S-DEC
+2024-10-11,2024-10-12,False,Welterweight,False,Themba Gorimbo,34,-0.0942,Niko Price,57,-0.4801,1.0,Themba Gorimbo,1.0,0.6283,False,False,99.0,99.0,,0.6782654237669398,0.511493561882071,U-DEC
+2024-10-11,2024-10-12,False,Featherweight,False,Jonathan Pearce,33,-0.056,Pat Sabatini,42,-0.18,0.0,Pat Sabatini,0.0,0.5421,False,False,99.0,99.0,,0.7023005335045994,0.510191181719291,SUB
+2024-10-11,2024-10-12,False,Middleweight,False,Brad Tavares,48,-0.4374,JunYong Park,29,-0.0467,0.0,JunYong Park,1.0,0.3702,False,False,99.0,99.0,,0.386594389996756,0.4878153868578599,S-DEC
+2024-10-11,2024-10-12,False,Flyweight,False,Brandon Royval,1,0.7029,Tatsuro Taira,4,0.8203,1.0,Brandon Royval,1.0,0.4602,True,True,1.0,5.0,1.0,0.4311636111355943,0.3897757548597269,S-DEC
+2024-10-11,2024-10-12,False,Welterweight,False,Daniel Rodriguez,47,-0.2704,Alex Morono,50,-0.3562,1.0,Daniel Rodriguez,1.0,0.5291,False,False,99.0,99.0,,0.6653507484641764,0.496615784177949,S-DEC
+2024-10-18,2024-10-19,False,Featherweight,False,Darren Elkins,26,0.055,Daniel Pineda,49,-0.3825,1.0,Darren Elkins,1.0,0.6445,False,False,99.0,99.0,,0.536449939024198,0.6689475919279736,U-DEC
+2024-10-18,2024-10-19,False,Bantamweight,False,Brad Katona,70,-0.4686,Jean Matsumoto,28,0.087,0.0,Jean Matsumoto,1.0,0.3196,False,False,99.0,99.0,,0.501029562561731,0.4800531837095627,U-DEC
+2024-10-18,2024-10-19,False,Heavyweight,False,Austen Lane,33,-0.4899,Robelis Despaigne,23,-0.1533,1.0,Austen Lane,0.0,0.3875,False,False,99.0,99.0,,0.3874468226799278,0.3850974867166491,U-DEC
+2024-10-18,2024-10-19,False,Middleweight,False,Anthony Hernandez,9,0.322,Michel Pereira,8,0.3785,1.0,Anthony Hernandez,0.0,0.4808,True,True,13.0,14.0,1.0,0.3584565252422372,0.420317017105543,KO/TKO
+2024-10-18,2024-10-19,False,Flyweight,False,Matheus Nicolau,12,0.27,Asu Almabayev,9,0.3886,0.0,Asu Almabayev,1.0,0.4598,True,True,7.0,14.0,0.0,0.298803228708254,0.4328519603418565,U-DEC
+2024-10-18,2024-10-19,False,Bantamweight,False,Rob Font,17,0.2356,Kyler Phillips,13,0.2961,1.0,Rob Font,0.0,0.4794,True,False,10.0,12.0,1.0,0.5645161127419643,0.464653421357021,U-DEC
+2024-10-18,2024-10-19,False,Women's Bantamweight,False,Joselyne Edwards,29,-0.5026,Tamires Vidal,28,-0.4908,1.0,Joselyne Edwards,0.0,0.496,True,False,99.0,99.0,,0.6075068578209887,0.5549630900003184,SUB
+2024-10-25,2024-10-26,False,Middleweight,False,Shara Magomedov,17,0.1642,Armen Petrosyan,38,-0.3051,1.0,Shara Magomedov,1.0,0.6543,False,False,99.0,99.0,,0.6083244670609691,0.6300253004007321,KO/TKO
+2024-10-25,2024-10-26,False,Welterweight,False,Geoff Neal,14,0.2398,Rafael Dos Anjos,10,0.451,1.0,Geoff Neal,0.0,0.4287,True,True,10.0,15.0,1.0,0.5558657152572491,0.4996229367738991,KO/TKO
+2024-10-25,2024-10-26,False,Middleweight,False,Abus Magomedov,36,-0.1433,Brunno Ferreira,29,-0.036,1.0,Abus Magomedov,0.0,0.4636,False,False,99.0,99.0,,0.5031357376204275,0.4242288571332229,SUB
+2024-10-25,2024-10-26,False,Light Heavyweight,False,Magomed Ankalaev,1,0.8107,Aleksandar Rakic,8,0.3211,1.0,Magomed Ankalaev,1.0,0.6606,True,True,1.0,5.0,1.0,0.7669359932356266,0.7351882492392096,U-DEC
+2024-10-25,2024-10-26,False,Featherweight,False,Lerone Murphy,10,0.4427,Dan Ige,24,0.0629,1.0,Lerone Murphy,1.0,0.6263,True,False,12.0,14.0,1.0,0.5197753419139755,0.6275794390542316,U-DEC
+2024-10-25,2024-10-26,False,Featherweight,True,Ilia Topuria,0,0.9706,Max Holloway,1,1.7275,1.0,Ilia Topuria,1.0,0.2632,True,True,0.0,2.0,1.0,0.2804140109297721,0.3952970368157015,KO/TKO
+2024-11-01,2024-11-02,False,Women's Flyweight,False,Erin Blanchfield,3,0.6027,Rose Namajunas,1,0.6889,1.0,Erin Blanchfield,0.0,0.4707,True,True,3.0,5.0,1.0,0.4738664619908863,0.5020457226047563,U-DEC
+2024-11-01,2024-11-02,False,Featherweight,False,Jack Shore,33,-0.1007,Youssef Zalal,43,-0.1927,0.0,Youssef Zalal,0.0,0.5312,False,False,99.0,99.0,,0.5022390276029176,0.6192011561281502,SUB
+2024-11-01,2024-11-02,False,Middleweight,False,Marc-Andre Barriault,53,-0.5985,Dustin Stoltzfus,65,-0.9065,0.0,Dustin Stoltzfus,0.0,0.6032,False,False,99.0,99.0,,0.4708365530609762,0.6053210331392336,KO/TKO
+2024-11-01,2024-11-02,False,Flyweight,False,Brandon Moreno,2,1.1209,Amir Albazi,9,0.4437,1.0,Brandon Moreno,1.0,0.7152,True,True,2.0,3.0,1.0,0.5894554741115394,0.5109589779004108,U-DEC
+2024-11-01,2024-11-02,False,Bantamweight,False,Aiemann Zahabi,34,-0.0549,Pedro Munhoz,38,-0.1246,1.0,Aiemann Zahabi,1.0,0.5237,False,False,99.0,99.0,,0.5890343634141078,0.5445732301927879,U-DEC
+2024-11-01,2024-11-02,False,Bantamweight,False,Chad Anheliger,61,-0.385,Cody Gibson,85,-0.8488,0.0,Cody Gibson,0.0,0.6527,False,False,99.0,99.0,,0.4776579762260982,0.5436187142719837,U-DEC
+2024-11-01,2024-11-02,False,Welterweight,False,Mike Malott,31,-0.0415,Trevin Giles,76,-0.7758,1.0,Mike Malott,1.0,0.7308,False,False,99.0,99.0,,0.7314938573267172,0.6116793544221494,U-DEC
+2024-11-01,2024-11-02,False,Heavyweight,False,Alexandr Romanov,15,-0.0006,Rodrigo Nascimento,24,-0.2076,1.0,Alexandr Romanov,1.0,0.5699,True,False,13.0,15.0,1.0,0.6978136699809713,0.5388839366137105,U-DEC
+2024-11-01,2024-11-02,False,Women's Flyweight,False,Ariane da Silva,26,-0.2467,Jasmine Jasudavicius,19,-0.0677,0.0,Jasmine Jasudavicius,1.0,0.4394,True,False,13.0,14.0,0.0,0.4897631262555437,0.4138879263525795,SUB
+2024-11-01,2024-11-02,False,Bantamweight,False,Serhiy Sidey,44,-0.1959,Garrett Armfield,62,-0.4461,1.0,Serhiy Sidey,1.0,0.5842,False,False,99.0,99.0,,0.4125761118678361,0.439037605926158,S-DEC
+2024-11-08,2024-11-09,False,Welterweight,False,Matthew Semelsberger,77,-0.8399,Charles Radtke,43,-0.1758,0.0,Charles Radtke,1.0,0.2884,False,False,99.0,99.0,,0.5141747121893162,0.496247820077313,KO/TKO
+2024-11-08,2024-11-09,False,Bantamweight,False,Cody Stamann,67,-0.4834,Da'Mon Blackshear,66,-0.4732,0.0,Da'Mon Blackshear,1.0,0.4966,False,False,99.0,99.0,,0.4701887149446117,0.5740391860462937,SUB
+2024-11-08,2024-11-09,False,Welterweight,False,Neil Magny,30,-0.0397,Carlos Prates,11,0.298,0.0,Carlos Prates,1.0,0.3872,True,False,15.0,99.0,,0.4510517502771546,0.5627618582063207,KO/TKO
+2024-11-08,2024-11-09,False,Women's Strawweight,False,Luana Pinheiro,28,-0.1953,Gillian Robertson,11,0.3529,0.0,Gillian Robertson,1.0,0.3218,True,False,13.0,14.0,0.0,0.3238184099303846,0.3529582675517482,U-DEC
+2024-11-08,2024-11-09,False,Women's Strawweight,False,Karolina Kowalkiewicz,21,-0.0384,Denise Gomes,23,-0.0633,0.0,Denise Gomes,0.0,0.5085,True,False,99.0,99.0,,0.3870126111174969,0.5028399266779662,U-DEC
+2024-11-15,2024-11-16,False,Welterweight,False,Mickey Gall,76,-0.7839,Ramiz Brahimaj,69,-0.6813,0.0,Ramiz Brahimaj,1.0,0.4652,False,False,99.0,99.0,,0.4495616705368446,0.5303864405456772,KO/TKO
+2024-11-15,2024-11-16,False,Bantamweight,False,Jonathan Martinez,20,0.2554,Marcus McGhee,19,0.2607,0.0,Marcus McGhee,1.0,0.4982,True,False,13.0,99.0,,0.5535737406730855,0.6095316275889571,U-DEC
+2024-11-15,2024-11-16,False,Heavyweight,False,Marcin Tybura,9,0.3594,Jhonata Diniz,12,0.1323,1.0,Marcin Tybura,1.0,0.5766,True,True,9.0,99.0,,0.5702124451385397,0.556678712400236,KO/TKO
+2024-11-15,2024-11-16,False,Women's Flyweight,False,Viviane Araujo,12,0.069,Karine Silva,9,0.2699,1.0,Viviane Araujo,0.0,0.4321,True,True,9.0,11.0,1.0,0.3816700872514622,0.3718964751084387,U-DEC
+2024-11-15,2024-11-16,False,Welterweight,False,Bassil Hafez,38,-0.138,Oban Elliott,21,0.0615,0.0,Oban Elliott,1.0,0.4326,False,False,99.0,99.0,,0.4124255887746738,0.4227960177141631,KO/TKO
+2024-11-15,2024-11-16,False,Middleweight,False,Bo Nickal,12,0.2127,Paul Craig,47,-0.4348,1.0,Bo Nickal,1.0,0.707,False,False,99.0,99.0,,0.6292036726795519,0.5697955705093224,U-DEC
+2024-11-22,2024-11-23,False,Light Heavyweight,False,Volkan Oezdemir,3,0.3781,Carlos Ulberg,7,0.3406,0.0,Carlos Ulberg,0.0,0.5127,True,True,8.0,10.0,0.0,0.5015480060549724,0.410320909861376,U-DEC
+2024-11-22,2024-11-23,False,Women's Flyweight,False,Wang Cong,16,0.0181,Gabriella Fernandes,33,-0.5445,0.0,Gabriella Fernandes,0.0,0.6824,False,False,99.0,99.0,,0.7029425364420622,0.6159389013510969,SUB
+2024-11-22,2024-11-23,False,Lightweight,False,Maheshate,75,-0.502,Nikolas Motta,63,-0.3492,0.0,Nikolas Motta,1.0,0.4483,False,False,99.0,99.0,,0.3186269224083663,0.452367096988014,U-DEC
+2024-11-22,2024-11-23,False,Welterweight,False,Song Kenan,61,-0.5457,Muslim Salikhov,53,-0.452,0.0,Muslim Salikhov,1.0,0.4682,False,False,99.0,99.0,,0.3463689377920586,0.3764797368994075,KO/TKO
+2024-11-22,2024-11-23,False,Women's Strawweight,False,Yan Xiaonan,6,0.4289,Tabatha Ricci,10,0.2662,1.0,Yan Xiaonan,1.0,0.5551,True,True,2.0,10.0,1.0,0.5844753289210416,0.5067680136670994,U-DEC
+2024-11-22,2024-11-23,False,Bantamweight,False,Petr Yan,13,0.4538,Deiveson Figueiredo,3,1.1292,1.0,Petr Yan,0.0,0.2852,True,True,3.0,5.0,1.0,0.6229955019052376,0.4086645986439883,U-DEC
+2024-11-22,2024-11-23,False,Bantamweight,False,Xiao Long,47,-0.1977,Quang Le,45,-0.185,1.0,Xiao Long,0.0,0.4957,False,False,99.0,99.0,,0.4667648079969478,0.4879550384113847,KO/TKO
+2024-12-06,2024-12-07,False,Featherweight,False,Nate Landwehr,29,0.0164,Dooho Choi,37,-0.1235,0.0,Dooho Choi,0.0,0.5474,False,False,99.0,99.0,,0.5324690861188788,0.5745939769659074,KO/TKO
+2024-12-06,2024-12-07,False,Welterweight,False,Shavkat Rakhmonov,3,0.8326,Ian Machado Garry,5,0.5973,1.0,Shavkat Rakhmonov,1.0,0.5793,True,True,3.0,7.0,1.0,0.5985635162434,0.5222992886787984,U-DEC
+2024-12-06,2024-12-07,False,Welterweight,False,Vicente Luque,18,0.1581,Themba Gorimbo,26,0.0081,1.0,Vicente Luque,1.0,0.5508,True,False,14.0,99.0,,0.4194238417498364,0.6176961019621333,SUB
+2024-12-06,2024-12-07,False,Lightweight,False,Clay Guida,73,-0.4954,Chase Hooper,24,0.0964,0.0,Chase Hooper,1.0,0.309,False,False,99.0,99.0,,0.3342147332880146,0.4090986907356539,SUB
+2024-12-06,2024-12-07,False,Welterweight,False,Randy Brown,17,0.1626,Bryan Battle,19,0.1372,0.0,Bryan Battle,0.0,0.5086,True,False,99.0,99.0,,0.5621978131910359,0.6148911671855343,S-DEC
+2024-12-06,2024-12-07,False,Light Heavyweight,False,Dominick Reyes,19,-0.1207,Anthony Smith,15,0.0356,1.0,Dominick Reyes,0.0,0.447,True,False,12.0,13.0,1.0,0.606264314018814,0.4745701036397667,KO/TKO
+2024-12-06,2024-12-07,False,Welterweight,False,Michael Chiesa,20,0.1324,Max Griffin,22,0.0319,1.0,Michael Chiesa,1.0,0.5341,True,False,99.0,99.0,,0.4673010301819415,0.5876374846138461,SUB
+2024-12-06,2024-12-07,False,Flyweight,False,Cody Durden,33,-0.2191,Joshua Van,25,0.0285,0.0,Joshua Van,1.0,0.4166,False,False,14.0,99.0,,0.4042777047220057,0.4580207139774924,U-DEC
+2024-12-06,2024-12-07,False,Heavyweight,False,Ciryl Gane,3,0.6166,Alexander Volkov,2,0.733,1.0,Ciryl Gane,0.0,0.4605,True,True,2.0,3.0,1.0,0.4516748225476721,0.462647614138241,S-DEC
+2024-12-13,2024-12-14,False,Welterweight,False,Colby Covington,4,0.7512,Joaquin Buckley,8,0.4907,0.0,Joaquin Buckley,0.0,0.5876,True,True,6.0,9.0,0.0,0.5349144818244765,0.5028137431177658,KO/TKO
+2024-12-13,2024-12-14,False,Flyweight,False,Manel Kape,8,0.5415,Bruno Silva,9,0.4902,1.0,Manel Kape,1.0,0.5174,True,True,9.0,12.0,1.0,0.4768876014556064,0.4997003608189419,KO/TKO
+2024-12-13,2024-12-14,False,Bantamweight,False,Adrian Yanez,26,0.0887,Daniel Marcos,23,0.1737,0.0,Daniel Marcos,1.0,0.4711,True,False,99.0,99.0,,0.5201392788289967,0.5175143715668111,S-DEC
+2024-12-13,2024-12-14,False,Featherweight,False,Cub Swanson,45,-0.2097,Billy Quarantillo,53,-0.3858,1.0,Cub Swanson,1.0,0.5596,False,False,99.0,99.0,,0.540971968821654,0.569805554360021,KO/TKO
+2024-12-13,2024-12-14,False,Light Heavyweight,False,Vitor Petrino,14,0.0868,Dustin Jacoby,33,-0.7336,0.0,Dustin Jacoby,0.0,0.7532,False,False,99.0,99.0,,0.4622690108112176,0.5406276168603349,KO/TKO
+2024-12-13,2024-12-14,False,Lightweight,False,Michael Johnson,46,-0.2144,Ottman Azaitar,74,-0.5008,1.0,Michael Johnson,1.0,0.5962,False,False,99.0,99.0,,0.738411062336499,0.5987941339856498,KO/TKO
+2024-12-13,2024-12-14,False,Lightweight,False,Joel Alvarez,13,0.334,Drakkar Klose,22,0.179,1.0,Joel Alvarez,1.0,0.5525,True,False,99.0,99.0,,0.5872520292489539,0.4635152729054476,KO/TKO
+2024-12-13,2024-12-14,False,Bantamweight,False,Davey Grant,60,-0.3871,Ramon Taveras,35,-0.0554,1.0,Davey Grant,0.0,0.3891,False,False,99.0,99.0,,0.6090213855368414,0.5078715928457752,U-DEC
+2024-12-13,2024-12-14,False,Women's Flyweight,False,Miranda Maverick,10,0.1691,Jamey-Lyn Horth,19,-0.2136,1.0,Miranda Maverick,1.0,0.6272,True,False,99.0,99.0,,0.676743661976736,0.6122079734293389,U-DEC
+2024-12-13,2024-12-14,False,Featherweight,False,Sean Woodson,21,0.1615,Fernando Padilla,33,-0.0448,1.0,Sean Woodson,1.0,0.5697,False,False,99.0,99.0,,0.4959351331898234,0.630484185237555,KO/TKO
+2024-12-13,2024-12-14,False,Women's Strawweight,False,Josefine Knutsson,13,0.2204,Piera Rodriguez,37,-0.2907,0.0,Piera Rodriguez,0.0,0.6671,False,False,99.0,99.0,,0.6992705117047092,0.6435527663656542,U-DEC
+2025-01-10,2025-01-11,False,Lightweight,False,Thiago Moises,46,-0.2542,Trey Ogden,48,-0.2731,1.0,Thiago Moises,1.0,0.5064,False,False,99.0,99.0,,0.4863668880630551,0.5021355413902954,U-DEC
+2025-01-10,2025-01-11,False,Middleweight,False,Cesar Almeida,32,-0.0964,Abdul Razak Alhassan,47,-0.4484,1.0,Cesar Almeida,1.0,0.6174,False,False,99.0,99.0,,0.5820882139512741,0.5642395139503652,KO/TKO
+2025-01-10,2025-01-11,False,Middleweight,False,Chris Curtis,29,-0.0313,Roman Kopylov,26,-0.0039,0.0,Roman Kopylov,1.0,0.4907,True,False,99.0,99.0,,0.4860260684447822,0.537955280403839,KO/TKO
+2025-01-10,2025-01-11,False,Welterweight,False,Santiago Ponzinibbio,56,-0.4826,Carlston Harris,39,-0.1357,1.0,Santiago Ponzinibbio,0.0,0.3842,False,False,99.0,99.0,,0.5160926699033046,0.4687737204156513,KO/TKO
+2025-01-17,2025-01-18,False,Women's Bantamweight,False,Karol Rosa,8,0.2862,Ailin Perez,13,0.0599,0.0,Ailin Perez,0.0,0.5764,True,True,9.0,13.0,0.0,0.4441246183971799,0.4437439670475578,U-DEC
+2025-01-17,2025-01-18,False,Heavyweight,False,Jailton Almeida,6,0.62,Serghei Spivac,8,0.3474,1.0,Jailton Almeida,1.0,0.5917,True,True,6.0,7.0,1.0,0.6577160241513973,0.6006518199611461,KO/TKO
+2025-01-17,2025-01-18,False,Middleweight,False,Kevin Holland,35,-0.1285,Reinier de Ridder,19,0.0964,0.0,Reinier de Ridder,1.0,0.4241,False,False,99.0,99.0,,0.6589956295970076,0.5713700010155611,SUB
+2025-01-17,2025-01-18,False,Light Heavyweight,False,Jiri Prochazka,4,0.6924,Jamahal Hill,3,0.5247,1.0,Jiri Prochazka,0.0,0.5568,True,True,2.0,3.0,1.0,0.4805701823610038,0.4747206785323324,KO/TKO
+2025-01-17,2025-01-18,False,Bantamweight,False,Ricky Turcios,66,-0.4747,Benardo Sopaj,59,-0.3225,0.0,Benardo Sopaj,1.0,0.4484,False,False,99.0,99.0,,0.5291264584981531,0.5241137717013122,U-DEC
+2025-01-17,2025-01-18,False,Lightweight,False,Grant Dawson,10,0.5199,Diego Ferreira,27,0.0599,1.0,Grant Dawson,1.0,0.6515,True,False,99.0,99.0,,0.5387981277537157,0.6373200502389129,U-DEC
+2025-01-17,2025-01-18,False,Bantamweight,False,Payton Talbott,15,0.2856,Raoni Barcelos,56,-0.3058,0.0,Raoni Barcelos,0.0,0.6909,False,False,99.0,99.0,,0.6718362804860272,0.5333145585044188,U-DEC
+2025-01-17,2025-01-18,False,Lightweight,True,Islam Makhachev,0,1.6676,Renato Moicano,6,0.7312,1.0,Islam Makhachev,1.0,0.7813,True,True,0.0,10.0,1.0,0.7765244189174767,0.7509510665069463,SUB
+2025-01-17,2025-01-18,False,Flyweight,False,Tagir Ulanbekov,13,0.2815,Clayton Carpenter,10,0.385,1.0,Tagir Ulanbekov,0.0,0.4649,True,True,11.0,99.0,,0.5297837099731456,0.5494154822246724,U-DEC
+2025-01-17,2025-01-18,False,Bantamweight,False,Rinya Nakamura,19,0.2318,Muin Gafurov,54,-0.2968,0.0,Muin Gafurov,0.0,0.6724,False,False,99.0,99.0,,0.6246387112524324,0.6566792871282986,U-DEC
+2025-01-17,2025-01-18,False,Bantamweight,True,Merab Dvalishvili,1,1.0305,Umar Nurmagomedov,3,0.6552,1.0,Merab Dvalishvili,1.0,0.6249,True,True,0.0,2.0,1.0,0.6071164236700087,0.592703637040575,U-DEC
+2025-01-31,2025-02-01,False,Heavyweight,False,Sergei Pavlovich,7,0.4729,Jairzinho Rozenstruik,10,0.31,1.0,Sergei Pavlovich,1.0,0.5551,True,True,4.0,9.0,1.0,0.5812762638584796,0.5047564322420598,U-DEC
+2025-01-31,2025-02-01,False,Heavyweight,False,Shamil Gaziev,17,-0.0556,Thomas Petersen,21,-0.124,1.0,Shamil Gaziev,1.0,0.5232,True,False,14.0,99.0,,0.5952036927375969,0.5778061388728306,KO/TKO
+2025-01-31,2025-02-01,False,Bantamweight,False,Said Nurmagomedov,18,0.1953,Vinicius Oliveira,20,0.1909,0.0,Vinicius Oliveira,0.0,0.5015,True,False,99.0,99.0,,0.6218191856896166,0.5743176199627519,U-DEC
+2025-01-31,2025-02-01,False,Lightweight,False,Fares Ziam,36,-0.0783,Mike Davis,23,0.1212,1.0,Fares Ziam,0.0,0.4326,False,False,99.0,99.0,,0.6087659331691576,0.517040856472551,U-DEC
+2025-01-31,2025-02-01,False,Middleweight,False,Israel Adesanya,4,0.9024,Nassourdine Imavov,5,0.5911,0.0,Nassourdine Imavov,0.0,0.6043,True,True,2.0,5.0,0.0,0.5413086140209018,0.5679588174935437,KO/TKO
+2025-01-31,2025-02-01,False,Featherweight,False,Muhammad Naimov,36,-0.1155,Kaan Ofli,56,-0.3998,1.0,Muhammad Naimov,1.0,0.5955,False,False,99.0,99.0,,0.6945152647909061,0.6629720840209947,U-DEC
+2025-02-07,2025-02-08,False,Lightweight,False,Tom Nolan,41,-0.1489,Viacheslav Borshchev,78,-0.6288,1.0,Tom Nolan,1.0,0.6576,False,False,99.0,99.0,,0.4432435544304928,0.5469843369371151,U-DEC
+2025-02-07,2025-02-08,False,Featherweight,False,Jack Jenkins,41,-0.1672,Gabriel Santos,50,-0.3786,0.0,Gabriel Santos,0.0,0.5714,False,False,99.0,99.0,,0.5987740614223019,0.6051583814250392,SUB
+2025-02-07,2025-02-08,False,Middleweight,True,Dricus Du Plessis,0,1.0346,Sean Strickland,2,0.7729,1.0,Dricus Du Plessis,1.0,0.588,True,True,0.0,1.0,1.0,0.6025890628943824,0.6109446608708168,U-DEC
+2025-02-14,2025-02-15,False,Flyweight,False,Rafael Estevam,28,-0.0518,Jesus Aguilar,27,-0.0166,1.0,Rafael Estevam,0.0,0.488,True,False,99.0,99.0,,0.4776832055310497,0.443718933778131,U-DEC
+2025-02-14,2025-02-15,False,Middleweight,False,Jared Cannonier,13,0.2061,Gregory Rodrigues,15,0.1749,1.0,Jared Cannonier,1.0,0.5106,True,True,7.0,99.0,,0.4734868024810353,0.4797764289325198,KO/TKO
+2025-02-14,2025-02-15,False,Heavyweight,False,Don'Tale Mayes,36,-0.5561,Valter Walker,22,-0.1319,0.0,Valter Walker,1.0,0.3596,False,False,15.0,99.0,,0.4542078177605665,0.4914009916373459,SUB
+2025-02-14,2025-02-15,False,Women's Bantamweight,False,Julia Avila,23,-0.3233,Jacqueline Cavalcanti,11,0.1393,0.0,Jacqueline Cavalcanti,1.0,0.3477,True,False,12.0,13.0,0.0,0.2671340140776792,0.3231972960903057,U-DEC
+2025-02-14,2025-02-15,False,Featherweight,False,Calvin Kattar,26,0.0842,Youssef Zalal,24,0.0989,0.0,Youssef Zalal,1.0,0.495,True,False,10.0,99.0,,0.4449989520945291,0.5457693987220308,U-DEC
+2025-02-14,2025-02-15,False,Welterweight,False,Gabriel Bonfim,31,-0.0565,Khaos Williams,16,0.2126,1.0,Gabriel Bonfim,0.0,0.4095,False,False,99.0,99.0,,0.4429435195842212,0.417724790668913,SUB
+2025-02-14,2025-02-15,False,Middleweight,False,Rodolfo Vieira,31,-0.0246,Andre Petroski,37,-0.1278,0.0,Andre Petroski,0.0,0.535,False,False,99.0,99.0,,0.4887254408766402,0.4174597506976512,U-DEC
+2025-02-14,2025-02-15,False,Lightweight,False,Ismael Bonfim,33,-0.0311,Nazim Sadykhov,22,0.1056,0.0,Nazim Sadykhov,1.0,0.4537,False,False,99.0,99.0,,0.7186410690671584,0.4960613240349299,KO/TKO
+2025-02-14,2025-02-15,False,Women's Strawweight,False,Angela Hill,13,0.2009,Ketlen Souza,21,-0.0169,1.0,Angela Hill,1.0,0.5735,True,False,13.0,99.0,,0.6892214331077111,0.4905199869174727,S-DEC
+2025-02-14,2025-02-15,False,Middleweight,False,Edmen Shahbazyan,48,-0.4843,Dylan Budka,52,-0.5625,1.0,Edmen Shahbazyan,1.0,0.5266,False,False,99.0,99.0,,0.7068067340238031,0.6523210649331691,KO/TKO
+2025-02-21,2025-02-22,False,Light Heavyweight,False,Ion Cutelaba,35,-0.7462,Ibo Aslan,14,0.1036,1.0,Ion Cutelaba,0.0,0.2394,False,False,99.0,99.0,,0.4915527465246212,0.4176076725272284,SUB
+2025-02-21,2025-02-22,False,Middleweight,False,Brendan Allen,5,0.5949,Anthony Hernandez,8,0.4196,0.0,Anthony Hernandez,0.0,0.5593,True,True,9.0,12.0,0.0,0.3867705645159829,0.5781048314986339,U-DEC
+2025-02-21,2025-02-22,False,Featherweight,False,Andre Fili,47,-0.3156,Melquizael Costa,49,-0.3673,0.0,Melquizael Costa,0.0,0.5176,False,False,99.0,99.0,,0.5251420669196262,0.5545793959880548,SUB
+2025-02-21,2025-02-22,False,Light Heavyweight,False,Modestas Bukauskas,30,-0.4475,Rafael Cerquiera,31,-0.4523,1.0,Modestas Bukauskas,1.0,0.5017,False,False,99.0,99.0,,0.6051468501911469,0.5998689564905003,KO/TKO
+2025-02-21,2025-02-22,False,Bantamweight,False,Henry Cejudo,3,0.7659,Song Yadong,6,0.7042,0.0,Song Yadong,0.0,0.5209,True,True,7.0,8.0,0.0,0.3961139893087508,0.3680480410681039,U-DEC
+2025-02-21,2025-02-22,False,Bantamweight,False,Ricky Simon,44,-0.1835,Javid Basharat,36,-0.0312,1.0,Ricky Simon,0.0,0.4484,False,False,99.0,99.0,,0.396020568290005,0.524637245853916,KO/TKO
+2025-02-28,2025-03-01,False,Lightweight,False,Nasrat Haqparast,19,0.216,Esteban Ribovics,32,-0.0088,1.0,Nasrat Haqparast,1.0,0.5758,False,False,99.0,99.0,,0.4376029467490184,0.5678023078436655,S-DEC
+2025-02-28,2025-03-01,False,Featherweight,False,Hyder Amil,21,0.1949,William Gomis,22,0.1772,1.0,Hyder Amil,1.0,0.506,True,False,99.0,99.0,,0.5684020000308879,0.4020256276302937,S-DEC
+2025-02-28,2025-03-01,False,Women's Flyweight,False,Andrea Lee,33,-0.6541,JJ Aldrich,32,-0.5926,0.0,JJ Aldrich,1.0,0.4791,False,False,99.0,99.0,,0.5789517853046808,0.3659709144167299,U-DEC
+2025-02-28,2025-03-01,False,Featherweight,False,Danny Silva,35,-0.054,Lucas Almeida,61,-0.4779,1.0,Danny Silva,1.0,0.6403,False,False,99.0,99.0,,0.5912225558864503,0.5439160019142243,S-DEC
+2025-02-28,2025-03-01,False,Flyweight,False,Charles Johnson,34,-0.1876,Ramazan Temirov,14,0.2264,0.0,Ramazan Temirov,1.0,0.3629,False,False,12.0,99.0,,0.5162018792784199,0.5330453998412112,U-DEC
+2025-02-28,2025-03-01,False,Middleweight,False,Cody Brundage,64,-0.7478,Julian Marquez,56,-0.611,1.0,Cody Brundage,0.0,0.4536,False,False,99.0,99.0,,0.7046628260999651,0.5304486197516379,KO/TKO
+2025-02-28,2025-03-01,False,Flyweight,False,Manel Kape,6,0.6834,Asu Almabayev,8,0.5325,1.0,Manel Kape,1.0,0.5511,True,True,6.0,8.0,1.0,0.5438223956061783,0.4275617331150582,KO/TKO
+2025-02-28,2025-03-01,False,Welterweight,False,Danny Barlow,22,0.0651,Sam Patterson,36,-0.1042,0.0,Sam Patterson,0.0,0.5573,False,False,99.0,99.0,,0.5348427770376112,0.5520992434355633,KO/TKO
+2025-02-28,2025-03-01,False,Featherweight,False,Ricardo Ramos,65,-0.5076,Chepe Mariscal,16,0.2992,0.0,Chepe Mariscal,1.0,0.2503,False,False,99.0,99.0,,0.281932485744631,0.3300874501556952,U-DEC
+2025-03-07,2025-03-08,False,Featherweight,False,Mairon Santos,25,0.0665,Francis Marshall,51,-0.3784,1.0,Mairon Santos,1.0,0.6468,False,False,99.0,99.0,,0.6917321137222627,0.5741921130914809,S-DEC
+2025-03-07,2025-03-08,False,Lightweight,False,King Green,17,0.1936,Mauricio Ruffy,27,0.0618,0.0,Mauricio Ruffy,0.0,0.5447,True,False,99.0,99.0,,0.7743471020155824,0.5650421871793463,KO/TKO
+2025-03-07,2025-03-08,False,Women's Strawweight,False,Amanda Lemos,6,0.5139,Iasmin Lucindo,11,0.2983,1.0,Amanda Lemos,1.0,0.5728,True,True,5.0,7.0,1.0,0.4933282556345862,0.5292869085618492,U-DEC
+2025-03-07,2025-03-08,False,Light Heavyweight,True,Alex Pereira,0,1.4089,Magomed Ankalaev,1,0.9869,0.0,Magomed Ankalaev,0.0,0.6397,True,True,0.0,1.0,0.0,0.5743453856083353,0.5382844034204167,U-DEC
+2025-03-07,2025-03-08,False,Lightweight,False,Justin Gaethje,3,0.9159,Rafael Fiziev,15,0.2507,1.0,Justin Gaethje,1.0,0.7119,True,True,3.0,11.0,1.0,0.6645896896600707,0.6320159914121811,U-DEC
+2025-03-07,2025-03-08,False,Lightweight,False,Jalin Turner,33,-0.0406,Ignacio Bahamondes,20,0.1947,0.0,Ignacio Bahamondes,1.0,0.4207,False,False,13.0,99.0,,0.4773020489174139,0.4872501400084605,SUB
+2025-03-07,2025-03-08,False,Flyweight,False,Joshua Van,17,0.1505,Rei Tsuruya,23,0.0647,1.0,Joshua Van,1.0,0.5291,True,False,99.0,99.0,,0.7033683506266828,0.5947827623262318,U-DEC
+2025-03-07,2025-03-08,False,Welterweight,False,Alex Morono,53,-0.4226,Carlos Leal,41,-0.208,0.0,Carlos Leal,1.0,0.4275,False,False,99.0,99.0,,0.452958971224933,0.641902521319659,KO/TKO
+2025-03-07,2025-03-08,False,Middleweight,False,Brunno Ferreira,43,-0.3395,Armen Petrosyan,59,-0.6409,1.0,Brunno Ferreira,1.0,0.6011,False,False,99.0,99.0,,0.465477565570313,0.5344234443284616,SUB
+2025-03-14,2025-03-15,False,Women's Bantamweight,False,Josiane Nunes,21,-0.2917,Priscila Cachoeira,30,-0.7947,0.0,Priscila Cachoeira,0.0,0.6646,True,False,99.0,99.0,,0.6013899121480148,0.5697079479406275,KO/TKO
+2025-03-14,2025-03-15,False,Flyweight,False,Daniel Barez,35,-0.1937,Andre Lima,17,0.1663,0.0,Andre Lima,1.0,0.38,False,False,99.0,99.0,,0.4616261727667254,0.3427201109068427,SUB
+2025-03-14,2025-03-15,False,Women's Strawweight,False,Stephanie Luciano,16,0.134,Sam Hughes,35,-0.2861,0.0,Sam Hughes,0.0,0.6391,False,False,99.0,99.0,,0.5322113786408099,0.5712594811803624,S-DEC
+2025-03-14,2025-03-15,False,Bantamweight,False,Da'Mon Blackshear,42,-0.1624,Cody Gibson,76,-0.5669,1.0,Da'Mon Blackshear,1.0,0.6342,False,False,99.0,99.0,,0.5807950075088782,0.5348248151017206,SUB
+2025-03-14,2025-03-15,False,Welterweight,False,Chidi Njokuani,63,-0.6143,Elizeu Zaleski dos Santos,25,0.0511,1.0,Chidi Njokuani,0.0,0.2881,False,False,99.0,99.0,,0.3572748883588058,0.3078040719946578,KO/TKO
+2025-03-21,2025-03-22,False,Lightweight,False,Guram Kutateladze,69,-0.4759,Kaue Fernandes,34,-0.0921,0.0,Kaue Fernandes,1.0,0.3724,False,False,99.0,99.0,,0.4088713686720361,0.5106770535694904,U-DEC
+2025-03-21,2025-03-22,False,Lightweight,False,Jai Herbert,64,-0.4043,Chris Padilla,19,0.2168,0.0,Chris Padilla,1.0,0.3006,False,False,99.0,99.0,,0.4807218077347581,0.4059347752136614,S-DEC
+2025-03-21,2025-03-22,False,Welterweight,False,Leon Edwards,1,1.0791,Sean Brady,7,0.6067,0.0,Sean Brady,0.0,0.6553,True,True,1.0,5.0,0.0,0.4324491842739305,0.5175818641199331,SUB
+2025-03-21,2025-03-22,False,Lightweight,False,Jordan Vucenic,46,-0.2292,Chris Duncan,36,-0.1116,0.0,Chris Duncan,1.0,0.4601,False,False,99.0,99.0,,0.4398720404604065,0.3198204789058896,SUB
+2025-03-21,2025-03-22,False,Featherweight,False,Nathaniel Wood,20,0.1848,Morgan Charriere,30,0.0275,1.0,Nathaniel Wood,1.0,0.5532,True,False,99.0,99.0,,0.5599300246444371,0.60317481113229,U-DEC
+2025-03-21,2025-03-22,False,Women's Strawweight,False,Shauna Bannon,28,-0.1505,Puja Tomar,19,0.0315,1.0,Shauna Bannon,0.0,0.4384,True,False,99.0,99.0,,0.4442433073528023,0.4394093494634079,SUB
+2025-03-21,2025-03-22,False,Heavyweight,False,Marcin Tybura,9,0.3284,Mick Parkin,12,0.0989,1.0,Marcin Tybura,1.0,0.5774,True,True,8.0,13.0,1.0,0.5371845762274652,0.4991239596171185,U-DEC
+2025-03-21,2025-03-22,False,Flyweight,False,Lone'er Kavanagh,21,0.1033,Felipe dos Santos,32,-0.1656,1.0,Lone'er Kavanagh,1.0,0.5904,False,False,99.0,99.0,,0.4977212608584401,0.6077259775568581,U-DEC
+2025-03-28,2025-03-29,False,Bantamweight,False,Raul Rosas Jr.,26,0.0981,Vince Morales,88,-0.9526,1.0,Raul Rosas Jr.,1.0,0.8067,False,False,99.0,99.0,,0.6909794812927438,0.7397536850337724,U-DEC
+2025-03-28,2025-03-29,False,Flyweight,False,Brandon Moreno,1,1.3967,Steve Erceg,12,0.2883,1.0,Brandon Moreno,1.0,0.8187,True,True,2.0,8.0,1.0,0.7418295206969443,0.6918366708242732,U-DEC
+2025-03-28,2025-03-29,False,Featherweight,False,Christian Rodriguez,35,-0.065,Melquizael Costa,45,-0.2213,0.0,Melquizael Costa,0.0,0.5529,False,False,99.0,99.0,,0.4548382577744006,0.5631526926407419,U-DEC
+2025-03-28,2025-03-29,False,Flyweight,False,Ronaldo Rodriguez,17,0.1955,Kevin Borjas,46,-0.5145,0.0,Kevin Borjas,0.0,0.7242,False,False,99.0,99.0,,0.6659339033829875,0.7105129926910911,U-DEC
+2025-03-28,2025-03-29,False,Lightweight,False,Rafa Garcia,41,-0.1747,Vinc Pichel,43,-0.1805,1.0,Rafa Garcia,1.0,0.502,False,False,99.0,99.0,,0.532934628658158,0.4683150088862619,U-DEC
+2025-03-28,2025-03-29,False,Women's Strawweight,False,Loopy Godinez,11,0.3785,Julia Polastri,27,-0.1,1.0,Loopy Godinez,1.0,0.6572,True,False,11.0,99.0,,0.640739579160083,0.5908279773519933,U-DEC
+2025-03-28,2025-03-29,False,Lightweight,False,Manuel Torres,26,0.0749,Drew Dober,52,-0.2989,1.0,Manuel Torres,1.0,0.6244,False,False,99.0,99.0,,0.4822258200774206,0.4846195856901876,KO/TKO
+2025-03-28,2025-03-29,False,Lightweight,False,MarQuel Mederos,35,-0.0679,Austin Hubbard,81,-0.6682,1.0,MarQuel Mederos,1.0,0.6935,False,False,99.0,99.0,,0.5247425637934822,0.5959961195320123,S-DEC
+2025-03-28,2025-03-29,False,Flyweight,False,Edgar Chairez,40,-0.2765,CJ Vergara,52,-0.7038,1.0,Edgar Chairez,1.0,0.6413,False,False,99.0,99.0,,0.4998938433280522,0.4854016971372802,SUB
+2025-03-28,2025-03-29,False,Featherweight,False,Jamall Emmers,61,-0.4465,Gabriel Miranda,66,-0.5249,1.0,Jamall Emmers,1.0,0.5266,False,False,99.0,99.0,,0.6990563755780402,0.5522890334010124,KO/TKO
+2025-04-04,2025-04-05,False,Middleweight,False,Brad Tavares,65,-0.7263,Gerald Meerschaert,55,-0.3598,1.0,Brad Tavares,0.0,0.3779,False,False,99.0,99.0,,0.5073830884972504,0.4902904531634198,U-DEC
+2025-04-04,2025-04-05,False,Bantamweight,False,Victor Henry,45,-0.1758,Pedro Falcao,51,-0.2441,1.0,Victor Henry,1.0,0.5232,False,False,99.0,99.0,,0.7404771474894101,0.636776789211587,U-DEC
+2025-04-04,2025-04-05,False,Featherweight,False,Josh Emmett,12,0.4102,Lerone Murphy,11,0.4581,0.0,Lerone Murphy,1.0,0.4837,True,True,8.0,10.0,0.0,0.4487500203668818,0.4286437600696271,U-DEC
+2025-04-04,2025-04-05,False,Featherweight,False,Pat Sabatini,35,-0.0909,Joanderson Brito,14,0.3114,1.0,Pat Sabatini,0.0,0.3665,False,False,99.0,99.0,,0.3375234227510908,0.4577559254663576,U-DEC
+2025-04-04,2025-04-05,False,Women's Strawweight,False,Vanessa Demopoulos,40,-0.489,Talita Alencar,32,-0.261,0.0,Talita Alencar,1.0,0.4231,False,False,99.0,99.0,,0.4658926812495021,0.5825956773015011,U-DEC
+2025-04-04,2025-04-05,False,Bantamweight,False,Cortavious Romious,61,-0.2925,ChangHo Lee,36,-0.0216,0.0,ChangHo Lee,1.0,0.4089,False,False,99.0,99.0,,0.383933668791443,0.3854931145800221,KO/TKO
+2025-04-11,2025-04-12,False,Featherweight,False,Darren Elkins,21,0.1209,Julian Erosa,49,-0.38,0.0,Julian Erosa,0.0,0.664,False,False,99.0,99.0,,0.5387512129168063,0.6049641984667177,KO/TKO
+2025-04-11,2025-04-12,False,Women's Strawweight,False,Yan Xiaonan,2,0.6067,Virna Jandiroba,1,0.7042,0.0,Virna Jandiroba,1.0,0.4669,True,True,1.0,3.0,0.0,0.593641331900816,0.5317330058973853,U-DEC
+2025-04-11,2025-04-12,False,Lightweight,False,Jim Miller,18,0.2347,Chase Hooper,23,0.1713,0.0,Chase Hooper,0.0,0.5215,True,False,99.0,99.0,,0.4511684240783565,0.5503472089976336,U-DEC
+2025-04-11,2025-04-12,False,Middleweight,False,Sedriques Dumas,52,-0.5028,Michal Oleksiejczuk,74,-0.87,0.0,Michal Oleksiejczuk,0.0,0.6223,False,False,99.0,99.0,,0.329280783847224,0.5154377467366847,KO/TKO
+2025-04-11,2025-04-12,False,Featherweight,False,Bryce Mitchell,20,0.1755,Jean Silva,10,0.4861,0.0,Jean Silva,1.0,0.3959,True,False,13.0,99.0,,0.4512688449340328,0.5088940634653476,SUB
+2025-04-11,2025-04-12,False,Middleweight,False,Tresean Gore,44,-0.2355,Marco Tulio,27,0.0151,0.0,Marco Tulio,1.0,0.4156,False,False,99.0,99.0,,0.3602603897345769,0.4747353444209646,KO/TKO
+2025-04-11,2025-04-12,False,Lightweight,False,Michael Chandler,28,0.053,Paddy Pimblett,10,0.5912,0.0,Paddy Pimblett,1.0,0.3248,True,False,7.0,12.0,0.0,0.501113862042695,0.2547250029158054,KO/TKO
+2025-04-11,2025-04-12,False,Featherweight,True,Alexander Volkanovski,3,1.1752,Diego Lopes,7,0.5238,1.0,Alexander Volkanovski,1.0,0.708,True,True,1.0,3.0,1.0,0.5759235302127587,0.5945468269656442,U-DEC
+2025-04-11,2025-04-12,False,Featherweight,False,Dan Ige,42,-0.1461,Sean Woodson,17,0.2543,1.0,Dan Ige,0.0,0.3671,False,False,15.0,99.0,,0.4752133030168167,0.4199113428083754,KO/TKO
+2025-04-11,2025-04-12,False,Flyweight,False,Sumudaerji,43,-0.348,Mitch Raposo,34,-0.1666,1.0,Sumudaerji,0.0,0.4386,False,False,99.0,99.0,,0.6093586384548086,0.4913211237438656,S-DEC
+2025-04-25,2025-04-26,False,Featherweight,False,Giga Chikadze,11,0.4774,David Onama,19,0.0987,0.0,David Onama,0.0,0.626,True,False,12.0,99.0,,0.6179951121541913,0.5779983116277081,U-DEC
+2025-04-25,2025-04-26,False,Middleweight,False,Ikram Aliskerov,23,0.0396,Andre Muniz,33,-0.036,1.0,Ikram Aliskerov,1.0,0.5257,False,False,99.0,99.0,,0.5148487138128379,0.3929249434401312,KO/TKO
+2025-04-25,2025-04-26,False,Welterweight,False,Ian Machado Garry,4,0.6717,Carlos Prates,8,0.4512,1.0,Ian Machado Garry,1.0,0.5744,True,True,7.0,13.0,1.0,0.6375768518798024,0.5592557171754114,U-DEC
+2025-04-25,2025-04-26,False,Bantamweight,False,Da'Mon Blackshear,40,-0.1253,Alatengheili,49,-0.2334,1.0,Da'Mon Blackshear,1.0,0.5367,False,False,99.0,99.0,,0.5985330092283077,0.4566586638128609,U-DEC
+2025-04-25,2025-04-26,False,Women's Bantamweight,False,Chelsea Chandler,18,-0.322,Joselyne Edwards,17,-0.2939,0.0,Joselyne Edwards,1.0,0.4905,True,False,14.0,99.0,,0.4219662483276479,0.4890965230623445,KO/TKO
+2025-04-25,2025-04-26,False,Middleweight,False,Michel Pereira,17,0.1333,Abus Magomedov,31,-0.0142,0.0,Abus Magomedov,0.0,0.55,False,False,14.0,99.0,,0.641647445968322,0.6122659907720631,U-DEC
+2025-04-25,2025-04-26,False,Light Heavyweight,False,Anthony Smith,23,-0.1486,Zhang Mingyang,15,0.1603,0.0,Zhang Mingyang,1.0,0.3965,True,False,15.0,99.0,,0.3725632737497848,0.511681303326047,KO/TKO
+2025-04-25,2025-04-26,False,Flyweight,False,Matt Schnell,54,-0.7439,Jimmy Flick,51,-0.6587,1.0,Matt Schnell,0.0,0.4711,False,False,99.0,99.0,,0.7257087390037538,0.5674560132221169,U-DEC
+2025-04-25,2025-04-26,False,Women's Strawweight,False,Jaqueline Amorim,14,0.1649,Polyana Viana,44,-0.6188,1.0,Jaqueline Amorim,1.0,0.7438,False,False,99.0,99.0,,0.6432713909347959,0.7080384101294362,SUB
+2025-04-25,2025-04-26,False,Welterweight,False,Randy Brown,25,-0.0049,Nicolas Dalby,24,0.0013,1.0,Randy Brown,0.0,0.4979,True,False,99.0,99.0,,0.5172531967839933,0.5817285639747606,KO/TKO
+2025-05-02,2025-05-03,False,Welterweight,False,Santiago Ponzinibbio,42,-0.2454,Daniel Rodriguez,41,-0.2383,0.0,Daniel Rodriguez,1.0,0.4976,False,False,99.0,99.0,,0.4629311771349135,0.4869330873409561,KO/TKO
+2025-05-02,2025-05-03,False,Women's Bantamweight,False,Yana Santos,12,0.1044,Miesha Tate,14,-0.023,1.0,Yana Santos,1.0,0.5432,True,True,10.0,12.0,1.0,0.5371575344597134,0.5329625839403982,U-DEC
+2025-05-02,2025-05-03,False,Middleweight,False,Reinier de Ridder,13,0.2005,Bo Nickal,12,0.2626,1.0,Reinier de Ridder,0.0,0.4789,True,True,13.0,99.0,,0.5254636992527072,0.4415337336195686,KO/TKO
+2025-05-02,2025-05-03,False,Bantamweight,False,Montel Jackson,12,0.475,Daniel Marcos,18,0.2212,1.0,Montel Jackson,1.0,0.5854,True,False,15.0,99.0,,0.61355949608074,0.4990918937032121,U-DEC
+2025-05-02,2025-05-03,False,Bantamweight,False,Cameron Smotherman,31,0.0391,Serhiy Sidey,49,-0.2045,0.0,Serhiy Sidey,0.0,0.5821,False,False,99.0,99.0,,0.5665290544999076,0.5552654782438418,U-DEC
+2025-05-02,2025-05-03,False,Women's Strawweight,False,Marina Rodriguez,16,0.1049,Gillian Robertson,10,0.3733,0.0,Gillian Robertson,1.0,0.4098,True,False,9.0,12.0,0.0,0.5110600707449537,0.4329474717266289,KO/TKO
+2025-05-02,2025-05-03,False,Middleweight,False,Ryan Loder,25,0.0255,Azamat Bekoev,28,-0.0003,0.0,Azamat Bekoev,0.0,0.5088,True,False,99.0,99.0,,0.4845200367815654,0.4915071813561725,KO/TKO
+2025-05-02,2025-05-03,False,Bantamweight,False,Gaston Bolanos,42,-0.1531,Quang Le,67,-0.4704,0.0,Quang Le,0.0,0.6063,False,False,99.0,99.0,,0.6175924388451008,0.6644544636922958,SUB
+2025-05-02,2025-05-03,False,Bantamweight,False,Cory Sandhagen,5,0.9047,Deiveson Figueiredo,1,0.9394,1.0,Cory Sandhagen,0.0,0.4882,True,True,4.0,5.0,1.0,0.7326095699442403,0.4891924561203994,KO/TKO
+2025-05-02,2025-05-03,False,Heavyweight,False,Thomas Petersen,32,-0.388,Don'Tale Mayes,37,-0.7056,1.0,Thomas Petersen,1.0,0.6063,False,False,99.0,99.0,,0.6243213005581537,0.526904940643963,U-DEC
+2025-05-09,2025-05-10,False,Women's Flyweight,False,Alexa Grasso,5,0.5493,Natalia Silva,4,0.5736,0.0,Natalia Silva,1.0,0.4917,True,True,1.0,5.0,0.0,0.3958736511176364,0.4185537415960576,U-DEC
+2025-05-09,2025-05-10,False,Welterweight,False,Mike Malott,27,-0.0442,Charles Radtke,30,-0.1104,1.0,Mike Malott,1.0,0.5225,True,False,99.0,99.0,,0.5444515888397511,0.5721445141121911,KO/TKO
+2025-05-09,2025-05-10,False,Middleweight,False,Marc-Andre Barriault,65,-0.6993,Bruno Silva (Blindado),76,-1.0021,1.0,Marc-Andre Barriault,1.0,0.6015,False,False,99.0,99.0,,0.519783651603461,0.5178850922113738,KO/TKO
+2025-05-09,2025-05-10,False,Light Heavyweight,False,Navajo Stirling,17,0.0002,Ivan Erslan,26,-0.2496,1.0,Navajo Stirling,1.0,0.5841,True,False,99.0,99.0,,0.5531396871148364,0.6080122598126987,U-DEC
+2025-05-09,2025-05-10,False,Women's Flyweight,True,Valentina Shevchenko,0,1.0925,Manon Fiorot,1,0.7101,1.0,Valentina Shevchenko,1.0,0.6272,True,True,0.0,2.0,1.0,0.5064864416869228,0.5075850084041347,U-DEC
+2025-05-09,2025-05-10,False,Welterweight,True,Belal Muhammad,0,1.1168,Jack Della Maddalena,7,0.5211,0.0,Jack Della Maddalena,0.0,0.6921,True,True,0.0,5.0,0.0,0.538143534614495,0.6324855488925585,U-DEC
+2025-05-09,2025-05-10,False,Bantamweight,False,Brad Katona,72,-0.5161,Bekzat Almakhan,55,-0.2925,0.0,Bekzat Almakhan,1.0,0.4246,False,False,99.0,99.0,,0.5527213892472297,0.5380335872051526,KO/TKO
+2025-05-09,2025-05-10,False,Light Heavyweight,False,Modestas Bukauskas,23,-0.1856,Ion Cutelaba,25,-0.3837,1.0,Modestas Bukauskas,1.0,0.5669,True,False,99.0,99.0,,0.3404718321600047,0.5056314153790938,S-DEC
+2025-05-16,2025-05-17,False,Flyweight,False,HyunSung Park,16,0.1953,Carlos Hernandez,51,-0.622,1.0,HyunSung Park,1.0,0.7524,False,False,99.0,99.0,,0.5837765920604618,0.6180217289786637,SUB
+2025-05-16,2025-05-17,False,Women's Strawweight,False,Elise Reed,42,-0.6367,Denise Gomes,17,0.0679,0.0,Denise Gomes,1.0,0.2772,False,False,99.0,99.0,,0.2773119510424716,0.3868817882770878,KO/TKO
+2025-05-16,2025-05-17,False,Lightweight,False,Jared Gordon,52,-0.2922,Thiago Moises,47,-0.2524,1.0,Jared Gordon,0.0,0.4865,False,False,99.0,99.0,,0.6600876610613778,0.473386318268102,KO/TKO
+2025-05-16,2025-05-17,False,Welterweight,False,Gilbert Burns,13,0.246,Michael Morales,9,0.3952,0.0,Michael Morales,1.0,0.4495,True,True,8.0,12.0,0.0,0.351224097841901,0.4480805887499403,KO/TKO
+2025-05-16,2025-05-17,False,Women's Strawweight,False,Tecia Pennington,8,0.4107,Luana Pinheiro,38,-0.4484,1.0,Tecia Pennington,1.0,0.7629,False,False,13.0,15.0,1.0,0.708949485025306,0.6368507394905919,U-DEC
+2025-05-16,2025-05-17,False,Middleweight,False,Dustin Stoltzfus,58,-0.5794,Nursulton Ruziboev,29,-0.0212,0.0,Nursulton Ruziboev,1.0,0.3188,False,False,99.0,99.0,,0.355281594119573,0.3276772480438045,U-DEC
+2025-05-16,2025-05-17,False,Featherweight,False,Julian Erosa,50,-0.2653,Melquizael Costa,40,-0.1246,0.0,Melquizael Costa,1.0,0.4523,False,False,99.0,99.0,,0.4740602028076244,0.4791376836769055,U-DEC
+2025-05-30,2025-05-31,False,Lightweight,False,Mateusz Gamrot,8,0.5922,Ludovit Klein,15,0.2457,1.0,Mateusz Gamrot,1.0,0.6157,True,True,7.0,99.0,,0.6211996468955496,0.5889950749904932,U-DEC
+2025-05-30,2025-05-31,False,Welterweight,False,Billy Ray Goff,34,-0.1686,Ramiz Brahimaj,51,-0.3541,0.0,Ramiz Brahimaj,0.0,0.5627,False,False,99.0,99.0,,0.5774389896574822,0.505315313808611,SUB
+2025-05-30,2025-05-31,False,Women's Strawweight,False,Rayanne dos Santos,35,-0.3172,Alice Ardelean,37,-0.3983,0.0,Alice Ardelean,0.0,0.5275,False,False,99.0,99.0,,0.5168366066341274,0.5251586242178593,U-DEC
+2025-05-30,2025-05-31,False,Light Heavyweight,False,Dustin Jacoby,31,-0.4028,Bruno Lopes,18,-0.0577,1.0,Dustin Jacoby,0.0,0.3848,False,False,99.0,99.0,,0.6227466116523462,0.5833220870945123,KO/TKO
+2025-05-30,2025-05-31,False,Middleweight,False,Zach Reese,52,-0.3841,Dusko Todorovic,68,-0.7833,1.0,Zach Reese,1.0,0.6325,False,False,99.0,99.0,,0.5860895463790821,0.594283549562872,U-DEC
+2025-06-06,2025-06-07,False,Light Heavyweight,False,Azamat Murzakanov,7,0.3661,Brendson Ribeiro,30,-0.3655,1.0,Azamat Murzakanov,1.0,0.7301,True,False,12.0,99.0,,0.7789274925589128,0.7259784849982035,KO/TKO
+2025-06-06,2025-06-07,False,Welterweight,False,Vicente Luque,12,0.2734,Kevin Holland,39,-0.2206,0.0,Kevin Holland,0.0,0.6619,False,False,14.0,99.0,,0.5154794442166023,0.6692197883667458,SUB
+2025-06-06,2025-06-07,False,Lightweight,False,Quillan Salkilld,23,0.1066,Yanal Ashmouz,36,-0.1365,1.0,Quillan Salkilld,1.0,0.5819,False,False,99.0,99.0,,0.5953156737700512,0.5001327198923515,U-DEC
+2025-06-06,2025-06-07,False,Women's Bantamweight,True,Julianna Pena,0,0.5795,Kayla Harrison,2,0.3211,0.0,Kayla Harrison,0.0,0.587,True,True,0.0,2.0,0.0,0.4471117117216565,0.5053445744805063,SUB
+2025-06-06,2025-06-07,False,Heavyweight,False,Serghei Spivac,8,0.2446,Waldo Cortes Acosta,13,0.0769,0.0,Waldo Cortes Acosta,0.0,0.5568,True,True,7.0,11.0,0.0,0.5778294634424262,0.4770950306156344,U-DEC
+2025-06-06,2025-06-07,False,Flyweight,False,Bruno Silva,9,0.4395,Joshua Van,17,0.2293,0.0,Joshua Van,0.0,0.571,True,False,12.0,14.0,0.0,0.4064606613790307,0.3842903580176725,KO/TKO
+2025-06-06,2025-06-07,False,Women's Flyweight,False,Ariane da Silva,27,-0.3524,Wang Cong,20,-0.1432,0.0,Wang Cong,1.0,0.4293,True,False,13.0,99.0,,0.456259804727718,0.4734567907594321,U-DEC
+2025-06-06,2025-06-07,False,Middleweight,False,Kelvin Gastelum,12,0.2665,Joe Pyfer,13,0.1491,0.0,Joe Pyfer,0.0,0.5398,True,True,99.0,99.0,,0.4549981083917485,0.538661829760686,U-DEC
+2025-06-06,2025-06-07,False,Bantamweight,True,Merab Dvalishvili,0,1.1161,Sean O'Malley,2,0.8015,1.0,Merab Dvalishvili,1.0,0.6054,True,True,0.0,1.0,1.0,0.6195018279516794,0.6324378600841669,SUB
+2025-06-13,2025-06-14,False,Bantamweight,False,Cody Garbrandt,19,0.1967,Raoni Barcelos,33,0.0051,0.0,Raoni Barcelos,0.0,0.5648,False,False,99.0,99.0,,0.4011650313864854,0.485647702446009,U-DEC
+2025-06-13,2025-06-14,False,Welterweight,False,Phil Rowe,33,-0.1068,Ange Loosa,53,-0.3849,1.0,Phil Rowe,1.0,0.5934,False,False,99.0,99.0,,0.5131813262592233,0.5667693457425621,KO/TKO
+2025-06-13,2025-06-14,False,Bantamweight,False,Ricky Simon,41,-0.1145,Cameron Smotherman,44,-0.1661,1.0,Ricky Simon,1.0,0.5175,False,False,99.0,99.0,,0.5880017694079442,0.6727766340856838,U-DEC
+2025-06-13,2025-06-14,False,Women's Flyweight,False,Rose Namajunas,3,0.6418,Miranda Maverick,11,0.2088,1.0,Rose Namajunas,1.0,0.6431,True,True,7.0,11.0,1.0,0.6382769286393906,0.5613382386345285,U-DEC
+2025-06-13,2025-06-14,False,Flyweight,False,Cody Durden,45,-0.4867,Jose Ochoa,30,-0.1333,0.0,Jose Ochoa,1.0,0.3821,False,False,99.0,99.0,,0.5022738667241742,0.6026497157246455,KO/TKO
+2025-06-13,2025-06-14,False,Middleweight,False,Edmen Shahbazyan,41,-0.2482,Andre Petroski,33,-0.1528,1.0,Edmen Shahbazyan,0.0,0.4676,False,False,99.0,99.0,,0.5995941765842228,0.3521693496552682,U-DEC
+2025-06-13,2025-06-14,False,Welterweight,False,Michael Chiesa,12,0.2372,Court McGee,59,-0.5094,1.0,Michael Chiesa,1.0,0.7341,False,False,99.0,99.0,,0.5704299811994364,0.736461543760827,U-DEC
+2025-06-13,2025-06-14,False,Light Heavyweight,False,Alonzo Menifield,18,-0.0788,Oumar Sy,15,0.1616,1.0,Alonzo Menifield,0.0,0.419,True,False,15.0,99.0,,0.3919934069110103,0.5263181538209958,U-DEC
+2025-06-20,2025-06-21,False,Light Heavyweight,False,Jamahal Hill,5,0.4595,Khalil Rountree Jr.,12,0.2711,0.0,Khalil Rountree Jr.,0.0,0.5637,True,True,4.0,7.0,0.0,0.5237709262774882,0.5163235716913166,U-DEC
+2025-06-20,2025-06-21,False,Featherweight,False,Muhammad Naimov,38,-0.0773,Bogdan Grad,25,0.0604,1.0,Muhammad Naimov,0.0,0.4533,False,False,99.0,99.0,,0.505343820237602,0.5905576035818245,U-DEC
+2025-06-20,2025-06-21,False,Middleweight,False,Ismail Naurdiev,30,-0.1009,JunYong Park,27,-0.0315,0.0,JunYong Park,1.0,0.4764,True,False,99.0,99.0,,0.367460269745105,0.3956705058618718,U-DEC
+2025-06-20,2025-06-21,False,Lightweight,False,Nazim Sadykhov,14,0.3424,Nikolas Motta,42,-0.1967,1.0,Nazim Sadykhov,1.0,0.6755,False,False,99.0,99.0,,0.4064087515219167,0.578994770149096,KO/TKO
+2025-06-20,2025-06-21,False,Flyweight,False,Tagir Ulanbekov,9,0.3935,Azat Maksum,40,-0.3437,1.0,Tagir Ulanbekov,1.0,0.7316,False,False,12.0,99.0,,0.743612317738401,0.7110161883083396,U-DEC
+2025-06-20,2025-06-21,False,Heavyweight,False,Hamdy Abdelwahab,24,-0.2151,Mohammed Usman,30,-0.3476,0.0,Mohammed Usman,0.0,0.5449,True,False,99.0,99.0,,0.5513134548634864,0.5513832234476069,U-DEC
+2025-06-20,2025-06-21,False,Lightweight,False,Rafael Fiziev,11,0.3763,Ignacio Bahamondes,15,0.3281,1.0,Rafael Fiziev,1.0,0.5164,True,True,11.0,99.0,,0.3887522636576917,0.465304103460008,U-DEC
+2025-06-20,2025-06-21,False,Women's Bantamweight,False,Daria Zhelezniakova,19,-0.4748,Melissa Mullins,17,-0.2769,1.0,Daria Zhelezniakova,0.0,0.4331,True,False,99.0,99.0,,0.436858451560795,0.440540841631909,U-DEC
+2025-06-27,2025-06-28,False,Featherweight,False,Hyder Amil,17,0.2073,Jose Delgado,25,0.0513,0.0,Jose Delgado,0.0,0.5528,True,False,99.0,99.0,,0.6628039723402939,0.620605298640267,KO/TKO
+2025-06-27,2025-06-28,False,Women's Flyweight,False,Viviane Araujo,13,0.1032,Tracy Cortez,12,0.136,0.0,Tracy Cortez,1.0,0.4888,True,True,8.0,10.0,0.0,0.447489139375502,0.4455010580045155,U-DEC
+2025-06-27,2025-06-28,False,Flyweight,True,Alexandre Pantoja,0,1.321,Kai Kara-France,6,0.7114,1.0,Alexandre Pantoja,1.0,0.6962,True,True,0.0,4.0,1.0,0.5753254216759905,0.6883582845145525,SUB
+2025-06-27,2025-06-28,False,Middleweight,False,Jack Hermansson,23,0.0079,Gregory Rodrigues,20,0.048,0.0,Gregory Rodrigues,1.0,0.4864,True,False,99.0,99.0,,0.5390654849494949,0.5170149681236872,KO/TKO
+2025-06-27,2025-06-28,False,Welterweight,False,Niko Price,64,-0.5965,Jacobe Smith,26,0.0471,0.0,Jacobe Smith,1.0,0.2942,False,False,99.0,99.0,,0.3347744041371921,0.4952761345647441,SUB
+2025-06-27,2025-06-28,False,Lightweight,False,Terrance McKinney,48,-0.258,Viacheslav Borshchev,80,-0.637,1.0,Terrance McKinney,1.0,0.6261,False,False,99.0,99.0,,0.6792494316994473,0.5963232386410184,SUB
+2025-06-27,2025-06-28,False,Flyweight,False,Brandon Royval,3,0.8507,Joshua Van,10,0.3574,0.0,Joshua Van,0.0,0.6617,True,True,1.0,12.0,0.0,0.4742384750844391,0.4902502449917752,U-DEC
+2025-07-11,2025-07-12,False,Heavyweight,False,Derrick Lewis,11,0.128,Tallison Teixeira,15,0.0227,1.0,Derrick Lewis,1.0,0.5357,True,True,9.0,13.0,1.0,0.5751067092731333,0.6642559195786962,KO/TKO
+2025-07-11,2025-07-12,False,Women's Strawweight,False,Fatima Kline,19,-0.0413,Melissa Martinez,26,-0.1496,1.0,Fatima Kline,1.0,0.5368,True,False,99.0,99.0,,0.6060864020970085,0.5130350275940248,KO/TKO
+2025-07-11,2025-07-12,False,Welterweight,False,Stephen Thompson,26,0.0127,Gabriel Bonfim,21,0.0857,0.0,Gabriel Bonfim,1.0,0.4752,True,False,12.0,99.0,,0.465790543803775,0.4831534840812749,S-DEC
+2025-07-11,2025-07-12,False,Featherweight,False,Nate Landwehr,52,-0.2486,Morgan Charriere,47,-0.2143,0.0,Morgan Charriere,1.0,0.4884,False,False,99.0,99.0,,0.4360985423700842,0.5387337378200966,KO/TKO
+2025-07-11,2025-07-12,False,Heavyweight,False,Kennedy Nzechukwu,22,-0.0605,Valter Walker,21,-0.0404,0.0,Valter Walker,1.0,0.4932,True,False,99.0,99.0,,0.4599898512283191,0.5838036338080245,SUB
+2025-07-11,2025-07-12,False,Lightweight,False,Mitch Ramirez,65,-0.4106,Mike Davis,35,-0.0248,0.0,Mike Davis,1.0,0.3718,False,False,99.0,99.0,,0.368492020664979,0.3392113315135746,KO/TKO
+2025-07-11,2025-07-12,False,Welterweight,False,Jake Matthews,29,-0.0204,Chidi Njokuani,48,-0.2945,1.0,Jake Matthews,1.0,0.5921,False,False,99.0,99.0,,0.5121880008459273,0.6407010343044807,SUB
+2025-07-11,2025-07-12,False,Featherweight,False,Calvin Kattar,37,-0.0963,Steve Garcia,11,0.361,0.0,Steve Garcia,1.0,0.3493,False,False,14.0,99.0,,0.3322125487049523,0.4178034467954854,U-DEC
+2025-07-18,2025-07-19,False,Middleweight,False,Paulo Costa,18,0.079,Roman Kopylov,21,0.054,1.0,Paulo Costa,1.0,0.5085,True,False,13.0,14.0,1.0,0.5844794150524306,0.4845223488200546,U-DEC
+2025-07-18,2025-07-19,False,Welterweight,False,Kevin Holland,21,0.1212,Daniel Rodriguez,34,-0.1235,0.0,Daniel Rodriguez,0.0,0.5824,False,False,13.0,99.0,,0.5015453454898051,0.4905388130056532,U-DEC
+2025-07-18,2025-07-19,False,Middleweight,False,Ateba Gautier,25,-0.0002,Robert Valentin,56,-0.5153,1.0,Ateba Gautier,1.0,0.6683,False,False,99.0,99.0,,0.706074174093589,0.6604608501597268,KO/TKO
+2025-07-18,2025-07-19,False,Light Heavyweight,False,Jimmy Crute,27,-0.2961,Marcin Prachnio,39,-0.7167,1.0,Jimmy Crute,1.0,0.6392,False,False,99.0,99.0,,0.6015444495252424,0.5822489834692675,SUB
+2025-07-18,2025-07-19,False,Middleweight,False,Marvin Vettori,14,0.1401,Brendan Allen,10,0.3825,0.0,Brendan Allen,1.0,0.4183,True,True,10.0,11.0,0.0,0.4983712123351201,0.3685909688802812,U-DEC
+2025-07-18,2025-07-19,False,Women's Flyweight,False,Carli Judice,22,-0.1638,Nicolle Caliari,25,-0.2657,1.0,Carli Judice,1.0,0.5346,True,False,99.0,99.0,,0.6343264612813755,0.566290790894694,KO/TKO
+2025-07-18,2025-07-19,False,Lightweight,False,Michael Johnson,38,-0.0936,Daniel Zellhuber,46,-0.2121,1.0,Michael Johnson,1.0,0.5402,False,False,99.0,99.0,,0.530320722064724,0.5134947593965081,U-DEC
+2025-07-18,2025-07-19,False,Featherweight,False,Dan Ige,34,-0.0418,Patricio Freire,41,-0.1316,0.0,Patricio Freire,0.0,0.5305,False,False,11.0,99.0,,0.7560603213308068,0.7134405431110366,U-DEC
+2025-07-18,2025-07-19,False,Bantamweight,False,Kyler Phillips,15,0.2743,Vinicius Oliveira,16,0.2685,0.0,Vinicius Oliveira,0.0,0.502,True,False,12.0,15.0,0.0,0.4801855488239868,0.4694648703280525,U-DEC
+2025-07-25,2025-07-26,False,Bantamweight,False,Davey Grant,35,-0.0147,Da'Mon Blackshear,39,-0.0882,1.0,Davey Grant,1.0,0.525,False,False,99.0,99.0,,0.4641955937105013,0.4783915903259799,U-DEC
+2025-07-25,2025-07-26,False,Middleweight,False,Shara Magomedov,22,-0.0146,Marc-Andre Barriault,61,-0.657,1.0,Shara Magomedov,1.0,0.7055,False,False,99.0,99.0,,0.6593498276564937,0.6414713535823818,U-DEC
+2025-07-25,2025-07-26,False,Middleweight,False,Robert Whittaker,3,0.5907,Reinier de Ridder,12,0.2852,0.0,Reinier de Ridder,0.0,0.6024,True,True,5.0,13.0,0.0,0.6362046163629134,0.654458423802679,S-DEC
+2025-07-25,2025-07-26,False,Light Heavyweight,False,Nikita Krylov,13,0.2286,Bogdan Guskov,14,0.1564,0.0,Bogdan Guskov,0.0,0.5245,True,True,10.0,13.0,0.0,0.5934514399360242,0.4726292112394908,KO/TKO
+2025-07-25,2025-07-26,False,Welterweight,False,Muslim Salikhov,35,-0.1447,Carlos Leal,33,-0.1217,1.0,Muslim Salikhov,0.0,0.4922,False,False,99.0,99.0,,0.5029194327500075,0.6679624067272364,KO/TKO
+2025-07-25,2025-07-26,False,Flyweight,False,Asu Almabayev,11,0.3137,Jose Ochoa,23,0.0126,1.0,Asu Almabayev,1.0,0.601,True,False,9.0,99.0,,0.5700025603844254,0.6450181192884954,U-DEC
+2025-07-25,2025-07-26,False,Bantamweight,False,Petr Yan,8,0.5911,Marcus McGhee,13,0.344,1.0,Petr Yan,1.0,0.5832,True,True,3.0,12.0,1.0,0.59941192538288,0.630603972911392,U-DEC
+2025-07-25,2025-07-26,False,Light Heavyweight,False,Ibo Aslan,21,-0.1529,Billy Elekana,29,-0.3617,0.0,Billy Elekana,0.0,0.5705,True,False,99.0,99.0,,0.647774829565759,0.580982731967245,U-DEC
+2025-08-01,2025-08-02,False,Featherweight,False,Danny Silva,36,-0.0651,Kevin Vallejos,23,0.0535,0.0,Kevin Vallejos,1.0,0.4598,False,False,99.0,99.0,,0.476332869604748,0.5474527255624374,U-DEC
+2025-08-01,2025-08-02,False,Flyweight,False,Tatsuro Taira,6,0.8304,HyunSung Park,9,0.4703,1.0,Tatsuro Taira,1.0,0.62,True,True,6.0,99.0,,0.5515894737011836,0.602262333261487,SUB
+2025-08-01,2025-08-02,False,Lightweight,False,Mateusz Rebecki,23,0.0509,Chris Duncan,32,0.0137,0.0,Chris Duncan,0.0,0.5127,False,False,99.0,99.0,,0.5779589395234803,0.5151129051227573,U-DEC
+2025-08-01,2025-08-02,False,Middleweight,False,Rodolfo Vieira,27,-0.1041,Tresean Gore,56,-0.6042,1.0,Rodolfo Vieira,1.0,0.6638,False,False,99.0,99.0,,0.6633608012576067,0.6130575110172223,U-DEC
+2025-08-01,2025-08-02,False,Lightweight,False,Elves Brener,48,-0.2719,Esteban Ribovics,42,-0.1606,0.0,Esteban Ribovics,1.0,0.4622,False,False,99.0,99.0,,0.2316145490087688,0.4448425681598915,U-DEC
+2025-08-01,2025-08-02,False,Welterweight,False,Neil Magny,41,-0.227,Elizeu Zaleski dos Santos,36,-0.1305,1.0,Neil Magny,0.0,0.4672,False,False,99.0,99.0,,0.4789307272614135,0.5641591643230481,KO/TKO
+2025-08-01,2025-08-02,False,Middleweight,False,Nick Klein,48,-0.3836,Andrey Pulyaev,45,-0.362,0.0,Andrey Pulyaev,1.0,0.4926,False,False,99.0,99.0,,0.5910916456926439,0.5009730378450307,KO/TKO
+2025-08-01,2025-08-02,False,Flyweight,False,Rafael Estevam,22,0.0369,Felipe Bunes,30,-0.1663,1.0,Rafael Estevam,1.0,0.5687,True,False,99.0,99.0,,0.5756442596209632,0.61044732305325,U-DEC
+2025-08-01,2025-08-02,False,Women's Bantamweight,False,Karol Rosa,14,-0.0895,Nora Cornolle,11,0.0919,1.0,Karol Rosa,0.0,0.4386,True,True,10.0,12.0,1.0,0.5192146257411802,0.4507232675840624,U-DEC
+2025-08-01,2025-08-02,False,Women's Strawweight,False,Piera Rodriguez,22,-0.1807,Ketlen Souza,25,-0.1911,1.0,Piera Rodriguez,1.0,0.5035,True,False,99.0,99.0,,0.6282246319965036,0.5270497443604091,S-DEC
+2025-08-08,2025-08-09,False,Light Heavyweight,False,Julius Walker,23,-0.2576,Rafael Cerquiera,36,-0.7134,1.0,Julius Walker,1.0,0.6502,False,False,99.0,99.0,,0.7314622846795859,0.5719591181370122,U-DEC
+2025-08-08,2025-08-09,False,Women's Strawweight,False,Iasmin Lucindo,7,0.4343,Angela Hill,13,0.2299,1.0,Iasmin Lucindo,1.0,0.569,True,True,8.0,12.0,1.0,0.489973597541318,0.5415012278556292,U-DEC
+2025-08-08,2025-08-09,False,Middleweight,False,Roman Dolidze,7,0.3978,Anthony Hernandez,5,0.4207,0.0,Anthony Hernandez,1.0,0.4922,True,True,9.0,10.0,0.0,0.4478622603591227,0.4800900956534364,SUB
+2025-08-08,2025-08-09,False,Middleweight,False,Eryk Anders,32,-0.2115,Christian Leroy Duncan,34,-0.2195,0.0,Christian Leroy Duncan,0.0,0.5027,False,False,99.0,99.0,,0.39185216624469,0.5068798125879346,KO/TKO
+2025-08-08,2025-08-09,False,Featherweight,False,Andre Fili,69,-0.5956,Christian Rodriguez,41,-0.2591,1.0,Andre Fili,0.0,0.3876,False,False,99.0,99.0,,0.3628262552184309,0.4208872013617499,S-DEC
+2025-08-08,2025-08-09,False,Bantamweight,False,Elijah Smith,36,-0.0259,Toshiomi Kazama,64,-0.3811,1.0,Elijah Smith,1.0,0.6185,False,False,99.0,99.0,,0.7080135631764877,0.611275657806888,KO/TKO
+2025-08-08,2025-08-09,False,Women's Bantamweight,False,Joselyne Edwards,16,-0.2534,Priscila Cachoeira,24,-0.5423,1.0,Joselyne Edwards,1.0,0.597,True,False,14.0,99.0,,0.6879341247932756,0.5592476223746866,KO/TKO
+2025-08-08,2025-08-09,False,Bantamweight,False,Miles Johns,55,-0.2746,Jean Matsumoto,23,0.1153,0.0,Jean Matsumoto,1.0,0.3704,False,False,99.0,99.0,,0.4766201619700111,0.5061331791870137,S-DEC
+2025-08-15,2025-08-16,False,Middleweight,True,Dricus Du Plessis,0,1.0345,Khamzat Chimaev,1,0.6803,0.0,Khamzat Chimaev,0.0,0.6181,True,True,0.0,3.0,0.0,0.4790085615894356,0.5625356063563086,U-DEC
+2025-08-15,2025-08-16,False,Lightweight,False,Chase Hooper,15,0.3243,Alexander Hernandez,55,-0.3166,0.0,Alexander Hernandez,0.0,0.7051,False,False,99.0,99.0,,0.5988518700332015,0.5727025463953929,KO/TKO
+2025-08-15,2025-08-16,False,Welterweight,False,Geoff Neal,10,0.4327,Carlos Prates,11,0.3741,0.0,Carlos Prates,0.0,0.5199,True,True,11.0,12.0,0.0,0.6442802385315425,0.5472674082073424,KO/TKO
+2025-08-15,2025-08-16,False,Middleweight,False,Gerald Meerschaert,50,-0.4603,Michal Oleksiejczuk,56,-0.6574,0.0,Michal Oleksiejczuk,0.0,0.5666,False,False,99.0,99.0,,0.349488378340318,0.4921391626090557,KO/TKO
+2025-08-15,2025-08-16,False,Women's Flyweight,False,Karine Silva,11,0.2313,Dione Barbosa,21,-0.1256,1.0,Karine Silva,1.0,0.619,True,False,11.0,99.0,,0.6046400637391498,0.5896003362284703,U-DEC
+2025-08-22,2025-08-23,False,Women's Strawweight,False,Shi Ming,15,0.1414,Bruna Brasil,42,-0.7055,0.0,Bruna Brasil,0.0,0.7598,False,False,99.0,99.0,,0.6252247485379798,0.6086850222611455,U-DEC
+2025-08-22,2025-08-23,False,Lightweight,False,Maheshate,91,-0.8284,Gauge Young,52,-0.3021,0.0,Gauge Young,1.0,0.3283,False,False,99.0,99.0,,0.4412184805985545,0.4835341850948038,U-DEC
+2025-08-22,2025-08-23,False,Flyweight,False,Charles Johnson,31,-0.2111,Lone'er Kavanagh,20,0.0723,1.0,Charles Johnson,0.0,0.4048,False,False,15.0,99.0,,0.5878779409704982,0.4366105080382081,KO/TKO
+2025-08-22,2025-08-23,False,Light Heavyweight,False,Johnny Walker,12,0.2542,Zhang Mingyang,11,0.3183,1.0,Johnny Walker,0.0,0.4782,True,True,13.0,14.0,1.0,0.4431972049445626,0.4288382924337425,KO/TKO
+2025-08-22,2025-08-23,False,Bantamweight,False,Xiao Long,37,-0.0791,SuYoung You,22,0.106,0.0,SuYoung You,1.0,0.4374,False,False,99.0,99.0,,0.4661281086623894,0.4010069236048214,U-DEC
+2025-08-22,2025-08-23,False,Heavyweight,False,Sergei Pavlovich,6,0.5309,Waldo Cortes Acosta,10,0.2811,1.0,Sergei Pavlovich,1.0,0.5841,True,True,3.0,6.0,1.0,0.6129526622649848,0.5234526084035914,U-DEC
+2025-08-22,2025-08-23,False,Flyweight,False,Sumudaerji,40,-0.378,Kevin Borjas,47,-0.4522,1.0,Sumudaerji,1.0,0.5252,False,False,99.0,99.0,,0.6877108911981773,0.5113213145551576,U-DEC
+2025-08-22,2025-08-23,False,Featherweight,False,Yizha,67,-0.5527,Westin Wilson,70,-0.5988,1.0,Yizha,1.0,0.5157,False,False,99.0,99.0,,0.443730796396023,0.4168269977351236,KO/TKO
+2025-08-22,2025-08-23,False,Lightweight,False,Rongzhu,69,-0.5254,Austin Hubbard,95,-0.9243,1.0,Rongzhu,1.0,0.6324,False,False,99.0,99.0,,0.5702140325440479,0.5547173612059474,U-DEC
+2025-09-05,2025-09-06,False,Light Heavyweight,False,Oumar Sy,17,0.0126,Brendson Ribeiro,36,-0.7374,1.0,Oumar Sy,1.0,0.735,False,False,99.0,99.0,,0.7123326075210594,0.5921484676024705,KO/TKO
+2025-09-05,2025-09-06,False,Welterweight,False,Sam Patterson,30,-0.0375,Trey Waters,29,-0.0165,1.0,Sam Patterson,0.0,0.4929,True,False,99.0,99.0,,0.5468114698126043,0.5040289169396326,KO/TKO
+2025-09-05,2025-09-06,False,Middleweight,False,Nassourdine Imavov,2,0.6975,Caio Borralho,8,0.3904,1.0,Nassourdine Imavov,1.0,0.6029,True,True,2.0,7.0,1.0,0.5342299532146683,0.517525602295054,U-DEC
+2025-09-05,2025-09-06,False,Lightweight,False,Bolaji Oki,45,-0.23,Mason Jones,42,-0.1491,0.0,Mason Jones,1.0,0.4725,False,False,99.0,99.0,,0.482617439019303,0.5153093892850131,KO/TKO
+2025-09-05,2025-09-06,False,Women's Strawweight,False,Shauna Bannon,19,-0.0062,Sam Hughes,31,-0.2854,0.0,Sam Hughes,0.0,0.5938,False,False,99.0,99.0,,0.4917242442182724,0.519008205705127,SUB
+2025-09-05,2025-09-06,False,Lightweight,False,Benoit Saint Denis,14,0.319,Mauricio Ruffy,16,0.1907,1.0,Benoit Saint Denis,1.0,0.5435,True,False,13.0,15.0,1.0,0.5725325239434446,0.5241987723315492,SUB
+2025-09-05,2025-09-06,False,Welterweight,False,Andreas Gustafsson,21,0.0938,Rinat Fakhretdinov,12,0.3062,0.0,Rinat Fakhretdinov,1.0,0.4283,True,False,99.0,99.0,,0.3454435531221206,0.3142447855612554,KO/TKO
+2025-09-12,2025-09-13,False,Middleweight,False,Jose Daniel Medina,58,-0.6473,Dusko Todorovic,73,-1.0631,0.0,Dusko Todorovic,0.0,0.6377,False,False,99.0,99.0,,0.414095238134041,0.5167241838124415,SUB
+2025-09-12,2025-09-13,False,Middleweight,False,Kelvin Gastelum,20,0.0471,Dustin Stoltzfus,66,-0.8012,1.0,Kelvin Gastelum,1.0,0.7602,False,False,99.0,99.0,,0.613471056870725,0.7211370449128337,U-DEC
+2025-09-12,2025-09-13,False,Lightweight,False,Alexander Hernandez,45,-0.2443,Diego Ferreira,37,-0.1035,1.0,Alexander Hernandez,0.0,0.4523,False,False,99.0,99.0,,0.376618700551993,0.4775354434372484,KO/TKO
+2025-09-12,2025-09-13,False,Flyweight,False,Jesus Aguilar,34,-0.2628,Luis Gurule,43,-0.3988,1.0,Jesus Aguilar,1.0,0.5461,False,False,99.0,99.0,,0.5737831997507061,0.6110749733272921,U-DEC
+2025-09-12,2025-09-13,False,Lightweight,False,Rafa Garcia,39,-0.1148,Jared Gordon,33,-0.0155,1.0,Rafa Garcia,0.0,0.4663,False,False,99.0,99.0,,0.3352496458527323,0.4242661698946948,KO/TKO
+2025-09-12,2025-09-13,False,Bantamweight,False,Rob Font,7,0.647,David Martinez,32,0.0768,0.0,David Martinez,0.0,0.6847,False,False,9.0,99.0,,0.709122725292265,0.7053069901523269,U-DEC
+2025-09-12,2025-09-13,False,Women's Strawweight,False,Tatiana Suarez,4,0.7872,Amanda Lemos,5,0.5504,1.0,Tatiana Suarez,1.0,0.5798,True,True,2.0,4.0,1.0,0.4705418743127018,0.3793861314069812,U-DEC
+2025-09-12,2025-09-13,False,Featherweight,False,Diego Lopes,8,0.4815,Jean Silva,6,0.6151,1.0,Diego Lopes,0.0,0.4547,True,True,2.0,10.0,1.0,0.6013140205649854,0.4689312631992272,KO/TKO
+2025-09-26,2025-09-27,False,Welterweight,False,Jake Matthews,17,0.1259,Neil Magny,36,-0.1618,0.0,Neil Magny,0.0,0.5966,False,False,99.0,99.0,,0.5839585892653273,0.4904158278157953,SUB
+2025-09-26,2025-09-27,False,Bantamweight,False,Colby Thicknesse,54,-0.2559,Josias Musasa,55,-0.2776,1.0,Colby Thicknesse,1.0,0.5074,False,False,99.0,99.0,,0.5838188635660401,0.5065120382086739,U-DEC
+2025-09-26,2025-09-27,False,Lightweight,False,Tom Nolan,40,-0.1285,Charlie Campbell,32,-0.0064,1.0,Tom Nolan,0.0,0.4586,False,False,99.0,99.0,,0.3606764677913999,0.4993983866571333,SUB
+2025-09-26,2025-09-27,False,Light Heavyweight,False,Carlos Ulberg,3,0.552,Dominick Reyes,6,0.4339,1.0,Carlos Ulberg,1.0,0.5401,True,True,3.0,7.0,1.0,0.5644659323123519,0.6036858958919961,KO/TKO
+2025-09-26,2025-09-27,False,Light Heavyweight,False,Navajo Stirling,16,0.036,Rodolfo Bellato,18,-0.002,1.0,Navajo Stirling,1.0,0.5129,True,False,99.0,99.0,,0.6571210651162397,0.5490501800710186,U-DEC
+2025-09-26,2025-09-27,False,Women's Strawweight,False,Loma Lookboonmee,18,0.0681,Alexia Thainara,16,0.1087,0.0,Alexia Thainara,1.0,0.4862,True,False,14.0,99.0,,0.4863937107138899,0.577509562895498,U-DEC
+2025-09-26,2025-09-27,False,Light Heavyweight,False,Jimmy Crute,24,-0.2478,Ivan Erslan,33,-0.5257,1.0,Jimmy Crute,1.0,0.5934,False,False,99.0,99.0,,0.7341263627622726,0.6811447493092052,SUB
+2025-10-03,2025-10-04,False,Light Heavyweight,True,Magomed Ankalaev,0,0.8858,Alex Pereira,1,1.1148,0.0,Alex Pereira,0.0,0.4228,True,True,0.0,1.0,0.0,0.5107984797794222,0.5543829521552875,KO/TKO
+2025-10-03,2025-10-04,False,Middleweight,False,Edmen Shahbazyan,36,-0.2271,Andre Muniz,45,-0.3266,1.0,Edmen Shahbazyan,1.0,0.5338,False,False,99.0,99.0,,0.6050798141461845,0.4783371547707312,KO/TKO
+2025-10-03,2025-10-04,False,Light Heavyweight,False,Jiri Prochazka,2,0.7274,Khalil Rountree Jr.,7,0.3426,1.0,Jiri Prochazka,1.0,0.6279,True,True,2.0,4.0,1.0,0.5642877746880597,0.5370897892518636,KO/TKO
+2025-10-03,2025-10-04,False,Women's Bantamweight,False,Macy Chiasson,4,0.6977,Yana Santos,11,0.2105,0.0,Yana Santos,0.0,0.6599,True,True,5.0,10.0,0.0,0.4656709598681778,0.5268949332784786,U-DEC
+2025-10-03,2025-10-04,False,Featherweight,False,Josh Emmett,11,0.2729,Youssef Zalal,12,0.2628,0.0,Youssef Zalal,0.0,0.5034,True,True,8.0,9.0,0.0,0.4314890891616225,0.5549507448760164,SUB
+2025-10-03,2025-10-04,False,Bantamweight,True,Merab Dvalishvili,0,1.3316,Cory Sandhagen,1,1.1297,1.0,Merab Dvalishvili,1.0,0.5682,True,True,0.0,4.0,1.0,0.6081450986944564,0.6162486370234246,U-DEC
+2025-10-03,2025-10-04,False,Welterweight,False,Punahele Soriano,43,-0.2815,Nikolay Veretennikov,61,-0.5232,1.0,Punahele Soriano,1.0,0.5814,False,False,99.0,99.0,,0.6780263041492094,0.6062410264147259,U-DEC
+2025-10-03,2025-10-04,False,Middleweight,False,Abus Magomedov,23,0.0023,Joe Pyfer,13,0.1638,0.0,Joe Pyfer,1.0,0.4453,True,False,99.0,99.0,,0.383888055828603,0.4595460577586697,SUB
+2025-10-03,2025-10-04,False,Bantamweight,False,Chris Gutierrez,17,0.27,Farid Basharat,18,0.2325,0.0,Farid Basharat,0.0,0.5127,True,False,99.0,99.0,,0.6194172095513955,0.5248631371138862,U-DEC
+2025-10-10,2025-10-11,False,Heavyweight,False,Jhonata Diniz,19,0.0031,Mario Pinto,18,0.0248,0.0,Mario Pinto,1.0,0.4926,True,False,99.0,99.0,,0.6051896367460068,0.5715277723169714,KO/TKO
+2025-10-10,2025-10-11,False,Featherweight,False,Ricardo Ramos,73,-0.6622,Kaan Ofli,68,-0.581,0.0,Kaan Ofli,1.0,0.4724,False,False,99.0,99.0,,0.5794941485270327,0.6429558397287197,SUB
+2025-10-10,2025-10-11,False,Flyweight,False,Lucas Rocha,38,-0.3488,Stewart Nicoll,40,-0.385,1.0,Lucas Rocha,1.0,0.5123,False,False,99.0,99.0,,0.40222673514628,0.49750345532953,U-DEC
+2025-10-10,2025-10-11,False,Flyweight,False,Jafel Filho,28,-0.1413,Clayton Carpenter,19,0.104,1.0,Jafel Filho,0.0,0.4174,True,False,99.0,99.0,,0.4964748291288205,0.466387934753463,SUB
+2025-10-10,2025-10-11,False,Lightweight,False,Charles Oliveira,4,1.2668,Mateusz Gamrot,7,0.6127,1.0,Charles Oliveira,1.0,0.7088,True,True,4.0,8.0,1.0,0.4837001738030778,0.5979122742230523,SUB
+2025-10-10,2025-10-11,False,Women's Strawweight,False,Julia Polastri,27,-0.2353,Karolina Kowalkiewicz,28,-0.2602,1.0,Julia Polastri,1.0,0.5085,True,False,99.0,99.0,,0.4955810591245136,0.4237747522965583,KO/TKO
+2025-10-10,2025-10-11,False,Bantamweight,False,Deiveson Figueiredo,5,0.9131,Montel Jackson,8,0.5451,1.0,Deiveson Figueiredo,1.0,0.6226,True,True,6.0,15.0,1.0,0.3376237484938869,0.536016098575408,S-DEC
+2025-10-17,2025-10-18,False,Flyweight,False,Bruno Silva,19,0.0986,HyunSung Park,11,0.2622,1.0,Bruno Silva,0.0,0.4446,True,False,14.0,99.0,,0.5051282751093283,0.4531619832359137,SUB
+2025-10-17,2025-10-18,False,Bantamweight,False,Marlon Vera,9,0.5082,Aiemann Zahabi,13,0.2141,0.0,Aiemann Zahabi,0.0,0.5987,True,True,7.0,9.0,0.0,0.4426429962305271,0.4855097384420687,S-DEC
+2025-10-17,2025-10-18,False,Bantamweight,False,Cody Gibson,86,-0.6881,Aoriqileng,63,-0.4058,0.0,Aoriqileng,1.0,0.4052,False,False,99.0,99.0,,0.6530505426831235,0.4971853479645243,KO/TKO
+2025-10-17,2025-10-18,False,Women's Flyweight,False,Manon Fiorot,4,0.6674,Jasmine Jasudavicius,7,0.3694,1.0,Manon Fiorot,1.0,0.6,True,True,2.0,5.0,1.0,0.6281525391081145,0.581088993624812,KO/TKO
+2025-10-17,2025-10-18,False,Welterweight,False,Kevin Holland,37,-0.1544,Mike Malott,24,0.0306,0.0,Mike Malott,1.0,0.4374,False,False,15.0,99.0,,0.4714240855723217,0.4539218114597328,U-DEC
+2025-10-17,2025-10-18,False,Middleweight,False,Reinier de Ridder,7,0.394,Brendan Allen,6,0.4214,0.0,Brendan Allen,1.0,0.4907,True,True,4.0,9.0,0.0,0.6059339510295892,0.4777015636411978,KO/TKO
+2025-10-17,2025-10-18,False,Lightweight,False,Kyle Prepolec,69,-0.5898,Drew Dober,78,-0.6881,0.0,Drew Dober,0.0,0.5334,False,False,99.0,99.0,,0.3558914688136152,0.3823076937492636,KO/TKO
+2025-10-24,2025-10-25,False,Middleweight,False,Ikram Aliskerov,18,0.1047,JunYong Park,25,-0.0063,1.0,Ikram Aliskerov,1.0,0.5377,True,False,99.0,99.0,,0.6230104679233488,0.4824048137585441,U-DEC
+2025-10-24,2025-10-25,False,Flyweight,False,Azat Maksum,41,-0.405,Mitch Raposo,44,-0.4524,0.0,Mitch Raposo,0.0,0.5161,False,False,99.0,99.0,,0.5314108076356371,0.5320132586180865,U-DEC
+2025-10-24,2025-10-25,False,Heavyweight,False,Hamdy Abdelwahab,34,-0.3604,Chris Barnett,40,-0.5648,1.0,Hamdy Abdelwahab,1.0,0.569,False,False,99.0,99.0,,0.5707065488006109,0.5373956313437541,U-DEC
+2025-10-24,2025-10-25,False,Women's Strawweight,True,Virna Jandiroba,2,0.8731,Mackenzie Dern,3,0.6471,0.0,Mackenzie Dern,0.0,0.5762,True,True,1.0,5.0,0.0,0.6113206639425595,0.5892922857905007,U-DEC
+2025-10-24,2025-10-25,False,Heavyweight,False,Alexander Volkov,3,0.8209,Jailton Almeida,5,0.7153,1.0,Alexander Volkov,1.0,0.5358,True,True,2.0,5.0,1.0,0.5282678748428584,0.4821171651619557,S-DEC
+2025-10-24,2025-10-25,False,Featherweight,False,Nathaniel Wood,12,0.2235,Jose Delgado,17,0.1399,1.0,Nathaniel Wood,1.0,0.5284,True,False,99.0,99.0,,0.4788799512867765,0.5858353215123194,U-DEC
+2025-10-24,2025-10-25,False,Lightweight,False,Nasrat Haqparast,14,0.266,Quillan Salkilld,17,0.1496,0.0,Quillan Salkilld,0.0,0.5395,True,False,99.0,99.0,,0.5011064366208815,0.6094985359391103,KO/TKO
+2025-10-24,2025-10-25,False,Bantamweight,False,Umar Nurmagomedov,3,0.6751,Mario Bautista,9,0.4857,1.0,Umar Nurmagomedov,1.0,0.5641,True,True,2.0,9.0,1.0,0.6356346491203424,0.4928495462105229,U-DEC
+2025-10-24,2025-10-25,False,Lightweight,False,Ludovit Klein,19,0.1295,Mateusz Rebecki,41,-0.1472,1.0,Ludovit Klein,1.0,0.593,False,False,99.0,99.0,,0.5039677114021559,0.5489845920003134,M-DEC
+2025-10-24,2025-10-25,False,Light Heavyweight,False,Aleksandar Rakic,11,0.2573,Azamat Murzakanov,5,0.3931,0.0,Azamat Murzakanov,1.0,0.454,True,True,7.0,10.0,0.0,0.4202827502322406,0.3261282586338102,KO/TKO
+2025-10-31,2025-11-01,False,Welterweight,False,Charles Radtke,53,-0.3959,Daniel Frunza,50,-0.3727,1.0,Charles Radtke,0.0,0.4921,False,False,99.0,99.0,,0.7019645943303809,0.6311638958104033,SUB
+2025-10-31,2025-11-01,False,Featherweight,False,Steve Garcia,10,0.4355,David Onama,14,0.1915,1.0,Steve Garcia,1.0,0.5822,True,True,12.0,13.0,1.0,0.6516147085736981,0.5324434395901905,KO/TKO
+2025-10-31,2025-11-01,False,Women's Bantamweight,False,Ketlen Vieira,5,0.3197,Norma Dumont,3,0.5472,0.0,Norma Dumont,1.0,0.4233,True,True,3.0,4.0,0.0,0.3290374628497538,0.4036480506770126,S-DEC
+2025-10-31,2025-11-01,False,Featherweight,False,Isaac Dulgarian,33,-0.0748,Yadier del Valle,23,0.0152,0.0,Yadier del Valle,1.0,0.4695,False,False,99.0,99.0,,0.633334014207162,0.526115140580324,SUB
+2025-10-31,2025-11-01,False,Women's Strawweight,False,Talita Alencar,27,-0.1634,Ariane Carnelossi,34,-0.3782,1.0,Talita Alencar,1.0,0.5725,False,False,99.0,99.0,,0.5695505163158865,0.4920219214262836,SUB
+2025-10-31,2025-11-01,False,Heavyweight,False,Waldo Cortes Acosta,9,0.3095,Ante Delija,11,0.0877,1.0,Waldo Cortes Acosta,1.0,0.5749,True,True,6.0,9.0,1.0,0.6324572850940401,0.6141393176017482,KO/TKO
+2025-10-31,2025-11-01,False,Welterweight,False,Phil Rowe,30,-0.0744,Seokhyeon Ko,24,0.0406,0.0,Seokhyeon Ko,1.0,0.461,True,False,99.0,99.0,,0.409412443622331,0.517715597859103,U-DEC
+2025-11-07,2025-11-08,False,Lightweight,False,Chris Padilla,15,0.152,Ismael Bonfim,52,-0.3538,1.0,Chris Padilla,1.0,0.6655,False,False,99.0,99.0,,0.464247710682563,0.6248610528366586,KO/TKO
+2025-11-07,2025-11-08,False,Bantamweight,False,Miles Johns,71,-0.5277,Daniel Marcos,32,0.0683,0.0,Daniel Marcos,1.0,0.3078,False,False,99.0,99.0,,0.3209072505628123,0.3938266940589455,SUB
+2025-11-07,2025-11-08,False,Welterweight,False,Gabriel Bonfim,20,0.1124,Randy Brown,15,0.1742,1.0,Gabriel Bonfim,0.0,0.479,True,False,14.0,99.0,,0.5159435149555269,0.4367076687367204,KO/TKO
+2025-11-07,2025-11-08,False,Women's Bantamweight,False,Mayra Bueno Silva,23,-0.456,Jacqueline Cavalcanti,9,0.2194,0.0,Jacqueline Cavalcanti,1.0,0.2853,True,False,10.0,11.0,0.0,0.3497831722735247,0.3173050063931905,U-DEC
+2025-11-07,2025-11-08,False,Women's Strawweight,False,Tecia Pennington,9,0.3637,Denise Gomes,15,0.1446,0.0,Denise Gomes,0.0,0.5739,True,True,13.0,15.0,0.0,0.4595840207098344,0.5026927839537175,U-DEC
+2025-11-07,2025-11-08,False,Middleweight,False,Christian Leroy Duncan,25,0.0058,Marco Tulio,18,0.1132,1.0,Christian Leroy Duncan,0.0,0.4635,True,False,99.0,99.0,,0.5320400350961765,0.5141126982150359,KO/TKO
+2025-11-07,2025-11-08,False,Welterweight,False,Muslim Salikhov,30,-0.0734,Uros Medic,42,-0.2355,0.0,Uros Medic,0.0,0.5549,False,False,99.0,99.0,,0.7347120007483945,0.659555086518636,KO/TKO
+2025-11-07,2025-11-08,False,Bantamweight,False,Ricky Simon,40,-0.0832,Raoni Barcelos,27,0.0582,0.0,Raoni Barcelos,1.0,0.4521,False,False,99.0,99.0,,0.4416781941197287,0.4762565937137632,U-DEC
+2025-11-07,2025-11-08,False,Featherweight,False,Hyder Amil,27,-0.0761,Jamall Emmers,41,-0.2068,0.0,Jamall Emmers,0.0,0.5443,False,False,99.0,99.0,,0.3971624566158638,0.568843650772833,U-DEC
+2025-11-07,2025-11-08,False,Flyweight,False,Matt Schnell,45,-0.583,Joseph Morales,22,-0.0267,0.0,Joseph Morales,1.0,0.3194,False,False,99.0,99.0,,0.404070941025686,0.4648444209578841,SUB
+2025-11-14,2025-11-15,False,Lightweight,False,Viacheslav Borshchev,80,-0.757,Matheus Camilo,54,-0.3895,0.0,Matheus Camilo,1.0,0.3776,False,False,99.0,99.0,,0.4482497650348436,0.5002368155059681,U-DEC
+2025-11-14,2025-11-15,False,Middleweight,False,Bo Nickal,27,-0.0125,Rodolfo Vieira,30,-0.0337,1.0,Bo Nickal,1.0,0.5072,True,False,99.0,99.0,,0.536507340138104,0.527232101841469,KO/TKO
+2025-11-14,2025-11-15,False,Welterweight,False,Leon Edwards,4,0.8746,Carlos Prates,10,0.4521,0.0,Carlos Prates,0.0,0.6398,True,True,4.0,9.0,0.0,0.4859426341277086,0.5670381601008136,KO/TKO
+2025-11-14,2025-11-15,False,Welterweight,False,Sean Brady,3,0.7924,Michael Morales,9,0.5409,0.0,Michael Morales,0.0,0.5847,True,True,2.0,8.0,0.0,0.4705904929063423,0.5391973095836982,KO/TKO
+2025-11-14,2025-11-15,False,Women's Strawweight,False,Angela Hill,11,0.1193,Fatima Kline,18,0.065,0.0,Fatima Kline,0.0,0.5184,True,False,12.0,99.0,,0.5198083392050499,0.482389787360176,U-DEC
+2025-11-14,2025-11-15,False,Women's Flyweight,False,Erin Blanchfield,3,0.692,Tracy Cortez,6,0.2532,1.0,Erin Blanchfield,1.0,0.6449,True,True,4.0,8.0,1.0,0.6500030677703058,0.6009433311648026,SUB
+2025-11-14,2025-11-15,False,Lightweight,False,Beneil Dariush,4,0.7672,Benoit Saint Denis,11,0.4172,0.0,Benoit Saint Denis,0.0,0.6168,True,True,9.0,13.0,0.0,0.477003518738846,0.5742319272054437,KO/TKO
+2025-11-14,2025-11-15,False,Middleweight,False,Kyle Daukaus,56,-0.5293,Gerald Meerschaert,55,-0.5278,1.0,Kyle Daukaus,0.0,0.4995,False,False,99.0,99.0,,0.6438010098697259,0.51517988035074,SUB
+2025-11-14,2025-11-15,False,Featherweight,False,Pat Sabatini,22,0.0467,Chepe Mariscal,11,0.377,1.0,Pat Sabatini,0.0,0.3895,True,False,99.0,99.0,,0.3867867007656194,0.4350365489997667,U-DEC
+2025-11-14,2025-11-15,False,Middleweight,False,Roman Kopylov,33,-0.1163,Gregory Rodrigues,13,0.2484,0.0,Gregory Rodrigues,1.0,0.3785,False,False,99.0,99.0,,0.32622433320749,0.3930437857143664,U-DEC
+2025-11-21,2025-11-22,False,Middleweight,False,Ismail Naurdiev,50,-0.3547,Ryan Loder,40,-0.2092,1.0,Ismail Naurdiev,0.0,0.4507,False,False,99.0,99.0,,0.5982580922718054,0.5293584802033888,KO/TKO
+2025-11-21,2025-11-22,False,Flyweight,False,Alex Perez,26,-0.1289,Asu Almabayev,10,0.329,0.0,Asu Almabayev,1.0,0.3492,True,False,7.0,8.0,0.0,0.4590252852217443,0.3979518614312435,SUB
+2025-11-21,2025-11-22,False,Bantamweight,False,Bekzat Almakhan,41,-0.1264,Aleksandre Topuria,32,0.0567,0.0,Aleksandre Topuria,1.0,0.4381,False,False,99.0,99.0,,0.5855337479908963,0.4728642943000294,U-DEC
+2025-11-21,2025-11-22,False,Light Heavyweight,False,Volkan Oezdemir,6,0.2813,Alonzo Menifield,13,-0.1375,1.0,Volkan Oezdemir,1.0,0.6387,True,True,9.0,14.0,1.0,0.7798241033731776,0.4411535820414879,KO/TKO
+2025-11-21,2025-11-22,False,Welterweight,False,Belal Muhammad,3,0.8843,Ian Machado Garry,5,0.6361,0.0,Ian Machado Garry,0.0,0.5836,True,True,2.0,6.0,0.0,0.4740134674635026,0.5613853079577489,U-DEC
+2025-11-21,2025-11-22,False,Heavyweight,False,Waldo Cortes Acosta,9,0.427,Shamil Gaziev,18,0.054,1.0,Waldo Cortes Acosta,1.0,0.6242,True,False,6.0,11.0,1.0,0.7203493370102658,0.5940597564700417,KO/TKO
+2025-12-05,2025-12-06,False,Lightweight,False,Nazim Sadykhov,12,0.3818,Fares Ziam,17,0.1228,0.0,Fares Ziam,0.0,0.5871,True,False,99.0,99.0,,0.432131873653759,0.4955567389586034,KO/TKO
+2025-12-05,2025-12-06,False,Bantamweight,False,Henry Cejudo,7,0.6064,Payton Talbott,27,0.0777,0.0,Payton Talbott,0.0,0.6724,True,False,10.0,99.0,,0.5089947679419615,0.4594022970810585,U-DEC
+2025-12-05,2025-12-06,False,Middleweight,False,Marvin Vettori,43,-0.226,Brunno Ferreira,31,-0.0921,0.0,Brunno Ferreira,1.0,0.4546,False,False,14.0,99.0,,0.5929785956431703,0.4938032691372812,U-DEC
+2025-12-05,2025-12-06,False,Featherweight,False,Muhammad Naimov,34,-0.0718,Mairon Santos,18,0.1392,0.0,Mairon Santos,1.0,0.4287,False,False,99.0,99.0,,0.4445513127305852,0.5045803072614586,KO/TKO
+2025-12-05,2025-12-06,False,Bantamweight,True,Merab Dvalishvili,0,1.4874,Petr Yan,1,0.7971,0.0,Petr Yan,0.0,0.7189,True,True,0.0,3.0,0.0,0.7181679270496826,0.6394118141822241,U-DEC
+2025-12-05,2025-12-06,False,Middleweight,False,Mansur Abdul-Malik,20,0.0916,Antonio Trocoli,62,-0.6126,1.0,Mansur Abdul-Malik,1.0,0.7227,False,False,99.0,99.0,,0.7572148133461728,0.7028295257134209,SUB
+2025-12-05,2025-12-06,False,Lightweight,False,Terrance McKinney,37,-0.1258,Chris Duncan,30,-0.0199,0.0,Chris Duncan,1.0,0.4641,False,False,99.0,99.0,,0.5771018404482199,0.3972423554650565,SUB
+2025-12-05,2025-12-06,False,Lightweight,False,Grant Dawson,8,0.5212,Manuel Torres,16,0.1332,0.0,Manuel Torres,0.0,0.629,True,False,13.0,99.0,,0.6063527817071662,0.7073184425626692,KO/TKO
+2025-12-05,2025-12-06,False,Flyweight,True,Alexandre Pantoja,0,1.393,Joshua Van,6,0.4999,0.0,Joshua Van,0.0,0.7711,True,True,0.0,1.0,0.0,0.5808797467664478,0.6260775965459591,KO/TKO
+2025-12-05,2025-12-06,False,Flyweight,False,Brandon Moreno,1,1.2587,Tatsuro Taira,2,0.8396,0.0,Tatsuro Taira,0.0,0.6388,True,True,2.0,5.0,0.0,0.4893357333265576,0.5201737291876459,KO/TKO
+2025-12-12,2025-12-13,False,Featherweight,False,Giga Chikadze,16,0.1904,Kevin Vallejos,19,0.1533,0.0,Kevin Vallejos,0.0,0.5126,True,False,15.0,99.0,,0.6009416781391691,0.5535680888957896,KO/TKO
+2025-12-12,2025-12-13,False,Featherweight,False,Melquizael Costa,35,-0.0644,Morgan Charriere,34,-0.0506,1.0,Melquizael Costa,0.0,0.4953,False,False,99.0,99.0,,0.5751897763814567,0.6015014945603199,KO/TKO
+2025-12-12,2025-12-13,False,Flyweight,False,Brandon Royval,7,0.5247,Manel Kape,4,0.6885,0.0,Manel Kape,1.0,0.4445,True,True,2.0,6.0,0.0,0.4504072949828974,0.4634817691131286,KO/TKO
+2026-01-23,2026-01-24,False,Bantamweight,False,Sean O'Malley,6,0.7756,Song Yadong,2,0.8238,1.0,Sean O'Malley,0.0,0.4836,True,True,3.0,5.0,1.0,0.5770520549805107,0.4793614295774225,U-DEC
+2026-01-23,2026-01-24,False,Middleweight,False,Ateba Gautier,14,0.2024,Andrey Pulyaev,40,-0.2071,1.0,Ateba Gautier,1.0,0.6358,False,False,99.0,99.0,,0.7451261952324613,0.6419152324006651,U-DEC
+2026-01-23,2026-01-24,False,Bantamweight,False,Umar Nurmagomedov,3,0.7633,Deiveson Figueiredo,5,0.9413,1.0,Umar Nurmagomedov,1.0,0.4398,True,True,2.0,6.0,1.0,0.7633677208372435,0.51169210046958,U-DEC
+2026-01-23,2026-01-24,False,Light Heavyweight,False,Nikita Krylov,15,0.0986,Modestas Bukauskas,21,-0.1322,1.0,Nikita Krylov,1.0,0.5778,True,False,13.0,99.0,,0.5423210160103822,0.4274901511005878,KO/TKO
+2026-01-23,2026-01-24,False,Heavyweight,False,Josh Hokit,16,0.09,Denzel Freeman,24,0.0231,1.0,Josh Hokit,1.0,0.5227,True,False,99.0,99.0,,0.5893803301967963,0.5,KO/TKO
+2026-01-23,2026-01-24,False,Flyweight,False,Alex Perez,26,-0.1291,Charles Johnson,23,-0.0954,1.0,Alex Perez,0.0,0.4886,True,False,11.0,13.0,1.0,0.5198525117485248,0.4550258802624942,KO/TKO
+2026-01-23,2026-01-24,False,Women's Flyweight,False,Natalia Silva,4,0.6338,Rose Namajunas,3,0.7134,1.0,Natalia Silva,0.0,0.473,True,True,2.0,6.0,1.0,0.5000788126071637,0.5480733956151072,U-DEC
+2026-01-23,2026-01-24,False,Heavyweight,False,Waldo Cortes Acosta,8,0.5203,Derrick Lewis,9,0.5056,1.0,Waldo Cortes Acosta,1.0,0.505,True,True,5.0,8.0,1.0,0.5596821486495565,0.515789349925725,KO/TKO
+2026-01-23,2026-01-24,False,Lightweight,True,Justin Gaethje,3,0.8191,Paddy Pimblett,4,0.6388,1.0,Justin Gaethje,1.0,0.561,True,True,4.0,5.0,1.0,0.516886692881862,0.5185638655823412,U-DEC
+2026-01-30,2026-01-31,False,Lightweight,False,Quillan Salkilld,15,0.2097,Jamie Mullarkey,76,-0.7504,1.0,Quillan Salkilld,1.0,0.7868,False,False,99.0,99.0,,0.7966751299889965,0.6783527201698815,SUB
+2026-01-30,2026-01-31,False,Middleweight,False,Cam Rowston,25,0.0234,Cody Brundage,55,-0.4822,1.0,Cam Rowston,1.0,0.6654,False,False,99.0,99.0,,0.5884097486103337,0.6078676940090523,KO/TKO
+2026-01-30,2026-01-31,False,Featherweight,False,Kaan Ofli,59,-0.3832,Yizha,58,-0.3811,1.0,Kaan Ofli,0.0,0.4993,False,False,99.0,99.0,,0.4239558582786859,0.5137875867904496,M-DEC
+2026-01-30,2026-01-31,False,Lightweight,False,Rafael Fiziev,11,0.2945,Mauricio Ruffy,35,-0.1108,0.0,Mauricio Ruffy,0.0,0.6344,False,False,9.0,14.0,0.0,0.6457139989320979,0.5948026931565537,KO/TKO
+2026-01-30,2026-01-31,False,Heavyweight,False,Tai Tuivasa,45,-0.4805,Tallison Teixeira,24,-0.0215,0.0,Tallison Teixeira,1.0,0.3488,False,False,12.0,15.0,0.0,0.517545600807786,0.5319666987828404,U-DEC
+2026-01-30,2026-01-31,False,Welterweight,False,Jonathan Micallef,31,-0.0662,Oban Elliott,37,-0.1457,1.0,Jonathan Micallef,1.0,0.527,False,False,99.0,99.0,,0.4999134822838547,0.4835551364917744,SUB
+2026-01-30,2026-01-31,False,Lightweight,False,Dan Hooker,8,0.4482,Benoit Saint Denis,7,0.4817,0.0,Benoit Saint Denis,1.0,0.4886,True,True,6.0,8.0,0.0,0.2864272802375026,0.4229790958263362,KO/TKO
+2026-01-30,2026-01-31,False,Featherweight,True,Alexander Volkanovski,0,1.2479,Diego Lopes,5,0.657,1.0,Alexander Volkanovski,1.0,0.6908,True,True,0.0,2.0,1.0,0.628164650327879,0.6176171839032473,U-DEC
+2026-02-06,2026-02-07,False,Bantamweight,False,Jean Matsumoto,24,0.0929,Farid Basharat,16,0.2769,0.0,Farid Basharat,1.0,0.4378,True,False,99.0,99.0,,0.324254742904881,0.3490224631877632,S-DEC
+2026-02-06,2026-02-07,False,Women's Bantamweight,False,Klaudia Sygula,21,-0.3077,Priscila Cachoeira,29,-0.8235,1.0,Klaudia Sygula,1.0,0.6685,True,False,99.0,99.0,,0.5818967774460732,0.5424017076228771,U-DEC
+2026-02-06,2026-02-07,False,Light Heavyweight,False,Dustin Jacoby,21,-0.0966,Julius Walker,22,-0.1477,1.0,Dustin Jacoby,1.0,0.5174,True,False,99.0,99.0,,0.6860016680485941,0.6668792544805803,KO/TKO
+2026-02-06,2026-02-07,False,Middleweight,False,Michal Oleksiejczuk,56,-0.5433,Marc-Andre Barriault,72,-0.8768,1.0,Michal Oleksiejczuk,1.0,0.6115,False,False,99.0,99.0,,0.7563705000765025,0.6343813385324101,U-DEC
+2026-02-06,2026-02-07,False,Bantamweight,False,Muin Gafurov,46,-0.2315,Jakub Wiklacz,36,-0.0449,0.0,Jakub Wiklacz,1.0,0.4369,False,False,99.0,99.0,,0.6447552084647395,0.5291551688656511,SUB
+2026-02-06,2026-02-07,False,Heavyweight,False,Jailton Almeida,5,0.7253,Rizvan Kuniev,22,0.0043,0.0,Rizvan Kuniev,0.0,0.7272,True,False,6.0,99.0,,0.875098484936512,0.7989171230620172,U-DEC
+2026-02-06,2026-02-07,False,Welterweight,False,Nikolay Veretennikov,71,-0.7347,Niko Price,79,-0.9023,1.0,Nikolay Veretennikov,1.0,0.5568,False,False,99.0,99.0,,0.426969125948952,0.384794098313206,KO/TKO
+2026-02-06,2026-02-07,False,Women's Strawweight,False,Bruna Brasil,37,-0.4708,Ketlen Souza,39,-0.5069,0.0,Ketlen Souza,0.0,0.5123,False,False,99.0,99.0,,0.4352461329086862,0.5261010650636838,U-DEC
+2026-02-06,2026-02-07,False,Flyweight,False,Amir Albazi,8,0.3528,Kyoji Horiguchi,5,0.654,0.0,Kyoji Horiguchi,1.0,0.399,True,True,6.0,8.0,0.0,0.5100067352158524,0.6046087398398708,U-DEC
+2026-02-06,2026-02-07,False,Welterweight,False,Alex Morono,69,-0.7257,Daniil Donchenko,26,0.0038,0.0,Daniil Donchenko,1.0,0.2705,False,False,99.0,99.0,,0.307850116601252,0.4918780145975032,U-DEC
+2026-02-06,2026-02-07,False,Bantamweight,False,Mario Bautista,9,0.421,Vinicius Oliveira,12,0.3943,1.0,Mario Bautista,1.0,0.5091,True,True,9.0,11.0,1.0,0.4274517116723892,0.4955302155692607,SUB
+2026-02-20,2026-02-21,False,Heavyweight,False,Serghei Spivac,21,0.001,Ante Delija,22,-0.0006,1.0,Serghei Spivac,1.0,0.5005,True,False,7.0,9.0,1.0,0.5479683387892673,0.6006074476127916,U-DEC
+2026-02-20,2026-02-21,False,Welterweight,False,Chidi Njokuani,53,-0.393,Carlos Leal,55,-0.4134,0.0,Carlos Leal,0.0,0.5069,False,False,99.0,99.0,,0.564967515580683,0.5382251157310004,U-DEC
+2026-02-20,2026-02-21,False,Middleweight,False,Zach Reese,40,-0.2206,Michel Pereira,55,-0.4253,0.0,Michel Pereira,0.0,0.5692,False,False,99.0,99.0,,0.3758983501700872,0.453538294629796,S-DEC
+2026-02-20,2026-02-21,False,Women's Flyweight,False,Juliana Miller,25,-0.4959,Carli Judice,13,-0.054,0.0,Carli Judice,1.0,0.3541,True,False,99.0,99.0,,0.253070215443044,0.4360624823925014,U-DEC
+2026-02-20,2026-02-21,False,Flyweight,False,Ode Osbourne,53,-0.9255,Alibi Idiris,37,-0.3283,0.0,Alibi Idiris,1.0,0.3074,False,False,99.0,99.0,,0.533902234886289,0.5007384435567703,U-DEC
+2026-02-20,2026-02-21,False,Middleweight,False,Sean Strickland,3,0.7263,Anthony Hernandez,4,0.6242,1.0,Sean Strickland,1.0,0.5347,True,True,3.0,4.0,1.0,0.4693112449057938,0.4686843986823465,KO/TKO
+2026-02-20,2026-02-21,False,Welterweight,False,Ramiz Brahimaj,35,-0.141,Punahele Soriano,37,-0.1954,0.0,Punahele Soriano,0.0,0.5185,False,False,99.0,99.0,,0.4800630035791662,0.484729525372715,U-DEC
+2026-02-20,2026-02-21,False,Flyweight,False,Alden Coria,15,0.1774,Luis Gurule,45,-0.5527,1.0,Alden Coria,1.0,0.7296,False,False,99.0,99.0,,0.7044281971057962,0.6837046682515597,U-DEC
+2026-02-20,2026-02-21,False,Featherweight,False,Dan Ige,46,-0.2499,Melquizael Costa,19,0.1576,0.0,Melquizael Costa,1.0,0.3649,False,False,14.0,99.0,,0.3837660197502884,0.3904263366300357,KO/TKO
+2026-02-20,2026-02-21,False,Welterweight,False,Geoff Neal,21,0.0562,Uros Medic,38,-0.181,0.0,Uros Medic,0.0,0.5799,False,False,12.0,99.0,,0.6490467648625718,0.5796302342932383,KO/TKO
+2026-02-20,2026-02-21,False,Women's Bantamweight,False,Nora Cornolle,14,0.0334,Joselyne Edwards,16,-0.0693,0.0,Joselyne Edwards,0.0,0.5349,True,False,12.0,14.0,0.0,0.3507981507368849,0.4581214259839204,SUB
+2026-02-27,2026-02-28,False,Flyweight,False,Brandon Moreno,3,0.9003,Lone'er Kavanagh,34,-0.2389,0.0,Lone'er Kavanagh,0.0,0.8248,False,False,6.0,99.0,,0.6022438798214907,0.7016058644235688,U-DEC
+2026-02-27,2026-02-28,False,Bantamweight,False,Marlon Vera,13,0.2929,David Martinez,19,0.2045,0.0,David Martinez,0.0,0.53,True,False,9.0,10.0,0.0,0.4953004081546152,0.5638929996728221,U-DEC
+2026-02-27,2026-02-28,False,Flyweight,False,Edgar Chairez,30,-0.1854,Felipe Bunes,40,-0.3847,1.0,Edgar Chairez,1.0,0.5673,False,False,99.0,99.0,,0.5706492085805329,0.5456596302455227,S-DEC
+2026-02-27,2026-02-28,False,Lightweight,False,Daniel Zellhuber,45,-0.3147,King Green,40,-0.2074,0.0,King Green,1.0,0.4636,False,False,99.0,99.0,,0.3092654443697785,0.3805534605478079,KO/TKO
+2026-02-27,2026-02-28,False,Women's Bantamweight,False,Ailin Perez,8,0.2479,Macy Chiasson,5,0.4797,1.0,Ailin Perez,0.0,0.4218,True,True,7.0,8.0,1.0,0.623039591319922,0.6292468875979536,U-DEC
+2026-03-06,2026-03-07,False,Middleweight,False,Gregory Rodrigues,8,0.3658,Brunno Ferreira,32,-0.0546,1.0,Gregory Rodrigues,1.0,0.6392,False,False,13.0,15.0,1.0,0.6624597589935878,0.6037451038891092,KO/TKO
+2026-03-06,2026-03-07,False,Middleweight,False,Donte Johnson,27,0.0025,Cody Brundage,71,-0.8129,1.0,Donte Johnson,1.0,0.7519,False,False,99.0,99.0,,0.5459594227940577,0.6172815789715094,S-DEC
+2026-03-06,2026-03-07,False,Flyweight,False,Sumudaerji,36,-0.2644,Jesus Aguilar,26,-0.0842,1.0,Sumudaerji,0.0,0.439,False,False,99.0,99.0,,0.5882421749600203,0.4517666704059433,U-DEC
+2026-03-06,2026-03-07,False,Bantamweight,False,Rob Font,13,0.3294,Raul Rosas Jr.,29,0.0749,0.0,Raul Rosas Jr.,0.0,0.5857,True,False,13.0,99.0,,0.5971265535297644,0.5340766078250881,U-DEC
+2026-03-06,2026-03-07,False,Middleweight,False,Caio Borralho,7,0.4195,Reinier de Ridder,10,0.315,1.0,Caio Borralho,1.0,0.5355,True,True,7.0,8.0,1.0,0.5369771881254588,0.570498942533191,U-DEC
+2026-03-06,2026-03-07,False,Bantamweight,False,Cody Garbrandt,24,0.1061,Xiao Long,47,-0.2497,1.0,Cody Garbrandt,1.0,0.6187,False,False,99.0,99.0,,0.5093395414398345,0.6559290083449357,U-DEC
+2026-03-06,2026-03-07,False,Lightweight,False,Drew Dober,62,-0.4904,Michael Johnson,31,-0.0376,1.0,Drew Dober,0.0,0.3507,False,False,99.0,99.0,,0.413934713787473,0.4813578951066566,KO/TKO
+2026-03-06,2026-03-07,False,Flyweight,False,Cody Durden,56,-1.0453,Nyamjargal Tumendemberel,27,-0.0928,0.0,Nyamjargal Tumendemberel,1.0,0.2149,False,False,99.0,99.0,,0.423376286065255,0.4425777283849961,U-DEC
+2026-03-13,2026-03-14,False,Women's Strawweight,False,Piera Rodriguez,25,-0.2003,Sam Hughes,18,-0.078,1.0,Piera Rodriguez,0.0,0.4585,True,False,99.0,99.0,,0.5093930356505767,0.5055234495863413,U-DEC
+2026-03-13,2026-03-14,False,Heavyweight,False,Vitor Petrino,21,0.0063,Steven Asplund,18,0.0393,1.0,Vitor Petrino,0.0,0.4888,True,False,99.0,99.0,,0.578266178156286,0.6061778791593123,U-DEC
+2026-03-13,2026-03-14,False,Women's Strawweight,False,Amanda Lemos,8,0.3687,Gillian Robertson,3,0.474,0.0,Gillian Robertson,1.0,0.4643,True,True,5.0,8.0,0.0,0.45233907327936,0.4801680954948775,U-DEC
+2026-03-13,2026-03-14,False,Featherweight,False,Andre Fili,55,-0.3463,Jose Delgado,26,0.0562,0.0,Jose Delgado,1.0,0.3665,False,False,99.0,99.0,,0.2649307809902443,0.5077921086785266,S-DEC
+2026-03-13,2026-03-14,False,Women's Bantamweight,False,Bia Mesquita,13,0.0461,Montse Rendon,17,-0.2351,1.0,Bia Mesquita,1.0,0.5945,True,False,99.0,99.0,,0.5881831569256873,0.5155402892342228,SUB
+2026-03-13,2026-03-14,False,Middleweight,False,Brad Tavares,63,-0.6134,Eryk Anders,45,-0.2944,0.0,Eryk Anders,1.0,0.3932,False,False,99.0,99.0,,0.4206954131920914,0.5245379693259014,U-DEC
+2026-03-13,2026-03-14,False,Light Heavyweight,False,Ion Cutelaba,29,-0.3207,Oumar Sy,15,0.1203,1.0,Ion Cutelaba,0.0,0.3544,True,False,99.0,99.0,,0.4554343905949207,0.413736624085383,SUB
+2026-03-13,2026-03-14,False,Bantamweight,False,Elijah Smith,28,0.0789,SuYoung You,25,0.1037,1.0,Elijah Smith,0.0,0.4916,True,False,99.0,99.0,,0.4936992882243529,0.4396949376501282,SUB
+2026-03-13,2026-03-14,False,Featherweight,False,Josh Emmett,29,0.0378,Kevin Vallejos,10,0.3576,0.0,Kevin Vallejos,1.0,0.393,True,False,11.0,14.0,0.0,0.4540340837557144,0.4723529290621457,KO/TKO
+2026-03-13,2026-03-14,False,Flyweight,False,Charles Johnson,37,-0.2956,Bruno Silva,15,0.1816,1.0,Charles Johnson,0.0,0.3432,False,False,14.0,15.0,1.0,0.4260532964242958,0.4617746409400707,S-DEC
+2026-03-20,2026-03-21,False,Featherweight,False,Movsar Evloev,3,0.6278,Lerone Murphy,6,0.6492,1.0,Movsar Evloev,1.0,0.4927,True,True,1.0,3.0,1.0,0.6371196004354933,0.5276385012090093,M-DEC
+2026-03-20,2026-03-21,False,Middleweight,False,Roman Dolidze,9,0.3472,Christian Leroy Duncan,21,0.0954,0.0,Christian Leroy Duncan,0.0,0.5848,True,False,11.0,99.0,,0.5157170379863841,0.5747585691746787,U-DEC
+2026-03-20,2026-03-21,False,Heavyweight,False,Louie Sutherland,33,-0.2486,Brando Pericic,17,0.0661,0.0,Brando Pericic,1.0,0.3946,False,False,99.0,99.0,,0.3152601214679587,0.3884656274415101,KO/TKO
+2026-03-20,2026-03-21,False,Featherweight,False,Luke Riley,20,0.1237,Michael Aswell Jr.,36,-0.1111,1.0,Luke Riley,1.0,0.5792,False,False,99.0,99.0,,0.4480213453983083,0.5617543458911038,U-DEC
+2026-03-27,2026-03-28,False,Welterweight,False,Michael Chiesa,13,0.2249,Niko Price,86,-1.042,1.0,Michael Chiesa,1.0,0.8485,False,False,99.0,99.0,,0.8361890342863392,0.7704500393352771,SUB
+2026-03-27,2026-03-28,False,Women's Strawweight,False,Alexia Thainara,12,0.2184,Bruna Brasil,41,-0.7149,1.0,Alexia Thainara,1.0,0.7806,False,False,13.0,99.0,,0.7442370100816035,0.6706887798146093,U-DEC
+2026-03-27,2026-03-28,False,Middleweight,False,Israel Adesanya,8,0.4319,Joe Pyfer,11,0.2964,0.0,Joe Pyfer,0.0,0.5459,True,True,4.0,14.0,0.0,0.596474969371795,0.5647392220681817,KO/TKO
+2026-03-27,2026-03-28,False,Women's Flyweight,False,Alexa Grasso,6,0.3743,Maycee Barber,5,0.5955,1.0,Alexa Grasso,0.0,0.4253,True,True,3.0,5.0,1.0,0.3973983877552688,0.4350348533937481,KO/TKO
+2026-03-27,2026-03-28,False,Light Heavyweight,False,Navajo Stirling,14,0.1211,Bruno Lopes,28,-0.3336,1.0,Navajo Stirling,1.0,0.6498,True,False,99.0,99.0,,0.7394393132259365,0.6447173937966657,KO/TKO
+2026-03-27,2026-03-28,False,Middleweight,False,Mansur Abdul-Malik,16,0.1688,Yousri Belgaroui,23,0.0501,0.0,Yousri Belgaroui,0.0,0.5403,True,False,99.0,99.0,,0.3989409924185139,0.556586528244874,KO/TKO
+2026-04-03,2026-04-04,False,Heavyweight,False,Guilherme Pat,19,0.0451,Thomas Petersen,49,-0.589,0.0,Thomas Petersen,0.0,0.7031,False,False,99.0,99.0,,0.5277772395406989,0.5905333730819008,M-DEC
+2026-04-03,2026-04-04,False,Women's Strawweight,False,Virna Jandiroba,5,0.7804,Tabatha Ricci,11,0.2719,1.0,Virna Jandiroba,1.0,0.6663,True,True,3.0,7.0,1.0,0.5889053224180092,0.5179740976774639,U-DEC
+2026-04-03,2026-04-04,False,Women's Bantamweight,False,Alice Pereira,19,-0.3072,Hailey Cowan,21,-0.5775,1.0,Alice Pereira,1.0,0.5909,True,False,99.0,99.0,,0.4635371223167755,0.5439036375765732,KO/TKO
+2026-04-03,2026-04-04,False,Light Heavyweight,False,Abdul Rakhman Yakhyaev,16,0.0179,Brendson Ribeiro,41,-0.8215,1.0,Abdul Rakhman Yakhyaev,1.0,0.758,False,False,99.0,99.0,,0.7157051596423246,0.6194557238508713,SUB
+2026-04-03,2026-04-04,False,Flyweight,False,Alessandro Costa,43,-0.4255,Stewart Nicoll,46,-0.5763,1.0,Alessandro Costa,1.0,0.5511,False,False,99.0,99.0,,0.5972584313467176,0.5753436271700173,KO/TKO
+2026-04-03,2026-04-04,False,Lightweight,False,Renato Moicano,5,0.5508,Chris Duncan,29,0.0273,1.0,Renato Moicano,1.0,0.6708,True,False,10.0,99.0,,0.5728621397670798,0.5125522772712808,SUB
+2026-04-03,2026-04-04,False,Middleweight,False,Azamat Bekoev,38,-0.1949,Tresean Gore,64,-0.6371,0.0,Tresean Gore,0.0,0.646,False,False,99.0,99.0,,0.7067552322626202,0.6169197945555256,SUB
+2026-04-10,2026-04-11,False,Welterweight,False,Charles Radtke,52,-0.3399,Francisco Prado,80,-0.951,1.0,Charles Radtke,1.0,0.6966,False,False,99.0,99.0,,0.5881999941019515,0.7024924933281795,U-DEC
+2026-04-10,2026-04-11,False,Featherweight,False,Cub Swanson,30,0.0484,Nate Landwehr,73,-0.5767,1.0,Cub Swanson,1.0,0.7006,False,False,99.0,99.0,,0.625503632829329,0.6638772096712293,KO/TKO
+2026-04-10,2026-04-11,False,Lightweight,False,Mateusz Gamrot,7,0.5898,Esteban Ribovics,34,-0.0104,1.0,Mateusz Gamrot,1.0,0.6934,False,False,8.0,99.0,,0.6669370959707471,0.6652333597351207,SUB
+2026-04-10,2026-04-11,False,Heavyweight,False,Curtis Blaydes,6,0.7311,Josh Hokit,11,0.1797,0.0,Josh Hokit,0.0,0.6792,True,True,5.0,99.0,,0.6282004508457336,0.7301806369086825,U-DEC
+2026-04-10,2026-04-11,False,Light Heavyweight,True,Jiri Prochazka,1,0.9006,Carlos Ulberg,3,0.6215,0.0,Carlos Ulberg,0.0,0.5938,True,True,2.0,3.0,0.0,0.33884781726041,0.4254632584570285,KO/TKO
+2026-04-10,2026-04-11,False,Light Heavyweight,False,Azamat Murzakanov,4,0.5529,Paulo Costa,7,0.4167,0.0,Paulo Costa,0.0,0.5462,True,True,6.0,14.0,0.0,0.553851023711087,0.6112318078232569,KO/TKO
+2026-04-10,2026-04-11,False,Welterweight,False,Kevin Holland,50,-0.3179,Randy Brown,28,-0.0365,1.0,Kevin Holland,0.0,0.4055,False,False,99.0,99.0,,0.4424894779877008,0.3605922534331029,U-DEC
+2026-04-10,2026-04-11,False,Light Heavyweight,False,Dominick Reyes,9,0.3594,Johnny Walker,8,0.3834,1.0,Dominick Reyes,0.0,0.4918,True,True,10.0,12.0,1.0,0.5133290422196275,0.5383307895828304,S-DEC
+2026-04-10,2026-04-11,False,Women's Strawweight,False,Tatiana Suarez,2,0.7833,Loopy Godinez,7,0.442,1.0,Tatiana Suarez,1.0,0.614,True,True,2.0,6.0,1.0,0.5533557621017662,0.5127258915523607,SUB
+2026-04-17,2026-04-18,False,Women's Flyweight,False,JJ Aldrich,20,-0.3174,Jamey-Lyn Horth,17,-0.2153,1.0,JJ Aldrich,0.0,0.4653,True,False,14.0,99.0,,0.3786323438513485,0.4936328516897044,U-DEC
+2026-04-17,2026-04-18,False,Welterweight,False,Gilbert Burns,48,-0.3027,Mike Malott,22,0.0427,0.0,Mike Malott,1.0,0.3847,False,False,11.0,99.0,,0.4159057810666445,0.4883685296709675,KO/TKO
+2026-04-17,2026-04-18,False,Women's Flyweight,False,Jasmine Jasudavicius,8,0.2619,Karine Silva,10,0.1112,1.0,Jasmine Jasudavicius,1.0,0.5511,True,True,7.0,9.0,1.0,0.5634629481251987,0.5714314972120537,U-DEC
+2026-04-17,2026-04-18,False,Lightweight,False,Thiago Moises,78,-0.6092,Gauge Young,50,-0.2474,0.0,Gauge Young,1.0,0.3794,False,False,99.0,99.0,,0.4984188745104581,0.6106847013982164,S-DEC
+2026-04-17,2026-04-18,False,Bantamweight,False,Kyler Phillips,16,0.1981,Charles Jourdain,32,-0.0002,0.0,Charles Jourdain,0.0,0.567,False,False,99.0,99.0,,0.4533771451799046,0.5180967518410133,U-DEC
+2026-04-17,2026-04-18,False,Women's Bantamweight,False,Melissa Croden,14,-0.1,Daria Zhelezniakova,17,-0.2553,1.0,Melissa Croden,1.0,0.5526,True,False,99.0,99.0,,0.4679603776109761,0.4297184734752155,U-DEC
+2026-04-24,2026-04-25,False,Women's Strawweight,False,Talita Alencar,19,-0.0359,Julia Polastri,22,-0.1424,1.0,Talita Alencar,1.0,0.5361,True,False,99.0,99.0,,0.4644655865610024,0.5941148297958864,U-DEC
+2026-04-24,2026-04-25,False,Bantamweight,False,Montel Jackson,8,0.5232,Raoni Barcelos,15,0.2362,0.0,Raoni Barcelos,0.0,0.5964,True,True,14.0,99.0,,0.6096523170101801,0.4805181900607421,S-DEC
+2026-04-24,2026-04-25,False,Middleweight,False,Rodolfo Vieira,34,-0.1344,Eric McConico,61,-0.5767,0.0,Eric McConico,0.0,0.646,False,False,99.0,99.0,,0.5804837560995353,0.6261353465298012,U-DEC
+2026-04-24,2026-04-25,False,Heavyweight,False,Marcus Buchecha,28,-0.1475,Ryan Spann,39,-0.249,0.0,Ryan Spann,0.0,0.5345,False,False,99.0,99.0,,0.3865895546547522,0.3582314866348894,KO/TKO
+2026-04-24,2026-04-25,False,Lightweight,False,Rafa Garcia,23,0.0749,Alexander Hernandez,30,0.017,1.0,Rafa Garcia,1.0,0.5197,True,False,99.0,99.0,,0.469904830124261,0.4352027389205905,U-DEC
+2026-04-24,2026-04-25,False,Women's Bantamweight,False,Norma Dumont,1,0.6448,Joselyne Edwards,10,0.1789,0.0,Joselyne Edwards,0.0,0.6533,True,True,3.0,11.0,0.0,0.5644733970281366,0.6428969396889108,U-DEC
+2026-04-24,2026-04-25,False,Women's Bantamweight,False,Mayra Bueno Silva,24,-0.783,Michelle Montague,13,0.0063,0.0,Michelle Montague,1.0,0.2548,True,False,12.0,99.0,,0.3987696579984934,0.4092995496086035,U-DEC
+2026-04-24,2026-04-25,False,Middleweight,False,Jackson McVey,62,-0.6055,Sedriques Dumas,74,-0.9075,1.0,Jackson McVey,1.0,0.6013,False,False,99.0,99.0,,0.6125670673846425,0.4466573471419156,SUB
+2026-04-24,2026-04-25,False,Featherweight,False,Aljamain Sterling,1,1.3676,Youssef Zalal,8,0.5709,1.0,Aljamain Sterling,1.0,0.7472,True,True,5.0,7.0,1.0,0.6724407555852341,0.707141172433707,U-DEC
+2026-05-01,2026-05-02,False,Bantamweight,False,Colby Thicknesse,49,-0.2313,Vince Morales,84,-1.048,1.0,Colby Thicknesse,1.0,0.7523,False,False,99.0,99.0,,0.5437528736135161,0.6227409197332225,U-DEC
+2026-05-01,2026-05-02,False,Light Heavyweight,False,Junior Tafa,44,-1.0395,Kevin Christian,27,-0.3576,1.0,Junior Tafa,0.0,0.2835,False,False,99.0,99.0,,0.5791800146042608,0.4553049185216243,KO/TKO
+2026-05-01,2026-05-02,False,Heavyweight,False,Tai Tuivasa,46,-0.5477,Louie Sutherland,44,-0.467,0.0,Louie Sutherland,1.0,0.4726,False,False,99.0,99.0,,0.6303701458865898,0.6060701898338537,U-DEC
+2026-05-01,2026-05-02,False,Middleweight,False,Cam Rowston,17,0.1572,Robert Bryczek,36,-0.1786,1.0,Cam Rowston,1.0,0.6122,False,False,99.0,99.0,,0.6601288147102257,0.6117630058379222,U-DEC
+2026-05-01,2026-05-02,False,Lightweight,False,Beneil Dariush,11,0.3734,Quillan Salkilld,12,0.3213,0.0,Quillan Salkilld,0.0,0.5177,True,True,12.0,99.0,,0.4079259917902483,0.5277835338919951,KO/TKO
+2026-05-01,2026-05-02,False,Lightweight,False,Dom Mar Fan,28,0.0482,Kody Steele,68,-0.3941,0.0,Kody Steele,0.0,0.646,False,False,99.0,99.0,,0.6945222591573806,0.6334812538111734,SUB
+2026-05-01,2026-05-02,False,Welterweight,False,Jonathan Micallef,21,0.0492,Themba Gorimbo,40,-0.2388,1.0,Jonathan Micallef,1.0,0.5967,False,False,99.0,99.0,,0.3272971093336904,0.5444281966702341,S-DEC
+2026-05-01,2026-05-02,False,Heavyweight,False,Shamil Gaziev,23,-0.061,Brando Pericic,14,0.1572,0.0,Brando Pericic,1.0,0.4263,True,False,14.0,99.0,,0.314771526189421,0.4835925475926204,KO/TKO
+2026-05-01,2026-05-02,False,Flyweight,False,Tim Elliott,12,0.1743,Steve Erceg,17,0.0995,0.0,Steve Erceg,0.0,0.5254,True,False,11.0,12.0,0.0,0.5967926480016479,0.5142820580548854,U-DEC
+2026-05-01,2026-05-02,False,Welterweight,False,Jack Della Maddalena,3,0.5913,Carlos Prates,9,0.5554,0.0,Carlos Prates,0.0,0.5122,True,True,1.0,5.0,0.0,0.633163464810035,0.5664296164625026,KO/TKO
+2026-05-01,2026-05-02,False,Middleweight,False,Jacob Malkoun,28,-0.0051,Gerald Meerschaert,69,-0.7656,1.0,Jacob Malkoun,1.0,0.7377,False,False,99.0,99.0,,0.7826925676646025,0.6385856950819784,U-DEC
+2026-05-08,2026-05-09,False,Lightweight,False,King Green,21,0.0951,Jeremy Stephens,76,-0.5782,1.0,King Green,1.0,0.7142,False,False,99.0,99.0,,0.8303803270885924,0.7108094548697258,SUB
+2026-05-08,2026-05-09,False,Middleweight,False,Baisangur Susurkaev,19,0.1483,Djorden Santos,42,-0.2378,1.0,Baisangur Susurkaev,1.0,0.6283,False,False,99.0,99.0,,0.5973822510099813,0.6132137502821641,SUB
+2026-05-08,2026-05-09,False,Heavyweight,False,Alexander Volkov,3,0.9068,Waldo Cortes Acosta,6,0.6741,1.0,Alexander Volkov,1.0,0.5785,True,True,2.0,4.0,1.0,0.5936824456560793,0.5555162055654148,U-DEC
+2026-05-08,2026-05-09,False,Featherweight,False,Pat Sabatini,14,0.2305,William Gomis,36,0.0151,1.0,Pat Sabatini,1.0,0.5727,False,False,99.0,99.0,,0.6182258770058671,0.5861280336653374,U-DEC
+2026-05-08,2026-05-09,False,Middleweight,True,Khamzat Chimaev,0,0.9825,Sean Strickland,2,0.936,0.0,Sean Strickland,0.0,0.5158,True,True,0.0,3.0,0.0,0.6104919083390188,0.6203089852436648,S-DEC
+2026-05-08,2026-05-09,False,Middleweight,False,Ateba Gautier,16,0.2157,Ozzy Diaz,54,-0.374,1.0,Ateba Gautier,1.0,0.6904,False,False,99.0,99.0,,0.7218243244298664,0.6759184228561967,KO/TKO
+2026-05-08,2026-05-09,False,Welterweight,False,Sean Brady,8,0.584,Joaquin Buckley,6,0.6063,1.0,Sean Brady,0.0,0.4924,True,True,6.0,9.0,1.0,0.4974681152065554,0.5706767978918907,U-DEC
+2026-05-08,2026-05-09,False,Middleweight,False,Roman Kopylov,52,-0.3648,Marco Tulio,33,-0.1171,1.0,Roman Kopylov,0.0,0.4166,False,False,99.0,99.0,,0.3441750269890181,0.5456938240051582,U-DEC
+2026-05-08,2026-05-09,False,Flyweight,True,Joshua Van,0,0.635,Tatsuro Taira,2,0.913,1.0,Joshua Van,1.0,0.4066,True,True,0.0,3.0,1.0,0.4596833344669576,0.4991255104405251,KO/TKO
+2026-05-08,2026-05-09,False,Lightweight,False,Jim Miller,26,0.064,Jared Gordon,65,-0.3395,1.0,Jim Miller,1.0,0.6339,False,False,99.0,99.0,,0.427766001894881,0.5196715903939204,SUB
+2026-05-08,2026-05-09,False,Flyweight,False,Clayton Carpenter,29,-0.2096,Jose Ochoa,27,-0.1361,0.0,Jose Ochoa,1.0,0.475,True,False,99.0,99.0,,0.5206070637343325,0.5134463456161167,U-DEC
+2026-05-08,2026-05-09,False,Lightweight,False,Grant Dawson,14,0.2346,Mateusz Rebecki,70,-0.4532,1.0,Grant Dawson,1.0,0.7182,False,False,99.0,99.0,,0.6493477145886983,0.7188485885063591,SUB
+2026-05-15,2026-05-16,False,Middleweight,False,Cody Brundage,77,-0.978,Andre Petroski,46,-0.3282,1.0,Cody Brundage,0.0,0.2924,False,False,99.0,99.0,,0.5043953206785099,0.3035241088604619,KO/TKO
+2026-05-15,2026-05-16,False,Women's Bantamweight,False,Ketlen Vieira,10,0.1867,Jacqueline Cavalcanti,7,0.3354,1.0,Ketlen Vieira,0.0,0.4496,True,True,5.0,11.0,1.0,0.4040697720867431,0.39312259354108,U-DEC
+2026-05-15,2026-05-16,False,Light Heavyweight,False,Tuco Tokkos,33,-0.4629,Ivan Erslan,40,-0.7345,0.0,Ivan Erslan,0.0,0.5913,False,False,99.0,99.0,,0.5719249563116305,0.5998368455363614,U-DEC
+2026-05-15,2026-05-16,False,Flyweight,False,Daniel Barez,44,-0.5706,Luis Gurule,47,-0.7335,0.0,Luis Gurule,0.0,0.5552,False,False,99.0,99.0,,0.506885431627096,0.6198551143845528,U-DEC
+2026-05-15,2026-05-16,False,Women's Strawweight,False,Alice Ardelean,25,-0.2455,Polyana Viana,42,-0.8705,1.0,Alice Ardelean,1.0,0.7006,False,False,99.0,99.0,,0.6321926757731969,0.5979835355897644,SUB
+2026-05-15,2026-05-16,False,Featherweight,False,Arnold Allen,9,0.5186,Melquizael Costa,12,0.2612,1.0,Arnold Allen,1.0,0.5866,True,True,7.0,12.0,1.0,0.4339036638777028,0.4893444686194317,U-DEC
+2026-05-15,2026-05-16,False,Welterweight,False,Nikolay Veretennikov,71,-0.784,Khaos Williams,55,-0.4318,0.0,Khaos Williams,1.0,0.3825,False,False,99.0,99.0,,0.4299316142990191,0.3595327269840088,KO/TKO
+2026-05-15,2026-05-16,False,Featherweight,False,Dooho Choi,40,-0.1259,Daniel Santos,15,0.2264,1.0,Dooho Choi,0.0,0.3824,False,False,99.0,99.0,,0.4927040835282301,0.4010629587570325,KO/TKO
+2026-05-29,2026-05-30,False,Women's Strawweight,False,Loma Lookboonmee,21,-0.163,Jaqueline Amorim,15,0.0608,0.0,Jaqueline Amorim,1.0,0.4245,True,False,99.0,99.0,,0.4106451280437688,0.4603989121659594,SUB
+2026-05-29,2026-05-30,False,Bantamweight,False,Song Yadong,5,0.8325,Deiveson Figueiredo,6,0.8189,1.0,Song Yadong,1.0,0.5046,True,True,5.0,7.0,1.0,0.6425903975607453,0.4824848450613479,SUB
+2026-05-29,2026-05-30,False,Light Heavyweight,False,Zhang Mingyang,16,0.0003,Alonzo Menifield,26,-0.3102,0.0,Alonzo Menifield,0.0,0.604,True,False,99.0,15.0,,0.608743044330985,0.4618286486298555,KO/TKO
+2026-05-29,2026-05-30,False,Welterweight,False,Jake Matthews,34,-0.1021,Carlston Harris,64,-0.6078,1.0,Jake Matthews,1.0,0.6655,False,False,99.0,99.0,,0.548915007229032,0.6122280384306921,U-DEC
+2026-05-29,2026-05-30,False,Heavyweight,False,Sergei Pavlovich,4,0.6555,Tallison Teixeira,19,0.0433,1.0,Sergei Pavlovich,1.0,0.6969,True,False,3.0,15.0,1.0,0.8125353267945453,0.7128748109473155,KO/TKO
+2026-06-05,2026-06-06,False,Flyweight,False,Bruno Silva,27,-0.1572,Edgar Chairez,31,-0.2268,0.0,Edgar Chairez,0.0,0.5237,False,False,15.0,99.0,,0.61547166763751,0.4985357211159146,SUB
+2026-06-05,2026-06-06,False,Middleweight,False,Brendan Allen,4,0.6617,Edmen Shahbazyan,23,0.0697,1.0,Brendan Allen,1.0,0.6911,True,False,4.0,99.0,,0.5724393887719177,0.6672796296350081,U-DEC
+2026-06-05,2026-06-06,False,Lightweight,False,Fares Ziam,13,0.2538,Tom Nolan,31,-0.0247,0.0,Tom Nolan,0.0,0.5936,False,False,14.0,99.0,,0.6327851342098155,0.5876814972333175,U-DEC
+2026-06-05,2026-06-06,False,Welterweight,False,Belal Muhammad,3,0.7883,Gabriel Bonfim,16,0.1849,0.0,Gabriel Bonfim,0.0,0.6944,True,False,5.0,11.0,0.0,0.5149224390260272,0.5854495010750276,U-DEC
+2026-06-05,2026-06-06,False,Bantamweight,False,Marcus McGhee,8,0.45,John Yannis,46,-0.2071,1.0,Marcus McGhee,1.0,0.7096,False,False,99.0,99.0,,0.7094321022355128,0.6735274996779956,U-DEC
+2026-06-05,2026-06-06,False,Women's Bantamweight,False,Priscila Cachoeira,28,-1.1627,Chelsea Chandler,24,-0.8592,0.0,Chelsea Chandler,1.0,0.3982,True,False,99.0,99.0,,0.4720584917314978,0.4779428943332105,SUB
+2026-06-05,2026-06-06,False,Women's Strawweight,False,Ketlen Souza,25,-0.296,Ariane Carnelossi,30,-0.4096,1.0,Ketlen Souza,1.0,0.5385,True,False,99.0,99.0,,0.5807359962258077,0.5062372554566954,KO/TKO
+2026-06-05,2026-06-06,False,Light Heavyweight,False,Iwo Baraniewski,15,0.0507,Junior Tafa,41,-0.7769,1.0,Iwo Baraniewski,1.0,0.755,False,False,99.0,99.0,,0.5872720690233981,0.6535673537191239,KO/TKO
+2026-06-13,2026-06-14,False,Middleweight,False,Bo Nickal,20,0.125,Kyle Daukaus,38,-0.1962,1.0,Bo Nickal,1.0,0.6075,False,False,99.0,99.0,,0.5533199623356377,0.6125062194563977,KO/TKO
+2026-06-13,2026-06-14,False,Featherweight,False,Diego Lopes,4,0.6769,Steve Garcia,8,0.5792,1.0,Diego Lopes,1.0,0.5332,True,True,2.0,9.0,1.0,0.5078684805338326,0.5121480831531837,KO/TKO
+2026-06-13,2026-06-14,False,Heavyweight,False,Josh Hokit,7,0.3425,Derrick Lewis,6,0.6004,1.0,Josh Hokit,0.0,0.4132,True,True,5.0,9.0,1.0,0.5555376708768297,0.5002145969087131,KO/TKO
+2026-06-13,2026-06-14,False,Heavyweight,True,Alex Pereira,1,1.2812,Ciryl Gane,3,0.893,0.0,Ciryl Gane,0.0,0.629,True,True,2.0,1.0,1.0,0.6715442884838686,0.6188201846706951,KO/TKO
+2026-06-13,2026-06-14,False,Bantamweight,False,Sean O'Malley,3,0.9516,Aiemann Zahabi,14,0.3289,1.0,Sean O'Malley,1.0,0.6999,True,True,3.0,6.0,1.0,0.6454821172850478,0.5621740725956245,KO/TKO
+2026-06-13,2026-06-14,False,Lightweight,True,Ilia Topuria,0,1.3125,Justin Gaethje,3,1.0076,0.0,Justin Gaethje,0.0,0.6022,True,True,0.0,1.0,0.0,0.6333127980548596,0.5984260762328265,KO/TKO
+2026-06-13,2026-06-14,False,Lightweight,False,Mauricio Ruffy,14,0.172,Michael Chandler,54,-0.2782,1.0,Mauricio Ruffy,1.0,0.6485,False,False,9.0,13.0,1.0,0.5764818742667274,0.6558029511091853,KO/TKO
+2026-06-19,2026-06-20,False,Flyweight,False,Andre Lima,14,0.0796,Kevin Borjas,53,-1.1434,0.0,Kevin Borjas,0.0,0.8407,False,False,99.0,99.0,,0.8043726386629456,0.7946737825672141,U-DEC
+2026-06-19,2026-06-20,False,Flyweight,False,Manel Kape,2,0.7023,Kyoji Horiguchi,3,0.6084,1.0,Manel Kape,1.0,0.5319,True,True,2.0,5.0,1.0,0.6506648789315143,0.6363410946109155,KO/TKO
+2026-06-19,2026-06-20,False,Flyweight,False,Allan Nascimento,11,0.1634,Mitch Raposo,37,-0.3766,0.0,Mitch Raposo,0.0,0.6758,False,False,99.0,99.0,,0.600001283775723,0.6938389894458239,S-DEC
+2026-06-19,2026-06-20,False,Featherweight,False,Hyder Amil,52,-0.3032,Christian Rodriguez,73,-0.5203,0.0,Christian Rodriguez,0.0,0.5733,False,False,99.0,99.0,,0.4200163571508704,0.4350342432325176,SUB
+2026-06-19,2026-06-20,False,Light Heavyweight,False,Ion Cutelaba,21,-0.2744,Navajo Stirling,11,0.2002,0.0,Navajo Stirling,1.0,0.344,True,False,99.0,99.0,,0.4891439656781605,0.3785564909111226,KO/TKO
+2026-06-19,2026-06-20,False,Women's Bantamweight,False,Karol Rosa,9,0.2845,Luana Santos,11,0.1332,0.0,Luana Santos,0.0,0.5513,True,True,8.0,11.0,0.0,0.5371716742732067,0.4404926520209496,U-DEC
+2026-06-19,2026-06-20,False,Women's Bantamweight,False,Bia Mesquita,10,0.1949,Melissa Mullins,18,-0.4995,1.0,Bia Mesquita,1.0,0.72,True,False,13.0,99.0,,0.6945366603543823,0.6154066991072136,SUB
+2026-06-26,2026-06-27,False,Middleweight,False,Shara Magomedov,21,0.1182,Michel Pereira,54,-0.399,1.0,Shara Magomedov,1.0,0.6689,False,False,99.0,99.0,,0.5900217657035561,0.5186021653667925,U-DEC
+2026-06-26,2026-06-27,False,Featherweight,False,Kaan Ofli,66,-0.4041,Javier Reyes,30,0.0643,1.0,Kaan Ofli,0.0,0.3459,False,False,99.0,99.0,,0.3263823978984261,0.452323058489615,SUB
+2026-06-26,2026-06-27,False,Middleweight,False,Abus Magomedov,33,-0.1329,Michal Oleksiejczuk,40,-0.2294,1.0,Abus Magomedov,1.0,0.5328,False,False,99.0,99.0,,0.4529121268135752,0.5009022216694738,SUB
+2026-06-26,2026-06-27,False,Light Heavyweight,False,Abdul Rakhman Yakhyaev,15,0.1061,Julius Walker,31,-0.4131,1.0,Abdul Rakhman Yakhyaev,1.0,0.6695,False,False,99.0,99.0,,0.6622761454584319,0.6364939304456604,KO/TKO
+2026-06-26,2026-06-27,False,Middleweight,False,Nursulton Ruziboev,30,-0.0257,Andrey Pulyaev,43,-0.3248,1.0,Nursulton Ruziboev,1.0,0.6003,False,False,99.0,99.0,,0.6180693511729788,0.7012072537471066,SUB
+2026-06-26,2026-06-27,False,Lightweight,False,Nazim Sadykhov,21,0.1089,Matheus Camilo,59,-0.3004,0.0,Matheus Camilo,0.0,0.6357,False,False,99.0,99.0,,0.6163927591480272,0.6713984688576226,KO/TKO
+2026-06-26,2026-06-27,False,Flyweight,False,Asu Almabayev,7,0.3759,Charles Johnson,30,-0.2194,1.0,Asu Almabayev,1.0,0.692,True,False,8.0,14.0,1.0,0.6056071515103251,0.6336779480410643,SUB
+2026-06-26,2026-06-27,False,Bantamweight,False,Bekzat Almakhan,59,-0.3685,Jean Matsumoto,35,-0.0197,0.0,Jean Matsumoto,1.0,0.3836,False,False,99.0,99.0,,0.4275008453813597,0.3733177706638774,U-DEC
+2026-06-26,2026-06-27,False,Lightweight,False,Rafael Fiziev,40,-0.1198,Manuel Torres,11,0.2495,1.0,Rafael Fiziev,0.0,0.377,False,False,11.0,15.0,1.0,0.3475342316608215,0.4330365194397991,KO/TKO
+2026-06-26,2026-06-27,False,Middleweight,False,Ikram Aliskerov,13,0.2754,Brunno Ferreira,41,-0.2307,1.0,Ikram Aliskerov,1.0,0.6656,False,False,99.0,99.0,,0.7215423490856205,0.614751234293952,U-DEC
+2026-07-10,2026-07-11,False,Middleweight,False,Ryan Gandra,30,0.0099,Zach Reese,43,-0.3298,1.0,Ryan Gandra,1.0,0.6135,False,False,99.0,99.0,,0.5744047932199418,0.4927627307600159,KO/TKO
+2026-07-10,2026-07-11,False,Lightweight,False,Benoit Saint Denis,7,0.6519,Paddy Pimblett,8,0.5881,0.0,Paddy Pimblett,0.0,0.5217,True,True,5.0,6.0,0.0,0.6269307874086167,0.5245949000005619,SUB
+2026-07-10,2026-07-11,False,Flyweight,False,Alessandro Costa,29,-0.194,Cody Durden,50,-1.0144,1.0,Alessandro Costa,1.0,0.7532,False,False,99.0,99.0,,0.5450012691321207,0.5594304424248497,SUB
+2026-07-10,2026-07-11,False,Lightweight,False,King Green,15,0.1518,Terrance McKinney,48,-0.2265,1.0,King Green,1.0,0.6258,False,False,99.0,99.0,,0.655187064730594,0.6019403453761162,KO/TKO
+2026-07-10,2026-07-11,False,Flyweight,False,Brandon Royval,9,0.2273,Lone'er Kavanagh,22,-0.0738,1.0,Brandon Royval,1.0,0.601,True,False,4.0,6.0,1.0,0.5781881011950927,0.5031441403958935,SUB
+2026-07-10,2026-07-11,False,Middleweight,False,Damian Pinas,27,0.0536,Cesar Almeida,39,-0.2246,1.0,Damian Pinas,1.0,0.5935,False,False,99.0,99.0,,0.6332055552220792,0.5143533919357944,KO/TKO
+2026-07-10,2026-07-11,False,Bantamweight,False,Cory Sandhagen,4,1.0877,Mario Bautista,6,0.5972,0.0,Mario Bautista,0.0,0.6609,True,True,4.0,7.0,0.0,0.6038763695825383,0.5373250997150498,U-DEC
+2026-07-10,2026-07-11,False,Women's Flyweight,False,Tracy Cortez,7,0.2684,Wang Cong,11,0.0182,0.0,Wang Cong,0.0,0.5842,True,True,8.0,12.0,0.0,0.4455627146036694,0.5365649144391003,U-DEC
+2026-07-10,2026-07-11,False,Bantamweight,False,Cody Garbrandt,22,0.2136,Adrian Yanez,43,-0.1147,0.0,Adrian Yanez,0.0,0.6098,False,False,99.0,99.0,,0.3804241177888532,0.5030061819181524,KO/TKO
+2026-07-17,2026-07-18,False,Featherweight,False,Austin Bashi,42,-0.1283,Jose Delgado,30,0.0667,0.0,Jose Delgado,1.0,0.4341,False,False,99.0,99.0,,0.3074027945932283,0.3922416950548756,U-DEC
+2026-07-17,2026-07-18,False,Flyweight,False,Alden Coria,10,0.1865,Stewart Nicoll,45,-0.817,1.0,Alden Coria,1.0,0.7965,False,False,99.0,99.0,,0.7450316130534033,0.7573648266333096,U-DEC
+2026-07-17,2026-07-18,False,Middleweight,False,Jared Cannonier,22,0.1212,Christian Leroy Duncan,11,0.2452,0.0,Christian Leroy Duncan,1.0,0.4579,True,False,11.0,13.0,0.0,0.4552973716931093,0.491165707068541,U-DEC
+2026-07-17,2026-07-18,False,Women's Strawweight,False,Tabatha Ricci,7,0.3063,Fatima Kline,15,0.1083,0.0,Fatima Kline,0.0,0.5669,True,True,8.0,11.0,0.0,0.4101866437623912,0.5324299630568241,U-DEC
+2026-07-17,2026-07-18,False,Featherweight,False,Tommy McMillen,27,0.0773,Alberto Montes,29,0.0694,1.0,Tommy McMillen,1.0,0.5027,True,False,99.0,99.0,,0.5700831161333185,0.5083480718781991,KO/TKO
+2026-07-17,2026-07-18,False,Lightweight,False,Chase Hooper,39,-0.1447,Mitch Ramirez,72,-0.5751,1.0,Chase Hooper,1.0,0.6423,False,False,99.0,99.0,,0.6693545128681734,0.6661251799037256,SUB
+2026-07-17,2026-07-18,False,Welterweight,False,Jean-Paul Lebosnoyani,35,-0.0666,Seokhyeon Ko,21,0.1534,1.0,Jean-Paul Lebosnoyani,0.0,0.4257,False,False,99.0,99.0,,0.3322461229964221,0.405298254850774,U-DEC
+2026-07-24,2026-07-25,False,Lightweight,False,Nurullo Aliev,19,0.1171,Mike Davis,30,-0.0125,1.0,Nurullo Aliev,1.0,0.5439,True,False,99.0,99.0,,0.5467484186293065,0.5144009478706937,U-DEC
+2026-07-24,2026-07-25,False,Heavyweight,False,Rizvan Kuniev,10,0.2,Tyrell Fortune,16,0.0817,1.0,Rizvan Kuniev,1.0,0.5401,True,False,8.0,9.0,1.0,0.6532516028721603,0.4937428989263911,KO/TKO
+2026-07-24,2026-07-25,False,Light Heavyweight,False,Magomed Ankalaev,1,0.8579,Bogdan Guskov,9,0.3223,1.0,Magomed Ankalaev,1.0,0.6745,True,True,1.0,10.0,1.0,0.6650071761241132,0.6929002967758227,KO/TKO
+2026-07-24,2026-07-25,False,Flyweight,False,Steve Erceg,11,0.13,Ramazan Temirov,18,0.0037,0.0,Ramazan Temirov,0.0,0.5428,True,False,10.0,99.0,,0.5107253517606343,0.50674129961936,KO/TKO
+2026-07-24,2026-07-25,False,Heavyweight,False,Valter Walker,12,0.1919,Thomas Petersen,37,-0.3605,1.0,Valter Walker,1.0,0.6795,False,False,13.0,99.0,,0.7137320648632415,0.6560740745835427,SUB
+2026-07-24,2026-07-25,False,Welterweight,False,Santiago Ponzinibbio,55,-0.3559,Sam Patterson,24,0.0185,0.0,Sam Patterson,1.0,0.3754,False,False,99.0,99.0,,0.4691671329886197,0.4647331309641798,KO/TKO
+2026-07-31,2026-08-01,False,Light Heavyweight,False,Jan Blachowicz,3,0.5632,Navajo Stirling,10,0.3235,0.0,Navajo Stirling,0.0,0.5808,True,True,4.0,99.0,,0.5046276098575826,0.4693774182607223,KO/TKO
+2026-07-31,2026-08-01,False,Featherweight,False,Dennis Buzukja,94,-1.0976,Bogdan Grad,67,-0.3891,0.0,Bogdan Grad,1.0,0.2762,False,False,99.0,99.0,,0.3293919330567086,0.4315717467154382,SUB
+2026-07-31,2026-08-01,False,Lightweight,False,Mateusz Rebecki,85,-0.7552,Kyle Prepolec,81,-0.7161,1.0,Mateusz Rebecki,0.0,0.4867,False,False,99.0,99.0,,0.7725899942833694,0.6600548010944914,KO/TKO
+2026-07-31,2026-08-01,False,Welterweight,False,Uros Medic,24,0.0344,Daniel Rodriguez,20,0.1657,1.0,Uros Medic,0.0,0.4555,True,False,14.0,15.0,1.0,0.4770063700892133,0.4344732178889987,KO/TKO
+2026-07-31,2026-08-01,False,Middleweight,False,Dusko Todorovic,66,-0.6705,Robert Valentin,63,-0.622,0.0,Robert Valentin,1.0,0.4835,False,False,99.0,99.0,,0.5018743759473578,0.4766693336530136,SUB
+2026-07-31,2026-08-01,False,Lightweight,False,Ludovit Klein,20,0.1228,Tofiq Musayev,46,-0.2147,0.0,Tofiq Musayev,0.0,0.6128,False,False,99.0,99.0,,0.62975291452012,0.6643358720782845,KO/TKO
+2026-08-07,2026-08-08,False,Featherweight,False,Darren Elkins,38,-0.0469,Yadier del Valle,36,-0.0283,0.0,Yadier del Valle,1.0,0.4937,False,False,99.0,99.0,,0.3580376398548745,0.5867438357113257,KO/TKO
+2026-08-07,2026-08-08,False,Light Heavyweight,False,Diyar Nurgozhay,35,-0.596,Bruno Lopes,36,-0.6004,1.0,Diyar Nurgozhay,1.0,0.5015,False,False,99.0,99.0,,0.5868089874774053,0.4771313604071576,KO/TKO
+2026-08-07,2026-08-08,False,Women's Strawweight,False,Amanda Lemos,8,0.2678,Alexia Thainara,11,0.2155,0.0,Alexia Thainara,0.0,0.5178,True,True,6.0,14.0,0.0,0.5278281441560129,0.4834962076860018,U-DEC
+2026-08-07,2026-08-08,False,Heavyweight,False,Steven Asplund,23,-0.0935,Guilherme Pat,25,-0.1588,1.0,Steven Asplund,1.0,0.5222,True,False,99.0,99.0,,0.5625993793004489,0.5005789053484814,U-DEC
+2026-08-07,2026-08-08,False,Lightweight,False,Mateusz Gamrot,6,0.6797,Quillan Salkilld,9,0.4776,0.0,Quillan Salkilld,0.0,0.5683,True,True,8.0,12.0,0.0,0.5585622115156363,0.5184641501377967,SUB
+2026-08-07,2026-08-08,False,Welterweight,False,Billy Ray Goff,66,-0.5011,Ty Miller,28,-0.026,0.0,Ty Miller,1.0,0.3438,False,False,99.0,99.0,,0.4021876079201683,0.375664284728037,KO/TKO
+2026-08-14,2026-08-15,False,Welterweight,True,Islam Makhachev,0,1.4871,Ian Machado Garry,1,0.7844,1.0,Islam Makhachev,1.0,0.7223,True,True,0.0,1.0,1.0,0.6655559103921143,0.7007112143734295,U-DEC
+2026-08-14,2026-08-15,False,Women's Strawweight,True,Mackenzie Dern,0,0.5442,Gillian Robertson,4,0.5408,1.0,Mackenzie Dern,1.0,0.5011,True,True,0.0,5.0,1.0,0.4481780751457568,0.4841761297537703,U-DEC
+2026-08-14,2026-08-15,False,Middleweight,False,Mansur Abdul-Malik,31,-0.0922,Dustin Stoltzfus,68,-0.7673,0.0,Dustin Stoltzfus,0.0,0.7147,False,False,99.0,99.0,,0.4195246578461981,0.6574461783556215,SUB
+2026-08-14,2026-08-15,False,Welterweight,False,Chidi Njokuani,62,-0.4361,Joel Alvarez,13,0.2338,1.0,Chidi Njokuani,0.0,0.2868,False,False,99.0,99.0,,0.3839816281412805,0.2715479612059426,U-DEC
+2026-08-14,2026-08-15,False,Lightweight,False,Edson Barboza,68,-0.339,Esteban Ribovics,41,-0.0914,0.0,Esteban Ribovics,1.0,0.4166,False,False,99.0,99.0,,0.357271673111092,0.5019557184223116,KO/TKO
+2026-08-14,2026-08-15,False,Middleweight,False,Donte Johnson,28,0.0209,Eric McConico,51,-0.4989,1.0,Donte Johnson,1.0,0.6697,False,False,99.0,99.0,,0.5699381528328138,0.5737495209515697,KO/TKO
+2026-08-14,2026-08-15,False,Lightweight,False,Jalin Turner,49,-0.1927,Kaue Fernandes,22,0.0734,1.0,Jalin Turner,0.0,0.4105,False,False,99.0,99.0,,0.5630637505330052,0.5259556768018214,KO/TKO
+2026-08-14,2026-08-15,False,Welterweight,False,Jeremiah Wells,35,-0.0866,Myktybek Orolbai,14,0.2264,1.0,Jeremiah Wells,0.0,0.3952,False,False,99.0,99.0,,0.4731604120304475,0.3887670356313307,SUB
+2026-08-14,2026-08-15,False,Welterweight,False,Neil Magny,45,-0.2574,Ramiz Brahimaj,49,-0.3082,1.0,Neil Magny,1.0,0.5173,False,False,99.0,99.0,,0.4827009121272379,0.6913916307037027,KO/TKO
+2026-08-21,2026-08-22,False,Middleweight,False,Wes Schultz,38,-0.2081,Jackson McVey,56,-0.473,0.0,Jackson McVey,0.0,0.5891,False,False,99.0,99.0,,0.3616241024223469,0.5415639086348623,KO/TKO
+2026-08-21,2026-08-22,False,Featherweight,False,Jamall Emmers,38,-0.0463,Lerryan Douglas,30,0.0896,1.0,Jamall Emmers,0.0,0.4539,False,False,99.0,99.0,,0.5456596022810197,0.4994580672089246,KO/TKO
+2026-08-21,2026-08-22,False,Heavyweight,False,Kennedy Nzechukwu,35,-0.3521,Shamil Gaziev,38,-0.397,0.0,Shamil Gaziev,0.0,0.5153,False,False,99.0,99.0,,0.5147397556492017,0.5174830798311304,KO/TKO
+2026-08-21,2026-08-22,False,Women's Strawweight,False,Shanelle Dyer,14,0.039,Elise Reed,43,-0.8994,1.0,Shanelle Dyer,1.0,0.7818,False,False,99.0,99.0,,0.6547359537813378,0.5846778737360078,KO/TKO
+2026-08-21,2026-08-22,False,Women's Flyweight,False,Carli Judice,12,-0.0022,Jeisla Chaves,15,-0.0819,1.0,Carli Judice,1.0,0.5271,True,True,99.0,99.0,,0.6925688993847076,0.5755651352451846,KO/TKO
+2026-08-21,2026-08-22,False,Heavyweight,False,Serghei Spivac,16,0.0504,Vitor Petrino,18,0.0222,0.0,Vitor Petrino,0.0,0.5096,True,False,6.0,99.0,,0.5354831592453297,0.4864577923736934,U-DEC
+2026-08-21,2026-08-22,False,Lightweight,False,Chris Padilla,14,0.2214,Nasrat Haqparast,30,0.0119,1.0,Chris Padilla,1.0,0.5707,True,False,99.0,99.0,,0.5660711381698279,0.5161204459912778,SUB
+2026-08-21,2026-08-22,False,Lightweight,False,MarQuel Mederos,25,0.0628,Mason Jones,21,0.0794,1.0,MarQuel Mederos,0.0,0.4944,True,False,99.0,99.0,,0.349424792399764,0.5119807145690539,KO/TKO
+2026-08-21,2026-08-22,False,Middleweight,False,Anthony Hernandez,5,0.622,Gregory Rodrigues,9,0.4814,0.0,Gregory Rodrigues,0.0,0.5477,True,True,6.0,12.0,0.0,0.5513056754922901,0.4947314431989518,U-DEC
+2026-08-28,2026-08-29,False,Bantamweight,False,Umar Nurmagomedov,4,0.9828,Song Yadong,3,1.0094,0.0,Song Yadong,1.0,0.491,True,True,3.0,5.0,0.0,0.634299287476089,0.5684264478882772,KO/TKO
+2026-08-28,2026-08-29,False,Flyweight,False,Alex Perez,12,0.1024,Sumudaerji,25,-0.126,0.0,Sumudaerji,0.0,0.577,True,False,11.0,99.0,,0.5857270844875201,0.5315436299650113,U-DEC
+2026-08-28,2026-08-29,False,Women's Strawweight,False,Xiong Jingnan,27,-0.2983,Julia Polastri,34,-0.4649,0.0,Julia Polastri,0.0,0.5564,False,False,99.0,99.0,,0.2952859152089482,0.4650001015414924,KO/TKO
+2026-08-28,2026-08-29,False,Women's Strawweight,False,Yan Xiaonan,8,0.2445,Denise Gomes,11,0.1071,0.0,Denise Gomes,0.0,0.5466,True,True,4.0,13.0,0.0,0.5151599646922279,0.520256914436801,KO/TKO
+2026-08-28,2026-08-29,False,Featherweight,False,Jack Jenkins,66,-0.3685,Sean Woodson,38,-0.0663,0.0,Sean Woodson,1.0,0.3987,False,False,99.0,99.0,,0.3615683083564879,0.4008961226266979,S-DEC
+2026-08-28,2026-08-29,False,Flyweight,False,Rei Tsuruya,24,-0.1233,Kevin Borjas,46,-0.8974,1.0,Rei Tsuruya,1.0,0.7413,False,False,99.0,99.0,,0.7515463757484058,0.6376153099781918,SUB
+2026-09-04,2026-09-05,False,Lightweight,False,Fares Ziam,30,0.0371,Axel Sola,36,-0.0577,0.0,Axel Sola,0.0,0.5322,False,False,99.0,99.0,,0.5650538154509845,0.6497245127365509,KO/TKO
+2026-09-04,2026-09-05,False,Women's Bantamweight,False,Nora Cornolle,20,-0.3714,Klaudia Sygula,18,-0.2111,1.0,Nora Cornolle,0.0,0.4457,True,False,12.0,99.0,,0.4743215945653486,0.4524799645745488,U-DEC
+2026-09-04,2026-09-05,False,Welterweight,False,Daniil Donchenko,12,0.2423,Punahele Soriano,37,-0.0754,1.0,Daniil Donchenko,1.0,0.6063,False,False,99.0,99.0,,0.6136330822646401,0.5428959491659116,U-DEC
+2026-09-04,2026-09-05,False,Light Heavyweight,False,Oumar Sy,29,-0.1694,Modestas Bukauskas,32,-0.2486,0.0,Modestas Bukauskas,0.0,0.5269,False,False,99.0,99.0,,0.5322007933537781,0.4213532531495642,KO/TKO
+2026-09-04,2026-09-05,False,Featherweight,False,Morgan Charriere,66,-0.3868,Felipe Lima,38,-0.0259,0.0,Felipe Lima,1.0,0.3797,False,False,99.0,99.0,,0.473820112122136,0.4831303630861016,U-DEC
+2026-09-04,2026-09-05,False,Heavyweight,False,Mario Pinto,11,0.1467,Ryan Spann,22,-0.0934,1.0,Mario Pinto,1.0,0.5809,True,False,99.0,99.0,,0.5296556218812495,0.5327517808528689,KO/TKO
+2026-09-04,2026-09-05,False,Featherweight,False,Losene Keita,41,-0.1568,Muhammad Naimov,55,-0.2945,1.0,Losene Keita,1.0,0.5467,False,False,99.0,99.0,,0.4647924901455119,0.3388674756670176,KO/TKO
+2026-09-11,2026-09-12,False,Featherweight,False,Jean Silva,4,0.672,Jose Delgado,32,0.0934,1.0,Jean Silva,1.0,0.6872,False,False,6.0,99.0,,0.5394479905803149,0.6244331319982724,SUB
+2026-09-11,2026-09-12,False,Lightweight,False,Drakkar Klose,33,-0.0221,Tommy Gantt,23,0.0818,0.0,Tommy Gantt,1.0,0.4647,False,False,99.0,99.0,,0.4877436466819779,0.670497379070497,SUB
+2026-09-11,2026-09-12,False,Flyweight,False,Brandon Moreno,5,0.5112,Joseph Morales,18,-0.011,1.0,Brandon Moreno,1.0,0.6704,True,False,9.0,99.0,,0.5877306131329204,0.5703186511487129,S-DEC
+2026-09-11,2026-09-12,False,Featherweight,False,Tommy McMillen,15,0.2291,Marwan Rahiki,18,0.2174,1.0,Tommy McMillen,1.0,0.504,True,False,99.0,99.0,,0.5615998113751176,0.5083993246932673,U-DEC
+2026-09-11,2026-09-12,False,Heavyweight,False,Waldo Cortes Acosta,2,0.6678,Curtis Blaydes,6,0.5038,0.0,Curtis Blaydes,0.0,0.5555,True,True,5.0,7.0,0.0,0.5544792693666987,0.4695953159133448,U-DEC
+2026-09-11,2026-09-12,False,Middleweight,False,Yousri Belgaroui,17,0.2186,Djorden Santos,58,-0.4951,1.0,Yousri Belgaroui,1.0,0.7253,False,False,99.0,99.0,,0.8065078002851577,0.6879647848011896,KO/TKO
+2026-09-11,2026-09-12,False,Lightweight,False,Rafa Garcia,19,0.136,Rongzhu,67,-0.3332,0.0,Rongzhu,0.0,0.6543,False,False,99.0,99.0,,0.6440302347122884,0.6662683216438512,U-DEC
+2026-09-11,2026-09-12,False,Women's Flyweight,False,Manon Fiorot,1,0.7881,Alexa Grasso,5,0.5253,0.0,Alexa Grasso,0.0,0.5884,True,True,2.0,3.0,0.0,0.6475973803868555,0.6232963594804596,U-DEC
+2026-09-18,2026-09-19,False,Heavyweight,False,Gable Steveson,18,0.0316,Sean Sharaf,43,-0.586,0.0,Sean Sharaf,0.0,0.6984,False,False,99.0,99.0,,0.7753114286820453,0.6780993829322688,KO/TKO
+2026-09-18,2026-09-19,False,Light Heavyweight,False,Alonzo Menifield,20,-0.0387,Iwo Baraniewski,13,0.1749,1.0,Alonzo Menifield,0.0,0.4279,True,False,15.0,99.0,,0.4405853409406992,0.5475637768943445,S-DEC
+2026-09-18,2026-09-19,False,Featherweight,False,Giga Chikadze,60,-0.316,Joanderson Brito,22,0.1422,0.0,Joanderson Brito,1.0,0.3491,False,False,99.0,99.0,,0.4282067578792261,0.40470701443217,KO/TKO
+2026-09-18,2026-09-19,False,Middleweight,False,Ryan Gandra,24,0.0954,Ozzy Diaz,59,-0.5539,1.0,Ryan Gandra,1.0,0.7075,False,False,99.0,99.0,,0.7485189737500332,0.6310862343679903,KO/TKO
+2026-09-18,2026-09-19,False,Flyweight,True,Joshua Van,0,0.7426,Alexandre Pantoja,1,0.9643,1.0,Joshua Van,1.0,0.4252,True,True,0.0,1.0,1.0,0.5202392807762556,0.5224970453045672,U-DEC
+2026-09-18,2026-09-19,False,Women's Flyweight,False,Casey O'Neill,10,0.1575,Eduarda Moura,21,-0.2608,1.0,Casey O'Neill,1.0,0.6385,True,False,11.0,13.0,1.0,0.5806074635691826,0.5706670294034223,SUB
+2026-09-18,2026-09-19,False,Middleweight,False,Edmen Shahbazyan,23,0.1036,Brunno Ferreira,41,-0.3003,1.0,Edmen Shahbazyan,1.0,0.634,False,False,99.0,99.0,,0.6421447844775943,0.5551812904978092,U-DEC
+2026-09-18,2026-09-19,False,Bantamweight,False,Marlon Vera,19,0.2473,Charles Jourdain,34,0.0737,1.0,Marlon Vera,1.0,0.5588,False,False,10.0,99.0,,0.3935953204688002,0.4863706211590634,KO/TKO
+2026-09-18,2026-09-19,False,Featherweight,False,Michael Aswell Jr.,76,-0.5515,JooSang Yoo,45,-0.1898,1.0,Michael Aswell Jr.,0.0,0.3794,False,False,99.0,99.0,,0.4063933152410686,0.3875677356309493,S-DEC
+2026-09-18,2026-09-19,False,Featherweight,False,Patricio Pitbull,61,-0.3168,Dooho Choi,16,0.2261,1.0,Patricio Pitbull,0.0,0.3234,False,False,99.0,99.0,,0.256484961189556,0.3070780884502476,KO/TKO
+2026-09-18,2026-09-19,False,Lightweight,False,Arman Tsarukyan,4,1.0275,Mauricio Ruffy,9,0.2917,1.0,Arman Tsarukyan,1.0,0.7312,True,True,2.0,7.0,1.0,0.6520911468626587,0.6375730703463853,KO/TKO
+2026-09-25,2026-09-26,False,Bantamweight,False,Raul Rosas Jr.,11,0.3823,Raoni Barcelos,9,0.4716,1.0,Raul Rosas Jr.,0.0,0.4696,True,True,13.0,14.0,1.0,0.4853131501038276,0.427188177152046,KO/TKO
+2026-09-25,2026-09-26,False,Middleweight,False,Rodolfo Vieira,53,-0.4434,Robert Bryczek,52,-0.4263,1.0,Rodolfo Vieira,0.0,0.4942,False,False,99.0,99.0,,0.550837785291021,0.5482054916944079,U-DEC
+2026-09-25,2026-09-26,False,Women's Bantamweight,False,Norma Dumont,3,0.3492,Ailin Perez,1,0.3084,0.0,Ailin Perez,1.0,0.5139,True,True,4.0,5.0,0.0,0.4742001679456166,0.492211407720623,U-DEC
+2026-09-25,2026-09-26,False,Bantamweight,False,Montel Jackson,12,0.3808,Ricky Simon,49,-0.208,1.0,Montel Jackson,1.0,0.6901,False,False,99.0,99.0,,0.6893638851893362,0.5536087651328966,KO/TKO
+2026-10-02,2026-10-03,False,Middleweight,False,Damian Pinas,21,0.139,Andrey Pulyaev,60,-0.596,1.0,Damian Pinas,1.0,0.731,False,False,99.0,99.0,,0.5748997267173157,0.6953534975404351,KO/TKO
+2026-10-02,2026-10-03,False,Women's Flyweight,True,Natalia Silva,1,0.7086,Wang Cong,10,0.1734,1.0,Natalia Silva,1.0,0.6743,True,True,1.0,8.0,1.0,0.5401230106082732,0.6613450909408485,U-DEC
+2026-10-02,2026-10-03,False,Bantamweight,False,Deiveson Figueiredo,8,0.5056,Payton Talbott,18,0.2804,0.0,Payton Talbott,0.0,0.576,True,False,9.0,12.0,0.0,0.3933866270957366,0.5461039559085343,KO/TKO
+2026-10-02,2026-10-03,False,Flyweight,False,Imanol Rodriguez,14,0.0423,Alden Coria,11,0.1423,1.0,Imanol Rodriguez,0.0,0.466,True,True,99.0,99.0,,0.4376450873494735,0.4135969914546057,KO/TKO
+2026-10-02,2026-10-03,False,Middleweight,False,Marvin Vettori,47,-0.3686,Ismail Naurdiev,30,-0.0586,0.0,Ismail Naurdiev,1.0,0.3961,False,False,99.0,99.0,,0.5368887485879916,0.508921041989407,U-DEC
+2026-10-02,2026-10-03,False,Lightweight,False,King Green,9,0.3375,Esteban Ribovics,30,0.011,0.0,Esteban Ribovics,0.0,0.6092,True,False,99.0,99.0,,0.5819806352054326,0.5969333398979544,KO/TKO
+2026-10-02,2026-10-03,False,Welterweight,False,Court McGee,74,-0.7682,Eric Nolan,67,-0.6332,0.0,Eric Nolan,1.0,0.4542,False,False,99.0,99.0,,0.7590565346970857,0.5867360718311138,KO/TKO
+2026-10-02,2026-10-03,False,Middleweight,False,Ateba Gautier,13,0.2924,Roman Kopylov,33,-0.1731,0.0,Roman Kopylov,0.0,0.6532,False,False,99.0,99.0,,0.5832010897106233,0.5998225698072233,KO/TKO
+2026-10-09,2026-10-10,False,Lightweight,False,Matheus Camilo,43,-0.1965,Jai Herbert,63,-0.3273,0.0,Jai Herbert,0.0,0.5444,False,False,99.0,99.0,,0.504134888810802,0.5462246024932892,U-DEC
+2026-10-09,2026-10-10,False,Women's Bantamweight,False,Alice Pereira,16,-0.2446,Daria Zhelezniakova,20,-0.5463,1.0,Alice Pereira,1.0,0.6012,True,False,99.0,15.0,,0.4652999613828291,0.4939779119567792,KO/TKO
+2026-10-09,2026-10-10,False,Women's Strawweight,False,Loopy Godinez,8,0.3393,Ketlen Souza,27,-0.2313,1.0,Loopy Godinez,1.0,0.6848,True,False,8.0,99.0,,0.6351955187625951,0.5669937642818018,U-DEC
+2026-10-09,2026-10-10,False,Middleweight,False,Brendan Allen,4,0.6775,Christian Leroy Duncan,10,0.4151,1.0,Brendan Allen,1.0,0.5883,True,True,4.0,10.0,1.0,0.4261509095028875,0.6228139096028842,SUB
+2026-10-09,2026-10-10,False,Light Heavyweight,False,Felipe Franco,27,-0.1092,Brendson Ribeiro,51,-1.1838,0.0,Brendson Ribeiro,0.0,0.8118,False,False,99.0,99.0,,0.7145952970603862,0.644260031454661,SUB
+2026-10-09,2026-10-10,False,Welterweight,False,Niko Price,82,-1.0602,Leon Shahbazyan,58,-0.3908,1.0,Niko Price,0.0,0.2869,False,False,99.0,99.0,,0.5340306045706807,0.5083346713461193,KO/TKO
+2026-10-09,2026-10-10,False,Heavyweight,False,Allen Frye Jr.,33,-0.2429,RJ Harris,16,0.1089,1.0,Allen Frye Jr.,0.0,0.3826,False,False,99.0,99.0,,0.3358316083015193,0.3798630667640413,KO/TKO
+2026-10-16,2026-10-17,False,Women's Flyweight,False,Erin Blanchfield,3,0.7506,Jasmine Jasudavicius,6,0.399,0.0,Jasmine Jasudavicius,0.0,0.6173,True,True,4.0,6.0,0.0,0.680123521603182,0.6273326992247578,U-DEC
+2026-10-16,2026-10-17,False,Middleweight,False,Marc-Andre Barriault,72,-0.939,Kyle Daukaus,55,-0.4989,1.0,Marc-Andre Barriault,0.0,0.3547,False,False,99.0,99.0,,0.3336477293471091,0.4012427941921826,KO/TKO
+2026-10-16,2026-10-17,False,Heavyweight,False,Tanner Boser,38,-0.278,Jhonata Diniz,32,-0.2,1.0,Tanner Boser,0.0,0.4735,False,False,99.0,99.0,,0.5987853322580988,0.4066183310622354,KO/TKO
+2026-10-16,2026-10-17,False,Welterweight,False,Joaquin Buckley,7,0.5691,Mike Malott,16,0.2123,0.0,Mike Malott,0.0,0.619,True,False,10.0,13.0,0.0,0.4684286726320055,0.4602651511829441,KO/TKO
+2026-10-16,2026-10-17,False,Women's Bantamweight,False,Melissa Croden,15,-0.1503,Chelsea Chandler,21,-0.7204,0.0,Chelsea Chandler,0.0,0.6847,True,False,14.0,99.0,,0.7123568653222592,0.5969158763536214,SUB
