@@ -20,6 +20,8 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-10](#exp-2026-10-20-10) | 2026-10-20 | Glicko-1 rating deviation for the resume rating: parameter derivation and calibration | adopted |
 | [EXP-2026-10-20-11](#exp-2026-10-20-11) | 2026-10-20 | Placement layer as one constrained order (solver) versus the sequential head-to-head and title-cycle loops | adopted |
 | [EXP-2026-10-20-12](#exp-2026-10-20-12) | 2026-10-20 | v1.1 as shipped (loss tiers, form, protection 0.30, placement solver) on 43 full boards, corrected data | adopted |
+| [EXP-2026-10-20-13](#exp-2026-10-20-13) | 2026-10-20 | Literature sweep: aging, damage accumulation, style and longevity, time-varying rating models, finding the outlier | informational |
+| [EXP-2026-10-20-14](#exp-2026-10-20-14) | 2026-10-20 | Fighter profiles: do career statistics add to age in predicting bouts? | rejected |
 
 ## EXP-2026-09-30-01
 
@@ -546,3 +548,56 @@ Candidate. config/board_v1_1.yaml as committed on Oct 20, 2026 (overrides: prote
 Decision. adopted: Equal measured accuracy with a small log-loss edge; v1.1 ships as the shadow resume board under appendix C (non-inferiority). Supersedes the numbers in EXP-2026-10-20-01 for the changelog.
 
 Files: `experiments/results/EXP-2026-10-20-12/eval_v11s.json`, `experiments/results/EXP-2026-10-20-12/eval_v11s.csv`, `experiments/results/EXP-2026-10-20-12/eval_v10_corrected.json`, `experiments/results/EXP-2026-10-20-12/eval_v10_corrected.csv`
+
+## EXP-2026-10-20-13
+
+Literature sweep: aging, damage accumulation, style and longevity, time-varying rating models, finding the outlier  
+Date 2026-10-20, decision: informational, code at commit `f763832`.
+
+Question. What does the scholarly literature say about aging in combat sports, damage and chin degradation, style and longevity, and the predictive methods that could identify the older fighter who is done versus the one who is still elite?
+
+| Method | |
+|---|---|
+| instrument | web literature review by a research assistant, every citation opened unless flagged |
+| scope | peer-reviewed sports science, sports economics and statistics, plus a few evidence-carrying non-academic analyses |
+
+Candidate. n/a (review)
+
+| Result | |
+|---|---|
+| headline | the project's age gradient replicates the published MMA record (younger fighter wins 57% overall, about 70% at a 10-year gap; 37.6% win rate at 37+); peak age in combat sports about 26 to 29; individual curves vary widely around the population curve; fighter-level KO susceptibility dominates raw damage counts (Kotrba 2023); no study has used per-bout absorbed strikes longitudinally; age inside a Bradley-Terry state (Araki 2019; Baker and McHale 2024) and random slopes with shrinkage (Berry 1999; Vaci 2019) are the methods that fit |
+| pitfalls | matchmaking selection, survivorship, small old-fighter samples, look-ahead, era drift in strike rates |
+
+Decision. informational: Kept as the reference for the profile work; the full text with 60-odd references is in the results folder.
+
+Files: `experiments/results/EXP-2026-10-20-13/literature_review.md`
+
+## EXP-2026-10-20-14
+
+Fighter profiles: do career statistics add to age in predicting bouts?  
+Date 2026-10-20, decision: rejected, code at commit `f763832`.
+
+Question. On top of the frozen predictive probability and the shadow model's features (age difference, over-33, layoff, debut, experience, height, five rounds), do career statistics (strikes absorbed per minute, knockdowns against, KO losses and their recency, cumulative strikes absorbed, minutes, bouts per year, debut age, years in the UFC, grappling share, trajectory of recent rating changes and surprises) improve out-of-sample prediction, overall and in bouts with an older fighter?
+
+| Method | |
+|---|---|
+| instrument | src/mmalab/profiles.py walk-forward logistic layers (fit 2011 to Y-1, score Y, 2016 to 2026), nested models M0 to M3; refinements in the scratchpad grid (regularisation 2 to 20, theory-driven subsets, gradient boosting) |
+| bouts | 5332 held-out bouts, 2016-01-02 to 2026-10-17; 2,717 with a fighter aged 33 or over |
+| metric | log loss, Brier, accuracy; paired event-block bootstrap of the log-loss difference against M1 |
+| features | src/mmalab/career_stats.py (as-of, no look-ahead; validated against UFC.com career statistics for Holloway, Nurmagomedov, Barboza, Arlovski) |
+
+Candidate. `{"M0": "logit(p_elo) only", "M1": "M0 + shadow features", "M2": "M1 + 24 profile differences", "M3": "M2 + 9 over-33 interactions", "theory": "M1 + 11 literature-driven differences", "GBM": "histogram gradient boosting on the same columns"}`
+
+| Result | |
+|---|---|
+| M1 over M0 | {'delta_log_loss': 0.02, 'ci95_event_block_bootstrap': [0.015, 0.0251]} |
+| M2 over M1 (all bouts) | {'delta_log_loss': -0.0008, 'ci95_event_block_bootstrap': [-0.0044, 0.0028]} |
+| M3 over M1 (all bouts) | {'delta_log_loss': -0.0031, 'ci95_event_block_bootstrap': [-0.0084, 0.0018]} |
+| bouts with a fighter 33+ | M1 log loss 0.6329, M2 0.6324, M3 0.6366; M3 over M1 {'delta_log_loss': -0.0037, 'ci95': [-0.0129, 0.004]} |
+| best refinement (theory subset, L2 20) | gain over M1 +0.0007 (CI -0.0014 to +0.0026) overall, +0.0010 in 2021-2026, +0.0007 in older bouts; accuracy in older bouts 64.2% vs 64.0% |
+| gradient boosting | worse than the logistic M1 by 0.0035 to 0.0039 |
+| by year | profile models lose in 2016-2017 (small training sets) and gain 0.002 to 0.008 per year in 2022-2026, not enough to clear the interval overall |
+
+Decision. rejected: Career statistics as linear differences, with or without age interactions, add nothing reliable to what age, layoff and experience already say about the next result, overall or for older fighters. This agrees with Kotrba (2023): individual susceptibility dominates population damage counts. The descriptive profile (mileage, damage, style, trajectory) is still worth showing beside the resume rank for human judgment, labelled as not validated as a predictor; the next modelling attempt should follow the literature instead of linear aggregates: per-fighter random slopes with shrinkage, an age spline inside the rating state, and performance (strike differential) rather than win/loss as the outcome.
+
+Files: `experiments/results/EXP-2026-10-20-14/profiles_report.json`, `experiments/results/EXP-2026-10-20-14/profiles_by_year.csv`, `experiments/results/EXP-2026-10-20-14/profiles_grid.csv`

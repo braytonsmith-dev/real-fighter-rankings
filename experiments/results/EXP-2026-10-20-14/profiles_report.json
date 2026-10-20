@@ -1,0 +1,428 @@
+{
+  "bouts": 5332,
+  "window": [
+    "2016-01-02",
+    "2026-10-17"
+  ],
+  "models": {
+    "M0": {
+      "n": 5332,
+      "log_loss": 0.6635,
+      "brier": 0.2354,
+      "accuracy": 0.5973,
+      "features": 1
+    },
+    "M1": {
+      "n": 5332,
+      "log_loss": 0.6435,
+      "brier": 0.2261,
+      "accuracy": 0.6268,
+      "features": 9
+    },
+    "M2": {
+      "n": 5332,
+      "log_loss": 0.6443,
+      "brier": 0.2262,
+      "accuracy": 0.6227,
+      "features": 33
+    },
+    "M3": {
+      "n": 5332,
+      "log_loss": 0.6466,
+      "brier": 0.2265,
+      "accuracy": 0.6253,
+      "features": 42
+    }
+  },
+  "gain_M1_over_M0": {
+    "delta_log_loss": 0.02,
+    "ci95_event_block_bootstrap": [
+      0.015,
+      0.0251
+    ]
+  },
+  "gain_M2_over_M1": {
+    "delta_log_loss": -0.0008,
+    "ci95_event_block_bootstrap": [
+      -0.0044,
+      0.0028
+    ]
+  },
+  "gain_M3_over_M1": {
+    "delta_log_loss": -0.0031,
+    "ci95_event_block_bootstrap": [
+      -0.0084,
+      0.0018
+    ]
+  },
+  "gain_M3_over_M2": {
+    "delta_log_loss": -0.0023,
+    "ci95_event_block_bootstrap": [
+      -0.0063,
+      0.0007
+    ]
+  },
+  "bouts_with_a_fighter_33_or_over": {
+    "bouts": 2717,
+    "M0": {
+      "n": 2717,
+      "log_loss": 0.6661,
+      "brier": 0.2366,
+      "accuracy": 0.5951
+    },
+    "M1": {
+      "n": 2717,
+      "log_loss": 0.6329,
+      "brier": 0.2212,
+      "accuracy": 0.6397
+    },
+    "M2": {
+      "n": 2717,
+      "log_loss": 0.6324,
+      "brier": 0.221,
+      "accuracy": 0.6319
+    },
+    "M3": {
+      "n": 2717,
+      "log_loss": 0.6366,
+      "brier": 0.2214,
+      "accuracy": 0.6353
+    },
+    "gain_M2_over_M1": {
+      "delta_log_loss": 0.0005,
+      "ci95": [
+        -0.0039,
+        0.0049
+      ]
+    },
+    "gain_M3_over_M1": {
+      "delta_log_loss": -0.0037,
+      "ci95": [
+        -0.0129,
+        0.004
+      ]
+    }
+  },
+  "by_year": [
+    {
+      "year": 2016,
+      "train": 1962,
+      "test": 483,
+      "M0": {
+        "n": 483,
+        "log_loss": 0.6554,
+        "brier": 0.2313,
+        "accuracy": 0.6211
+      },
+      "M1": {
+        "n": 483,
+        "log_loss": 0.6437,
+        "brier": 0.2263,
+        "accuracy": 0.6398
+      },
+      "M2": {
+        "n": 483,
+        "log_loss": 0.6493,
+        "brier": 0.2285,
+        "accuracy": 0.6211
+      },
+      "M3": {
+        "n": 483,
+        "log_loss": 0.6666,
+        "brier": 0.232,
+        "accuracy": 0.6128
+      }
+    },
+    {
+      "year": 2017,
+      "train": 2445,
+      "test": 446,
+      "M0": {
+        "n": 446,
+        "log_loss": 0.665,
+        "brier": 0.2364,
+        "accuracy": 0.5942
+      },
+      "M1": {
+        "n": 446,
+        "log_loss": 0.6401,
+        "brier": 0.2248,
+        "accuracy": 0.6211
+      },
+      "M2": {
+        "n": 446,
+        "log_loss": 0.6454,
+        "brier": 0.2272,
+        "accuracy": 0.6233
+      },
+      "M3": {
+        "n": 446,
+        "log_loss": 0.658,
+        "brier": 0.2289,
+        "accuracy": 0.6211
+      }
+    },
+    {
+      "year": 2018,
+      "train": 2891,
+      "test": 469,
+      "M0": {
+        "n": 469,
+        "log_loss": 0.6694,
+        "brier": 0.2383,
+        "accuracy": 0.5821
+      },
+      "M1": {
+        "n": 469,
+        "log_loss": 0.656,
+        "brier": 0.2321,
+        "accuracy": 0.597
+      },
+      "M2": {
+        "n": 469,
+        "log_loss": 0.6554,
+        "brier": 0.2316,
+        "accuracy": 0.6077
+      },
+      "M3": {
+        "n": 469,
+        "log_loss": 0.6568,
+        "brier": 0.232,
+        "accuracy": 0.6055
+      }
+    },
+    {
+      "year": 2019,
+      "train": 3360,
+      "test": 506,
+      "M0": {
+        "n": 506,
+        "log_loss": 0.6784,
+        "brier": 0.2428,
+        "accuracy": 0.5613
+      },
+      "M1": {
+        "n": 506,
+        "log_loss": 0.6716,
+        "brier": 0.2387,
+        "accuracy": 0.5988
+      },
+      "M2": {
+        "n": 506,
+        "log_loss": 0.671,
+        "brier": 0.2383,
+        "accuracy": 0.5949
+      },
+      "M3": {
+        "n": 506,
+        "log_loss": 0.6713,
+        "brier": 0.2384,
+        "accuracy": 0.5909
+      }
+    },
+    {
+      "year": 2020,
+      "train": 3866,
+      "test": 444,
+      "M0": {
+        "n": 444,
+        "log_loss": 0.655,
+        "brier": 0.2308,
+        "accuracy": 0.6261
+      },
+      "M1": {
+        "n": 444,
+        "log_loss": 0.6441,
+        "brier": 0.2256,
+        "accuracy": 0.6194
+      },
+      "M2": {
+        "n": 444,
+        "log_loss": 0.6491,
+        "brier": 0.2272,
+        "accuracy": 0.6419
+      },
+      "M3": {
+        "n": 444,
+        "log_loss": 0.6491,
+        "brier": 0.227,
+        "accuracy": 0.6441
+      }
+    },
+    {
+      "year": 2021,
+      "train": 4310,
+      "test": 497,
+      "M0": {
+        "n": 497,
+        "log_loss": 0.67,
+        "brier": 0.2383,
+        "accuracy": 0.5915
+      },
+      "M1": {
+        "n": 497,
+        "log_loss": 0.6585,
+        "brier": 0.2326,
+        "accuracy": 0.6177
+      },
+      "M2": {
+        "n": 497,
+        "log_loss": 0.671,
+        "brier": 0.2361,
+        "accuracy": 0.5875
+      },
+      "M3": {
+        "n": 497,
+        "log_loss": 0.673,
+        "brier": 0.2369,
+        "accuracy": 0.5996
+      }
+    },
+    {
+      "year": 2022,
+      "train": 4807,
+      "test": 506,
+      "M0": {
+        "n": 506,
+        "log_loss": 0.6553,
+        "brier": 0.2314,
+        "accuracy": 0.6186
+      },
+      "M1": {
+        "n": 506,
+        "log_loss": 0.6371,
+        "brier": 0.2234,
+        "accuracy": 0.6403
+      },
+      "M2": {
+        "n": 506,
+        "log_loss": 0.637,
+        "brier": 0.2234,
+        "accuracy": 0.6245
+      },
+      "M3": {
+        "n": 506,
+        "log_loss": 0.6351,
+        "brier": 0.2226,
+        "accuracy": 0.6225
+      }
+    },
+    {
+      "year": 2023,
+      "train": 5313,
+      "test": 504,
+      "M0": {
+        "n": 504,
+        "log_loss": 0.6666,
+        "brier": 0.2374,
+        "accuracy": 0.5873
+      },
+      "M1": {
+        "n": 504,
+        "log_loss": 0.6386,
+        "brier": 0.2242,
+        "accuracy": 0.6448
+      },
+      "M2": {
+        "n": 504,
+        "log_loss": 0.6326,
+        "brier": 0.2219,
+        "accuracy": 0.625
+      },
+      "M3": {
+        "n": 504,
+        "log_loss": 0.6329,
+        "brier": 0.2221,
+        "accuracy": 0.6369
+      }
+    },
+    {
+      "year": 2024,
+      "train": 5817,
+      "test": 513,
+      "M0": {
+        "n": 513,
+        "log_loss": 0.6632,
+        "brier": 0.2357,
+        "accuracy": 0.5848
+      },
+      "M1": {
+        "n": 513,
+        "log_loss": 0.6406,
+        "brier": 0.2251,
+        "accuracy": 0.6062
+      },
+      "M2": {
+        "n": 513,
+        "log_loss": 0.6374,
+        "brier": 0.224,
+        "accuracy": 0.6023
+      },
+      "M3": {
+        "n": 513,
+        "log_loss": 0.6364,
+        "brier": 0.2235,
+        "accuracy": 0.6199
+      }
+    },
+    {
+      "year": 2025,
+      "train": 6330,
+      "test": 515,
+      "M0": {
+        "n": 515,
+        "log_loss": 0.653,
+        "brier": 0.2306,
+        "accuracy": 0.6039
+      },
+      "M1": {
+        "n": 515,
+        "log_loss": 0.6165,
+        "brier": 0.2134,
+        "accuracy": 0.6835
+      },
+      "M2": {
+        "n": 515,
+        "log_loss": 0.6136,
+        "brier": 0.2124,
+        "accuracy": 0.6816
+      },
+      "M3": {
+        "n": 515,
+        "log_loss": 0.6117,
+        "brier": 0.2116,
+        "accuracy": 0.6796
+      }
+    },
+    {
+      "year": 2026,
+      "train": 6845,
+      "test": 449,
+      "M0": {
+        "n": 449,
+        "log_loss": 0.667,
+        "brier": 0.2368,
+        "accuracy": 0.6036
+      },
+      "M1": {
+        "n": 449,
+        "log_loss": 0.6319,
+        "brier": 0.2207,
+        "accuracy": 0.6214
+      },
+      "M2": {
+        "n": 449,
+        "log_loss": 0.626,
+        "brier": 0.2182,
+        "accuracy": 0.6414
+      },
+      "M3": {
+        "n": 449,
+        "log_loss": 0.6235,
+        "brier": 0.2171,
+        "accuracy": 0.6459
+      }
+    }
+  ],
+  "runtime_seconds": 32.7
+}

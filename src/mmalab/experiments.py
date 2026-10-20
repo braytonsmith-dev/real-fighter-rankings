@@ -67,7 +67,8 @@ def record(exp_id: str | None, title: str, question: str, method: dict | str, ca
         for name, src in files.items():
             dst = d / name
             if isinstance(src, (str, Path)) and Path(src).exists():
-                shutil.copyfile(src, dst)
+                if Path(src).resolve() != dst.resolve():
+                    shutil.copyfile(src, dst)
             else:
                 dst.write_text(json.dumps(src, indent=1, default=str))
             stored.append(str(dst.relative_to(ROOT)))
@@ -100,7 +101,8 @@ def update(exp_id: str, **fields) -> dict:
         for name, src in files.items():
             dst = d / name
             if isinstance(src, (str, Path)) and Path(src).exists():
-                shutil.copyfile(src, dst)
+                if Path(src).resolve() != dst.resolve():
+                    shutil.copyfile(src, dst)
             else:
                 dst.write_text(json.dumps(src, indent=1, default=str))
             rel = str(dst.relative_to(ROOT))
