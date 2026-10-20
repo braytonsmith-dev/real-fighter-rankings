@@ -487,7 +487,7 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2025-05-02,2025-05-03,False,Heavyweight,False,Thomas Petersen,30,-0.182,Don'Tale Mayes,36,-0.4453,1.0,Thomas Petersen,1.0,0.5886,False,False,99.0,99.0,,0.6243213005581537,0.526904940643963,U-DEC
 2025-05-09,2025-05-10,False,Women's Flyweight,False,Alexa Grasso,6,0.5285,Natalia Silva,4,0.5777,0.0,Natalia Silva,1.0,0.4833,True,True,1.0,5.0,0.0,0.3958736511176364,0.4185537415960576,U-DEC
 2025-05-09,2025-05-10,False,Welterweight,False,Mike Malott,25,0.0553,Charles Radtke,30,0.0053,1.0,Mike Malott,1.0,0.517,True,False,99.0,99.0,,0.5444515888397511,0.5721445141121911,KO/TKO
-2025-05-09,2025-05-10,False,Middleweight,False,Marc-Andre Barriault,63,-0.433,Bruno Silva,71,-0.8547,1.0,Marc-Andre Barriault,1.0,0.6396,False,False,99.0,99.0,,0.4609348813814295,0.465296117912996,KO/TKO
+2025-05-09,2025-05-10,False,Middleweight,False,Marc-Andre Barriault,63,-0.433,Bruno Silva,71,-0.8547,1.0,Marc-Andre Barriault,1.0,0.6396,False,False,99.0,12.0,,0.4609348813814295,0.465296117912996,KO/TKO
 2025-05-09,2025-05-10,False,Light Heavyweight,False,Navajo Stirling,18,0.0115,Ivan Erslan,29,-0.146,1.0,Navajo Stirling,1.0,0.5533,True,False,99.0,99.0,,0.5531396871148364,0.6080122598126987,U-DEC
 2025-05-09,2025-05-10,False,Women's Flyweight,True,Valentina Shevchenko,0,1.1033,Manon Fiorot,1,0.7212,1.0,Valentina Shevchenko,1.0,0.6271,True,True,0.0,2.0,1.0,0.5064864416869228,0.5075850084041347,U-DEC
 2025-05-09,2025-05-10,False,Welterweight,True,Belal Muhammad,0,1.2295,Jack Della Maddalena,6,0.5775,0.0,Jack Della Maddalena,0.0,0.7082,True,True,0.0,5.0,0.0,0.538143534614495,0.6324855488925585,U-DEC
@@ -744,7 +744,7 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2026-03-13,2026-03-14,False,Light Heavyweight,False,Ion Cutelaba,26,-0.1333,Oumar Sy,14,0.1876,1.0,Ion Cutelaba,0.0,0.3926,True,False,99.0,99.0,,0.4554130596096457,0.4137352519357175,SUB
 2026-03-13,2026-03-14,False,Bantamweight,False,Elijah Smith,32,0.0946,SuYoung You,28,0.1193,1.0,Elijah Smith,0.0,0.4916,False,False,99.0,99.0,,0.4936992882243529,0.4396949376501282,SUB
 2026-03-13,2026-03-14,False,Featherweight,False,Josh Emmett,68,-0.3282,Kevin Vallejos,10,0.3873,0.0,Kevin Vallejos,1.0,0.2743,False,False,11.0,14.0,0.0,0.4540340837557144,0.4723529290621457,KO/TKO
-2026-03-13,2026-03-14,False,Flyweight,False,Charles Johnson,32,-0.1147,Bruno Silva,52,-0.8882,1.0,Charles Johnson,1.0,0.7411,False,False,14.0,99.0,,0.6264811473297405,0.5720060347318733,S-DEC
+2026-03-13,2026-03-14,False,Flyweight,False,Charles Johnson,32,-0.1147,Bruno Silva,52,-0.8882,1.0,Charles Johnson,1.0,0.7411,False,False,14.0,15.0,1.0,0.6264811473297405,0.5720060347318733,S-DEC
 2026-03-20,2026-03-21,False,Featherweight,False,Movsar Evloev,4,0.6887,Lerone Murphy,3,0.6927,1.0,Movsar Evloev,0.0,0.4986,True,True,1.0,3.0,1.0,0.6371196004354933,0.5276385012090093,M-DEC
 2026-03-20,2026-03-21,False,Middleweight,False,Roman Dolidze,9,0.4199,Christian Leroy Duncan,18,0.1881,0.0,Christian Leroy Duncan,0.0,0.5782,True,False,11.0,99.0,,0.5148440014388609,0.5747131714890318,U-DEC
 2026-03-20,2026-03-21,False,Heavyweight,False,Louie Sutherland,36,-0.1573,Brando Pericic,16,0.0784,0.0,Brando Pericic,1.0,0.4205,False,False,99.0,99.0,,0.3152601214679587,0.3884656274415101,KO/TKO
@@ -821,7 +821,7 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2026-05-29,2026-05-30,False,Light Heavyweight,False,Zhang Mingyang,17,0.0863,Alonzo Menifield,27,-0.2013,0.0,Alonzo Menifield,0.0,0.5966,True,False,99.0,15.0,,0.6085266996408664,0.4618202218504809,KO/TKO
 2026-05-29,2026-05-30,False,Welterweight,False,Jake Matthews,28,0.0953,Carlston Harris,62,-0.3578,1.0,Jake Matthews,1.0,0.6493,False,False,99.0,99.0,,0.5490266455602408,0.6122290359730543,U-DEC
 2026-05-29,2026-05-30,False,Heavyweight,False,Sergei Pavlovich,3,0.5784,Tallison Teixeira,20,0.0205,1.0,Sergei Pavlovich,1.0,0.6811,True,False,3.0,15.0,1.0,0.8125369169864629,0.7128748084341309,KO/TKO
-2026-06-05,2026-06-06,False,Flyweight,False,Bruno Silva,49,-0.9515,Edgar Chairez,26,-0.0036,0.0,Edgar Chairez,1.0,0.216,False,False,99.0,99.0,,0.4435429067407845,0.3968533119091357,SUB
+2026-06-05,2026-06-06,False,Flyweight,False,Bruno Silva,49,-0.9515,Edgar Chairez,26,-0.0036,0.0,Edgar Chairez,1.0,0.216,False,False,15.0,99.0,,0.4435429067407845,0.3968533119091357,SUB
 2026-06-05,2026-06-06,False,Middleweight,False,Brendan Allen,4,0.8305,Edmen Shahbazyan,22,0.1786,1.0,Brendan Allen,1.0,0.7082,True,False,4.0,99.0,,0.5789755559697435,0.6697887793602266,U-DEC
 2026-06-05,2026-06-06,False,Lightweight,False,Fares Ziam,16,0.2562,Tom Nolan,35,0.0747,0.0,Tom Nolan,0.0,0.5614,False,False,14.0,99.0,,0.6327851342098155,0.5876814972333175,U-DEC
 2026-06-05,2026-06-06,False,Welterweight,False,Belal Muhammad,3,0.79,Gabriel Bonfim,15,0.285,0.0,Gabriel Bonfim,0.0,0.6653,True,True,5.0,11.0,0.0,0.5146716411008447,0.5854413162267232,U-DEC

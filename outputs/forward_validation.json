@@ -1,4 +1,5 @@
 {
+  "version": "v1.0",
   "snapshots": 130,
   "freeze_date": "2026-10-01",
   "probability_map_slope": 1.36,
@@ -30,13 +31,13 @@
         "accuracy": 0.6242
       },
       "official_board": {
-        "bouts_both_ranked": 267,
-        "official_concordance": 0.524,
+        "bouts_both_ranked": 268,
+        "official_concordance": 0.526,
         "official_wilson95": [
-          0.465,
-          0.583
+          0.466,
+          0.585
         ],
-        "real_concordance_same_bouts": 0.592
+        "real_concordance_same_bouts": 0.593
       }
     },
     "secondary_both_top30": {

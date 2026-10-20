@@ -174,9 +174,9 @@ def validate(root: Path | None = None, freeze_date: pd.Timestamp | None = None, 
     res = {"version": label, "snapshots": len(snaps), "freeze_date": str(freeze_date.date()), "probability_map_slope": slope,
            "protocol": "PREREGISTRATION.md"}
     if not df.empty:
-        for label, mask in (("retrospective_reconstruction", ~df["prospective"]), ("prospective_since_freeze", df["prospective"])):
+        for block, mask in (("retrospective_reconstruction", ~df["prospective"]), ("prospective_since_freeze", df["prospective"])):
             part = df[mask]
-            res[label] = {"primary_both_scored": _summary(part),
+            res[block] = {"primary_both_scored": _summary(part),
                           "secondary_both_top30": _summary(part[part["both_top30"]]),
                           "secondary_both_top15": _summary(part[part["both_top15"]]),
                           "secondary_title_fights": _summary(part[part["title_fight"]])}
