@@ -1,0 +1,337 @@
+
+===== 2024-04-14 Featherweight =====
+ #           score order            sequential                solver
+ 1          Max Holloway          Max Holloway          Max Holloway
+ 2 Alexander Volkanovski          Brian Ortega          Brian Ortega
+ 3          Brian Ortega         Movsar Evloev         Movsar Evloev
+ 4        Yair Rodriguez Alexander Volkanovski Alexander Volkanovski
+ 5         Movsar Evloev        Yair Rodriguez        Yair Rodriguez
+ 6          Arnold Allen          Arnold Allen          Arnold Allen
+ 7        Chan Sung Jung        Chan Sung Jung        Chan Sung Jung
+ 8           Josh Emmett           Josh Emmett           Josh Emmett
+ 9         Giga Chikadze         Giga Chikadze         Giga Chikadze
+10         Edson Barboza         Edson Barboza         Edson Barboza
+11      Joanderson Brito      Joanderson Brito      Joanderson Brito
+12         Lerone Murphy         Lerone Murphy         Lerone Murphy
+13        Nathaniel Wood       Muhammad Naimov       Muhammad Naimov
+14         Darren Elkins        Nathaniel Wood        Nathaniel Wood
+15       Muhammad Naimov           Cub Swanson           Cub Swanson
+16           Cub Swanson       Jonathan Pearce         Darren Elkins
+17           Diego Lopes         Darren Elkins           Diego Lopes
+18       Jonathan Pearce           Diego Lopes       Jonathan Pearce
+19        Bryce Mitchell        Bryce Mitchell        Bryce Mitchell
+constraints:
+    Cub Swanson above Darren Elkins (head-to-head 2021-12-18) 
+    Dan Ige above Nate Landwehr (head-to-head 2023-06-10) 
+    Julian Erosa above Ricardo Ramos (head-to-head 2024-03-23) 
+    Muhammad Naimov above Nathaniel Wood (head-to-head 2023-10-21) 
+    Alexander Volkanovski no higher than #4 (title-cycle 2023-10-21) 
+    Alexander Volkanovski above Yair Rodriguez (title-cycle victim 2023-07-08) 
+sequential notes:
+    Featherweight: Cub Swanson moved above Darren Elkins (won 2021-12-18)
+    Featherweight: Jonathan Pearce moved above Darren Elkins (won 2022-12-03)
+    Featherweight: Dan Ige moved above Nate Landwehr (won 2023-06-10)
+    Featherweight: Muhammad Naimov moved above Nathaniel Wood (won 2023-10-21)
+    Featherweight: Julian Erosa moved above Ricardo Ramos (won 2024-03-23)
+    Featherweight: Alexander Volkanovski #2 -> #4 (lost a title fight 2023-10-21; the champion fights someone else next)
+    Featherweight: Yair Rodriguez #4 -> #5 (lost to a fighter moved by the title-cycle rule in the last year)
+solver notes:
+    Featherweight: Cub Swanson moved above Darren Elkins (won 2021-12-18)
+    Featherweight: Dan Ige moved above Nate Landwehr (won 2023-06-10)
+    Featherweight: Muhammad Naimov moved above Nathaniel Wood (won 2023-10-21)
+    Featherweight: Julian Erosa moved above Ricardo Ramos (won 2024-03-23)
+    Featherweight: Alexander Volkanovski #2 -> #4 (lost a title fight 2023-10-21; the champion fights someone else next)
+    Featherweight: Yair Rodriguez #4 -> #5 (lost to a fighter held by the title-cycle rule in the last year)
+2024-04-14: build 9s, solver 0.33s, constraints 654, top-15 spots off score order: sequential 55, solver 55
+
+===== 2024-09-15 Bantamweight =====
+ #              score order               sequential                   solver
+ 1      Deiveson Figueiredo      Deiveson Figueiredo      Deiveson Figueiredo
+ 2        Aljamain Sterling            Sean O'Malley            Sean O'Malley
+ 3           Cory Sandhagen        Aljamain Sterling        Aljamain Sterling
+ 4            Sean O'Malley        Umar Nurmagomedov        Umar Nurmagomedov
+ 5                Jose Aldo           Cory Sandhagen           Cory Sandhagen
+ 6             Henry Cejudo                Jose Aldo                Jose Aldo
+ 7              Song Yadong             Henry Cejudo             Henry Cejudo
+ 8        Umar Nurmagomedov              Song Yadong              Song Yadong
+ 9                 Petr Yan                 Petr Yan                 Petr Yan
+10           Montel Jackson           Montel Jackson           Montel Jackson
+11              Marlon Vera              Marlon Vera              Marlon Vera
+12           Kyler Phillips           Kyler Phillips           Kyler Phillips
+13        Said Nurmagomedov        Said Nurmagomedov        Said Nurmagomedov
+14        Jonathan Martinez        Jonathan Martinez        Jonathan Martinez
+15           Mario Bautista           Mario Bautista           Mario Bautista
+16           Payton Talbott           Payton Talbott           Payton Talbott
+17            Marcus McGhee            Marcus McGhee            Marcus McGhee
+18           Rinya Nakamura           Rinya Nakamura           Rinya Nakamura
+19        Vinicius Oliveira        Vinicius Oliveira        Vinicius Oliveira
+20          Chris Gutierrez          Chris Gutierrez          Chris Gutierrez
+21             Victor Henry             Victor Henry             Victor Henry
+22           Brady Hiestand           Brady Hiestand           Brady Hiestand
+23           Farid Basharat           Farid Basharat           Farid Basharat
+24            Daniel Marcos            Daniel Marcos            Daniel Marcos
+25           Raul Rosas Jr.           Raul Rosas Jr.           Raul Rosas Jr.
+26           Taylor Lapilus           Taylor Lapilus           Taylor Lapilus
+27           Cody Garbrandt           Cody Garbrandt           Cody Garbrandt
+28             Adrian Yanez             Adrian Yanez             Adrian Yanez
+29           Jean Matsumoto           Jean Matsumoto           Jean Matsumoto
+30               Julio Arce               Julio Arce               Julio Arce
+31           Javid Basharat           Aiemann Zahabi           Aiemann Zahabi
+32           Aiemann Zahabi           Javid Basharat           Javid Basharat
+33              Victor Hugo              Victor Hugo              Victor Hugo
+34 Douglas Silva de Andrade              Miles Johns           John Castaneda
+35              ChangHo Lee Douglas Silva de Andrade              Miles Johns
+36            Daniel Santos              ChangHo Lee Douglas Silva de Andrade
+37            Ramon Taveras            Daniel Santos              ChangHo Lee
+38             Alatengheili            Ramon Taveras            Daniel Santos
+39              Miles Johns             Alatengheili            Ramon Taveras
+40              Ricky Simon           John Castaneda             Alatengheili
+41           John Castaneda              Ricky Simon              Ricky Simon
+constraints:
+    Aiemann Zahabi above Javid Basharat (head-to-head 2024-03-02) 
+    Sean O'Malley above Aljamain Sterling (head-to-head 2023-08-19) 
+    Garrett Armfield above Brad Katona (head-to-head 2024-01-20) 
+    Umar Nurmagomedov above Cory Sandhagen (head-to-head 2024-08-03) 
+    Miles Johns above Douglas Silva de Andrade (head-to-head 2024-06-15) 
+    John Castaneda above Miles Johns (head-to-head 2022-02-05) 
+    Marlon Vera no higher than #4 (title-cycle 2024-03-09) 
+sequential notes:
+    Bantamweight: John Castaneda moved above Miles Johns (won 2022-02-05)
+    Bantamweight: Sean O'Malley moved above Aljamain Sterling (won 2023-08-19)
+    Bantamweight: Garrett Armfield moved above Brad Katona (won 2024-01-20)
+    Bantamweight: Aiemann Zahabi moved above Javid Basharat (won 2024-03-02)
+    Bantamweight: Miles Johns moved above Douglas Silva de Andrade (won 2024-06-15)
+    Bantamweight: Umar Nurmagomedov moved above Cory Sandhagen (won 2024-08-03)
+solver notes:
+    Bantamweight: John Castaneda moved above Miles Johns (won 2022-02-05)
+    Bantamweight: Sean O'Malley moved above Aljamain Sterling (won 2023-08-19)
+    Bantamweight: Garrett Armfield moved above Brad Katona (won 2024-01-20)
+    Bantamweight: Aiemann Zahabi moved above Javid Basharat (won 2024-03-02)
+    Bantamweight: Miles Johns moved above Douglas Silva de Andrade (won 2024-06-15)
+    Bantamweight: Umar Nurmagomedov moved above Cory Sandhagen (won 2024-08-03)
+2024-09-15: build 8s, solver 0.33s, constraints 623, top-15 spots off score order: sequential 60, solver 60
+2025-01-19: build 9s, solver 0.31s, constraints 661, top-15 spots off score order: sequential 61, solver 61
+2025-06-29: build 10s, solver 0.49s, constraints 699, top-15 spots off score order: sequential 63, solver 63
+2025-12-07: build 11s, solver 0.27s, constraints 695, top-15 spots off score order: sequential 51, solver 56
+2026-05-10: build 11s, solver 0.44s, constraints 694, top-15 spots off score order: sequential 69, solver 70
+2026-10-20: build 14s, solver 0.35s, constraints 695, top-15 spots off score order: sequential 57, solver 58
+
+===== PER DATE AND DIVISION (ride_settled=all, waive=True) =====
+      date             division   n  cons  caps  seq_top15  sol_top15  diff  diff_top15  seq_viol  sol_viol  waived  seq_extra  seq_inv  sol_inv  sol_maxdisp
+2024-04-14         Bantamweight  99    92     1          0          0     0           0         0         0       0          0        0        0            3
+2024-04-14        Featherweight  89    69     1          7          7     3           0         0         0       0          1        0        0            2
+2024-04-14            Flyweight  54    56     0          5          5     0           0         0         0       0          0        0        0            3
+2024-04-14          Heavyweight  41    48     1          4          4     0           0         0         0       0          0        0        0            4
+2024-04-14    Light Heavyweight  45    40     1          0          0     0           0         0         0       0          0        0        0            0
+2024-04-14          Lightweight  99    90     0          9          9     0           0         0         0       0          0        0        0            5
+2024-04-14         Middleweight  68    69     0          3          3     0           0         0         0       0          0        0        0            2
+2024-04-14         Welterweight  83    78     1          6          6     0           0         0         0       0          0        0        0            4
+2024-04-14 Women's Bantamweight  35    29     1          6          6     0           0         0         0       0          0        0        0            5
+2024-04-14    Women's Flyweight  40    39     0          5          5     0           0         0         0       0          0        0        0            6
+2024-04-14  Women's Strawweight  47    44     1         10         10     0           0         0         0       0          2        0        0            5
+2024-09-15         Bantamweight  87    71     1          7          7     7           0         1         0       0          0        0        0            7
+2024-09-15        Featherweight  90    64     0          3          3     0           0         0         0       0          0        0        0            5
+2024-09-15            Flyweight  50    57     1          5          5     0           0         0         0       0          0        0        0            4
+2024-09-15          Heavyweight  39    47     1          2          2     0           0         0         0       0          0        0        0            5
+2024-09-15    Light Heavyweight  42    36     2          3          3     0           0         0         0       0          0        0        0            2
+2024-09-15          Lightweight  96    90     0         13         13     0           0         0         0       0          0        0        0            5
+2024-09-15         Middleweight  67    70     1          9          9     0           0         0         0       0          0        0        0            6
+2024-09-15         Welterweight  85    77     0          4          4     0           0         0         0       0          0        0        0            3
+2024-09-15 Women's Bantamweight  33    21     1          6          6     0           0         0         0       0          0        0        0            5
+2024-09-15    Women's Flyweight  45    39     0          0          0     0           0         0         0       0          0        0        0            1
+2024-09-15  Women's Strawweight  50    51     1          8          8     5           5         1         0       0          0        0        0            7
+2025-01-19         Bantamweight  85    79     2         10         10     0           0         0         0       0          0        0        0            5
+2025-01-19        Featherweight  87    73     1          4          4     0           0         0         0       0          0        0        0            3
+2025-01-19            Flyweight  57    60     3          3          3     0           0         0         0       0          0        0        0            4
+2025-01-19          Heavyweight  38    44     2          8          8     0           0         0         0       0          0        0        0            4
+2025-01-19    Light Heavyweight  45    35     1          0          0     0           0         0         0       0          0        0        0            1
+2025-01-19          Lightweight  93    96     1         12         12     0           0         0         0       0          0        0        0            3
+2025-01-19         Middleweight  70    81     1          9          9     0           0         0         0       0          0        0        0            5
+2025-01-19         Welterweight  78    80     0          0          0     0           0         0         0       0          0        0        0            4
+2025-01-19 Women's Bantamweight  31    20     0          5          5     0           0         0         0       0          0        0        0            3
+2025-01-19    Women's Flyweight  39    34     0          3          3     0           0         0         0       0          0        0        0            4
+2025-01-19  Women's Strawweight  55    59     1          7          7     0           0         0         0       0          0        0        0            5
+2025-06-29         Bantamweight  90    85     3          6          6     0           0         0         0       0          0        2        2            4
+2025-06-29        Featherweight  90    84     2          5          5     0           0         0         0       0          0        0        0            3
+2025-06-29            Flyweight  57    58     3          5          5     0           0         0         0       0          0        0        0            4
+2025-06-29          Heavyweight  42    45     1          4          4     0           0         0         0       0          0        0        0            4
+2025-06-29    Light Heavyweight  44    44     0          2          2     0           0         0         0       0          0        0        0            1
+2025-06-29          Lightweight  98   101     2          6          6     0           0         0         0       0          0        0        0            3
+2025-06-29         Middleweight  76    91     1          2          2     0           0         1         0       1          0        0        0            3
+2025-06-29         Welterweight  80    77     0          5          5     0           0         0         0       0          0        0        0            2
+2025-06-29 Women's Bantamweight  31    23     0         12         12     0           0         0         0       0          0        0        0            5
+2025-06-29    Women's Flyweight  38    36     1          9          9     0           0         0         0       0          0        1        1            2
+2025-06-29  Women's Strawweight  50    55     2          7          7     0           0         0         0       0          0        0        0            2
+2025-12-07         Bantamweight  89    88     2          9         14    12           9         1         0       0          0        1        0            6
+2025-12-07        Featherweight  88    86     0          3          3     0           0         0         0       0          0        0        0            2
+2025-12-07            Flyweight  58    53     1          0          0     0           0         0         0       0          0        0        0            0
+2025-12-07          Heavyweight  49    46     0          5          5     0           0         0         0       0          0        0        0            4
+2025-12-07    Light Heavyweight  44    43     0          0          0     0           0         0         0       0          0        0        0            2
+2025-12-07          Lightweight  93    97     0          6          6     0           0         0         0       0          0        0        0            2
+2025-12-07         Middleweight  74    86     0          9          9     0           0         0         0       0          0        0        0            6
+2025-12-07         Welterweight  82    88     0          6          6     3           3         0         0       0          0        1        0            3
+2025-12-07 Women's Bantamweight  32    25     0          5          5     0           0         0         0       0          0        0        0            3
+2025-12-07    Women's Flyweight  34    30     0          2          2     0           0         0         0       0          0        0        0            1
+2025-12-07  Women's Strawweight  52    53     2          6          6     0           0         0         0       0          0        0        0            5
+2026-05-10         Bantamweight  84    79     1          4          4     0           0         0         0       0          0        0        0            1
+2026-05-10        Featherweight  92    85     1          2          2     0           0         0         0       0          0        0        0            3
+2026-05-10            Flyweight  55    58     1          4          4     0           0         0         0       0          0        0        0            6
+2026-05-10          Heavyweight  49    44     0          6          6     0           0         0         0       0          0        0        0            4
+2026-05-10    Light Heavyweight  45    44     1          5          5     5           0         1         0       0          0        0        0            6
+2026-05-10          Lightweight  98   108     1          8          9     6           4         1         0       0          0        0        0            4
+2026-05-10         Middleweight  78    86     0          5          5     0           0         0         0       0          0        0        0            3
+2026-05-10         Welterweight  81    88     0         11         11     3           3         0         0       0          1        1        0            6
+2026-05-10 Women's Bantamweight  28    27     0          6          6     4           4         0         0       0          1        1        0            5
+2026-05-10    Women's Flyweight  33    29     0          9          9     0           0         0         0       0          0        0        0            6
+2026-05-10  Women's Strawweight  48    46     1          9          9     0           0         0         0       0          1        2        2            6
+2026-10-20         Bantamweight  93    71     0          2          2     0           0         0         0       0          0        0        0            1
+2026-10-20        Featherweight  93    80     0          3          3     0           0         0         0       0          0        0        0            2
+2026-10-20            Flyweight  52    60     2          6          6     0           0         0         0       0          0        1        1            3
+2026-10-20          Heavyweight  55    51     1          5          5     0           0         0         0       0          0        0        0            4
+2026-10-20    Light Heavyweight  50    51     1          6          6     0           0         0         0       0          0        0        0            4
+2026-10-20          Lightweight 101    99     0          8          8     3           3         1         0       0          0        0        0            3
+2026-10-20         Middleweight  78    89     0          2          2     8           0         1         0       0          0        0        0            8
+2026-10-20         Welterweight  83    86     1         10         10     4           0         2         0       1          0        0        0            5
+2026-10-20 Women's Bantamweight  27    28     0          8          9     2           2         0         0       0          0        1        0            5
+2026-10-20    Women's Flyweight  36    34     1          7          7     0           0         0         0       0          0        0        0            3
+2026-10-20  Women's Strawweight  50    46     1          0          0     0           0         0         0       0          0        0        0            0
+
+===== PER DATE =====
+            divisions  fighters  cons  caps  diff  diff_top15  divs_differing  seq_viol  sol_viol  waived  seq_extra  seq_inv  sol_inv
+date                                                                                                                                  
+2024-04-14         11       700   654     7     3           0               1         0         0       0          3        0        0
+2024-09-15         11       684   623     8    12           5               2         2         0       0          0        0        0
+2025-01-19         11       678   661    12     0           0               0         0         0       0          0        0        0
+2025-06-29         11       696   699    15     0           0               0         1         0       1          0        3        3
+2025-12-07         11       695   695     5    15          12               2         1         0       0          0        2        0
+2026-05-10         11       691   694     6    18          11               4         2         0       0          3        4        2
+2026-10-20         11       718   695     7    17           5               4         4         0       1          0        2        1
+
+TOTAL positions differing 65 | top-15 positions differing 33 | divisions differing 13 of 77 | sequential violates 10 constraints | solver violates 0 | waived or dropped 2 | sequential non-qualifying lifts 6 | settled results inverted: sequential 11, solver 6
+
+===== CONSTRAINTS THE SEQUENTIAL RESULT VIOLATES =====
+      date            division                                                         constraint      score sequential     solver
+2024-09-15        Bantamweight         John Castaneda above Miles Johns (head-to-head 2022-02-05) #41 vs #39 #40 vs #34 #34 vs #35
+2024-09-15 Women's Strawweight        Loopy Godinez above Tabatha Ricci (head-to-head 2023-11-11)  #11 vs #9   #8 vs #4   #4 vs #5
+2025-06-29        Middleweight Sean Strickland above Nassourdine Imavov (head-to-head 2023-01-14)   #4 vs #3   #4 vs #3   #4 vs #3
+2025-12-07        Bantamweight           Aiemann Zahabi above Jose Aldo (head-to-head 2025-05-10)  #13 vs #7  #14 vs #7   #7 vs #8
+2026-05-10   Light Heavyweight    Modestas Bukauskas above Ion Cutelaba (head-to-head 2025-05-10) #26 vs #23 #24 vs #20 #20 vs #21
+2026-05-10         Lightweight          Mauricio Ruffy above King Green (head-to-head 2025-03-08) #15 vs #13 #15 vs #12 #12 vs #13
+2026-10-20         Lightweight      Ilia Topuria above Charles Oliveira (head-to-head 2025-06-28)   #3 vs #2   #3 vs #1   #1 vs #2
+2026-10-20        Middleweight         Tresean Gore above Vicente Luque (head-to-head 2026-08-15) #37 vs #31 #38 vs #31 #32 vs #33
+2026-10-20        Welterweight    Ian Machado Garry above Carlos Prates (head-to-head 2025-04-26)   #3 vs #2   #4 vs #3   #4 vs #3
+2026-10-20        Welterweight        Myktybek Orolbai above Uros Medic (head-to-head 2023-11-18) #20 vs #17 #19 vs #16 #17 vs #18
+
+===== LIFTS THE SEQUENTIAL RULE APPLIED THAT DO NOT QUALIFY AGAINST THE SCORE ORDER =====
+      date             division                                      lift        won  gap_at_score  allowed
+2024-04-14        Featherweight       Jonathan Pearce above Darren Elkins 2022-12-03             4        3
+2024-04-14  Women's Strawweight            Angela Hill above Denise Gomes 2023-11-04            -1        6
+2024-04-14  Women's Strawweight         Loopy Godinez above Tabatha Ricci 2023-11-11            -2        6
+2026-05-10         Welterweight  Carlos Prates above Jack Della Maddalena 2026-05-02            -3        6
+2026-05-10 Women's Bantamweight Daria Zhelezniakova above Melissa Mullins 2025-06-21            -1        6
+2026-05-10  Women's Strawweight           Yan Xiaonan above Tabatha Ricci 2024-11-23            -1        3
+
+===== EVERY DIFFERING DIVISION =====
+
+2024-04-14 Featherweight: 3 fighters placed differently
+    Darren Elkins: score #14, sequential #17, solver #16
+    Diego Lopes: score #17, sequential #18, solver #17
+    Jonathan Pearce: score #18, sequential #16, solver #18
+    sequential non-qualifying lifts: Jonathan Pearce above Darren Elkins
+
+2024-09-15 Bantamweight: 7 fighters placed differently
+    Douglas Silva de Andrade: score #34, sequential #35, solver #36
+    ChangHo Lee: score #35, sequential #36, solver #37
+    Daniel Santos: score #36, sequential #37, solver #38
+    Ramon Taveras: score #37, sequential #38, solver #39
+    Alatengheili: score #38, sequential #39, solver #40
+    Miles Johns: score #39, sequential #34, solver #35
+    John Castaneda: score #41, sequential #40, solver #34
+    sequential violates: John Castaneda above Miles Johns (head-to-head 2022-02-05)
+
+2024-09-15 Women's Strawweight: 5 fighters placed differently
+    Tecia Pennington: score #4, sequential #5, solver #6
+    Amanda Lemos: score #5, sequential #6, solver #7
+    Marina Rodriguez: score #6, sequential #7, solver #8
+    Tabatha Ricci: score #9, sequential #4, solver #5
+    Loopy Godinez: score #11, sequential #8, solver #4
+    sequential violates: Loopy Godinez above Tabatha Ricci (head-to-head 2023-11-11)
+
+2025-12-07 Bantamweight: 12 fighters placed differently
+    Jose Aldo: score #7, sequential #7, solver #8
+    Montel Jackson: score #8, sequential #8, solver #9
+    Marcus McGhee: score #9, sequential #9, solver #10
+    Vinicius Oliveira: score #10, sequential #10, solver #11
+    Mario Bautista: score #11, sequential #11, solver #12
+    Payton Talbott: score #12, sequential #13, solver #15
+    Aiemann Zahabi: score #13, sequential #14, solver #7
+    Rob Font: score #14, sequential #16, solver #17
+    Farid Basharat: score #15, sequential #17, solver #18
+    Kyler Phillips: score #16, sequential #18, solver #13
+    Raoni Barcelos: score #17, sequential #12, solver #14
+    David Martinez: score #19, sequential #15, solver #16
+    sequential violates: Aiemann Zahabi above Jose Aldo (head-to-head 2025-05-10)
+
+2025-12-07 Welterweight: 3 fighters placed differently
+    Belal Muhammad: score #2, sequential #4, solver #5
+    Shavkat Rakhmonov: score #3, sequential #5, solver #2
+    Jack Della Maddalena: score #7, sequential #2, solver #4
+
+2026-05-10 Light Heavyweight: 5 fighters placed differently
+    Oumar Sy: score #20, sequential #21, solver #22
+    Rodolfo Bellato: score #21, sequential #22, solver #23
+    Jimmy Crute: score #22, sequential #23, solver #24
+    Ion Cutelaba: score #23, sequential #20, solver #21
+    Modestas Bukauskas: score #26, sequential #24, solver #20
+    sequential violates: Modestas Bukauskas above Ion Cutelaba (head-to-head 2025-05-10)
+
+2026-05-10 Lightweight: 6 fighters placed differently
+    Jim Miller: score #11, sequential #13, solver #14
+    King Green: score #13, sequential #12, solver #13
+    Dan Hooker: score #14, sequential #14, solver #15
+    Mauricio Ruffy: score #15, sequential #15, solver #12
+    Lance Gibson Jr.: score #33, sequential #31, solver #30
+    Alexander Hernandez: score #35, sequential #30, solver #31
+    sequential violates: Mauricio Ruffy above King Green (head-to-head 2025-03-08)
+
+2026-05-10 Welterweight: 3 fighters placed differently
+    Ian Machado Garry: score #3, sequential #4, solver #2
+    Carlos Prates: score #5, sequential #2, solver #3
+    Jack Della Maddalena: score #8, sequential #3, solver #4
+    sequential non-qualifying lifts: Carlos Prates above Jack Della Maddalena
+
+2026-05-10 Women's Bantamweight: 4 fighters placed differently
+    Norma Dumont: score #1, sequential #2, solver #3
+    Julianna Pena: score #2, sequential #3, solver #4
+    Ailin Perez: score #3, sequential #4, solver #1
+    Joselyne Edwards: score #5, sequential #1, solver #2
+    sequential non-qualifying lifts: Daria Zhelezniakova above Melissa Mullins
+
+2026-10-20 Lightweight: 3 fighters placed differently
+    Max Holloway: score #1, sequential #2, solver #3
+    Charles Oliveira: score #2, sequential #1, solver #2
+    Ilia Topuria: score #3, sequential #3, solver #1
+    sequential violates: Ilia Topuria above Charles Oliveira (head-to-head 2025-06-28)
+
+2026-10-20 Middleweight: 8 fighters placed differently
+    Vicente Luque: score #31, sequential #31, solver #33
+    Nick Galanti: score #32, sequential #32, solver #34
+    JunYong Park: score #33, sequential #33, solver #35
+    Matthieu Duclos: score #34, sequential #34, solver #36
+    Eryk Anders: score #35, sequential #35, solver #37
+    Mantas Kondratavicius: score #36, sequential #36, solver #38
+    Tresean Gore: score #37, sequential #38, solver #32
+    Marco Tulio: score #39, sequential #37, solver #31
+    sequential violates: Tresean Gore above Vicente Luque (head-to-head 2026-08-15)
+
+2026-10-20 Welterweight: 4 fighters placed differently
+    Daniel Rodriguez: score #15, sequential #17, solver #19
+    Jeremiah Wells: score #16, sequential #18, solver #16
+    Uros Medic: score #17, sequential #16, solver #18
+    Myktybek Orolbai: score #20, sequential #19, solver #17
+    sequential violates: Ian Machado Garry above Carlos Prates (head-to-head 2025-04-26); Myktybek Orolbai above Uros Medic (head-to-head 2023-11-18)
+    solver waived or dropped: Ian Machado Garry above Carlos Prates (head-to-head 2025-04-26)
+
+2026-10-20 Women's Bantamweight: 2 fighters placed differently
+    Ailin Perez: score #2, sequential #2, solver #1
+    Joselyne Edwards: score #3, sequential #1, solver #2

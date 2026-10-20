@@ -15,13 +15,14 @@ Reason (audit finding 1): one loss entered three channels with opponent-blind co
 top contenders was punished exactly like one against mid-card opposition. Joaquin Buckley fell from 9 to 21 at welterweight
 on a 2-3, Israel Adesanya sat 27th at middleweight, Jan Blachowicz 27th at light heavyweight, Marlon Vera 54th at bantamweight.
 
-Rule changes, all opponent-aware versions of existing v1.0 rules:
+Rule changes: opponent-aware versions of existing v1.0 rules, and the placement rules solved as one order (added later on Oct 20, before the first snapshot):
 
 | Rule | v1.0 | v1.1 |
 |---|---|---|
 | Ledger cost of a loss (last 3 years) | flat 1.0 for a blowout or for any loss to a fighter outside the top 5; 0 otherwise | by the winner's rank at the time: top 5 0.25, top 10 0.50, top 15 0.75, unranked 1.00; blowouts add 0 |
 | Last-five record penalty | 2-3: 0.15, 1-4: 0.60, 0-5: 0.80 | 2-3: 0.10, 1-4: 0.30, 0-5: 0.40, plus 0.10 per last-five loss to an opponent outside the top 10, capped at 0.30 |
 | Rating cost of a non-dominant loss to a top-3 fighter or in a title fight | 15% of the normal drop | 30% of the normal drop |
+| Placement rules (head-to-head lifts, title-cycle caps) | applied one after the other, each loop on the order the previous one left | solved together as one constrained order with the same rules, windows and allowances (`src/mmalab/placement.py`); the sequential loops broke their own constraints in 10 of the cases checked on seven boards, for example Topuria below Oliveira sixteen months after knocking him out (EXP-2026-10-20-11) |
 
 Evidence: 43 event-eve boards (947 bouts, Oct 2023 to Sept 2026) rebuilt under each candidate with every placement rule applied;
 concordance of the published order with the winner was 0.606 for v1.1 against 0.608 for v1.0 and log loss 0.666 against 0.671,

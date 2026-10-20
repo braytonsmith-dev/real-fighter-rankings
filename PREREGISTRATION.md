@@ -121,6 +121,14 @@ board people find more sensible is not less accurate. If all three hold, v1.1 ma
 display and for a new registered period, with the change logged; v1.0 snapshots continue to be written through Sept 30, 2027 so the
 original test in sections 2 to 8 completes regardless. Until then v1.0 remains the board quoted as REAL's ranking.
 
+Amendment (Oct 20, 2026, later the same day, before any v1.1 snapshot was committed): v1.1 also replaces the sequential
+application of the head-to-head and title-cycle rules with one constrained order that honours the same rules
+(`config/board_v1_1.yaml`, `placement: solver`; `src/mmalab/placement.py`). The rules, their windows and allowances are
+unchanged; what changes is that the result no longer depends on the order the rules are applied in. The sequential loops
+violated their own constraints in 10 of the cases checked on seven boards (experiments/REGISTER.md, EXP-2026-10-20-11),
+leaving, for example, a fighter ranked below a man he had knocked out sixteen months earlier. v1.0 keeps the sequential
+loops as frozen. The adoption criterion above is unchanged.
+
 ## Appendix D (added Oct 20, 2026): no pick within two points of 50%
 
 From the first run after this appendix was committed, a bout whose frozen performance-adjusted Elo probability for the first-listed

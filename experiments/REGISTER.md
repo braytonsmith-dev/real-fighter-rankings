@@ -18,6 +18,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-08](#exp-2026-10-20-08) | 2026-10-20 | v1.1 retrospective reconstruction (its own snapshot directory) | informational |
 | [EXP-2026-10-20-09](#exp-2026-10-20-09) | 2026-10-20 | Age and the rating channel: older favourites lose more often than they win | rejected |
 | [EXP-2026-10-20-10](#exp-2026-10-20-10) | 2026-10-20 | Glicko-1 rating deviation for the resume rating: parameter derivation and calibration | adopted |
+| [EXP-2026-10-20-11](#exp-2026-10-20-11) | 2026-10-20 | Placement layer as one constrained order (solver) versus the sequential head-to-head and title-cycle loops | adopted |
 
 ## EXP-2026-09-30-01
 
@@ -452,3 +453,40 @@ Candidate. `{"shipped": {"rd_start": 350, "rd_min": 40, "c_per_year": 37.3, "rul
 Decision. adopted: RD is attached to every board row as a measurement-information statement (bouts fought, opponents' certainty, time idle) and drives nothing in the order. It is not a predictive shrinkage: applying g() to an Elo-type gap double-shrinks, and debutants are over-rated at 1500 (a bias, not a variance). Showing rank bands would mislead (almost every band spans 5+ places); the experience contrast is the usable signal and backs the provisional label.
 
 Notes. Worth remembering: Glicko's t = 5 rule is incompatible with a usable experience gradient in UFC data (about 2 bouts a year, d of about 412 points per bout). A grace-period inflation (idle time beyond 0.5 years at c of about 146) would give both a gradient at normal cadence and a reset after a long layoff; not implemented.
+
+## EXP-2026-10-20-11
+
+Placement layer as one constrained order (solver) versus the sequential head-to-head and title-cycle loops  
+Date 2026-10-20, decision: adopted, code at commit `13c82fa`.
+
+Question. Do the two placement rules, applied one after the other, produce an order that satisfies their own constraints, and does solving them together change the published boards?
+
+| Method | |
+|---|---|
+| instrument | src/mmalab/placement.py (priority topological sort over precedence and cap constraints collected against the score order) against resume_board.head_to_head then title_cycle, on captured build inputs |
+| window | seven event-eve boards: 2024-04-14, 2024-09-15, 2025-01-19, 2025-06-29, 2025-12-07, 2026-05-10, 2026-10-20 (77 divisions, 4,862 positions, 1,155 top-15 positions) |
+| metric | positions differing; constraints violated by each method; waived lifts; lifts the sequential rule applied that do not qualify against the score order |
+| baseline | the sequential v1.0 loops |
+| script | scripts/verify_placement.py (regenerates every table from live builds) |
+
+Candidate. `{"semantics kept": "most recent meeting within 3 years lifts the winner directly above the loser when he sits within 3 places (6 if within a year); old close wins void the pair; a negative last five forfeits; title-cycle losers capped at 4 with their recent victims held below them", "options": "head_to_head.ride_settled (all, default), title_cycle.reserved_waives_h2h (true, default)", "cycles": "broken by dropping the oldest meeting (none in real data)"}`
+
+| Result | |
+|---|---|
+| positions differing | 65 of 4,862 (33 of 1,155 top-15) across 13 of 77 divisions |
+| sequential violates its own constraints | 10 cases: 6 chain inversions, 2 missed lifts, 2 caps overriding an older head-to-head |
+| solver violations | 0 |
+| today's lightweight | sequential: Oliveira 1, Holloway 2, Topuria 3 although Topuria knocked Oliveira out on 2025-06-28; solver: Topuria 1, Oliveira 2, Holloway 3 |
+| non-qualifying lifts by the sequential rule | 6 (a lift that only qualified after an earlier lift moved the loser) |
+| settled results inverted across 4,404 pairs | sequential 11, solver 6 (all six are winners held by a cap or victim rule) |
+| determinism | shuffle tests over 40 random constraint sets and every real division |
+| tests | 12 in tests/test_placement.py |
+
+| Face validity | |
+|---|---|
+| today, v1.1 sequential vs solver | 17 positions differ, 6 in a top 15: Lightweight Topuria 3 to 1, Oliveira 1 to 2, Holloway 2 to 3; Women's Bantamweight Dumont 5 to 3, Vieira 3 to 4, Cavalcanti 4 to 5 |
+| reach of transitive chains | Marco Tulio +8 at middleweight today, Castaneda +7 in Sept 2024, inherent in treating the constraints as hard |
+
+Decision. adopted: Adopted for board v1.1 (config resume.placement: solver), amended into PREREGISTRATION.md appendix C before the first v1.1 snapshot; the sequential loops stay as v1.0's frozen rule. The solver honours the same rules without order dependence; every difference from the sequential result is a case where the sequential result broke one of its own constraints or applied a lift that did not qualify.
+
+Files: `experiments/results/EXP-2026-10-20-11/final_verify.txt`, `experiments/results/EXP-2026-10-20-11/verify_recent.txt`, `experiments/results/EXP-2026-10-20-11/verify_none.txt`, `experiments/results/EXP-2026-10-20-11/verify_all_nowaive.txt`

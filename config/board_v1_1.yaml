@@ -10,8 +10,8 @@ version: "1.1"
 label: shadow                  # shadow: published beside v1.0, never substituted for it during the registered period
 since: 2026-10-20
 adoption_rule: appendix C
-description: "The resume board: v1.0 with opponent-aware loss costs, so a losing run against champions and top contenders is charged less than one against mid-card opposition. It ranks what has been earned; it carries no age term."
-evidence: [EXP-2026-10-20-01, EXP-2026-10-20-03, EXP-2026-10-20-08]   # experiments/REGISTER.md
+description: "The resume board: v1.0 with opponent-aware loss costs, so a losing run against champions and top contenders is charged less than one against mid-card opposition, and with the head-to-head and title-cycle rules solved as one order instead of one after the other. It ranks what has been earned; it carries no age term."
+evidence: [EXP-2026-10-20-01, EXP-2026-10-20-03, EXP-2026-10-20-08, EXP-2026-10-20-11]   # experiments/REGISTER.md
 history_dir: outputs/history_v1.1
 board_dir: outputs/boards/v1.1
 overrides:
@@ -22,5 +22,6 @@ overrides:
     dominant_extra: 0.0        # a blowout adds this much on top of the tier cost
   form_penalty: {"2-3": 0.10, "1-4": 0.30, "0-5": 0.40}          # was 0.15 / 0.60 / 0.80
   form_bad_loss: {rank_above: 10, per_loss: 0.10, cap: 0.30}      # each last-five loss to an opponent outside the top 10 adds 0.10, capped
+  placement: solver          # head-to-head and title-cycle rules solved together (src/mmalab/placement.py); v1.0 applies them one after the other
 
 prob_slope: 1.36   # fitted on this version's retrospective snapshots on 2026-10-20; frozen from then on
