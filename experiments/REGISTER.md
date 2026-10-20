@@ -1,0 +1,372 @@
+# Experiment register
+
+Every test, pilot and candidate comparison run on REAL, in order. Rendered from `experiments/register.jsonl` by `python -m mmalab.experiments`; edit the JSONL (or call `mmalab.experiments.record`), not this file. The protocol and the entry template are in `experiments/README.md`.
+
+| ID | Date | Title | Decision |
+|---|---|---|---|
+| [EXP-2026-09-30-01](#exp-2026-09-30-01) | 2026-09-30 | Composite board replaced by the resume board | adopted |
+| [EXP-2026-10-01-01](#exp-2026-10-01-01) | 2026-10-01 | Predictive Elo grid search and significance (the SSAC abstract result) | adopted |
+| [EXP-2026-10-01-02](#exp-2026-10-01-02) | 2026-10-01 | Board score to probability: the frozen slope 1.36 | adopted |
+| [EXP-2026-10-05-01](#exp-2026-10-05-01) | 2026-10-05 | Shadow prediction model v1.1 (walk-forward Elo re-tune plus logistic layer) | parked |
+| [EXP-2026-10-20-01](#exp-2026-10-20-01) | 2026-10-20 | Loss-handling candidates on 43 full boards (finding 1) | adopted |
+| [EXP-2026-10-20-02](#exp-2026-10-20-02) | 2026-10-20 | Protected-loss multiplier and Kamaru Usman | informational |
+| [EXP-2026-10-20-03](#exp-2026-10-20-03) | 2026-10-20 | Panel comparison: v1.0 rules vs B+0 under two engines | informational |
+| [EXP-2026-10-20-04](#exp-2026-10-20-04) | 2026-10-20 | Walk-forward tuning of the board rules, first pass (search blind spot) | superseded |
+| [EXP-2026-10-20-05](#exp-2026-10-20-05) | 2026-10-20 | Hindsight re-grading of results (curator's idea) | parked |
+| [EXP-2026-10-20-06](#exp-2026-10-20-06) | 2026-10-20 | Walk-forward tuning, second pass: coupled coordinates, free and resume presets | running |
+| [EXP-2026-10-20-07](#exp-2026-10-20-07) | 2026-10-20 | Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks) | running |
+| [EXP-2026-10-20-08](#exp-2026-10-20-08) | 2026-10-20 | v1.1 retrospective reconstruction (its own snapshot directory) | informational |
+
+## EXP-2026-09-30-01
+
+Composite board replaced by the resume board  
+Date 2026-09-30, decision: adopted, code at commit `see CHANGELOG 1.0`.
+
+Question. Does a six-dimension percentile composite (rating 45%, form 10%, entrenchment 20%, offense 10%, activity 5%, durability 10%) rank fighters better than a resume score (rating 70% + quality ledger 30% - form penalty)?
+
+| Method | |
+|---|---|
+| instrument | retrospective reconstruction and review of the published boards |
+| window | Sept 2026 boards |
+| metric | concordance with later results; review of which dimensions carried ranking signal |
+| baseline | the composite |
+
+Candidate. Resume board (Option B): REAL rating 70%, quality ledger 30%, last-five form penalty, head-to-head and title-cycle placement rules
+
+| Result | |
+|---|---|
+| finding | four of the six composite dimensions carried no ranking signal and losses were counted three times (rating, form, durability) |
+| outcome | resume board adopted as v1.0 and frozen Oct 1, 2026 (CHANGELOG.md 0.x and 1.0) |
+
+Decision. adopted: The composite's extra dimensions added noise, not information; the resume score is interpretable and no less accurate.
+
+## EXP-2026-10-01-01
+
+Predictive Elo grid search and significance (the SSAC abstract result)  
+Date 2026-10-01, decision: adopted, code at commit `d4a9325`.
+
+Question. Which Elo specification predicts UFC bouts best out of sample, and is the performance-adjusted model better than results-only Elo?
+
+| Method | |
+|---|---|
+| instrument | src/mmalab/backtest.py grid of 520 combinations |
+| warmup | 1994-2009 |
+| tune | 2010-2019 (selection by log loss) |
+| test | 2020-2026, 3,390 bouts, 287 events |
+| baseline | results-only Elo tuned the same way (classic_tuned_params) |
+| interval | paired event-block bootstrap 5,000 draws; exact McNemar on discordant bouts |
+
+Candidate. `{"tuned_params": {"k": 130, "k_new_mult": 1.5, "n_new": 5, "split_mult": 0.8, "layoff_regress_per_year": 0.25, "mov_weight": 0.9, "mov_scale": 2.0, "win_floor": 0.5, "finish_floor": 0.0}}`
+
+| Result | |
+|---|---|
+| tuned (held out 2020-2026) | log loss 0.6631, accuracy 60.6% |
+| results-only | log loss 0.6740, accuracy 58.1% |
+| gain | 0.0109 log loss, CI 0.0057 to 0.0162; McNemar p = 0.0025 (429 vs 344 discordant bouts) |
+| market (1,445 held-out bouts with closing odds, 2020-2023) | market 0.6088 / 67.1%; model 0.669 / 60.0%; 50/50 blend 0.6292 / 66.2% |
+| calibration in the large | mean predicted first-listed 0.535 vs observed 0.572 (no corner term in v1.0) |
+
+Decision. adopted: The pre-registered headline for the SSAC27 abstract; the interpretable site specification (0.6621 / 61.2%) is reported as a second specification only.
+
+Files: `experiments/results/EXP-2026-10-01-01/backtest_report.json`
+
+## EXP-2026-10-01-02
+
+Board score to probability: the frozen slope 1.36  
+Date 2026-10-01, decision: adopted, code at commit `d4a9325`.
+
+Question. What logistic slope maps a REAL score difference to a win probability, for the pre-registered forward test?
+
+| Method | |
+|---|---|
+| instrument | src/mmalab/history.py retrospective reconstruction |
+| window | 127 reconstructed boards, Oct 2023 to Sept 2026 |
+| bouts | 942 |
+| metric | log loss, one-parameter symmetric logistic |
+| baseline | none (calibration step) |
+
+Candidate. p = 1 / (1 + exp(-1.36 x (score_a - score_b)))
+
+| Result | |
+|---|---|
+| retrospective log loss | 0.667 |
+| concordance of the published order | 61.5% (in-sample reconstruction) |
+
+Decision. adopted: Frozen in PREREGISTRATION.md section 5; scored prospectively from Oct 2, 2026.
+
+## EXP-2026-10-05-01
+
+Shadow prediction model v1.1 (walk-forward Elo re-tune plus logistic layer)  
+Date 2026-10-05, decision: parked, code at commit `d4a9325`.
+
+Question. Does re-tuning the Elo parameters walk-forward over 2011 onward, with a red-corner term and a logistic layer (age, layoff, experience, height, five rounds), beat the frozen v1.0 predictive model?
+
+| Method | |
+|---|---|
+| instrument | src/mmalab/shadow.py coordinate descent, parameters chosen on 2011..Y-1 and scored on Y |
+| window | 2016-2026 (5,308 bouts), out of sample for both models 2020-2026 (3,404 bouts, 288 events) |
+| metric | log loss, Brier, accuracy |
+| baseline | v1.0 frozen predictive model on the same bouts |
+| interval | paired event-block bootstrap |
+
+Candidate. `{"final_shadow_params": {"k": 130, "split_mult": 0.6, "layoff_regress_per_year": 0.4, "mov_weight": 0.9, "win_floor": 0.0, "finish_floor": 0.6, "corner_adv": 35, "mov_damp": 0.0}, "logistic features": ["elo_diff", "age_diff", "old_diff", "layoff_diff", "debut_diff", "exp_diff", "height_diff", "five_round", "elo_x_five"]}`
+
+| Result | |
+|---|---|
+| 2020-2026 | v1.1 Elo+logistic 0.6398 / 63.1% vs v1.0 0.6632 / 60.6%; gain 0.0234, CI 0.0167 to 0.0300 |
+| market, 3,022 bouts 2016-2023 | market 0.6118 / 66.0%; v1.1 0.6558 / 61.9%; v1.0 0.6683 / 59.7% |
+| calibration in the large | v1.1 mean 0.584 vs observed 0.572 (within 3 points) |
+
+Decision. parked: Published only as a shadow in the picks ledger; adopted under PREREGISTRATION.md appendix B after 300 graded paired picks with a log-loss gain whose interval excludes zero.
+
+Files: `experiments/results/EXP-2026-10-05-01/shadow_v11_report.json`
+
+## EXP-2026-10-20-01
+
+Loss-handling candidates on 43 full boards (finding 1)  
+Date 2026-10-20, decision: adopted, code at commit `d4a9325`.
+
+Question. Does softening and making opponent-aware the three channels that charge a loss (ledger cost, form penalty, rating protection) cost accuracy?
+
+| Method | |
+|---|---|
+| instrument | resume_board.build at every third event date, every placement rule applied (head-to-head, title cycle), published order |
+| window | Oct 2023 to Oct 17, 2026, 43 event-eve boards |
+| bouts | 947 decided bouts between two fighters on the same divisional board |
+| metric | concordance of the published order with the winner; log loss with the frozen v1.0 slope 1.36 |
+| baseline | v1.0 rules on the same bouts |
+| interval | paired event-block bootstrap (all candidates' intervals against v1.0 straddle zero) |
+
+Candidate. `{"v1.0": "frozen rules", "B+ (Bplus)": "ledger loss tiers [[5,0.25],[10,0.5],[15,0.75],[999,1.0]], dominant_extra 0.25; form buckets 2-3 0.10 / 1-4 0.30 / 0-5 0.40; bad-loss add-on 0.10 per last-five loss outside the top 10, cap 0.30", "B+0 (Bplus0)": "as B+ with dominant_extra 0.0", "v1.1": "B+0 plus engine protected_loss_mult 0.30", "R": "rating only (no ledger, no form penalty)", "B, C, F": "intermediate rule sets whose exact definitions were lost with the session context on Oct 20; results kept for the record"}`
+
+| Result | |
+|---|---|
+| v1.0 | all 0.6077 / 0.6706; top 30 0.5667; top 15 0.5349 / 0.7122 |
+| v1.1 (B+0, protection 0.30) | all 0.6056 / 0.6659; top 30 0.5632; top 15 0.5360 / 0.7056 |
+| B+ | all 0.6067 / 0.6655; top 30 0.5625; top 15 0.5511 / 0.7012 |
+| B+0 | all 0.6045 / 0.6664; top 30 0.5611; top 15 0.5298 / 0.7062 |
+| B | all 0.6077 / 0.6659; top 30 0.5583; top 15 0.5472 / 0.7031 |
+| C | all 0.6003 / 0.6705; top 30 0.5513; top 15 0.5249 / 0.7069 |
+| F | all 0.6024 / 0.6716; top 30 0.5503; top 15 0.5290 / 0.7091 |
+| R (rating only) | all 0.5876 / 0.6729; top 30 0.5589; top 15 0.5440 / 0.6949 |
+| paired intervals | every candidate's 95% interval against v1.0 straddles zero on 947 bouts; rating-only is about 2 points worse, so the ledger and form carry information |
+
+| Face validity | |
+|---|---|
+| Buckley (WW) | 21 to 15 |
+| Adesanya (MW) | 27 to 14 |
+| Blachowicz (LHW) | 27 to 13 |
+| Vera (BW) | 54 to 14 |
+| Ortega (FW) | 40 to 15 |
+| Usman (WW) | 9 to 5 (curator: 7 is closer) |
+| largest unintended moves | Jim Miller 11 to 19, Jalin Turner 15 to 23, Neil Magny 15 to 22 |
+
+Decision. adopted: v1.1 = B+0 with protection 0.30 adopted as a shadow board on face validity at equal measured accuracy (CHANGELOG 1.1). The 43-board instrument cannot separate the candidates (audit V1), which is why the 2014-2026 panel was built next.
+
+Files: `experiments/results/EXP-2026-10-20-01/eval_v10.json`, `experiments/results/EXP-2026-10-20-01/eval_v11.json`, `experiments/results/EXP-2026-10-20-01/eval_B.json`, `experiments/results/EXP-2026-10-20-01/eval_C.json`, `experiments/results/EXP-2026-10-20-01/eval_F.json`, `experiments/results/EXP-2026-10-20-01/eval_R.json`, `experiments/results/EXP-2026-10-20-01/eval_Bplus.json`, `experiments/results/EXP-2026-10-20-01/eval_Bplus0.json`, `experiments/results/EXP-2026-10-20-01/eval_v10.csv`, `experiments/results/EXP-2026-10-20-01/eval_v11.csv`, `experiments/results/EXP-2026-10-20-01/eval_Bplus.csv`, `experiments/results/EXP-2026-10-20-01/eval_Bplus0.csv`
+
+## EXP-2026-10-20-02
+
+Protected-loss multiplier and Kamaru Usman  
+Date 2026-10-20, decision: informational, code at commit `d4a9325`.
+
+Question. Does raising the rating engine's protected-loss multiplier (0.15 in v1.0) move a 1-4 former champion with a sticky rating?
+
+| Method | |
+|---|---|
+| instrument | resume_board.build for Oct 18, 2026 (today's board) under v1.1 rules with the multiplier at 0.15, 0.30, 0.40, 0.50 |
+| metric | face validity only |
+
+Candidate. `{"engine.protected_loss_mult": [0.15, 0.3, 0.4, 0.5]}`
+
+| Result | |
+|---|---|
+| Usman rating | 1812, 1807, 1803, 1799 |
+| Usman position | 5 at every setting; 7 needs about 20 more points |
+| why | only two of his four losses were protected non-dominant first losses (Edwards 1, Du Plessis); Edwards 2 was already charged at 60% as a second straight loss and the Chimaev loss was unprotected and short-notice |
+
+| Face validity | |
+|---|---|
+| Usman (WW) | 5, 5, 5, 5 |
+| Buckley | 16, 15, 15, 15 |
+| Adesanya | 14 at every setting |
+| Chiasson (WBW) | 8, 7, 7, 8 |
+
+Decision. informational: The multiplier is not the lever for this case; the rating channel's stickiness for a long-reigning champion is. Logged so the lever is not retried for this purpose.
+
+Files: `experiments/results/EXP-2026-10-20-02/anchors.log`
+
+## EXP-2026-10-20-03
+
+Panel comparison: v1.0 rules vs B+0 under two engines  
+Date 2026-10-20, decision: informational, code at commit `d4a9325`.
+
+Question. On a far larger instrument than the 43 boards, do the B+0 ledger and form rules change accuracy, and does protection 0.30 in the engine matter?
+
+| Method | |
+|---|---|
+| instrument | board_tune panel (src/mmalab/board_tune.py): one rating pass, boards every 14 days, score order without placement rules |
+| window | 2014-01-05 to 2026-10-18, 335 board dates |
+| bouts | 3,656 decided bouts between two fighters on the same divisional board at the preceding date |
+| metric | pairwise concordance (ties 0.5); log loss through a one-parameter logistic map fitted on the bouts being scored (in-sample) unless stated |
+| baseline | v1.0 rules on the same bouts |
+| interval | paired event-block bootstrap, 5,000 draws |
+| engines | v1.0 engine; engine with protected_loss_mult 0.30 (separate panel each) |
+
+Candidate. `{"B+0": "as EXP-2026-10-20-01", "engine": "protected_loss_mult 0.15 or 0.30"}`
+
+| Result | |
+|---|---|
+| v1.0 engine, v1.0 rules | 0.5737 / 0.6771; top 30 0.5504; top 15 0.5434 / 0.6883 |
+| v1.0 engine, B+0 | 0.5795 / 0.6746; top 30 0.5452; top 15 0.5266 / 0.6912 |
+| 0.30 engine, v1.0 rules | 0.5745 / 0.6770; top 15 0.5417 |
+| 0.30 engine, B+0 | 0.5806 / 0.6745; top 15 0.5296 |
+| reading | B+0 helps the whole population a little and hurts the top 15 by about 1.5 points (inside noise on 960 bouts); the engine change is neutral |
+
+Decision. informational: Both effects are small; the panel is the instrument for the walk-forward that follows. Note: these panels used the code before the dated roster files and the official-rank aliases were merged; the rebuilt panels (EXP-2026-10-20-06) supersede the absolute numbers.
+
+Files: `experiments/results/EXP-2026-10-20-03/panel_v10.log`, `experiments/results/EXP-2026-10-20-03/panel_p30.log`
+
+## EXP-2026-10-20-04
+
+Walk-forward tuning of the board rules, first pass (search blind spot)  
+Date 2026-10-20, decision: superseded, code at commit `d4a9325`.
+
+Question. Tuning the ledger, horizon, form and split one coordinate at a time on every year before the test year, how much held-out accuracy is available beyond v1.0?
+
+| Method | |
+|---|---|
+| instrument | board_tune panel (src/mmalab/board_tune.py): one rating pass, boards every 14 days, score order without placement rules |
+| window | 2014-01-05 to 2026-10-18, 335 board dates |
+| bouts | 3,656 decided bouts between two fighters on the same divisional board at the preceding date |
+| metric | pairwise concordance (ties 0.5); log loss through a one-parameter logistic map fitted on the bouts being scored (in-sample) unless stated |
+| baseline | v1.0 rules on the same bouts |
+| interval | paired event-block bootstrap, 5,000 draws |
+| protocol | test years 2017 to 2026; coordinate descent on training years (3 sweeps); slope for the test year fitted on training years only; 2,824 held-out bouts |
+
+Candidate. `{"search space": "w_rating, horizon (steps or exponential), proof value, loss mode/tiers/extra/window/decay, hindsight mode and blends, form mode/buckets/tiers/cap/bad-loss", "full-sample fit (in-sample, for reference)": {"w_rating": 0.75, "horizon": {"kind": "exp", "full_years": 1.0, "tau": 1.5, "max_years": 15.0}, "proof_value": 0.5, "loss": {"mode": "v10", "years": 15.0, "tiers": [0.0, 1.0, 1.0, 1.0], "dominant_extra": 0.0, "decay": "flat"}, "hindsight": {"mode": "none", "alpha_win": 1.0, "alpha_loss": 1.0}, "form": {"mode": "tiered", "buckets": {"2-3": 0.15, "1-4": 0.6, "0-5": 0.8}, "tiers": [0.05, 0.1, 0.1, 0.2], "cap": 0.3, "bad_loss": {"rank_above": 10, "per_loss": 0.0, "cap": 0.3}}}}`
+
+| Result | |
+|---|---|
+| held-out pooled | tuned 0.5965 / 0.6678; v1.0 0.5752 / 0.6786; B+0 0.5777 / 0.6759 |
+| tuned minus v1.0 | log loss -0.0108 CI [-0.015137996315324514, -0.006406517850399804]; concordance +0.0212 CI [0.007865219362950567, 0.034810520183890664] |
+| B+0 minus v1.0 | log loss -0.0027 CI [-0.004784980028257844, -0.0007599882136596996]; concordance +0.0025 CI [-0.008005575424660964, 0.012803762469526535] |
+| top 15 (732 bouts) | tuned 0.5512 / 0.6768; v1.0 0.5348 / 0.6939 |
+| what the data chose | rating weight 0.75; quality wins at full value for one year then exponential decay with a 1.5-year time constant; losses charged flat for 15 years; a small tiered last-five penalty (0.05 to 0.20 per loss, cap 0.30) |
+
+Decision. superseded: Real held-out gain of about 2 points of concordance, but the search had a blind spot: the loss tiers were never tried while loss mode was v1.0, and the hindsight blends were never tried while the mode was none (a mode switch alone changes nothing, so it was never accepted). Fixed by coupling those coordinates (IMPLIES in board_tune.py); rerun as EXP-2026-10-20-06. The chosen horizon (fast decay) also conflicts with the resume principle that long resumes keep their value, which the rerun tests as a separate preset.
+
+Files: `experiments/results/EXP-2026-10-20-04/wf_v10.json`, `experiments/results/EXP-2026-10-20-04/wf_v10_full.json`, `experiments/results/EXP-2026-10-20-04/wf_v10.log`
+
+## EXP-2026-10-20-05
+
+Hindsight re-grading of results (curator's idea)  
+Date 2026-10-20, decision: parked, code at commit `d4a9325`.
+
+Question. If the value of a win or the cost of a loss is graded partly by where the opponent stands now (or two years on) instead of only on fight night, does accuracy improve, and what does it do to the board?
+
+| Method | |
+|---|---|
+| instrument | board_tune panel (src/mmalab/board_tune.py): one rating pass, boards every 14 days, score order without placement rules |
+| window | 2014-01-05 to 2026-10-18, 335 board dates |
+| bouts | 3,656 decided bouts between two fighters on the same divisional board at the preceding date |
+| metric | pairwise concordance (ties 0.5); log loss through a one-parameter logistic map fitted on the bouts being scored (in-sample) unless stated |
+| baseline | v1.0 rules on the same bouts |
+| interval | paired event-block bootstrap, 5,000 draws |
+| note | in-sample grid on top of B+0, v1.0 engine panel; then full builds of today's board for face validity |
+
+Candidate. `{"modes": "now_official (opponent's current official rank), now_rating (opponent's current REAL rating position in the bout's division), post_rating (rating position two years after the bout)", "blends": "alpha_win and alpha_loss in {1, 0.75, 0.5, 0.25, 0}: weight on the fight-night grade"}`
+
+| Result | |
+|---|---|
+| best overall | now_official, alpha 0/0: 0.5855 / 0.6720 vs B+0 0.5795 / 0.6746 (log-loss diff -0.0026, CI -0.0041 to -0.0010); top 15 0.5498 vs 0.5266 |
+| now_rating 0/0 | 0.5855 / 0.6733 (diff -0.0013, CI -0.0027 to +0.0002) |
+| post_rating 0/0 | 0.5841 / 0.6739 (diff -0.0007, CI -0.0020 to +0.0006) |
+| pattern | every setting improves log loss; more hindsight is better; the win side carries most of it |
+
+| Face validity | |
+|---|---|
+| Usman (WW) | 5 at half and full hindsight by rating; 2 at full hindsight by two-year standing |
+| Buckley | 15 to 16 |
+| Adesanya | 14 to 18 to 20 |
+| Vera | 14 to 19 to 29 |
+| Perez (FLW) | 24 to 30 |
+| Turner (LW) | 23 to 28 |
+| welterweight top 4 | Prates rises to 1 |
+
+Decision. parked: Small real gain, but it does the one thing the curator ruled out: it pulls down long resumes whose opponents have since faded (Vera 14 to 29, Adesanya 14 to 20 at full hindsight by rating) and leaves Usman at 5. Kept as a measured option in the harness; it would need a form that protects aged resumes (for example hindsight for wins younger than three years only) before it could be proposed.
+
+## EXP-2026-10-20-06
+
+Walk-forward tuning, second pass: coupled coordinates, free and resume presets  
+Date 2026-10-20, decision: running, code at commit `d4a9325`.
+
+Question. With the search blind spot fixed, how much held-out accuracy is available (a) with every rule free and (b) holding the resume principles fixed (quality wins keep full value for three or more years; losses count for at most six years), under the v1.0 engine and the 0.30-protection engine?
+
+| Method | |
+|---|---|
+| instrument | board_tune panel (src/mmalab/board_tune.py): one rating pass, boards every 14 days, score order without placement rules |
+| window | 2014-01-05 to 2026-10-18, 335 board dates |
+| bouts | 3,656 decided bouts between two fighters on the same divisional board at the preceding date |
+| metric | pairwise concordance (ties 0.5); log loss through a one-parameter logistic map fitted on the bouts being scored (in-sample) unless stated |
+| baseline | v1.0 rules on the same bouts |
+| interval | paired event-block bootstrap, 5,000 draws |
+| protocol | as EXP-2026-10-20-04 on panels rebuilt after the dated roster files and official-rank aliases were merged; presets free and resume; engines v1.0 and protected_loss_mult 0.30 |
+
+Candidate. `{"driver": "scratchpad tune_driver.py calling board_tune.walk_forward(space=default_space(preset))"}`
+
+Results. running
+
+Decision. running: Registered before the result; results are filled in by update() when the run finishes.
+
+## EXP-2026-10-20-07
+
+Rating-engine sweep (K, protection, consecutive-loss rule, protection ladder, no official ranks)  
+Date 2026-10-20, decision: running, code at commit `d4a9325`.
+
+Question. Which rating-engine settings predict better on the 2014-2026 panel with the v1.1 board rules fixed, and which of them move the anchors (Usman, Buckley, Adesanya, Vera)?
+
+| Method | |
+|---|---|
+| instrument | board_tune panel (src/mmalab/board_tune.py): one rating pass, boards every 14 days, score order without placement rules |
+| window | 2014-01-05 to 2026-10-18, 335 board dates |
+| bouts | 3,656 decided bouts between two fighters on the same divisional board at the preceding date |
+| metric | pairwise concordance (ties 0.5); log loss through a one-parameter logistic map fitted on the bouts being scored (in-sample) unless stated |
+| baseline | v1.0 rules on the same bouts |
+| interval | paired event-block bootstrap, 5,000 draws |
+| protocol | one panel per engine variant (13), v1.0 and v1.1 rules scored on the identical bouts, paired bootstrap of the v1.1-rule log loss against the base engine; anchors read from the last panel date in score order |
+
+Candidate. `{"variants": {"base": {}, "p30": {"protected_loss_mult": 0.3}, "p50": {"protected_loss_mult": 0.5}, "p100": {"protected_loss_mult": 1.0}, "cons100": {"consecutive_loss_mult": 1.0}, "ladder_30_60_100": {"protection_ladder": [0.3, 0.6, 1.0]}, "ladder_15_50_100": {"protection_ladder": [0.15, 0.5, 1.0]}, "k80": {"k": 80}, "k100": {"k": 100}, "k80_p30": {"k": 80, "protected_loss_mult": 0.3}, "dom100": {"dominant_loss_mult": 1.0}, "noprot": "no protection at all", "official_off": {"use_official_ranks": false}}}`
+
+Results. running
+
+Decision. running: Registered before the result; results are filled in by update() when the run finishes.
+
+## EXP-2026-10-20-08
+
+v1.1 retrospective reconstruction (its own snapshot directory)  
+Date 2026-10-20, decision: informational, code at commit `d4a9325`.
+
+Question. Rebuilt as event-eve boards with every placement rule, what is v1.1's retrospective record on the same window as v1.0's reconstruction?
+
+| Method | |
+|---|---|
+| instrument | board_versions.backfill(36) then history.validate on outputs/history_v1.1 |
+| window | 127 event-eve snapshots Oct 2023 to Oct 16, 2026, plus today's |
+| bouts | 973 |
+| metric | concordance of the published order; log loss with the slope fitted on these snapshots (1.36 recorded in config/board_v1_1.yaml) |
+| baseline | v1.0's own reconstruction (942 bouts, a different snapshot set, so not paired) |
+
+Candidate. v1.1 as in config/board_v1_1.yaml
+
+| Result | |
+|---|---|
+| primary | 0.606 (Wilson 0.575 to 0.637), log loss 0.6636 |
+| top 30 | 0.564 on 484 bouts |
+| top 15 | 0.533 on 246 bouts |
+| title fights | 0.578 on 45 bouts |
+| v1.0 reconstruction | 0.615 / 0.6669 primary; 0.544 top 15 |
+
+Decision. informational: In-sample for both versions; the prospective record from Oct 20, 2026 is the test (PREREGISTRATION.md appendix C).
+
+Files: `experiments/results/EXP-2026-10-20-08/forward_validation_v1_1.json`

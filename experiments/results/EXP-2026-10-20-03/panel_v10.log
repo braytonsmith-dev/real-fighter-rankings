@@ -1,0 +1,6 @@
+[v10] panel built in 247s: dates 335, F 220961, I 1576615, L5 850338, E 3656
+[v10] fidelity 2026-10-18: build rows 736, panel rows 736, matched 736, max |score diff| 4.44e-16, unmatched 0
+[v10] fidelity 2024-07-21: build rows 704, panel rows 704, matched 704, max |score diff| 4.44e-16, unmatched 0
+[v10] whole panel  v1.0 rules: {"bouts": 3656, "concordance": 0.5737, "log_loss": 0.6771, "brier": 0.2421, "slope": 1.024, "top30": {"bouts": 1923, "concordance": 0.5504420176807072, "log_loss": 0.6843517584522044}, "top15": {"bouts": 956, "concordance": 0.5434100418410042, "log_loss": 0.6883430275694464}}
+[v10] whole panel  B+0 rules : {"bouts": 3656, "concordance": 0.5795, "log_loss": 0.6746, "brier": 0.2408, "slope": 1.0336, "top30": {"bouts": 1925, "concordance": 0.5451948051948052, "log_loss": 0.6852019282341423}, "top15": {"bouts": 960, "concordance": 0.5265625, "log_loss": 0.6912068292529508}}
+[v10] done in 261s

@@ -1,0 +1,19 @@
+{
+ "variant": "Bplus0",
+ "snapshots": 43,
+ "all": {
+  "bouts": 947,
+  "concordance": 0.6045,
+  "log_loss": 0.6664
+ },
+ "top30": {
+  "bouts": 475,
+  "concordance": 0.5611,
+  "log_loss": 0.6865
+ },
+ "top15": {
+  "bouts": 235,
+  "concordance": 0.5298,
+  "log_loss": 0.7062
+ }
+}

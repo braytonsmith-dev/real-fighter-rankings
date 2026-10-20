@@ -523,13 +523,36 @@ def evaluate(panel: Panel, scores: np.ndarray, mask: np.ndarray | None = None, s
 # Search space and coordinate descent
 # --------------------------------------------------------------------------------------------------
 
-def default_space() -> dict:
-    """Each entry: (getter path, list of candidate values). Paths are tuples into the params dict; a path ending in a
-    callable sets several fields at once (used for the horizon and the loss tiers, which must stay monotone)."""
-    horizons = [{"kind": "steps", "steps": {3.0: 1.0, 5.0: 0.6, 10.0: 0.3, 15.0: 0.1}}]
-    for full in (1.0, 2.0, 3.0):
-        for tau in (1.5, 2.5, 4.0, 6.0):
+# A candidate on one of these coordinates only means something together with a mode switch, so the switch is
+# applied with it (otherwise the loss tiers are never tried while the mode is "v10", the hindsight blends are never
+# tried while the mode is "none", and so on: the first walk-forward on Oct 20, 2026 had exactly that blind spot).
+IMPLIES: dict[tuple, dict[tuple, object]] = {
+    ("loss", "tiers"): {("loss", "mode"): "tiers"},
+    ("loss", "dominant_extra"): {("loss", "mode"): "tiers"},
+    ("form", "tiers"): {("form", "mode"): "tiered"},
+    ("form", "cap"): {("form", "mode"): "tiered"},
+    ("form", "buckets"): {("form", "mode"): "buckets"},
+}
+
+
+def default_space(preset: str = "free") -> dict:
+    """Each entry: (path into the params dict, list of candidate values). Coordinates whose meaning depends on a
+    mode switch are listed in IMPLIES; the hindsight rule is one coordinate (mode and both blends together).
+
+    preset "free": everything the harness can express.
+    preset "resume": the same, minus the choices that would turn the board into a pure recency ranking: a quality
+    win keeps full value for at least three years (v1.0's first horizon step) and a loss counts against the ledger
+    for at most six years. These two constraints are the resume principles the curator holds fixed; the gap between
+    the two presets is the measured accuracy price of holding them."""
+    horizons = [{"kind": "steps", "steps": {3.0: 1.0, 5.0: 0.6, 10.0: 0.3, 15.0: 0.1}},
+                {"kind": "steps", "steps": {3.0: 1.0, 6.0: 0.75, 10.0: 0.5, 15.0: 0.25}},
+                {"kind": "steps", "steps": {2.0: 1.0, 4.0: 0.6, 8.0: 0.3, 15.0: 0.1}}]
+    fulls = (1.0, 2.0, 3.0, 4.0) if preset == "free" else (3.0, 4.0)
+    for full in fulls:
+        for tau in (1.0, 1.5, 2.5, 4.0, 6.0):
             horizons.append({"kind": "exp", "full_years": full, "tau": tau, "max_years": 15.0})
+    if preset != "free":
+        horizons = [h for h in horizons if h["kind"] == "exp" or min(h["steps"]) >= 3.0]
     loss_tiers = []
     for c in itertools.product((0.0, 0.25, 0.5), (0.25, 0.5, 0.75), (0.5, 0.75, 1.0), (0.75, 1.0, 1.25, 1.5)):
         if c[0] <= c[1] <= c[2] <= c[3]:
@@ -538,18 +561,23 @@ def default_space() -> dict:
     for c in itertools.product((0.0, 0.05), (0.05, 0.1), (0.1, 0.15, 0.2), (0.15, 0.2, 0.3)):
         if c[0] <= c[1] <= c[2] <= c[3]:
             form_tiers.append(list(c))
+    hindsight = [{"mode": "none", "alpha_win": 1.0, "alpha_loss": 1.0}]
+    for mode in ("now_rating", "post_rating", "now_official"):
+        for aw in (0.25, 0.5, 0.75, 1.0):
+            for al in (0.25, 0.5, 0.75, 1.0):
+                if aw < 1.0 or al < 1.0:
+                    hindsight.append({"mode": mode, "alpha_win": aw, "alpha_loss": al})
+    loss_years = [2.0, 3.0, 4.0, 6.0, 10.0, 15.0] if preset == "free" else [2.0, 3.0, 4.0, 6.0]
     return {
-        ("w_rating",): [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+        ("w_rating",): [0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9],
         ("horizon",): horizons,
         ("proof_value",): [0.0, 0.25, 0.5, 0.75, 1.0],
         ("loss", "mode"): ["v10", "tiers"],
         ("loss", "tiers"): loss_tiers,
-        ("loss", "dominant_extra"): [0.0, 0.25, 0.5],
-        ("loss", "years"): [2.0, 3.0, 4.0, 6.0, 15.0],
+        ("loss", "dominant_extra"): [0.0, 0.25, 0.5, 1.0],
+        ("loss", "years"): loss_years,
         ("loss", "decay"): ["flat", "horizon"],
-        ("hindsight", "mode"): ["none", "now_official", "now_rating", "post_rating"],
-        ("hindsight", "alpha_win"): [0.0, 0.25, 0.5, 0.75, 1.0],
-        ("hindsight", "alpha_loss"): [0.0, 0.25, 0.5, 0.75, 1.0],
+        ("hindsight",): hindsight,
         ("form", "mode"): ["buckets", "tiered"],
         ("form", "buckets"): [{"2-3": a, "1-4": b, "0-5": c} for a in (0.0, 0.05, 0.1, 0.15, 0.2)
                               for b in (0.1, 0.2, 0.3, 0.45, 0.6) for c in (0.2, 0.4, 0.6, 0.8) if a <= b <= c],
@@ -585,21 +613,15 @@ def coordinate_descent(panel: Panel, train_mask: np.ndarray, start: dict, space:
     for sweep in range(sweeps):
         improved = False
         for path, values in space.items():
-            if path == ("form", "tiers") and best["form"]["mode"] != "tiered":
-                continue
-            if path == ("form", "cap") and best["form"]["mode"] != "tiered":
-                continue
-            if path == ("form", "buckets") and best["form"]["mode"] != "buckets":
-                continue
-            if path in (("loss", "tiers"), ("loss", "dominant_extra")) and best["loss"]["mode"] != "tiers":
-                continue
-            if path in (("hindsight", "alpha_win"), ("hindsight", "alpha_loss")) and best["hindsight"]["mode"] == "none":
-                continue
             cur = _get(best, path)
             for v in values:
-                if v == cur:
+                if v == cur and not IMPLIES.get(path):
                     continue
                 cand = _set(best, path, v)
+                for ipath, ival in IMPLIES.get(path, {}).items():
+                    cand = _set(cand, ipath, ival)
+                if cand == best:
+                    continue
                 ll = evaluate(panel, score_panel(panel, cand), train_mask)[0]["log_loss"]
                 if ll < best_ll - 1e-6:
                     best, best_ll, cur, improved = cand, ll, v, True
@@ -629,7 +651,7 @@ def event_block_bootstrap(d1: np.ndarray, d2: np.ndarray, events: np.ndarray, n:
 
 
 def walk_forward(panel: Panel, first_test_year: int = 2017, last_test_year: int | None = None, sweeps: int = 3,
-                 verbose: bool = True) -> dict:
+                 verbose: bool = True, space: dict | None = None) -> dict:
     E = panel.E
     years = E["year"].to_numpy()
     last_test_year = last_test_year or int(years.max())
@@ -642,7 +664,7 @@ def walk_forward(panel: Panel, first_test_year: int = 2017, last_test_year: int 
         train = years < yr
         test = years == yr
         t0 = time.time()
-        best, ll_train, trail = coordinate_descent(panel, train, start, sweeps=sweeps, verbose=False)
+        best, ll_train, trail = coordinate_descent(panel, train, start, space=space, sweeps=sweeps, verbose=False)
         s_best = score_panel(panel, best)
         # slope for the test year is fitted on the training years only
         r_best, d_best = evaluate(panel, s_best, test, fit_mask=train)
@@ -697,3 +719,92 @@ def stability_of_choices(tuned_by_year: dict) -> dict:
         for k, v in flat.items():
             out.setdefault(k, {}).setdefault(str(v), []).append(yr)
     return out
+
+
+# --------------------------------------------------------------------------------------------------
+# Command line: every run records itself in experiments/register.jsonl
+# --------------------------------------------------------------------------------------------------
+
+PANEL_DIR = OUT / "panels"          # cached panels (not committed; .gitignore)
+
+
+def load_or_build_panel(engine: dict, step_days: int = 14, start: str = "2014-01-05", rebuild: bool = False) -> Panel:
+    """A panel per engine variant, cached under outputs/panels/ keyed by the engine dict."""
+    import hashlib
+    import pickle
+    key = hashlib.sha256(json.dumps({"engine": engine, "step": step_days, "start": start}, sort_keys=True).encode()).hexdigest()[:12]
+    path = PANEL_DIR / f"panel_{key}.pkl"
+    if path.exists() and not rebuild:
+        with path.open("rb") as fh:
+            panel = pickle.load(fh)
+        prepare(panel)
+        return panel
+    panel = Panel(engine=engine, step_days=step_days, start=start).build()
+    prepare(panel)
+    PANEL_DIR.mkdir(parents=True, exist_ok=True)
+    with path.open("wb") as fh:
+        pickle.dump(panel, fh)
+    return panel
+
+
+def method_description(panel: Panel, protocol: str) -> dict:
+    return {"instrument": "board_tune panel (src/mmalab/board_tune.py): one rating pass, boards every "
+                          f"{panel.step_days} days, score order without placement rules",
+            "engine": json.dumps(panel.engine) if panel.engine else "v1.0 engine",
+            "window": f"{pd.Timestamp(panel.dates[0]).date()} to {pd.Timestamp(panel.dates[-1]).date()}, {len(panel.dates)} board dates",
+            "bouts": f"{len(panel.E)} decided bouts between two fighters on the same divisional board at the preceding date",
+            "metric": "pairwise concordance (ties 0.5); log loss through a one-parameter logistic map",
+            "baseline": "v1.0 rules on the same bouts", "interval": "paired event-block bootstrap, 5,000 draws", "protocol": protocol}
+
+
+def run_walk_forward(engine: dict, preset: str, first_test_year: int = 2017, sweeps: int = 3, title: str | None = None,
+                     question: str | None = None, rebuild: bool = False) -> dict:
+    from mmalab.experiments import record
+    panel = load_or_build_panel(engine, rebuild=rebuild)
+    res = walk_forward(panel, first_test_year=first_test_year, sweeps=sweeps, verbose=True, space=default_space(preset))
+    allmask = np.ones(len(panel.E), dtype=bool)
+    best, ll, trail = coordinate_descent(panel, allmask, v10_params(), sweeps=sweeps, space=default_space(preset))
+    r_full, _ = evaluate(panel, score_panel(panel, best))
+    s = res["summary"]
+    results = {
+        "held-out pooled": f"tuned {s['tuned']['concordance']:.4f} / {s['tuned']['log_loss']:.4f}; v1.0 {s['v10']['concordance']:.4f} / {s['v10']['log_loss']:.4f}; B+0 {s['bplus0']['concordance']:.4f} / {s['bplus0']['log_loss']:.4f}",
+        "tuned minus v1.0": f"log loss {s['tuned_minus_v10']['log_loss']['mean']:+.4f} CI {[round(x, 4) for x in s['tuned_minus_v10']['log_loss']['ci95']]}; concordance {s['tuned_minus_v10']['concordance']['mean']:+.4f} CI {[round(x, 4) for x in s['tuned_minus_v10']['concordance']['ci95']]}",
+        "B+0 minus v1.0": f"log loss {s['bplus0_minus_v10']['log_loss']['mean']:+.4f} CI {[round(x, 4) for x in s['bplus0_minus_v10']['log_loss']['ci95']]}",
+        "top 15": f"{s['top15']['bouts']} bouts: tuned {s['top15']['tuned']['concordance']:.4f} / {s['top15']['tuned']['log_loss']:.4f}; v1.0 {s['top15']['v10']['concordance']:.4f} / {s['top15']['v10']['log_loss']:.4f}",
+        "full-sample fit (in-sample)": f"{r_full['concordance']:.4f} / {r_full['log_loss']:.4f}; top 15 {r_full['top15']['concordance']:.4f}",
+    }
+    entry = record(None, title or f"Walk-forward tuning, preset {preset}, engine {json.dumps(engine) or 'v1.0'}",
+                   question or "How much held-out accuracy is available beyond v1.0 under this preset and engine?",
+                   method_description(panel, f"test years {first_test_year} to {int(panel.E['year'].max())}; coordinate descent on training years ({sweeps} sweeps); slope for each test year fitted on its training years"),
+                   {"preset": preset, "engine": engine, "full-sample fit": best}, results, "informational",
+                   "Recorded automatically by board_tune.run_walk_forward; the decision is taken in a later entry that cites this one.",
+                   files={"walk_forward.json": {k: v for k, v in res.items() if k != "pooled"} | {"choices": stability_of_choices(res["tuned_by_year"])},
+                          "pooled.csv": res["pooled"], "full_fit.json": {"params": best, "in_sample": r_full, "trail": trail}})
+    return entry
+
+
+def main(argv: list[str] | None = None) -> None:
+    import argparse
+    ap = argparse.ArgumentParser(description="REAL board tuning harness; every run is written to experiments/register.jsonl")
+    ap.add_argument("--walk-forward", action="store_true")
+    ap.add_argument("--preset", default="resume", choices=["free", "resume"])
+    ap.add_argument("--engine", default="{}", help='JSON overrides for the rating engine, e.g. {"protected_loss_mult": 0.3}')
+    ap.add_argument("--first-test-year", type=int, default=2017)
+    ap.add_argument("--sweeps", type=int, default=3)
+    ap.add_argument("--rebuild", action="store_true", help="rebuild the cached panel")
+    ap.add_argument("--title")
+    ap.add_argument("--question")
+    a = ap.parse_args(argv)
+    engine = json.loads(a.engine)
+    if a.walk_forward:
+        e = run_walk_forward(engine, a.preset, a.first_test_year, a.sweeps, a.title, a.question, a.rebuild)
+        print(json.dumps({"id": e["id"], "results": e["results"]}, indent=1))
+    else:
+        panel = load_or_build_panel(engine, rebuild=a.rebuild)
+        for name, p in (("v1.0", v10_params()), ("B+0", bplus0_params())):
+            r, _ = evaluate(panel, score_panel(panel, p))
+            print(f"{name}: concordance {r['concordance']:.4f} log loss {r['log_loss']:.4f} top15 {r['top15']['concordance']:.4f} ({r['top15']['bouts']})")
+
+
+if __name__ == "__main__":
+    main()

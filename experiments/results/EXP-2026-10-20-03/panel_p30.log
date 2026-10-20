@@ -1,0 +1,4 @@
+[p30] panel built in 249s: dates 335, F 220961, I 1576615, L5 850338, E 3656
+[p30] whole panel  v1.0 rules: {"bouts": 3656, "concordance": 0.5745, "log_loss": 0.677, "brier": 0.242, "slope": 1.0251, "top30": {"bouts": 1924, "concordance": 0.5501559251559252, "log_loss": 0.684362284406724}, "top15": {"bouts": 959, "concordance": 0.5417101147028154, "log_loss": 0.6879587684421936}}
+[p30] whole panel  B+0 rules : {"bouts": 3656, "concordance": 0.5806, "log_loss": 0.6745, "brier": 0.2408, "slope": 1.0331, "top30": {"bouts": 1928, "concordance": 0.5474585062240664, "log_loss": 0.6852066335062004}, "top15": {"bouts": 964, "concordance": 0.5295643153526971, "log_loss": 0.6912528902798651}}
+[p30] done in 252s

@@ -10,3 +10,6 @@ outputs/backtest_stdout.txt
 # agent worktrees and local tool state
 .claude/
 .pytest_cache/
+
+# cached tuning panels (rebuilt by src/mmalab/board_tune.py; about 1 GB each)
+outputs/panels/

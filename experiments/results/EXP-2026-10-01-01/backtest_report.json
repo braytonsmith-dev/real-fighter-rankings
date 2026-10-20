@@ -1,0 +1,280 @@
+{
+  "protocol": {
+    "warmup": "1994-2009",
+    "tune": "2010-2019",
+    "test": "2020-2026 (through last scraped event)"
+  },
+  "baseline_params": {
+    "k": 32,
+    "k_new_mult": 1.0,
+    "n_new": 5,
+    "finish_mult": 1.0,
+    "split_mult": 1.0,
+    "layoff_days": 365,
+    "layoff_regress_per_year": 0.0,
+    "mov_weight": 0.0,
+    "mov_scale": 3.0,
+    "win_floor": 0.0,
+    "finish_floor": 0.0,
+    "start": 1500.0
+  },
+  "baseline_tune": {
+    "n": 4116,
+    "log_loss": 0.6849,
+    "brier": 0.2459,
+    "accuracy": 0.5437
+  },
+  "baseline_test": {
+    "n": 3390,
+    "log_loss": 0.6838,
+    "brier": 0.2454,
+    "accuracy": 0.5649
+  },
+  "classic_tuned_params": {
+    "k": 60.0,
+    "k_new_mult": 1.5,
+    "n_new": 5,
+    "finish_mult": 1.0,
+    "split_mult": 0.8,
+    "layoff_days": 365,
+    "layoff_regress_per_year": 0.25,
+    "mov_weight": 0.0,
+    "mov_scale": 3.0,
+    "win_floor": 0.0,
+    "finish_floor": 0.0,
+    "start": 1500.0
+  },
+  "classic_tuned_tune": {
+    "n": 4116,
+    "log_loss": 0.6801,
+    "brier": 0.2436,
+    "accuracy": 0.5547
+  },
+  "classic_tuned_test": {
+    "n": 3390,
+    "log_loss": 0.674,
+    "brier": 0.2406,
+    "accuracy": 0.5805
+  },
+  "tuned_params": {
+    "k": 130.0,
+    "k_new_mult": 1.5,
+    "n_new": 5,
+    "finish_mult": 1.0,
+    "split_mult": 0.8,
+    "layoff_days": 365,
+    "layoff_regress_per_year": 0.25,
+    "mov_weight": 0.9,
+    "mov_scale": 2.0,
+    "win_floor": 0.5,
+    "finish_floor": 0.0,
+    "start": 1500.0
+  },
+  "tuned_tune": {
+    "n": 4116,
+    "log_loss": 0.6639,
+    "brier": 0.2358,
+    "accuracy": 0.5865
+  },
+  "tuned_test": {
+    "n": 3390,
+    "log_loss": 0.6631,
+    "brier": 0.2352,
+    "accuracy": 0.6056
+  },
+  "ranking_model_params": {
+    "k": 100,
+    "k_new_mult": 2.0,
+    "n_new": 5,
+    "finish_mult": 1.0,
+    "split_mult": 0.8,
+    "layoff_days": 365,
+    "layoff_regress_per_year": 0.25,
+    "mov_weight": 0.75,
+    "mov_scale": 2.0,
+    "win_floor": 0.5,
+    "finish_floor": 0.75,
+    "start": 1500.0
+  },
+  "ranking_model_tune": {
+    "n": 4116,
+    "log_loss": 0.6675,
+    "brier": 0.2375,
+    "accuracy": 0.585
+  },
+  "ranking_model_test": {
+    "n": 3390,
+    "log_loss": 0.6621,
+    "brier": 0.2347,
+    "accuracy": 0.6124
+  },
+  "ranking_model_note": "Site specification with interpretable floors; it is a second specification scored on the test window and is not the pre-registered result. The paper reports tuned_test.",
+  "significance_classic_vs_tuned": {
+    "n": 3390,
+    "events": 287,
+    "log_loss_a": 0.674,
+    "log_loss_b": 0.6631,
+    "delta_log_loss": 0.0109,
+    "ci95_bout_bootstrap": [
+      0.0055,
+      0.0165
+    ],
+    "ci95_event_block_bootstrap": [
+      0.0057,
+      0.0162
+    ],
+    "brier_a": 0.2406,
+    "brier_b": 0.2352,
+    "accuracy_a": 0.5805,
+    "accuracy_b": 0.6056,
+    "discordant_only_a_correct": 344,
+    "discordant_only_b_correct": 429,
+    "mcnemar_exact_p": 0.002495153738277208,
+    "bootstrap_reps": 5000
+  },
+  "market_comparison_2014_2023": {
+    "matched_bouts": 3499,
+    "date_range": [
+      "2014-11-07",
+      "2023-12-16"
+    ],
+    "elo": {
+      "n": 3499,
+      "log_loss": 0.6683,
+      "brier": 0.2376,
+      "accuracy": 0.5962
+    },
+    "market_devigged": {
+      "n": 3499,
+      "log_loss": 0.6159,
+      "brier": 0.2139,
+      "accuracy": 0.6519
+    },
+    "blend_50_50": {
+      "n": 3499,
+      "log_loss": 0.6319,
+      "brier": 0.2205,
+      "accuracy": 0.6488
+    },
+    "coin_flip_log_loss": 0.6931
+  },
+  "market_comparison_heldout_2020_2023": {
+    "matched_bouts": 1445,
+    "date_range": [
+      "2020-01-18",
+      "2023-12-16"
+    ],
+    "classic_tuned": {
+      "n": 1445,
+      "log_loss": 0.675,
+      "brier": 0.241,
+      "accuracy": 0.5779
+    },
+    "performance_adjusted": {
+      "n": 1445,
+      "log_loss": 0.669,
+      "brier": 0.2378,
+      "accuracy": 0.6
+    },
+    "market_devigged": {
+      "n": 1445,
+      "log_loss": 0.6088,
+      "brier": 0.2104,
+      "accuracy": 0.6706
+    },
+    "blend_50_50": {
+      "n": 1445,
+      "log_loss": 0.6292,
+      "brier": 0.2191,
+      "accuracy": 0.6623
+    }
+  },
+  "calibration_in_the_large_test": {
+    "n": 3390,
+    "mean_predicted_first_listed": 0.5351,
+    "observed_first_listed_win_rate": 0.572,
+    "note": "fighter_a is the first-listed (red corner) fighter in UFCStats; the model carries no corner term"
+  },
+  "grid": {
+    "combinations": 520,
+    "selection_metric": "log loss on 2010-2019",
+    "full_results": "outputs/elo_grid_search.csv"
+  },
+  "grid_top5": [
+    {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.25,
+      "finish_mult": 1.0,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.5,
+      "finish_floor": 0.0,
+      "n": 4116,
+      "log_loss": 0.6639,
+      "brier": 0.2358,
+      "accuracy": 0.5865
+    },
+    {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.25,
+      "finish_mult": 1.0,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.0,
+      "n": 4116,
+      "log_loss": 0.664,
+      "brier": 0.2358,
+      "accuracy": 0.5867
+    },
+    {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.0,
+      "finish_mult": 1.0,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.5,
+      "finish_floor": 0.0,
+      "n": 4116,
+      "log_loss": 0.6643,
+      "brier": 0.236,
+      "accuracy": 0.5841
+    },
+    {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.25,
+      "finish_mult": 1.0,
+      "mov_weight": 0.75,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.0,
+      "n": 4116,
+      "log_loss": 0.6645,
+      "brier": 0.2361,
+      "accuracy": 0.5897
+    },
+    {
+      "k": 130,
+      "k_new_mult": 1.5,
+      "split_mult": 0.8,
+      "layoff_regress_per_year": 0.0,
+      "finish_mult": 1.0,
+      "mov_weight": 0.9,
+      "mov_scale": 2.0,
+      "win_floor": 0.0,
+      "finish_floor": 0.0,
+      "n": 4116,
+      "log_loss": 0.6647,
+      "brier": 0.2362,
+      "accuracy": 0.5867
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "variant": "R",
+ "snapshots": 43,
+ "all": {
+  "bouts": 947,
+  "concordance": 0.5876,
+  "log_loss": 0.6729
+ },
+ "top30": {
+  "bouts": 475,
+  "concordance": 0.5589,
+  "log_loss": 0.6822
+ },
+ "top15": {
+  "bouts": 216,
+  "concordance": 0.544,
+  "log_loss": 0.6949
+ }
+}

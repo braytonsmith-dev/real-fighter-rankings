@@ -1,0 +1,948 @@
+snapshot,date,event,pa,pb,conc,ll,top15,top30
+2023-10-21,2023-10-21,UFC 294: Makhachev vs. Volkanovski 2,15,47,1.0,0.2604332089760548,False,False
+2023-10-21,2023-10-21,UFC 294: Makhachev vs. Volkanovski 2,95,23,0.0,1.6846048245961724,False,False
+2023-10-21,2023-10-21,UFC 294: Makhachev vs. Volkanovski 2,17,6,1.0,0.43046067269166377,False,True
+2023-10-21,2023-10-21,UFC 294: Makhachev vs. Volkanovski 2,17,52,1.0,0.42806569283920776,False,False
+2023-10-21,2023-11-04,UFC Fight Night: Almeida vs. Lewis,18,21,1.0,0.6255069063458009,False,True
+2023-10-21,2023-11-04,UFC Fight Night: Almeida vs. Lewis,20,41,0.0,0.8355914974566434,False,False
+2023-10-21,2023-11-04,UFC Fight Night: Almeida vs. Lewis,16,41,1.0,0.294495089746715,False,False
+2023-10-21,2023-11-04,UFC Fight Night: Almeida vs. Lewis,11,29,1.0,0.5044455636555794,False,True
+2023-10-21,2023-11-04,UFC Fight Night: Almeida vs. Lewis,27,18,0.0,0.8807287631089542,False,True
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,28,24,0.0,0.7665221309814202,False,True
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,54,66,0.0,0.76591756274343,False,False
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,41,34,0.0,0.793352694425669,False,False
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,14,19,1.0,0.6252448092820755,False,True
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,4,10,1.0,0.5964436561944593,True,True
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,50,15,1.0,0.38792083197839516,False,False
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,14,12,1.0,0.6813634382327239,True,True
+2023-10-21,2023-11-11,UFC 295: Prochazka vs. Pereira,1,0,1.0,0.7182755958750213,True,True
+2023-11-18,2023-11-18,UFC Fight Night: Allen vs. Craig,31,61,1.0,0.3769575618654712,False,False
+2023-11-18,2023-11-18,UFC Fight Night: Allen vs. Craig,10,19,0.0,0.9189841167122659,False,True
+2023-11-18,2023-11-18,UFC Fight Night: Allen vs. Craig,27,21,1.0,0.39385878738754326,False,True
+2023-11-18,2023-11-18,UFC Fight Night: Allen vs. Craig,19,35,1.0,0.5484441546421113,False,False
+2023-11-18,2023-11-18,UFC Fight Night: Allen vs. Craig,52,55,0.0,0.7444866379812433,False,False
+2023-11-18,2023-12-02,UFC Fight Night: Dariush vs. Tsarukyan,50,70,0.0,1.3237909043735712,False,False
+2023-11-18,2023-12-02,UFC Fight Night: Dariush vs. Tsarukyan,20,9,0.0,0.8548828795423894,False,True
+2023-11-18,2023-12-02,UFC Fight Night: Dariush vs. Tsarukyan,71,56,1.0,0.5874569564657928,False,False
+2023-11-18,2023-12-02,UFC Fight Night: Dariush vs. Tsarukyan,3,6,0.0,1.3075357945997703,True,True
+2023-11-18,2023-12-02,UFC Fight Night: Dariush vs. Tsarukyan,28,21,0.0,0.8496186795139171,False,True
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,23,16,1.0,0.6333705459164544,False,True
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,12,45,1.0,0.3146739427945248,False,False
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,55,25,1.0,0.4796878577583259,False,False
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,7,27,1.0,0.33930263765844687,False,True
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,7,19,0.0,1.0676129558307434,False,True
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,29,55,1.0,0.4853113847094965,False,False
+2023-11-18,2023-12-09,UFC Fight Night: Song vs. Gutierrez,9,15,1.0,0.5549539511513928,True,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,4,7,1.0,0.6232434984055021,True,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,9,11,1.0,0.5645529193525656,True,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,0,3,1.0,0.4232651973531951,True,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,18,22,1.0,0.659920989840529,False,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,10,21,1.0,0.4558575283110352,False,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,4,10,1.0,0.44354905195863126,True,True
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,68,46,0.0,0.9068549788597845,False,False
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,37,10,1.0,0.3896202809030493,False,False
+2023-12-16,2023-12-16,UFC 296: Edwards vs. Covington,9,17,0.0,1.2601582988471478,False,True
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,24,31,1.0,0.6085647615352567,False,False
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,28,26,0.0,0.7240575133243928,False,True
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,69,60,1.0,0.5619224312833874,False,False
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,27,15,1.0,0.5081983820818321,False,True
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,11,21,0.0,0.8425599368306906,False,True
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,52,36,1.0,0.49126098476936764,False,False
+2023-12-16,2024-01-13,UFC Fight Night: Ankalaev vs. Walker 2,4,7,1.0,0.470944647185868,True,True
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,0,2,0.0,0.627424821349592,True,True
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,2,6,0.0,0.8794054423900698,True,True
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,31,30,1.0,0.6768257320734692,False,False
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,53,51,1.0,0.6659570738992777,False,False
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,35,19,0.0,0.8613154397351963,False,False
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,50,43,1.0,0.5177220784029625,False,False
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,17,34,1.0,0.511131666165985,False,False
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,23,30,1.0,0.5708415750053236,False,True
+2023-12-16,2024-01-20,UFC 297: Strickland vs. Du Plessis,1,11,1.0,0.35671665239622397,True,True
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,48,40,1.0,0.5769529484747192,False,False
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,53,62,1.0,0.6439559426754243,False,False
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,16,22,1.0,0.5984116196181057,False,True
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,8,15,0.0,0.874487018898395,True,True
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,11,6,1.0,0.5238788693671282,True,True
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,26,42,1.0,0.5769466098426396,False,False
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,17,48,0.0,1.2985977556579875,False,False
+2024-02-03,2024-02-03,UFC Fight Night: Dolidze vs. Imavov,32,45,1.0,0.5742317589665569,False,False
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,30,25,0.0,0.7043699478625163,False,True
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,31,56,1.0,0.47490559751302935,False,False
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,30,10,0.0,0.9692809771285236,False,True
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,32,23,0.0,0.7738436514507276,False,False
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,32,24,1.0,0.5468540951748652,False,False
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,18,30,1.0,0.5060048313872955,False,True
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,37,34,1.0,0.5762558865845504,False,False
+2024-02-03,2024-02-10,UFC Fight Night: Hermansson vs. Pyfer,27,25,1.0,0.6507292101927208,False,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,14,18,1.0,0.6348114910620918,False,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,5,9,1.0,0.5014992010776808,True,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,17,9,1.0,0.5577381324054719,False,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,6,3,0.0,0.7118759765453971,True,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,13,17,0.0,0.7197372410499888,False,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,0,2,0.0,1.5205660005352037,True,True
+2024-02-03,2024-02-17,UFC 298: Volkanovski vs. Topuria,12,18,1.0,0.6460788625485866,False,True
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,51,81,0.0,1.0571098668523435,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,26,51,1.0,0.2643504956775908,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,58,15,1.0,0.353189311796802,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,17,22,1.0,0.5981624779447605,False,True
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,25,33,1.0,0.5402071504088671,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,4,7,0.0,1.2189780408097375,True,True
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,31,19,1.0,0.551519052985668,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,29,45,0.0,0.8444264223466011,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,23,44,1.0,0.4589768149812573,False,False
+2024-02-24,2024-02-24,UFC Fight Night: Moreno vs. Royval 2,31,44,1.0,0.5964551983349183,False,False
+2024-02-24,2024-03-02,UFC Fight Night: Rozenstruik vs. Gaziev,25,13,1.0,0.483866146152467,False,True
+2024-02-24,2024-03-02,UFC Fight Night: Rozenstruik vs. Gaziev,51,68,1.0,0.2877276282666582,False,False
+2024-02-24,2024-03-02,UFC Fight Night: Rozenstruik vs. Gaziev,29,47,1.0,0.44678101655692226,False,False
+2024-02-24,2024-03-02,UFC Fight Night: Rozenstruik vs. Gaziev,9,10,1.0,0.6608990753947594,True,True
+2024-02-24,2024-03-02,UFC Fight Night: Rozenstruik vs. Gaziev,47,22,0.0,0.9469151291636264,False,False
+2024-02-24,2024-03-02,UFC Fight Night: Rozenstruik vs. Gaziev,14,20,1.0,0.48555464240426643,False,True
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,5,4,1.0,0.6372747918713009,True,True
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,13,19,1.0,0.5191223184690155,False,True
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,34,14,1.0,0.43678199360742004,False,False
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,8,14,0.0,0.8597716979431649,True,True
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,36,23,1.0,0.46453158762473834,False,False
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,0,4,1.0,0.797554484708213,True,True
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,19,7,0.0,1.0116735175672107,False,True
+2024-02-24,2024-03-09,UFC 299: O'Malley vs. Vera 2,11,21,0.0,0.8149886801572022,False,True
+2024-03-16,2024-03-16,UFC Fight Night: Tuivasa vs. Tybura,30,22,0.0,0.8525219283821275,False,True
+2024-03-16,2024-03-16,UFC Fight Night: Tuivasa vs. Tybura,23,44,1.0,0.44586023327556995,False,False
+2024-03-16,2024-03-16,UFC Fight Night: Tuivasa vs. Tybura,50,38,1.0,0.6157361636872425,False,False
+2024-03-16,2024-03-16,UFC Fight Night: Tuivasa vs. Tybura,24,25,1.0,0.677095611342308,False,True
+2024-03-16,2024-03-16,UFC Fight Night: Tuivasa vs. Tybura,9,3,1.0,0.5931486585930542,True,True
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,25,28,1.0,0.6422185836407689,False,True
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,12,14,0.0,0.7101114148734785,True,True
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,58,89,1.0,0.41070845599452666,False,False
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,58,68,0.0,0.831898066212967,False,False
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,11,21,1.0,0.5405320163228959,False,True
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,52,48,0.0,0.7462243470730583,False,False
+2024-03-16,2024-03-23,UFC Fight Night: Ribas vs. Namajunas,94,69,1.0,0.4703870244052233,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,36,40,1.0,0.6606659794869866,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,28,42,1.0,0.4581344722094665,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,23,57,0.0,1.1092957854922416,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,6,10,1.0,0.5785957362716193,True,True
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,21,33,0.0,0.9231305660524889,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,6,37,0.0,1.2431521433864203,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,27,37,1.0,0.4890960272169733,False,False
+2024-03-16,2024-03-30,UFC Fight Night: Blanchfield vs. Fiorot,1,2,0.0,0.7784069919631446,True,True
+2024-04-06,2024-04-06,UFC Fight Night: Allen vs. Curtis 2,14,13,1.0,0.6826875420354508,True,True
+2024-04-06,2024-04-06,UFC Fight Night: Allen vs. Curtis 2,26,16,1.0,0.6089768505549497,False,True
+2024-04-06,2024-04-06,UFC Fight Night: Allen vs. Curtis 2,5,20,1.0,0.4371011605929693,False,True
+2024-04-06,2024-04-06,UFC Fight Night: Allen vs. Curtis 2,38,22,1.0,0.5327158304391467,False,False
+2024-04-06,2024-04-06,UFC Fight Night: Allen vs. Curtis 2,37,92,1.0,0.3601780578275798,False,False
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,1,3,0.0,1.8895351713838995,True,True
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,18,51,1.0,0.2971338812938682,False,False
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,15,10,1.0,0.5957219158757632,True,True
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,15,22,0.0,0.7644518412431038,False,True
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,3,6,1.0,0.5858676473642765,True,True
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,0,2,1.0,0.43194847618194976,True,True
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,0,2,1.0,0.44481130785707745,True,True
+2024-04-06,2024-04-13,UFC 300: Pereira vs. Hill,25,13,0.0,0.9145084778259572,False,True
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,82,83,0.0,0.6940964726772011,False,False
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,27,20,0.0,0.7887508057926731,False,True
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,15,8,1.0,0.4458349152757082,True,True
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,32,33,0.0,0.6943412353575908,False,False
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,59,55,1.0,0.5869424997512412,False,False
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,20,36,0.0,0.8763885392015182,False,False
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,8,11,0.0,0.7790575877165021,True,True
+2024-04-06,2024-04-27,UFC Fight Night: Nicolau vs. Perez,17,22,0.0,0.8263931350949709,False,True
+2024-05-04,2024-05-04,UFC 301: Pantoja vs. Erceg,26,12,1.0,0.5472768780486221,False,True
+2024-05-04,2024-05-04,UFC 301: Pantoja vs. Erceg,53,20,1.0,0.4124768297415645,False,False
+2024-05-04,2024-05-04,UFC 301: Pantoja vs. Erceg,0,8,1.0,0.31452903363449364,True,True
+2024-05-04,2024-05-04,UFC 301: Pantoja vs. Erceg,16,12,0.0,0.799956852084831,False,True
+2024-05-04,2024-05-04,UFC 301: Pantoja vs. Erceg,20,15,1.0,0.655178638294597,False,True
+2024-05-04,2024-05-04,UFC 301: Pantoja vs. Erceg,26,30,1.0,0.642916501789729,False,True
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,46,56,1.0,0.6222796410802774,False,False
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,45,31,0.0,1.0267429709206843,False,False
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,38,14,0.0,1.101583442900444,False,False
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,21,14,0.0,0.7738907773343225,False,True
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,17,28,0.0,0.8025622160684381,False,True
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,58,39,1.0,0.5825676404980513,False,False
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,13,11,1.0,0.6764791166891334,True,True
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,24,25,0.0,0.7643459572624369,False,True
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,16,13,0.0,0.7328016810050297,False,True
+2024-05-04,2024-05-11,UFC Fight Night: Lewis vs. Nascimento,34,33,1.0,0.6906728748890777,False,False
+2024-05-04,2024-05-18,UFC Fight Night: Barboza vs. Murphy,32,31,0.0,0.7223658125957892,False,False
+2024-05-04,2024-05-18,UFC Fight Night: Barboza vs. Murphy,10,11,0.0,0.7122979216462321,True,True
+2024-05-04,2024-05-18,UFC Fight Night: Barboza vs. Murphy,18,19,0.0,0.6937652618544777,False,True
+2024-05-04,2024-05-18,UFC Fight Night: Barboza vs. Murphy,36,22,0.0,0.7424495640085004,False,False
+2024-05-04,2024-05-18,UFC Fight Night: Barboza vs. Murphy,71,57,1.0,0.6336949997975436,False,False
+2024-06-01,2024-06-01,UFC 302: Makhachev vs. Poirier,21,27,1.0,0.5764376081612129,False,True
+2024-06-01,2024-06-01,UFC 302: Makhachev vs. Poirier,74,37,0.0,1.3375530708170185,False,False
+2024-06-01,2024-06-01,UFC 302: Makhachev vs. Poirier,35,52,0.0,0.8962477985814598,False,False
+2024-06-01,2024-06-01,UFC 302: Makhachev vs. Poirier,12,40,1.0,0.3911845488633672,False,False
+2024-06-01,2024-06-01,UFC 302: Makhachev vs. Poirier,22,27,0.0,0.7460653337085048,False,True
+2024-06-01,2024-06-01,UFC 302: Makhachev vs. Poirier,22,25,1.0,0.6385637984419881,False,True
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,4,9,0.0,0.9399023716078987,True,True
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,53,33,1.0,0.5470780497338539,False,False
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,49,39,1.0,0.5669672592346667,False,False
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,63,37,1.0,0.5237988402857009,False,False
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,15,19,0.0,0.906017454265319,False,True
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,24,29,0.0,0.7143598340026729,False,True
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,27,35,0.0,0.8542092774780619,False,False
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,31,60,1.0,0.31148383004302355,False,False
+2024-06-01,2024-06-08,UFC Fight Night: Cannonier vs. Imavov,36,26,1.0,0.6002174687592724,False,False
+2024-06-01,2024-06-15,UFC Fight Night: Perez vs. Taira,40,58,0.0,0.8168119479063074,False,False
+2024-06-01,2024-06-15,UFC Fight Night: Perez vs. Taira,35,27,1.0,0.590113988888237,False,False
+2024-06-01,2024-06-15,UFC Fight Night: Perez vs. Taira,7,4,1.0,0.646062770077822,True,True
+2024-06-01,2024-06-15,UFC Fight Night: Perez vs. Taira,62,59,1.0,0.6746190709378198,False,False
+2024-06-01,2024-06-15,UFC Fight Night: Perez vs. Taira,41,75,0.0,1.0865044309957244,False,False
+2024-06-01,2024-06-15,UFC Fight Night: Perez vs. Taira,39,48,1.0,0.6418415753146034,False,False
+2024-06-22,2024-06-22,UFC Fight Night: Whittaker vs. Aliskerov,27,40,1.0,0.576123827793847,False,False
+2024-06-22,2024-06-22,UFC Fight Night: Whittaker vs. Aliskerov,40,66,0.0,0.9178634988864254,False,False
+2024-06-22,2024-06-22,UFC Fight Night: Whittaker vs. Aliskerov,9,17,0.0,0.8270245077013512,False,True
+2024-06-22,2024-06-22,UFC Fight Night: Whittaker vs. Aliskerov,4,3,1.0,0.5938296078972225,True,True
+2024-06-22,2024-06-22,UFC Fight Night: Whittaker vs. Aliskerov,14,30,1.0,0.5354520300214933,False,True
+2024-06-22,2024-06-22,UFC Fight Night: Whittaker vs. Aliskerov,3,18,1.0,0.3196206870036741,False,True
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,20,74,0.0,1.2956771934294624,False,False
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,37,14,1.0,0.33052615766081567,False,False
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,56,23,1.0,0.4274190235359276,False,False
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,33,19,1.0,0.485074249346039,False,False
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,11,3,1.0,0.451978031628185,True,True
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,24,28,0.0,0.734710606882987,False,True
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,0,3,1.0,0.5673138608875923,True,True
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,19,36,1.0,0.47348658183490566,False,False
+2024-06-22,2024-06-29,UFC 303: Pereira vs. Prochazka 2,6,33,1.0,0.3595215642710009,False,False
+2024-06-22,2024-07-13,UFC Fight Night: Namajunas vs. Cortez,2,9,1.0,0.4321739436006426,True,True
+2024-06-22,2024-07-13,UFC Fight Night: Namajunas vs. Cortez,13,43,1.0,0.45030785064850004,False,False
+2024-06-22,2024-07-13,UFC Fight Night: Namajunas vs. Cortez,12,42,0.0,1.492407172990301,False,False
+2024-06-22,2024-07-13,UFC Fight Night: Namajunas vs. Cortez,54,33,1.0,0.37207452877820807,False,False
+2024-06-22,2024-07-13,UFC Fight Night: Namajunas vs. Cortez,45,49,1.0,0.6500762766720023,False,False
+2024-06-22,2024-07-13,UFC Fight Night: Namajunas vs. Cortez,53,58,0.0,0.7969591443786864,False,False
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,81,89,0.0,0.951910266237042,False,False
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,3,5,0.0,0.7531664661583005,True,True
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,24,23,1.0,0.6839512848335582,False,True
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,16,23,0.0,0.7797177802761867,False,True
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,42,55,0.0,0.8115676138836395,False,False
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,11,18,1.0,0.5575846661600625,False,True
+2024-07-20,2024-07-20,UFC Fight Night: Lemos vs. Jandiroba,53,36,0.0,0.895493133429953,False,False
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,39,33,0.0,0.9437018676793756,False,False
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,33,46,1.0,0.5782552244690751,False,False
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,50,54,1.0,0.6147598038885612,False,False
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,11,8,1.0,0.5432945708088309,True,True
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,20,48,1.0,0.4587052789870039,False,False
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,5,8,1.0,0.5929295747380974,True,True
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,11,34,1.0,0.34290191961727023,False,False
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,4,7,1.0,0.47173607954428426,True,True
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,0,2,1.0,0.8664979634209911,True,True
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,0,3,0.0,0.8095588603087862,True,True
+2024-07-20,2024-07-27,UFC 304: Edwards vs. Muhammad 2,23,19,1.0,0.6125867308173103,False,True
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,53,48,1.0,0.6484109001418499,False,False
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,4,9,0.0,0.9890451895643331,True,True
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,17,26,1.0,0.5829706177869982,False,True
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,18,52,1.0,0.2824474765969253,False,False
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,7,2,1.0,0.5054086937549778,True,True
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,10,8,0.0,0.7506162629155825,True,True
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,14,31,1.0,0.5238414848731373,False,False
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,43,65,1.0,0.35355498506424254,False,False
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,15,35,0.0,1.1024937328052662,False,False
+2024-07-20,2024-08-03,UFC Fight Night: Sandhagen vs. Nurmagomedov,15,12,0.0,0.7119679736613197,True,True
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,73,51,0.0,0.8693103137953894,False,False
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,12,10,0.0,0.7451199310289671,True,True
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,5,6,0.0,0.8725465965381489,True,True
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,11,21,1.0,0.5260457610899901,False,True
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,45,54,1.0,0.6103326310426003,False,False
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,13,16,1.0,0.6162873541008795,False,True
+2024-08-10,2024-08-10,UFC Fight Night: Tybura vs. Spivac 2,39,16,1.0,0.44591500398894385,False,False
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,5,8,0.0,0.9768687452488386,True,True
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,50,75,0.0,0.888609152503211,False,False
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,0,2,1.0,0.8618211614376885,True,True
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,15,9,0.0,0.8599067579683427,True,True
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,6,9,1.0,0.6301313081001446,True,True
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,48,78,1.0,0.4267927618641684,False,False
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,41,77,1.0,0.4738867537756126,False,False
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,20,8,1.0,0.5016512338706874,False,True
+2024-08-10,2024-08-17,UFC 305: Du Plessis vs. Adesanya,25,23,1.0,0.6354267152524089,False,True
+2024-08-10,2024-08-24,UFC Fight Night: Cannonier vs. Borralho,6,9,0.0,0.8557534384872296,True,True
+2024-08-10,2024-08-24,UFC Fight Night: Cannonier vs. Borralho,11,14,0.0,0.7721925702727797,True,True
+2024-08-10,2024-08-24,UFC Fight Night: Cannonier vs. Borralho,12,13,0.0,0.7010569357176764,True,True
+2024-08-10,2024-08-24,UFC Fight Night: Cannonier vs. Borralho,88,60,0.0,0.9489732043565523,False,False
+2024-09-07,2024-09-07,UFC Fight Night: Burns vs. Brady,18,49,1.0,0.4170531502832978,False,False
+2024-09-07,2024-09-07,UFC Fight Night: Burns vs. Brady,21,14,1.0,0.6190532265668488,False,True
+2024-09-07,2024-09-07,UFC Fight Night: Burns vs. Brady,65,45,1.0,0.5804039503535418,False,False
+2024-09-07,2024-09-07,UFC Fight Night: Burns vs. Brady,17,9,1.0,0.5437416894408895,False,True
+2024-09-07,2024-09-07,UFC Fight Night: Burns vs. Brady,16,33,1.0,0.48699194534938056,False,False
+2024-09-07,2024-09-07,UFC Fight Night: Burns vs. Brady,32,41,1.0,0.5329459557665931,False,False
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,3,13,0.0,1.099327461164568,True,True
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,3,4,0.0,0.8985541461795742,True,True
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,30,34,0.0,0.7279887123956447,False,False
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,0,3,0.0,0.6447043237253746,True,True
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,13,22,0.0,0.8704514416090345,False,True
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,29,61,1.0,0.43402838849832653,False,False
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,0,0,0.5,0.46881559329711175,True,True
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,13,47,1.0,0.221607500303236,False,False
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,20,24,0.0,0.8126852812667446,False,True
+2024-09-07,2024-09-14,UFC 306: Riyadh Season Noche UFC,25,24,1.0,0.6898667214831523,False,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,21,9,0.0,0.9669078297247207,False,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,16,33,1.0,0.41896770406978967,False,False
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,22,24,0.0,0.7504761389509276,False,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,33,39,1.0,0.5780455686399164,False,False
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,5,3,0.0,0.7159915603944405,True,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,17,15,0.0,0.7339110252862204,False,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,7,9,1.0,0.5871115265178739,True,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,10,13,0.0,0.7603126739002244,True,True
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,39,43,1.0,0.6542677858901271,False,False
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,20,73,1.0,0.32670714439542553,False,False
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,29,42,0.0,0.8707342050885737,False,False
+2024-09-07,2024-09-28,UFC Fight Night: Moicano vs. Saint Denis,33,47,1.0,0.5657019053862189,False,False
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,5,12,0.0,1.0880669137591805,True,True
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,24,28,1.0,0.6374264988055083,False,True
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,10,15,0.0,0.8202090896639487,True,True
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,0,9,1.0,0.27088859245122676,True,True
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,9,5,1.0,0.6920710231033664,True,True
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,5,12,0.0,0.9401411061707223,True,True
+2024-10-05,2024-10-05,UFC 307: Pereira vs. Rountree Jr.,32,61,1.0,0.3128544241634477,False,False
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,26,30,1.0,0.6593772527145275,False,True
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,35,56,1.0,0.4665090522766108,False,False
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,33,42,0.0,0.7811157950986888,False,False
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,46,28,1.0,0.4579559641568993,False,False
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,9,35,1.0,0.35728756226579533,False,False
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,1,4,1.0,0.7956332534422583,True,True
+2024-10-05,2024-10-12,UFC Fight Night: Royval vs. Taira,48,50,1.0,0.636189149343537,False,False
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,24,50,1.0,0.43624383106544795,False,False
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,70,28,1.0,0.38521743779035106,False,False
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,32,21,0.0,0.9796216951473928,False,False
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,8,7,0.0,0.734788478942864,True,True
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,10,8,1.0,0.6247028176689774,True,True
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,17,13,0.0,0.7352976374938787,False,True
+2024-10-05,2024-10-19,UFC Fight Night: Hernandez vs. Pereira,28,27,0.0,0.7004989727106842,False,True
+2024-10-26,2024-10-26,UFC 308: Topuria vs. Holloway,16,36,1.0,0.4097247183739459,False,False
+2024-10-26,2024-10-26,UFC 308: Topuria vs. Holloway,14,10,0.0,0.8458753472818882,True,True
+2024-10-26,2024-10-26,UFC 308: Topuria vs. Holloway,34,27,0.0,0.7690467081066579,False,False
+2024-10-26,2024-10-26,UFC 308: Topuria vs. Holloway,1,8,1.0,0.4215518269958581,True,True
+2024-10-26,2024-10-26,UFC 308: Topuria vs. Holloway,10,24,1.0,0.46786968602208723,False,True
+2024-10-26,2024-10-26,UFC 308: Topuria vs. Holloway,0,1,1.0,1.3348400764298014,True,True
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,3,1,0.0,0.7505682071735855,True,True
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,34,43,0.0,0.7591592222540332,False,False
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,52,63,0.0,0.9229932953124409,False,False
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,2,8,1.0,0.3377228960506204,True,True
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,35,39,1.0,0.646517661697978,False,False
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,61,85,0.0,1.0574483844063962,False,False
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,30,74,1.0,0.3226077270806144,False,False
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,13,22,1.0,0.5386215850839338,False,True
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,25,19,1.0,0.5787321066130752,False,True
+2024-10-26,2024-11-02,UFC Fight Night: Moreno vs. Albazi,44,63,1.0,0.5397216800231062,False,False
+2024-10-26,2024-11-09,UFC Fight Night: Magny vs. Prates,78,43,1.0,0.3473934871540877,False,False
+2024-10-26,2024-11-09,UFC Fight Night: Magny vs. Prates,70,68,1.0,0.685389798722796,False,False
+2024-10-26,2024-11-09,UFC Fight Night: Magny vs. Prates,32,12,1.0,0.4912433545432276,False,False
+2024-10-26,2024-11-09,UFC Fight Night: Magny vs. Prates,28,11,1.0,0.3862469632466771,False,True
+2024-10-26,2024-11-09,UFC Fight Night: Magny vs. Prates,21,23,0.0,0.709333286255803,False,True
+2024-11-16,2024-11-16,UFC 309: Jones vs. Miocic,74,67,1.0,0.6251323678584718,False,False
+2024-11-16,2024-11-16,UFC 309: Jones vs. Miocic,20,19,1.0,0.6895068648346652,False,True
+2024-11-16,2024-11-16,UFC 309: Jones vs. Miocic,7,10,1.0,0.5358267030488728,True,True
+2024-11-16,2024-11-16,UFC 309: Jones vs. Miocic,12,9,0.0,0.8390843774661387,True,True
+2024-11-16,2024-11-16,UFC 309: Jones vs. Miocic,37,20,1.0,0.5675940301447552,False,False
+2024-11-16,2024-11-16,UFC 309: Jones vs. Miocic,12,44,1.0,0.347633068184356,False,False
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,3,7,0.0,0.7243858101040939,True,True
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,15,33,0.0,1.1471083274759575,False,False
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,72,60,1.0,0.5868959003465232,False,False
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,58,52,1.0,0.6322348041403907,False,False
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,7,5,0.0,0.5898297842009963,True,True
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,13,3,0.0,1.2543940236698734,True,True
+2024-11-16,2024-11-23,UFC Fight Night: Yan vs. Figueiredo,47,45,0.0,0.7018146758001601,False,False
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,29,37,0.0,0.7933271692574738,False,False
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,3,5,1.0,0.546923286867129,True,True
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,17,25,1.0,0.5979278488381627,False,True
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,70,24,1.0,0.3526814364200175,False,False
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,16,18,0.0,0.7111078733441654,False,True
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,20,16,0.0,0.808179244590703,False,True
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,30,24,1.0,0.5306796026359413,False,True
+2024-11-16,2024-12-07,UFC 310: Pantoja vs. Asakura,3,1,0.0,0.7762961507701207,True,True
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,4,8,0.0,0.8822268352328246,True,True
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,26,23,1.0,0.6370110471902984,False,True
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,45,53,1.0,0.5805669772756353,False,False
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,15,36,0.0,1.3965612961314664,False,False
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,44,73,1.0,0.5060814472047536,False,False
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,12,21,1.0,0.5870748667666119,False,True
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,60,35,0.0,0.9439519268550198,False,False
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,10,19,1.0,0.4664149376531479,False,True
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,21,33,1.0,0.5627254041300617,False,False
+2024-12-14,2024-12-14,UFC Fight Night: Covington vs. Buckley,13,37,0.0,1.0999627006448112,False,False
+2024-12-14,2025-01-11,UFC Fight Night: Dern vs. Ribas 2,46,48,1.0,0.6790090749829333,False,False
+2024-12-14,2025-01-11,UFC Fight Night: Dern vs. Ribas 2,30,44,1.0,0.482478673080566,False,False
+2024-12-14,2025-01-11,UFC Fight Night: Dern vs. Ribas 2,28,24,1.0,0.6751301020857501,False,True
+2024-12-14,2025-01-11,UFC Fight Night: Dern vs. Ribas 2,56,39,0.0,0.9565803635878651,False,False
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,8,13,0.0,0.8585549346066269,True,True
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,4,5,1.0,0.5862215017289241,True,True
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,67,59,1.0,0.5946651823850483,False,False
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,9,29,1.0,0.3933133483618867,False,True
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,15,56,0.0,1.175855350949224,False,False
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,0,5,1.0,0.2212081860531812,True,True
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,11,9,0.0,0.7381857775195825,True,True
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,20,55,0.0,1.11786489518977,False,False
+2024-12-14,2025-01-18,UFC 311: Makhachev vs. Moicano,1,3,1.0,0.46817710553231195,True,True
+2025-02-01,2025-02-01,UFC Fight Night: Adesanya vs. Imavov,3,8,1.0,0.5889499933329319,True,True
+2025-02-01,2025-02-01,UFC Fight Night: Adesanya vs. Imavov,15,19,1.0,0.6480954262012453,False,True
+2025-02-01,2025-02-01,UFC Fight Night: Adesanya vs. Imavov,18,20,0.0,0.6961949876937541,False,True
+2025-02-01,2025-02-01,UFC Fight Night: Adesanya vs. Imavov,35,22,0.0,0.8428194262287364,False,False
+2025-02-01,2025-02-01,UFC Fight Night: Adesanya vs. Imavov,4,5,0.0,0.9196234893599983,True,True
+2025-02-01,2025-02-01,UFC Fight Night: Adesanya vs. Imavov,36,56,1.0,0.5184122305119834,False,False
+2025-02-01,2025-02-08,UFC 312: Du Plessis vs. Strickland 2,40,76,1.0,0.41448935554928323,False,False
+2025-02-01,2025-02-08,UFC 312: Du Plessis vs. Strickland 2,40,49,0.0,0.8489567720750055,False,False
+2025-02-01,2025-02-08,UFC 312: Du Plessis vs. Strickland 2,0,1,1.0,0.5458503510402878,True,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,27,26,0.0,0.7047415754657149,False,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,13,16,1.0,0.6584226646317242,False,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,33,21,1.0,0.4435565084903604,False,False
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,24,12,1.0,0.4350202139341766,False,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,26,24,1.0,0.6835689941801589,False,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,29,15,0.0,0.891723389262138,False,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,30,35,0.0,0.7664539681789663,False,False
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,32,21,1.0,0.5941035707193235,False,False
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,13,20,1.0,0.5535016230773417,False,True
+2025-02-01,2025-02-15,UFC Fight Night: Cannonier vs. Rodrigues,45,49,1.0,0.6431068235168063,False,False
+2025-02-22,2025-02-22,UFC Fight Night: Cejudo vs. Song,37,16,0.0,1.4308744043341342,False,False
+2025-02-22,2025-02-22,UFC Fight Night: Cejudo vs. Song,5,8,0.0,0.8388925836248301,True,True
+2025-02-22,2025-02-22,UFC Fight Night: Cejudo vs. Song,47,49,0.0,0.7289226175237219,False,False
+2025-02-22,2025-02-22,UFC Fight Night: Cejudo vs. Song,31,33,1.0,0.6896633148649933,False,False
+2025-02-22,2025-02-22,UFC Fight Night: Cejudo vs. Song,3,6,0.0,0.7359438339165439,True,True
+2025-02-22,2025-02-22,UFC Fight Night: Cejudo vs. Song,44,36,0.0,0.8020523234449748,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,18,31,1.0,0.5464231387016399,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,21,22,1.0,0.6809572107314228,False,True
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,33,32,1.0,0.6521915617224479,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,35,61,1.0,0.4437159858816712,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,34,13,1.0,0.4510413614290452,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,59,51,0.0,0.7899145923951674,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,6,8,1.0,0.6104068832448482,True,True
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,21,35,0.0,0.8145814049243086,False,False
+2025-02-22,2025-03-01,UFC Fight Night: Kape vs. Almabayev,65,16,1.0,0.2854121570749876,False,False
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,26,52,1.0,0.433377570199179,False,False
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,15,25,0.0,0.7726442672002914,False,True
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,6,11,1.0,0.5572532253360643,True,True
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,0,1,0.0,1.027552355184723,True,True
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,3,13,1.0,0.33350282175228424,True,True
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,33,19,1.0,0.5456485254720392,False,False
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,17,22,1.0,0.6372698776836516,False,True
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,53,41,1.0,0.559200676349629,False,False
+2025-02-22,2025-03-08,UFC 313: Pereira vs. Ankalaev,41,54,1.0,0.5105339525500431,False,False
+2025-03-15,2025-03-15,UFC Fight Night: Vettori vs. Dolidze 2,21,30,0.0,1.0925783188924576,False,True
+2025-03-15,2025-03-15,UFC Fight Night: Vettori vs. Dolidze 2,34,16,1.0,0.47939660725095545,False,False
+2025-03-15,2025-03-15,UFC Fight Night: Vettori vs. Dolidze 2,16,35,0.0,1.0190586820330625,False,False
+2025-03-15,2025-03-15,UFC Fight Night: Vettori vs. Dolidze 2,42,76,1.0,0.45543319680367855,False,False
+2025-03-15,2025-03-15,UFC Fight Night: Vettori vs. Dolidze 2,61,22,0.0,1.2388806714417115,False,False
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,68,33,1.0,0.46065486505740105,False,False
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,67,18,1.0,0.33072987553779765,False,False
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,1,7,0.0,1.064169061352937,True,True
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,45,35,1.0,0.6160912049550431,False,False
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,20,29,1.0,0.5912141837723459,False,True
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,27,20,0.0,0.8233784979223083,False,True
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,8,11,1.0,0.557016877125591,True,True
+2025-03-15,2025-03-22,UFC Fight Night: Edwards vs. Brady,20,31,1.0,0.5278028594496194,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,25,86,1.0,0.21491026410642508,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,1,10,1.0,0.20296287497326918,True,True
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,31,44,0.0,0.8051098651966865,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,15,43,0.0,1.2835536105134788,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,41,42,1.0,0.6886133218000767,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,11,25,1.0,0.4218233567275876,False,True
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,25,52,1.0,0.4652469619354236,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,32,80,1.0,0.3524649686508856,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,41,51,1.0,0.44530595823888247,False,False
+2025-03-15,2025-03-29,UFC Fight Night: Moreno vs. Erceg,59,66,1.0,0.6388753556799079,False,False
+2025-04-05,2025-04-05,UFC Fight Night: Emmett vs. Murphy,45,51,1.0,0.6477426446064024,False,False
+2025-04-05,2025-04-05,UFC Fight Night: Emmett vs. Murphy,12,11,1.0,0.661111157360045,True,True
+2025-04-05,2025-04-05,UFC Fight Night: Emmett vs. Murphy,35,14,0.0,1.003701560102275,False,False
+2025-04-05,2025-04-05,UFC Fight Night: Emmett vs. Murphy,40,32,1.0,0.5501133699294101,False,False
+2025-04-05,2025-04-05,UFC Fight Night: Emmett vs. Murphy,61,36,1.0,0.5257967633789818,False,False
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,22,54,0.0,1.0808138800621137,False,False
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,2,1,1.0,0.6277294863347056,True,True
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,17,23,0.0,0.7378912205256732,False,True
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,53,71,0.0,0.9722313737492929,False,False
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,21,9,1.0,0.5070066607452995,False,True
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,41,25,1.0,0.5377972492957034,False,False
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,26,8,1.0,0.39285501136575807,False,True
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,3,7,1.0,0.33473657348966984,True,True
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,41,18,0.0,1.0029277300183768,False,False
+2025-04-05,2025-04-12,UFC 314: Volkanovski vs. Lopes,40,33,0.0,0.8229785314445865,False,False
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,10,23,0.0,0.9775218421928216,False,True
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,21,32,1.0,0.6528633418641339,False,False
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,5,9,1.0,0.560396200153354,True,True
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,41,50,1.0,0.6151824403211427,False,False
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,19,18,1.0,0.674117103153685,False,True
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,15,30,0.0,0.7964512990901885,False,True
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,24,15,1.0,0.5045282809974596,False,True
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,51,49,0.0,0.7497167366191362,False,False
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,14,44,1.0,0.30163258055921055,False,False
+2025-04-05,2025-04-26,UFC Fight Night: Machado Garry vs. Prates,25,23,0.0,0.7013616722848566,False,True
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,41,40,1.0,0.6890778905581564,False,False
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,12,14,1.0,0.6103109706825444,True,True
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,12,18,1.0,0.5353786943894587,False,True
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,31,49,0.0,0.8724211892126817,False,False
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,16,10,1.0,0.5272195147929369,False,True
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,23,26,0.0,0.7104471496491972,False,True
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,42,67,0.0,0.9320692267303747,False,False
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,5,1,0.0,0.7170043030554233,True,True
+2025-05-03,2025-05-03,UFC Fight Night: Sandhagen vs. Figueiredo,31,36,1.0,0.5023128218575331,False,False
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,5,4,1.0,0.6804543314055613,True,True
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,25,30,1.0,0.6495119120092875,False,True
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,62,69,1.0,0.5983240353417589,False,False
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,18,27,1.0,0.5349119496022017,False,True
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,0,1,1.0,0.4640548551217196,True,True
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,0,7,0.0,1.163545062176273,True,True
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,71,56,1.0,0.5495245773561894,False,False
+2025-05-03,2025-05-10,UFC 315: Muhammad vs. Della Maddalena,25,23,0.0,0.5644751952105387,False,True
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,15,50,1.0,0.2804541122332242,False,False
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,43,19,1.0,0.33000629621844113,False,False
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,47,45,0.0,0.7147153160868005,False,False
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,13,9,1.0,0.5947285805662591,True,True
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,9,39,1.0,0.2754815439947066,False,False
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,55,28,1.0,0.3877117511422508,False,False
+2025-05-03,2025-05-17,UFC Fight Night: Burns vs. Morales,49,39,1.0,0.6020220355548213,False,False
+2025-05-31,2025-05-31,UFC Fight Night: Blanchfield vs. Barber,7,14,1.0,0.46222868083876295,True,True
+2025-05-31,2025-05-31,UFC Fight Night: Blanchfield vs. Barber,33,50,0.0,0.8263690765669366,False,False
+2025-05-31,2025-05-31,UFC Fight Night: Blanchfield vs. Barber,35,37,0.0,0.749778961484784,False,False
+2025-05-31,2025-05-31,UFC Fight Night: Blanchfield vs. Barber,32,19,0.0,0.9575360789487519,False,False
+2025-05-31,2025-05-31,UFC Fight Night: Blanchfield vs. Barber,50,64,1.0,0.4604632425877161,False,False
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,7,30,1.0,0.30816580431091073,False,True
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,12,39,0.0,1.0768536861700069,False,False
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,22,35,1.0,0.5344553918102507,False,False
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,0,4,0.0,0.8818941190292747,True,True
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,7,12,0.0,0.8136270614286812,True,True
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,24,20,1.0,0.5624777988906148,False,True
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,11,12,0.0,0.7809049917922037,True,True
+2025-05-31,2025-06-07,UFC 316: Dvalishvili vs. O'Malley 2,0,2,1.0,0.501933737839649,True,True
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,18,33,0.0,0.858406914421765,False,False
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,30,52,1.0,0.5287107800854038,False,False
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,40,43,1.0,0.6585595334194221,False,False
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,3,11,1.0,0.449445308474888,True,True
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,45,29,1.0,0.474566881875471,False,False
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,39,34,0.0,0.7606387103304404,False,False
+2025-05-31,2025-06-14,UFC Fight Night: Usman vs. Buckley,20,16,0.0,0.8712708765774572,False,True
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,4,12,0.0,0.8354020395434528,True,True
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,38,25,0.0,0.7911110126769827,False,False
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,27,26,1.0,0.6861681918033337,False,True
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,12,40,1.0,0.3849227992706375,False,False
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,9,39,1.0,0.3152267915298305,False,False
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,23,29,0.0,0.7862855257558409,False,True
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,10,14,1.0,0.650700865367154,True,True
+2025-06-21,2025-06-21,UFC Fight Night: Hill vs. Rountree Jr.,19,17,0.0,0.8367686145548989,False,True
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,17,26,0.0,0.8058851402241262,False,True
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,13,12,1.0,0.6710513704148184,True,True
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,0,6,1.0,0.36383769747399825,True,True
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,22,19,1.0,0.6779331527192953,False,True
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,62,24,1.0,0.3511116032852799,False,False
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,50,79,1.0,0.46595527346485416,False,False
+2025-06-21,2025-06-28,UFC 317: Topuria vs. Oliveira,3,10,0.0,1.1087974803765952,True,True
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,11,13,1.0,0.633301400614262,True,True
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,19,26,1.0,0.6222138160828836,False,True
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,25,20,1.0,0.6543391010602034,False,True
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,52,48,1.0,0.6700024176642596,False,False
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,20,19,1.0,0.6753375398312632,False,True
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,62,32,1.0,0.452721076481584,False,False
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,28,46,1.0,0.5248136600616727,False,False
+2025-06-21,2025-07-12,UFC Fight Night: Lewis vs. Teixeira,40,12,1.0,0.4299282260589206,False,False
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,20,33,0.0,0.8739103413141781,False,False
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,23,53,1.0,0.40328890376924714,False,False
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,28,40,1.0,0.44016747608385615,False,False
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,13,9,1.0,0.5295965711605095,True,True
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,22,25,1.0,0.6262976073778134,False,True
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,37,45,1.0,0.613051407160329,False,False
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,33,41,0.0,0.7561059910591704,False,False
+2025-07-19,2025-07-19,UFC 318: Holloway vs. Poirier 3,15,16,0.0,0.6971128733307812,False,True
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,35,39,1.0,0.6444409531360864,False,False
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,20,58,1.0,0.34052804805482084,False,False
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,13,14,0.0,0.7639469662423152,True,True
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,34,31,0.0,0.7085067164468717,False,False
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,11,22,1.0,0.5106406526235707,False,True
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,8,12,1.0,0.5391856481371102,True,True
+2025-07-19,2025-07-26,UFC Fight Night: Whittaker vs. De Ridder,22,30,0.0,0.8626751796728352,False,True
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,34,21,1.0,0.6185751725038784,False,False
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,5,9,1.0,0.4793132905932281,True,True
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,24,31,0.0,0.7190074255962057,False,False
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,27,55,1.0,0.4086943165012511,False,False
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,49,40,1.0,0.6197333971785284,False,False
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,41,35,0.0,0.761929510524707,False,False
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,48,46,1.0,0.6784318535127094,False,False
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,21,29,1.0,0.5648392302662015,False,True
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,15,11,0.0,0.8224720235836601,True,True
+2025-07-19,2025-08-02,UFC Fight Night: Taira vs. Park,22,25,1.0,0.6856091715346946,False,True
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,24,37,1.0,0.42789974353223814,False,False
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,7,13,1.0,0.5637985539586504,True,True
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,7,5,1.0,0.6776320523910383,True,True
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,30,32,0.0,0.7000029151744126,False,False
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,69,41,0.0,0.9478875465278443,False,False
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,36,64,1.0,0.4805051936691311,False,False
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,16,24,1.0,0.5158684564758932,False,True
+2025-08-09,2025-08-09,UFC Fight Night: Dolidze vs. Hernandez,55,23,1.0,0.46274973788571816,False,False
+2025-08-09,2025-08-16,UFC 319: Du Plessis vs. Chimaev,0,1,0.0,0.9688216597851278,True,True
+2025-08-09,2025-08-16,UFC 319: Du Plessis vs. Chimaev,15,55,0.0,1.2233477312453287,False,False
+2025-08-09,2025-08-16,UFC 319: Du Plessis vs. Chimaev,10,11,0.0,0.7333407945376137,True,True
+2025-08-09,2025-08-16,UFC 319: Du Plessis vs. Chimaev,11,21,1.0,0.47580756430332233,False,True
+2025-08-09,2025-08-23,UFC - Road to UFC 4.6,14,41,0.0,1.4516988535289794,False,False
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,92,51,1.0,0.39697586606609686,False,False
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,29,18,0.0,0.9052167822933685,False,True
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,13,12,0.0,0.7272460688801451,True,True
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,37,22,1.0,0.5747686344220124,False,False
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,5,9,1.0,0.5399681125955486,True,True
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,37,43,1.0,0.64529731788466,False,False
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,65,67,1.0,0.6710160773033185,False,False
+2025-08-09,2025-08-23,UFC Fight Night: Walker vs. Zhang,70,96,1.0,0.457333763791708,False,False
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,18,37,1.0,0.3056105488332354,False,False
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,29,28,0.0,0.7081455511271139,False,True
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,2,7,1.0,0.503780287415142,True,True
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,45,42,1.0,0.639634408221005,False,False
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,19,31,0.0,0.9009176487663689,False,False
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,14,16,1.0,0.6097108712619506,False,True
+2025-09-06,2025-09-06,UFC Fight Night: Imavov vs. Borralho,20,11,1.0,0.5605175919928642,False,True
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,55,72,0.0,1.012359477958044,False,False
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,19,63,1.0,0.27009374676301023,False,False
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,46,36,0.0,0.7921344348123361,False,False
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,33,43,1.0,0.6047170462648296,False,False
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,38,33,0.0,0.7624747251929974,False,False
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,7,32,0.0,1.1471250226894085,False,False
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,4,5,1.0,0.5448521842529189,True,True
+2025-09-06,2025-09-13,Noche UFC: Lopes vs. Silva,8,6,0.0,0.7874956735776564,True,True
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,15,35,0.0,0.9129136802668157,False,False
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,53,54,1.0,0.678562744823463,False,False
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,39,29,0.0,0.7921546022705107,False,False
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,2,8,1.0,0.6145595358821815,True,True
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,15,19,1.0,0.6674888585790686,False,True
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,15,17,0.0,0.6660640605537246,False,True
+2025-09-06,2025-09-27,UFC Fight Night: Ulberg vs. Reyes,25,34,1.0,0.5194974859372509,False,False
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,34,43,1.0,0.6274539807144658,False,False
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,1,9,1.0,0.46100598609371213,True,True
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,4,11,0.0,1.078423845944058,True,True
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,11,12,0.0,0.7000452439897676,True,True
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,0,1,1.0,0.5652737629215469,True,True
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,42,60,1.0,0.5438132414310415,False,False
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,21,11,1.0,0.5876284021649012,False,True
+2025-10-04,2025-10-04,UFC 320: Ankalaev vs. Pereira 2,17,18,0.0,0.7189161018580913,False,True
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,18,16,1.0,0.6791018048153974,False,True
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,74,68,1.0,0.6397435236081201,False,False
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,37,39,1.0,0.674572577570323,False,False
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,27,19,0.0,0.8735216658014229,False,True
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,4,8,1.0,0.36287856441675254,True,True
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,27,28,1.0,0.6762880392368382,False,True
+2025-10-04,2025-10-11,UFC Fight Night: Oliveira vs. Gamrot,3,8,1.0,0.47459502355262595,True,True
+2025-10-04,2025-10-18,UFC Fight Night: De Ridder vs. Allen,9,13,0.0,0.91871814413675,True,True
+2025-10-04,2025-10-18,UFC Fight Night: De Ridder vs. Allen,84,61,1.0,0.5138879731103788,False,False
+2025-10-04,2025-10-18,UFC Fight Night: De Ridder vs. Allen,4,7,1.0,0.5061820033645729,True,True
+2025-10-04,2025-10-18,UFC Fight Night: De Ridder vs. Allen,35,23,1.0,0.5745091526855501,False,False
+2025-10-04,2025-10-18,UFC Fight Night: De Ridder vs. Allen,73,80,0.0,0.753586995130266,False,False
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,16,23,1.0,0.6216173019854636,False,True
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,40,43,0.0,0.7262245313884756,False,False
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,32,38,1.0,0.563833025113004,False,False
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,2,3,0.0,0.8585729341856202,True,True
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,12,17,1.0,0.6378867409849835,False,True
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,14,17,0.0,0.7754275518250096,False,True
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,3,9,1.0,0.5725836189981153,True,True
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,19,41,1.0,0.5225891446679218,False,False
+2025-10-25,2025-10-25,UFC 321: Aspinall vs. Gane,13,5,1.0,0.6050715875852439,True,True
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,52,49,0.0,0.7101596651942064,False,False
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,10,14,1.0,0.5410772205613775,True,True
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,4,2,1.0,0.5465302590985656,True,True
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,33,24,1.0,0.6376863494985815,False,False
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,26,33,1.0,0.5588194159211102,False,False
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,7,9,1.0,0.5476373065491382,True,True
+2025-10-25,2025-11-01,UFC Fight Night: Garcia vs. Onama,29,23,1.0,0.6165966322913632,False,True
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,15,53,1.0,0.40686231623293795,False,False
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,71,33,1.0,0.3645538026527084,False,False
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,17,13,0.0,0.7385200818037997,False,True
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,23,10,1.0,0.3304980035126575,False,True
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,9,16,0.0,0.8645767238258427,False,True
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,25,17,0.0,0.7721411744994953,False,True
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,30,42,0.0,0.8120506249908148,False,False
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,40,22,1.0,0.6010670339019452,False,False
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,27,42,0.0,0.7856749035206182,False,False
+2025-10-25,2025-11-08,UFC Fight Night: Bonfim vs. Brown,45,21,1.0,0.38028046984814545,False,False
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,80,54,1.0,0.47413364263651775,False,False
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,25,28,1.0,0.6776167264546026,False,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,4,10,0.0,1.0188673630085783,True,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,3,9,0.0,0.8773791915414005,True,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,11,18,0.0,0.7307422355735111,False,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,3,6,1.0,0.4386471354503989,True,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,4,11,0.0,0.9592047301447554,True,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,22,11,0.0,0.9427737308766004,False,True
+2025-11-15,2025-11-15,UFC 322: Della Maddalena vs. Makhachev,32,11,1.0,0.4750849252589982,False,False
+2025-11-15,2025-11-22,UFC Fight Night: Tsarukyan vs. Hooker,47,40,0.0,0.7600062490684794,False,False
+2025-11-15,2025-11-22,UFC Fight Night: Tsarukyan vs. Hooker,24,10,1.0,0.43453108334702156,False,True
+2025-11-15,2025-11-22,UFC Fight Night: Tsarukyan vs. Hooker,41,33,1.0,0.5763921708373226,False,False
+2025-11-15,2025-11-22,UFC Fight Night: Tsarukyan vs. Hooker,7,15,1.0,0.44499979656466043,True,True
+2025-11-15,2025-11-22,UFC Fight Night: Tsarukyan vs. Hooker,2,6,0.0,0.9070617103122638,True,True
+2025-11-15,2025-11-22,UFC Fight Night: Tsarukyan vs. Hooker,7,16,1.0,0.4682896994656731,False,True
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,12,17,0.0,0.8912597088101877,False,True
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,7,28,0.0,1.1324831817432086,False,True
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,37,29,1.0,0.6273055481643595,False,False
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,32,18,1.0,0.559911546216641,False,False
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,0,1,0.0,1.2708827533822125,True,True
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,18,58,1.0,0.3295013865289015,False,False
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,38,31,1.0,0.6206622849020126,False,False
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,8,16,0.0,1.0024226957904214,False,True
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,0,5,0.0,1.5255730447965783,True,True
+2025-11-15,2025-12-06,UFC 323: Dvalishvili vs. Yan 2,1,2,0.0,1.0252239079156873,True,True
+2025-12-13,2025-12-13,UFC Fight Night: Royval vs. Kape,16,19,0.0,0.7186992980493209,False,True
+2025-12-13,2025-12-13,UFC Fight Night: Royval vs. Kape,35,34,0.0,0.7025613053028864,False,False
+2025-12-13,2025-12-13,UFC Fight Night: Royval vs. Kape,7,4,1.0,0.5937203904705244,True,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,6,2,0.0,0.7268598609812531,True,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,14,38,1.0,0.456246798013381,False,False
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,3,5,1.0,0.8006448229366581,True,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,16,22,1.0,0.5478169463835741,False,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,8,10,0.0,0.7105326681731754,True,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,14,19,1.0,0.6472458311525221,False,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,28,24,0.0,0.7213286818560548,False,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,4,3,0.0,0.7490582481538086,True,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,6,7,1.0,0.6818222369138258,True,True
+2025-12-13,2026-01-24,UFC 324: Gaethje vs. Pimblett,3,4,1.0,0.5781251234329616,True,True
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,15,80,1.0,0.23194863670958843,False,False
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,23,53,1.0,0.38649717850500004,False,False
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,59,58,0.0,0.6956545642240726,False,False
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,11,35,0.0,1.0240447549590186,False,False
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,41,21,1.0,0.44574576838009106,False,False
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,29,34,1.0,0.640237079370961,False,False
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,8,7,1.0,0.6601554764650684,True,True
+2025-12-13,2026-01-31,UFC 325: Volkanovski vs. Lopes 2,0,5,1.0,0.3643536557445437,True,True
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,24,16,1.0,0.5758407095899688,False,True
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,21,29,1.0,0.40270835074953837,False,True
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,22,23,1.0,0.6587918852468237,False,True
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,55,70,1.0,0.5005693202301998,False,False
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,46,36,1.0,0.574274145773324,False,False
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,70,77,1.0,0.5847253971437525,False,False
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,37,39,0.0,0.7180065958334577,False,False
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,8,5,1.0,0.507152710181212,True,True
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,68,25,1.0,0.31681253695258554,False,False
+2026-02-07,2026-02-07,UFC Fight Night: Bautista vs. Oliveira,9,12,1.0,0.6752088066877714,True,True
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,19,21,1.0,0.6921577559612354,False,True
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,52,55,0.0,0.7063084611980969,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,39,53,0.0,0.8445766235453348,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,26,13,1.0,0.44229531216829204,False,True
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,53,36,1.0,0.3677151805937935,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,3,4,1.0,0.6186402444618484,True,True
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,34,36,0.0,0.7316929266338841,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,14,44,1.0,0.31137182284553466,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,47,19,1.0,0.45219914808690803,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,20,37,0.0,0.8630217642570439,False,False
+2026-02-07,2026-02-21,UFC Fight Night: Strickland vs. Hernandez,14,16,0.0,0.7654844218483732,False,True
+2026-02-07,2026-02-28,UFC Fight Night: Moreno vs. Kavanagh,3,33,0.0,1.7661665457926052,False,False
+2026-02-07,2026-02-28,UFC Fight Night: Moreno vs. Kavanagh,15,13,1.0,0.7570126316497339,True,True
+2026-02-07,2026-02-28,UFC Fight Night: Moreno vs. Kavanagh,30,40,1.0,0.5634127923447492,False,False
+2026-02-07,2026-02-28,UFC Fight Night: Moreno vs. Kavanagh,44,40,1.0,0.6162331818504629,False,False
+2026-02-07,2026-02-28,UFC Fight Night: Moreno vs. Kavanagh,8,5,0.0,0.8404265694872671,True,True
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,8,32,1.0,0.4469929951163594,False,False
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,26,70,1.0,0.27906227100882486,False,False
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,35,24,0.0,0.8236577464162239,False,False
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,13,29,0.0,0.8811582690489471,False,True
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,24,47,1.0,0.480194185701504,False,False
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,62,31,0.0,1.0477873603083292,False,False
+2026-03-07,2026-03-07,UFC 326: Holloway vs. Oliveira 2,56,25,1.0,0.2381811823424258,False,False
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,25,18,0.0,0.7796415690248341,False,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,19,16,0.0,0.7118706410539117,False,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,8,3,1.0,0.6216333797830473,True,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,56,25,1.0,0.46313775427777054,False,False
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,14,18,1.0,0.51936049505632,False,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,61,45,1.0,0.5016698904161532,False,False
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,30,16,0.0,1.0296740425519295,False,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,28,25,0.0,0.7101763263000328,False,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,30,11,1.0,0.4996991231088441,False,True
+2026-03-07,2026-03-14,UFC Fight Night: Emmett vs. Vallejos,37,51,1.0,0.40140608756232726,False,False
+2026-03-07,2026-03-21,UFC Fight Night: Evloev vs. Murphy,6,7,1.0,0.7010028815919739,True,True
+2026-03-07,2026-03-21,UFC Fight Night: Evloev vs. Murphy,9,22,0.0,0.8872172251506975,False,True
+2026-03-07,2026-03-21,UFC Fight Night: Evloev vs. Murphy,31,15,1.0,0.4977218570766004,False,False
+2026-03-07,2026-03-21,UFC Fight Night: Evloev vs. Murphy,20,36,1.0,0.5506393345156974,False,False
+2026-03-28,2026-03-28,UFC Fight Night: Adesanya vs. Pyfer,12,41,1.0,0.2476639398242905,False,False
+2026-03-28,2026-03-28,UFC Fight Night: Adesanya vs. Pyfer,7,10,0.0,0.8100574926853324,True,True
+2026-03-28,2026-03-28,UFC Fight Night: Adesanya vs. Pyfer,6,5,0.0,0.8548543933157202,True,True
+2026-03-28,2026-03-28,UFC Fight Night: Adesanya vs. Pyfer,15,29,1.0,0.4341990161486192,False,True
+2026-03-28,2026-03-28,UFC Fight Night: Adesanya vs. Pyfer,15,22,0.0,0.7763913214988448,False,True
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,17,46,0.0,1.218337465541578,False,False
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,5,10,1.0,0.4048093301213229,True,True
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,20,22,1.0,0.5267203958992572,False,True
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,17,43,1.0,0.27811129392563433,False,False
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,42,45,1.0,0.5931307810947142,False,False
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,5,30,1.0,0.4003879915409918,False,True
+2026-03-28,2026-04-04,UFC Fight Night: Moicano vs. Duncan,38,63,0.0,1.0417893274560937,False,False
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,51,80,1.0,0.36108319587104026,False,False
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,26,73,1.0,0.3520422778374684,False,False
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,7,36,1.0,0.36756984024015044,False,False
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,4,10,0.0,1.1502469311438892,True,True
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,1,3,0.0,0.9009711711856478,True,True
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,4,7,0.0,0.7897890039656547,True,True
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,49,28,0.0,0.9018478433263598,False,False
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,9,8,0.0,0.7080943166484015,True,True
+2026-03-28,2026-04-11,UFC 327: Prochazka vs. Ulberg,1,7,1.0,0.4883050867115807,True,True
+2026-04-18,2026-04-18,UFC Fight Night: Burns vs. Malott,20,17,0.0,0.764990486057124,False,True
+2026-04-18,2026-04-18,UFC Fight Night: Burns vs. Malott,48,22,1.0,0.4853171692747391,False,False
+2026-04-18,2026-04-18,UFC Fight Night: Burns vs. Malott,8,10,1.0,0.5958759940532838,True,True
+2026-04-18,2026-04-18,UFC Fight Night: Burns vs. Malott,78,50,1.0,0.47707748744346284,False,False
+2026-04-18,2026-04-18,UFC Fight Night: Burns vs. Malott,18,32,0.0,0.8371018129320718,False,False
+2026-04-18,2026-04-18,UFC Fight Night: Burns vs. Malott,14,17,1.0,0.5931281563493669,False,True
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,19,22,1.0,0.6233881742716855,False,True
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,8,15,0.0,0.9115444251234086,True,True
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,32,59,0.0,1.012395922759139,False,False
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,26,35,0.0,0.7646807669324726,False,False
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,23,30,1.0,0.6545749807409609,False,True
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,1,10,0.0,1.0753930721683307,True,True
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,24,13,1.0,0.294047183893457,False,True
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,60,71,1.0,0.5097606053683682,False,False
+2026-04-18,2026-04-25,UFC Fight Night: Sterling vs. Zalal,1,8,1.0,0.2920851933742774,True,True
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,47,85,1.0,0.2889861364182867,False,False
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,44,28,0.0,1.3104973767615276,False,False
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,46,44,1.0,0.6381641310757464,False,False
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,16,35,1.0,0.498663240763595,False,False
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,11,12,0.0,0.7298002388305892,True,True
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,28,64,0.0,1.0306163187129993,False,False
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,21,40,1.0,0.5158221792818176,False,False
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,22,13,1.0,0.5574649745354917,False,True
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,12,18,0.0,0.7487557985414091,False,True
+2026-04-18,2026-05-02,UFC Fight Night: Della Maddalena vs. Prates,2,9,0.0,0.7190240354383578,True,True
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,21,76,1.0,0.3366374694683913,False,False
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,18,41,1.0,0.4622662388028073,False,False
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,2,5,1.0,0.5473596999426604,True,True
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,14,36,1.0,0.5573196631812304,False,False
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,0,2,0.0,0.7267826247909467,True,True
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,16,54,1.0,0.3685848726323244,False,False
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,8,6,0.0,0.7076491019052903,True,True
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,53,32,0.0,0.8821470332293833,False,False
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,0,2,1.0,0.9220029727042025,True,True
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,26,65,1.0,0.4559232810923706,False,False
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,27,25,1.0,0.6458334925296129,False,True
+2026-05-09,2026-05-09,UFC 328: Chimaev vs. Strickland,14,70,1.0,0.3310598681027246,False,False
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,75,47,0.0,1.2385601533456643,False,False
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,10,7,0.0,0.7993015213160857,True,True
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,34,41,0.0,0.8966158381098815,False,False
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,44,46,0.0,0.8147082184412596,False,False
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,25,42,1.0,0.358408849349328,False,False
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,9,12,1.0,0.5327749039572927,True,True
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,71,56,1.0,0.4914022612172487,False,False
+2026-05-09,2026-05-16,UFC Fight Night: Allen vs. Costa,40,15,0.0,0.9580250922474421,False,False
+2026-05-09,2026-05-30,UFC Fight Night: Song vs. Figueiredo,21,15,1.0,0.5500752757063766,False,True
+2026-05-09,2026-05-30,UFC Fight Night: Song vs. Figueiredo,5,6,1.0,0.6888107198560132,True,True
+2026-05-09,2026-05-30,UFC Fight Night: Song vs. Figueiredo,17,27,0.0,0.926644749038388,False,True
+2026-05-09,2026-05-30,UFC Fight Night: Song vs. Figueiredo,35,63,1.0,0.42277037481698754,False,False
+2026-05-09,2026-05-30,UFC Fight Night: Song vs. Figueiredo,4,20,1.0,0.3861503512718602,False,True
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,47,30,1.0,0.33717484908212014,False,False
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,4,22,1.0,0.3505520527609398,False,True
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,13,31,0.0,0.9003569198112398,False,False
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,3,16,0.0,1.1773789550958258,False,True
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,8,46,1.0,0.34299410860716845,False,False
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,28,24,1.0,0.5078885602972502,False,True
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,25,30,1.0,0.6188922935926109,False,True
+2026-06-06,2026-06-06,UFC Fight Night: Muhammad vs. Bonfim,16,42,1.0,0.2795212377858111,False,False
+2026-06-06,2026-06-14,UFC Freedom 250,20,36,1.0,0.5023015990263534,False,False
+2026-06-06,2026-06-14,UFC Freedom 250,4,8,1.0,0.6271821161760672,True,True
+2026-06-06,2026-06-14,UFC Freedom 250,7,6,0.0,0.8840409501468401,True,True
+2026-06-06,2026-06-14,UFC Freedom 250,1,3,0.0,0.9932756010434044,True,True
+2026-06-06,2026-06-14,UFC Freedom 250,3,14,1.0,0.35721834885170856,True,True
+2026-06-06,2026-06-14,UFC Freedom 250,0,3,0.0,0.9256934059383587,True,True
+2026-06-06,2026-06-14,UFC Freedom 250,15,54,1.0,0.4347163635209151,False,False
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,14,53,0.0,1.872039796074128,False,False
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,2,3,1.0,0.6402283916161169,True,True
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,11,37,0.0,1.1388991841423146,False,False
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,52,75,0.0,0.8520132575026976,False,False
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,22,12,1.0,0.42001234322578895,False,True
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,9,11,0.0,0.801226475466463,True,True
+2026-06-06,2026-06-20,UFC Fight Night: Kape vs. Horiguchi,10,18,1.0,0.32931237468598623,False,True
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,19,53,1.0,0.38761387070792547,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,66,30,0.0,1.0615343942533773,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,32,39,1.0,0.6279190014148835,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,16,32,1.0,0.39936092810014334,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,30,42,1.0,0.5075034750207531,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,21,59,0.0,1.0096972080543143,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,7,31,1.0,0.36123217226384957,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,59,35,1.0,0.48383220209576705,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,40,11,0.0,0.9754358497374032,False,False
+2026-06-27,2026-06-27,UFC Fight Night: Fiziev vs. Torres,14,40,1.0,0.40211006057240534,False,False
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,27,46,1.0,0.48063732669520304,False,False
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,7,8,0.0,0.740363644278945,True,True
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,29,51,1.0,0.2806141160546198,False,False
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,15,46,1.0,0.46442679702457296,False,False
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,9,22,1.0,0.5101822660710302,False,True
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,24,38,1.0,0.516200861722035,False,False
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,4,6,0.0,1.0814469581879413,True,True
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,7,11,0.0,0.8784006454691968,True,True
+2026-06-27,2026-07-11,UFC 329: McGregor vs. Holloway 2,22,43,0.0,0.9411285746492212,False,False
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,43,31,1.0,0.5708608212744373,False,False
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,10,45,1.0,0.2268377981779928,False,False
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,20,10,1.0,0.6218795167299999,False,True
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,7,15,0.0,0.8383587697926854,True,True
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,27,29,1.0,0.6878558917932521,False,True
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,42,73,1.0,0.43626222165979006,False,False
+2026-06-27,2026-07-18,UFC Fight Night: Du Plessis vs. Usman,32,19,0.0,0.8501520547405237,False,False
+2026-07-25,2026-07-25,UFC Fight Night: Ankalaev vs. Guskov,19,30,1.0,0.6089046880231255,False,True
+2026-07-25,2026-07-25,UFC Fight Night: Ankalaev vs. Guskov,11,17,1.0,0.6159152788710607,False,True
+2026-07-25,2026-07-25,UFC Fight Night: Ankalaev vs. Guskov,1,9,1.0,0.3915456769258575,True,True
+2026-07-25,2026-07-25,UFC Fight Night: Ankalaev vs. Guskov,11,18,0.0,0.775372030321884,False,True
+2026-07-25,2026-07-25,UFC Fight Night: Ankalaev vs. Guskov,13,38,1.0,0.38644682035070294,False,False
+2026-07-25,2026-07-25,UFC Fight Night: Ankalaev vs. Guskov,55,24,1.0,0.47089525716387354,False,False
+2026-07-25,2026-08-01,UFC Fight Night: Medic vs. Rodriguez,3,10,0.0,0.8550632186450049,True,True
+2026-07-25,2026-08-01,UFC Fight Night: Medic vs. Rodriguez,95,68,1.0,0.3239480937313253,False,False
+2026-07-25,2026-08-01,UFC Fight Night: Medic vs. Rodriguez,83,79,0.0,0.7306876673536414,False,False
+2026-07-25,2026-08-01,UFC Fight Night: Medic vs. Rodriguez,23,20,0.0,0.7892695511177675,False,True
+2026-07-25,2026-08-01,UFC Fight Night: Medic vs. Rodriguez,66,63,1.0,0.662120818369773,False,False
+2026-07-25,2026-08-01,UFC Fight Night: Medic vs. Rodriguez,18,45,0.0,0.9392172398866276,False,False
+2026-07-25,2026-08-08,UFC Fight Night: Gamrot vs. Salkilld,38,36,1.0,0.6893006370191445,False,False
+2026-07-25,2026-08-08,UFC Fight Night: Gamrot vs. Salkilld,34,35,1.0,0.6902662478486247,False,False
+2026-07-25,2026-08-08,UFC Fight Night: Gamrot vs. Salkilld,9,11,0.0,0.7258028998708238,True,True
+2026-07-25,2026-08-08,UFC Fight Night: Gamrot vs. Salkilld,25,27,1.0,0.6503094333649397,False,True
+2026-07-25,2026-08-08,UFC Fight Night: Gamrot vs. Salkilld,8,9,0.0,0.8223334278015085,True,True
+2026-07-25,2026-08-08,UFC Fight Night: Gamrot vs. Salkilld,66,28,1.0,0.4275446804921931,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,0,1,1.0,0.3253608507463124,True,True
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,0,4,1.0,0.690850968963763,True,True
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,31,68,0.0,1.256214806723883,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,62,13,0.0,1.2488623382922777,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,68,41,1.0,0.5388675765480542,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,28,51,1.0,0.39991917010136036,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,49,22,0.0,0.8903835486607363,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,35,14,0.0,0.9285115434355927,False,False
+2026-08-15,2026-08-15,UFC 330: Makhachev vs. Machado Garry,45,49,1.0,0.6592007041490524,False,False
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,36,56,0.0,0.889755226527393,False,False
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,38,30,0.0,0.7898266731719684,False,False
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,36,39,0.0,0.724164382515247,False,False
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,14,44,1.0,0.24216185771920248,False,False
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,12,15,1.0,0.6398372472780657,True,True
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,17,20,0.0,0.7124837716182135,False,True
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,14,30,1.0,0.5607526448421026,False,True
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,25,20,0.0,0.7046323288528455,False,True
+2026-08-15,2026-08-22,UFC Fight Night: Hernandez vs. Rodrigues,5,9,0.0,0.7958605080542358,True,True
+2026-08-15,2026-08-29,UFC Fight Night: Nurmagomedov vs. Song,4,3,1.0,0.6752409105440077,True,True
+2026-08-15,2026-08-29,UFC Fight Night: Nurmagomedov vs. Song,12,25,0.0,0.8547963904593475,False,True
+2026-08-15,2026-08-29,UFC Fight Night: Nurmagomedov vs. Song,27,34,0.0,0.8061138570846883,False,False
+2026-08-15,2026-08-29,UFC Fight Night: Nurmagomedov vs. Song,8,11,0.0,0.7967368631962278,True,True
+2026-08-15,2026-08-29,UFC Fight Night: Nurmagomedov vs. Song,65,39,1.0,0.5018916106780028,False,False
+2026-08-15,2026-08-29,UFC Fight Night: Nurmagomedov vs. Song,24,45,1.0,0.30243692587370724,False,False
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,28,36,0.0,0.7596833076853031,False,False
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,20,18,0.0,0.8080807209433979,False,True
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,12,37,1.0,0.500318145806817,False,False
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,29,32,0.0,0.7483572661360228,False,False
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,66,38,1.0,0.4775642947505241,False,False
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,12,23,1.0,0.5431799339818839,False,True
+2026-09-05,2026-09-05,UFC Fight Night: Hooker vs. Parnasse,41,55,1.0,0.6038738070703035,False,False
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,4,30,1.0,0.378279799591526,False,True
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,30,23,1.0,0.6336849821997046,False,True
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,5,18,1.0,0.409284306385792,False,True
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,16,19,1.0,0.6854325102491228,False,True
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,3,7,0.0,0.8108549165460089,True,True
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,16,56,1.0,0.32536916919697806,False,False
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,19,64,0.0,1.0513160189996986,False,False
+2026-09-05,2026-09-12,Noche UFC: Silva vs. Delgado,1,5,0.0,0.8887869994421753,True,True
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,19,45,0.0,1.2006697535368949,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,20,13,0.0,0.8489352222419981,False,True
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,61,23,1.0,0.4317775295693731,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,23,59,1.0,0.3473398072152867,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,0,1,1.0,0.8645440212752671,True,True
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,10,20,1.0,0.4461869367297407,False,True
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,22,39,1.0,0.4575354982228611,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,18,34,1.0,0.5757462370510362,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,75,43,0.0,0.9671820217896596,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,58,18,0.0,1.1145434038236974,False,False
+2026-09-05,2026-09-19,UFC 331: Van vs. Pantoja 2,4,14,1.0,0.3297881065882785,True,True
+2026-09-26,2026-09-26,UFC Fight Night: Rosas Jr. vs. Barcelos,11,9,0.0,0.7557763590657139,True,True
+2026-09-26,2026-09-26,UFC Fight Night: Rosas Jr. vs. Barcelos,53,52,0.0,0.7042167855875773,False,False
+2026-09-26,2026-09-26,UFC Fight Night: Rosas Jr. vs. Barcelos,3,1,1.0,0.7212989423955469,True,True
+2026-09-26,2026-09-26,UFC Fight Night: Rosas Jr. vs. Barcelos,12,49,1.0,0.37089037613800285,False,False
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,22,61,1.0,0.312638215038976,False,False
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,4,10,1.0,0.39339404687016327,True,True
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,7,17,0.0,0.8559748353806395,False,True
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,15,11,0.0,0.7640561725689394,True,True
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,46,29,1.0,0.4773370714622982,False,False
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,9,30,0.0,0.9418041595132816,False,True
+2026-09-26,2026-10-03,UFC 332: Silva vs. Wang,14,34,0.0,1.0601833259506834,False,False
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,43,63,0.0,0.7862927120632612,False,False
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,16,20,1.0,0.5090333434658509,False,True
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,8,27,1.0,0.400074549977706,False,True
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,4,10,1.0,0.51703732848306,True,True
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,26,49,0.0,1.665886210291841,False,False
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,81,58,0.0,1.2411013896589704,False,False
+2026-09-26,2026-10-10,UFC Fight Night: Allen vs. Duncan,32,16,0.0,0.956087544498847,False,False
+2026-10-17,2026-10-17,UFC Fight Night: Buckley vs. Malott,3,6,0.0,0.9605522006684204,True,True
+2026-10-17,2026-10-17,UFC Fight Night: Buckley vs. Malott,72,55,0.0,1.02513631728948,False,False
+2026-10-17,2026-10-17,UFC Fight Night: Buckley vs. Malott,38,32,0.0,0.7475938329282129,False,False
+2026-10-17,2026-10-17,UFC Fight Night: Buckley vs. Malott,7,16,0.0,0.9649385636673932,False,True
+2026-10-17,2026-10-17,UFC Fight Night: Buckley vs. Malott,15,21,0.0,1.1541316084058717,False,True

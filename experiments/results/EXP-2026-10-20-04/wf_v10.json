@@ -1,0 +1,971 @@
+{
+ "summary": {
+  "test_years": [
+   2017,
+   2026
+  ],
+  "bouts": 2824,
+  "tuned": {
+   "concordance": 0.5964943342776204,
+   "log_loss": 0.6678183550934809
+  },
+  "v10": {
+   "concordance": 0.5752478753541076,
+   "log_loss": 0.6785791495812998
+  },
+  "bplus0": {
+   "concordance": 0.5777266288951841,
+   "log_loss": 0.6758665071770783
+  },
+  "tuned_minus_v10": {
+   "log_loss": {
+    "mean": -0.010760794487818947,
+    "ci95": [
+     -0.015137996315324514,
+     -0.006406517850399804
+    ]
+   },
+   "concordance": {
+    "mean": 0.021246458923512748,
+    "ci95": [
+     0.007865219362950567,
+     0.034810520183890664
+    ]
+   }
+  },
+  "tuned_minus_bplus0": {
+   "log_loss": {
+    "mean": -0.008048152083597448,
+    "ci95": [
+     -0.0121033253182091,
+     -0.003921685676200581
+    ]
+   },
+   "concordance": {
+    "mean": 0.018767705382436262,
+    "ci95": [
+     0.005175254079455725,
+     0.03261696742915774
+    ]
+   }
+  },
+  "bplus0_minus_v10": {
+   "log_loss": {
+    "mean": -0.0027126424042215012,
+    "ci95": [
+     -0.004784980028257844,
+     -0.0007599882136596996
+    ]
+   },
+   "concordance": {
+    "mean": 0.002478753541076487,
+    "ci95": [
+     -0.008005575424660964,
+     0.012803762469526535
+    ]
+   }
+  },
+  "top15": {
+   "bouts": 732,
+   "tuned": {
+    "concordance": 0.5512295081967213,
+    "log_loss": 0.6768308139087977
+   },
+   "v10": {
+    "concordance": 0.5348360655737705,
+    "log_loss": 0.6939364890729717
+   }
+  }
+ },
+ "per_year": [
+  {
+   "year": 2017,
+   "train_bouts": 832,
+   "test_bouts": 256,
+   "tuned": {
+    "concordance": 0.58984375,
+    "log_loss": 0.6852767572817424
+   },
+   "v10": {
+    "concordance": 0.58203125,
+    "log_loss": 0.6893657642073233
+   },
+   "bplus0": {
+    "concordance": 0.56640625,
+    "log_loss": 0.6913548444812185
+   },
+   "train_log_loss": 0.659353993031737,
+   "seconds": 106.1
+  },
+  {
+   "year": 2018,
+   "train_bouts": 1088,
+   "test_bouts": 271,
+   "tuned": {
+    "concordance": 0.5535055350553506,
+    "log_loss": 0.6819601699687129
+   },
+   "v10": {
+    "concordance": 0.5424354243542435,
+    "log_loss": 0.6903921178122823
+   },
+   "bplus0": {
+    "concordance": 0.5756457564575646,
+    "log_loss": 0.6832185665411881
+   },
+   "train_log_loss": 0.6650352191276548,
+   "seconds": 72.9
+  },
+  {
+   "year": 2019,
+   "train_bouts": 1359,
+   "test_bouts": 291,
+   "tuned": {
+    "concordance": 0.5463917525773195,
+    "log_loss": 0.6743476968032609
+   },
+   "v10": {
+    "concordance": 0.49140893470790376,
+    "log_loss": 0.6835193475981266
+   },
+   "bplus0": {
+    "concordance": 0.49828178694158076,
+    "log_loss": 0.6821573189463455
+   },
+   "train_log_loss": 0.6674992675198428,
+   "seconds": 110.1
+  },
+  {
+   "year": 2020,
+   "train_bouts": 1650,
+   "test_bouts": 239,
+   "tuned": {
+    "concordance": 0.5523012552301255,
+    "log_loss": 0.6914693652441551
+   },
+   "v10": {
+    "concordance": 0.5523012552301255,
+    "log_loss": 0.6894896671430168
+   },
+   "bplus0": {
+    "concordance": 0.5606694560669456,
+    "log_loss": 0.6866544936285033
+   },
+   "train_log_loss": 0.6685433679333534,
+   "seconds": 73.7
+  },
+  {
+   "year": 2021,
+   "train_bouts": 1889,
+   "test_bouts": 284,
+   "tuned": {
+    "concordance": 0.6197183098591549,
+    "log_loss": 0.658441629582792
+   },
+   "v10": {
+    "concordance": 0.6056338028169014,
+    "log_loss": 0.6662554197243057
+   },
+   "bplus0": {
+    "concordance": 0.6091549295774648,
+    "log_loss": 0.6663610720141168
+   },
+   "train_log_loss": 0.6712887648984796,
+   "seconds": 76.7
+  },
+  {
+   "year": 2022,
+   "train_bouts": 2173,
+   "test_bouts": 300,
+   "tuned": {
+    "concordance": 0.5933333333333334,
+    "log_loss": 0.6714570399898465
+   },
+   "v10": {
+    "concordance": 0.57,
+    "log_loss": 0.6768788393720861
+   },
+   "bplus0": {
+    "concordance": 0.5733333333333334,
+    "log_loss": 0.6741996722998721
+   },
+   "train_log_loss": 0.6694697575431183,
+   "seconds": 76.4
+  },
+  {
+   "year": 2023,
+   "train_bouts": 2473,
+   "test_bouts": 278,
+   "tuned": {
+    "concordance": 0.5935251798561151,
+    "log_loss": 0.6717637426791465
+   },
+   "v10": {
+    "concordance": 0.5935251798561151,
+    "log_loss": 0.6799514692272965
+   },
+   "bplus0": {
+    "concordance": 0.5755395683453237,
+    "log_loss": 0.6763520106230915
+   },
+   "train_log_loss": 0.6694723274080956,
+   "seconds": 117.8
+  },
+  {
+   "year": 2024,
+   "train_bouts": 2751,
+   "test_bouts": 317,
+   "tuned": {
+    "concordance": 0.6356466876971609,
+    "log_loss": 0.650920511774459
+   },
+   "v10": {
+    "concordance": 0.5851735015772871,
+    "log_loss": 0.6803920443429956
+   },
+   "bplus0": {
+    "concordance": 0.610410094637224,
+    "log_loss": 0.6717235179824727
+   },
+   "train_log_loss": 0.6696557279068109,
+   "seconds": 76.8
+  },
+  {
+   "year": 2025,
+   "train_bouts": 3068,
+   "test_bouts": 313,
+   "tuned": {
+    "concordance": 0.6325878594249201,
+    "log_loss": 0.6520879745842056
+   },
+   "v10": {
+    "concordance": 0.6230031948881789,
+    "log_loss": 0.668011362848061
+   },
+   "bplus0": {
+    "concordance": 0.6293929712460063,
+    "log_loss": 0.6648912007662652
+   },
+   "train_log_loss": 0.6676625408067403,
+   "seconds": 81.3
+  },
+  {
+   "year": 2026,
+   "train_bouts": 3381,
+   "test_bouts": 275,
+   "tuned": {
+    "concordance": 0.6327272727272727,
+    "log_loss": 0.649274280925859
+   },
+   "v10": {
+    "concordance": 0.6,
+    "log_loss": 0.6653197242489517
+   },
+   "bplus0": {
+    "concordance": 0.5672727272727273,
+    "log_loss": 0.6665823077168778
+   },
+   "train_log_loss": 0.6661073628357861,
+   "seconds": 78.0
+  }
+ ],
+ "tuned_by_year": {
+  "2017": {
+   "w_rating": 0.7,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.25,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.25,
+     0.25,
+     0.5,
+     0.75
+    ],
+    "dominant_extra": 0.0,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.1,
+     "1-4": 0.1,
+     "0-5": 0.2
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.0,
+     "cap": 0.3
+    }
+   }
+  },
+  "2018": {
+   "w_rating": 0.7,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.5,
+     0.5,
+     0.75
+    ],
+    "dominant_extra": 0.0,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.05,
+     "1-4": 0.1,
+     "0-5": 0.2
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.0,
+     "cap": 0.3
+    }
+   }
+  },
+  "2019": {
+   "w_rating": 0.65,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.5,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.5,
+     0.5,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.0,
+     "1-4": 0.1,
+     "0-5": 0.2
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.0,
+     "cap": 0.3
+    }
+   }
+  },
+  "2020": {
+   "w_rating": 0.65,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.5,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.5,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.0,
+     "1-4": 0.1,
+     "0-5": 0.2
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.0,
+     "cap": 0.3
+    }
+   }
+  },
+  "2021": {
+   "w_rating": 0.65,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.5,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.0,
+     "1-4": 0.1,
+     "0-5": 0.2
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.0,
+     "cap": 0.3
+    }
+   }
+  },
+  "2022": {
+   "w_rating": 0.65,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.5,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.05,
+     "1-4": 0.1,
+     "0-5": 0.2
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.0,
+     "cap": 0.3
+    }
+   }
+  },
+  "2023": {
+   "w_rating": 0.7,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.75,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.05,
+     "1-4": 0.1,
+     "0-5": 0.4
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.05,
+     "cap": 0.3
+    }
+   }
+  },
+  "2024": {
+   "w_rating": 0.7,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.75,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.05,
+     "1-4": 0.1,
+     "0-5": 0.8
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.05,
+     "cap": 0.3
+    }
+   }
+  },
+  "2025": {
+   "w_rating": 0.7,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.75,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.05,
+     "1-4": 0.1,
+     "0-5": 0.6
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 10,
+     "per_loss": 0.05,
+     "cap": 0.3
+    }
+   }
+  },
+  "2026": {
+   "w_rating": 0.7,
+   "horizon": {
+    "kind": "exp",
+    "full_years": 1.0,
+    "tau": 1.5,
+    "max_years": 15.0
+   },
+   "proof_value": 0.0,
+   "loss": {
+    "mode": "tiers",
+    "years": 15.0,
+    "tiers": [
+     0.5,
+     0.75,
+     0.75,
+     0.75
+    ],
+    "dominant_extra": 0.5,
+    "decay": "flat"
+   },
+   "hindsight": {
+    "mode": "none",
+    "alpha_win": 1.0,
+    "alpha_loss": 1.0
+   },
+   "form": {
+    "mode": "buckets",
+    "buckets": {
+     "2-3": 0.05,
+     "1-4": 0.1,
+     "0-5": 0.8
+    },
+    "tiers": [
+     0.05,
+     0.1,
+     0.15,
+     0.2
+    ],
+    "cap": 0.45,
+    "bad_loss": {
+     "rank_above": 15,
+     "per_loss": 0.05,
+     "cap": 0.3
+    }
+   }
+  }
+ },
+ "choice_stability": {
+  "w_rating": {
+   "0.7": [
+    "2017",
+    "2018",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "0.65": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ]
+  },
+  "horizon": {
+   "{\"full_years\": 1.0, \"kind\": \"exp\", \"max_years\": 15.0, \"tau\": 1.5}": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "proof_value": {
+   "0.25": [
+    "2017"
+   ],
+   "0.0": [
+    "2018",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "0.5": [
+    "2019",
+    "2020"
+   ]
+  },
+  "loss.mode": {
+   "tiers": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "loss.tiers": {
+   "[0.25, 0.25, 0.5, 0.75]": [
+    "2017"
+   ],
+   "[0.5, 0.5, 0.5, 0.75]": [
+    "2018",
+    "2019"
+   ],
+   "[0.5, 0.5, 0.75, 0.75]": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "[0.5, 0.75, 0.75, 0.75]": [
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "loss.dominant_extra": {
+   "0.0": [
+    "2017",
+    "2018"
+   ],
+   "0.5": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "loss.years": {
+   "15.0": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "loss.decay": {
+   "flat": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "hindsight.mode": {
+   "none": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "hindsight.alpha_win": {
+   "1.0": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "hindsight.alpha_loss": {
+   "1.0": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "form.mode": {
+   "buckets": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  },
+  "form.buckets": {
+   "{\"0-5\": 0.2, \"1-4\": 0.1, \"2-3\": 0.1}": [
+    "2017"
+   ],
+   "{\"0-5\": 0.2, \"1-4\": 0.1, \"2-3\": 0.05}": [
+    "2018",
+    "2022"
+   ],
+   "{\"0-5\": 0.2, \"1-4\": 0.1, \"2-3\": 0.0}": [
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "{\"0-5\": 0.4, \"1-4\": 0.1, \"2-3\": 0.05}": [
+    "2023"
+   ],
+   "{\"0-5\": 0.8, \"1-4\": 0.1, \"2-3\": 0.05}": [
+    "2024",
+    "2026"
+   ],
+   "{\"0-5\": 0.6, \"1-4\": 0.1, \"2-3\": 0.05}": [
+    "2025"
+   ]
+  },
+  "form.bad_loss": {
+   "{\"cap\": 0.3, \"per_loss\": 0.0, \"rank_above\": 10}": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "{\"cap\": 0.3, \"per_loss\": 0.05, \"rank_above\": 10}": [
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "{\"cap\": 0.3, \"per_loss\": 0.05, \"rank_above\": 15}": [
+    "2026"
+   ]
+  }
+ },
+ "seconds": 870
+}
