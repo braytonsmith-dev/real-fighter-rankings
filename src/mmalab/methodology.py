@@ -273,8 +273,8 @@ def build_text() -> str:
       "It was rejected for the board because a resume rank lags ability by construction: a contender earns the higher spot by beating "
       "the man who holds it, and an older top-10 fighter loses more often because he is matched against the best. Predictive concordance "
       "is therefore reported as a descriptive check, never used as the objective (PREREGISTRATION.md section 8). Age belongs in the "
-      "prediction model, and a per-fighter decline and rise profile built from career statistics is under development to be shown "
-      "beside the resume rank, not inside it.")
+      "prediction model; what the rating misses by age, and each fighter's own trajectory, is measured and shown beside the resume "
+      "rank, never inside it (section 14).")
     a("- Resume-board tests. Because prediction is not the objective, the board's own tests are published every week in "
       "`outputs/board_quality.json`: top-15 turnover, moves of more than three places without a bout, head-to-head results the "
       "placement rules leave unresolved (with the reason each was left), published ranks outside their own weight band, roster facts "
@@ -306,7 +306,12 @@ def build_text() -> str:
             a(f"  - record: prospective {pro.get('bouts', 0)} bouts" + (f", concordance {pro['real_concordance']:.3f}" if pro.get("bouts") else "")
               + (f"; retrospective reconstruction (in-sample) {ret['bouts']} bouts, concordance {ret['real_concordance']:.3f}" if ret.get("bouts") else "") + ".")
     a("")
-    a("## 14. Changelog")
+    a("## 14. Age, decline and rise: what the rating misses, shown beside the rank")
+    a("")
+    for line in decline_section():
+        a(line)
+    a("")
+    a("## 15. Changelog")
     a("")
     log = ROOT / "CHANGELOG.md"
     if log.exists():
@@ -316,6 +321,103 @@ def build_text() -> str:
     a("")
     a("Independent fan and research project. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete.")
     return "\n".join(t)
+
+
+DECLINE_EXP = "EXP-2026-10-21-01"          # the recorded research run the held-out numbers below come from
+DECLINE_STRATA_EXP = "EXP-2026-10-21-02"   # who declines faster: curves by fighter group
+
+
+def decline_section() -> list[str]:
+    """Section 14: the decline and rise index. The live curve comes from outputs/decline_curve.json (rebuilt weekly);
+    the held-out evidence comes from the register's copy of the recorded run, so the text and the numbers it cites
+    stay tied to the same experiment."""
+    cfg = yaml.safe_load((ROOT / "config" / "decline.yaml").read_text()) if (ROOT / "config" / "decline.yaml").exists() else {}
+    curve_path = OUT / "decline_curve.json"
+    curve = json.loads(curve_path.read_text()) if curve_path.exists() else None
+    rec_path = ROOT / "experiments" / "results" / DECLINE_EXP / "decline_report_research_resume_perf.json"
+    rec = json.loads(rec_path.read_text()) if rec_path.exists() else None
+    k = float((curve or {}).get("points_per_residual", 694.9))
+    t = []
+    t.append("Section 12 records why no board carries an age term: a resume rank is earned against the fighters a man was matched "
+             "with, and an older contender loses more often because he is matched with the best. The question the ranking cannot "
+             "answer, and that readers ask first about an ageing champion or a rising prospect, is how far the rating now sits from the "
+             "fighter's current level. The decline and rise index answers it beside the rank (`src/mmalab/decline.py`, settings in "
+             "`config/decline.yaml`, shown in the Trajectory section of every profile page). No board reads it.")
+    t.append("")
+    t.append("**Outcome.** For every fighter and decided bout, the residual is the engine's performance score minus the pre-fight "
+             "expectation, r = s - e, where s is the score the resume engine already uses (finishes 1 or 0, decisions a blend of the "
+             "judges' cards and the fight statistics, section 3) and e comes from the two resume ratings plus a corner credit fitted on "
+             "the training rows (the first-listed, red-corner fighter is the matchmakers' favourite and wins about 64% of bouts against 53% "
+             "expected by rating alone; without the credit a fighter who is usually the favourite would look like a riser). The rating "
+             "update is K (s - e), so a run of same-signed residuals is exactly the drift the rating has not absorbed. One unit of residual "
+             f"sustained over many bouts corresponds to about {k:.0f} rating points (the slope of the expectation curve at e = 0.5).")
+    t.append("")
+    t.append("**Model.** Three parts, every one computed from information available before the bout. A population curve f(age), "
+             "piecewise linear with knots at 27, 30, 33 and 36, one per sex, fitted on bouts from 2011: the average residual at each age, "
+             "which is the rating's own age bias. An individual level: the fighter's recency-weighted mean residual around that curve over "
+             "his earlier bouts, shrunk toward zero by a pseudo-count of bouts. An individual slope: the recency-weighted trend of those "
+             "residuals against age, shrunk toward zero. The prediction for a fighter is f(age) + level + slope x (age - mean prior age). "
+             f"The three shrinkage settings (level {cfg.get('lambda_level')}, slope {cfg.get('lambda_slope')}, half-life {cfg.get('half_life')} "
+             "years) were chosen walk-forward: for each test year from the held-out performance of the years already tested, never from "
+             "the test year, and they settled on the same values from 2019 on.")
+    t.append("")
+    if curve:
+        men, women = curve["population_curve_men"], curve["population_curve_women"]
+        ages = ["22", "25", "28", "30", "32", "34", "36", "38", "40"]
+        t.append(f"**The population curve now** (fitted on {curve['fighter_bouts_fitted']:,} fighter-bouts through {curve['as_of']}, in residual "
+                 "units with the rating-point equivalent):")
+        t.append("")
+        t.append("| Age | " + " | ".join(ages) + " |")
+        t.append("|---|" + "---|" * len(ages))
+        t.append("| Men | " + " | ".join(f"{men[a]:+.3f} ({men[a] * k:+.0f})" for a in ages) + " |")
+        t.append("| Women | " + " | ".join(f"{women[a]:+.3f} ({women[a] * k:+.0f})" for a in ages) + " |")
+        t.append("")
+        t.append("Read: a 22-year-old on the board typically performs as if his rating were about "
+                 f"{men['22'] * k:.0f} points higher than it is; a 36-year-old as if it were {-men['36'] * k:.0f} points lower, a 40-year-old "
+                 f"{-men['40'] * k:.0f} points lower. The women's curve is flatter until the early thirties and then falls at the same rate.")
+        t.append("")
+    if rec:
+        p = rec["pooled_heldout"]
+        t.append(f"**Held-out evidence** (walk-forward by calendar year, test years 2016 to {rec['per_year'][-1]['year']}, "
+                 f"{p['rows']:,} fighter-bouts; experiments/REGISTER.md {DECLINE_EXP}). The population curve explained "
+                 f"{p['r2_population']:.1%} of the variance of the next bout's residual out of sample, positive in every test year; "
+                 "the realized residual by age bucket tracked the curve that predicted it:")
+        t.append("")
+        t.append("| Ages | Fighter-bouts | Realized residual | Curve's prediction | Win rate | Expected | Rating points stale |")
+        t.append("|---|---|---|---|---|---|---|")
+        for row in rec.get("heldout_by_age", []):
+            t.append(f"| {row['ages']} | {row['n']:,} | {row['mean_residual']:+.3f} | {row['population_curve']:+.3f} | {row['win_rate']:.0%} | "
+                     f"{row['mean_expectation']:.0%} | {row['rating_points_stale']:+.0f} |")
+        t.append("")
+        d = rec["decliner_test"]
+        lo, hi, al = d["lowest_quartile_of_individual_prediction"], d["highest_quartile"], d["all_33_plus"]
+        rt = rec["result_test"]
+        gain = rt.get("gain: M1 + population + level and slope over M1", {})
+        t.append(f"The individual terms are a weak, consistent signal: held-out correlation {p['corr_individual_vs_realized']:.2f} between the "
+                 f"individual prediction and the realized residual (calibration slope {p['calibration_slope']:.2f}, where 1 is right), and among "
+                 f"the {d['rows_33_plus']:,} held-out bouts of fighters aged 33 or over, the lowest predicted quartile won {lo['win_rate']:.0%} against "
+                 f"{lo['mean_expectation']:.0%} expected ({lo['wins_minus_expected_per_100']:+.0f} per 100), the highest {hi['win_rate']:.0%} against "
+                 f"{hi['mean_expectation']:.0%} ({hi['wins_minus_expected_per_100']:+.0f}), all of them {al['wins_minus_expected_per_100']:+.0f}. "
+                 f"Added to the prediction model's shadow feature set they change log loss by {gain.get('delta_log_loss', 0):+.4f} "
+                 f"(95% event-block interval {gain.get('ci95_event_block_bootstrap', ['', ''])[0]} to {gain.get('ci95_event_block_bootstrap', ['', ''])[1]}): "
+                 "nothing. Against the faster prediction Elo (K 130) the individual terms carry no signal at all; the resume rating is slow "
+                 "by design, so it is the one with something left to read. On the tuning panel of 335 boards, converting the population "
+                 "curve to rating points raises board concordance by 1.4 to 2.0 points with no free parameter, the individual terms add "
+                 f"nothing on top, and neither is applied to any board (section 12).")
+        t.append("")
+    t.append(f"**Who declines faster** (men's bouts from 2011, descriptive, {DECLINE_STRATA_EXP}). At the same age, fighters who debuted "
+             "in the UFC before 25 run further behind their rating from 33 on than those who debuted at 29 or later (about 0.07 of residual, "
+             "50 rating points, interval excluding zero at 33, 35 and 37); the lighter divisions decline harder than middleweight and above "
+             "from 35 on; a knockout loss in the previous three years marks a further 0.05 of lag at 35 to 37; and strikers and wrestlers "
+             "decline at the same rate, so the common belief that wrestlers age better finds no support here. Fitting the curve within "
+             "those groups did not beat the pooled curve out of sample, so the index uses one curve per sex and leaves the group "
+             "differences as findings.")
+    t.append("")
+    t.append("**What is published.** `outputs/decline_index.csv` (every fighter with three decided UFC bouts and a bout in the last three "
+             "years: age component, own-results component, combined, in residual units and rating points, with a plain reading) and "
+             "`outputs/decline_curve.json`, rebuilt by the weekly pipeline from the frozen settings. The research runs that chose the "
+             f"settings and measured the evidence are {DECLINE_EXP} and {DECLINE_STRATA_EXP} in the register.")
+    return t
 
 
 def main() -> None:

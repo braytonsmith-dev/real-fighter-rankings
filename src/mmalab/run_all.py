@@ -4,7 +4,7 @@ run_all.py - One command to rebuild everything from the raw CSVs.
     PYTHONPATH=src python3 -m mmalab.run_all            # full rebuild (~4 min)
     PYTHONPATH=src python3 -m mmalab.run_all --quick    # skip the Elo grid search (~2 min)
 
-Order matters: ingest -> bout_stats -> backtest (or ratings refresh) -> boards -> card_quality -> compare -> validate -> board_versions -> board_quality -> picks -> figures -> methodology -> publish
+Order matters: ingest -> bout_stats -> backtest (or ratings refresh) -> boards -> card_quality -> compare -> validate -> board_versions -> board_quality -> picks -> figures -> methodology -> publish -> decline -> fighter_pages
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from mmalab import ingest, bout_stats, backtest, sensitivity, rankings, resume_board, board_versions, board_quality, card_quality, figures, publish, compare, methodology, history, picks, shadow
+from mmalab import ingest, bout_stats, backtest, sensitivity, rankings, resume_board, board_versions, board_quality, card_quality, figures, publish, compare, methodology, history, picks, shadow, decline, fighter_pages
 
 
 def main(quick: bool = False) -> None:
@@ -31,7 +31,9 @@ def main(quick: bool = False) -> None:
     steps += [("boards", board), ("card_quality", card_quality.main), ("compare", compare.main), ("validate", history.validate),
               ("board_versions", board_versions.main),      # shadow versions beside the registered board (own snapshots and validation)
               ("board_quality", board_quality.main),        # the resume board's own tests: turnover, moves without a bout, head-to-head conflicts, band outliers, external agreement
-              ("picks", picks.main), ("figures", figures.main), ("methodology", methodology.main), ("publish", publish.main)]
+              ("picks", picks.main), ("figures", figures.main), ("methodology", methodology.main), ("publish", publish.main),
+              ("decline", decline.publish_index),          # decline and rise index from the frozen settings in config/decline.yaml (display only)
+              ("fighter_pages", fighter_pages.main)]       # one profile page per board fighter, linked from every board row
     for name, fn in steps:
         t = time.time()
         print(f"\n===== {name} =====")

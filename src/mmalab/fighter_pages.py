@@ -184,7 +184,22 @@ def load_sources() -> dict:
     official = None if {"official_a", "official_b"} <= set(bouts.columns) else OfficialRanks(names)
     return {"board": board, "shadow": shadow, "bouts": bouts, "p_a": p_a, "elo": elo, "fighters": fighters,
             "history": _read_history(), "features": features_as_of(bouts, stats_as_of), "official": official,
-            "as_of": as_of, "stats_as_of": stats_as_of}
+            "as_of": as_of, "stats_as_of": stats_as_of, **_read_trajectory()}
+
+
+def _read_trajectory() -> dict:
+    """The decline and rise index (outputs/decline_index.csv), its curve (decline_curve.json) and the per-bout
+    residual series (decline_residuals.csv), all written by `python -m mmalab.decline --index-only`; every key is
+    None when the files are absent, and the pages then omit the trajectory section."""
+    idx_path, curve_path, res_path = OUT / "decline_index.csv", OUT / "decline_curve.json", OUT / "decline_residuals.csv"
+    if not (idx_path.exists() and curve_path.exists()):
+        return {"trajectory_index": None, "trajectory_curve": None, "trajectory_residuals": None}
+    import json
+    idx = pd.read_csv(idx_path).drop_duplicates("fighter").set_index("fighter")
+    curve = json.loads(curve_path.read_text())
+    res = pd.read_csv(res_path, parse_dates=["date"]) if res_path.exists() else pd.DataFrame(
+        columns=["fighter", "date", "bout_id", "opponent", "won", "age", "e", "s", "r", "population_curve"])
+    return {"trajectory_index": idx, "trajectory_curve": curve, "trajectory_residuals": res}
 
 
 # ---------------------------------------------------------------------------
@@ -351,6 +366,8 @@ def build_profiles(src: dict | None = None) -> list[dict]:
     by_fighter = pd.concat([long_a, long_b]).groupby("fighter")["bout_id"].apply(set).to_dict()
     bouts_by_id = bouts.set_index("bout_id", drop=False).rename_axis("bid")
     fighters = src["fighters"]
+    traj_idx, traj_res = src.get("trajectory_index"), src.get("trajectory_residuals")
+    traj_by = {} if traj_res is None or traj_res.empty else {n: g for n, g in traj_res.groupby("fighter")}
 
     profiles = []
     for div, g in board.groupby("division", sort=False):
@@ -394,8 +411,29 @@ def build_profiles(src: dict | None = None) -> list[dict]:
                 "last_ko_loss_days": _f(fe.get("last_ko_loss_days")), "ko_losses_3y": int(_f(fe.get("ko_losses_3y")) or 0),
                 "bouts": _bout_rows(name, mine, src, slugs), "rank_history": rank_history,
                 "rating_history": _rating_rows(name, elo_by.get(name), bout_info),
+                "trajectory": _trajectory_entry(name, traj_idx, traj_by.get(name), src.get("trajectory_curve")),
             })
     return profiles
+
+
+def _trajectory_entry(name: str, idx: pd.DataFrame | None, series: pd.DataFrame | None, curve: dict | None) -> dict | None:
+    """The fighter's row of the decline and rise index with his residual series; None when he is not indexed
+    (fewer than three decided UFC bouts, or no bout in the last three years)."""
+    if idx is None or curve is None or name not in idx.index:
+        return None
+    r = idx.loc[name]
+    k = float(curve.get("points_per_residual", 694.9))
+    female = int(_f(r.get("female")) or 0)
+    pop_curve = curve["population_curve_women" if female else "population_curve_men"]
+    rows = [] if series is None else [
+        {"date": str(pd.Timestamp(x.date).date()), "age": _f(x.age), "opponent": str(x.opponent), "won": _f(x.won),
+         "residual": _f(x.r), "population": _f(x.population_curve)} for x in series.sort_values("date").itertuples()]
+    return {"as_of": str(r.get("as_of")), "age": _f(r.get("age")), "bouts_used": int(_f(r.get("bouts_used")) or 0),
+            "population": _f(r.get("population_expectation")), "level": _f(r.get("individual_level")),
+            "slope_per_year": _f(r.get("individual_slope_per_year")), "individual": _f(r.get("individual_prediction")),
+            "total": _f(r.get("total_prediction")), "points_per_unit": k, "label": str(r.get("label")),
+            "reading": str(r.get("reading")), "population_curve": {int(a): float(v) for a, v in pop_curve.items()},
+            "hyperparameters": curve.get("hyperparameters", {}), "rating": str(curve.get("rating", "resume")), "series": rows}
 
 
 # ---------------------------------------------------------------------------
@@ -660,6 +698,102 @@ def rating_chart(profile: dict) -> str:
                   "is the predictive line, which is a different number from the resume rating in the header.</p>")
 
 
+def trajectory_chart(t: dict, name: str, poss: str) -> str:
+    """Performance relative to the rating by age: one dot per decided bout (residual in rating points, wins and
+    losses told apart by fill), the population curve for the fighter's sex, and the fighter's own fitted line
+    (level and slope as of the data date, drawn across the recency window that produced it)."""
+    rows = [r for r in t["series"] if r["age"] is not None and r["residual"] is not None]
+    if len(rows) < 3 or t["age"] is None:
+        return ""
+    k = 1.0                                   # the chart stays in residual units; the table carries the rating points
+    ages = [r["age"] for r in rows]
+    x0, x1 = math.floor(min(ages) - 0.5), math.ceil(max(max(ages), t["age"]) + 0.5)
+    vals = [r["residual"] for r in rows]
+    ymax = 1.0
+    pw, ph = W - ML - MR, H - MT - MB
+
+    def px(a: float) -> float:
+        return ML + (a - x0) / max(x1 - x0, 1e-9) * pw
+
+    def py(v: float) -> float:
+        v = max(-ymax, min(ymax, v))
+        return MT + (ymax - v) / (2 * ymax) * ph
+
+    out = [f'<svg viewBox="0 0 {W} {H}" width="100%" style="max-width:{W}px;height:auto;display:block" role="img" '
+           f'aria-label="{html.escape(f"Performance relative to the rating by age for {name}")}"><g font-size="11" fill="var(--muted)">']
+    for yv in (-1.0, -0.5, 0.0, 0.5, 1.0):
+        yy = py(yv)
+        width = "1.5" if yv == 0 else "1"
+        out.append(f'<line x1="{ML}" x2="{W - MR}" y1="{yy:.1f}" y2="{yy:.1f}" stroke="var(--line)" stroke-width="{width}"/>'
+                   f'<text x="{ML - 6}" y="{yy + 4:.1f}" text-anchor="end">{yv:+.1f}</text>')
+    for a in range(x0, x1 + 1):
+        if (x1 - x0) <= 12 or a % 2 == 0:
+            out.append(f'<text x="{px(a):.1f}" y="{H - 8}" text-anchor="middle">{a}</text>')
+    curve = t["population_curve"]
+    keys = sorted(curve)
+
+    def pop_at(a: float) -> float:
+        """The population curve at a fractional age, interpolated between its integer points (flat beyond them)."""
+        a = min(max(a, keys[0]), keys[-1])
+        lo = int(math.floor(a))
+        hi = min(lo + 1, keys[-1])
+        return curve[lo] + (curve[hi] - curve[lo]) * (a - lo) if lo in curve and hi in curve else curve.get(lo, 0.0)
+    pts = " ".join(f"{px(a):.1f},{py(curve[a] * k):.1f}" for a in range(x0, x1 + 1) if a in curve)
+    if pts:
+        out.append(f'<polyline fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="6 4" points="{pts}"/>')
+    # the fighter's own line: population curve + level + slope * (age - weighted mean prior age), from his first bout to now
+    if t["level"] is not None and t["slope_per_year"] is not None and t["individual"] is not None:
+        abar = t["age"] - (t["individual"] - t["level"]) / t["slope_per_year"] if t["slope_per_year"] else t["age"]
+        grid = list(np.arange(min(ages), t["age"], 0.25)) + [t["age"]]
+        own = " ".join(f"{px(a):.1f},{py((pop_at(a) + t['level'] + t['slope_per_year'] * (a - abar)) * k):.1f}" for a in grid)
+        out.append(f'<polyline fill="none" stroke="var(--blue)" stroke-width="2.5" stroke-linejoin="round" points="{own}"/>')
+    for r, v in zip(rows, vals):
+        fill = "var(--blue)" if (r["won"] or 0) >= 0.5 else "var(--surface)"
+        tip = f"{r['date']} (age {r['age']:.1f}): {'W' if (r['won'] or 0) >= 0.5 else 'L'} vs {r['opponent']}, residual {v:+.2f}"
+        out.append(f'<circle cx="{px(r["age"]):.1f}" cy="{py(v):.1f}" r="4" fill="{fill}" stroke="var(--blue)" stroke-width="2">'
+                   f'<title>{html.escape(tip)}</title></circle>')
+    a_now, y_now = t["age"], (t["total"] or 0.0)
+    out.append(f'<text x="{px(a_now) + 6:.1f}" y="{py(y_now) + 4:.1f}" fill="var(--ink2)">{y_now:+.2f}</text>')
+    out.append("</g></svg>")
+    note = (f"Each dot is one decided UFC bout at {poss} age then: the performance score minus the rating's expectation, on the "
+            "score's own scale from -1 to +1 (filled = win, hollow = loss; above zero is better than the rating implied; a finish "
+            "as a slight favourite is about +0.45). The dashed line is the population curve for all fighters; the solid line is "
+            f"this fighter's own fitted level and trend as of the data date, weighted toward recent bouts. One unit sustained "
+            f"over many bouts corresponds to about {t['points_per_unit']:.0f} rating points; a single bout's residual is noisy.")
+    return "".join(out) + f"<p class='meta'>{html.escape(note)}</p>"
+
+
+TRAJECTORY_EVIDENCE = ("Held-out evidence (walk-forward 2016 to 2026, EXP-2026-10-21-01): the age curve held in every test year; the "
+                       "individual component is a weak signal (correlation 0.06 with the next bout's residual; among fighters aged 33 or "
+                       "over, the lowest predicted quartile won 38% of next bouts against 53% expected, the highest 48% against 52%) "
+                       "and adds nothing to bout prediction beyond the shadow model. No board uses any of it: the rankings answer who "
+                       "has earned the place, not who wins next (EXP-2026-10-20-09).")
+
+
+def _trajectory_section(profile: dict) -> str:
+    """The decline and rise index: the plain reading, the three components in rating points, the chart, the evidence."""
+    t = profile.get("trajectory")
+    subj, obj, poss = pronouns(profile["division"])
+    if not t:
+        return ("<h2>Trajectory</h2><p class='meta'>No trajectory index: it needs three decided UFC bouts and a bout within the last three "
+                "years (config/decline.yaml).</p>")
+    esc = html.escape
+    k = t["points_per_unit"]
+    pts = lambda v: "n/a" if v is None else f"{v * k:+.0f}"
+    age_s = "unknown" if t["age"] is None else f"{t['age']:.1f}"
+    rows = [("Age component", pts(t["population"]), f"what fighters aged {age_s} typically run relative to their rating (population curve, all UFC bouts since 2011)"),
+            ("Own recent results", pts(t["individual"]),
+             f"{poss} recency-weighted mean and trend over {t['bouts_used']} bouts, shrunk toward zero; trend {pts(t['slope_per_year'])} points a year"),
+            ("Combined", pts(t["total"]), f"the rating's likely distance from {poss} current performance level, in rating points"),
+            ("Reading", esc(t["label"]), "ahead of, in line with (within 30 points), or behind the rating")]
+    body = "".join(f"<tr><td>{a}</td><td class='num'>{b}</td><td class='band'>{c}</td></tr>" for a, b, c in rows)
+    return (f"<h2>Trajectory</h2><p>{esc(t['reading'])}</p>"
+            f"<div class='scroll'><table><thead><tr><th>Component</th><th class='num'>Points</th><th>Meaning</th></tr></thead><tbody>{body}</tbody></table></div>"
+            f"<h3>Performance relative to the rating, by age</h3>{trajectory_chart(t, profile['name'], poss)}"
+            f"<p class='meta'>{esc(TRAJECTORY_EVIDENCE)} Method: src/mmalab/decline.py; settings: config/decline.yaml "
+            f"(expectation from the {esc(t['rating'])} rating; one unit of residual is about {k:.0f} rating points).</p>")
+
+
 # ---------------------------------------------------------------------------
 # pages
 
@@ -819,6 +953,7 @@ def render(profile: dict) -> str:
 {_why_section(profile)}
 {_bouts_section(profile)}
 {_stats_section(profile)}
+{_trajectory_section(profile)}
 {_flags_section(profile)}
 {publish.footer(profile['as_of'])}
 </body></html>"""
@@ -870,13 +1005,20 @@ def main() -> None:
     for n, s in collisions:
         print(f"note: {n!r} shares a slug with another board name and is written as {s}.html")
     total = 0
+    written = set()
     for p in profiles:
         text = render(p)
         (PAGES / f"{p['slug']}.html").write_text(text)
+        written.add(f"{p['slug']}.html")
         total += len(text.encode())
     as_of = str(src["as_of"].date())
     (PAGES / "index.html").write_text(render_index(profiles, as_of))
-    print(f"docs/fighters: {len(profiles)} profiles written ({total / 1024:.0f} KB; data through {as_of})")
+    stale = [p for p in PAGES.glob("*.html") if p.name != "index.html" and p.name not in written]
+    for p in stale:                      # a fighter who left the board keeps no orphan page
+        p.unlink()
+    with_traj = sum(1 for p in profiles if p.get("trajectory"))
+    print(f"docs/fighters: {len(profiles)} profiles written ({total / 1024:.0f} KB; {with_traj} with a trajectory index; "
+          f"{len(stale)} stale pages removed; data through {as_of})")
 
 
 if __name__ == "__main__":

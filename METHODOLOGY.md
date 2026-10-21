@@ -156,7 +156,7 @@ Reading the table: the whole set of loss protections costs about 0.003 log loss 
 - Division overrides, injuries and retirements are hand-kept and need weekly review.
 - Weights and thresholds were set by stated judgment and checked against the public boards (which makes those boards an informal tuning target); section 11 reports what each engine constant costs out of sample, and none has been fitted to any outcome.
 - Card-quality and matchmaking analyses use the predictive model's positions, not these boards.
-- Age. The board carries no age term, on purpose. Measured on 3,748 bouts between two board fighters from 2014 to 2026, the higher-ranked fighter won 45% of bouts when aged 35 or older against 58 to 63% when younger, in every period and division, and a rating discount by age would raise concordance by three to four points (experiments/REGISTER.md, EXP-2026-10-20-09). It was rejected for the board because a resume rank lags ability by construction: a contender earns the higher spot by beating the man who holds it, and an older top-10 fighter loses more often because he is matched against the best. Predictive concordance is therefore reported as a descriptive check, never used as the objective (PREREGISTRATION.md section 8). Age belongs in the prediction model, and a per-fighter decline and rise profile built from career statistics is under development to be shown beside the resume rank, not inside it.
+- Age. The board carries no age term, on purpose. Measured on 3,748 bouts between two board fighters from 2014 to 2026, the higher-ranked fighter won 45% of bouts when aged 35 or older against 58 to 63% when younger, in every period and division, and a rating discount by age would raise concordance by three to four points (experiments/REGISTER.md, EXP-2026-10-20-09). It was rejected for the board because a resume rank lags ability by construction: a contender earns the higher spot by beating the man who holds it, and an older top-10 fighter loses more often because he is matched against the best. Predictive concordance is therefore reported as a descriptive check, never used as the objective (PREREGISTRATION.md section 8). Age belongs in the prediction model; what the rating misses by age, and each fighter's own trajectory, is measured and shown beside the resume rank, never inside it (section 14).
 - Resume-board tests. Because prediction is not the objective, the board's own tests are published every week in `outputs/board_quality.json`: top-15 turnover, moves of more than three places without a bout, head-to-head results the placement rules leave unresolved (with the reason each was left), published ranks outside their own weight band, roster facts added in the last seven days, and agreement with each public board. None of them is a tuning target.
 
 ## 13. Shadow versions under test
@@ -171,12 +171,64 @@ A new board version is never substituted for the registered one during the pre-r
   - `placement`: `"solver"`
   - record: prospective 0 bouts; retrospective reconstruction (in-sample) 977 bouts, concordance 0.606.
 
-## 14. Changelog
+## 14. Age, decline and rise: what the rating misses, shown beside the rank
+
+Section 12 records why no board carries an age term: a resume rank is earned against the fighters a man was matched with, and an older contender loses more often because he is matched with the best. The question the ranking cannot answer, and that readers ask first about an ageing champion or a rising prospect, is how far the rating now sits from the fighter's current level. The decline and rise index answers it beside the rank (`src/mmalab/decline.py`, settings in `config/decline.yaml`, shown in the Trajectory section of every profile page). No board reads it.
+
+**Outcome.** For every fighter and decided bout, the residual is the engine's performance score minus the pre-fight expectation, r = s - e, where s is the score the resume engine already uses (finishes 1 or 0, decisions a blend of the judges' cards and the fight statistics, section 3) and e comes from the two resume ratings plus a corner credit fitted on the training rows (the first-listed, red-corner fighter is the matchmakers' favourite and wins about 64% of bouts against 53% expected by rating alone; without the credit a fighter who is usually the favourite would look like a riser). The rating update is K (s - e), so a run of same-signed residuals is exactly the drift the rating has not absorbed. One unit of residual sustained over many bouts corresponds to about 695 rating points (the slope of the expectation curve at e = 0.5).
+
+**Model.** Three parts, every one computed from information available before the bout. A population curve f(age), piecewise linear with knots at 27, 30, 33 and 36, one per sex, fitted on bouts from 2011: the average residual at each age, which is the rating's own age bias. An individual level: the fighter's recency-weighted mean residual around that curve over his earlier bouts, shrunk toward zero by a pseudo-count of bouts. An individual slope: the recency-weighted trend of those residuals against age, shrunk toward zero. The prediction for a fighter is f(age) + level + slope x (age - mean prior age). The three shrinkage settings (level 32, slope 200, half-life 4.0 years) were chosen walk-forward: for each test year from the held-out performance of the years already tested, never from the test year, and they settled on the same values from 2019 on.
+
+**The population curve now** (fitted on 14,594 fighter-bouts through 2026-10-18, in residual units with the rating-point equivalent):
+
+| Age | 22 | 25 | 28 | 30 | 32 | 34 | 36 | 38 | 40 |
+|---|---|---|---|---|---|---|---|---|---|
+| Men | +0.088 (+61) | +0.070 (+49) | +0.046 (+32) | +0.022 (+15) | -0.013 (-9) | -0.046 (-32) | -0.076 (-53) | -0.112 (-78) | -0.147 (-102) |
+| Women | +0.049 (+34) | +0.044 (+31) | +0.028 (+20) | +0.001 (+1) | +0.002 (+1) | -0.020 (-14) | -0.066 (-46) | -0.094 (-65) | -0.122 (-85) |
+
+Read: a 22-year-old on the board typically performs as if his rating were about 61 points higher than it is; a 36-year-old as if it were 53 points lower, a 40-year-old 102 points lower. The women's curve is flatter until the early thirties and then falls at the same rate.
+
+**Held-out evidence** (walk-forward by calendar year, test years 2016 to 2026, 10,702 fighter-bouts; experiments/REGISTER.md EXP-2026-10-21-01). The population curve explained 2.2% of the variance of the next bout's residual out of sample, positive in every test year; the realized residual by age bucket tracked the curve that predicted it:
+
+| Ages | Fighter-bouts | Realized residual | Curve's prediction | Win rate | Expected | Rating points stale |
+|---|---|---|---|---|---|---|
+| 17 to 22 | 67 | +0.086 | +0.068 | 61% | 53% | +60 |
+| 22 to 24 | 270 | +0.090 | +0.060 | 62% | 50% | +62 |
+| 24 to 26 | 727 | +0.063 | +0.053 | 57% | 50% | +44 |
+| 26 to 28 | 1,398 | +0.063 | +0.040 | 56% | 49% | +44 |
+| 28 to 30 | 1,913 | +0.042 | +0.024 | 55% | 49% | +29 |
+| 30 to 32 | 1,994 | +0.007 | -0.004 | 50% | 49% | +5 |
+| 32 to 34 | 1,696 | -0.012 | -0.038 | 48% | 50% | -9 |
+| 34 to 36 | 1,243 | -0.063 | -0.062 | 43% | 51% | -44 |
+| 36 to 38 | 740 | -0.089 | -0.082 | 42% | 50% | -62 |
+| 38 to 40 | 372 | -0.140 | -0.098 | 37% | 53% | -97 |
+| 40 to 42 | 148 | -0.187 | -0.115 | 34% | 57% | -130 |
+| 42 to 50 | 68 | -0.210 | -0.145 | 29% | 56% | -146 |
+
+The individual terms are a weak, consistent signal: held-out correlation 0.06 between the individual prediction and the realized residual (calibration slope 0.62, where 1 is right), and among the 2,888 held-out bouts of fighters aged 33 or over, the lowest predicted quartile won 38% against 53% expected (-15 per 100), the highest 48% against 52% (-4), all of them -9. Added to the prediction model's shadow feature set they change log loss by -0.0003 (95% event-block interval -0.0014 to 0.0008): nothing. Against the faster prediction Elo (K 130) the individual terms carry no signal at all; the resume rating is slow by design, so it is the one with something left to read. On the tuning panel of 335 boards, converting the population curve to rating points raises board concordance by 1.4 to 2.0 points with no free parameter, the individual terms add nothing on top, and neither is applied to any board (section 12).
+
+**Who declines faster** (men's bouts from 2011, descriptive, EXP-2026-10-21-02). At the same age, fighters who debuted in the UFC before 25 run further behind their rating from 33 on than those who debuted at 29 or later (about 0.07 of residual, 50 rating points, interval excluding zero at 33, 35 and 37); the lighter divisions decline harder than middleweight and above from 35 on; a knockout loss in the previous three years marks a further 0.05 of lag at 35 to 37; and strikers and wrestlers decline at the same rate, so the common belief that wrestlers age better finds no support here. Fitting the curve within those groups did not beat the pooled curve out of sample, so the index uses one curve per sex and leaves the group differences as findings.
+
+**What is published.** `outputs/decline_index.csv` (every fighter with three decided UFC bouts and a bout in the last three years: age component, own-results component, combined, in residual units and rating points, with a plain reading) and `outputs/decline_curve.json`, rebuilt by the weekly pipeline from the frozen settings. The research runs that chose the settings and measured the evidence are EXP-2026-10-21-01 and EXP-2026-10-21-02 in the register.
+
+## 15. Changelog
 
 Every change to a ranking rule, a data correction that moves a published number, or a change in what the site displays is
 logged here with its date, its reason and the evidence behind it. The rules for making a change are in GOVERNANCE.md.
 Versions follow `major.minor`: a minor version changes a rule; a patch (`1.0.1`) changes display, documentation or data
 handling without changing any rule. The registered method under the pre-registered forward test is always `VERSION`.
+
+### 1.0.2 (2026-10-21, display and documentation only)
+
+No rule changes; applies to the site as a whole. Fighter profile pages: every name on the registered and shadow boards opens
+`docs/fighters/<slug>.html` (why the fighter is ranked there, built from the score decomposition and placement string; last ten
+bouts with the opponent's official rank at the time and the predictive model's pre-fight probability; career statistics with
+division percentiles; board position since Oct 2023 and predictive rating by bout; descriptive context flags), with an index at
+`docs/fighters/index.html`. Decline and rise index (`src/mmalab/decline.py`, `config/decline.yaml`, METHODOLOGY.md section 14):
+the population age curve of the rating residual and each fighter's own shrunken level and trend, published as
+`outputs/decline_index.csv` and `outputs/decline_curve.json` and shown in a Trajectory section on every profile page with its
+held-out evidence beside it (EXP-2026-10-21-01, EXP-2026-10-21-02). No board reads any of it. Pipeline: two steps appended
+(`decline`, `fighter_pages`); the generated pages are committed with the site.
 
 ### 1.1 (shadow board, 2026-10-20)
 
@@ -199,11 +251,7 @@ Rule changes: opponent-aware versions of existing v1.0 rules, and the placement 
 
 Evidence: 43 event-eve boards (979 bouts, Oct 2023 to Oct 17, 2026, rebuilt on the corrected data with every placement rule applied) score concordance 0.606 for v1.1 against 0.607 for v1.0 and log loss 0.665 against 0.669 (paired differences -0.001, 95% interval -0.019 to +0.016, and -0.0045, interval -0.0093 to +0.0001); top-15 bouts 0.549 against 0.537 (EXP-2026-10-20-12). On the 14-day tuning panel (335 boards, 3,748 bouts, 2014 to 2026, score order without placement rules) the same ledger and form rules scored 0.580 concordance and 0.6748 log loss against 0.573 and 0.6772 for v1.0 (EXP-2026-10-20-03). The change is adopted for face validity at equal measured accuracy.
 
-Effect on the Oct 17, 2026 board: 111 of 194 top-15 slots differ in holder or position. Largest moves: Vera 54 to 14, Ortega 40
-to 15, Blachowicz 27 to 13, Adesanya 27 to 14, Buckley 21 to 15; Jim Miller 11 to 19, Jalin Turner 15 to 23, Neil Magny 15 to 22.
-Kamaru Usman moves from 9 to 5 at welterweight: his rating (1,807) is the division's highest because his four losses in five were
-to Edwards (twice), Chimaev and Du Plessis, which the rating protects by design; the curator's own view is that 7 is closer to
-right, and that gap is an open item for v1.2, not a reason to hand-place him.
+Effect on the Oct 17, 2026 board: 111 of 194 top-15 slots differ in holder or position. Largest moves: Vera 54 to 14, Ortega 40 to 15, Blachowicz 27 to 13, Adesanya 27 to 14, Buckley 21 to 15, Hill 20 to 14; Jim Miller 11 to 19, Jalin Turner 15 to 23, Neil Magny 15 to 22, Bo Nickal 14 to 20. The placement solver puts Topuria first at lightweight (the sequential loops left him third, below the man he knocked out in June 2025). Kamaru Usman moves from 9 to 5 at welterweight: his rating (1,807) is the division's highest below the champion because his four losses in five were to Edwards (twice), Chimaev and Du Plessis, which the rating protects by design; the curator's own view is that 7 is closer to right, and that gap is an open item, not a reason to hand-place him (EXP-2026-10-20-02).
 
 Also in this release, no rule change: provisional label on every board for fighters with three or fewer UFC bouts (finding D3);
 version, build commit and data date in every page footer (G4); the picks ledger records no pick when the model is within two

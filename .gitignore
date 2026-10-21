@@ -13,3 +13,10 @@ outputs/backtest_stdout.txt
 
 # cached tuning panels (rebuilt by src/mmalab/board_tune.py; about 1 GB each)
 outputs/panels/
+
+# derived per-bout residual series for the profile pages (rebuilt by src/mmalab/decline.py --index-only)
+outputs/decline_residuals.csv
+# research runs of the decline model (the register keeps copies under experiments/results/)
+outputs/decline_report_research_*.json
+outputs/decline_index_research_*.csv
+outputs/decline_heldout_research_*.csv

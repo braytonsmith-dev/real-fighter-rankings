@@ -18,6 +18,8 @@ Principle: a fighter is ranked on how he performed against the fighters he faced
 | Prediction model ratings and backtest | `docs/prediction.html`, `outputs/backtest_report.json`, `outputs/table_backtest.md` |
 | Comparison with UFC media panel, Meta, Sherdog, Fight Matrix, ESPN | `outputs/compare_report.md`, `outputs/compare_flags.csv` |
 | Card-quality index and supply facts | `outputs/card_quality_*.csv`, `outputs/card_quality_supply.json` |
+| Fighter profiles: why each board fighter is ranked there, last ten bouts, career statistics, trajectory | `docs/fighters/<slug>.html`, `docs/fighters/index.html` |
+| Decline and rise index: the rating's age curve and each fighter's own level and trend, display only | `outputs/decline_index.csv`, `outputs/decline_curve.json` |
 
 ## Headline results (as of 2026-09-26, method v1.0 frozen 2026-10-01)
 
@@ -115,6 +117,8 @@ Positions are computed on each event's date from pre-fight ratings among fighter
 ```bash
 PYTHONPATH=src python3 -m mmalab.figures
 PYTHONPATH=src python3 -m mmalab.publish
+PYTHONPATH=src python3 -m mmalab.decline --index-only   # decline and rise index (config/decline.yaml)
+PYTHONPATH=src python3 -m mmalab.fighter_pages           # one profile page per board fighter
 ```
 
 Or everything at once: `PYTHONPATH=src python3 -m mmalab.run_all` (add `--quick` to skip the grid search).
@@ -148,6 +152,8 @@ src/mmalab/rankings.py         legacy six-dimension composite (v0.x)
 src/mmalab/card_quality.py     top-10 vs top-10 bouts per card, supply facts
 src/mmalab/figures.py          paper figures and table
 src/mmalab/publish.py          docs/index.html for GitHub Pages
+src/mmalab/fighter_pages.py    docs/fighters/: one descriptive profile per board fighter, linked from every board row
+src/mmalab/decline.py          decline and rise index: population age curve of the rating residual plus a shrunken per-fighter level and slope; config/decline.yaml
 src/mmalab/odds.py             market baseline for the picks (The Odds API client, de-vigged consensus, append-only ledger); config/odds.yaml
 src/mmalab/run_all.py          the whole pipeline in order
 tests/test_official_ranks.py   pytest: every official ranking name resolves to a UFCStats name (run: PYTHONPATH=src python3 -m pytest tests)

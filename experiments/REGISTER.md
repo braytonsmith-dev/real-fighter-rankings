@@ -23,6 +23,8 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-13](#exp-2026-10-20-13) | 2026-10-20 | Literature sweep: aging, damage accumulation, style and longevity, time-varying rating models, finding the outlier | informational |
 | [EXP-2026-10-20-14](#exp-2026-10-20-14) | 2026-10-20 | Fighter profiles: do career statistics add to age in predicting bouts? | rejected |
 | [EXP-2026-10-20-15](#exp-2026-10-20-15) | 2026-10-20 | v1.2 candidate from the resume-preset walk-forward: face validity on today's board | rejected |
+| [EXP-2026-10-21-01](#exp-2026-10-21-01) | 2026-10-21 | Decline and rise index: the population age curve of the rating residual plus a shrunken per-fighter level and slope | adopted |
+| [EXP-2026-10-21-02](#exp-2026-10-21-02) | 2026-10-21 | Who declines faster: the population curve by style, debut age, weight band, UFC tenure and recent knockout loss | informational |
 
 ## EXP-2026-09-30-01
 
@@ -634,3 +636,94 @@ Candidate. `{"overrides": "weights rating 0.80; ledger proof 0.25, loss_tiers [[
 | welterweight | Makhachev C, Usman 1, Prates, Morales, Garry, Brady, Bonfim, Malott, Donchenko, Edwards, Smith |
 
 Decision. rejected: The accuracy-optimal rules inside the resume constraints are rating-heavy with a near-zero form penalty, which is the exact opposite of the curator's judgment on losing runs (Usman to 1, Buckley to 27, long resumes down). This is the matchmaking argument made concrete: the walk-forward rewards whoever the rating says is strongest, and a resume board is not that. v1.1 stays; the 1.6-point held-out gain is recorded as the measured price of the resume board's purpose. Individual pieces of the fit are not cherry-picked by taste.
+
+## EXP-2026-10-21-01
+
+Decline and rise index: the population age curve of the rating residual plus a shrunken per-fighter level and slope  
+Date 2026-10-21, decision: adopted, code at commit `72c149d`.
+
+Question. Given a fighter's own performances relative to what his rating implied, is he running ahead of or behind his rating and in which direction is he moving (decline and rise alike); does the individual trajectory add predictive accuracy anywhere; and what does the rating miss by age, in rating points?
+
+| Method | |
+|---|---|
+| outcome | per fighter and decided bout, r = s - e: the resume engine's performance score (finishes 1/0, decisions a 50/50 blend of judges' cards and fight statistics) minus the pre-fight expectation from the two ratings plus a corner credit fitted on training rows (red corner wins 64% vs 53% expected by rating; the credit comes out at 20 to 32 points by year). Expectation from the resume rating (the board's) or the prediction Elo; second outcome the dominance-per-minute margin minus its rating-implied expectation |
+| model | population curve f(age): piecewise-linear regression of r on age with knots 27/30/33/36, one per sex, training years 2011 to Y-1; individual level L_i: recency-weighted mean of (r - f) over the fighter's PRIOR bouts shrunk by lambda_level pseudo-bouts; individual slope b_i: recency-weighted slope of (r - f) on age shrunk by lambda_slope; prediction f(age) + L + b (age - mean prior age); weights 0.5 ** (years before / half_life); terms need 3 prior decided bouts; vectorised prior-bout sums equal to a plain loop to 1e-15 (tests/test_decline.py) |
+| hyperparameters | grid lambda_level {4,8,16,32,64} x lambda_slope {60,200,1000,off} x half_life {1.5,2.5,4,unweighted}; for each test year the grid point with the largest cumulative held-out MSE gain over the years already tested (default for 2016) |
+| tests | walk-forward by calendar year, test years 2016 to 2026, training from 2011, individual terms from each fighter's own earlier bouts including pre-2011 and earlier in the test year: (1) held-out R2 of the realized residual, curve alone and with the individual terms; (2) calibration slope of realized on predicted individual term; (3) log loss of the RESULT when the terms join the shadow model's feature set, logistic layer trained only on held-out years (2017 on), paired event-block bootstrap; (4) 33+ fighters by quartile of the individual prediction, win rate vs expectation; (5) board test on the 14-day tuning panel (335 boards, 3,748 bouts, 2014 to 2026): each board's resume ratings adjusted by the as-of index in rating points (695 per unit), concordance and log loss vs unadjusted v1.0 and B+0 rules, paired event bootstrap; the as-of index at each board date uses bouts before it only and the hyperparameters chosen for that year (default before 2017) |
+| instrument | src/mmalab/decline.py (research: python -m mmalab.decline --rating resume|elo --outcome perf|margin; board test: scratchpad decline_board_test.py, copied here) |
+
+Candidate. `{"settings frozen in config/decline.yaml": {"rating": "resume", "outcome": "perf", "lambda_level": 32.0, "lambda_slope": 200.0, "half_life": 4.0, "min_prior": 3, "points_per_residual": 694.9, "published for": "fighters with 3 decided UFC bouts and a bout in the last 3 years"}, "variants run": "resume/perf (the index), elo/perf, elo/margin"}`
+
+| Result | |
+|---|---|
+| resume/perf held-out (10,702 fighter-bouts) | R2 population 0.0219, plus level 0.0226, plus level and slope 0.0236; individual correlation 0.060, calibration slope 0.62, MSE gain +0.00038 |
+| resume/perf R2 of the curve by year | 0.0121, 0.0246, 0.0121, 0.0118, 0.0147, 0.0133, 0.0221, 0.0292, 0.0161, 0.043, 0.0394 |
+| resume/perf individual correlation by year | 0.0017, 0.0732, 0.0652, 0.0901, 0.0958, 0.0996, 0.0803, 0.0796, 0.0673, 0.1293, 0.069 |
+| resume/perf chosen hyperparameters | lambda_level 32, lambda_slope 200, half_life 4.0 in every test year from 2019 (2018: half-life 2.5; 2017: 64/off/2.5) |
+| resume/perf realized residual by age (held out) | 17 to 22: realized +0.086 (curve +0.068), win rate 61% vs 53% expected; 22 to 24: realized +0.090 (curve +0.060), win rate 62% vs 50% expected; 24 to 26: realized +0.063 (curve +0.053), win rate 57% vs 50% expected; 26 to 28: realized +0.063 (curve +0.040), win rate 56% vs 49% expected; 28 to 30: realized +0.042 (curve +0.024), win rate 55% vs 49% expected; 30 to 32: realized +0.007 (curve -0.004), win rate 50% vs 49% expected; 32 to 34: realized -0.012 (curve -0.038), win rate 48% vs 50% expected; 34 to 36: realized -0.063 (curve -0.062), win rate 43% vs 51% expected; 36 to 38: realized -0.089 (curve -0.082), win rate 42% vs 50% expected; 38 to 40: realized -0.140 (curve -0.098), win rate 37% vs 53% expected; 40 to 42: realized -0.187 (curve -0.115), win rate 34% vs 57% expected; 42 to 50: realized -0.210 (curve -0.145), win rate 29% vs 56% expected |
+| resume/perf decliner test | 2888 held-out bouts aged 33+: lowest quartile wins 38.0% vs 52.6% expected (-14.7/100), highest 47.5% vs 52.0% (-4.5), all 43.0% vs 52.0% (-9.0) |
+| resume/perf result test (shadow model + population + level and slope vs shadow) | -0.0003 (95% [-0.0014, 0.0008]) on 4849 bouts |
+| elo/perf held-out | R2 population 0.0152, plus level 0.0138, plus level and slope 0.0128; individual correlation 0.012, calibration slope 0.19, MSE gain -0.00052; 2888 held-out bouts aged 33+: lowest quartile wins 36.3% vs 47.8% expected (-11.5/100), highest 46.5% vs 52.6% (-6.0), all 43.0% vs 50.6% (-7.6); result test -0.0002 (95% [-0.0012, 0.0008]) on 4849 bouts |
+| elo/margin held-out | R2 population 0.0107, plus level 0.0085, plus level and slope 0.0074; individual correlation 0.010, calibration slope 0.14, MSE gain -0.00502; result test +0.0006 (95% [-0.0008, 0.0018]) on 4849 bouts |
+| board test v1.0 unadjusted | 0.5734/0.6772 (top-15 0.5436) |
+| board test v1.0 + population curve x1 | 0.5875/0.6689 (conc +0.0141 CI [0.003, 0.025]; log loss -0.0083 CI [-0.0111, -0.0053]; top-15 0.5582) |
+| board test v1.0 + individual x1 | 0.5744/0.6777 (conc +0.0011 CI [-0.0066, 0.0084]; log loss +0.0006 CI [-0.0008, 0.0021]; top-15 0.5551) |
+| board test v1.0 + population + individual x1 | 0.5880/0.6704 (conc +0.0147 CI [0.0035, 0.0254]; log loss -0.0067 CI [-0.0095, -0.0039]; top-15 0.5663) |
+| board test v1.0 + age discount 33/20 (EXP-09 style, for reference) | 0.5936/0.6676 (conc +0.0203 CI [0.0099, 0.0309]; log loss -0.0096 CI [-0.0127, -0.0064]; top-15 0.5674) |
+| board test B+0 unadjusted | 0.5795/0.6748 (top-15 0.5343) |
+| board test B+0 + population curve x1 | 0.5995/0.6662 (conc +0.0200 CI [0.0091, 0.0312]; log loss -0.0086 CI [-0.0115, -0.0057]; top-15 0.5630) |
+| board test B+0 + individual x1 | 0.5795/0.6748 (conc +0.0000 CI [-0.0072, 0.0071]; log loss +0.0000 CI [-0.0015, 0.0015]; top-15 0.5508) |
+| board test B+0 + population + individual x1 | 0.5993/0.6670 (conc +0.0197 CI [0.0091, 0.0302]; log loss -0.0078 CI [-0.0106, -0.0048]; top-15 0.5753) |
+| population curve now (resume rating, men) | 22: 0.0883<br>25: 0.0699<br>28: 0.0456<br>30: 0.0216<br>32: -0.0134<br>34: -0.0461<br>36: -0.0765<br>38: -0.1116<br>40: -0.1466 |
+| population curve now (resume rating, women) | 22: 0.0486<br>25: 0.0445<br>28: 0.0283<br>30: 0.0011<br>32: 0.0021<br>34: -0.0203<br>36: -0.0662<br>38: -0.0942<br>40: -0.1222 |
+
+| Face validity | |
+|---|---|
+| Kamaru Usman | Recent performances run about 152 points behind the rating: fighters this age typically run 95 points behind their rating, and his own recent results put him a further 57 points behind. |
+| Alex Pereira | Recent performances run about 72 points behind the rating: fighters this age typically run 93 points behind their rating, and his own recent results recover 21 of those points. |
+| Jan Blachowicz | Recent performances run about 187 points behind the rating: fighters this age typically run 146 points behind their rating, and his own recent results put him a further 41 points behind. |
+| Israel Adesanya | Recent performances run about 156 points behind the rating: fighters this age typically run 68 points behind their rating, and his own recent results put him a further 88 points behind. |
+| Max Holloway | Recent performances run about 52 points behind the rating: fighters this age typically run 41 points behind their rating, and his own recent results put him a further 11 points behind. |
+| Jon Jones | Recent performances run about 52 points behind the rating: fighters this age typically run 93 points behind their rating, and his own recent results recover 41 of those points. |
+| Ilia Topuria | Recent performances are in line with the rating (+26 points). |
+| Payton Talbott | Recent performances run about 59 points ahead of the rating: fighters this age typically run 31 points ahead of their rating, and his own recent results put him a further 28 points ahead. |
+| Joshua Van | Recent performances run about 87 points ahead of the rating: fighters this age typically run 48 points ahead of their rating, and his own recent results put him a further 38 points ahead. |
+| Charles Oliveira | Recent performances run about 34 points behind the rating: fighters this age typically run 65 points behind their rating, and his own recent results recover 31 of those points. |
+
+Decision. adopted: Adopted as a descriptive index shown beside the rank (profile pages, outputs/decline_index.csv, outputs/decline_curve.json), with its evidence printed next to it; not adopted as a board rule and not adopted as a prediction-model feature. The population curve is the rating's age bias and is reliable: out of sample in every test year, the realized residual by age tracks the curve that predicted it (+0.09 at 22 to 24, zero at 30 to 32, -0.06 at 34 to 36, -0.14 at 38 to 40, -0.19 at 40 to 42: about +60 to -130 rating points), and converted to rating points with no free parameter it reproduces most of the age-discount gain of EXP-2026-10-20-09 on the board (+1.4 to +2.0 points of concordance). The individual terms are a weak but consistent signal against the slow resume rating (correlation 0.06 to 0.13 in 10 of 11 years; the lowest quartile of 33+ fighters wins 38% against 53% expected, the highest 48% against 52%), no signal against the fast prediction Elo, no gain in bout prediction over the shadow model, and no board accuracy beyond the curve. Nothing here enters a board: the rankings answer who deserves the place now (EXP-2026-10-20-09 decision stands).
+
+Notes. Hyperparameters were selected online inside the walk-forward, so every held-out number is honest; the board test reuses those yearly choices (and the default before 2017), which is a mild use of 2016-era held-out information on 2014 to 2016 boards. Pre-2010 bout files list the winner first, so the corner credit is fitted on 2011+ rows only; it does not affect the symmetric residual. Beyond the last knot the curve is linear; realized held-out residuals at 40+ sit below the line, so the extrapolation is conservative. The curve is evaluated inside 18 to 45 years.
+
+Files: `experiments/results/EXP-2026-10-21-01/decline_report_research_resume_perf.json`, `experiments/results/EXP-2026-10-21-01/decline_report_research_elo_perf.json`, `experiments/results/EXP-2026-10-21-01/decline_report_research_elo_margin.json`, `experiments/results/EXP-2026-10-21-01/decline_board_test.csv`, `experiments/results/EXP-2026-10-21-01/decline_board_test.py`, `experiments/results/EXP-2026-10-21-01/decline_index_2026-10-18.csv`, `experiments/results/EXP-2026-10-21-01/decline_curve_2026-10-18.json`
+
+## EXP-2026-10-21-02
+
+Who declines faster: the population curve by style, debut age, weight band, UFC tenure and recent knockout loss  
+Date 2026-10-21, decision: informational, code at commit `72c149d`.
+
+Question. Do wrestlers age better than strikers (the curator's hypothesis), and which groups of fighters run further behind their rating as they age: early debutants, lighter divisions, long tenures, fighters with a recent knockout loss?
+
+| Method | |
+|---|---|
+| descriptive | men's fighter-bouts 2011 to 2026-10-17 with the resume-rating residual of EXP-2026-10-21-01, population curve (knots 27/30/33/36) fitted within each group of each grouping, curve values at 24/27/30/33/35/37/40 inside the group's central 95% of ages, event-block bootstrap (2,000 draws) for the difference between two groups at each age |
+| groupings | fighting style as of the bout (career_stats thresholds): striker, wrestler, mixed | age at UFC debut: early (under 25), standard (25 to 28), late (29 or over) | weight band: light (flyweight to featherweight), middle (lightweight, welterweight), heavy (middleweight and up) | UFC tenure at the bout: under 4 years or 4 years and over | knockout losses in the previous three years: none or at least one (all as of the bout, from career_stats.bout_features) |
+| out of sample | the full walk-forward of EXP-2026-10-21-01 rerun with one curve per (sex, group) where the group has 300 training rows, else the sex curve, for style and for debut age; compared with the pooled curve on held-out R2 |
+| instrument | python -m mmalab.decline --rating resume --stratified; --group style; --group debut |
+
+Candidate. `{"question": "group-specific age curves", "data": "12706 men's fighter-bouts 2011 to 2026-10-17, residual outcome as in the main run, in sample"}`
+
+| Result | |
+|---|---|
+| style | groups: mixed: n: 5142<br>curve: 24: None<br>27: 0.0512<br>30: 0.0161<br>33: -0.0146<br>35: -0.0484<br>37: -0.0756<br>40: None<br>striker: n: 3194<br>curve: 24: 0.1151<br>27: 0.0739<br>30: 0.0196<br>33: -0.0475<br>35: -0.0653<br>37: -0.1005<br>40: None<br>wrestler: n: 2697<br>curve: 24: 0.0869<br>27: 0.0733<br>30: 0.056<br>33: -0.0467<br>35: -0.0812<br>37: -0.1213<br>40: None<br>contrast: striker minus wrestler<br>by_age: 24: difference: 0.0282<br>ci95: -0.0299, 0.0836<br>27: difference: 0.0006<br>ci95: -0.0499, 0.0516<br>30: difference: -0.0364<br>ci95: -0.0851, 0.0146<br>33: difference: -0.0008<br>ci95: -0.0573, 0.056<br>35: difference: 0.0159<br>ci95: -0.0243, 0.0547<br>37: difference: 0.0208<br>ci95: -0.0294, 0.0683 |
+| debut | groups: early: n: 3032<br>curve: 24: 0.0783<br>27: 0.0528<br>30: 0.0087<br>33: -0.1047<br>35: -0.1079<br>37: -0.1319<br>40: None<br>late: n: 3889<br>curve: 24: None<br>27: None<br>30: 0.023<br>33: -0.0255<br>35: -0.0378<br>37: -0.0656<br>40: -0.1304<br>standard: n: 5785<br>curve: 24: None<br>27: 0.0681<br>30: 0.0231<br>33: -0.0137<br>35: -0.0923<br>37: -0.1384<br>40: None<br>contrast: early minus late<br>by_age: 30: difference: -0.0143<br>ci95: -0.0637, 0.0383<br>33: difference: -0.0792<br>ci95: -0.1356, -0.0218<br>35: difference: -0.0701<br>ci95: -0.1115, -0.0248<br>37: difference: -0.0663<br>ci95: -0.1203, -0.0095 |
+| weight | groups: heavy: n: 3906<br>curve: 24: None<br>27: 0.055<br>30: 0.0546<br>33: -0.0325<br>35: -0.0406<br>37: -0.0626<br>40: -0.1164<br>light: n: 4179<br>curve: 24: 0.0798<br>27: 0.0545<br>30: -0.0085<br>33: -0.0374<br>35: -0.0811<br>37: -0.1275<br>40: None<br>middle: n: 4471<br>curve: 24: 0.0675<br>27: 0.0654<br>30: 0.0221<br>33: -0.0231<br>35: -0.0704<br>37: -0.1134<br>40: None<br>contrast: light minus heavy<br>by_age: 27: difference: -0.0005<br>ci95: -0.043, 0.043<br>30: difference: -0.0631<br>ci95: -0.1012, -0.0258<br>33: difference: -0.0049<br>ci95: -0.045, 0.0355<br>35: difference: -0.0405<br>ci95: -0.0741, -0.0054<br>37: difference: -0.0649<br>ci95: -0.108, -0.0216 |
+| tenure | groups: 4 years and over: n: 4159<br>curve: 24: None<br>27: 0.0692<br>30: 0.0123<br>33: -0.0292<br>35: -0.0716<br>37: -0.1089<br>40: -0.1574<br>under 4 years: n: 8547<br>curve: 24: 0.0757<br>27: 0.0559<br>30: 0.0248<br>33: -0.0322<br>35: -0.0473<br>37: None<br>40: None<br>contrast: under 4 years minus 4 years and over<br>by_age: 27: difference: -0.0133<br>ci95: -0.073, 0.0439<br>30: difference: 0.0125<br>ci95: -0.0239, 0.048<br>33: difference: -0.003<br>ci95: -0.0401, 0.0332<br>35: difference: 0.0243<br>ci95: -0.0073, 0.056 |
+| chin | groups: KO loss in 3 years: n: 4018<br>curve: 24: None<br>27: 0.0179<br>30: 0.0268<br>33: -0.0392<br>35: -0.0861<br>37: -0.1179<br>40: -0.1429<br>no KO loss in 3 years: n: 8688<br>curve: 24: 0.0701<br>27: 0.0654<br>30: 0.0205<br>33: -0.0275<br>35: -0.0381<br>37: -0.072<br>40: None<br>contrast: no KO loss in 3 years minus KO loss in 3 years<br>by_age: 27: difference: 0.0475<br>ci95: 0.0036, 0.0923<br>30: difference: -0.0063<br>ci95: -0.0452, 0.0306<br>33: difference: 0.0117<br>ci95: -0.0267, 0.0491<br>35: difference: 0.048<br>ci95: 0.0181, 0.0794<br>37: difference: 0.0459<br>ci95: 0.0091, 0.0848 |
+| out of sample, curve by style vs pooled (held-out R2 of the curve) | 0.0216 vs 0.0219 |
+| out of sample, curve by debut age vs pooled | 0.0213 vs 0.0219 |
+
+Decision. informational: Findings kept, index unchanged. Strikers and wrestlers decline at the same rate (striker minus wrestler +0.016 at 35, interval -0.024 to +0.055; +0.021 at 37, -0.029 to +0.068), so the wrestlers-age-better hypothesis finds no support; the mixed group declines least. Early UFC debutants (before 25) run further behind their rating from 33 on than late debutants (29+): -0.079 at 33 (interval -0.136 to -0.022), -0.070 at 35 (-0.112 to -0.025), -0.066 at 37 (-0.120 to -0.009), about 50 rating points, consistent with mileage rather than calendar age. Lighter divisions decline harder than middleweight and above from 35 (-0.041 at 35, -0.065 at 37, intervals excluding zero). A knockout loss in the previous three years marks a further 0.05 of lag at 35 to 37. Longer UFC tenure at the same age marks more lag at 37 to 40. Fitting the curve within groups did not beat the pooled curve out of sample (style 0.0216 vs 0.0219; debut 0.0213 vs 0.0219), so the index keeps one curve per sex and the group differences stand as descriptive findings in METHODOLOGY.md section 14.
+
+Notes. In-sample descriptive curves; selection (who is still fighting at 38) shapes every group's curve. Groups are as of the bout, so a fighter can change style or tenure group across his career.
+
+Files: `experiments/results/EXP-2026-10-21-02/decline_report_research_resume_stratified.json`, `experiments/results/EXP-2026-10-21-02/decline_report_research_resume_perf_by_style.json`, `experiments/results/EXP-2026-10-21-02/decline_report_research_resume_perf_by_debut.json`

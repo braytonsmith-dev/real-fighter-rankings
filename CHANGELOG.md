@@ -5,6 +5,18 @@ logged here with its date, its reason and the evidence behind it. The rules for 
 Versions follow `major.minor`: a minor version changes a rule; a patch (`1.0.1`) changes display, documentation or data
 handling without changing any rule. The registered method under the pre-registered forward test is always `VERSION`.
 
+## 1.0.2 (2026-10-21, display and documentation only)
+
+No rule changes; applies to the site as a whole. Fighter profile pages: every name on the registered and shadow boards opens
+`docs/fighters/<slug>.html` (why the fighter is ranked there, built from the score decomposition and placement string; last ten
+bouts with the opponent's official rank at the time and the predictive model's pre-fight probability; career statistics with
+division percentiles; board position since Oct 2023 and predictive rating by bout; descriptive context flags), with an index at
+`docs/fighters/index.html`. Decline and rise index (`src/mmalab/decline.py`, `config/decline.yaml`, METHODOLOGY.md section 14):
+the population age curve of the rating residual and each fighter's own shrunken level and trend, published as
+`outputs/decline_index.csv` and `outputs/decline_curve.json` and shown in a Trajectory section on every profile page with its
+held-out evidence beside it (EXP-2026-10-21-01, EXP-2026-10-21-02). No board reads any of it. Pipeline: two steps appended
+(`decline`, `fighter_pages`); the generated pages are committed with the site.
+
 ## 1.1 (shadow board, 2026-10-20)
 
 Status: candidate, published beside the registered v1.0 board at `docs/board_v1_1.html`, never substituted for it during

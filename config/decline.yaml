@@ -1,0 +1,26 @@
+# Decline and rise index (src/mmalab/decline.py). Display only: the index reads the engine's pre-fight ratings and
+# performance scores and never changes a rating or a rank; v1.0 stays frozen. The weekly pipeline recomputes
+# outputs/decline_index.csv and outputs/decline_curve.json with
+#   PYTHONPATH=src python -m mmalab.decline --index-only
+# The research run that chose these values (walk-forward 2016 to 2026, hyperparameters picked each year from the
+# years already tested) is experiments/REGISTER.md EXP-2026-10-21-01.
+
+rating: resume          # the board's rating defines the expectation the residual is measured against
+outcome: perf           # residual = performance score minus expectation (resume.py's s, 0 to 1)
+knots: [27, 30, 33, 36] # piecewise-linear population curve, one per sex, fitted on bouts from 2011
+tune_from: 2011-01-01
+min_prior: 3            # prior decided bouts before a fighter gets an individual level and slope
+lambda_level: 32        # shrinkage of the individual level, in pseudo-bouts (chosen in every test year from 2018)
+lambda_slope: 200       # shrinkage of the individual slope, in weighted bout-years squared (chosen from 2018)
+half_life: 4.0          # years; recency weight of a prior bout is 0.5 ** (years before / half_life) (chosen from 2019)
+points_per_residual: 694.9   # 1600 / ln(10): rating points of persistent lag per unit of residual at e = 0.5
+
+# What the index is and is not (held-out evidence, EXP-2026-10-21-01):
+#   population curve   the rating's age bias, out of sample in every test year (R squared 2.2% of the residual);
+#                      realized held-out residual by age: +0.09 at 22 to 24, 0 at 30 to 32, -0.06 at 34 to 36,
+#                      -0.14 at 38 to 40, -0.19 at 40 to 42 (about +60 to -130 rating points)
+#   individual terms   a weak, consistent signal against this rating (held-out correlation 0.06; among fighters 33
+#                      or over the lowest predicted quartile wins 38% against 53% expected, the highest 48% against 52%)
+#                      and no gain in bout prediction over the shadow model; no board accuracy beyond the curve
+#   board              not applied to any board: rankings answer who deserves the place now (EXP-2026-10-20-09)
+max_idle_days: 1096     # the published index covers fighters with a bout in the last three years

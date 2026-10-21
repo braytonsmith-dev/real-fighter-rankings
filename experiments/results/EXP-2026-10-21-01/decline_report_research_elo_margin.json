@@ -1,0 +1,593 @@
+{
+  "rating_for_expectation": "elo",
+  "outcome": "margin",
+  "tuned": true,
+  "grid": {
+    "lambda_level": [
+      4.0,
+      8.0,
+      16.0,
+      32.0,
+      64.0
+    ],
+    "lambda_slope": [
+      60.0,
+      200.0,
+      1000.0,
+      1000000000.0
+    ],
+    "half_life": [
+      1.5,
+      2.5,
+      4.0,
+      1000000.0
+    ]
+  },
+  "population_curve_group": null,
+  "hyperparameters_by_year": [
+    {
+      "year": 2016,
+      "lambda_level": 4.0,
+      "lambda_slope": 60.0,
+      "half_life": 2.5
+    },
+    {
+      "year": 2017,
+      "lambda_level": 64.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 1.5
+    },
+    {
+      "year": 2018,
+      "lambda_level": 64.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 2.5
+    },
+    {
+      "year": 2019,
+      "lambda_level": 32.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 4.0
+    },
+    {
+      "year": 2020,
+      "lambda_level": 32.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 2.5
+    },
+    {
+      "year": 2021,
+      "lambda_level": 32.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 2.5
+    },
+    {
+      "year": 2022,
+      "lambda_level": 32.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 2.5
+    },
+    {
+      "year": 2023,
+      "lambda_level": 64.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 4.0
+    },
+    {
+      "year": 2024,
+      "lambda_level": 64.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 4.0
+    },
+    {
+      "year": 2025,
+      "lambda_level": 64.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 4.0
+    },
+    {
+      "year": 2026,
+      "lambda_level": 64.0,
+      "lambda_slope": 1000000000.0,
+      "half_life": 4.0
+    }
+  ],
+  "pooled_heldout": {
+    "rows": 10702,
+    "rows_with_terms": 7227,
+    "r2_population": 0.0107,
+    "r2_plus_level": 0.0085,
+    "r2_plus_level_and_slope": 0.0074,
+    "corr_individual_vs_realized": 0.0097,
+    "calibration_slope": 0.142,
+    "mse_gain_from_individual": -0.00502
+  },
+  "per_year": [
+    {
+      "year": 2016,
+      "hp": {
+        "lambda_level": 4.0,
+        "lambda_slope": 60.0,
+        "half_life": 2.5
+      },
+      "fitted": {
+        "corner_points": 32.32,
+        "margin_slope_per_400": 4.6138,
+        "margin_side_intercept": 0.2144,
+        "margin_sd": 5.4365
+      },
+      "rows": 968,
+      "rows_with_terms": 649,
+      "r2_population": 0.0086,
+      "r2_plus_level": -0.0196,
+      "r2_plus_level_and_slope": -0.0321,
+      "corr_individual_vs_realized": -0.008,
+      "calibration_slope": 0.014,
+      "mse_gain_from_individual": -0.06256
+    },
+    {
+      "year": 2017,
+      "hp": {
+        "lambda_level": 64.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 1.5
+      },
+      "fitted": {
+        "corner_points": 32.41,
+        "margin_slope_per_400": 4.721,
+        "margin_side_intercept": 0.2555,
+        "margin_sd": 5.4522
+      },
+      "rows": 902,
+      "rows_with_terms": 580,
+      "r2_population": 0.0196,
+      "r2_plus_level": 0.0206,
+      "r2_plus_level_and_slope": 0.0206,
+      "corr_individual_vs_realized": 0.063,
+      "calibration_slope": 2.93,
+      "mse_gain_from_individual": 0.00149
+    },
+    {
+      "year": 2018,
+      "hp": {
+        "lambda_level": 64.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 2.5
+      },
+      "fitted": {
+        "corner_points": 29.16,
+        "margin_slope_per_400": 4.9529,
+        "margin_side_intercept": 0.2257,
+        "margin_sd": 5.4373
+      },
+      "rows": 940,
+      "rows_with_terms": 623,
+      "r2_population": -0.0018,
+      "r2_plus_level": 0.0008,
+      "r2_plus_level_and_slope": 0.0008,
+      "corr_individual_vs_realized": 0.0993,
+      "calibration_slope": 4.132,
+      "mse_gain_from_individual": 0.00357
+    },
+    {
+      "year": 2019,
+      "hp": {
+        "lambda_level": 32.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 4.0
+      },
+      "fitted": {
+        "corner_points": 26.22,
+        "margin_slope_per_400": 4.9594,
+        "margin_side_intercept": 0.1814,
+        "margin_sd": 5.4035
+      },
+      "rows": 1016,
+      "rows_with_terms": 635,
+      "r2_population": 0.0047,
+      "r2_plus_level": 0.0051,
+      "r2_plus_level_and_slope": 0.0051,
+      "corr_individual_vs_realized": 0.0354,
+      "calibration_slope": 0.629,
+      "mse_gain_from_individual": 0.00079
+    },
+    {
+      "year": 2020,
+      "hp": {
+        "lambda_level": 32.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 2.5
+      },
+      "fitted": {
+        "corner_points": 24.84,
+        "margin_slope_per_400": 4.7434,
+        "margin_side_intercept": 0.2039,
+        "margin_sd": 5.4895
+      },
+      "rows": 902,
+      "rows_with_terms": 581,
+      "r2_population": 0.0072,
+      "r2_plus_level": 0.0064,
+      "r2_plus_level_and_slope": 0.0064,
+      "corr_individual_vs_realized": 0.0088,
+      "calibration_slope": 0.219,
+      "mse_gain_from_individual": -0.00138
+    },
+    {
+      "year": 2021,
+      "hp": {
+        "lambda_level": 32.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 2.5
+      },
+      "fitted": {
+        "corner_points": 25.96,
+        "margin_slope_per_400": 4.9225,
+        "margin_side_intercept": 0.2174,
+        "margin_sd": 5.5183
+      },
+      "rows": 994,
+      "rows_with_terms": 676,
+      "r2_population": 0.0064,
+      "r2_plus_level": 0.0074,
+      "r2_plus_level_and_slope": 0.0074,
+      "corr_individual_vs_realized": 0.0246,
+      "calibration_slope": 0.751,
+      "mse_gain_from_individual": 0.00103
+    },
+    {
+      "year": 2022,
+      "hp": {
+        "lambda_level": 32.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 2.5
+      },
+      "fitted": {
+        "corner_points": 24.26,
+        "margin_slope_per_400": 4.9883,
+        "margin_side_intercept": 0.2132,
+        "margin_sd": 5.4472
+      },
+      "rows": 1014,
+      "rows_with_terms": 719,
+      "r2_population": 0.0067,
+      "r2_plus_level": 0.0043,
+      "r2_plus_level_and_slope": 0.0043,
+      "corr_individual_vs_realized": -0.0275,
+      "calibration_slope": -0.407,
+      "mse_gain_from_individual": -0.00352
+    },
+    {
+      "year": 2023,
+      "hp": {
+        "lambda_level": 64.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 4.0
+      },
+      "fitted": {
+        "corner_points": 24.44,
+        "margin_slope_per_400": 5.0733,
+        "margin_side_intercept": 0.2273,
+        "margin_sd": 5.4522
+      },
+      "rows": 1012,
+      "rows_with_terms": 681,
+      "r2_population": 0.0089,
+      "r2_plus_level": 0.008,
+      "r2_plus_level_and_slope": 0.008,
+      "corr_individual_vs_realized": -0.0296,
+      "calibration_slope": -0.262,
+      "mse_gain_from_individual": -0.00132
+    },
+    {
+      "year": 2024,
+      "hp": {
+        "lambda_level": 64.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 4.0
+      },
+      "fitted": {
+        "corner_points": 24.11,
+        "margin_slope_per_400": 5.0646,
+        "margin_side_intercept": 0.2153,
+        "margin_sd": 5.4737
+      },
+      "rows": 1026,
+      "rows_with_terms": 735,
+      "r2_population": 0.0009,
+      "r2_plus_level": 0.0016,
+      "r2_plus_level_and_slope": 0.0016,
+      "corr_individual_vs_realized": 0.0266,
+      "calibration_slope": 0.977,
+      "mse_gain_from_individual": 0.00072
+    },
+    {
+      "year": 2025,
+      "hp": {
+        "lambda_level": 64.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 4.0
+      },
+      "fitted": {
+        "corner_points": 22.49,
+        "margin_slope_per_400": 5.1097,
+        "margin_side_intercept": 0.2209,
+        "margin_sd": 5.4297
+      },
+      "rows": 1030,
+      "rows_with_terms": 737,
+      "r2_population": 0.0296,
+      "r2_plus_level": 0.0313,
+      "r2_plus_level_and_slope": 0.0313,
+      "corr_individual_vs_realized": 0.0731,
+      "calibration_slope": 1.983,
+      "mse_gain_from_individual": 0.00238
+    },
+    {
+      "year": 2026,
+      "hp": {
+        "lambda_level": 64.0,
+        "lambda_slope": 1000000000.0,
+        "half_life": 4.0
+      },
+      "fitted": {
+        "corner_points": 20.95,
+        "margin_slope_per_400": 5.1198,
+        "margin_side_intercept": 0.2052,
+        "margin_sd": 5.4277
+      },
+      "rows": 898,
+      "rows_with_terms": 611,
+      "r2_population": 0.0239,
+      "r2_plus_level": 0.0257,
+      "r2_plus_level_and_slope": 0.0257,
+      "corr_individual_vs_realized": 0.0934,
+      "calibration_slope": 2.423,
+      "mse_gain_from_individual": 0.00324
+    }
+  ],
+  "heldout_by_age": [
+    {
+      "ages": "17 to 22",
+      "n": 67,
+      "mean_residual": 0.231,
+      "population_curve": 0.1502,
+      "win_rate": 0.612,
+      "mean_expectation": 0.546,
+      "rating_points_stale": 160.0
+    },
+    {
+      "ages": "22 to 24",
+      "n": 270,
+      "mean_residual": 0.144,
+      "population_curve": 0.1301,
+      "win_rate": 0.615,
+      "mean_expectation": 0.51,
+      "rating_points_stale": 100.0
+    },
+    {
+      "ages": "24 to 26",
+      "n": 727,
+      "mean_residual": 0.1342,
+      "population_curve": 0.1112,
+      "win_rate": 0.569,
+      "mean_expectation": 0.507,
+      "rating_points_stale": 93.0
+    },
+    {
+      "ages": "26 to 28",
+      "n": 1398,
+      "mean_residual": 0.1122,
+      "population_curve": 0.0781,
+      "win_rate": 0.563,
+      "mean_expectation": 0.5,
+      "rating_points_stale": 78.0
+    },
+    {
+      "ages": "28 to 30",
+      "n": 1913,
+      "mean_residual": 0.0584,
+      "population_curve": 0.0431,
+      "win_rate": 0.545,
+      "mean_expectation": 0.498,
+      "rating_points_stale": 41.0
+    },
+    {
+      "ages": "30 to 32",
+      "n": 1994,
+      "mean_residual": 0.0295,
+      "population_curve": -0.009,
+      "win_rate": 0.501,
+      "mean_expectation": 0.501,
+      "rating_points_stale": 21.0
+    },
+    {
+      "ages": "32 to 34",
+      "n": 1696,
+      "mean_residual": -0.038,
+      "population_curve": -0.0729,
+      "win_rate": 0.481,
+      "mean_expectation": 0.499,
+      "rating_points_stale": -26.0
+    },
+    {
+      "ages": "34 to 36",
+      "n": 1243,
+      "mean_residual": -0.0828,
+      "population_curve": -0.1196,
+      "win_rate": 0.43,
+      "mean_expectation": 0.497,
+      "rating_points_stale": -58.0
+    },
+    {
+      "ages": "36 to 38",
+      "n": 740,
+      "mean_residual": -0.1656,
+      "population_curve": -0.1646,
+      "win_rate": 0.422,
+      "mean_expectation": 0.494,
+      "rating_points_stale": -115.0
+    },
+    {
+      "ages": "38 to 40",
+      "n": 372,
+      "mean_residual": -0.3256,
+      "population_curve": -0.206,
+      "win_rate": 0.371,
+      "mean_expectation": 0.5,
+      "rating_points_stale": -226.0
+    },
+    {
+      "ages": "40 to 42",
+      "n": 148,
+      "mean_residual": -0.2665,
+      "population_curve": -0.2476,
+      "win_rate": 0.345,
+      "mean_expectation": 0.531,
+      "rating_points_stale": -185.0
+    },
+    {
+      "ages": "42 to 50",
+      "n": 68,
+      "mean_residual": -0.417,
+      "population_curve": -0.3187,
+      "win_rate": 0.294,
+      "mean_expectation": 0.484,
+      "rating_points_stale": -290.0
+    }
+  ],
+  "result_test": {
+    "bouts": 4849,
+    "window": [
+      "2017-01-15",
+      "2026-10-17"
+    ],
+    "note": "logistic layer trained only on bouts whose individual terms were themselves held out, so from 2017",
+    "M1 shadow": {
+      "n": 4849,
+      "log_loss": 0.6427,
+      "brier": 0.2257,
+      "accuracy": 0.6243
+    },
+    "M1 + population curve": {
+      "n": 4849,
+      "log_loss": 0.6427,
+      "brier": 0.2257,
+      "accuracy": 0.6249
+    },
+    "M1 + population + level": {
+      "n": 4849,
+      "log_loss": 0.6421,
+      "brier": 0.2254,
+      "accuracy": 0.6282
+    },
+    "M1 + population + level and slope": {
+      "n": 4849,
+      "log_loss": 0.6421,
+      "brier": 0.2255,
+      "accuracy": 0.6278
+    },
+    "gain: M1 + population curve over M1": {
+      "delta_log_loss": -0.0,
+      "ci95_event_block_bootstrap": [
+        -0.0012,
+        0.0011
+      ]
+    },
+    "gain: M1 + population + level over M1": {
+      "delta_log_loss": 0.0007,
+      "ci95_event_block_bootstrap": [
+        -0.0007,
+        0.002
+      ]
+    },
+    "gain: M1 + population + level and slope over M1": {
+      "delta_log_loss": 0.0006,
+      "ci95_event_block_bootstrap": [
+        -0.0008,
+        0.0018
+      ]
+    },
+    "bouts_with_a_fighter_33_or_over": {
+      "bouts": 2527,
+      "note": "approximated by a non-zero over-33 age difference",
+      "M1 shadow": {
+        "n": 2527,
+        "log_loss": 0.6348,
+        "brier": 0.222,
+        "accuracy": 0.6359
+      },
+      "M1 + population curve": {
+        "n": 2527,
+        "log_loss": 0.6346,
+        "brier": 0.2219,
+        "accuracy": 0.6375
+      },
+      "M1 + population + level": {
+        "n": 2527,
+        "log_loss": 0.6339,
+        "brier": 0.2216,
+        "accuracy": 0.6383
+      },
+      "M1 + population + level and slope": {
+        "n": 2527,
+        "log_loss": 0.634,
+        "brier": 0.2217,
+        "accuracy": 0.6375
+      }
+    }
+  },
+  "decliner_test": {
+    "rows_33_plus": 2888,
+    "lowest_quartile_of_individual_prediction": {
+      "n": 722,
+      "mean_residual": -0.2307,
+      "mean_population_curve": -0.1423,
+      "mean_individual_prediction": -0.0414,
+      "win_rate": 0.3795,
+      "mean_expectation": 0.4509,
+      "wins_minus_expected_per_100": -7.1
+    },
+    "middle_half": {
+      "n": 1444,
+      "mean_residual": -0.1103,
+      "mean_population_curve": -0.1439,
+      "mean_individual_prediction": 0.0141,
+      "win_rate": 0.4384,
+      "mean_expectation": 0.5107,
+      "wins_minus_expected_per_100": -7.2
+    },
+    "highest_quartile": {
+      "n": 722,
+      "mean_residual": -0.082,
+      "mean_population_curve": -0.1506,
+      "mean_individual_prediction": 0.0846,
+      "win_rate": 0.464,
+      "mean_expectation": 0.5537,
+      "wins_minus_expected_per_100": -9.0
+    },
+    "all_33_plus": {
+      "n": 2888,
+      "mean_residual": -0.1333,
+      "mean_population_curve": -0.1452,
+      "mean_individual_prediction": 0.0179,
+      "win_rate": 0.4301,
+      "mean_expectation": 0.5065,
+      "wins_minus_expected_per_100": -7.6
+    }
+  },
+  "fitted_on_all_data": {
+    "corner_points": 19.78,
+    "margin_slope_per_400": 5.2818,
+    "margin_side_intercept": 0.2041,
+    "margin_sd": 5.4665
+  },
+  "index_as_of": "2026-10-18",
+  "index_hyperparameters": {
+    "lambda_level": 64.0,
+    "lambda_slope": 1000000000.0,
+    "half_life": 4.0
+  },
+  "points_per_residual_unit": 694.9,
+  "runtime_seconds": 59.9
+}

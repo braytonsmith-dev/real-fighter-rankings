@@ -94,7 +94,9 @@ def _row(r, prev: dict | None = None) -> str:
     prov = (f" <span class='band' title='Three or fewer UFC bouts: the rating rests on little evidence'>(provisional, "
             f"{int(nb)} UFC {'bout' if int(nb) == 1 else 'bouts'})</span>") if nb is not None and not pd.isna(nb) and int(nb) <= PROVISIONAL_MAX_BOUTS else ""
     band = "" if (r.champion or interim or reserved) else f"{int(r.rank_p10)}-{int(r.rank_p90)}"
-    return (f"<tr{cls}><td>{label}</td><td>{_move(r, prev or {})}</td><td>{html.escape(r.fighter)}{prov}{inj}{res}</td>"
+    from mmalab.fighter_pages import slug                    # lazy: fighter_pages imports this module for its CSS
+    name = f"<a href='fighters/{slug(r.fighter)}.html'>{html.escape(r.fighter)}</a>"
+    return (f"<tr{cls}><td>{label}</td><td>{_move(r, prev or {})}</td><td>{name}{prov}{inj}{res}</td>"
             f"<td class='num'>{r.score:+.2f}</td><td class='num'>{r.rating:.0f}</td>"
             f"<td>{last5}</td><td class='num'>{qw:.1f}</td>"
             f"<td class='num'>{int(r.top15_wins)}{ent}</td><td class='num'>{int(r.days_since)}</td>"
@@ -527,14 +529,15 @@ def main() -> None:
 <p class="tag">{html.escape(tagline)}</p>
 <p class="meta"><a href="#boards">Divisional boards</a> · <a href="#compare">Side by side</a> ·
 <a href="methodology.html">Methodology</a> · <a href="prediction.html">Prediction model</a> ·{picks_link}{version_links}
-<a href="#cards">Card quality</a> · <a href="#backtest">Model accuracy</a></p>
+<a href="fighters/index.html">Fighter profiles</a> · <a href="#cards">Card quality</a> · <a href="#backtest">Model accuracy</a></p>
 {version_note}
 <p class="meta">Data through {as_of}. Page built {date.today()}. Weights: {w}. Weight band = 10th to 90th
 percentile of the final position across {cfg['resume']['stability_draws']} weight vectors drawn near the configured weights, with
 every placement rule applied; it shows how much a spot depends on the 70/30 choice, not skill uncertainty, and the published
 rank always lies inside it.
 C = champion, IC = interim champion, R = reserved (vacated with injury, owed a title shot); they sit above
-the numbered board with their metrics shown. Move = change since the board before the last event.
+the numbered board with their metrics shown. Move = change since the board before the last event. Every name opens a profile
+(why the fighter is ranked there, last ten bouts, career statistics, trajectory).
 Open source, public data (UFCStats; official rankings history for opponent rank at fight time).</p>
 <details><summary>How the score is built</summary><p>REAL ranks fighters on how they performed against the
 fighters they faced and how good those fighters were. Score = 70% resume rating + 30% quality ledger, each
