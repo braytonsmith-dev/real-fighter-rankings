@@ -310,7 +310,7 @@ def test_snapshot_end_to_end(payload, picks, cfg, tmp_path, monkeypatch):
     monkeypatch.setenv(odds.ENV_KEY, "k")
     monkeypatch.setattr(odds, "_aliases", lambda: ALIASES)
     path = tmp_path / "ledger.csv"
-    c = {**cfg, "ledger": str(path), "books_ledger": str(tmp_path / "books.csv")}
+    c = {**cfg, "ledger": str(path), "books_ledger": str(tmp_path / "books.csv"), "run_report": str(tmp_path / "run.json")}
     new = odds.snapshot(picks, FRI, cfg=c, http=fake_http(200, payload))
     assert len(new) == 4 and sorted(set(new["snapshot_kind"])) == ["last_before_event", "lock"]
     assert (new["provider"] == c["provider"]).all() and (new["regions"] == ",".join(c["regions"])).all()
