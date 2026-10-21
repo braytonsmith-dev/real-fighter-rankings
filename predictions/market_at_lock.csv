@@ -10,3 +10,6 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061267:401930916,Kody Steele,Noah Gugnon,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,20,0.5885,0.4115,Kody Steele,,,,,the-odds-api,"us,uk,eu",h2h
 600061267:401930915,Bolaji Oki,Daniel Santos,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,20,0.477,0.523,Daniel Santos,,,,,the-odds-api,"us,uk,eu",h2h
 600061267:401930917,Iasmin Lucindo,Nicolle Caliari,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,19,0.7499,0.2501,Iasmin Lucindo,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911632,Alexander Volkanovski,Movsar Evloev,2026-10-24,lock,2026-10-21T15:23:59Z,2026-10-24T20:30:00Z,26,0.4987,0.5013,Movsar Evloev,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911639,Nikita Krylov,Abdul Rakhman Yakhyaev,2026-10-24,lock,2026-10-21T15:23:59Z,2026-10-24T14:00:00Z,22,0.2058,0.7942,Abdul Rakhman Yakhyaev,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911638,Abus Magomedov,Cam Rowston,2026-10-24,lock,2026-10-21T15:23:59Z,2026-10-24T14:00:00Z,18,0.5328,0.4672,Abus Magomedov,,,,,the-odds-api,"us,uk,eu",h2h

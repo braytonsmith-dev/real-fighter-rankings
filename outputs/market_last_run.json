@@ -1,17 +1,14 @@
 {
-  "fetched_at_utc": "2026-10-21T15:20:32Z",
+  "fetched_at_utc": "2026-10-21T15:23:59Z",
   "bouts_from_api": 43,
   "bouts_with_consensus": 19,
-  "matched_to_pending_picks": 11,
-  "credits_remaining": "494",
-  "credits_used_this_month": "6",
+  "matched_to_pending_picks": 14,
+  "credits_remaining": "491",
+  "credits_used_this_month": "9",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
-    "Abus Magomedov vs Cam Rowston (2026-10-24)",
-    "Nikita Krylov vs Abdul Rakhman Yakhyaev (2026-10-24)",
     "Arnold Allen vs Aaron Pico (2026-10-24)",
-    "Alexander Volkanovski vs Movsar Evloev (2026-10-24)",
     "Francis Marshall vs Gaston Bolanos (2026-10-31)",
     "Julian Erosa vs JeongYeong Lee (2026-10-31)",
     "Azamat Bekoev vs Andre Petroski (2026-10-31)",
@@ -24,9 +21,5 @@
     "Nick Klein vs Joe Kropschot (2026-10-31)",
     "Renato Moicano vs Tom Nolan (2026-10-31)"
   ],
-  "unmatched_market_bouts": [
-    "Nikita Krylov vs Abdulrakhman Yakhyaev (2026-10-24, 22 books)",
-    "Abusupyian Magomedov vs Cam Rowston (2026-10-24, 18 books)",
-    "Alex Volkanovski vs Movsar Evloev (2026-10-24, 26 books)"
-  ]
+  "unmatched_market_bouts": []
 }
