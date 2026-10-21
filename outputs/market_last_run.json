@@ -1,15 +1,32 @@
 {
-  "fetched_at_utc": "2026-10-21T15:18:57Z",
-  "bouts_from_api": 0,
-  "bouts_with_consensus": 0,
-  "matched_to_pending_picks": 0,
-  "credits_remaining": "480",
-  "credits_used_this_month": "20",
+  "fetched_at_utc": "2026-10-21T15:20:32Z",
+  "bouts_from_api": 43,
+  "bouts_with_consensus": 19,
+  "matched_to_pending_picks": 11,
+  "credits_remaining": "494",
+  "credits_used_this_month": "6",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
-    "Daria Zhelezniakova vs Alice Pereira (2026-10-24)",
-    "Bobby Green vs RJ Harris (2026-10-24)"
+    "Abus Magomedov vs Cam Rowston (2026-10-24)",
+    "Nikita Krylov vs Abdul Rakhman Yakhyaev (2026-10-24)",
+    "Arnold Allen vs Aaron Pico (2026-10-24)",
+    "Alexander Volkanovski vs Movsar Evloev (2026-10-24)",
+    "Francis Marshall vs Gaston Bolanos (2026-10-31)",
+    "Julian Erosa vs JeongYeong Lee (2026-10-31)",
+    "Azamat Bekoev vs Andre Petroski (2026-10-31)",
+    "Jean-Paul Lebosnoyani vs Farman Hasanov (2026-10-31)",
+    "Rodrigo Sezinando vs Theodor Berggren (2026-10-31)",
+    "Talita Alencar vs Piera Rodriguez (2026-10-31)",
+    "Yana Santos vs Luana Santos (2026-10-31)",
+    "Randy Brown vs Carlos Leal (2026-10-31)",
+    "Lucia Szabova vs Tainara Lisboa (2026-10-31)",
+    "Nick Klein vs Joe Kropschot (2026-10-31)",
+    "Renato Moicano vs Tom Nolan (2026-10-31)"
   ],
-  "unmatched_market_bouts": []
+  "unmatched_market_bouts": [
+    "Nikita Krylov vs Abdulrakhman Yakhyaev (2026-10-24, 22 books)",
+    "Abusupyian Magomedov vs Cam Rowston (2026-10-24, 18 books)",
+    "Alex Volkanovski vs Movsar Evloev (2026-10-24, 26 books)"
+  ]
 }
