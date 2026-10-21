@@ -1,0 +1,15 @@
+{
+  "fetched_at_utc": "2026-10-21T15:18:57Z",
+  "bouts_from_api": 0,
+  "bouts_with_consensus": 0,
+  "matched_to_pending_picks": 0,
+  "credits_remaining": "480",
+  "credits_used_this_month": "20",
+  "window_days": 2,
+  "horizon_days": 14,
+  "unmatched_pending_picks": [
+    "Daria Zhelezniakova vs Alice Pereira (2026-10-24)",
+    "Bobby Green vs RJ Harris (2026-10-24)"
+  ],
+  "unmatched_market_bouts": []
+}

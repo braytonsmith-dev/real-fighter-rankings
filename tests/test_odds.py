@@ -323,3 +323,25 @@ def test_snapshot_end_to_end(payload, picks, cfg, tmp_path, monkeypatch):
     assert len(pd.read_csv(path)) == 4
     with pytest.raises(odds.OddsError):
         odds.snapshot(picks, FRI, cfg=c, http=fake_http(500, {"message": "down"}), strict=True)
+
+
+def test_run_report_lists_both_kinds_of_miss(payload, picks, cfg, tmp_path, monkeypatch):
+    """A pending pick within two weeks that found no market bout, and a market bout that matched no pending pick,
+    are both named in the report; matched bouts and far-off picks are not."""
+    monkeypatch.setenv(odds.ENV_KEY, "k")
+    monkeypatch.setattr(odds, "_aliases", lambda: ALIASES)
+    extra = [{"pick_id": "9:4", "fighter_a": "Nobody Known", "fighter_b": "Someone Else", "event_date": "2026-10-24", "status": "pending"}]
+    p = pd.concat([picks, pd.DataFrame(extra)], ignore_index=True)
+    market = payload + [{"id": "e3", "sport_key": "mma_mixed_martial_arts", "sport_title": "MMA", "commence_time": "2026-10-25T02:00:00Z",
+                         "home_team": "Alexander Volkanovski", "away_team": "Movsar Evloev",
+                         "bookmakers": [{"key": "bovada", "title": "Bovada", "last_update": "2026-10-20T12:00:00Z",
+                                         "markets": [h2h("Alexander Volkanovski", "Movsar Evloev", 1.40, 3.00)]},
+                                        {"key": "pinnacle", "title": "Pinnacle", "last_update": "2026-10-20T12:00:00Z",
+                                         "markets": [h2h("Alexander Volkanovski", "Movsar Evloev", 1.45, 2.90)]}]}]
+    c = {**cfg, "ledger": str(tmp_path / "ledger.csv"), "run_report": str(tmp_path / "run.json")}
+    odds.snapshot(p, FRI, cfg=c, http=fake_http(200, market))
+    rep = json.loads((tmp_path / "run.json").read_text())
+    assert rep["bouts_from_api"] == 3 and rep["matched_to_pending_picks"] == 2
+    assert rep["unmatched_pending_picks"] == ["Nobody Known vs Someone Else (2026-10-24)"]       # 9:3 is five weeks out: not listed
+    assert rep["unmatched_market_bouts"] == ["Alexander Volkanovski vs Movsar Evloev (2026-10-25, 2 books)"]
+    assert "credits_remaining" in rep and rep["horizon_days"] == 14

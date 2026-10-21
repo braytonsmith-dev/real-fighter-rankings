@@ -512,6 +512,39 @@ def market_baseline(picks_df: pd.DataFrame, market_df: pd.DataFrame, cfg: dict |
 
 # ---------- orchestration ----------
 
+def run_report(payload: dict, cons: pd.DataFrame, pending: pd.DataFrame, matched: pd.DataFrame, now: datetime,
+               aliases: dict | None = None, window_days: int = 2, horizon_days: int = 14) -> dict:
+    """What one run saw, for outputs/market_last_run.json and the log: counts, credits, and the two kinds of miss
+    that a spelling difference or a changed bout produces (a pending pick within `horizon_days` that found no market
+    bout; a market bout within the same horizon that matched no pending pick). Names are listed so a miss can be
+    fixed in config/name_aliases.yaml, the way picks.py reports ESPN misses."""
+    aliases = _aliases() if aliases is None else aliases
+    horizon = now + timedelta(days=horizon_days)
+    got = set(matched["pick_id"]) if not matched.empty else set()
+    miss_picks = []
+    if not pending.empty:
+        ev = pd.to_datetime(pending["event_date"], errors="coerce")
+        soon = pending[(ev >= pd.Timestamp(now.date())) & (ev <= pd.Timestamp(horizon.date()))]
+        miss_picks = [f"{r.fighter_a} vs {r.fighter_b} ({r.event_date})" for r in soon.itertuples() if r.pick_id not in got]
+    miss_market = []
+    if not cons.empty:
+        matched_keys = ({_pair_key(a, b, aliases) for a, b in zip(matched["fighter_a"], matched["fighter_b"])}
+                        if not matched.empty else set())
+        lo, hi = pd.Timestamp(now.replace(tzinfo=None)), pd.Timestamp(horizon.replace(tzinfo=None))
+        for r in cons.itertuples():
+            t = _utc(r.commence_time) if r.commence_time else pd.NaT
+            if pd.isna(t) or not (lo <= t.tz_convert(None) <= hi):
+                continue
+            if _pair_key(r.fighter_home, r.fighter_away, aliases) in matched_keys:
+                continue
+            miss_market.append(f"{r.fighter_home} vs {r.fighter_away} ({_stamp(t.to_pydatetime())[:10]}, {int(r.n_books)} books)")
+    return {"fetched_at_utc": payload.get("fetched_at_utc"), "bouts_from_api": int(len(payload.get("events", []))),
+            "bouts_with_consensus": int(len(cons)), "matched_to_pending_picks": int(len(matched)),
+            "credits_remaining": payload.get("requests_remaining"), "credits_used_this_month": payload.get("requests_used"),
+            "window_days": window_days, "horizon_days": horizon_days,
+            "unmatched_pending_picks": miss_picks, "unmatched_market_bouts": miss_market}
+
+
 def snapshot(picks_df: pd.DataFrame, now: datetime | None = None, cfg: dict | None = None, http: HttpGet | None = None,
              strict: bool = False, write: bool = True) -> pd.DataFrame:
     """One run: fetch, parse, de-vig, match pending picks, label snapshot kinds, append to the ledger. Returns the rows added.
@@ -542,6 +575,16 @@ def snapshot(picks_df: pd.DataFrame, now: datetime | None = None, cfg: dict | No
     labelled["provider"], labelled["regions"], labelled["markets"] = cfg.get("provider", ""), payload["regions"], payload["markets"]
     print(f"odds: {len(payload['events'])} MMA bouts from the API, {len(cons)} with a consensus, {len(matched)} matched to pending picks; "
           f"{payload['requests_remaining'] or '?'} credits remaining")
+    report = run_report(payload, cons, pending, matched, now, aliases, int(cfg.get("window_days", 2)))
+    for line in report["unmatched_pending_picks"]:
+        print(f"odds: pending pick without a market bout: {line}")
+    for line in report["unmatched_market_bouts"]:
+        print(f"odds: market bout without a pending pick: {line}")
+    if write:
+        path = Path(cfg.get("run_report", "outputs/market_last_run.json"))
+        path = path if path.is_absolute() else ROOT / path
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(report, indent=2))
     if not write:
         return labelled
     new = record(labelled, cfg.get("ledger", "predictions/market_at_lock.csv"), store_raw_prices=bool(cfg.get("store_raw_prices", False)))

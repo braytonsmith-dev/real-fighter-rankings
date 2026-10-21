@@ -36,6 +36,7 @@ min_books: 2                                 # a consensus needs at least this m
 # responses are never written to disk either way.
 store_raw_prices: false
 ledger: "predictions/market_at_lock.csv"
+run_report: "outputs/market_last_run.json"   # what the last run saw: counts, credits remaining, and every unmatched pick or market bout within 14 days
 books_ledger: "predictions/market_books.csv"
 
 # The schedule of .github/workflows/weekly.yml (UTC), used to decide which run is the last one before an event:
