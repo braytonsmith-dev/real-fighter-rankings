@@ -1,6 +1,6 @@
 {
- "fetched_at_utc": "2026-10-19T18:56:26Z",
- "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261019-20261109",
+ "fetched_at_utc": "2026-10-21T15:14:36Z",
+ "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261021-20261111",
  "events": [
   {
    "id": "600061267",
@@ -14,6 +14,384 @@
     "slug": "regular-season"
    },
    "competitions": [
+    {
+     "id": "401930917",
+     "uid": "s:3301~l:3321~e:600061267~c:401930917",
+     "date": "2026-10-24T14:00Z",
+     "endDate": "2026-10-24T14:00Z",
+     "type": {
+      "id": "1006",
+      "abbreviation": "W Strawweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "7126",
+      "fullName": "Etihad Arena",
+      "address": {
+       "city": "Abu Dhabi",
+       "country": "United Arab Emirates"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4239113",
+       "uid": "s:3301~a:4239113",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Nicolle Caliari",
+        "displayName": "Nicolle Caliari",
+        "shortName": "N. Caliari",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "9-4-0"
+        }
+       ]
+      },
+      {
+       "id": "5080935",
+       "uid": "s:3301~a:5080935",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Iasmin Lucindo",
+        "displayName": "Iasmin Lucindo",
+        "shortName": "I. Lucindo",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "18-6-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 24th at 10:00 AM EDT",
+       "shortDetail": "10/24 - 10:00 AM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-24T14:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401930916",
+     "uid": "s:3301~l:3321~e:600061267~c:401930916",
+     "date": "2026-10-24T14:00Z",
+     "endDate": "2026-10-24T14:00Z",
+     "type": {
+      "id": "986",
+      "abbreviation": "Lightweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "7126",
+      "fullName": "Etihad Arena",
+      "address": {
+       "city": "Abu Dhabi",
+       "country": "United Arab Emirates"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "5145777",
+       "uid": "s:3301~a:5145777",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Noah Gugnon",
+        "displayName": "Noah Gugnon",
+        "shortName": "N. Gugnon",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+         "alt": "France",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "10-2-0"
+        }
+       ]
+      },
+      {
+       "id": "5212351",
+       "uid": "s:3301~a:5212351",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Kody Steele",
+        "displayName": "Kody Steele",
+        "shortName": "K. Steele",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+         "alt": "USA",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "8-1-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 24th at 10:00 AM EDT",
+       "shortDetail": "10/24 - 10:00 AM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-24T14:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
+    {
+     "id": "401930915",
+     "uid": "s:3301~l:3321~e:600061267~c:401930915",
+     "date": "2026-10-24T14:00Z",
+     "endDate": "2026-10-24T14:00Z",
+     "type": {
+      "id": "999",
+      "abbreviation": "Featherweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "7126",
+      "fullName": "Etihad Arena",
+      "address": {
+       "city": "Abu Dhabi",
+       "country": "United Arab Emirates"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4881997",
+       "uid": "s:3301~a:4881997",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "Daniel Santos",
+        "displayName": "Daniel Santos",
+        "shortName": "D. Santos",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+         "alt": "Brazil",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "14-3-0"
+        }
+       ]
+      },
+      {
+       "id": "5145682",
+       "uid": "s:3301~a:5145682",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Bolaji Oki",
+        "displayName": "Bolaji Oki",
+        "shortName": "B. Oki",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+         "alt": "Belgium",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "10-4-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, October 24th at 10:00 AM EDT",
+       "shortDetail": "10/24 - 10:00 AM EDT"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-10-24T14:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
     {
      "id": "401930357",
      "uid": "s:3301~l:3321~e:600061267~c:401930357",

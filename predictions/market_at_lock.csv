@@ -1,0 +1,12 @@
+pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_time_utc,n_books,p_a_market,p_b_market,market_favourite,price_a_min,price_a_max,price_b_min,price_b_max,provider,regions,markets
+600061267:401911633,Petr Yan,Merab Dvalishvili,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T19:45:00Z,26,0.5997,0.4003,Petr Yan,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911635,Alexander Volkov,Rizvan Kuniev,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,25,0.528,0.472,Alexander Volkov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911634,Lone'er Kavanagh,Ramazan Temirov,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,24,0.4945,0.5055,Ramazan Temirov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911640,Grant Dawson,Nurullo Aliev,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,23,0.5159,0.4841,Grant Dawson,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401929495,Aaron Pico,Losene Keita,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,23,0.5355,0.4645,Aaron Pico,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911637,Azamat Murzakanov,Dominick Reyes,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,22,0.6594,0.3406,Azamat Murzakanov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401928047,Colby Thicknesse,Asaf Chopurov,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,21,0.1916,0.8084,Asaf Chopurov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930357,Abubakar Vagaev,Jacob Malkoun,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,21,0.5878,0.4122,Abubakar Vagaev,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930916,Kody Steele,Noah Gugnon,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,20,0.5885,0.4115,Kody Steele,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930915,Bolaji Oki,Daniel Santos,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,20,0.477,0.523,Daniel Santos,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930917,Iasmin Lucindo,Nicolle Caliari,2026-10-24,lock,2026-10-21T15:14:37Z,2026-10-24T14:00:00Z,19,0.7499,0.2501,Iasmin Lucindo,,,,,the-odds-api,"us,uk,eu",h2h
