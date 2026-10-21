@@ -3,7 +3,7 @@
 # GitHub Actions secret ODDS_API_KEY, and set enabled: true. The key is read from that environment variable
 # only; it is never read from, or written to, a file in this repository. See MARKET_BASELINE.md.
 
-enabled: false
+enabled: true
 
 provider: "the-odds-api"                     # The Odds API Pty Ltd, https://the-odds-api.com
 base_url: "https://api.the-odds-api.com/v4"  # documented at https://the-odds-api.com/liveapi/guides/v4/
