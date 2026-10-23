@@ -1,6 +1,6 @@
 {
- "fetched_at_utc": "2026-10-21T15:23:59Z",
- "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261021-20261111",
+ "fetched_at_utc": "2026-10-23T17:49:47Z",
+ "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261023-20261113",
  "events": [
   {
    "id": "600061267",

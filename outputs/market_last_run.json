@@ -1,25 +1,29 @@
 {
-  "fetched_at_utc": "2026-10-21T15:23:59Z",
-  "bouts_from_api": 43,
-  "bouts_with_consensus": 19,
-  "matched_to_pending_picks": 14,
-  "credits_remaining": "491",
-  "credits_used_this_month": "9",
+  "fetched_at_utc": "2026-10-23T17:49:48Z",
+  "bouts_from_api": 58,
+  "bouts_with_consensus": 34,
+  "matched_to_pending_picks": 20,
+  "credits_remaining": "488",
+  "credits_used_this_month": "12",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
     "Arnold Allen vs Aaron Pico (2026-10-24)",
     "Francis Marshall vs Gaston Bolanos (2026-10-31)",
     "Julian Erosa vs JeongYeong Lee (2026-10-31)",
-    "Azamat Bekoev vs Andre Petroski (2026-10-31)",
-    "Jean-Paul Lebosnoyani vs Farman Hasanov (2026-10-31)",
-    "Rodrigo Sezinando vs Theodor Berggren (2026-10-31)",
-    "Talita Alencar vs Piera Rodriguez (2026-10-31)",
-    "Yana Santos vs Luana Santos (2026-10-31)",
     "Randy Brown vs Carlos Leal (2026-10-31)",
     "Lucia Szabova vs Tainara Lisboa (2026-10-31)",
-    "Nick Klein vs Joe Kropschot (2026-10-31)",
-    "Renato Moicano vs Tom Nolan (2026-10-31)"
+    "Nick Klein vs Joe Kropschot (2026-10-31)"
   ],
-  "unmatched_market_bouts": []
+  "unmatched_market_bouts": [
+    "Hilarie Rose vs Bruna Ellen (2026-10-23, 2 books)",
+    "Devan Worth vs Thomas Blackorby (2026-10-23, 2 books)",
+    "Guram Mestvirishvili vs Jansey Silva (2026-10-23, 2 books)",
+    "Maikel Reinoso vs Oscar Jurado Sanchez (2026-10-23, 2 books)",
+    "Jake Woodley vs Zayne Havener (2026-10-24, 2 books)",
+    "Ode Osbourne vs Cody Durden (2026-11-01, 2 books)",
+    "Francis Marshall vs Dakota Hope (2026-11-01, 4 books)",
+    "Julian Erosa vs Jeongyoung Lee (2026-11-01, 2 books)",
+    "Nick Klein vs Joseph Kropschot (2026-11-01, 2 books)"
+  ]
 }

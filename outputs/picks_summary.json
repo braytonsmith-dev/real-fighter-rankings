@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-21T15:24:00Z",
+  "updated_utc": "2026-10-23T17:49:48Z",
   "graded": 24,
   "pending": 41,
   "void": 1,
@@ -7,7 +7,7 @@
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-10-21T15:23:59Z"
+    "checked_at_utc": "2026-10-23T17:49:47Z"
   },
   "record": {
     "correct": 9,

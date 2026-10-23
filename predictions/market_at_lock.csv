@@ -13,3 +13,23 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061267:401911632,Alexander Volkanovski,Movsar Evloev,2026-10-24,lock,2026-10-21T15:23:59Z,2026-10-24T20:30:00Z,26,0.4987,0.5013,Movsar Evloev,,,,,the-odds-api,"us,uk,eu",h2h
 600061267:401911639,Nikita Krylov,Abdul Rakhman Yakhyaev,2026-10-24,lock,2026-10-21T15:23:59Z,2026-10-24T14:00:00Z,22,0.2058,0.7942,Abdul Rakhman Yakhyaev,,,,,the-odds-api,"us,uk,eu",h2h
 600061267:401911638,Abus Magomedov,Cam Rowston,2026-10-24,lock,2026-10-21T15:23:59Z,2026-10-24T14:00:00Z,18,0.5328,0.4672,Abus Magomedov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911635,Alexander Volkov,Rizvan Kuniev,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,25,0.5318,0.4682,Alexander Volkov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911634,Lone'er Kavanagh,Ramazan Temirov,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,25,0.506,0.494,Lone'er Kavanagh,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911633,Petr Yan,Merab Dvalishvili,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T19:45:00Z,25,0.5754,0.4246,Petr Yan,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911632,Alexander Volkanovski,Movsar Evloev,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T20:30:00Z,25,0.4993,0.5007,Movsar Evloev,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401929495,Aaron Pico,Losene Keita,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,23,0.5672,0.4328,Aaron Pico,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401928047,Colby Thicknesse,Asaf Chopurov,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T15:40:00Z,22,0.1768,0.8232,Asaf Chopurov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911640,Grant Dawson,Nurullo Aliev,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,22,0.5185,0.4815,Grant Dawson,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911639,Nikita Krylov,Abdul Rakhman Yakhyaev,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,22,0.195,0.805,Abdul Rakhman Yakhyaev,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930357,Abubakar Vagaev,Jacob Malkoun,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,22,0.5867,0.4133,Abubakar Vagaev,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911637,Azamat Murzakanov,Dominick Reyes,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,21,0.6515,0.3485,Azamat Murzakanov,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930916,Kody Steele,Noah Gugnon,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,21,0.5834,0.4166,Kody Steele,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930915,Bolaji Oki,Daniel Santos,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,21,0.4808,0.5192,Daniel Santos,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401930917,Iasmin Lucindo,Nicolle Caliari,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:15:00Z,20,0.7571,0.2429,Iasmin Lucindo,,,,,the-odds-api,"us,uk,eu",h2h
+600061267:401911638,Abus Magomedov,Cam Rowston,2026-10-24,last_before_event,2026-10-23T17:49:48Z,2026-10-24T14:00:00Z,18,0.5323,0.4677,Abus Magomedov,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401928108,Azamat Bekoev,Andre Petroski,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,5,0.7522,0.2478,Azamat Bekoev,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401928106,Rodrigo Sezinando,Theodor Berggren,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,5,0.6125,0.3875,Rodrigo Sezinando,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401928107,Jean-Paul Lebosnoyani,Farman Hasanov,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.6724,0.3276,Jean-Paul Lebosnoyani,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401928105,Talita Alencar,Piera Rodriguez,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.3277,0.6723,Piera Rodriguez,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401928104,Yana Santos,Luana Santos,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.3585,0.6415,Luana Santos,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401921310,Renato Moicano,Tom Nolan,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.4801,0.5199,Tom Nolan,,,,,the-odds-api,"us,uk,eu",h2h
