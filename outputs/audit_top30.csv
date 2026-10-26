@@ -1,341 +1,338 @@
 division,rank,fighter,placement,division_source,score,rating_term,ledger_term,form_penalty,rating,rating_raw,inactivity_penalty,injury,quality_wins,ledger_detail,top10_wins_15y,top15_wins_15y,entrenched,last5,streak,days_since,ko_risk,rank_p10,rank_p90
-Bantamweight,0,Petr Yan,title holder,title holder or reserved,1.223,0.69,0.533,0.0,1748.031,1748.031,0.0,True,7.1,+7.1 QW +0.0 proof -0.0 blowout -0.0 weak,7,10,True,4-1,W4,316,0.0,0.0,0.0
-Bantamweight,1,Merab Dvalishvili,score order #1,fight record,1.502,0.808,0.694,0.0,1785.55,1785.55,0.0,False,9.55,+10.6 QW +0.0 proof -1.0 blowout -0.0 weak,8,11,True,4-1,L1,316,0.0,1.0,1.0
-Bantamweight,2,Sean O'Malley,score order #3; head-to-head -> #2,fight record,1.099,0.632,0.467,0.0,1729.365,1729.365,0.0,False,6.1,+6.1 QW +0.0 proof -0.0 blowout -0.0 weak,5,5,True,3-2,W2,126,0.03,2.0,2.0
-Bantamweight,3,Song Yadong,score order #2; head-to-head -> #3,fight record,1.243,0.782,0.461,0.0,1777.265,1777.265,0.0,False,6.0,+5.5 QW +0.5 proof -0.0 blowout -0.0 weak,5,8,True,3-2,W2,50,0.013,3.0,3.0
-Bantamweight,4,Umar Nurmagomedov,score order #4,fight record,0.919,0.613,0.306,0.0,1723.448,1723.448,0.0,False,3.65,+3.6 QW +0.0 proof -0.0 blowout -0.0 weak,3,3,False,3-2,L1,50,0.033,4.0,4.0
-Bantamweight,5,Mario Bautista,score order #5,fight record,0.719,0.479,0.24,0.0,1680.667,1680.667,0.0,False,2.65,+3.6 QW +0.0 proof -1.0 blowout -0.0 weak,2,4,False,4-1,W2,99,0.039,5.0,5.0
-Bantamweight,6,Cory Sandhagen,score order #6,fight record,0.712,0.643,0.219,0.15,1732.907,1732.907,0.0,False,2.325,+5.3 QW +0.0 proof -2.0 blowout -1.0 weak,8,8,True,2-3,L2,99,0.0,6.0,6.0
-Bantamweight,7,Marcus McGhee,score order #7,fight record,0.552,0.42,0.132,0.0,1661.947,1661.947,0.0,False,1.0,+0.5 QW +0.5 proof -0.0 blowout -0.0 weak,0,1,False,4-1,W2,15,0.0,7.0,8.0
-Bantamweight,8,Montel Jackson,score order #8,fight record,0.543,0.583,-0.039,0.0,1713.751,1713.751,0.0,False,-1.6,+0.4 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,W1,22,0.0,7.0,12.0
-Bantamweight,9,Payton Talbott,score order #9,fight record,0.534,0.402,0.132,0.0,1656.235,1656.235,0.0,False,1.0,+2.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,2,False,4-1,W3,15,0.0,8.0,9.0
-Bantamweight,10,Raul Rosas Jr.,score order #10,fight record,0.532,0.4,0.132,0.0,1655.587,1655.587,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,2,False,5-0,W6,22,0.0,9.0,10.0
-Bantamweight,11,David Martinez,score order #11,fight record,0.499,0.286,0.214,0.0,1619.16,1619.16,0.0,False,2.25,+2.2 QW +0.0 proof -0.0 blowout -0.0 weak,2,2,False,4-0,W4,36,0.0,7.0,11.0
-Bantamweight,12,Brady Hiestand,score order #12,fight record,0.399,0.333,0.066,0.0,1634.296,1634.296,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-1,W4,22,0.0,12.0,15.0
-Bantamweight,13,Jose Aldo,score order #13,fight record,0.391,0.369,0.171,0.15,1645.853,1691.853,46.0,False,1.6,+3.6 QW +0.0 proof -0.0 blowout -2.0 weak,10,12,True,2-3,L2,526,0.024,13.0,13.0
-Bantamweight,14,Aiemann Zahabi,score order #14,fight record,0.341,0.177,0.164,0.0,1584.535,1584.535,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,4-1,L1,126,0.075,14.0,18.0
-Bantamweight,15,Farid Basharat,score order #15,fight record,0.333,0.251,0.082,0.0,1607.992,1607.992,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,5-0,W7,99,0.0,14.0,17.0
-Bantamweight,16,Raoni Barcelos,score order #16,fight record,0.329,0.263,0.066,0.0,1611.948,1611.948,0.0,False,0.0,+1.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,4-1,L1,22,0.089,11.0,16.0
-Bantamweight,17,Vinicius Oliveira,score order #17,fight record,0.329,0.263,0.066,0.0,1611.899,1611.899,0.0,False,0.0,+1.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,4-1,W1,120,0.0,15.0,17.0
-Bantamweight,18,Bryce Mitchell,score order #18,fight record,0.29,0.292,-0.002,0.0,1621.156,1621.156,0.0,False,-1.025,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,1,2,False,3-2,W2,134,0.051,16.0,19.0
-Bantamweight,19,Elijah Smith,score order #19,fight record,0.251,0.186,0.066,0.0,1587.271,1587.271,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,218,0.0,18.0,20.0
-Bantamweight,20,Daniel Marcos,score order #20,fight record,0.247,0.247,0.0,0.0,1606.859,1606.859,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W1,344,0.0,19.0,21.0
-Bantamweight,21,Cody Haddon,score order #21,fight record,0.229,0.163,0.066,0.0,1580.238,1580.238,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,141,0.0,20.0,25.0
-Bantamweight,22,Davey Grant,score order #22,fight record,0.214,0.204,0.01,0.0,1593.285,1593.285,0.0,False,-0.85,+0.1 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,W1,176,0.0,22.0,23.0
-Bantamweight,23,Rob Font,score order #23,fight record,0.2,0.32,0.03,0.15,1630.163,1630.163,0.0,False,-0.55,+2.4 QW +0.0 proof -2.0 blowout -1.0 weak,4,6,True,2-3,L2,225,0.0,23.0,25.0
-Bantamweight,24,Chris Gutierrez,score order #24,fight record,0.191,0.237,-0.046,0.0,1603.659,1607.659,4.0,False,-1.7,+0.3 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,L1,379,0.0,21.0,29.0
-Bantamweight,25,Ethyn Ewing,score order #25,fight record,0.19,0.125,0.066,0.0,1567.853,1567.853,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,197,0.0,22.0,28.0
-Bantamweight,26,Adrian Yanez,score order #26,fight record,0.159,0.293,0.016,0.15,1621.484,1621.484,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,W1,99,0.097,26.0,30.0
-Bantamweight,27,Jakub Wiklacz,score order #27,fight record,0.137,0.071,0.066,0.0,1550.786,1550.786,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,253,0.0,25.0,32.0
-Bantamweight,28,Juan Diaz,score order #28,fight record,0.135,0.069,0.066,0.0,1550.324,1550.324,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,155,0.0,26.0,33.0
-Bantamweight,29,Aleksandre Topuria,score order #29,fight record,0.122,0.057,0.066,0.0,1546.207,1546.207,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,330,0.0,27.0,34.0
-Bantamweight,30,Hector Santiago,score order #30,fight record,0.121,0.056,0.066,0.0,1545.896,1545.896,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,50,0.0,28.0,35.0
-Featherweight,0,Alexander Volkanovski,title holder,title holder or reserved,1.541,0.895,0.646,0.0,1835.413,1835.413,0.0,False,7.4,+8.4 QW +0.0 proof -1.0 blowout -0.0 weak,11,11,True,3-2,W2,260,0.026,0.0,0.0
-Featherweight,1,Aljamain Sterling,score order #1,fight record,1.564,0.807,0.758,0.0,1805.396,1805.396,0.0,False,8.85,+8.2 QW +0.7 proof -0.0 blowout -0.0 weak,12,14,True,3-2,W2,176,0.054,1.0,1.0
-Featherweight,2,Movsar Evloev,score order #2,fight record,0.876,0.428,0.448,0.0,1676.617,1676.617,0.0,False,4.825,+4.8 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,5-0,W10,211,0.0,2.0,3.0
-Featherweight,3,Diego Lopes,score order #3,fight record,0.783,0.514,0.269,0.0,1705.681,1705.681,0.0,False,2.5,+4.5 QW +0.0 proof -2.0 blowout -0.0 weak,3,5,True,3-2,W1,126,0.0,2.0,3.0
-Featherweight,4,Jean Silva,score order #4,fight record,0.679,0.544,0.135,0.0,1716.103,1716.103,0.0,False,0.75,+1.8 QW +0.0 proof -1.0 blowout -0.0 weak,1,2,False,4-1,W2,36,0.058,4.0,6.0
-Featherweight,5,Steve Garcia,score order #5,fight record,0.668,0.476,0.192,0.0,1692.755,1692.755,0.0,False,1.5,+1.0 QW +0.5 proof -0.0 blowout -0.0 weak,0,2,False,4-1,L1,126,0.078,4.0,5.0
-Featherweight,6,Lerone Murphy,score order #6,fight record,0.651,0.42,0.231,0.0,1673.736,1673.736,0.0,False,2.0,+2.0 QW +0.0 proof -0.0 blowout -0.0 weak,1,3,False,4-1,L1,211,0.0,4.0,6.0
-Featherweight,7,Kevin Vallejos,score order #7,fight record,0.525,0.372,0.154,0.0,1657.3,1657.3,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,2,False,4-0,W4,218,0.0,7.0,7.0
-Featherweight,8,Youssef Zalal,score order #8,fight record,0.502,0.348,0.154,0.0,1649.231,1649.231,0.0,False,1.0,+2.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,2,False,4-1,L1,176,0.0,8.0,10.0
-Featherweight,9,Arnold Allen,score order #9,fight record,0.5,0.479,0.171,0.15,1693.943,1693.943,0.0,False,1.225,+3.2 QW +0.0 proof -0.0 blowout -2.0 weak,3,5,True,2-3,W1,155,0.0,8.0,9.0
-Featherweight,10,Pat Sabatini,score order #12; head-to-head -> #10,fight record,0.365,0.365,0.0,0.0,1655.025,1655.025,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W4,162,0.136,10.0,12.0
-Featherweight,11,Joanderson Brito,score order #10; head-to-head -> #11,fight record,0.402,0.448,-0.046,0.0,1683.374,1683.374,0.0,False,-1.6,+0.4 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,W3,29,0.0,10.0,13.0
-Featherweight,12,Cub Swanson,score order #11; head-to-head -> #12,fight record,0.4,0.335,0.065,0.0,1644.739,1644.739,0.0,False,-0.15,+0.8 QW +0.0 proof -0.0 blowout -1.0 weak,4,8,True,3-2,W2,190,0.079,10.0,12.0
-Featherweight,13,Luke Riley,score order #13,fight record,0.328,0.251,0.077,0.0,1616.348,1616.348,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,99,0.0,11.0,13.0
-Featherweight,14,Mairon Santos,score order #14,fight record,0.303,0.226,0.077,0.0,1607.775,1607.775,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,316,0.0,14.0,15.0
-Featherweight,15,Tommy McMillen,score order #15,fight record,0.283,0.206,0.077,0.0,1600.91,1600.91,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,36,0.0,15.0,16.0
-Featherweight,16,Chepe Mariscal,score order #16,fight record,0.274,0.254,0.019,0.0,1617.431,1617.431,0.0,False,-0.75,+0.2 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,L1,337,0.0,14.0,16.0
-Featherweight,17,Felipe Lima,score order #17,fight record,0.231,0.231,0.0,0.0,1609.49,1609.49,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W1,43,0.0,17.0,18.0
-Featherweight,18,Marcio Barbosa,score order #18,fight record,0.226,0.149,0.077,0.0,1581.648,1581.648,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,57,0.0,17.0,22.0
-Featherweight,19,Jamall Emmers,score order #19,fight record,0.222,0.222,0.0,0.0,1606.556,1606.556,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W3,57,0.081,18.0,20.0
-Featherweight,20,David Onama,score order #20,fight record,0.206,0.167,0.038,0.0,1587.803,1587.803,0.0,False,-0.5,+0.5 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,4-1,L1,351,0.033,19.0,21.0
-Featherweight,21,Yadier del Valle,score order #21,fight record,0.196,0.177,0.019,0.0,1590.964,1590.964,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W1,71,0.0,20.0,22.0
-Featherweight,22,Dooho Choi,score order #24; head-to-head -> #22,fight record,0.159,0.157,0.002,0.0,1584.209,1584.209,0.0,False,-0.975,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,L1,29,0.217,22.0,24.0
-Featherweight,23,Daniel Santos,score order #22; head-to-head -> #23,fight record,0.17,0.17,0.0,0.0,1588.643,1588.643,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,L1,155,0.071,23.0,25.0
-Featherweight,24,Melquizael Costa,score order #23; head-to-head -> #24,fight record,0.169,0.169,0.0,0.0,1588.269,1588.269,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,4-1,L1,155,0.042,24.0,26.2
-Featherweight,25,Pavel Andrusca,score order #26; head-to-head -> #25,fight record,0.136,0.04,0.096,0.0,1544.479,1544.479,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,43,0.0,22.0,28.0
-Featherweight,26,Nathaniel Wood,score order #25; head-to-head -> #26,fight record,0.155,0.221,-0.065,0.0,1606.029,1606.029,0.0,False,-1.85,+0.1 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,4-1,L1,43,0.038,19.0,33.0
-Featherweight,27,Sean Woodson,score order #27,fight record,0.123,0.104,0.019,0.0,1566.215,1566.215,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,50,0.061,26.0,31.0
-Featherweight,28,Keiichiro Nakamura,score order #28,fight record,0.118,0.042,0.077,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,260,0.0,25.9,30.0
-Featherweight,29,Sean King III,score order #29,fight record,0.118,0.042,0.077,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,36,0.0,26.9,32.0
-Featherweight,30,Rodrigo Vera,score order #30,fight record,0.118,0.042,0.077,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,141,0.0,27.0,31.0
-Flyweight,0,Joshua Van,title holder,title holder or reserved,0.791,0.445,0.346,0.0,1693.526,1693.526,0.0,False,6.5,+7.5 QW +0.0 proof -0.0 blowout -1.0 weak,4,6,True,5-0,W8,29,0.06,0.0,0.0
-Flyweight,1,Manel Kape,score order #1,fight record,0.762,0.527,0.236,0.0,1721.952,1721.952,0.0,False,4.1,+5.1 QW +0.0 proof -0.0 blowout -1.0 weak,4,5,True,4-1,W4,120,0.0,1.0,1.0
-Flyweight,2,Kyoji Horiguchi,score order #5; title cycle -> #2,fight record,0.543,0.409,0.134,0.0,1681.138,1681.138,0.0,False,1.9,+1.9 QW +0.0 proof -0.0 blowout -0.0 weak,2,5,True,4-1,L1,120,0.0,2.0,2.0
-Flyweight,3,Brandon Royval,score order #6; title cycle -> #3,fight record,0.394,0.184,0.21,0.0,1603.428,1603.428,0.0,False,3.55,+6.5 QW +0.0 proof -2.0 blowout -1.0 weak,7,8,True,3-2,W1,99,0.057,3.0,7.0
-Flyweight,4,Alexandre Pantoja,score order #2; title cycle -> #4,fight record,0.755,0.464,0.291,0.0,1700.361,1700.361,0.0,False,5.3,+7.3 QW +0.0 proof -2.0 blowout -0.0 weak,9,10,True,3-2,L2,29,0.028,4.0,5.0
-Flyweight,5,Tatsuro Taira,score order #3; title cycle -> #5,fight record,0.732,0.547,0.185,0.0,1729.071,1729.071,0.0,False,3.0,+3.0 QW +0.0 proof -0.0 blowout -0.0 weak,2,2,False,3-2,L1,162,0.032,4.0,5.0
-Flyweight,6,Brandon Moreno,score order #4; title cycle -> #6,fight record,0.651,0.343,0.307,0.0,1658.468,1658.468,0.0,False,5.65,+6.6 QW +0.0 proof -0.0 blowout -1.0 weak,10,10,True,3-2,W1,36,0.01,6.0,6.0
-Flyweight,7,Asu Almabayev,score order #7,fight record,0.384,0.269,0.115,0.0,1632.559,1632.559,0.0,False,1.5,+2.5 QW +0.0 proof -0.0 blowout -1.0 weak,2,3,False,4-1,W3,113,0.031,3.0,7.0
-Flyweight,8,Ramazan Temirov,score order #8,fight record,0.215,0.099,0.115,0.0,1574.042,1574.042,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,3-0,W3,85,0.0,8.0,9.0
-Flyweight,9,Kai Kara-France,score order #9,fight record,0.201,0.162,0.189,0.15,1595.611,1627.611,32.0,False,3.1,+3.0 QW +0.1 proof -0.0 blowout -0.0 weak,4,5,True,2-3,L1,477,0.039,8.0,12.0
-Flyweight,10,Amir Albazi,score order #10,fight record,0.145,0.149,-0.005,0.0,1591.322,1591.322,0.0,False,-1.1,+0.9 QW +0.0 proof -2.0 blowout -0.0 weak,1,1,False,3-2,L2,253,0.0,9.0,14.0
-Flyweight,11,Allan Nascimento,score order #11,fight record,0.144,0.144,0.0,0.0,1589.447,1589.447,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,L1,120,0.0,10.0,13.0
-Flyweight,12,Tagir Ulanbekov,score order #12,fight record,0.139,0.115,0.023,0.0,1579.611,1579.611,0.0,False,-0.5,+0.5 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,4-1,L1,330,0.0,11.0,12.0
-Flyweight,13,Imanol Rodriguez,score order #13,fight record,0.137,0.091,0.046,0.0,1571.07,1571.07,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,15,0.0,10.0,13.0
-Flyweight,14,Tim Elliott,score order #14,fight record,0.122,0.069,0.053,0.0,1563.609,1563.609,0.0,False,0.15,+2.1 QW +0.1 proof -0.0 blowout -2.0 weak,1,7,True,3-2,W1,36,0.0,11.0,14.0
-Flyweight,15,Andre Lima,score order #15,fight record,0.063,0.063,0.0,0.0,1561.524,1561.524,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,50,0.0,15.0,16.0
-Flyweight,16,Bilal Hasan,score order #16,fight record,0.062,0.015,0.046,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,50,0.0,15.0,19.0
-Flyweight,17,Rei Tsuruya,score order #17,fight record,0.043,0.043,0.0,0.0,1554.533,1554.533,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-1,W2,50,0.0,17.0,17.0
-Flyweight,18,Alden Coria,score order #21; head-to-head -> #18,fight record,-0.011,-0.011,0.0,0.0,1535.942,1535.942,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-1,L1,15,0.106,18.0,24.0
-Flyweight,19,Alessandro Costa,score order #18; head-to-head -> #19,fight record,0.021,0.067,-0.046,0.0,1562.768,1562.768,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,4-1,W3,99,0.128,16.0,20.0
-Flyweight,20,Jose Ochoa,score order #19; head-to-head -> #20,fight record,0.016,0.062,-0.046,0.0,1561.063,1561.063,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,W1,162,0.0,18.0,21.0
-Flyweight,21,Edgar Chairez,score order #20; head-to-head -> #21,fight record,0.0,0.023,-0.023,0.0,1547.685,1547.685,0.0,False,-1.5,+0.5 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,3-2,L1,36,0.0,20.0,22.0
-Flyweight,22,Sumudaerji,score order #22,fight record,-0.012,0.011,-0.023,0.0,1543.348,1543.348,0.0,False,-1.5,+0.5 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,4-1,W4,50,0.0,21.0,24.0
-Flyweight,23,Fabia Sintes,score order #23,fight record,-0.017,-0.063,0.046,0.0,1517.873,1517.873,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,43,0.0,18.0,28.0
-Flyweight,24,Nyamjargal Tumendemberel,score order #24,fight record,-0.019,-0.019,0.0,0.0,1533.239,1533.239,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-1,W2,225,0.0,23.0,25.0
-Flyweight,25,Jafel Filho,score order #25,fight record,-0.023,0.023,-0.046,0.0,1547.645,1547.645,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L1,176,0.0,22.0,25.0
-Flyweight,26,Alex Perez,score order #26,fight record,-0.032,0.136,-0.018,0.15,1586.793,1586.793,0.0,False,-1.4,+2.6 QW +0.0 proof -0.0 blowout -4.0 weak,2,4,False,2-3,L1,50,0.039,22.0,26.0
-Flyweight,27,Joseph Morales,score order #27,fight record,-0.048,0.102,0.0,0.15,1574.965,1574.965,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,L1,36,0.071,26.0,27.0
-Flyweight,28,HyunSung Park,score order #28,fight record,-0.089,-0.042,-0.046,0.0,1524.953,1524.953,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L2,365,0.0,28.0,31.0
-Flyweight,29,Charles Johnson,score order #29,fight record,-0.095,0.02,-0.115,0.0,1546.702,1546.702,0.0,False,-3.5,+0.5 QW +0.0 proof -1.0 blowout -3.0 weak,0,1,False,3-2,W1,64,0.041,27.0,33.0
-Flyweight,30,Steve Erceg,score order #30,fight record,-0.113,-0.037,0.074,0.15,1526.899,1526.899,0.0,False,0.6,+2.1 QW +0.5 proof -2.0 blowout -0.0 weak,2,3,False,2-3,L1,85,0.11,28.0,31.0
-Heavyweight,0,Ciryl Gane,title holder,title holder or reserved,1.141,0.83,0.311,0.0,1812.375,1812.375,0.0,False,6.15,+6.2 QW +0.0 proof -0.0 blowout -0.0 weak,8,8,True,4-1,W3,126,0.0,0.0,0.0
-Heavyweight,0,Tom Aspinall,"reserved: vacated with injury, owed a title shot",title holder or reserved,0.9,0.664,0.236,0.0,1753.863,1753.863,0.0,True,4.425,+4.4 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,4-1,W3,358,0.024,0.0,0.0
-Heavyweight,1,Alexander Volkov,score order #2; title cycle -> #1,fight record,1.153,0.751,0.402,0.0,1784.393,1784.393,0.0,False,8.25,+8.2 QW +0.0 proof -0.0 blowout -0.0 weak,10,12,True,4-1,W2,162,0.008,1.0,1.0
-Heavyweight,2,Josh Hokit,score order #6; head-to-head -> #3; title cycle -> #2,fight record,0.551,0.398,0.152,0.0,1660.068,1660.068,0.0,False,2.5,+2.5 QW +0.0 proof -0.0 blowout -0.0 weak,2,2,False,4-0,W4,126,0.0,2.0,2.0
-Heavyweight,3,Curtis Blaydes,score order #3; head-to-head -> #4; title cycle -> #3,fight record,0.843,0.596,0.248,0.0,1729.569,1729.569,0.0,False,4.7,+6.7 QW +0.0 proof -1.0 blowout -1.0 weak,12,13,True,3-2,W1,36,0.045,3.0,3.0
-Heavyweight,4,Alex Pereira,score order #1; title cycle -> #4,override (config),1.218,0.762,0.456,0.0,1788.247,1788.247,0.0,False,9.5,+10.5 QW +0.0 proof -1.0 blowout -0.0 weak,8,8,True,3-2,L1,126,0.027,4.0,4.0
-Heavyweight,5,Waldo Cortes Acosta,score order #4; head-to-head -> #5,fight record,0.733,0.538,0.196,0.0,1709.121,1709.121,0.0,False,3.5,+4.0 QW +0.5 proof -0.0 blowout -1.0 weak,3,4,False,3-2,L2,36,0.0,5.0,5.0
-Heavyweight,6,Sergei Pavlovich,score order #5; head-to-head -> #6,fight record,0.699,0.484,0.215,0.0,1690.292,1690.292,0.0,False,3.95,+5.9 QW +0.0 proof -2.0 blowout -0.0 weak,6,8,True,3-2,W3,141,0.048,6.0,6.0
-Heavyweight,7,Valter Walker,score order #7,fight record,0.39,0.357,0.033,0.0,1645.493,1645.493,0.0,False,-0.25,+0.8 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,5-0,W5,85,0.0,7.0,9.0
-Heavyweight,8,Rizvan Kuniev,score order #8,fight record,0.379,0.226,0.152,0.0,1599.389,1599.389,0.0,False,2.5,+2.0 QW +0.5 proof -0.0 blowout -0.0 weak,2,2,False,2-1,W2,85,0.0,7.0,10.0
-Heavyweight,9,Mario Pinto,score order #9,fight record,0.363,0.309,0.054,0.0,1628.549,1628.549,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,43,0.0,8.0,10.0
-Heavyweight,10,Derrick Lewis,score order #10,fight record,0.358,0.297,0.212,0.15,1624.136,1624.136,0.0,False,3.875,+4.9 QW +0.0 proof -1.0 blowout -0.0 weak,9,14,True,2-3,L2,126,0.102,8.0,12.0
-Heavyweight,11,Brando Pericic,score order #11,fight record,0.354,0.289,0.065,0.0,1621.531,1621.531,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,1,False,3-0,W3,169,0.0,9.0,11.0
-Heavyweight,12,Vitor Petrino,score order #12,fight record,0.293,0.293,0.0,0.0,1622.693,1622.693,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,1,1,False,4-1,W4,57,0.061,11.0,12.0
-Heavyweight,13,Anthony Wint,score order #13,fight record,0.227,0.183,0.043,0.0,1584.204,1584.204,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,15,0.0,13.0,13.0
-Heavyweight,14,Gokhan Saricam,score order #14,fight record,0.151,0.107,0.043,0.0,1557.345,1557.345,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,183,0.0,14.0,14.0
-Heavyweight,15,Joel Faglier,score order #15,fight record,0.116,0.072,0.043,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,1,0.0,15.0,15.0
-Heavyweight,16,Jovan Leka,score order #16,fight record,0.116,0.072,0.043,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,78,0.0,16.0,16.0
-Heavyweight,17,Jose Montanha,score order #17,fight record,0.108,0.065,0.043,0.0,1542.381,1542.381,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,71,0.0,17.0,18.0
-Heavyweight,18,Steven Asplund,score order #18,fight record,0.067,0.067,0.0,0.0,1543.213,1543.213,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-1,W1,71,0.0,18.0,20.0
-Heavyweight,19,Mick Parkin,score order #19,fight record,0.066,0.11,-0.043,0.0,1558.29,1558.29,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L2,15,0.069,17.0,19.0
-Heavyweight,20,Ryan Spann,score order #20,fight record,0.048,0.088,-0.04,0.0,1550.547,1550.547,0.0,False,-1.925,+1.1 QW +0.0 proof -0.0 blowout -3.0 weak,1,2,False,3-2,L1,43,0.107,19.0,21.0
-Heavyweight,21,Tanner Boser,score order #21,fight record,0.035,0.182,0.003,0.15,1583.72,1583.72,0.0,False,-0.925,+0.1 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,W1,1,0.092,21.0,22.0
-Heavyweight,22,Serghei Spivac,score order #22,fight record,0.031,0.129,0.052,0.15,1564.982,1564.982,0.0,False,0.2,+3.2 QW +0.0 proof -2.0 blowout -1.0 weak,3,6,True,2-3,L1,57,0.085,20.0,24.0
-Heavyweight,23,Shamil Gaziev,score order #23,fight record,0.008,0.084,-0.076,0.0,1549.219,1549.219,0.0,False,-2.75,+0.2 QW +0.0 proof -1.0 blowout -2.0 weak,0,0,False,3-2,W1,57,0.17,22.0,30.0
-Heavyweight,24,Marcin Tybura,score order #24,fight record,0.004,0.157,-0.003,0.15,1574.932,1574.932,0.0,False,-1.075,+2.9 QW +0.0 proof -3.0 blowout -1.0 weak,3,7,True,2-3,L3,78,0.079,23.0,26.0
-Heavyweight,25,Hamdy Abdelwahab,score order #25,fight record,0.002,0.002,0.0,0.0,1520.287,1520.287,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-2,W1,358,0.0,23.0,25.0
-Heavyweight,26,Allen Frye Jr.,score order #26,fight record,-0.035,-0.035,0.0,0.0,1507.167,1507.167,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-1,W1,8,0.0,26.0,27.0
-Heavyweight,27,Martin Buday,score order #27,fight record,-0.039,-0.05,0.011,0.0,1501.976,1525.976,24.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W3,449,0.053,26.0,29.0
-Heavyweight,28,Ante Delija,score order #28,fight record,-0.039,-0.039,0.0,0.0,1505.686,1505.686,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,1,1,False,1-2,L2,239,0.176,27.0,29.0
-Heavyweight,29,RJ Harris,score order #29,fight record,-0.04,-0.04,0.0,0.0,1505.405,1505.405,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-1,L1,8,0.296,28.0,30.0
-Heavyweight,30,Tallison Teixeira,score order #30,fight record,-0.064,-0.042,-0.022,0.0,1504.704,1504.704,0.0,False,-1.5,+0.5 QW +0.0 proof -2.0 blowout -0.0 weak,0,1,False,2-2,L1,141,0.113,30.0,32.0
-Light Heavyweight,0,Carlos Ulberg,title holder,title holder or reserved,0.839,0.495,0.344,0.0,1711.955,1711.955,0.0,False,5.5,+5.5 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,5-0,W10,190,0.061,0.0,0.0
-Light Heavyweight,1,Magomed Ankalaev,score order #1,fight record,1.009,0.575,0.433,0.0,1739.074,1739.074,0.0,False,7.2,+8.2 QW +0.0 proof -1.0 blowout -0.0 weak,8,8,True,4-1,W1,85,0.0,1.0,1.0
-Light Heavyweight,2,Paulo Costa,score order #3; title cycle -> #2,override (config),0.737,0.535,0.202,0.0,1725.529,1725.529,0.0,False,2.825,+2.3 QW +0.5 proof -0.0 blowout -0.0 weak,3,4,False,3-2,W2,190,0.008,2.0,2.0
-Light Heavyweight,3,Navajo Stirling,score order #4; title cycle -> #3,fight record,0.513,0.381,0.132,0.0,1673.437,1673.437,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,1,False,5-0,W6,78,0.0,3.0,5.0
-Light Heavyweight,4,Jiri Prochazka,score order #2; title cycle -> #4,fight record,0.836,0.548,0.288,0.0,1729.848,1729.848,0.0,False,4.45,+6.5 QW +0.0 proof -2.0 blowout -0.0 weak,6,6,True,3-2,L1,190,0.033,4.0,4.0
-Light Heavyweight,5,Dominick Reyes,score order #5,fight record,0.496,0.343,0.153,0.0,1660.496,1660.496,0.0,False,1.9,+2.9 QW +0.0 proof -1.0 blowout -0.0 weak,4,6,True,4-1,W1,190,0.12,5.0,6.0
-Light Heavyweight,6,Volkan Oezdemir,score order #6,fight record,0.471,0.273,0.198,0.0,1636.845,1636.845,0.0,False,2.75,+3.8 QW +0.0 proof -1.0 blowout -0.0 weak,7,8,True,3-2,W1,330,0.047,3.0,7.0
-Light Heavyweight,7,Azamat Murzakanov,score order #7,fight record,0.461,0.366,0.095,0.0,1668.272,1668.272,0.0,False,0.8,+1.8 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,4-1,L1,190,0.038,6.0,9.0
-Light Heavyweight,8,Bogdan Guskov,score order #8,fight record,0.443,0.284,0.159,0.0,1640.597,1640.597,0.0,False,2.0,+1.5 QW +0.5 proof -0.0 blowout -0.0 weak,1,2,False,4-1,L1,85,0.037,8.0,8.0
-Light Heavyweight,9,Khalil Rountree Jr.,score order #9,fight record,0.425,0.208,0.217,0.0,1614.919,1618.919,4.0,False,3.1,+3.1 QW +0.0 proof -0.0 blowout -0.0 weak,2,4,False,3-2,L1,379,0.057,7.0,9.0
-Light Heavyweight,10,Reinier de Ridder,score order #10,override (config),0.338,0.258,0.079,0.0,1631.815,1631.815,0.0,False,0.5,+2.5 QW +0.0 proof -1.0 blowout -1.0 weak,1,2,False,3-2,W1,57,0.078,10.0,10.0
-Light Heavyweight,11,Abdul Rakhman Yakhyaev,score order #11,fight record,0.257,0.205,0.053,0.0,1613.677,1613.677,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,113,0.0,11.0,11.0
-Light Heavyweight,12,Johnny Walker,score order #12,fight record,0.214,0.34,0.024,0.15,1659.492,1659.492,0.0,False,-0.55,+2.3 QW +0.1 proof -2.0 blowout -1.0 weak,2,5,True,2-3,W1,15,0.116,12.0,12.0
-Light Heavyweight,13,Alonzo Menifield,score order #17; head-to-head -> #13,fight record,0.045,0.104,-0.059,0.0,1579.774,1579.774,0.0,False,-2.125,+0.9 QW +0.0 proof -2.0 blowout -1.0 weak,0,2,False,4-1,W2,29,0.1,13.0,24.0
-Light Heavyweight,14,Iwo Baraniewski,score order #13; head-to-head -> #14,fight record,0.136,0.136,0.0,0.0,1590.476,1590.476,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,L1,29,0.0,13.0,14.0
-Light Heavyweight,15,Muhammad Saidov,score order #14; head-to-head -> #15,fight record,0.116,0.05,0.066,0.0,1561.45,1561.45,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,85,0.0,13.0,16.0
-Light Heavyweight,16,Nikita Krylov,score order #15; head-to-head -> #16,fight record,0.075,0.227,-0.001,0.15,1621.187,1621.187,0.0,False,-1.025,+1.8 QW +0.1 proof -2.0 blowout -1.0 weak,3,4,False,2-3,L1,99,0.073,15.0,20.0
-Light Heavyweight,17,Billy Elekana,score order #16; head-to-head -> #17,fight record,0.052,0.052,0.0,0.0,1562.027,1562.027,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W3,260,0.0,17.0,19.0
-Light Heavyweight,18,Lucas Fernando,score order #18,fight record,0.041,-0.012,0.053,0.0,1540.239,1540.239,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,64,0.0,15.0,23.0
-Light Heavyweight,19,Liu Ce,score order #19,fight record,0.037,-0.015,0.053,0.0,1539.164,1539.164,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,50,0.0,16.0,24.0
-Light Heavyweight,20,Jamahal Hill,score order #20,fight record,0.037,0.105,0.082,0.15,1579.939,1613.939,34.0,False,0.55,+2.5 QW +0.0 proof -2.0 blowout -0.0 weak,3,5,True,2-3,L3,484,0.097,18.0,22.0
-Light Heavyweight,21,Dustin Jacoby,score order #21,fight record,0.035,0.141,-0.106,0.0,1592.202,1592.202,0.0,False,-3.0,+0.0 QW +0.0 proof -1.0 blowout -2.0 weak,0,0,False,3-2,L1,85,0.056,17.0,25.0
-Light Heavyweight,22,Jimmy Crute,score order #22,fight record,0.031,0.124,0.057,0.15,1586.46,1592.46,6.0,False,0.075,+0.1 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-3,W2,386,0.087,20.0,22.0
-Light Heavyweight,23,Modestas Bukauskas,score order #26; head-to-head -> #23,fight record,-0.032,0.021,-0.053,0.0,1551.613,1551.613,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,4-1,W2,43,0.174,19.0,26.0
-Light Heavyweight,24,Christian Edwards,score order #23; head-to-head -> #24,fight record,0.027,0.027,0.0,0.0,1553.621,1553.621,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,1-1,W1,22,0.0,20.0,24.0
-Light Heavyweight,25,Luis Hernandez,score order #24; head-to-head -> #25,fight record,0.026,-0.027,0.053,0.0,1535.43,1535.43,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,22,0.0,18.0,25.0
-Light Heavyweight,26,Zhang Mingyang,score order #25; head-to-head -> #26,fight record,-0.021,0.005,-0.026,0.0,1546.087,1546.087,0.0,False,-1.5,+0.5 QW +0.0 proof -2.0 blowout -0.0 weak,0,1,False,3-2,L2,141,0.242,25.0,26.0
-Light Heavyweight,27,Jan Blachowicz,score order #27,fight record,-0.039,0.415,0.145,0.6,1685.02,1685.02,0.0,False,1.75,+3.8 QW +0.0 proof -1.0 blowout -1.0 weak,7,8,True,1-4,L3,78,0.029,27.0,28.0
-Light Heavyweight,28,Magomed Tuchalov,score order #28,fight record,-0.07,-0.123,0.053,0.0,1502.878,1502.878,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,85,0.0,26.0,29.0
-Light Heavyweight,29,Uran Satybaldiev,score order #29,fight record,-0.096,-0.096,0.0,0.0,1511.895,1527.895,16.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,1-1,W1,421,0.0,28.0,29.0
-Light Heavyweight,30,Ion Cutelaba,score order #30,fight record,-0.158,-0.06,-0.098,0.0,1524.05,1524.05,0.0,False,-2.85,+0.1 QW +0.0 proof -0.0 blowout -3.0 weak,0,1,False,3-2,L1,120,0.101,30.0,32.0
-Lightweight,0,Justin Gaethje,title holder,title holder or reserved,1.259,0.551,0.708,0.0,1740.236,1740.236,0.0,False,8.35,+8.3 QW +0.0 proof -0.0 blowout -0.0 weak,10,11,True,4-1,W3,126,0.07,0.0,0.0
-Lightweight,1,Charles Oliveira,score order #2; head-to-head -> #1,fight record,1.499,0.887,0.612,0.0,1860.162,1860.162,0.0,False,7.075,+7.9 QW +0.1 proof -1.0 blowout -0.0 weak,12,12,True,3-2,W2,225,0.034,1.0,1.0
-Lightweight,2,Max Holloway,score order #1; head-to-head -> #2,fight record,1.555,0.921,0.634,0.0,1872.141,1872.141,0.0,False,7.375,+8.4 QW +0.0 proof -1.0 blowout -0.0 weak,15,15,True,3-2,W1,99,0.0,2.0,2.0
-Lightweight,3,Ilia Topuria,score order #3,fight record,1.264,0.695,0.568,0.0,1791.838,1791.838,0.0,False,6.5,+6.5 QW +0.0 proof -0.0 blowout -0.0 weak,5,5,True,4-1,L1,126,0.039,3.0,3.0
-Lightweight,4,Arman Tsarukyan,score order #4,fight record,1.14,0.663,0.477,0.0,1780.236,1780.236,0.0,False,5.3,+5.3 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,5-0,W6,29,0.0,4.0,4.0
-Lightweight,5,Paddy Pimblett,score order #5,fight record,0.74,0.494,0.246,0.0,1720.012,1720.012,0.0,False,2.25,+3.2 QW +0.0 proof -1.0 blowout -0.0 weak,2,3,False,4-1,W1,99,0.0,5.0,5.0
-Lightweight,6,Renato Moicano,score order #8; head-to-head -> #6,fight record,0.578,0.423,0.155,0.0,1694.643,1694.643,0.0,False,1.05,+3.0 QW +0.0 proof -1.0 blowout -1.0 weak,3,6,True,3-2,W1,197,0.076,6.0,7.0
-Lightweight,7,Benoit Saint Denis,score order #6; head-to-head -> #7,fight record,0.633,0.444,0.189,0.0,1702.145,1702.145,0.0,False,1.5,+3.0 QW +0.5 proof -2.0 blowout -0.0 weak,2,4,False,4-1,L1,99,0.064,7.0,8.0
-Lightweight,8,Quillan Salkilld,score order #7; head-to-head -> #8,fight record,0.627,0.418,0.208,0.0,1693.084,1693.084,0.0,False,1.75,+1.8 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,5-0,W6,71,0.0,6.0,9.0
-Lightweight,9,Grant Dawson,score order #9,fight record,0.564,0.522,0.042,0.0,1730.141,1730.141,0.0,False,-0.45,+0.6 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,4-1,W1,162,0.073,6.0,9.0
-Lightweight,10,Mateusz Gamrot,score order #10,fight record,0.447,0.461,0.136,0.15,1708.174,1708.174,0.0,False,0.8,+2.3 QW +0.5 proof -1.0 blowout -1.0 weak,2,5,True,2-3,L1,71,0.0,10.0,10.0
-Lightweight,11,Jim Miller,score order #11,fight record,0.357,0.38,-0.023,0.0,1679.263,1679.263,0.0,False,-1.3,+0.7 QW +0.0 proof -1.0 blowout -1.0 weak,1,1,False,3-2,W1,162,0.023,11.0,14.0
-Lightweight,12,Chris Padilla,score order #12,fight record,0.327,0.233,0.095,0.0,1626.954,1626.954,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,5-0,W5,57,0.0,11.0,15.0
-Lightweight,13,Mauricio Ruffy,score order #15; head-to-head -> #13,fight record,0.247,0.19,0.057,0.0,1611.835,1611.835,0.0,False,-0.25,+1.8 QW +0.0 proof -1.0 blowout -1.0 weak,1,2,False,3-2,L1,29,0.042,12.0,16.0
-Lightweight,14,Rafael Fiziev,score order #13; head-to-head -> #14,fight record,0.274,0.252,0.172,0.15,1633.693,1633.693,0.0,False,1.275,+1.5 QW +0.8 proof -0.0 blowout -1.0 weak,1,3,False,2-3,W1,113,0.101,13.0,18.0
-Lightweight,15,Jalin Turner,score order #14; head-to-head -> #15,fight record,0.272,0.268,0.004,0.0,1639.513,1639.513,0.0,False,-0.95,+1.1 QW +0.0 proof -1.0 blowout -1.0 weak,0,2,False,3-2,W2,64,0.084,13.0,16.0
-Lightweight,16,King Green,score order #16,fight record,0.237,0.341,-0.104,0.0,1665.559,1665.559,0.0,False,-2.375,+1.6 QW +0.0 proof -4.0 blowout -0.0 weak,2,2,False,4-1,L1,15,0.097,11.0,24.0
-Lightweight,17,Tommy Gantt,score order #17,fight record,0.233,0.139,0.095,0.0,1593.426,1593.426,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,36,0.0,15.0,22.0
-Lightweight,18,MarQuel Mederos,score order #18,fight record,0.215,0.139,0.076,0.0,1593.551,1593.551,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,57,0.0,17.0,23.0
-Lightweight,19,Nurullo Aliev,score order #19,fight record,0.214,0.138,0.076,0.0,1593.282,1593.282,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,85,0.0,18.0,24.0
-Lightweight,20,Alexander Hernandez,score order #20,fight record,0.213,0.204,0.009,0.0,1616.692,1616.692,0.0,False,-0.875,+1.1 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,4-1,W1,15,0.071,17.0,21.0
-Lightweight,21,Ignacio Bahamondes,score order #21,fight record,0.21,0.229,-0.019,0.0,1625.634,1625.634,0.0,False,-1.25,+0.8 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,W1,36,0.0,13.0,22.0
-Lightweight,22,Manuel Torres,score order #22,fight record,0.174,0.193,-0.019,0.0,1612.632,1612.632,0.0,False,-1.25,+0.8 QW +0.0 proof -2.0 blowout -0.0 weak,0,1,False,3-2,L1,113,0.17,21.0,25.0
-Lightweight,23,Esteban Ribovics,score order #23,fight record,0.166,0.203,-0.038,0.0,1616.519,1616.519,0.0,False,-1.5,+0.5 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,W2,15,0.0,19.0,23.0
-Lightweight,24,Axel Sola,score order #24,fight record,0.158,0.139,0.019,0.0,1593.597,1593.597,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W2,43,0.0,24.0,25.0
-Lightweight,25,Diego Ferreira,score order #25,fight record,0.153,0.212,-0.059,0.0,1619.616,1619.616,0.0,False,-1.775,+0.2 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,W1,71,0.118,20.0,30.0
-Lightweight,26,Salahdine Parnasse,score order #26,fight record,0.143,-0.009,0.152,0.0,1540.905,1540.905,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,1,1,False,1-0,W1,43,0.0,19.0,31.0
-Lightweight,27,Tom Nolan,score order #27,fight record,0.125,0.087,0.038,0.0,1575.041,1575.041,0.0,False,-0.5,+0.5 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,5-0,W5,134,0.099,26.0,28.0
-Lightweight,28,Rafa Garcia,score order #28,fight record,0.103,0.129,-0.027,0.0,1590.006,1590.006,0.0,False,-1.35,+0.7 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,L1,36,0.041,27.0,32.0
-Lightweight,29,Chase Hooper,score order #29,fight record,0.099,0.156,-0.057,0.0,1599.504,1599.504,0.0,False,-1.75,+0.2 QW +0.0 proof -2.0 blowout -0.0 weak,0,0,False,3-2,W1,92,0.129,26.0,35.0
-Lightweight,30,Manoel Sousa,score order #30,fight record,0.085,0.009,0.076,0.0,1547.207,1547.207,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,71,0.0,27.0,32.0
-Middleweight,0,Sean Strickland,title holder,title holder or reserved,0.978,0.567,0.411,0.0,1753.081,1753.081,0.0,False,6.275,+7.0 QW +0.3 proof -1.0 blowout -0.0 weak,6,7,True,3-2,W2,162,0.056,0.0,0.0
-Middleweight,1,Khamzat Chimaev,score order #2; head-to-head -> #1,fight record,0.998,0.583,0.415,0.0,1758.714,1758.714,0.0,False,6.35,+6.3 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,4-1,L1,162,0.0,1.0,1.0
-Middleweight,2,Dricus Du Plessis,score order #1; head-to-head -> #2,fight record,1.139,0.647,0.492,0.0,1782.668,1782.668,0.0,False,7.7,+8.7 QW +0.0 proof -1.0 blowout -0.0 weak,7,8,True,4-1,W1,92,0.0,2.0,2.0
-Middleweight,3,Brendan Allen,score order #3,fight record,0.889,0.567,0.322,0.0,1752.719,1752.719,0.0,False,4.7,+5.2 QW +0.5 proof -0.0 blowout -1.0 weak,3,6,True,4-1,W4,8,0.035,3.0,4.0
-Middleweight,4,Nassourdine Imavov,score order #4,fight record,0.888,0.475,0.412,0.0,1718.913,1730.913,12.0,False,6.3,+6.3 QW +0.0 proof -0.0 blowout -0.0 weak,5,6,True,5-0,W5,407,0.0,3.0,4.0
-Middleweight,5,Robert Whittaker,score order #5,fight record,0.739,0.487,0.251,0.0,1723.361,1723.361,0.0,False,3.45,+5.4 QW +0.0 proof -1.0 blowout -1.0 weak,10,13,True,3-2,W1,99,0.036,5.0,5.0
-Middleweight,6,Joe Pyfer,score order #6,fight record,0.576,0.469,0.107,0.0,1716.386,1716.386,0.0,False,0.9,+1.9 QW +0.0 proof -0.0 blowout -1.0 weak,1,1,False,4-1,W4,204,0.0,6.0,6.0
-Middleweight,7,Gregory Rodrigues,score order #7,fight record,0.561,0.448,0.113,0.0,1708.623,1708.623,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,2,False,4-1,W4,57,0.071,7.0,7.0
-Middleweight,8,Anthony Hernandez,score order #8,fight record,0.548,0.407,0.141,0.0,1693.543,1693.543,0.0,False,1.5,+2.5 QW +0.0 proof -0.0 blowout -1.0 weak,2,3,False,3-2,L2,57,0.095,8.0,8.0
-Middleweight,9,Caio Borralho,score order #9,fight record,0.501,0.331,0.169,0.0,1665.38,1665.38,0.0,False,2.0,+3.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,3,False,4-1,W1,225,0.0,9.0,9.0
-Middleweight,10,Christian Leroy Duncan,score order #10,fight record,0.461,0.362,0.099,0.0,1676.749,1676.749,0.0,False,0.75,+1.2 QW +0.5 proof -1.0 blowout -0.0 weak,0,2,False,4-1,L1,8,0.0,10.0,10.0
-Middleweight,11,Yousri Belgaroui,score order #11,fight record,0.298,0.241,0.056,0.0,1632.091,1632.091,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,36,0.0,11.0,12.0
-Middleweight,12,Ikram Aliskerov,score order #12,fight record,0.284,0.256,0.028,0.0,1637.533,1637.533,0.0,False,-0.5,+0.5 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W3,113,0.065,11.0,14.0
-Middleweight,13,Michael Page,score order #13,fight record,0.272,0.159,0.113,0.0,1601.691,1601.691,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,4-1,W4,43,0.0,11.0,16.0
-Middleweight,14,Bo Nickal,score order #14,fight record,0.266,0.252,0.014,0.0,1636.085,1636.085,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W2,126,0.096,13.0,18.0
-Middleweight,15,Cam Rowston,score order #15,fight record,0.259,0.189,0.071,0.0,1612.577,1612.577,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,169,0.0,13.0,15.0
-Middleweight,16,Baisangur Susurkaev,score order #16,fight record,0.251,0.195,0.056,0.0,1614.837,1614.837,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,162,0.0,15.0,16.0
-Middleweight,17,Jacob Malkoun,score order #17,fight record,0.239,0.183,0.056,0.0,1610.342,1610.342,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-1,W3,169,0.047,17.0,18.0
-Middleweight,18,Damian Pinas,score order #18,fight record,0.239,0.182,0.056,0.0,1610.279,1610.279,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,15,0.0,18.0,19.0
-Middleweight,19,Edmen Shahbazyan,score order #19,fight record,0.237,0.186,0.051,0.0,1611.602,1611.602,0.0,False,-0.1,+0.4 QW +0.5 proof -0.0 blowout -1.0 weak,0,1,False,4-1,W1,29,0.099,17.0,19.0
-Middleweight,20,Shara Magomedov,score order #20,fight record,0.215,0.201,0.014,0.0,1617.167,1617.167,0.0,False,-0.75,+0.2 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W2,113,0.0,20.0,21.0
-Middleweight,21,Ryan Gandra,score order #21,fight record,0.189,0.133,0.056,0.0,1591.913,1591.913,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,29,0.0,21.0,25.0
-Middleweight,22,Abus Magomedov,score order #22,fight record,0.181,0.181,0.0,0.0,1609.879,1609.879,0.0,False,-1.0,+1.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,4-1,W1,113,0.056,21.0,24.0
-Middleweight,23,Ismail Naurdiev,score order #23,fight record,0.18,0.162,0.018,0.0,1602.657,1602.657,0.0,False,-0.675,+0.3 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,W2,15,0.0,22.0,24.0
-Middleweight,24,Roman Kopylov,score order #29; head-to-head -> #24,fight record,0.071,0.184,-0.113,0.0,1610.819,1610.819,0.0,False,-3.0,+0.0 QW +0.0 proof -2.0 blowout -1.0 weak,0,0,False,3-2,W2,15,0.0,22.0,35.0
-Middleweight,25,Ateba Gautier,score order #24; head-to-head -> #25,fight record,0.176,0.176,0.0,0.0,1608.006,1608.006,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,L1,15,0.083,23.0,25.0
-Middleweight,26,Donte Johnson,score order #25; head-to-head -> #26,fight record,0.126,0.07,0.056,0.0,1568.47,1568.47,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,64,0.0,26.0,29.0
-Middleweight,27,Israel Adesanya,score order #26; head-to-head -> #27,fight record,0.104,0.357,0.347,0.6,1675.02,1675.02,0.0,False,5.15,+6.1 QW +0.0 proof -0.0 blowout -1.0 weak,10,11,True,1-4,L4,204,0.059,22.0,33.0
-Middleweight,28,Nursulton Ruziboev,score order #27; head-to-head -> #28,fight record,0.099,0.155,-0.056,0.0,1600.146,1600.146,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L1,43,0.0,26.0,31.0
-Middleweight,29,Roman Dolidze,score order #28; head-to-head -> #29,fight record,0.09,0.235,0.006,0.15,1629.678,1629.678,0.0,False,-0.9,+3.1 QW +0.0 proof -1.0 blowout -3.0 weak,3,4,False,2-3,L3,57,0.045,28.0,30.0
-Middleweight,30,Cezary Oleksiejczuk,score order #30,fight record,0.059,0.003,0.056,0.0,1543.565,1543.565,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,309,0.0,27.0,32.0
-Welterweight,0,Islam Makhachev,title holder,title holder or reserved,1.675,1.001,0.674,0.0,1883.402,1883.402,0.0,False,11.225,+11.2 QW +0.0 proof -0.0 blowout -0.0 weak,8,9,True,5-0,W17,64,0.0,0.0,0.0
-Welterweight,1,Michael Morales,score order #4; head-to-head -> #1,fight record,0.703,0.469,0.234,0.0,1707.83,1707.83,0.0,False,3.25,+3.2 QW +0.0 proof -0.0 blowout -0.0 weak,2,3,False,5-0,W7,337,0.0,1.0,1.0
-Welterweight,2,Sean Brady,score order #1; head-to-head -> #2,fight record,0.815,0.553,0.262,0.0,1735.646,1735.646,0.0,False,3.75,+4.8 QW +0.0 proof -1.0 blowout -0.0 weak,4,5,True,4-1,W1,162,0.09,2.0,2.0
-Welterweight,3,Carlos Prates,score order #2; head-to-head -> #4; title cycle -> #3,fight record,0.797,0.563,0.234,0.0,1738.813,1738.813,0.0,False,3.25,+4.2 QW +0.0 proof -0.0 blowout -1.0 weak,2,4,False,4-1,W3,169,0.0,3.0,3.0
-Welterweight,4,Ian Machado Garry,score order #3; title cycle -> #4,fight record,0.785,0.532,0.254,0.0,1728.6,1728.6,0.0,False,3.6,+4.1 QW +0.5 proof -1.0 blowout -0.0 weak,2,6,True,3-2,L1,64,0.0,4.0,4.0
-Welterweight,5,Jack Della Maddalena,score order #6; head-to-head -> #5,fight record,0.557,0.339,0.218,0.0,1665.228,1665.228,0.0,False,2.95,+4.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,3,False,3-2,L2,169,0.03,5.0,5.0
-Welterweight,6,Gabriel Bonfim,score order #8; head-to-head -> #6,fight record,0.514,0.39,0.124,0.0,1681.835,1681.835,0.0,False,1.25,+2.2 QW +0.0 proof -0.0 blowout -1.0 weak,1,2,False,5-0,W5,134,0.106,6.0,6.0
-Welterweight,7,Belal Muhammad,score order #5; head-to-head -> #7,fight record,0.583,0.475,0.258,0.15,1709.927,1709.927,0.0,False,3.675,+5.7 QW +0.0 proof -2.0 blowout -0.0 weak,6,6,True,2-3,L3,134,0.03,7.0,7.0
-Welterweight,8,Leon Edwards,score order #7; head-to-head -> #8,fight record,0.556,0.459,0.247,0.15,1704.63,1704.63,0.0,False,3.475,+4.5 QW +0.0 proof -0.0 blowout -1.0 weak,4,7,True,2-3,L3,337,0.021,8.0,8.0
-Welterweight,9,Kamaru Usman,score order #9,override (config),0.472,0.786,0.287,0.6,1812.318,1812.318,0.0,False,4.2,+5.2 QW +0.0 proof -1.0 blowout -0.0 weak,9,9,True,1-4,L1,92,0.027,9.0,10.0
-Welterweight,10,Mike Malott,score order #10,fight record,0.471,0.36,0.11,0.0,1672.058,1672.058,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,5-0,W5,1,0.083,9.0,10.0
-Welterweight,11,Daniil Donchenko,score order #11,fight record,0.359,0.29,0.069,0.0,1648.787,1648.787,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,43,0.0,11.0,11.0
-Welterweight,12,Jacobe Smith,score order #12,fight record,0.324,0.269,0.055,0.0,1641.862,1641.862,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,15,0.0,12.0,13.0
-Welterweight,13,Rinat Fakhretdinov,score order #13,fight record,0.322,0.245,0.077,0.0,1633.974,1645.974,12.0,False,0.4,+0.4 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,5-0,W6,407,0.0,12.0,14.0
-Welterweight,14,Yaroslav Amosov,score order #18; head-to-head -> #14,fight record,0.252,0.17,0.083,0.0,1609.228,1609.228,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,162,0.0,14.0,23.0
-Welterweight,15,Neil Magny,score order #14; head-to-head -> #15,fight record,0.301,0.296,0.006,0.0,1650.808,1650.808,0.0,False,-0.9,+2.1 QW +0.0 proof -3.0 blowout -0.0 weak,3,7,True,3-2,W1,64,0.059,12.0,15.0
-Welterweight,16,Uros Medic,score order #17; head-to-head -> #16,fight record,0.265,0.237,0.028,0.0,1631.481,1631.481,0.0,False,-0.5,+1.5 QW +0.0 proof -1.0 blowout -1.0 weak,0,2,False,4-1,W4,78,0.048,15.0,17.0
-Welterweight,17,Daniel Rodriguez,score order #15; head-to-head -> #17,fight record,0.278,0.249,0.029,0.0,1635.258,1635.258,0.0,False,-0.475,+1.5 QW +0.0 proof -1.0 blowout -1.0 weak,0,3,False,3-2,L1,78,0.057,16.0,18.0
-Welterweight,18,Jeremiah Wells,score order #16; head-to-head -> #18,fight record,0.27,0.257,0.012,0.0,1638.188,1638.188,0.0,False,-0.775,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,W2,64,0.0,16.0,18.0
-Welterweight,19,Myktybek Orolbai,score order #20; head-to-head -> #19,fight record,0.213,0.255,-0.041,0.0,1637.292,1637.292,0.0,False,-1.75,+0.2 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,L1,64,0.0,19.0,22.0
-Welterweight,20,Sam Patterson,score order #19; head-to-head -> #20,fight record,0.241,0.227,0.014,0.0,1628.206,1628.206,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,85,0.061,19.0,21.0
-Welterweight,21,Joaquin Buckley,score order #21,fight record,0.212,0.326,0.036,0.15,1660.75,1660.75,0.0,False,-0.35,+2.6 QW +0.0 proof -3.0 blowout -0.0 weak,2,3,False,2-3,L3,1,0.131,20.0,23.0
-Welterweight,22,Jake Matthews,score order #22,fight record,0.211,0.262,-0.051,0.0,1639.57,1639.57,0.0,False,-1.925,+0.1 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,4-1,W1,141,0.0,20.0,23.0
-Welterweight,23,Joel Alvarez,score order #23,fight record,0.21,0.221,-0.011,0.0,1626.082,1626.082,0.0,False,-1.2,+0.8 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,L2,64,0.043,21.0,24.0
-Welterweight,24,Kevin Holland,score order #24,fight record,0.202,0.322,-0.12,0.0,1659.36,1659.36,0.0,False,-3.175,+1.8 QW +0.0 proof -2.0 blowout -3.0 weak,0,2,False,3-2,W1,190,0.03,15.0,26.0
-Welterweight,25,Ty Miller,score order #25,fight record,0.124,0.069,0.055,0.0,1575.966,1575.966,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,71,0.0,24.0,25.0
-Welterweight,26,Jonathan Micallef,score order #26,fight record,0.114,0.058,0.055,0.0,1572.574,1572.574,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,169,0.0,25.0,27.0
-Welterweight,27,Jean-Paul Lebosnoyani,score order #32; head-to-head -> #27,fight record,-0.002,-0.057,0.055,0.0,1534.575,1534.575,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,92,0.0,27.0,37.0
-Welterweight,28,Seokhyeon Ko,score order #27; head-to-head -> #28,fight record,0.091,0.091,0.0,0.0,1583.435,1583.435,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-1,L1,92,0.0,26.0,28.0
-Welterweight,29,Levan Chokheli,score order #28; head-to-head -> #29,fight record,0.03,-0.025,0.055,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,120,0.0,28.0,31.0
-Welterweight,30,Tahir Abdullayev,score order #29; head-to-head -> #30,fight record,0.03,-0.025,0.055,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,113,0.0,29.0,30.0
-Women's Bantamweight,0,Kayla Harrison,title holder,title holder or reserved,0.595,0.361,0.233,0.0,1643.436,1643.436,0.0,True,5.0,+5.0 QW +0.0 proof -0.0 blowout -0.0 weak,3,3,False,3-0,W3,498,0.0,0.0,0.0
-Women's Bantamweight,1,Joselyne Edwards,score order #3; head-to-head -> #1,fight record,0.336,0.266,0.07,0.0,1619.584,1619.584,0.0,False,1.5,+2.5 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,5-0,W5,176,0.0,1.0,1.0
-Women's Bantamweight,2,Ailin Perez,score order #2,fight record,0.377,0.214,0.163,0.0,1606.342,1606.342,0.0,False,3.5,+3.5 QW +0.0 proof -0.0 blowout -0.0 weak,3,3,False,5-0,W7,22,0.0,2.0,2.0
-Women's Bantamweight,3,Norma Dumont,score order #1; head-to-head -> #3,fight record,0.393,0.237,0.156,0.0,1612.124,1612.124,0.0,False,3.35,+4.3 QW +0.0 proof -0.0 blowout -1.0 weak,4,5,True,3-2,L2,22,0.013,3.0,3.0
-Women's Bantamweight,4,Ketlen Vieira,score order #9; head-to-head -> #4,fight record,0.216,0.029,0.187,0.0,1560.197,1560.197,0.0,False,4.0,+5.0 QW +0.0 proof -1.0 blowout -0.0 weak,6,9,True,3-2,W1,155,0.049,4.0,6.0
-Women's Bantamweight,5,Jacqueline Cavalcanti,score order #4; head-to-head -> #5,fight record,0.3,0.206,0.093,0.0,1604.518,1604.518,0.0,False,2.0,+1.5 QW +0.5 proof -0.0 blowout -0.0 weak,1,2,False,4-1,L1,155,0.0,5.0,7.0
-Women's Bantamweight,6,Yana Santos,score order #5; head-to-head -> #6,fight record,0.273,0.114,0.159,0.0,1581.4,1585.4,4.0,False,3.4,+3.2 QW +0.1 proof -0.0 blowout -0.0 weak,3,6,True,3-2,W3,379,0.064,4.0,8.0
-Women's Bantamweight,7,Luana Santos,score order #6; head-to-head -> #7,fight record,0.268,0.268,0.0,0.0,1619.954,1619.954,0.0,False,0.0,+1.0 QW +0.0 proof -1.0 blowout -0.0 weak,1,1,False,4-1,W3,120,0.0,4.0,8.0
-Women's Bantamweight,8,Bia Mesquita,score order #7; head-to-head -> #8,fight record,0.252,0.252,0.0,0.0,1615.933,1615.933,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,120,0.0,5.0,9.0
-Women's Bantamweight,9,Julianna Pena,score order #8; head-to-head -> #9,fight record,0.242,0.114,0.128,0.0,1581.357,1619.357,38.0,False,2.75,+3.8 QW +0.0 proof -1.0 blowout -0.0 weak,5,5,True,3-2,L1,498,0.0,7.0,10.0
-Women's Bantamweight,10,Macy Chiasson,score order #10,fight record,0.187,0.272,0.065,0.15,1620.904,1620.904,0.0,False,1.4,+3.1 QW +0.3 proof -0.0 blowout -2.0 weak,3,4,False,2-3,L3,232,0.029,9.0,10.0
-Women's Bantamweight,11,Alice Pereira,score order #11,fight record,0.041,0.065,-0.023,0.0,1569.029,1569.029,0.0,False,-0.5,+0.5 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,2-1,W2,8,0.0,11.0,12.0
-Women's Bantamweight,12,Michelle Montague,score order #12,fight record,0.017,-0.029,0.047,0.0,1545.409,1545.409,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,2,False,2-0,W2,176,0.0,11.0,13.0
-Women's Bantamweight,13,Karol Rosa,score order #13,fight record,-0.003,0.129,0.019,0.15,1585.103,1585.103,0.0,False,0.4,+1.9 QW +0.5 proof -1.0 blowout -1.0 weak,1,4,False,2-3,L1,120,0.0,12.0,13.0
-Women's Bantamweight,14,Nina Milosevic,score order #14,fight record,-0.073,-0.073,0.0,0.0,1534.373,1534.373,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,78,0.0,14.0,14.0
-Women's Bantamweight,15,Chelsea Chandler,score order #15,fight record,-0.193,-0.147,-0.047,0.0,1516.003,1516.003,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,2,False,3-2,W2,1,0.119,15.0,16.0
-Women's Bantamweight,16,Nora Cornolle,score order #16,fight record,-0.23,0.037,-0.117,0.15,1562.113,1562.113,0.0,False,-2.5,+0.5 QW +0.0 proof -0.0 blowout -3.0 weak,0,1,False,2-3,W1,43,0.0,15.0,18.0
-Women's Bantamweight,17,Melissa Croden,score order #17,fight record,-0.242,-0.149,-0.093,0.0,1515.41,1515.41,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,1,0.0,16.0,17.0
-Women's Bantamweight,18,Miesha Tate,score order #18,fight record,-0.288,-0.15,0.012,0.15,1515.21,1563.21,48.0,False,0.25,+1.2 QW +0.0 proof -0.0 blowout -1.0 weak,4,6,True,2-3,L1,533,0.0,17.0,18.0
-Women's Bantamweight,19,Klaudia Sygula,score order #19,fight record,-0.326,-0.233,-0.093,0.0,1494.346,1494.346,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,43,0.169,19.0,19.0
-Women's Bantamweight,20,Montse Rendon,score order #20,fight record,-0.424,-0.331,-0.093,0.0,1469.795,1469.795,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,218,0.0,20.0,20.0
-Women's Bantamweight,21,Tainara Lisboa,score order #21,fight record,-0.483,-0.39,-0.093,0.0,1455.056,1455.056,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,2-2,L2,365,0.106,21.0,21.0
-Women's Bantamweight,22,Irina Alekseeva,score order #22,fight record,-0.577,-0.483,-0.093,0.0,1431.639,1433.639,2.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,1-3,L3,372,0.0,22.0,22.0
-Women's Bantamweight,23,Melissa Mullins,score order #23,fight record,-0.677,-0.387,-0.14,0.15,1455.714,1455.714,0.0,False,-3.0,+0.0 QW +0.0 proof -2.0 blowout -1.0 weak,0,0,False,2-3,L2,120,0.118,23.0,23.0
-Women's Bantamweight,24,Daria Zhelezniakova,score order #24,fight record,-0.702,-0.412,-0.14,0.15,1449.538,1449.538,0.0,False,-3.0,+0.0 QW +0.0 proof -2.0 blowout -1.0 weak,0,0,False,2-3,L2,8,0.085,24.0,24.0
-Women's Bantamweight,25,Hailey Cowan,score order #25,fight record,-0.821,-0.681,-0.14,0.0,1382.003,1382.003,0.0,False,-3.0,+0.0 QW +0.0 proof -1.0 blowout -2.0 weak,0,0,False,0-4,L4,78,0.254,25.0,25.0
-Women's Bantamweight,26,Mayra Bueno Silva,score order #26,fight record,-1.238,-0.233,-0.205,0.8,1494.34,1494.34,0.0,False,-4.4,+0.3 QW +0.3 proof -3.0 blowout -2.0 weak,0,1,False,0-5,L6,176,0.018,26.0,26.0
-Women's Bantamweight,27,Priscila Cachoeira,score order #27,fight record,-1.322,-0.535,-0.187,0.6,1418.587,1418.587,0.0,False,-4.0,+0.0 QW +0.0 proof -3.0 blowout -1.0 weak,0,0,False,1-4,L3,134,0.054,27.0,27.0
-Women's Flyweight,0,Natalia Silva,title holder,title holder or reserved,0.766,0.467,0.299,0.0,1697.083,1697.083,0.0,False,5.8,+5.8 QW +0.0 proof -0.0 blowout -0.0 weak,5,6,True,5-0,W9,15,0.0,0.0,0.0
-Women's Flyweight,0,Valentina Shevchenko,"reserved: vacated with injury, owed a title shot",title holder or reserved,1.152,0.675,0.477,0.0,1769.23,1769.23,0.0,True,9.85,+9.8 QW +0.1 proof -0.0 blowout -0.0 weak,14,14,True,4-1,W3,337,0.0,0.0,0.0
-Women's Flyweight,1,Alexa Grasso,score order #4; head-to-head -> #1,fight record,0.577,0.338,0.24,0.0,1652.187,1652.187,0.0,False,4.45,+6.4 QW +0.0 proof -2.0 blowout -0.0 weak,8,9,True,3-2,W2,36,0.0,1.0,1.0
-Women's Flyweight,2,Manon Fiorot,score order #1; head-to-head -> #2,fight record,0.803,0.508,0.295,0.0,1711.373,1711.373,0.0,False,5.7,+5.7 QW +0.0 proof -0.0 blowout -0.0 weak,5,5,True,3-2,L1,36,0.0,2.0,2.0
-Women's Flyweight,3,Rose Namajunas,score order #2; head-to-head -> #3,fight record,0.79,0.48,0.31,0.0,1701.718,1701.718,0.0,False,6.05,+5.5 QW +0.5 proof -0.0 blowout -0.0 weak,9,11,True,3-2,L1,267,0.022,3.0,3.0
-Women's Flyweight,4,Jasmine Jasudavicius,score order #6; head-to-head -> #4,fight record,0.488,0.255,0.233,0.0,1623.586,1623.586,0.0,False,4.3,+5.3 QW +0.0 proof -1.0 blowout -0.0 weak,4,6,True,4-1,W2,1,0.027,4.0,4.0
-Women's Flyweight,5,Erin Blanchfield,score order #3; head-to-head -> #5,fight record,0.658,0.5,0.158,0.0,1708.341,1708.341,0.0,False,2.6,+4.6 QW +0.0 proof -1.0 blowout -1.0 weak,4,5,True,3-2,L1,1,0.0,5.0,5.0
-Women's Flyweight,6,Maycee Barber,score order #5; head-to-head -> #6,fight record,0.501,0.312,0.189,0.0,1643.475,1643.475,0.0,False,3.3,+4.3 QW +0.0 proof -1.0 blowout -0.0 weak,4,7,True,4-1,L1,204,0.057,6.0,6.0
-Women's Flyweight,7,Katlyn Cerminara,score order #7,fight record,0.376,0.202,0.174,0.0,1605.268,1605.268,0.0,False,2.95,+3.9 QW +0.0 proof -1.0 blowout -0.0 weak,8,10,True,3-2,W1,1,0.036,7.0,8.0
-Women's Flyweight,8,Casey O'Neill,score order #8,fight record,0.342,0.285,0.057,0.0,1634.001,1634.001,0.0,False,0.3,+1.3 QW +0.0 proof -0.0 blowout -1.0 weak,0,3,False,3-2,W3,29,0.0,7.0,9.0
-Women's Flyweight,9,Wang Cong,score order #9,fight record,0.315,0.205,0.11,0.0,1606.284,1606.284,0.0,False,1.5,+2.0 QW +0.5 proof -0.0 blowout -1.0 weak,1,3,False,4-1,L1,15,0.0,8.0,9.0
-Women's Flyweight,10,Carli Judice,score order #10,fight record,0.214,0.214,0.0,0.0,1609.365,1609.365,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W4,57,0.0,10.0,10.0
-Women's Flyweight,11,Miranda Maverick,score order #11,fight record,0.16,0.131,0.029,0.0,1580.644,1616.644,36.0,False,-0.35,+0.7 QW +0.0 proof -1.0 blowout -0.0 weak,0,2,False,4-1,L1,491,0.0,11.0,11.0
-Women's Flyweight,12,Dione Barbosa,score order #12,fight record,0.094,0.138,-0.044,0.0,1583.005,1583.005,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,W2,92,0.0,12.0,13.0
-Women's Flyweight,13,Regina Tarin,score order #13,fight record,0.058,-0.008,0.066,0.0,1532.473,1532.473,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,1,False,2-0,W2,36,0.0,12.0,13.0
-Women's Flyweight,14,Tracy Cortez,score order #14,fight record,0.027,0.155,0.022,0.15,1588.824,1588.824,0.0,False,-0.5,+1.0 QW +0.5 proof -1.0 blowout -1.0 weak,1,1,False,2-3,L2,99,0.0,14.0,16.0
-Women's Flyweight,15,JJ Aldrich,score order #18; head-to-head -> #15,fight record,-0.058,-0.014,-0.044,0.0,1530.176,1530.176,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,L1,36,0.017,14.0,17.0
-Women's Flyweight,16,Jamey-Lyn Horth,score order #15; head-to-head -> #16,fight record,0.004,0.092,-0.088,0.0,1567.039,1567.039,0.0,False,-3.0,+0.0 QW +0.0 proof -0.0 blowout -3.0 weak,0,0,False,3-2,L1,183,0.0,15.0,18.0
-Women's Flyweight,17,Melissa Gatto,score order #16; head-to-head -> #17,fight record,-0.005,0.145,0.0,0.15,1585.447,1585.447,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,L1,8,0.0,15.0,17.0
-Women's Flyweight,18,Karine Silva,score order #17; head-to-head -> #18,fight record,-0.034,0.138,-0.022,0.15,1583.016,1583.016,0.0,False,-1.5,+0.5 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,2-3,L2,183,0.0,18.0,19.0
-Women's Flyweight,19,Lauren Murphy,score order #19,fight record,-0.061,0.008,0.081,0.15,1537.803,1565.803,28.0,False,0.85,+1.8 QW +0.1 proof -0.0 blowout -1.0 weak,5,5,True,2-3,L2,463,0.019,16.0,19.0
-Women's Flyweight,20,Veronica Hardy,score order #20,fight record,-0.13,-0.141,0.011,0.0,1486.293,1490.293,4.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,379,0.0,20.0,22.0
-Women's Flyweight,21,Luana Carolina,score order #21,fight record,-0.136,-0.136,0.0,0.0,1487.876,1493.876,6.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,L1,386,0.081,21.0,23.0
-Women's Flyweight,22,Ernesta Kareckaite,score order #22,fight record,-0.144,-0.1,-0.044,0.0,1500.598,1500.598,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,1-2,L1,8,0.0,20.0,23.0
-Women's Flyweight,23,Nicolle Caliari,score order #23,fight record,-0.144,-0.1,-0.044,0.0,1500.481,1500.481,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,1-2,W1,155,0.142,21.0,24.0
-Women's Flyweight,24,Viviane Araujo,score order #24,fight record,-0.152,-0.072,0.07,0.15,1510.113,1542.113,32.0,False,0.6,+2.6 QW +0.0 proof -1.0 blowout -1.0 weak,4,7,True,2-3,L1,477,0.0,21.0,24.0
-Women's Flyweight,25,Gabriella Fernandes,score order #25,fight record,-0.178,-0.178,0.0,0.0,1473.391,1473.391,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,L1,204,0.078,25.0,25.0
-Women's Flyweight,26,Mackenzie Stiller,score order #26,fight record,-0.201,-0.201,0.0,0.0,1465.457,1465.457,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,0-1,L1,1,0.872,26.0,26.0
-Women's Flyweight,27,Jeisla Chaves,score order #27,fight record,-0.204,-0.204,0.0,0.0,1464.421,1464.421,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-1,L1,57,0.213,27.0,27.0
-Women's Flyweight,28,Anna Melisano,score order #28,fight record,-0.21,-0.21,0.0,0.0,1462.439,1462.439,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,0-1,L1,92,0.0,28.0,28.0
-Women's Flyweight,29,Tereza Bleda,score order #29,fight record,-0.216,-0.216,0.0,0.0,1460.248,1460.248,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-2,L1,309,0.458,29.0,30.0
-Women's Flyweight,30,Yuneisy Duben,score order #30,fight record,-0.239,-0.195,-0.044,0.0,1467.673,1467.673,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,0-2,L2,134,0.296,29.0,30.0
-Women's Strawweight,0,Mackenzie Dern,title holder,title holder or reserved,0.76,0.346,0.414,0.0,1651.248,1651.248,0.0,False,7.0,+6.5 QW +0.5 proof -0.0 blowout -0.0 weak,6,8,True,4-1,W4,64,0.025,0.0,0.0
-Women's Strawweight,1,Zhang Weili,score order #1,fight record,0.944,0.602,0.341,0.0,1729.991,1729.991,0.0,False,5.6,+6.6 QW +0.0 proof -1.0 blowout -0.0 weak,7,7,True,4-1,L1,337,0.026,1.0,1.0
-Women's Strawweight,2,Tatiana Suarez,score order #2,fight record,0.799,0.568,0.23,0.0,1719.589,1719.589,0.0,False,3.45,+4.4 QW +0.0 proof -1.0 blowout -0.0 weak,6,6,True,4-1,W2,190,0.0,2.0,3.0
-Women's Strawweight,3,Virna Jandiroba,score order #3,fight record,0.783,0.403,0.38,0.0,1668.894,1668.894,0.0,False,6.35,+6.3 QW +0.0 proof -0.0 blowout -0.0 weak,5,7,True,4-1,W1,197,0.0,2.0,3.0
-Women's Strawweight,4,Gillian Robertson,score order #4,fight record,0.522,0.341,0.181,0.0,1649.725,1649.725,0.0,False,2.5,+3.5 QW +0.0 proof -1.0 blowout -0.0 weak,2,4,False,4-1,L1,64,0.007,4.0,4.0
-Women's Strawweight,5,Loopy Godinez,score order #5,fight record,0.422,0.225,0.197,0.0,1614.154,1614.154,0.0,False,2.8,+2.8 QW +1.0 proof -0.0 blowout -1.0 weak,2,3,False,3-2,W1,8,0.0,5.0,7.0
-Women's Strawweight,6,Fatima Kline,score order #6,fight record,0.404,0.327,0.078,0.0,1645.372,1645.372,0.0,False,0.5,+1.5 QW +0.0 proof -1.0 blowout -0.0 weak,1,2,False,4-1,W4,92,0.0,5.0,9.0
-Women's Strawweight,7,Denise Gomes,score order #7,fight record,0.389,0.273,0.116,0.0,1628.822,1628.822,0.0,False,1.25,+2.2 QW +0.0 proof -0.0 blowout -1.0 weak,1,2,False,5-0,W5,50,0.0,6.0,8.0
-Women's Strawweight,8,Alexia Thainara,score order #8,fight record,0.38,0.25,0.129,0.0,1621.939,1621.939,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,4-0,W4,71,0.0,7.0,9.0
-Women's Strawweight,9,Iasmin Lucindo,score order #9,fight record,0.37,0.189,0.181,0.0,1603.046,1623.046,20.0,False,2.5,+2.0 QW +0.5 proof -0.0 blowout -0.0 weak,1,3,False,4-1,W1,435,0.0,6.0,9.0
-Women's Strawweight,10,Jaqueline Amorim,score order #10,fight record,0.237,0.237,0.0,0.0,1617.798,1617.798,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W1,141,0.0,10.0,11.0
-Women's Strawweight,11,Jessica Andrade,score order #11,fight record,0.21,0.122,0.238,0.15,1582.608,1600.608,18.0,False,3.6,+6.6 QW +0.0 proof -2.0 blowout -1.0 weak,12,13,True,2-3,L3,428,0.068,10.0,13.0
-Women's Strawweight,12,Stephanie Luciano,score order #12,fight record,0.185,0.185,0.0,0.0,1601.822,1601.822,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W2,78,0.0,11.0,12.0
-Women's Strawweight,13,Shanelle Dyer,score order #13,fight record,0.124,0.072,0.052,0.0,1567.183,1567.183,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,57,0.0,13.0,14.0
-Women's Strawweight,14,Tecia Pennington,score order #14,fight record,0.108,0.23,0.028,0.15,1615.616,1615.616,0.0,False,-0.45,+1.2 QW +0.3 proof -1.0 blowout -1.0 weak,1,4,False,2-3,L1,344,0.0,12.0,14.0
-Women's Strawweight,15,Yan Xiaonan,score order #15,fight record,0.065,0.143,0.072,0.15,1588.905,1588.905,0.0,False,0.4,+3.4 QW +0.0 proof -3.0 blowout -0.0 weak,4,5,True,2-3,L2,50,0.081,15.0,18.0
-Women's Strawweight,16,Piera Rodriguez,score order #16,fight record,0.062,0.062,0.0,0.0,1563.962,1563.962,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,W3,218,0.0,15.0,18.0
-Women's Strawweight,17,Delphine Benouaich,score order #17,fight record,0.052,0.0,0.052,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,43,0.0,15.0,21.0
-Women's Strawweight,18,Tina Black,score order #18,fight record,0.052,0.0,0.052,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,22,0.0,16.0,20.0
-Women's Strawweight,19,Alice Ardelean,score order #19,fight record,0.02,0.071,-0.052,0.0,1566.936,1566.936,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,W3,155,0.0,17.0,23.0
-Women's Strawweight,20,Tabatha Ricci,score order #20,fight record,0.014,0.118,0.047,0.15,1581.149,1581.149,0.0,False,-0.1,+2.4 QW +0.5 proof -2.0 blowout -1.0 weak,2,2,False,2-3,L2,92,0.035,19.0,22.0
-Women's Strawweight,21,Talita Alencar,score order #21,fight record,0.014,0.014,0.0,0.0,1549.221,1549.221,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W3,176,0.0,16.0,21.0
-Women's Strawweight,22,Julia Polastri,score order #22,fight record,-0.004,0.1,-0.103,0.0,1575.698,1575.698,0.0,False,-3.0,+0.0 QW +0.0 proof -0.0 blowout -3.0 weak,0,0,False,3-2,W1,50,0.0,17.0,25.0
-Women's Strawweight,23,Mizuki,score order #23,fight record,-0.03,-0.082,0.052,0.0,1519.829,1519.829,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-1,W2,358,0.0,21.0,25.0
-Women's Strawweight,24,Carol Foro,score order #24,fight record,-0.042,-0.094,0.052,0.0,1516.224,1516.224,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,71,0.0,22.0,26.0
-Women's Strawweight,25,Yazmin Jauregui,score order #25,fight record,-0.053,-0.053,0.0,0.0,1528.615,1528.615,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,W1,22,0.071,24.0,25.0
-Women's Strawweight,26,Angela Hill,score order #26,fight record,-0.083,0.095,-0.028,0.15,1574.198,1574.198,0.0,False,-1.55,+1.4 QW +0.0 proof -2.0 blowout -1.0 weak,1,3,False,2-3,W1,141,0.0,23.0,26.0
-Women's Strawweight,27,Sam Hughes,score order #27,fight record,-0.157,-0.105,-0.052,0.0,1512.686,1512.686,0.0,False,-2.0,+0.0 QW +0.0 proof -2.0 blowout -0.0 weak,0,0,False,3-2,L1,218,0.048,27.0,28.0
-Women's Strawweight,28,Shi Ming,score order #28,fight record,-0.157,-0.157,0.0,0.0,1496.737,1512.737,16.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,1-1,L1,421,0.0,27.0,28.0
-Women's Strawweight,29,Loma Lookboonmee,score order #29,fight record,-0.195,-0.143,-0.052,0.0,1500.997,1500.997,0.0,False,-2.0,+0.0 QW +0.0 proof -2.0 blowout -0.0 weak,0,0,False,3-2,L2,141,0.0,29.0,30.0
-Women's Strawweight,30,Gigi Canuto,score order #30,fight record,-0.199,-0.199,0.0,0.0,1483.776,1483.776,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,0-1,L1,71,0.0,29.0,31.0
+Bantamweight,0,Petr Yan,title holder,title holder or reserved,1.268,0.656,0.613,0.0,1752.096,1752.096,0.0,False,8.6,+8.6 QW +0.0 proof -0.0 blowout -0.0 weak,8,11,True,5-0,W5,1,0.0,0.0,0.0
+Bantamweight,1,Sean O'Malley,score order #3; head-to-head -> #2; title cycle -> #1,fight record,1.04,0.587,0.453,0.0,1729.365,1729.365,0.0,False,6.1,+6.1 QW +0.0 proof -0.0 blowout -0.0 weak,5,5,True,3-2,W2,133,0.03,1.0,1.0
+Bantamweight,2,Song Yadong,score order #2; head-to-head -> #3; title cycle -> #2,fight record,1.179,0.732,0.447,0.0,1777.265,1777.265,0.0,False,6.0,+5.5 QW +0.5 proof -0.0 blowout -0.0 weak,5,8,True,3-2,W2,57,0.013,2.0,2.0
+Bantamweight,3,Umar Nurmagomedov,score order #4; title cycle -> #3,fight record,0.866,0.569,0.297,0.0,1723.448,1723.448,0.0,False,3.65,+3.6 QW +0.0 proof -0.0 blowout -0.0 weak,3,3,False,3-2,L1,57,0.033,3.0,3.0
+Bantamweight,4,Merab Dvalishvili,score order #1; title cycle -> #4,fight record,1.423,0.75,0.673,0.0,1783.111,1783.111,0.0,False,9.55,+10.6 QW +0.0 proof -1.0 blowout -0.0 weak,8,11,True,3-2,L2,1,0.0,4.0,4.0
+Bantamweight,5,Mario Bautista,score order #5,fight record,0.672,0.439,0.233,0.0,1680.667,1680.667,0.0,False,2.65,+3.6 QW +0.0 proof -1.0 blowout -0.0 weak,2,4,False,4-1,W2,106,0.039,5.0,5.0
+Bantamweight,6,Cory Sandhagen,score order #6,fight record,0.66,0.597,0.212,0.15,1732.907,1732.907,0.0,False,2.325,+5.3 QW +0.0 proof -2.0 blowout -1.0 weak,8,8,True,2-3,L2,106,0.0,6.0,6.0
+Bantamweight,7,Marcus McGhee,score order #7,fight record,0.51,0.382,0.128,0.0,1661.947,1661.947,0.0,False,1.0,+0.5 QW +0.5 proof -0.0 blowout -0.0 weak,0,1,False,4-1,W2,22,0.0,7.0,8.0
+Bantamweight,8,Montel Jackson,score order #8,fight record,0.501,0.539,-0.038,0.0,1713.751,1713.751,0.0,False,-1.6,+0.4 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,W1,29,0.0,7.0,12.0
+Bantamweight,9,Payton Talbott,score order #9,fight record,0.493,0.365,0.128,0.0,1656.235,1656.235,0.0,False,1.0,+2.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,2,False,4-1,W3,22,0.0,8.0,9.0
+Bantamweight,10,Raul Rosas Jr.,score order #10,fight record,0.491,0.363,0.128,0.0,1655.587,1655.587,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,2,False,5-0,W6,29,0.0,9.0,10.0
+Bantamweight,11,David Martinez,score order #11,fight record,0.46,0.253,0.207,0.0,1619.16,1619.16,0.0,False,2.25,+2.2 QW +0.0 proof -0.0 blowout -0.0 weak,2,2,False,4-0,W4,43,0.0,7.0,11.1
+Bantamweight,12,Brady Hiestand,score order #12,fight record,0.363,0.299,0.064,0.0,1634.296,1634.296,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-1,W4,29,0.0,12.0,15.0
+Bantamweight,13,Jose Aldo,score order #13,fight record,0.344,0.328,0.166,0.15,1643.853,1691.853,48.0,False,1.6,+3.6 QW +0.0 proof -0.0 blowout -2.0 weak,10,12,True,2-3,L2,533,0.024,13.0,14.0
+Bantamweight,14,Aiemann Zahabi,score order #14,fight record,0.308,0.148,0.16,0.0,1584.535,1584.535,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,4-1,L1,133,0.075,14.0,17.0
+Bantamweight,15,Raoni Barcelos,score order #15,fight record,0.295,0.231,0.064,0.0,1611.948,1611.948,0.0,False,0.0,+1.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,4-1,L1,29,0.089,11.0,15.0
+Bantamweight,16,Vinicius Oliveira,score order #16,fight record,0.295,0.231,0.064,0.0,1611.899,1611.899,0.0,False,0.0,+1.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,4-1,W1,127,0.0,15.0,16.0
+Bantamweight,17,Bryce Mitchell,score order #17,fight record,0.257,0.259,-0.002,0.0,1621.156,1621.156,0.0,False,-1.025,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,1,2,False,3-2,W2,141,0.051,16.0,18.0
+Bantamweight,18,Elijah Smith,score order #18,fight record,0.22,0.156,0.064,0.0,1587.271,1587.271,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,225,0.0,17.0,18.0
+Bantamweight,19,Cody Haddon,score order #19,fight record,0.199,0.135,0.064,0.0,1580.238,1580.238,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,148,0.0,19.0,22.0
+Bantamweight,20,Davey Grant,score order #20,fight record,0.184,0.175,0.01,0.0,1593.285,1593.285,0.0,False,-0.85,+0.1 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,W1,183,0.0,19.0,21.0
+Bantamweight,21,Rob Font,score order #21,fight record,0.165,0.286,0.029,0.15,1630.163,1630.163,0.0,False,-0.55,+2.4 QW +0.0 proof -2.0 blowout -1.0 weak,4,6,True,2-3,L2,232,0.0,21.0,22.0
+Bantamweight,22,Ethyn Ewing,score order #22,fight record,0.161,0.097,0.064,0.0,1567.853,1567.853,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,204,0.0,20.0,25.0
+Bantamweight,23,Chris Gutierrez,score order #23,fight record,0.155,0.2,-0.045,0.0,1601.659,1607.659,6.0,False,-1.7,+0.3 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,L1,386,0.0,19.9,27.0
+Bantamweight,24,Adrian Yanez,score order #24,fight record,0.126,0.26,0.016,0.15,1621.484,1621.484,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,W1,106,0.097,23.0,29.0
+Bantamweight,25,Jakub Wiklacz,score order #25,fight record,0.11,0.046,0.064,0.0,1550.786,1550.786,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,260,0.0,23.0,30.0
+Bantamweight,26,Juan Diaz,score order #26,fight record,0.108,0.044,0.064,0.0,1550.324,1550.324,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,162,0.0,24.0,31.0
+Bantamweight,27,Aleksandre Topuria,score order #27,fight record,0.096,0.032,0.064,0.0,1546.207,1546.207,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,337,0.0,25.0,32.0
+Bantamweight,28,Hector Santiago,score order #28,fight record,0.095,0.031,0.064,0.0,1545.896,1545.896,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,57,0.0,26.0,33.0
+Bantamweight,29,Charles Jourdain,score order #29,fight record,0.078,0.19,-0.112,0.0,1598.398,1598.398,0.0,False,-2.75,+0.2 QW +0.0 proof -0.0 blowout -3.0 weak,0,0,False,3-2,L1,36,0.052,24.0,36.0
+Bantamweight,30,Da'Mon Blackshear,score order #30,fight record,0.073,0.137,-0.064,0.0,1581.004,1607.004,26.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L1,456,0.053,27.0,35.0
+Featherweight,0,Alexander Volkanovski,title holder,title holder or reserved,1.752,0.924,0.828,0.0,1852.583,1852.583,0.0,False,9.9,+9.9 QW +0.0 proof -0.0 blowout -0.0 weak,12,12,True,3-2,W3,1,0.024,0.0,0.0
+Featherweight,1,Aljamain Sterling,score order #1,fight record,1.537,0.789,0.748,0.0,1805.396,1805.396,0.0,False,8.85,+8.2 QW +0.7 proof -0.0 blowout -0.0 weak,12,14,True,3-2,W2,183,0.054,1.0,1.0
+Featherweight,2,Diego Lopes,score order #3; title cycle -> #2,fight record,0.769,0.504,0.266,0.0,1705.681,1705.681,0.0,False,2.5,+4.5 QW +0.0 proof -2.0 blowout -0.0 weak,3,5,True,3-2,W1,133,0.0,2.0,2.0
+Featherweight,3,Jean Silva,score order #4; title cycle -> #3,fight record,0.666,0.533,0.133,0.0,1716.103,1716.103,0.0,False,0.75,+1.8 QW +0.0 proof -1.0 blowout -0.0 weak,1,2,False,4-1,W2,43,0.058,3.0,6.0
+Featherweight,4,Movsar Evloev,score order #2; title cycle -> #4,fight record,0.855,0.413,0.442,0.0,1674.042,1674.042,0.0,False,4.825,+4.8 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,4-1,L1,1,0.018,4.0,4.0
+Featherweight,5,Steve Garcia,score order #5,fight record,0.656,0.467,0.19,0.0,1692.755,1692.755,0.0,False,1.5,+1.0 QW +0.5 proof -0.0 blowout -0.0 weak,0,2,False,4-1,L1,133,0.078,3.0,5.0
+Featherweight,6,Lerone Murphy,score order #6,fight record,0.64,0.412,0.228,0.0,1673.736,1673.736,0.0,False,2.0,+2.0 QW +0.0 proof -0.0 blowout -0.0 weak,1,3,False,4-1,L1,218,0.0,5.0,6.0
+Featherweight,7,Kevin Vallejos,score order #7,fight record,0.517,0.365,0.152,0.0,1657.3,1657.3,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,2,False,4-0,W4,225,0.0,7.0,7.0
+Featherweight,8,Youssef Zalal,score order #8,fight record,0.494,0.342,0.152,0.0,1649.231,1649.231,0.0,False,1.0,+2.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,2,False,4-1,L1,183,0.0,8.0,10.0
+Featherweight,9,Arnold Allen,score order #9,fight record,0.489,0.47,0.169,0.15,1693.943,1693.943,0.0,False,1.225,+3.2 QW +0.0 proof -0.0 blowout -2.0 weak,3,5,True,2-3,W1,162,0.0,8.0,9.0
+Featherweight,10,Pat Sabatini,score order #11; head-to-head -> #10,fight record,0.359,0.359,0.0,0.0,1655.025,1655.025,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W4,169,0.136,10.0,11.0
+Featherweight,11,Joanderson Brito,score order #10; head-to-head -> #11,fight record,0.394,0.44,-0.046,0.0,1683.374,1683.374,0.0,False,-1.6,+0.4 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,W3,36,0.0,10.0,12.0
+Featherweight,12,Luke Riley,score order #12,fight record,0.324,0.248,0.076,0.0,1616.348,1616.348,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,106,0.0,10.0,12.0
+Featherweight,13,Mairon Santos,score order #13,fight record,0.299,0.224,0.076,0.0,1607.775,1607.775,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,323,0.0,13.0,14.0
+Featherweight,14,Tommy McMillen,score order #14,fight record,0.28,0.204,0.076,0.0,1600.91,1600.91,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,43,0.0,14.0,15.0
+Featherweight,15,Chepe Mariscal,score order #15,fight record,0.27,0.251,0.019,0.0,1617.431,1617.431,0.0,False,-0.75,+0.2 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,L1,344,0.0,13.0,15.0
+Featherweight,16,Nathaniel Wood,score order #16,fight record,0.23,0.219,0.011,0.0,1606.029,1606.029,0.0,False,-0.85,+0.1 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,L1,50,0.038,16.0,18.0
+Featherweight,17,Felipe Lima,score order #17,fight record,0.228,0.228,0.0,0.0,1609.49,1609.49,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W1,50,0.0,16.0,20.0
+Featherweight,18,Marcio Barbosa,score order #18,fight record,0.225,0.149,0.076,0.0,1581.648,1581.648,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,64,0.0,16.0,19.2
+Featherweight,19,Jamall Emmers,score order #19,fight record,0.22,0.22,0.0,0.0,1606.556,1606.556,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W3,64,0.081,18.0,21.0
+Featherweight,20,David Onama,score order #20,fight record,0.204,0.166,0.038,0.0,1587.803,1587.803,0.0,False,-0.5,+0.5 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,4-1,L1,358,0.033,19.0,21.0
+Featherweight,21,Yadier del Valle,score order #21,fight record,0.194,0.175,0.019,0.0,1590.964,1590.964,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W1,78,0.0,19.9,22.0
+Featherweight,22,Melquizael Costa,score order #22,fight record,0.168,0.168,0.0,0.0,1588.269,1588.269,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,4-1,L1,162,0.042,22.0,26.0
+Featherweight,23,Dooho Choi,score order #23,fight record,0.158,0.156,0.002,0.0,1584.209,1584.209,0.0,False,-0.975,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,L1,36,0.217,23.0,28.0
+Featherweight,24,Daniel Santos,score order #24,fight record,0.143,0.143,0.0,0.0,1579.656,1579.656,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,1,0.061,24.0,29.0
+Featherweight,25,Pavel Andrusca,score order #25,fight record,0.137,0.042,0.095,0.0,1544.479,1544.479,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,50,0.0,17.0,27.0
+Featherweight,26,Sean Woodson,score order #26,fight record,0.124,0.105,0.019,0.0,1566.215,1566.215,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,57,0.061,25.0,30.0
+Featherweight,27,Sean King III,score order #27,fight record,0.12,0.044,0.076,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,43,0.0,25.0,30.0
+Featherweight,28,Keiichiro Nakamura,score order #28,fight record,0.12,0.044,0.076,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,267,0.0,24.0,31.0
+Featherweight,29,Rodrigo Vera,score order #29,fight record,0.12,0.044,0.076,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,148,0.0,23.0,29.0
+Featherweight,30,Murtazali Magomedov,score order #30,fight record,0.111,0.035,0.076,0.0,1542.029,1542.029,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,127,0.0,27.0,32.0
+Flyweight,0,Joshua Van,title holder,title holder or reserved,0.835,0.486,0.349,0.0,1693.526,1693.526,0.0,False,6.5,+7.5 QW +0.0 proof -0.0 blowout -1.0 weak,4,6,True,5-0,W8,36,0.06,0.0,0.0
+Flyweight,1,Manel Kape,score order #1,fight record,0.816,0.578,0.237,0.0,1721.952,1721.952,0.0,False,4.1,+5.1 QW +0.0 proof -0.0 blowout -1.0 weak,4,5,True,4-1,W4,127,0.0,1.0,1.0
+Flyweight,2,Kyoji Horiguchi,score order #5; title cycle -> #2,fight record,0.581,0.446,0.135,0.0,1681.138,1681.138,0.0,False,1.9,+1.9 QW +0.0 proof -0.0 blowout -0.0 weak,2,5,True,4-1,L1,127,0.0,2.0,2.0
+Flyweight,3,Brandon Royval,score order #6; title cycle -> #3,fight record,0.406,0.195,0.212,0.0,1603.428,1603.428,0.0,False,3.55,+6.5 QW +0.0 proof -2.0 blowout -1.0 weak,7,8,True,3-2,W1,106,0.057,3.0,7.0
+Flyweight,4,Alexandre Pantoja,score order #2; title cycle -> #4,fight record,0.802,0.509,0.293,0.0,1700.361,1700.361,0.0,False,5.3,+7.3 QW +0.0 proof -2.0 blowout -0.0 weak,9,10,True,3-2,L2,36,0.028,4.0,5.0
+Flyweight,5,Tatsuro Taira,score order #3; title cycle -> #5,fight record,0.788,0.602,0.186,0.0,1729.071,1729.071,0.0,False,3.0,+3.0 QW +0.0 proof -0.0 blowout -0.0 weak,2,2,False,3-2,L1,169,0.032,4.0,5.0
+Flyweight,6,Brandon Moreno,score order #4; title cycle -> #6,fight record,0.682,0.373,0.309,0.0,1658.468,1658.468,0.0,False,5.65,+6.6 QW +0.0 proof -0.0 blowout -1.0 weak,10,10,True,3-2,W1,43,0.01,6.0,6.0
+Flyweight,7,Asu Almabayev,score order #7,fight record,0.405,0.289,0.116,0.0,1632.559,1632.559,0.0,False,1.5,+2.5 QW +0.0 proof -0.0 blowout -1.0 weak,2,3,False,4-1,W3,120,0.031,3.0,7.0
+Flyweight,8,Kai Kara-France,score order #8,fight record,0.203,0.163,0.191,0.15,1593.611,1627.611,34.0,False,3.1,+3.0 QW +0.1 proof -0.0 blowout -0.0 weak,4,5,True,2-3,L1,484,0.039,8.0,10.0
+Flyweight,9,Tim Elliott,score order #9,fight record,0.166,0.066,0.1,0.0,1563.609,1563.609,0.0,False,1.15,+2.1 QW +0.1 proof -0.0 blowout -1.0 weak,1,7,True,3-2,W1,43,0.0,9.0,11.0
+Flyweight,10,Amir Albazi,score order #10,fight record,0.151,0.155,-0.005,0.0,1591.322,1591.322,0.0,False,-1.1,+0.9 QW +0.0 proof -2.0 blowout -0.0 weak,1,1,False,3-2,L2,260,0.0,8.0,12.0
+Flyweight,11,Tagir Ulanbekov,score order #11,fight record,0.141,0.117,0.023,0.0,1579.611,1579.611,0.0,False,-0.5,+0.5 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,4-1,L1,337,0.0,9.0,12.0
+Flyweight,12,Imanol Rodriguez,score order #12,fight record,0.136,0.09,0.047,0.0,1571.07,1571.07,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,22,0.0,10.0,12.0
+Flyweight,13,Andre Lima,score order #13,fight record,0.059,0.059,0.0,0.0,1561.524,1561.524,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,57,0.0,13.0,16.0
+Flyweight,14,Bilal Hasan,score order #14,fight record,0.052,0.005,0.047,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,57,0.0,13.0,17.0
+Flyweight,15,Ramazan Temirov,score order #15,fight record,0.039,-0.031,0.07,0.0,1533.859,1533.859,0.0,False,0.5,+1.5 QW +0.0 proof -1.0 blowout -0.0 weak,1,2,False,3-1,L1,1,0.196,14.0,21.0
+Flyweight,16,Rei Tsuruya,score order #16,fight record,0.036,0.036,0.0,0.0,1554.533,1554.533,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-1,W2,57,0.0,15.0,17.0
+Flyweight,17,Alessandro Costa,score order #17,fight record,0.016,0.063,-0.047,0.0,1562.768,1562.768,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,4-1,W3,106,0.128,14.0,20.0
+Flyweight,18,Jose Ochoa,score order #18,fight record,0.011,0.057,-0.047,0.0,1561.063,1561.063,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,W1,169,0.0,16.0,21.0
+Flyweight,19,Edgar Chairez,score order #19,fight record,-0.009,0.014,-0.023,0.0,1547.685,1547.685,0.0,False,-1.5,+0.5 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,3-2,L1,43,0.0,19.0,21.0
+Flyweight,20,Sumudaerji,score order #20,fight record,-0.023,0.0,-0.023,0.0,1543.348,1543.348,0.0,False,-1.5,+0.5 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,4-1,W4,57,0.0,18.0,24.0
+Flyweight,21,Alden Coria,score order #21,fight record,-0.024,-0.024,0.0,0.0,1535.942,1535.942,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-1,L1,22,0.106,19.0,24.0
+Flyweight,22,Alex Perez,score order #22,fight record,-0.028,0.141,-0.019,0.15,1586.793,1586.793,0.0,False,-1.4,+2.6 QW +0.0 proof -0.0 blowout -4.0 weak,2,4,False,2-3,L1,57,0.039,19.0,26.0
+Flyweight,23,Jafel Filho,score order #23,fight record,-0.033,0.014,-0.047,0.0,1547.645,1547.645,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L1,183,0.0,22.0,26.0
+Flyweight,24,Nyamjargal Tumendemberel,score order #24,fight record,-0.033,-0.033,0.0,0.0,1533.239,1533.239,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-1,W2,232,0.0,23.0,25.0
+Flyweight,25,Fabia Sintes,score order #25,fight record,-0.036,-0.083,0.047,0.0,1517.873,1517.873,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,50,0.0,18.0,27.0
+Flyweight,26,Lone'er Kavanagh,score order #26,fight record,-0.039,-0.132,0.093,0.0,1502.511,1502.511,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,2,2,False,3-2,W1,1,0.116,13.0,28.0
+Flyweight,27,Joseph Morales,score order #27,fight record,-0.048,0.102,0.0,0.15,1574.965,1574.965,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,L1,43,0.071,23.0,27.0
+Flyweight,28,Charles Johnson,score order #28,fight record,-0.105,0.011,-0.116,0.0,1546.702,1546.702,0.0,False,-3.5,+0.5 QW +0.0 proof -1.0 blowout -3.0 weak,0,1,False,3-2,W1,71,0.041,26.0,31.0
+Flyweight,29,HyunSung Park,score order #29,fight record,-0.113,-0.066,-0.047,0.0,1522.953,1524.953,2.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L2,372,0.0,28.0,29.0
+Flyweight,30,Steve Erceg,score order #30,fight record,-0.129,-0.053,0.074,0.15,1526.899,1526.899,0.0,False,0.6,+2.1 QW +0.5 proof -2.0 blowout -0.0 weak,2,3,False,2-3,L1,92,0.11,28.0,30.0
+Heavyweight,0,Ciryl Gane,title holder,title holder or reserved,1.15,0.836,0.314,0.0,1812.375,1812.375,0.0,False,6.15,+6.2 QW +0.0 proof -0.0 blowout -0.0 weak,8,8,True,4-1,W3,133,0.0,0.0,0.0
+Heavyweight,0,Tom Aspinall,"reserved: vacated with injury, owed a title shot",title holder or reserved,0.907,0.669,0.238,0.0,1753.863,1753.863,0.0,True,4.425,+4.4 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,4-1,W3,365,0.024,0.0,0.0
+Heavyweight,1,Alexander Volkov,score order #2; title cycle -> #1,fight record,1.214,0.764,0.45,0.0,1787.096,1787.096,0.0,False,9.25,+9.2 QW +0.0 proof -0.0 blowout -0.0 weak,11,13,True,4-1,W3,1,0.008,1.0,1.0
+Heavyweight,2,Josh Hokit,score order #6; head-to-head -> #3; title cycle -> #2,fight record,0.554,0.401,0.154,0.0,1660.068,1660.068,0.0,False,2.5,+2.5 QW +0.0 proof -0.0 blowout -0.0 weak,2,2,False,4-0,W4,133,0.0,2.0,2.0
+Heavyweight,3,Curtis Blaydes,score order #3; head-to-head -> #4; title cycle -> #3,fight record,0.849,0.599,0.25,0.0,1729.569,1729.569,0.0,False,4.7,+6.7 QW +0.0 proof -1.0 blowout -1.0 weak,12,13,True,3-2,W1,43,0.045,3.0,3.0
+Heavyweight,4,Alex Pereira,score order #1; title cycle -> #4,override (config),1.228,0.767,0.461,0.0,1788.247,1788.247,0.0,False,9.5,+10.5 QW +0.0 proof -1.0 blowout -0.0 weak,8,8,True,3-2,L1,133,0.027,4.0,4.0
+Heavyweight,5,Waldo Cortes Acosta,score order #4; head-to-head -> #5,fight record,0.738,0.541,0.197,0.0,1709.121,1709.121,0.0,False,3.5,+4.0 QW +0.5 proof -0.0 blowout -1.0 weak,3,4,False,3-2,L2,43,0.0,5.0,5.0
+Heavyweight,6,Sergei Pavlovich,score order #5; head-to-head -> #6,fight record,0.704,0.487,0.217,0.0,1690.292,1690.292,0.0,False,3.95,+5.9 QW +0.0 proof -2.0 blowout -0.0 weak,6,8,True,3-2,W3,148,0.048,6.0,6.0
+Heavyweight,7,Valter Walker,score order #7,fight record,0.392,0.359,0.033,0.0,1645.493,1645.493,0.0,False,-0.25,+0.8 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,5-0,W5,92,0.0,7.0,8.0
+Heavyweight,8,Mario Pinto,score order #8,fight record,0.365,0.311,0.055,0.0,1628.549,1628.549,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,50,0.0,8.0,9.0
+Heavyweight,9,Derrick Lewis,score order #9,fight record,0.362,0.298,0.214,0.15,1624.136,1624.136,0.0,False,3.875,+4.9 QW +0.0 proof -1.0 blowout -0.0 weak,9,14,True,2-3,L2,133,0.102,7.0,11.0
+Heavyweight,10,Brando Pericic,score order #10,fight record,0.356,0.291,0.066,0.0,1621.531,1621.531,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,1,False,3-0,W3,176,0.0,9.0,10.0
+Heavyweight,11,Rizvan Kuniev,score order #11,fight record,0.328,0.219,0.11,0.0,1596.348,1596.348,0.0,False,1.5,+2.0 QW +0.5 proof -1.0 blowout -0.0 weak,2,2,False,2-2,L1,1,0.0,10.0,12.0
+Heavyweight,12,Vitor Petrino,score order #12,fight record,0.294,0.294,0.0,0.0,1622.693,1622.693,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,1,1,False,4-1,W4,64,0.061,10.0,12.0
+Heavyweight,13,Anthony Wint,score order #13,fight record,0.228,0.184,0.044,0.0,1584.204,1584.204,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,22,0.0,13.0,13.0
+Heavyweight,14,Gokhan Saricam,score order #14,fight record,0.151,0.107,0.044,0.0,1557.345,1557.345,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,190,0.0,14.0,14.0
+Heavyweight,15,Joel Faglier,score order #15,fight record,0.141,0.097,0.044,0.0,1554.0,1554.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,8,0.0,15.0,15.0
+Heavyweight,16,Jovan Leka,score order #16,fight record,0.116,0.072,0.044,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,85,0.0,16.0,16.0
+Heavyweight,17,Jose Montanha,score order #17,fight record,0.108,0.064,0.044,0.0,1542.381,1542.381,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,78,0.0,17.0,18.0
+Heavyweight,18,Steven Asplund,score order #18,fight record,0.067,0.067,0.0,0.0,1543.213,1543.213,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-1,W1,78,0.0,18.0,20.0
+Heavyweight,19,Mick Parkin,score order #19,fight record,0.066,0.11,-0.044,0.0,1558.29,1558.29,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L2,22,0.069,17.0,19.0
+Heavyweight,20,Ryan Spann,score order #20,fight record,0.047,0.088,-0.041,0.0,1550.547,1550.547,0.0,False,-1.925,+1.1 QW +0.0 proof -0.0 blowout -3.0 weak,1,2,False,3-2,L1,50,0.107,19.0,21.0
+Heavyweight,21,Tanner Boser,score order #21,fight record,0.036,0.182,0.003,0.15,1583.72,1583.72,0.0,False,-0.925,+0.1 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,W1,8,0.092,21.0,22.0
+Heavyweight,22,Serghei Spivac,score order #22,fight record,0.032,0.129,0.053,0.15,1564.982,1564.982,0.0,False,0.2,+3.2 QW +0.0 proof -2.0 blowout -1.0 weak,3,6,True,2-3,L1,64,0.085,20.0,24.0
+Heavyweight,23,Shamil Gaziev,score order #23,fight record,0.007,0.084,-0.077,0.0,1549.219,1549.219,0.0,False,-2.75,+0.2 QW +0.0 proof -1.0 blowout -2.0 weak,0,0,False,3-2,W1,64,0.17,22.0,27.0
+Heavyweight,24,Tyrell Fortune,score order #30; head-to-head -> #24,fight record,-0.065,-0.109,0.044,0.0,1481.686,1481.686,0.0,False,0.0,+1.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,1,False,1-1,L1,92,0.338,24.0,33.0
+Heavyweight,25,Marcin Tybura,score order #24; head-to-head -> #25,fight record,0.004,0.157,-0.003,0.15,1574.932,1574.932,0.0,False,-1.075,+2.9 QW +0.0 proof -3.0 blowout -1.0 weak,3,7,True,2-3,L3,85,0.079,23.0,26.0
+Heavyweight,26,Hamdy Abdelwahab,score order #25; head-to-head -> #26,fight record,0.001,0.001,0.0,0.0,1520.287,1520.287,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-2,W1,365,0.0,23.0,25.0
+Heavyweight,27,Allen Frye Jr.,score order #26; head-to-head -> #27,fight record,-0.036,-0.036,0.0,0.0,1507.167,1507.167,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-1,W1,15,0.0,26.0,27.0
+Heavyweight,28,Ante Delija,score order #27; head-to-head -> #28,fight record,-0.041,-0.041,0.0,0.0,1505.686,1505.686,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,1,1,False,1-2,L2,246,0.176,27.0,28.0
+Heavyweight,29,RJ Harris,score order #28; head-to-head -> #29,fight record,-0.041,-0.041,0.0,0.0,1505.405,1505.405,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-1,L1,15,0.296,28.0,29.1
+Heavyweight,30,Martin Buday,score order #29; head-to-head -> #30,fight record,-0.046,-0.057,0.011,0.0,1499.976,1525.976,26.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W3,456,0.053,28.0,30.0
+Light Heavyweight,0,Carlos Ulberg,title holder,title holder or reserved,0.804,0.47,0.335,0.0,1711.955,1711.955,0.0,False,5.5,+5.5 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,5-0,W10,197,0.061,0.0,0.0
+Light Heavyweight,1,Magomed Ankalaev,score order #1,fight record,0.969,0.547,0.422,0.0,1739.074,1739.074,0.0,False,7.2,+8.2 QW +0.0 proof -1.0 blowout -0.0 weak,8,8,True,4-1,W1,92,0.0,1.0,1.0
+Light Heavyweight,2,Paulo Costa,score order #3; title cycle -> #2,override (config),0.705,0.508,0.197,0.0,1725.529,1725.529,0.0,False,2.825,+2.3 QW +0.5 proof -0.0 blowout -0.0 weak,3,4,False,3-2,W2,197,0.008,2.0,2.0
+Light Heavyweight,3,Dominick Reyes,score order #4; title cycle -> #3,fight record,0.586,0.385,0.201,0.0,1681.966,1681.966,0.0,False,2.9,+3.9 QW +0.0 proof -1.0 blowout -0.0 weak,5,7,True,4-1,W2,1,0.112,3.0,3.0
+Light Heavyweight,4,Jiri Prochazka,score order #2; title cycle -> #4,fight record,0.801,0.52,0.281,0.0,1729.848,1729.848,0.0,False,4.45,+6.5 QW +0.0 proof -2.0 blowout -0.0 weak,6,6,True,3-2,L1,197,0.033,4.0,4.0
+Light Heavyweight,5,Navajo Stirling,score order #5,fight record,0.489,0.361,0.129,0.0,1673.437,1673.437,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,1,False,5-0,W6,85,0.0,5.0,6.0
+Light Heavyweight,6,Volkan Oezdemir,score order #6,fight record,0.45,0.257,0.193,0.0,1636.845,1636.845,0.0,False,2.75,+3.8 QW +0.0 proof -1.0 blowout -0.0 weak,7,8,True,3-2,W1,337,0.047,5.0,6.0
+Light Heavyweight,7,Bogdan Guskov,score order #7,fight record,0.422,0.268,0.155,0.0,1640.597,1640.597,0.0,False,2.0,+1.5 QW +0.5 proof -0.0 blowout -0.0 weak,1,2,False,4-1,L1,92,0.037,7.0,8.0
+Light Heavyweight,8,Khalil Rountree Jr.,score order #8,fight record,0.4,0.189,0.211,0.0,1612.919,1618.919,6.0,False,3.1,+3.1 QW +0.0 proof -0.0 blowout -0.0 weak,2,4,False,3-2,L1,386,0.057,7.0,10.0
+Light Heavyweight,9,Abdul Rakhman Yakhyaev,score order #9,fight record,0.36,0.283,0.077,0.0,1645.858,1645.858,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,1,False,4-0,W4,1,0.0,8.0,9.0
+Light Heavyweight,10,Azamat Murzakanov,score order #10,fight record,0.326,0.285,0.041,0.0,1646.802,1646.802,0.0,False,-0.2,+1.8 QW +0.0 proof -1.0 blowout -1.0 weak,1,3,False,3-2,L2,1,0.082,9.0,11.0
+Light Heavyweight,11,Reinier de Ridder,score order #11,override (config),0.32,0.243,0.077,0.0,1631.815,1631.815,0.0,False,0.5,+2.5 QW +0.0 proof -1.0 blowout -1.0 weak,1,2,False,3-2,W1,64,0.078,10.0,11.0
+Light Heavyweight,12,Johnny Walker,score order #12,fight record,0.194,0.321,0.023,0.15,1659.492,1659.492,0.0,False,-0.55,+2.3 QW +0.1 proof -2.0 blowout -1.0 weak,2,5,True,2-3,W1,22,0.116,12.0,12.0
+Light Heavyweight,13,Alonzo Menifield,score order #16; head-to-head -> #13,fight record,0.037,0.095,-0.058,0.0,1579.774,1579.774,0.0,False,-2.125,+0.9 QW +0.0 proof -2.0 blowout -1.0 weak,0,2,False,4-1,W2,36,0.1,13.0,23.0
+Light Heavyweight,14,Iwo Baraniewski,score order #13; head-to-head -> #14,fight record,0.126,0.126,0.0,0.0,1590.476,1590.476,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,L1,36,0.0,14.0,14.0
+Light Heavyweight,15,Muhammad Saidov,score order #14; head-to-head -> #15,fight record,0.108,0.044,0.064,0.0,1561.45,1561.45,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,92,0.0,13.0,15.0
+Light Heavyweight,16,Billy Elekana,score order #15; head-to-head -> #16,fight record,0.045,0.045,0.0,0.0,1562.027,1562.027,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W3,267,0.0,16.0,18.0
+Light Heavyweight,17,Lucas Fernando,score order #17,fight record,0.035,-0.017,0.052,0.0,1540.239,1540.239,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,71,0.0,15.0,21.0
+Light Heavyweight,18,Liu Ce,score order #18,fight record,0.032,-0.02,0.052,0.0,1539.164,1539.164,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,57,0.0,16.0,22.0
+Light Heavyweight,19,Dustin Jacoby,score order #19,fight record,0.028,0.131,-0.103,0.0,1592.202,1592.202,0.0,False,-3.0,+0.0 QW +0.0 proof -1.0 blowout -2.0 weak,0,0,False,3-2,L1,92,0.056,16.0,25.0
+Light Heavyweight,20,Modestas Bukauskas,score order #25; head-to-head -> #20,fight record,-0.036,0.016,-0.052,0.0,1551.613,1551.613,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,4-1,W2,50,0.174,18.0,25.0
+Light Heavyweight,21,Christian Edwards,score order #20; head-to-head -> #21,fight record,0.021,0.021,0.0,0.0,1553.621,1553.621,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,1-1,W1,29,0.0,18.0,22.0
+Light Heavyweight,22,Luis Hernandez,score order #21; head-to-head -> #22,fight record,0.021,-0.03,0.052,0.0,1535.43,1535.43,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,29,0.0,17.0,24.0
+Light Heavyweight,23,Jamahal Hill,score order #22; head-to-head -> #23,fight record,0.02,0.09,0.08,0.15,1577.939,1613.939,36.0,False,0.55,+2.5 QW +0.0 proof -2.0 blowout -0.0 weak,3,5,True,2-3,L3,491,0.097,19.0,23.0
+Light Heavyweight,24,Jimmy Crute,score order #23; head-to-head -> #24,fight record,0.014,0.109,0.055,0.15,1584.46,1592.46,8.0,False,0.075,+0.1 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-3,W2,393,0.087,20.0,24.0
+Light Heavyweight,25,Zhang Mingyang,score order #24; head-to-head -> #25,fight record,-0.026,0.0,-0.026,0.0,1546.087,1546.087,0.0,False,-1.5,+0.5 QW +0.0 proof -2.0 blowout -0.0 weak,0,1,False,3-2,L2,148,0.242,24.0,25.0
+Light Heavyweight,26,Jan Blachowicz,score order #26,fight record,-0.065,0.393,0.142,0.6,1685.02,1685.02,0.0,False,1.75,+3.8 QW +0.0 proof -1.0 blowout -1.0 weak,7,8,True,1-4,L3,85,0.029,26.0,27.0
+Light Heavyweight,27,Magomed Tuchalov,score order #27,fight record,-0.071,-0.122,0.052,0.0,1502.878,1502.878,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,92,0.0,24.0,27.0
+Light Heavyweight,28,Uran Satybaldiev,score order #28,fight record,-0.102,-0.102,0.0,0.0,1509.895,1527.895,18.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,1-1,W1,428,0.0,28.0,28.0
+Light Heavyweight,29,Ion Cutelaba,score order #29,fight record,-0.158,-0.062,-0.095,0.0,1524.05,1524.05,0.0,False,-2.85,+0.1 QW +0.0 proof -0.0 blowout -3.0 weak,0,1,False,3-2,L1,127,0.101,29.0,31.0
+Light Heavyweight,30,Rodolfo Bellato,score order #30,fight record,-0.169,-0.118,-0.052,0.0,1504.576,1504.576,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,29,0.099,29.0,30.0
+Lightweight,0,Justin Gaethje,title holder,title holder or reserved,1.244,0.546,0.699,0.0,1740.236,1740.236,0.0,False,8.35,+8.3 QW +0.0 proof -0.0 blowout -0.0 weak,10,11,True,4-1,W3,133,0.07,0.0,0.0
+Lightweight,1,Charles Oliveira,score order #2; head-to-head -> #1,fight record,1.483,0.88,0.603,0.0,1860.162,1860.162,0.0,False,7.075,+7.9 QW +0.1 proof -1.0 blowout -0.0 weak,12,12,True,3-2,W2,232,0.034,1.0,1.0
+Lightweight,2,Max Holloway,score order #1; head-to-head -> #2,fight record,1.539,0.913,0.626,0.0,1872.141,1872.141,0.0,False,7.375,+8.4 QW +0.0 proof -1.0 blowout -0.0 weak,15,15,True,3-2,W1,106,0.0,2.0,2.0
+Lightweight,3,Ilia Topuria,score order #3,fight record,1.25,0.69,0.56,0.0,1791.838,1791.838,0.0,False,6.5,+6.5 QW +0.0 proof -0.0 blowout -0.0 weak,5,5,True,4-1,L1,133,0.039,3.0,3.0
+Lightweight,4,Arman Tsarukyan,score order #4,fight record,1.128,0.657,0.471,0.0,1780.236,1780.236,0.0,False,5.3,+5.3 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,5-0,W6,36,0.0,4.0,4.0
+Lightweight,5,Paddy Pimblett,score order #5,fight record,0.732,0.489,0.243,0.0,1720.012,1720.012,0.0,False,2.25,+3.2 QW +0.0 proof -1.0 blowout -0.0 weak,2,3,False,4-1,W1,106,0.0,5.0,5.0
+Lightweight,6,Renato Moicano,score order #9; head-to-head -> #6,fight record,0.572,0.419,0.153,0.0,1694.643,1694.643,0.0,False,1.05,+3.0 QW +0.0 proof -1.0 blowout -1.0 weak,3,6,True,3-2,W1,204,0.076,6.0,7.0
+Lightweight,7,Benoit Saint Denis,score order #6; head-to-head -> #7,fight record,0.626,0.44,0.187,0.0,1702.145,1702.145,0.0,False,1.5,+3.0 QW +0.5 proof -2.0 blowout -0.0 weak,2,4,False,4-1,L1,106,0.064,7.0,8.0
+Lightweight,8,Quillan Salkilld,score order #7; head-to-head -> #8,fight record,0.62,0.414,0.205,0.0,1693.084,1693.084,0.0,False,1.75,+1.8 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,5-0,W6,78,0.0,6.0,9.0
+Lightweight,9,Grant Dawson,score order #8; head-to-head -> #9,fight record,0.579,0.538,0.041,0.0,1737.407,1737.407,0.0,False,-0.45,+0.6 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,4-1,W2,1,0.069,6.0,9.0
+Lightweight,10,Mateusz Gamrot,score order #10,fight record,0.441,0.456,0.134,0.15,1708.174,1708.174,0.0,False,0.8,+2.3 QW +0.5 proof -1.0 blowout -1.0 weak,2,5,True,2-3,L1,78,0.0,10.0,10.0
+Lightweight,11,Jim Miller,score order #11,fight record,0.353,0.376,-0.022,0.0,1679.263,1679.263,0.0,False,-1.3,+0.7 QW +0.0 proof -1.0 blowout -1.0 weak,1,1,False,3-2,W1,169,0.023,11.0,14.0
+Lightweight,12,Chris Padilla,score order #12,fight record,0.323,0.23,0.093,0.0,1626.954,1626.954,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,5-0,W5,64,0.0,11.0,15.0
+Lightweight,13,Mauricio Ruffy,score order #15; head-to-head -> #13,fight record,0.244,0.188,0.056,0.0,1611.835,1611.835,0.0,False,-0.25,+1.8 QW +0.0 proof -1.0 blowout -1.0 weak,1,2,False,3-2,L1,36,0.042,12.0,16.0
+Lightweight,14,Rafael Fiziev,score order #13; head-to-head -> #14,fight record,0.269,0.249,0.17,0.15,1633.693,1633.693,0.0,False,1.275,+1.5 QW +0.8 proof -0.0 blowout -1.0 weak,1,3,False,2-3,W1,120,0.101,13.0,18.0
+Lightweight,15,Jalin Turner,score order #14; head-to-head -> #15,fight record,0.269,0.265,0.004,0.0,1639.513,1639.513,0.0,False,-0.95,+1.1 QW +0.0 proof -1.0 blowout -1.0 weak,0,2,False,3-2,W2,71,0.084,13.0,16.0
+Lightweight,16,Esteban Ribovics,score order #22; head-to-head -> #16,fight record,0.163,0.201,-0.037,0.0,1616.519,1616.519,0.0,False,-1.5,+0.5 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,W2,22,0.0,16.0,22.0
+Lightweight,17,King Green,score order #16; head-to-head -> #17,fight record,0.235,0.338,-0.103,0.0,1665.559,1665.559,0.0,False,-2.375,+1.6 QW +0.0 proof -4.0 blowout -0.0 weak,2,2,False,4-1,L1,22,0.097,11.0,22.1
+Lightweight,18,Tommy Gantt,score order #17; head-to-head -> #18,fight record,0.23,0.136,0.093,0.0,1593.426,1593.426,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,43,0.0,15.0,22.0
+Lightweight,19,MarQuel Mederos,score order #18; head-to-head -> #19,fight record,0.212,0.137,0.075,0.0,1593.551,1593.551,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,64,0.0,17.0,23.0
+Lightweight,20,Alexander Hernandez,score order #19; head-to-head -> #20,fight record,0.211,0.201,0.009,0.0,1616.692,1616.692,0.0,False,-0.875,+1.1 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,4-1,W1,22,0.071,17.0,20.0
+Lightweight,21,Ignacio Bahamondes,score order #20; head-to-head -> #21,fight record,0.208,0.226,-0.019,0.0,1625.634,1625.634,0.0,False,-1.25,+0.8 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,W1,43,0.0,13.0,21.0
+Lightweight,22,Manuel Torres,score order #21; head-to-head -> #22,fight record,0.171,0.19,-0.019,0.0,1612.632,1612.632,0.0,False,-1.25,+0.8 QW +0.0 proof -2.0 blowout -0.0 weak,0,1,False,3-2,L1,120,0.17,21.0,24.0
+Lightweight,23,Axel Sola,score order #23,fight record,0.156,0.137,0.019,0.0,1593.597,1593.597,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W2,50,0.0,23.0,24.0
+Lightweight,24,Diego Ferreira,score order #24,fight record,0.152,0.209,-0.058,0.0,1619.616,1619.616,0.0,False,-1.775,+0.2 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,W1,78,0.118,20.0,28.0
+Lightweight,25,Salahdine Parnasse,score order #25,fight record,0.139,-0.01,0.149,0.0,1540.905,1540.905,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,1,1,False,1-0,W1,50,0.0,18.0,31.0
+Lightweight,26,Tom Nolan,score order #26,fight record,0.123,0.085,0.037,0.0,1575.041,1575.041,0.0,False,-0.5,+0.5 QW +0.0 proof -1.0 blowout -0.0 weak,0,1,False,5-0,W5,141,0.099,25.0,28.0
+Lightweight,27,Nurullo Aliev,score order #27,fight record,0.106,0.106,0.0,0.0,1582.384,1582.384,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,L1,1,0.0,27.0,29.0
+Lightweight,28,Rafa Garcia,score order #28,fight record,0.101,0.127,-0.026,0.0,1590.006,1590.006,0.0,False,-1.35,+0.7 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,L1,43,0.041,26.0,31.0
+Lightweight,29,Chase Hooper,score order #29,fight record,0.097,0.153,-0.056,0.0,1599.504,1599.504,0.0,False,-1.75,+0.2 QW +0.0 proof -2.0 blowout -0.0 weak,0,0,False,3-2,W1,99,0.129,25.0,33.0
+Lightweight,30,Manoel Sousa,score order #30,fight record,0.082,0.008,0.075,0.0,1547.207,1547.207,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,78,0.0,26.0,32.0
+Middleweight,0,Sean Strickland,title holder,title holder or reserved,0.984,0.566,0.418,0.0,1753.081,1753.081,0.0,False,6.275,+7.0 QW +0.3 proof -1.0 blowout -0.0 weak,6,7,True,3-2,W2,169,0.056,0.0,0.0
+Middleweight,1,Khamzat Chimaev,score order #2; head-to-head -> #1,fight record,0.969,0.581,0.388,0.0,1758.714,1758.714,0.0,False,5.75,+5.8 QW +0.0 proof -0.0 blowout -0.0 weak,4,5,True,4-1,L1,169,0.0,1.0,1.0
+Middleweight,2,Dricus Du Plessis,score order #1; head-to-head -> #2,fight record,1.146,0.647,0.5,0.0,1782.668,1782.668,0.0,False,7.7,+8.7 QW +0.0 proof -1.0 blowout -0.0 weak,7,8,True,4-1,W1,99,0.0,2.0,2.0
+Middleweight,3,Brendan Allen,score order #3,fight record,0.892,0.565,0.327,0.0,1752.719,1752.719,0.0,False,4.7,+5.2 QW +0.5 proof -0.0 blowout -1.0 weak,3,6,True,4-1,W4,15,0.035,3.0,4.0
+Middleweight,4,Nassourdine Imavov,score order #4,fight record,0.886,0.467,0.419,0.0,1716.913,1730.913,14.0,False,6.3,+6.3 QW +0.0 proof -0.0 blowout -0.0 weak,5,6,True,5-0,W5,414,0.0,3.0,4.0
+Middleweight,5,Robert Whittaker,score order #5,fight record,0.74,0.485,0.256,0.0,1723.361,1723.361,0.0,False,3.45,+5.4 QW +0.0 proof -1.0 blowout -1.0 weak,10,13,True,3-2,W1,106,0.036,5.0,5.0
+Middleweight,6,Joe Pyfer,score order #6,fight record,0.575,0.466,0.109,0.0,1716.386,1716.386,0.0,False,0.9,+1.9 QW +0.0 proof -0.0 blowout -1.0 weak,1,1,False,4-1,W4,211,0.0,6.0,6.0
+Middleweight,7,Gregory Rodrigues,score order #7,fight record,0.559,0.445,0.115,0.0,1708.623,1708.623,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,2,False,4-1,W4,64,0.071,7.0,7.0
+Middleweight,8,Anthony Hernandez,score order #8,fight record,0.547,0.403,0.144,0.0,1693.543,1693.543,0.0,False,1.5,+2.5 QW +0.0 proof -0.0 blowout -1.0 weak,2,3,False,3-2,L2,64,0.095,8.0,8.0
+Middleweight,9,Caio Borralho,score order #9,fight record,0.499,0.326,0.172,0.0,1665.38,1665.38,0.0,False,2.0,+3.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,3,False,4-1,W1,232,0.0,9.0,9.0
+Middleweight,10,Christian Leroy Duncan,score order #10,fight record,0.458,0.358,0.1,0.0,1676.749,1676.749,0.0,False,0.75,+1.2 QW +0.5 proof -1.0 blowout -0.0 weak,0,2,False,4-1,L1,15,0.0,10.0,10.0
+Middleweight,11,Yousri Belgaroui,score order #11,fight record,0.293,0.236,0.057,0.0,1632.091,1632.091,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,43,0.0,11.0,12.0
+Middleweight,12,Ikram Aliskerov,score order #12,fight record,0.273,0.25,0.023,0.0,1637.533,1637.533,0.0,False,-0.6,+0.4 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W3,120,0.065,12.0,13.0
+Middleweight,13,Michael Page,score order #13,fight record,0.267,0.153,0.115,0.0,1601.691,1601.691,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,4-1,W4,50,0.0,11.0,16.0
+Middleweight,14,Bo Nickal,score order #14,fight record,0.261,0.246,0.014,0.0,1636.085,1636.085,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W2,133,0.096,13.0,16.0
+Middleweight,15,Baisangur Susurkaev,score order #15,fight record,0.246,0.188,0.057,0.0,1614.837,1614.837,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,169,0.0,14.0,16.0
+Middleweight,16,Damian Pinas,score order #16,fight record,0.233,0.176,0.057,0.0,1610.279,1610.279,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,22,0.0,15.0,18.0
+Middleweight,17,Abus Magomedov,score order #17,fight record,0.233,0.233,0.0,0.0,1631.042,1631.042,0.0,False,-1.0,+1.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,4-1,W2,1,0.05,14.0,18.0
+Middleweight,18,Edmen Shahbazyan,score order #18,fight record,0.231,0.18,0.052,0.0,1611.602,1611.602,0.0,False,-0.1,+0.4 QW +0.5 proof -0.0 blowout -1.0 weak,0,1,False,4-1,W1,36,0.099,17.0,18.0
+Middleweight,19,Shara Magomedov,score order #19,fight record,0.209,0.195,0.014,0.0,1617.167,1617.167,0.0,False,-0.75,+0.2 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W2,120,0.0,19.0,20.0
+Middleweight,20,Ryan Gandra,score order #20,fight record,0.183,0.126,0.057,0.0,1591.913,1591.913,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,36,0.0,19.0,23.0
+Middleweight,21,Ismail Naurdiev,score order #21,fight record,0.174,0.155,0.019,0.0,1602.657,1602.657,0.0,False,-0.675,+0.3 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,W2,22,0.0,21.0,22.0
+Middleweight,22,Ateba Gautier,score order #22,fight record,0.17,0.17,0.0,0.0,1608.006,1608.006,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,L1,22,0.083,21.0,23.0
+Middleweight,23,Jacob Malkoun,score order #23,fight record,0.152,0.152,0.0,0.0,1601.452,1601.452,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,L1,1,0.042,23.0,25.0
+Middleweight,24,Donte Johnson,score order #24,fight record,0.119,0.062,0.057,0.0,1568.47,1568.47,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,71,0.0,24.0,29.0
+Middleweight,25,Cam Rowston,score order #25,fight record,0.11,0.096,0.014,0.0,1580.832,1580.832,0.0,False,-0.75,+0.2 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-1,L1,1,0.0,25.0,28.0
+Middleweight,26,Israel Adesanya,score order #26,fight record,0.106,0.353,0.353,0.6,1675.02,1675.02,0.0,False,5.15,+6.1 QW +0.0 proof -0.0 blowout -1.0 weak,10,11,True,1-4,L4,211,0.059,20.0,33.0
+Middleweight,27,Nursulton Ruziboev,score order #27,fight record,0.091,0.148,-0.057,0.0,1600.146,1600.146,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,L1,50,0.0,25.0,31.0
+Middleweight,28,Roman Dolidze,score order #28,fight record,0.085,0.229,0.006,0.15,1629.678,1629.678,0.0,False,-0.9,+3.1 QW +0.0 proof -1.0 blowout -3.0 weak,3,4,False,2-3,L3,64,0.045,27.0,30.0
+Middleweight,29,Nick Galanti,score order #29,fight record,0.064,0.006,0.057,0.0,1548.099,1548.099,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,8,0.0,27.0,31.0
+Middleweight,30,Roman Kopylov,score order #30,fight record,0.063,0.177,-0.115,0.0,1610.819,1610.819,0.0,False,-3.0,+0.0 QW +0.0 proof -2.0 blowout -1.0 weak,0,0,False,3-2,W2,22,0.0,20.0,35.0
+Welterweight,0,Islam Makhachev,title holder,title holder or reserved,1.499,0.94,0.559,0.0,1883.402,1883.402,0.0,False,10.425,+10.4 QW +0.0 proof -0.0 blowout -0.0 weak,8,9,True,5-0,W17,71,0.0,0.0,0.0
+Welterweight,1,Michael Morales,score order #4; head-to-head -> #1,fight record,0.647,0.439,0.208,0.0,1707.83,1707.83,0.0,False,3.25,+3.2 QW +0.0 proof -0.0 blowout -0.0 weak,2,3,False,5-0,W7,344,0.0,1.0,1.0
+Welterweight,2,Sean Brady,score order #1; head-to-head -> #2,fight record,0.75,0.518,0.232,0.0,1735.646,1735.646,0.0,False,3.75,+4.8 QW +0.0 proof -1.0 blowout -0.0 weak,4,5,True,4-1,W1,169,0.09,2.0,2.0
+Welterweight,3,Carlos Prates,score order #2; head-to-head -> #4; title cycle -> #3,fight record,0.735,0.527,0.208,0.0,1738.813,1738.813,0.0,False,3.25,+4.2 QW +0.0 proof -0.0 blowout -1.0 weak,2,4,False,4-1,W3,176,0.0,3.0,3.0
+Welterweight,4,Ian Machado Garry,score order #3; title cycle -> #4,fight record,0.723,0.498,0.225,0.0,1728.6,1728.6,0.0,False,3.6,+4.1 QW +0.5 proof -1.0 blowout -0.0 weak,2,6,True,3-2,L1,71,0.0,4.0,4.0
+Welterweight,5,Jack Della Maddalena,score order #6; head-to-head -> #5,fight record,0.51,0.317,0.193,0.0,1665.228,1665.228,0.0,False,2.95,+4.0 QW +0.0 proof -1.0 blowout -0.0 weak,2,3,False,3-2,L2,176,0.03,5.0,5.0
+Welterweight,6,Gabriel Bonfim,score order #8; head-to-head -> #6,fight record,0.474,0.364,0.11,0.0,1681.835,1681.835,0.0,False,1.25,+2.2 QW +0.0 proof -0.0 blowout -1.0 weak,1,2,False,5-0,W5,141,0.106,6.0,6.0
+Welterweight,7,Belal Muhammad,score order #5; head-to-head -> #7,fight record,0.523,0.445,0.229,0.15,1709.927,1709.927,0.0,False,3.675,+5.7 QW +0.0 proof -2.0 blowout -0.0 weak,6,6,True,2-3,L3,141,0.03,7.0,7.0
+Welterweight,8,Leon Edwards,score order #7; head-to-head -> #8,fight record,0.498,0.429,0.219,0.15,1704.63,1704.63,0.0,False,3.475,+4.5 QW +0.0 proof -0.0 blowout -1.0 weak,4,7,True,2-3,L3,344,0.021,8.0,8.0
+Welterweight,9,Mike Malott,score order #9,fight record,0.434,0.336,0.098,0.0,1672.058,1672.058,0.0,False,1.0,+2.0 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,5-0,W5,8,0.083,9.0,9.0
+Welterweight,10,Kamaru Usman,score order #10,override (config),0.391,0.737,0.254,0.6,1812.318,1812.318,0.0,False,4.2,+5.2 QW +0.0 proof -1.0 blowout -0.0 weak,9,9,True,1-4,L1,99,0.027,10.0,10.0
+Welterweight,11,Daniil Donchenko,score order #11,fight record,0.331,0.27,0.061,0.0,1648.787,1648.787,0.0,False,0.25,+0.2 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,50,0.0,11.0,11.0
+Welterweight,12,Jacobe Smith,score order #12,fight record,0.299,0.25,0.049,0.0,1641.862,1641.862,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,4-0,W4,22,0.0,12.0,13.0
+Welterweight,13,Rinat Fakhretdinov,score order #13,fight record,0.291,0.222,0.069,0.0,1631.974,1645.974,14.0,False,0.4,+0.4 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,5-0,W6,414,0.0,12.0,15.0
+Welterweight,14,Yaroslav Amosov,score order #18; head-to-head -> #14,fight record,0.23,0.157,0.073,0.0,1609.228,1609.228,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,169,0.0,14.0,22.0
+Welterweight,15,Neil Magny,score order #14; head-to-head -> #15,fight record,0.281,0.276,0.005,0.0,1650.808,1650.808,0.0,False,-0.9,+2.1 QW +0.0 proof -3.0 blowout -0.0 weak,3,7,True,3-2,W1,71,0.059,12.0,15.0
+Welterweight,16,Uros Medic,score order #17; head-to-head -> #16,fight record,0.245,0.221,0.024,0.0,1631.481,1631.481,0.0,False,-0.5,+1.5 QW +0.0 proof -1.0 blowout -1.0 weak,0,2,False,4-1,W4,85,0.048,15.0,17.0
+Welterweight,17,Daniel Rodriguez,score order #15; head-to-head -> #17,fight record,0.257,0.231,0.026,0.0,1635.258,1635.258,0.0,False,-0.475,+1.5 QW +0.0 proof -1.0 blowout -1.0 weak,0,3,False,3-2,L1,85,0.057,16.0,18.0
+Welterweight,18,Jeremiah Wells,score order #16; head-to-head -> #18,fight record,0.251,0.24,0.011,0.0,1638.188,1638.188,0.0,False,-0.775,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,W2,71,0.0,16.0,18.0
+Welterweight,19,Myktybek Orolbai,score order #20; head-to-head -> #19,fight record,0.2,0.237,-0.037,0.0,1637.292,1637.292,0.0,False,-1.75,+0.2 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,L1,71,0.0,19.0,22.0
+Welterweight,20,Sam Patterson,score order #19; head-to-head -> #20,fight record,0.223,0.211,0.012,0.0,1628.206,1628.206,0.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,92,0.061,19.0,21.0
+Welterweight,21,Jake Matthews,score order #21,fight record,0.198,0.244,-0.045,0.0,1639.57,1639.57,0.0,False,-1.925,+0.1 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,4-1,W1,148,0.0,20.0,23.0
+Welterweight,22,Joel Alvarez,score order #22,fight record,0.195,0.205,-0.01,0.0,1626.082,1626.082,0.0,False,-1.2,+0.8 QW +0.0 proof -1.0 blowout -1.0 weak,0,1,False,3-2,L2,71,0.043,20.0,23.0
+Welterweight,23,Kevin Holland,score order #23,fight record,0.194,0.3,-0.106,0.0,1659.36,1659.36,0.0,False,-3.175,+1.8 QW +0.0 proof -2.0 blowout -3.0 weak,0,2,False,3-2,W1,197,0.03,15.0,26.0
+Welterweight,24,Joaquin Buckley,score order #24,fight record,0.186,0.304,0.032,0.15,1660.75,1660.75,0.0,False,-0.35,+2.6 QW +0.0 proof -3.0 blowout -0.0 weak,2,3,False,2-3,L3,8,0.131,22.0,24.0
+Welterweight,25,Ty Miller,score order #25,fight record,0.111,0.062,0.049,0.0,1575.966,1575.966,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,78,0.0,24.0,25.0
+Welterweight,26,Jonathan Micallef,score order #26,fight record,0.101,0.052,0.049,0.0,1572.574,1572.574,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,176,0.0,25.0,27.0
+Welterweight,27,Jean-Paul Lebosnoyani,score order #32; head-to-head -> #27,fight record,-0.007,-0.056,0.049,0.0,1534.575,1534.575,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,99,0.0,27.0,37.0
+Welterweight,28,Seokhyeon Ko,score order #27; head-to-head -> #28,fight record,0.083,0.083,0.0,0.0,1583.435,1583.435,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-1,L1,99,0.0,26.0,28.0
+Welterweight,29,Tahir Abdullayev,score order #28; head-to-head -> #29,fight record,0.023,-0.026,0.049,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,120,0.0,28.0,31.0
+Welterweight,30,Levan Chokheli,score order #29; head-to-head -> #30,fight record,0.023,-0.026,0.049,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,127,0.0,29.0,30.0
+Women's Bantamweight,0,Kayla Harrison,title holder,title holder or reserved,0.58,0.337,0.243,0.0,1643.436,1643.436,0.0,True,5.0,+5.0 QW +0.0 proof -0.0 blowout -0.0 weak,3,3,False,3-0,W3,505,0.0,0.0,0.0
+Women's Bantamweight,1,Joselyne Edwards,score order #3; head-to-head -> #1,fight record,0.311,0.238,0.073,0.0,1619.584,1619.584,0.0,False,1.5,+2.5 QW +0.0 proof -0.0 blowout -1.0 weak,1,3,False,5-0,W5,183,0.0,1.0,1.0
+Women's Bantamweight,2,Ailin Perez,score order #2,fight record,0.353,0.183,0.17,0.0,1606.342,1606.342,0.0,False,3.5,+3.5 QW +0.0 proof -0.0 blowout -0.0 weak,3,3,False,5-0,W7,29,0.0,2.0,2.0
+Women's Bantamweight,3,Norma Dumont,score order #1; head-to-head -> #3,fight record,0.37,0.207,0.163,0.0,1612.124,1612.124,0.0,False,3.35,+4.3 QW +0.0 proof -0.0 blowout -1.0 weak,4,5,True,3-2,L2,29,0.013,3.0,3.0
+Women's Bantamweight,4,Jacqueline Cavalcanti,score order #4,fight record,0.273,0.176,0.097,0.0,1604.518,1604.518,0.0,False,2.0,+1.5 QW +0.5 proof -0.0 blowout -0.0 weak,1,2,False,4-1,L1,162,0.0,4.0,6.0
+Women's Bantamweight,5,Luana Santos,score order #5,fight record,0.24,0.24,0.0,0.0,1619.954,1619.954,0.0,False,0.0,+1.0 QW +0.0 proof -1.0 blowout -0.0 weak,1,1,False,4-1,W3,127,0.0,4.0,7.0
+Women's Bantamweight,6,Yana Santos,score order #6,fight record,0.237,0.072,0.165,0.0,1579.4,1585.4,6.0,False,3.4,+3.2 QW +0.1 proof -0.0 blowout -0.0 weak,3,6,True,3-2,W3,386,0.064,4.0,8.0
+Women's Bantamweight,7,Bia Mesquita,score order #7,fight record,0.223,0.223,0.0,0.0,1615.933,1615.933,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-0,W3,127,0.0,5.0,8.0
+Women's Bantamweight,8,Julianna Pena,score order #8,fight record,0.205,0.071,0.133,0.0,1579.357,1619.357,40.0,False,2.75,+3.8 QW +0.0 proof -1.0 blowout -0.0 weak,5,5,True,3-2,L1,505,0.0,6.0,9.0
+Women's Bantamweight,9,Macy Chiasson,score order #9,fight record,0.162,0.244,0.068,0.15,1620.904,1620.904,0.0,False,1.4,+3.1 QW +0.3 proof -0.0 blowout -2.0 weak,3,4,False,2-3,L3,239,0.029,7.0,9.0
+Women's Bantamweight,10,Alice Pereira,score order #10,fight record,0.004,0.029,-0.024,0.0,1569.029,1569.029,0.0,False,-0.5,+0.5 QW +0.0 proof -0.0 blowout -1.0 weak,0,1,False,2-1,W2,15,0.0,10.0,11.0
+Women's Bantamweight,11,Michelle Montague,score order #11,fight record,-0.021,-0.069,0.049,0.0,1545.409,1545.409,0.0,False,1.0,+1.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,2,False,2-0,W2,183,0.0,10.0,12.0
+Women's Bantamweight,12,Karol Rosa,score order #12,fight record,-0.035,0.095,0.019,0.15,1585.103,1585.103,0.0,False,0.4,+1.9 QW +0.5 proof -1.0 blowout -1.0 weak,1,4,False,2-3,L1,127,0.0,11.0,12.0
+Women's Bantamweight,13,Nina Milosevic,score order #13,fight record,-0.115,-0.115,0.0,0.0,1534.373,1534.373,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,85,0.0,13.0,13.0
+Women's Bantamweight,14,Chelsea Chandler,score order #14,fight record,-0.24,-0.191,-0.049,0.0,1516.003,1516.003,0.0,False,-1.0,+1.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,2,False,3-2,W2,8,0.119,14.0,15.0
+Women's Bantamweight,15,Nora Cornolle,score order #15,fight record,-0.271,0.0,-0.121,0.15,1562.113,1562.113,0.0,False,-2.5,+0.5 QW +0.0 proof -0.0 blowout -3.0 weak,0,1,False,2-3,W1,50,0.0,14.0,17.0
+Women's Bantamweight,16,Melissa Croden,score order #16,fight record,-0.291,-0.194,-0.097,0.0,1515.41,1515.41,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,8,0.0,15.0,16.0
+Women's Bantamweight,17,Miesha Tate,score order #17,fight record,-0.341,-0.203,0.012,0.15,1513.21,1563.21,50.0,False,0.25,+1.2 QW +0.0 proof -0.0 blowout -1.0 weak,4,6,True,2-3,L1,540,0.0,16.0,17.0
+Women's Bantamweight,18,Klaudia Sygula,score order #18,fight record,-0.378,-0.281,-0.097,0.0,1494.346,1494.346,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,50,0.169,18.0,18.0
+Women's Bantamweight,19,Montse Rendon,score order #19,fight record,-0.48,-0.383,-0.097,0.0,1469.795,1469.795,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,2-2,L1,225,0.0,19.0,19.0
+Women's Bantamweight,20,Tainara Lisboa,score order #20,fight record,-0.549,-0.452,-0.097,0.0,1453.056,1455.056,2.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,2-2,L2,372,0.106,20.0,20.0
+Women's Bantamweight,21,Irina Alekseeva,score order #21,fight record,-0.646,-0.549,-0.097,0.0,1429.639,1433.639,4.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,1-3,L3,379,0.0,21.0,21.0
+Women's Bantamweight,22,Melissa Mullins,score order #22,fight record,-0.737,-0.441,-0.146,0.15,1455.714,1455.714,0.0,False,-3.0,+0.0 QW +0.0 proof -2.0 blowout -1.0 weak,0,0,False,2-3,L2,127,0.118,22.0,22.0
+Women's Bantamweight,23,Daria Zhelezniakova,score order #23,fight record,-0.762,-0.467,-0.146,0.15,1449.538,1449.538,0.0,False,-3.0,+0.0 QW +0.0 proof -2.0 blowout -1.0 weak,0,0,False,2-3,L2,15,0.085,23.0,23.0
+Women's Bantamweight,24,Priscila Cachoeira,score order #24,fight record,-1.389,-0.595,-0.194,0.6,1418.587,1418.587,0.0,False,-4.0,+0.0 QW +0.0 proof -3.0 blowout -1.0 weak,0,0,False,1-4,L3,141,0.054,24.0,24.0
+Women's Flyweight,0,Natalia Silva,title holder,title holder or reserved,0.753,0.46,0.294,0.0,1697.083,1697.083,0.0,False,5.8,+5.8 QW +0.0 proof -0.0 blowout -0.0 weak,5,6,True,5-0,W9,22,0.0,0.0,0.0
+Women's Flyweight,0,Valentina Shevchenko,"reserved: vacated with injury, owed a title shot",title holder or reserved,1.134,0.666,0.468,0.0,1769.23,1769.23,0.0,True,9.85,+9.8 QW +0.1 proof -0.0 blowout -0.0 weak,14,14,True,4-1,W3,344,0.0,0.0,0.0
+Women's Flyweight,1,Alexa Grasso,score order #4; head-to-head -> #1,fight record,0.567,0.332,0.235,0.0,1652.187,1652.187,0.0,False,4.45,+6.4 QW +0.0 proof -2.0 blowout -0.0 weak,8,9,True,3-2,W2,43,0.0,1.0,1.0
+Women's Flyweight,2,Manon Fiorot,score order #1; head-to-head -> #2,fight record,0.79,0.501,0.289,0.0,1711.373,1711.373,0.0,False,5.7,+5.7 QW +0.0 proof -0.0 blowout -0.0 weak,5,5,True,3-2,L1,43,0.0,2.0,2.0
+Women's Flyweight,3,Rose Namajunas,score order #2; head-to-head -> #3,fight record,0.778,0.473,0.304,0.0,1701.718,1701.718,0.0,False,6.05,+5.5 QW +0.5 proof -0.0 blowout -0.0 weak,9,11,True,3-2,L1,274,0.022,3.0,3.0
+Women's Flyweight,4,Jasmine Jasudavicius,score order #6; head-to-head -> #4,fight record,0.479,0.25,0.229,0.0,1623.586,1623.586,0.0,False,4.3,+5.3 QW +0.0 proof -1.0 blowout -0.0 weak,4,6,True,4-1,W2,8,0.027,4.0,4.0
+Women's Flyweight,5,Erin Blanchfield,score order #3; head-to-head -> #5,fight record,0.647,0.492,0.155,0.0,1708.341,1708.341,0.0,False,2.6,+4.6 QW +0.0 proof -1.0 blowout -1.0 weak,4,5,True,3-2,L1,8,0.0,5.0,5.0
+Women's Flyweight,6,Maycee Barber,score order #5; head-to-head -> #6,fight record,0.493,0.307,0.186,0.0,1643.475,1643.475,0.0,False,3.3,+4.3 QW +0.0 proof -1.0 blowout -0.0 weak,4,7,True,4-1,L1,211,0.057,6.0,6.0
+Women's Flyweight,7,Katlyn Cerminara,score order #7,fight record,0.369,0.198,0.171,0.0,1605.268,1605.268,0.0,False,2.95,+3.9 QW +0.0 proof -1.0 blowout -0.0 weak,8,10,True,3-2,W1,8,0.036,7.0,8.0
+Women's Flyweight,8,Casey O'Neill,score order #8,fight record,0.336,0.28,0.056,0.0,1634.001,1634.001,0.0,False,0.3,+1.3 QW +0.0 proof -0.0 blowout -1.0 weak,0,3,False,3-2,W3,36,0.0,7.0,9.0
+Women's Flyweight,9,Wang Cong,score order #9,fight record,0.309,0.201,0.108,0.0,1606.284,1606.284,0.0,False,1.5,+2.0 QW +0.5 proof -0.0 blowout -1.0 weak,1,3,False,4-1,L1,22,0.0,8.0,9.0
+Women's Flyweight,10,Carli Judice,score order #10,fight record,0.21,0.21,0.0,0.0,1609.365,1609.365,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W4,64,0.0,10.0,10.0
+Women's Flyweight,11,Miranda Maverick,score order #11,fight record,0.15,0.122,0.028,0.0,1578.644,1616.644,38.0,False,-0.35,+0.7 QW +0.0 proof -1.0 blowout -0.0 weak,0,2,False,4-1,L1,498,0.0,11.0,11.0
+Women's Flyweight,12,Dione Barbosa,score order #12,fight record,0.091,0.135,-0.043,0.0,1583.005,1583.005,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,3-2,W2,99,0.0,12.0,13.0
+Women's Flyweight,13,Regina Tarin,score order #13,fight record,0.055,-0.009,0.065,0.0,1532.473,1532.473,0.0,False,0.5,+0.5 QW +0.0 proof -0.0 blowout -0.0 weak,0,1,False,2-0,W2,43,0.0,12.0,13.0
+Women's Flyweight,14,Tracy Cortez,score order #14,fight record,0.023,0.151,0.022,0.15,1588.824,1588.824,0.0,False,-0.5,+1.0 QW +0.5 proof -1.0 blowout -1.0 weak,1,1,False,2-3,L2,106,0.0,14.0,16.0
+Women's Flyweight,15,JJ Aldrich,score order #18; head-to-head -> #15,fight record,-0.059,-0.016,-0.043,0.0,1530.176,1530.176,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,L1,43,0.017,14.0,17.0
+Women's Flyweight,16,Jamey-Lyn Horth,score order #15; head-to-head -> #16,fight record,0.003,0.089,-0.086,0.0,1567.039,1567.039,0.0,False,-3.0,+0.0 QW +0.0 proof -0.0 blowout -3.0 weak,0,0,False,3-2,L1,190,0.0,15.0,18.0
+Women's Flyweight,17,Melissa Gatto,score order #16; head-to-head -> #17,fight record,-0.008,0.142,0.0,0.15,1585.447,1585.447,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,L1,15,0.0,15.0,17.0
+Women's Flyweight,18,Karine Silva,score order #17; head-to-head -> #18,fight record,-0.037,0.135,-0.022,0.15,1583.016,1583.016,0.0,False,-1.5,+0.5 QW +0.0 proof -0.0 blowout -2.0 weak,0,1,False,2-3,L2,190,0.0,18.0,19.0
+Women's Flyweight,19,Lauren Murphy,score order #19,fight record,-0.07,0.0,0.08,0.15,1535.803,1565.803,30.0,False,0.85,+1.8 QW +0.1 proof -0.0 blowout -1.0 weak,5,5,True,2-3,L2,470,0.019,16.0,19.0
+Women's Flyweight,20,Veronica Hardy,score order #20,fight record,-0.136,-0.147,0.011,0.0,1484.293,1490.293,6.0,False,-0.75,+0.2 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,4-1,W1,386,0.0,20.0,21.0
+Women's Flyweight,21,Luana Carolina,score order #21,fight record,-0.142,-0.142,0.0,0.0,1485.876,1493.876,8.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,L1,393,0.081,21.0,22.0
+Women's Flyweight,22,Ernesta Kareckaite,score order #22,fight record,-0.144,-0.1,-0.043,0.0,1500.598,1500.598,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,1-2,L1,15,0.0,20.0,24.0
+Women's Flyweight,23,Mackenzie Stiller,score order #23,fight record,-0.151,-0.151,0.0,0.0,1482.729,1482.729,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,0-1,L1,8,0.872,22.0,23.0
+Women's Flyweight,24,Viviane Araujo,score order #24,fight record,-0.16,-0.079,0.069,0.15,1508.113,1542.113,34.0,False,0.6,+2.6 QW +0.0 proof -1.0 blowout -1.0 weak,4,7,True,2-3,L1,484,0.0,22.0,24.0
+Women's Flyweight,25,Gabriella Fernandes,score order #25,fight record,-0.178,-0.178,0.0,0.0,1473.391,1473.391,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,L1,211,0.078,24.0,25.0
+Women's Flyweight,26,Jeisla Chaves,score order #26,fight record,-0.204,-0.204,0.0,0.0,1464.421,1464.421,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-1,L1,64,0.213,26.0,26.0
+Women's Flyweight,27,Anna Melisano,score order #27,fight record,-0.209,-0.209,0.0,0.0,1462.439,1462.439,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,0-1,L1,99,0.0,27.0,27.0
+Women's Flyweight,28,Tereza Bleda,score order #28,fight record,-0.215,-0.215,0.0,0.0,1460.248,1460.248,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,1-2,L1,316,0.458,28.0,29.0
+Women's Flyweight,29,Yuneisy Duben,score order #29,fight record,-0.237,-0.194,-0.043,0.0,1467.673,1467.673,0.0,False,-2.0,+0.0 QW +0.0 proof -1.0 blowout -1.0 weak,0,0,False,0-2,L2,141,0.296,28.0,29.0
+Women's Flyweight,30,Juliana Miller,score order #30,fight record,-0.304,-0.154,0.0,0.15,1481.938,1481.938,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,2-3,W1,78,0.071,30.0,31.0
+Women's Strawweight,0,Mackenzie Dern,title holder,title holder or reserved,0.756,0.347,0.409,0.0,1651.248,1651.248,0.0,False,7.0,+6.5 QW +0.5 proof -0.0 blowout -0.0 weak,6,8,True,4-1,W4,71,0.025,0.0,0.0
+Women's Strawweight,1,Zhang Weili,score order #1,fight record,0.942,0.604,0.338,0.0,1729.991,1729.991,0.0,False,5.6,+6.6 QW +0.0 proof -1.0 blowout -0.0 weak,7,7,True,4-1,L1,344,0.026,1.0,1.0
+Women's Strawweight,2,Tatiana Suarez,score order #2,fight record,0.798,0.57,0.228,0.0,1719.589,1719.589,0.0,False,3.45,+4.4 QW +0.0 proof -1.0 blowout -0.0 weak,6,6,True,4-1,W2,197,0.0,2.0,3.0
+Women's Strawweight,3,Virna Jandiroba,score order #3,fight record,0.781,0.405,0.376,0.0,1668.894,1668.894,0.0,False,6.35,+6.3 QW +0.0 proof -0.0 blowout -0.0 weak,5,7,True,4-1,W1,204,0.0,2.0,3.0
+Women's Strawweight,4,Gillian Robertson,score order #4,fight record,0.521,0.342,0.179,0.0,1649.725,1649.725,0.0,False,2.5,+3.5 QW +0.0 proof -1.0 blowout -0.0 weak,2,4,False,4-1,L1,71,0.007,4.0,4.0
+Women's Strawweight,5,Iasmin Lucindo,score order #5,fight record,0.46,0.281,0.179,0.0,1631.129,1631.129,0.0,False,2.5,+2.0 QW +0.5 proof -0.0 blowout -0.0 weak,1,3,False,4-1,W2,1,0.0,5.0,5.0
+Women's Strawweight,6,Loopy Godinez,score order #6,fight record,0.42,0.226,0.194,0.0,1614.154,1614.154,0.0,False,2.8,+2.8 QW +1.0 proof -0.0 blowout -1.0 weak,2,3,False,3-2,W1,15,0.0,6.0,8.0
+Women's Strawweight,7,Fatima Kline,score order #7,fight record,0.405,0.328,0.077,0.0,1645.372,1645.372,0.0,False,0.5,+1.5 QW +0.0 proof -1.0 blowout -0.0 weak,1,2,False,4-1,W4,99,0.0,6.0,9.0
+Women's Strawweight,8,Denise Gomes,score order #8,fight record,0.389,0.274,0.115,0.0,1628.822,1628.822,0.0,False,1.25,+2.2 QW +0.0 proof -0.0 blowout -1.0 weak,1,2,False,5-0,W5,57,0.0,7.0,8.0
+Women's Strawweight,9,Alexia Thainara,score order #9,fight record,0.379,0.251,0.128,0.0,1621.939,1621.939,0.0,False,1.5,+1.5 QW +0.0 proof -0.0 blowout -0.0 weak,1,2,False,4-0,W4,78,0.0,8.0,9.0
+Women's Strawweight,10,Jaqueline Amorim,score order #10,fight record,0.238,0.238,0.0,0.0,1617.798,1617.798,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W1,148,0.0,10.0,11.0
+Women's Strawweight,11,Jessica Andrade,score order #11,fight record,0.202,0.116,0.235,0.15,1580.608,1600.608,20.0,False,3.6,+6.6 QW +0.0 proof -2.0 blowout -1.0 weak,12,13,True,2-3,L3,435,0.068,10.0,13.0
+Women's Strawweight,12,Stephanie Luciano,score order #12,fight record,0.186,0.186,0.0,0.0,1601.822,1601.822,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-1,W2,85,0.0,11.0,12.0
+Women's Strawweight,13,Shanelle Dyer,score order #13,fight record,0.124,0.072,0.051,0.0,1567.183,1567.183,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,2-0,W2,64,0.0,13.0,14.0
+Women's Strawweight,14,Tecia Pennington,score order #14,fight record,0.109,0.231,0.028,0.15,1615.616,1615.616,0.0,False,-0.45,+1.2 QW +0.3 proof -1.0 blowout -1.0 weak,1,4,False,2-3,L1,351,0.0,12.0,14.0
+Women's Strawweight,15,Yan Xiaonan,score order #15,fight record,0.065,0.143,0.072,0.15,1588.905,1588.905,0.0,False,0.4,+3.4 QW +0.0 proof -3.0 blowout -0.0 weak,4,5,True,2-3,L2,57,0.081,15.0,18.0
+Women's Strawweight,16,Piera Rodriguez,score order #16,fight record,0.062,0.062,0.0,0.0,1563.962,1563.962,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,3-2,W3,225,0.0,15.0,18.0
+Women's Strawweight,17,Tina Black,score order #17,fight record,0.051,0.0,0.051,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,29,0.0,16.0,20.0
+Women's Strawweight,18,Delphine Benouaich,score order #18,fight record,0.051,0.0,0.051,0.0,1545.0,1545.0,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,50,0.0,15.0,21.0
+Women's Strawweight,19,Alice Ardelean,score order #19,fight record,0.021,0.072,-0.051,0.0,1566.936,1566.936,0.0,False,-2.0,+0.0 QW +0.0 proof -0.0 blowout -2.0 weak,0,0,False,3-2,W3,162,0.0,17.0,23.0
+Women's Strawweight,20,Tabatha Ricci,score order #20,fight record,0.014,0.118,0.046,0.15,1581.149,1581.149,0.0,False,-0.1,+2.4 QW +0.5 proof -2.0 blowout -1.0 weak,2,2,False,2-3,L2,99,0.035,19.0,22.0
+Women's Strawweight,21,Talita Alencar,score order #21,fight record,0.014,0.014,0.0,0.0,1549.221,1549.221,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,4-1,W3,183,0.0,16.9,21.0
+Women's Strawweight,22,Julia Polastri,score order #22,fight record,-0.002,0.1,-0.102,0.0,1575.698,1575.698,0.0,False,-3.0,+0.0 QW +0.0 proof -0.0 blowout -3.0 weak,0,0,False,3-2,W1,57,0.0,17.0,25.0
+Women's Strawweight,23,Mizuki,score order #23,fight record,-0.031,-0.082,0.051,0.0,1519.829,1519.829,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,3-1,W2,365,0.0,21.0,25.0
+Women's Strawweight,24,Carol Foro,score order #24,fight record,-0.043,-0.094,0.051,0.0,1516.224,1516.224,0.0,False,0.0,+0.0 QW +0.0 proof -0.0 blowout -0.0 weak,0,0,False,1-0,W1,78,0.0,22.0,26.0
+Women's Strawweight,25,Yazmin Jauregui,score order #25,fight record,-0.054,-0.054,0.0,0.0,1528.615,1528.615,0.0,False,-1.0,+0.0 QW +0.0 proof -1.0 blowout -0.0 weak,0,0,False,3-2,W1,29,0.071,24.0,25.0
+Women's Strawweight,26,Angela Hill,score order #26,fight record,-0.083,0.095,-0.028,0.15,1574.198,1574.198,0.0,False,-1.55,+1.4 QW +0.0 proof -2.0 blowout -1.0 weak,1,3,False,2-3,W1,148,0.0,23.0,26.0
+Women's Strawweight,27,Sam Hughes,score order #27,fight record,-0.157,-0.106,-0.051,0.0,1512.686,1512.686,0.0,False,-2.0,+0.0 QW +0.0 proof -2.0 blowout -0.0 weak,0,0,False,3-2,L1,225,0.048,27.0,28.0
+Women's Strawweight,28,Shi Ming,score order #28,fight record,-0.164,-0.164,0.0,0.0,1494.737,1512.737,18.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,1-1,L1,428,0.0,27.0,28.0
+Women's Strawweight,29,Loma Lookboonmee,score order #29,fight record,-0.195,-0.144,-0.051,0.0,1500.997,1500.997,0.0,False,-2.0,+0.0 QW +0.0 proof -2.0 blowout -0.0 weak,0,0,False,3-2,L2,148,0.0,29.0,30.0
+Women's Strawweight,30,Gigi Canuto,score order #30,fight record,-0.2,-0.2,0.0,0.0,1483.776,1483.776,0.0,False,-1.0,+0.0 QW +0.0 proof -0.0 blowout -1.0 weak,0,0,False,0-1,L1,78,0.0,29.0,31.0

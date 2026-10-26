@@ -2470,3 +2470,17 @@ date,event,division,fighter_a,pos_a,fighter_b,pos_b,top10_bout,top15_bout,title_
 2026-10-17,UFC Fight Night: Buckley vs. Malott,Women's Flyweight,Katlyn Cerminara,999,Mackenzie Stiller,999,False,False,False,False,KO/TKO
 2026-10-17,UFC Fight Night: Buckley vs. Malott,Women's Bantamweight,Melissa Croden,6,Chelsea Chandler,22,False,False,False,False,SUB
 2026-10-17,UFC Fight Night: Buckley vs. Malott,Bantamweight,Chad Anheliger,999,Steven Koslow,999,False,False,False,False,SUB
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Lightweight,Kody Steele,76,Noah Gugnon,58,False,False,False,False,KO/TKO
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Featherweight,Bolaji Oki,999,Daniel Santos,35,False,False,False,False,U-DEC
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Middleweight,Abubakar Vagaev,999,Jacob Malkoun,30,False,False,False,False,U-DEC
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Women's Strawweight,Iasmin Lucindo,8,Nicolle Caliari,38,False,False,False,False,U-DEC
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Bantamweight,Colby Thicknesse,60,Asaf Chopurov,999,False,False,False,False,S-DEC
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Light Heavyweight,Nikita Krylov,12,Abdul Rakhman Yakhyaev,13,False,True,False,False,KO/TKO
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Middleweight,Abus Magomedov,15,Cam Rowston,17,False,False,False,False,SUB
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Featherweight,Aaron Pico,27,Losene Keita,30,False,False,False,False,KO/TKO
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Heavyweight,Alexander Volkov,2,Rizvan Kuniev,15,False,True,False,False,U-DEC
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Flyweight,Lone'er Kavanagh,17,Ramazan Temirov,5,False,False,False,False,KO/TKO
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Light Heavyweight,Azamat Murzakanov,9,Dominick Reyes,8,True,True,False,True,KO/TKO
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Lightweight,Grant Dawson,11,Nurullo Aliev,31,False,False,False,False,U-DEC
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Featherweight,Alexander Volkanovski,1,Movsar Evloev,5,True,True,True,False,KO/TKO
+2026-10-24,UFC 333: Volkanovski vs. Evloev,Bantamweight,Petr Yan,2,Merab Dvalishvili,1,True,True,True,False,U-DEC
