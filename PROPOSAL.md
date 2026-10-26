@@ -30,7 +30,7 @@ Dating rule applied: a retirement announced in the cage on fight night D takes e
 
 | # | File | Change | Why |
 |---|---|---|---|
-| 7 | `config/favorites.yaml`, `docs/favorites.html` | Honorable mentions: Lone'er Kavanagh in (last five 3-2, W1 after the R1 KO of Temirov at UFC 333), Diego Lopes out; `list_set` moved to 2026-10-26. Top ten unchanged. | Brayton's personal list decision; no effect on the REAL boards |
+| 7 | `config/favorites.yaml`, `docs/favorites.html` | Top ten: Lone'er Kavanagh in at #9 (last five 3-2, W1 after the R1 KO of Temirov at UFC 333), Manel Kape #9 -> #10, Lerone Murphy #10 -> honorable mentions. Honorable mentions: Diego Lopes out. `list_set` moved to 2026-10-26. | Brayton's personal list decision; no effect on the REAL boards |
 
 ### C. Checked, nothing to add
 
