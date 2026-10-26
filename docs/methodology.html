@@ -1,5 +1,5 @@
 <!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Methodology</title><style>body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;max-width:900px;margin:0 auto;padding:24px 16px;line-height:1.5;color:#0b0b0b;background:#fcfcfb}table{border-collapse:collapse;width:100%;font-size:.88rem;display:block;overflow-x:auto}th,td{border-bottom:1px solid #e1e0d9;padding:5px 8px;text-align:left;vertical-align:top}@media (prefers-color-scheme: dark){body{color:#fff;background:#1a1a19}th,td{border-color:#2c2c2a}}</style></head><body><p><a href='index.html'>Back to the boards</a></p><h1>REAL Fighter Rankings: Methodology, version 1.0</h1>
-<p><em>Results, Evidence, Analytics, Ledger.</em> Data through 2026-10-17. This document is generated from the live configuration (<code>config/weights.yaml</code>) and the audit trail (<code>outputs/audit_top30.csv</code>) on every rebuild.</p>
+<p><em>Results, Evidence, Analytics, Ledger.</em> Data through 2026-10-24. This document is generated from the live configuration (<code>config/weights.yaml</code>) and the audit trail (<code>outputs/audit_top30.csv</code>) on every rebuild.</p>
 <h2>1. What the rank means</h2>
 <p>A resume rank: who has earned the position as of today, updated automatically each week. The single principle behind every rule: <strong>a fighter is ranked on how he performed against the fighters he faced, and how good those fighters were.</strong> The goal is the most defensible board possible, not agreement with any other board. It is not a prediction of who would win tomorrow; that is a separate model (section 8, and the Prediction page). Champions (C), interim champions (IC) and reserved spots (R: former champions who vacated with an injury and are owed a title shot) sit above the numbered board with their metrics shown. Contenders are numbered 1 to 30.</p>
 <h2>2. Data and how far to trust it</h2>
@@ -16,7 +16,7 @@
 <tr>
 <td>UFCStats (official UFC statistics), via the Greco1899 open scraper</td>
 <td>Every UFC bout: result, method, round, time, judges' scorecards, round-by-round strikes, knockdowns, takedowns, submission attempts, control time</td>
-<td>8,950 bouts, 1994 to 2026-10-17; round stats for 99.8%; all three judges' cards for 98.6% of decisions (100% since 2005)</td>
+<td>8,964 bouts, 1994 to 2026-10-24; round stats for 99.8%; all three judges' cards for 98.6% of decisions (100% since 2005)</td>
 <td>High for what it records. Strike counts are hand-coded and do not measure damage. Judges' cards are official but can be wrong.</td>
 </tr>
 <tr>
@@ -197,9 +197,9 @@
 <li><strong>Reserved spots.</strong> Former champions who vacated because of injury are listed as R above the numbered board (<code>config/reserved.yaml</code>).</li>
 </ul>
 <h2>8. Validation</h2>
-<p>Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.7 to 2.0 places; the public boards differ from each other by 0.8 to 1.6. Disagreement is expected and reported, not removed: <code>outputs/compare_flags.csv</code> lists every large gap with its cause.</p>
+<p>Agreement with the public boards (UFC contenders only, champions removed): our average gap is 2.0 to 2.2 places; the public boards differ from each other by 0.8 to 1.6. Disagreement is expected and reported, not removed: <code>outputs/compare_flags.csv</code> lists every large gap with its cause.</p>
 <p>The separate predictive model (performance-adjusted Elo, the specification a 520-point grid selected on 2010-2019) scores 60.6% accuracy and 0.6631 log loss on 3,390 held-out bouts from 2020 on, against 58.1% and 0.674 for results-only Elo (paired log-loss gain 0.011, 95% event-block bootstrap interval 0.006 to 0.016; McNemar exact p = 0.0025). On the 1,445 held-out bouts with closing odds (2020-2023) the de-vigged market scored 67.1% and 0.6088 against the model's 60.0% and 0.669.</p>
-<p><strong>Retrospective reconstruction of the resume board (not a forward test).</strong> Boards were rebuilt with the v1.0 rules as they would have stood before each of the last 130 events. Across the 940 bouts in which both fighters held a place on that board, the higher-placed fighter won 61.5% (95% Wilson interval 58% to 64%); the frozen score-to-probability map scored 0.6671 log loss against 0.6729 for results-only Elo and 0.6502 for the performance-adjusted model on the same bouts. Restricted to bouts between two top-15 fighters (226 bouts) the figure is 54.4%, against 52.0% for the official board on the 204 bouts it ranked both fighters; ranked-versus-ranked bouts are matched to be close, so every board sits near a coin flip on them and the differences are inside sampling error. Because these boards were reconstructed with today's rules, none of this is evidence of forward validity. The pre-registered prospective test (PREREGISTRATION.md) starts with the first event after 2026-10-01; so far it covers 19 bouts.</p>
+<p><strong>Retrospective reconstruction of the resume board (not a forward test).</strong> Boards were rebuilt with the v1.0 rules as they would have stood before each of the last 131 events. Across the 940 bouts in which both fighters held a place on that board, the higher-placed fighter won 61.5% (95% Wilson interval 58% to 64%); the frozen score-to-probability map scored 0.6671 log loss against 0.6729 for results-only Elo and 0.6502 for the performance-adjusted model on the same bouts. Restricted to bouts between two top-15 fighters (226 bouts) the figure is 54.4%, against 52.0% for the official board on the 204 bouts it ranked both fighters; ranked-versus-ranked bouts are matched to be close, so every board sits near a coin flip on them and the differences are inside sampling error. Because these boards were reconstructed with today's rules, none of this is evidence of forward validity. The pre-registered prospective test (PREREGISTRATION.md) starts with the first event after 2026-10-01; so far it covers 29 bouts.</p>
 <h2>9. Worked examples (from this rebuild's audit trail)</h2>
 <table>
 <thead>
@@ -243,8 +243,8 @@
 <td>Jiri Prochazka</td>
 <td>#4</td>
 <td>score order #2; title cycle -&gt; #4</td>
-<td>+0.55</td>
-<td>+0.29</td>
+<td>+0.52</td>
+<td>+0.28</td>
 <td>-0.00</td>
 <td>+6.5 QW +0.0 proof -2.0 blowout -0.0 weak</td>
 <td>3-2</td>
@@ -252,10 +252,10 @@
 <tr>
 <td>Light Heavyweight</td>
 <td>Khalil Rountree Jr.</td>
-<td>#9</td>
-<td>score order #9</td>
+<td>#8</td>
+<td>score order #8</td>
+<td>+0.19</td>
 <td>+0.21</td>
-<td>+0.22</td>
 <td>-0.00</td>
 <td>+3.1 QW +0.0 proof -0.0 blowout -0.0 weak</td>
 <td>3-2</td>
@@ -274,10 +274,10 @@
 <tr>
 <td>Welterweight</td>
 <td>Kamaru Usman</td>
-<td>#9</td>
-<td>score order #9</td>
-<td>+0.79</td>
-<td>+0.29</td>
+<td>#10</td>
+<td>score order #10</td>
+<td>+0.78</td>
+<td>+0.28</td>
 <td>-0.60</td>
 <td>+5.2 QW +0.0 proof -1.0 blowout -0.0 weak</td>
 <td>1-4</td>
@@ -298,7 +298,7 @@
 <td>Brandon Moreno</td>
 <td>#6</td>
 <td>score order #4; title cycle -&gt; #6</td>
-<td>+0.34</td>
+<td>+0.36</td>
 <td>+0.31</td>
 <td>-0.00</td>
 <td>+6.6 QW +0.0 proof -0.0 blowout -1.0 weak</td>
@@ -309,7 +309,7 @@
 <td>Max Holloway</td>
 <td>#2</td>
 <td>score order #1; head-to-head -&gt; #2</td>
-<td>+0.92</td>
+<td>+0.91</td>
 <td>+0.63</td>
 <td>-0.00</td>
 <td>+8.4 QW +0.0 proof -1.0 blowout -0.0 weak</td>
@@ -495,7 +495,7 @@
 <li><code>form_penalty</code>: <code>{"2-3": 0.1, "1-4": 0.3, "0-5": 0.4}</code></li>
 <li><code>form_bad_loss</code>: <code>{"rank_above": 10, "per_loss": 0.1, "cap": 0.3}</code></li>
 <li><code>placement</code>: <code>"solver"</code></li>
-<li>record: prospective 0 bouts; retrospective reconstruction (in-sample) 977 bouts, concordance 0.606.</li>
+<li>record: prospective 10 bouts, concordance 0.700; retrospective reconstruction (in-sample) 977 bouts, concordance 0.606.</li>
 </ul>
 <h2>14. Age, decline and rise: what the rating misses, shown beside the rank</h2>
 <p>Section 12 records why no board carries an age term: a resume rank is earned against the fighters a man was matched with, and an older contender loses more often because he is matched with the best. The question the ranking cannot answer, and that readers ask first about an ageing champion or a rising prospect, is how far the rating now sits from the fighter's current level. The decline and rise index answers it beside the rank (<code>src/mmalab/decline.py</code>, settings in <code>config/decline.yaml</code>, shown in the Trajectory section of every profile page). No board reads it.</p>
@@ -764,4 +764,4 @@ penalty; division, head-to-head, title-cycle and reserved-spot rules; audit trai
 <h3>0.x (2026-09-29 to 2026-09-30)</h3>
 <p>Composite of six percentile dimensions, replaced after review because four dimensions carried no ranking signal and losses were
 counted three times.</p>
-<p>Independent fan and research project. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete.</p><p class='meta'>REAL v1.0 (registered method) · build 70ce0a5 · data through 2026-10-17 · page built 2026-10-23 · <a href='https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/CHANGELOG.md'>changelog</a>. Independent fan research project built on public UFCStats data. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete. All trademarks belong to their owners and are used only to identify athletes and events.</p></body></html>
+<p>Independent fan and research project. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete.</p><p class='meta'>REAL v1.0 (registered method) · build 19a233e · data through 2026-10-24 · page built 2026-10-26 · <a href='https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/CHANGELOG.md'>changelog</a>. Independent fan research project built on public UFCStats data. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete. All trademarks belong to their owners and are used only to identify athletes and events.</p></body></html>

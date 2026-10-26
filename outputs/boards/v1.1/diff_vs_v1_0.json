@@ -1,54 +1,60 @@
 {
-  "top15_slots_compared": 194,
-  "top15_slots_changed": 111,
+  "top15_slots_compared": 193,
+  "top15_slots_changed": 110,
   "largest_moves": [
     {
       "division": "Bantamweight",
       "fighter": "Marlon Vera",
       "v1.0": 54,
-      "v1.1": 14
+      "v1.1": 13
     },
     {
-      "division": "Featherweight",
-      "fighter": "Brian Ortega",
-      "v1.0": 40,
+      "division": "Bantamweight",
+      "fighter": "Deiveson Figueiredo",
+      "v1.0": 50,
       "v1.1": 15
     },
     {
       "division": "Light Heavyweight",
       "fighter": "Jan Blachowicz",
-      "v1.0": 27,
+      "v1.0": 26,
       "v1.1": 13
     },
     {
       "division": "Middleweight",
       "fighter": "Israel Adesanya",
-      "v1.0": 27,
+      "v1.0": 26,
+      "v1.1": 13
+    },
+    {
+      "division": "Light Heavyweight",
+      "fighter": "Jamahal Hill",
+      "v1.0": 23,
       "v1.1": 14
     },
     {
       "division": "Women's Flyweight",
       "fighter": "Viviane Araujo",
-      "v1.0": 24,
+      "v1.0": 23,
       "v1.1": 15
     },
     {
       "division": "Lightweight",
       "fighter": "Jim Miller",
       "v1.0": 11,
-      "v1.1": 19
+      "v1.1": 18
     },
     {
-      "division": "Flyweight",
-      "fighter": "Fabia Sintes",
-      "v1.0": 23,
+      "division": "Welterweight",
+      "fighter": "Joaquin Buckley",
+      "v1.0": 22,
       "v1.1": 15
     },
     {
       "division": "Lightweight",
       "fighter": "Jalin Turner",
       "v1.0": 15,
-      "v1.1": 23
+      "v1.1": 22
     },
     {
       "division": "Welterweight",
@@ -57,28 +63,22 @@
       "v1.1": 22
     },
     {
-      "division": "Middleweight",
-      "fighter": "Bo Nickal",
-      "v1.0": 14,
-      "v1.1": 20
-    },
-    {
-      "division": "Welterweight",
-      "fighter": "Joaquin Buckley",
-      "v1.0": 21,
-      "v1.1": 15
-    },
-    {
-      "division": "Light Heavyweight",
-      "fighter": "Jamahal Hill",
-      "v1.0": 20,
-      "v1.1": 14
-    },
-    {
       "division": "Featherweight",
       "fighter": "Cub Swanson",
       "v1.0": 12,
       "v1.1": 18
+    },
+    {
+      "division": "Flyweight",
+      "fighter": "Tim Elliott",
+      "v1.0": 9,
+      "v1.1": 15
+    },
+    {
+      "division": "Featherweight",
+      "fighter": "Marcio Barbosa",
+      "v1.0": 19,
+      "v1.1": 14
     },
     {
       "division": "Bantamweight",
@@ -87,10 +87,10 @@
       "v1.1": 12
     },
     {
-      "division": "Featherweight",
-      "fighter": "Joanderson Brito",
-      "v1.0": 11,
-      "v1.1": 16
+      "division": "Welterweight",
+      "fighter": "Kamaru Usman",
+      "v1.0": 10,
+      "v1.1": 5
     }
   ]
 }
