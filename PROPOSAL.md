@@ -26,6 +26,12 @@ Dating rule applied: a retirement announced in the cage on fight night D takes e
 | 5 | `config/layoffs.yaml` | Petr Yan: `until: 2026-10-25` | He returned from back surgery and beat Merab Dvalishvili at UFC 333; the layoff entry closes from the first board that holds the bout | https://www.cbssports.com/ufc/news/ufc-333-fight-card-alexander-volkanovski-movsar-evloev-results-winners/ (already-cited surgery sources kept) |
 | 6 | `data/raw/*`, `data/processed/*`, `outputs/*`, `docs/*`, `METHODOLOGY.md`, `predictions/picks.csv` | Refreshed UFCStats and rebuilt with `run_all --quick` | Adds UFC 333; grades its picks; adds `outputs/history/board_2026-10-24.csv` (and the v1.1 shadow snapshot) | Greco1899/scrape_ufc_stats |
 
+### B2. Added at Brayton's direction (Oct 26)
+
+| # | File | Change | Why |
+|---|---|---|---|
+| 7 | `config/favorites.yaml`, `docs/favorites.html` | Honorable mentions: Lone'er Kavanagh in (last five 3-2, W1 after the R1 KO of Temirov at UFC 333), Diego Lopes out; `list_set` moved to 2026-10-26. Top ten unchanged. | Brayton's personal list decision; no effect on the REAL boards |
+
 ### C. Checked, nothing to add
 
 - **Short notice at UFC 333:** none. The one replacement, Losene Keita for the injured Arnold Allen against Aaron Pico, was reported Sept 17 to 18, about 36 days out (https://www.si.com/fannation/mma/news/ufc-333-main-card-fight-reportedly-hit-with-major-change). No missed weight reported.
