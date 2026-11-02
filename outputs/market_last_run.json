@@ -1,36 +1,26 @@
 {
-  "fetched_at_utc": "2026-10-26T18:58:30Z",
-  "bouts_from_api": 43,
-  "bouts_with_consensus": 19,
-  "matched_to_pending_picks": 11,
-  "credits_remaining": "485",
-  "credits_used_this_month": "15",
+  "fetched_at_utc": "2026-11-02T14:15:52Z",
+  "bouts_from_api": 56,
+  "bouts_with_consensus": 31,
+  "matched_to_pending_picks": 23,
+  "credits_remaining": "497",
+  "credits_used_this_month": "3",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
-    "Francis Marshall vs Gaston Bolanos (2026-10-31)",
-    "Julian Erosa vs JeongYeong Lee (2026-10-31)",
-    "Azamat Bekoev vs Andre Petroski (2026-10-31)",
-    "Randy Brown vs Carlos Leal (2026-10-31)",
-    "Nick Klein vs Joe Kropschot (2026-10-31)",
-    "Jonny Parsons vs Jose Henrique (2026-11-07)",
-    "Priscila Cachoeira vs Nina Milosevic (2026-11-07)",
     "Austin Bashi vs Lucas Brennan (2026-11-07)",
-    "Keiichiro Nakamura vs Ollie Schmid (2026-11-07)",
-    "Jose Delano vs Murtazali Magomedov (2026-11-07)",
-    "Karine Silva vs Gabriella Fernandes (2026-11-07)",
     "Gabriel Loren\u00e7o vs Alvin Hines (2026-11-07)",
     "Mantas Kondratavicius vs Wes Schultz (2026-11-07)",
-    "Billy Elekana vs Lucas Fernando (2026-11-07)",
     "Seokhyeon Ko vs Wellington Turman (2026-11-07)",
-    "Davey Grant vs Elijah Smith (2026-11-07)",
-    "Tatiana Suarez vs Virna Jandiroba (2026-11-07)",
     "Gabriel Bonfim vs Sean Brady (2026-11-07)",
-    "Zach Reese vs Mickey Gall (2026-10-31)"
+    "Nazim Sadykhov vs Jefferson Nascimento (2026-11-14)",
+    "Adrian Yanez vs Juan Diaz (2026-11-14)",
+    "Stephen Thompson vs Charles Radtke (2026-11-14)",
+    "Gabriel Loren\u00e7o vs Thomas Petersen (2026-11-07)"
   ],
   "unmatched_market_bouts": [
-    "Julian Erosa vs Jeongyoung Lee (2026-11-01, 14 books)",
-    "Nick Klein vs Joseph Kropschot (2026-11-01, 21 books)",
-    "Zachary Reese vs Mickey Gall (2026-11-01, 14 books)"
+    "Thomas Petersen vs Gabriel Lourenco (2026-11-07, 17 books)",
+    "Seok Hyun Ko vs Wellington Turman (2026-11-08, 20 books)",
+    "Stephen Thompson vs Charlie Radtke (2026-11-15, 2 books)"
   ]
 }
