@@ -1,17 +1,17 @@
 {
-  "top15_slots_compared": 194,
-  "top15_slots_changed": 113,
+  "top15_slots_compared": 192,
+  "top15_slots_changed": 111,
   "largest_moves": [
     {
       "division": "Bantamweight",
       "fighter": "Marlon Vera",
-      "v1.0": 54,
+      "v1.0": 55,
       "v1.1": 13
     },
     {
       "division": "Bantamweight",
       "fighter": "Deiveson Figueiredo",
-      "v1.0": 50,
+      "v1.0": 49,
       "v1.1": 15
     },
     {
@@ -21,16 +21,16 @@
       "v1.1": 13
     },
     {
-      "division": "Middleweight",
-      "fighter": "Israel Adesanya",
-      "v1.0": 26,
-      "v1.1": 13
-    },
-    {
       "division": "Flyweight",
       "fighter": "Fabia Sintes",
-      "v1.0": 24,
-      "v1.1": 15
+      "v1.0": 25,
+      "v1.1": 14
+    },
+    {
+      "division": "Middleweight",
+      "fighter": "Israel Adesanya",
+      "v1.0": 25,
+      "v1.1": 14
     },
     {
       "division": "Lightweight",
@@ -46,15 +46,15 @@
     },
     {
       "division": "Welterweight",
+      "fighter": "Joaquin Buckley",
+      "v1.0": 24,
+      "v1.1": 15
+    },
+    {
+      "division": "Welterweight",
       "fighter": "Neil Magny",
       "v1.0": 15,
       "v1.1": 23
-    },
-    {
-      "division": "Lightweight",
-      "fighter": "Jalin Turner",
-      "v1.0": 15,
-      "v1.1": 22
     },
     {
       "division": "Women's Flyweight",
@@ -63,16 +63,10 @@
       "v1.1": 12
     },
     {
-      "division": "Featherweight",
-      "fighter": "Cub Swanson",
-      "v1.0": 12,
-      "v1.1": 18
-    },
-    {
-      "division": "Welterweight",
-      "fighter": "Joaquin Buckley",
-      "v1.0": 21,
-      "v1.1": 15
+      "division": "Lightweight",
+      "fighter": "Jalin Turner",
+      "v1.0": 15,
+      "v1.1": 22
     },
     {
       "division": "Bantamweight",
@@ -81,16 +75,22 @@
       "v1.1": 19
     },
     {
-      "division": "Featherweight",
-      "fighter": "Marcio Barbosa",
-      "v1.0": 19,
-      "v1.1": 14
+      "division": "Welterweight",
+      "fighter": "Kamaru Usman",
+      "v1.0": 11,
+      "v1.1": 5
+    },
+    {
+      "division": "Middleweight",
+      "fighter": "Bo Nickal",
+      "v1.0": 14,
+      "v1.1": 19
     },
     {
       "division": "Flyweight",
-      "fighter": "Ramazan Temirov",
-      "v1.0": 16,
-      "v1.1": 11
+      "fighter": "Tim Elliott",
+      "v1.0": 10,
+      "v1.1": 15
     }
   ]
 }
