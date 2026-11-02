@@ -1,10 +1,10 @@
 {
-  "fetched_at_utc": "2026-11-02T14:52:27Z",
-  "bouts_from_api": 56,
+  "fetched_at_utc": "2026-11-02T22:03:48Z",
+  "bouts_from_api": 57,
   "bouts_with_consensus": 31,
   "matched_to_pending_picks": 23,
-  "credits_remaining": "494",
-  "credits_used_this_month": "6",
+  "credits_remaining": "491",
+  "credits_used_this_month": "9",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
@@ -19,8 +19,8 @@
     "Gabriel Loren\u00e7o vs Thomas Petersen (2026-11-07)"
   ],
   "unmatched_market_bouts": [
-    "Thomas Petersen vs Gabriel Lourenco (2026-11-07, 16 books)",
-    "Seok Hyun Ko vs Wellington Turman (2026-11-08, 19 books)",
+    "Thomas Petersen vs Gabriel Lourenco (2026-11-07, 18 books)",
+    "Seok Hyun Ko vs Wellington Turman (2026-11-08, 21 books)",
     "Stephen Thompson vs Charlie Radtke (2026-11-15, 2 books)"
   ]
 }
