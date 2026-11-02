@@ -1,0 +1,313 @@
+{
+ "train_queries": 6664,
+ "train_eligible": 4204,
+ "test_coverage": {
+  "eligible": 2721,
+  "opp_debut_or_inactive": 444,
+  "opp_other_division": 443,
+  "x_debut": 425,
+  "x_inactive": 103,
+  "no_snapshot_before_bout": 4
+ },
+ "test_median_pool": 78.0,
+ "models": {
+  "all_test_bouts": {
+   "R1": {
+    "top1": 0.0268,
+    "top3": 0.0862,
+    "top5": 0.1261,
+    "top15": 0.3082,
+    "mrr": 0.0923,
+    "queries": 4140
+   },
+   "R2": {
+    "top1": 0.0343,
+    "top3": 0.0894,
+    "top5": 0.1401,
+    "top15": 0.3271,
+    "mrr": 0.1,
+    "queries": 4140
+   },
+   "M": {
+    "top1": 0.0587,
+    "top3": 0.1517,
+    "top5": 0.2205,
+    "top15": 0.4309,
+    "mrr": 0.1456,
+    "queries": 4140
+   }
+  },
+  "eligible_only": {
+   "R1": {
+    "top1": 0.0408,
+    "top3": 0.1312,
+    "top5": 0.1918,
+    "top15": 0.4689,
+    "mrr": 0.1405,
+    "queries": 2721
+   },
+   "R2": {
+    "top1": 0.0522,
+    "top3": 0.136,
+    "top5": 0.2132,
+    "top15": 0.4976,
+    "mrr": 0.1521,
+    "queries": 2721
+   },
+   "M": {
+    "top1": 0.0893,
+    "top3": 0.2308,
+    "top5": 0.3355,
+    "top15": 0.6556,
+    "mrr": 0.2215,
+    "queries": 2721
+   }
+  }
+ },
+ "M_minus_R1_mrr": {
+  "mean": 0.081,
+  "ci95": [
+   0.0697,
+   0.0926
+  ]
+ },
+ "M_minus_R1_top15": {
+  "mean": 0.1867,
+  "ci95": [
+   0.1642,
+   0.2095
+  ]
+ },
+ "M_minus_R2_mrr": {
+  "mean": 0.0694,
+  "ci95": [
+   0.0579,
+   0.081
+  ]
+ },
+ "M_minus_R2_top15": {
+  "mean": 0.158,
+  "ci95": [
+   0.1365,
+   0.1786
+  ]
+ },
+ "M_by_year_all_bouts": [
+  {
+   "year": 2022,
+   "top1": 0.0656,
+   "top3": 0.1742,
+   "top5": 0.2485,
+   "top15": 0.455,
+   "mrr": 0.1586,
+   "queries": 1022
+  },
+  {
+   "year": 2023,
+   "top1": 0.0433,
+   "top3": 0.1337,
+   "top5": 0.1971,
+   "top15": 0.3913,
+   "mrr": 0.1261,
+   "queries": 1040
+  },
+  {
+   "year": 2024,
+   "top1": 0.06,
+   "top3": 0.1538,
+   "top5": 0.2369,
+   "top15": 0.4507,
+   "mrr": 0.1511,
+   "queries": 1034
+  },
+  {
+   "year": 2025,
+   "top1": 0.0661,
+   "top3": 0.1456,
+   "top5": 0.2002,
+   "top15": 0.4272,
+   "mrr": 0.1469,
+   "queries": 1044
+  }
+ ],
+ "coefficients_std": {
+  "log_rank_gap": -0.194,
+  "rank_gap_up": -0.047,
+  "c_rank_pct": -0.2369,
+  "x_rank_pct_x_c_rank_pct": 0.5657,
+  "both_off_ranked": 0.6368,
+  "log_off_gap": -0.5009,
+  "c_ranked_x_unranked": -0.3909,
+  "x_ranked_c_unranked": -0.3937,
+  "c_champion": 0.023,
+  "x_champion": 0.0,
+  "c_avail_logit": 0.2177,
+  "rematch": -0.3609,
+  "c_beat_x_before": 0.0479,
+  "streak_gap": -0.3264,
+  "both_won_last": 0.2614,
+  "c_lost_last": 0.0419,
+  "log_n_gap": -0.2014,
+  "c_debut_only": 0.0122,
+  "age_gap": -0.0047,
+  "log_days_gap": -0.1144
+ },
+ "examples": [
+  {
+   "date": "2025-11-22",
+   "fighter": "Dan Hooker",
+   "actual": "Arman Tsarukyan",
+   "position": 4,
+   "model_top5": [
+    "Justin Gaethje",
+    "Beneil Dariush",
+    "Paddy Pimblett",
+    "Arman Tsarukyan",
+    "Grant Dawson"
+   ]
+  },
+  {
+   "date": "2025-11-22",
+   "fighter": "Shamil Gaziev",
+   "actual": "Waldo Cortes Acosta",
+   "position": 5,
+   "model_top5": [
+    "Derrick Lewis",
+    "Jailton Almeida",
+    "Marcin Tybura",
+    "Mick Parkin",
+    "Waldo Cortes Acosta"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Alexandre Pantoja",
+   "actual": "Joshua Van",
+   "position": 1,
+   "model_top5": [
+    "Joshua Van",
+    "Tatsuro Taira",
+    "Brandon Moreno",
+    "Tagir Ulanbekov",
+    "Asu Almabayev"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Joshua Van",
+   "actual": "Alexandre Pantoja",
+   "position": 1,
+   "model_top5": [
+    "Alexandre Pantoja",
+    "Brandon Moreno",
+    "Manel Kape",
+    "Tatsuro Taira",
+    "Tagir Ulanbekov"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Bogdan Guskov",
+   "actual": "Jan Blachowicz",
+   "position": 14,
+   "model_top5": [
+    "Azamat Murzakanov",
+    "Dominick Reyes",
+    "Johnny Walker",
+    "Carlos Ulberg",
+    "Alonzo Menifield"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Brandon Moreno",
+   "actual": "Tatsuro Taira",
+   "position": 3,
+   "model_top5": [
+    "Joshua Van",
+    "Manel Kape",
+    "Tatsuro Taira",
+    "Alexandre Pantoja",
+    "Asu Almabayev"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Petr Yan",
+   "actual": "Merab Dvalishvili",
+   "position": 5,
+   "model_top5": [
+    "Umar Nurmagomedov",
+    "Mario Bautista",
+    "Cory Sandhagen",
+    "Rob Font",
+    "Merab Dvalishvili"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Merab Dvalishvili",
+   "actual": "Petr Yan",
+   "position": 3,
+   "model_top5": [
+    "Song Yadong",
+    "Aiemann Zahabi",
+    "Petr Yan",
+    "Vinicius Oliveira",
+    "Umar Nurmagomedov"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Jan Blachowicz",
+   "actual": "Bogdan Guskov",
+   "position": 10,
+   "model_top5": [
+    "Khalil Rountree Jr.",
+    "Jamahal Hill",
+    "Volkan Oezdemir",
+    "Jiri Prochazka",
+    "Alex Pereira"
+   ]
+  },
+  {
+   "date": "2025-12-06",
+   "fighter": "Tatsuro Taira",
+   "actual": "Brandon Moreno",
+   "position": 2,
+   "model_top5": [
+    "Manel Kape",
+    "Brandon Moreno",
+    "Joshua Van",
+    "Asu Almabayev",
+    "Kai Kara-France"
+   ]
+  },
+  {
+   "date": "2025-12-13",
+   "fighter": "Brandon Royval",
+   "actual": "Manel Kape",
+   "position": 2,
+   "model_top5": [
+    "Amir Albazi",
+    "Manel Kape",
+    "Brandon Moreno",
+    "Alex Perez",
+    "Asu Almabayev"
+   ]
+  },
+  {
+   "date": "2025-12-13",
+   "fighter": "Manel Kape",
+   "actual": "Brandon Royval",
+   "position": 9,
+   "model_top5": [
+    "Tatsuro Taira",
+    "Brandon Moreno",
+    "Joshua Van",
+    "Kai Kara-France",
+    "Alex Perez"
+   ]
+  }
+ ]
+}

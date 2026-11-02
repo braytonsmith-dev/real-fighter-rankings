@@ -50,6 +50,23 @@ FEATURES = [
     "last_win", "last_ko_loss", "last_other_loss", "last_nodecision", "last_finish_win", "streak",
     "losses_last3", "last_title", "title_winner", "age_c", "age_c_sq", "age_missing", "rating_pct", "women", "year_c",
 ]
+# Shape terms added by EXP-2026-11-02-02: the layoff effect is not a smooth curve (fighters 45-90 days out are
+# rarely booked again inside the window, those 150-365 days out often are) and it depends on the fighter's own
+# rhythm, experience, rating and recent losses. Chosen on the 2022-2025 calibration table, then confirmed inside
+# the training years alone (fit 2015-2018, score 2019-2021: log loss 0.611 -> 0.599).
+SHAPE = [f"db{k}" for k in range(1, len(DAYS_BUCKETS) - 1)] + ["days_x_gap", "days_x_n", "days_x_rating", "days_x_loss3"]
+FEATURES = FEATURES + SHAPE
+
+
+def _derived(P: pd.DataFrame) -> pd.DataFrame:
+    db = pd.cut(P["days_since"], DAYS_BUCKETS, right=False, labels=False)
+    for k in range(1, len(DAYS_BUCKETS) - 1):
+        P[f"db{k}"] = (db == k).astype(float)
+    P["days_x_gap"] = (P["log_days"] - 5) * (P["log_gap"] - 5)
+    P["days_x_n"] = (P["log_days"] - 5) * P["log_n"]
+    P["days_x_rating"] = (P["log_days"] - 5) * P["rating_pct"]
+    P["days_x_loss3"] = (P["log_days"] - 5) * P["losses_last3"]
+    return P
 
 
 def _long(bouts: pd.DataFrame) -> pd.DataFrame:
@@ -146,6 +163,7 @@ def build_panel(bouts: pd.DataFrame | None = None, fighters: pd.DataFrame | None
     P["age_c"] = (P["age"] - 30.0).fillna(0.0)
     P["age_c_sq"] = P["age_c"] ** 2
     P["year_c"] = (P["snapshot"].dt.year - 2018) / 5.0
+    P = _derived(P)
     for H in HORIZONS:
         P[f"y{H}"] = (P["next_in_days"] < H).astype(float)
     # the target window must close inside the data
@@ -241,6 +259,112 @@ def evaluate(P: pd.DataFrame, H: int, n_boot: int = 2000, seed: int = 7) -> dict
     out["coefficients_std"] = {k: round(float(v), 4) for k, v in zip(["intercept"] + FEATURES, w)}
     out["_test"] = te
     return out
+
+
+# ---------- recalibration (EXP-2026-11-02-02) ----------
+CAL_MONTHS = 12
+
+
+def _platt(p: np.ndarray, y: np.ndarray) -> tuple[float, float]:
+    """Fit y ~ sigmoid(a + b * logit(p)) by maximum likelihood."""
+    z = np.log(np.clip(p, 1e-6, 1 - 1e-6) / (1 - np.clip(p, 1e-6, 1 - 1e-6)))
+    w = fit_logit(z[:, None], y, l2=1e-6)
+    return float(w[0]), float(w[1])
+
+
+def _apply_platt(p: np.ndarray, ab: tuple[float, float]) -> np.ndarray:
+    z = np.log(np.clip(p, 1e-6, 1 - 1e-6) / (1 - np.clip(p, 1e-6, 1 - 1e-6)))
+    return 1 / (1 + np.exp(-(ab[0] + ab[1] * z)))
+
+
+def rolling_predictions(P: pd.DataFrame, H: int, years: list[int], first: str = TRAIN[0]) -> pd.DataFrame:
+    """Deployable predictions for every snapshot in `years`.
+
+    For test year Y the model may only learn from snapshots whose H-day window had closed by Jan 1 of Y
+    (snapshot + H <= Y-01-01). The last CAL_MONTHS of those snapshots are held back to fit a Platt
+    recalibration; the logistic model is fitted on the earlier ones. Returns the rows of `years` with
+    columns M_fixed (the original 2015-2021 fit), M_roll (expanding refit, no calibration) and M_cal (expanding
+    refit + Platt)."""
+    y = f"y{H}"
+    D = P.dropna(subset=[y])
+    D = D[D["snapshot"] >= first]
+    tr0 = D[D["snapshot"] <= TRAIN[1]]
+    mu0, sd0 = tr0[FEATURES].mean(), tr0[FEATURES].std().replace(0, 1)
+    w0 = fit_logit(((tr0[FEATURES] - mu0) / sd0).to_numpy(), tr0[y].to_numpy())
+    out = []
+    for Y in years:
+        cut = pd.Timestamp(f"{Y}-01-01")
+        known = D[D["snapshot"] + pd.Timedelta(days=H) <= cut]
+        cal_start = known["snapshot"].max() - pd.DateOffset(months=CAL_MONTHS - 1)
+        fit_rows, cal_rows = known[known["snapshot"] < cal_start], known[known["snapshot"] >= cal_start]
+        mu, sd = fit_rows[FEATURES].mean(), fit_rows[FEATURES].std().replace(0, 1)
+        w = fit_logit(((fit_rows[FEATURES] - mu) / sd).to_numpy(), fit_rows[y].to_numpy())
+        ab = _platt(predict_logit(w, ((cal_rows[FEATURES] - mu) / sd).to_numpy()), cal_rows[y].to_numpy())
+        # deploy: refit on everything known, keep the calibration map
+        mu2, sd2 = known[FEATURES].mean(), known[FEATURES].std().replace(0, 1)
+        w2 = fit_logit(((known[FEATURES] - mu2) / sd2).to_numpy(), known[y].to_numpy())
+        T = P[P["snapshot"].dt.year == Y].copy()
+        T["M_fixed"] = predict_logit(w0, ((T[FEATURES] - mu0) / sd0).to_numpy())
+        T["M_roll"] = predict_logit(w2, ((T[FEATURES] - mu2) / sd2).to_numpy())
+        T["M_cal"] = _apply_platt(T["M_roll"].to_numpy(), ab)
+        T["platt_a"], T["platt_b"] = ab
+        out.append(T)
+    return pd.concat(out, ignore_index=True)
+
+
+def _ece(y, p, bins=10):
+    q = pd.qcut(p, bins, labels=False, duplicates="drop")
+    d = pd.DataFrame({"y": y, "p": p, "q": q}).groupby("q")
+    return float((d.size() / len(p) * (d["p"].mean() - d["y"].mean()).abs()).sum())
+
+
+def evaluate_calibration(P: pd.DataFrame, H: int, n_boot: int = 2000, seed: int = 11) -> dict:
+    R = rolling_predictions(P, H, [2022, 2023, 2024, 2025])
+    R = R.dropna(subset=[f"y{H}"])
+    yt = R[f"y{H}"].to_numpy()
+    res = {"horizon_days": H, "test_rows": int(len(R)), "observed_rate": round(float(yt.mean()), 4), "models": {}}
+    for m in ("M_fixed", "M_roll", "M_cal"):
+        p = R[m].to_numpy()
+        res["models"][m] = {"log_loss": round(float(_logloss(yt, p).mean()), 4),
+                            "brier": round(float(((p - yt) ** 2).mean()), 4), "auc": round(_auc(yt, p), 4),
+                            "mean_pred": round(float(p.mean()), 4), "ece": round(_ece(yt, p), 4)}
+    R["d"] = _logloss(yt, R["M_cal"].to_numpy()) - _logloss(yt, R["M_fixed"].to_numpy())
+    m = R.groupby("snapshot")["d"].agg(["sum", "count"])
+    rng = np.random.default_rng(seed)
+    s, c = m["sum"].to_numpy(), m["count"].to_numpy()
+    draws = [s[i].sum() / c[i].sum() for i in (rng.integers(0, len(s), len(s)) for _ in range(n_boot))]
+    res["M_cal_minus_M_fixed_logloss"] = {"mean": round(float(s.sum() / c.sum()), 4),
+                                          "ci95": [round(float(np.percentile(draws, 2.5)), 4),
+                                                   round(float(np.percentile(draws, 97.5)), 4)]}
+    R["dec"] = pd.qcut(R["M_cal"], 10, labels=False, duplicates="drop")
+    res["calibration_M_cal"] = [{"decile": int(k), "n": int(len(g)), "mean_pred": round(float(g["M_cal"].mean()), 3),
+                                 "observed": round(float(g[f"y{H}"].mean()), 3)} for k, g in R.groupby("dec")]
+    res["by_year"] = [{"year": int(k), "observed": round(float(g[f"y{H}"].mean()), 3),
+                       "M_fixed": round(float(g["M_fixed"].mean()), 3), "M_cal": round(float(g["M_cal"].mean()), 3),
+                       "platt_a": round(float(g["platt_a"].iloc[0]), 3), "platt_b": round(float(g["platt_b"].iloc[0]), 3)}
+                      for k, g in R.groupby(R["snapshot"].dt.year)]
+    return res
+
+
+def load_panel() -> pd.DataFrame:
+    p = OUT / "availability_panel.csv.gz"
+    if p.exists():
+        return _derived(pd.read_csv(p, parse_dates=["snapshot"]))
+    OUT.mkdir(parents=True, exist_ok=True)
+    P = build_panel()
+    P.to_csv(p, index=False)
+    return P
+
+
+def main_calibration() -> None:
+    P = load_panel()
+    res = {H: evaluate_calibration(P, H) for H in HORIZONS}
+    (OUT / "availability_calibration.json").write_text(json.dumps(res, indent=1, default=str))
+    for H, r in res.items():
+        print(f"H={H}: observed {r['observed_rate']}")
+        for m, v in r["models"].items():
+            print(f"   {m}: {v}")
+        print(f"   M_cal - M_fixed: {r['M_cal_minus_M_fixed_logloss']}")
 
 
 def main() -> None:
