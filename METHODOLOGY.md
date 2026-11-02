@@ -87,7 +87,7 @@ A **quality win** is valued by the opponent's official rank going into the fight
 
 ## 8. Validation
 
-Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.8 to 2.1 places; the public boards differ from each other by 0.8 to 1.6. Disagreement is expected and reported, not removed: `outputs/compare_flags.csv` lists every large gap with its cause.
+Agreement with the public boards (UFC contenders only, champions removed): our average gap is 1.8 to 2.1 places; the public boards differ from each other by 0.9 to 1.8. Disagreement is expected and reported, not removed: `outputs/compare_flags.csv` lists every large gap with its cause.
 
 The separate predictive model (performance-adjusted Elo, the specification a 520-point grid selected on 2010-2019) scores 60.6% accuracy and 0.6631 log loss on 3,390 held-out bouts from 2020 on, against 58.1% and 0.674 for results-only Elo (paired log-loss gain 0.011, 95% event-block bootstrap interval 0.006 to 0.016; McNemar exact p = 0.0025). On the 1,445 held-out bouts with closing odds (2020-2023) the de-vigged market scored 67.1% and 0.6088 against the model's 60.0% and 0.669.
 
@@ -97,15 +97,15 @@ The separate predictive model (performance-adjusted Elo, the specification a 520
 
 | Division | Fighter | Final | How he got there | Rating term | Ledger term | Form | Ledger detail | Last 5 |
 |---|---|---|---|---|---|---|---|---|
-| Bantamweight | Mario Bautista | #5 | score order #5 | +0.47 | +0.24 | -0.00 | +3.6 QW +0.0 proof -1.0 blowout -0.0 weak | 4-1 |
-| Bantamweight | Cory Sandhagen | #6 | score order #6 | +0.63 | +0.22 | -0.15 | +5.3 QW +0.0 proof -2.0 blowout -1.0 weak | 2-3 |
+| Bantamweight | Mario Bautista | #5 | score order #5 | +0.43 | +0.23 | -0.00 | +3.6 QW +0.0 proof -1.0 blowout -0.0 weak | 4-1 |
+| Bantamweight | Cory Sandhagen | #6 | score order #6 | +0.59 | +0.21 | -0.15 | +5.3 QW +0.0 proof -2.0 blowout -1.0 weak | 2-3 |
 | Light Heavyweight | Jiri Prochazka | #4 | score order #2; title cycle -> #4 | +0.52 | +0.28 | -0.00 | +6.5 QW +0.0 proof -2.0 blowout -0.0 weak | 3-2 |
 | Light Heavyweight | Khalil Rountree Jr. | #8 | score order #8 | +0.18 | +0.21 | -0.00 | +3.1 QW +0.0 proof -0.0 blowout -0.0 weak | 3-2 |
-| Heavyweight | Alex Pereira | #4 | score order #1; title cycle -> #4 | +0.77 | +0.46 | -0.00 | +10.5 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
-| Welterweight | Kamaru Usman | #9 | score order #9 | +0.78 | +0.29 | -0.60 | +5.2 QW +0.0 proof -1.0 blowout -0.0 weak | 1-4 |
-| Welterweight | Kevin Holland | #24 | score order #24 | +0.32 | -0.12 | -0.00 | +1.8 QW +0.0 proof -2.0 blowout -3.0 weak | 3-2 |
-| Flyweight | Brandon Moreno | #6 | score order #4; title cycle -> #6 | +0.36 | +0.31 | -0.00 | +6.6 QW +0.0 proof -0.0 blowout -1.0 weak | 3-2 |
-| Lightweight | Max Holloway | #2 | score order #1; head-to-head -> #2 | +0.95 | +0.65 | -0.00 | +8.4 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
+| Heavyweight | Alex Pereira | #4 | score order #1; title cycle -> #4 | +0.76 | +0.47 | -0.00 | +10.5 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
+| Welterweight | Kamaru Usman | #11 | score order #11 | +0.74 | +0.26 | -0.60 | +5.2 QW +0.0 proof -1.0 blowout -0.0 weak | 1-4 |
+| Welterweight | Kevin Holland | #23 | score order #23 | +0.30 | -0.11 | -0.00 | +1.8 QW +0.0 proof -2.0 blowout -3.0 weak | 3-2 |
+| Flyweight | Brandon Moreno | #6 | score order #4; title cycle -> #6 | +0.37 | +0.31 | -0.00 | +6.6 QW +0.0 proof -0.0 blowout -1.0 weak | 3-2 |
+| Lightweight | Max Holloway | #2 | score order #1; head-to-head -> #2 | +0.94 | +0.64 | -0.00 | +8.4 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
 
 ## 10. How REAL compares with published rating systems
 
@@ -179,12 +179,12 @@ Section 12 records why no board carries an age term: a resume rank is earned aga
 
 **Model.** Three parts, every one computed from information available before the bout. A population curve f(age), piecewise linear with knots at 27, 30, 33 and 36, one per sex, fitted on bouts from 2011: the average residual at each age, which is the rating's own age bias. An individual level: the fighter's recency-weighted mean residual around that curve over his earlier bouts, shrunk toward zero by a pseudo-count of bouts. An individual slope: the recency-weighted trend of those residuals against age, shrunk toward zero. The prediction for a fighter is f(age) + level + slope x (age - mean prior age). The three shrinkage settings (level 32, slope 200, half-life 4.0 years) were chosen walk-forward: for each test year from the held-out performance of the years already tested, never from the test year, and they settled on the same values from 2019 on.
 
-**The population curve now** (fitted on 14,622 fighter-bouts through 2026-10-25, in residual units with the rating-point equivalent):
+**The population curve now** (fitted on 14,644 fighter-bouts through 2026-11-01, in residual units with the rating-point equivalent):
 
 | Age | 22 | 25 | 28 | 30 | 32 | 34 | 36 | 38 | 40 |
 |---|---|---|---|---|---|---|---|---|---|
-| Men | +0.088 (+61) | +0.070 (+49) | +0.046 (+32) | +0.021 (+15) | -0.014 (-9) | -0.046 (-32) | -0.076 (-53) | -0.111 (-77) | -0.146 (-102) |
-| Women | +0.049 (+34) | +0.045 (+31) | +0.028 (+20) | +0.001 (+0) | +0.002 (+1) | -0.020 (-14) | -0.066 (-46) | -0.094 (-66) | -0.122 (-85) |
+| Men | +0.088 (+61) | +0.070 (+49) | +0.046 (+32) | +0.021 (+15) | -0.014 (-10) | -0.046 (-32) | -0.076 (-53) | -0.111 (-77) | -0.146 (-102) |
+| Women | +0.049 (+34) | +0.045 (+31) | +0.029 (+20) | +0.001 (+1) | +0.003 (+2) | -0.020 (-14) | -0.069 (-48) | -0.096 (-66) | -0.122 (-85) |
 
 Read: a 22-year-old on the board typically performs as if his rating were about 61 points higher than it is; a 36-year-old as if it were 53 points lower, a 40-year-old 102 points lower. The women's curve is flatter until the early thirties and then falls at the same rate.
 
