@@ -25,6 +25,7 @@ Every test, pilot and candidate comparison run on REAL, in order. Rendered from 
 | [EXP-2026-10-20-15](#exp-2026-10-20-15) | 2026-10-20 | v1.2 candidate from the resume-preset walk-forward: face validity on today's board | rejected |
 | [EXP-2026-10-21-01](#exp-2026-10-21-01) | 2026-10-21 | Decline and rise index: the population age curve of the rating residual plus a shrunken per-fighter level and slope | adopted |
 | [EXP-2026-10-21-02](#exp-2026-10-21-02) | 2026-10-21 | Who declines faster: the population curve by style, debut age, weight band, UFC tenure and recent knockout loss | informational |
+| [EXP-2026-11-02-01](#exp-2026-11-02-01) | 2026-11-02 | Matchmaking track, step 1: will a fighter compete in the next 60/120/180 days? | informational |
 
 ## EXP-2026-09-30-01
 
@@ -727,3 +728,36 @@ Decision. informational: Findings kept, index unchanged. Strikers and wrestlers 
 Notes. In-sample descriptive curves; selection (who is still fighting at 38) shapes every group's curve. Groups are as of the bout, so a fighter can change style or tenure group across his career.
 
 Files: `experiments/results/EXP-2026-10-21-02/decline_report_research_resume_stratified.json`, `experiments/results/EXP-2026-10-21-02/decline_report_research_resume_perf_by_style.json`, `experiments/results/EXP-2026-10-21-02/decline_report_research_resume_perf_by_debut.json`
+
+## EXP-2026-11-02-01
+
+Matchmaking track, step 1: will a fighter compete in the next 60/120/180 days?  
+Date 2026-11-02, decision: informational, code at commit `8a6cd89`.
+
+Question. Can fight history (layoff, the fighter's own usual gap between fights, last result, streak, age, rating position) predict whether an active fighter has a UFC bout in the next H days better than layoff-only and own-gap baselines? This is the availability layer a matchmaking/next-opponent model needs.
+
+| Method | |
+|---|---|
+| data | data/processed/bouts.csv through 2026-10-31; fighters.csv (DOB); elo_history.csv (ratings before t only) |
+| population | monthly snapshots (first of month); every fighter whose last UFC bout is within 540 days before the snapshot |
+| target | any UFC bout dated in [t, t+H); leaving the UFC counts as no; windows closing after the last bout in the data are unscored |
+| split | train 2015-01..2021-12 (84 snapshots), held-out test 2022-01..2025-12 (48 snapshots, 33,940 fighter-snapshots) |
+| baselines | B0 constant training rate; B1 empirical rate by days-since bucket; B2 days-since bucket x own-gap ratio bucket (both shrunk, prior 20) |
+| metric | log loss (primary), Brier, AUC; paired month-block bootstrap (2,000 draws) of the log-loss difference |
+| primary_horizon_days | 120 |
+
+Candidate. `{"model": "L2 logistic regression (lambda 1, standardised features)", "script": "src/mmalab/availability.py", "features": ["log_days", "log_days_sq", "log_gap", "log_ratio", "log_ratio_sq", "log_n", "debut_only", "last_win", "last_ko_loss", "last_other_loss", "last_nodecision", "last_finish_win", "streak", "losses_last3", "last_title", "title_winner", "age_c", "age_c_sq", "age_missing", "rating_pct", "women", "year_c"]}`
+
+| Result | |
+|---|---|
+| 60 | base_rate: 0.2079<br>models: B0: log_loss: 0.5112<br>brier: 0.1647<br>auc: None<br>B1: log_loss: 0.4749<br>brier: 0.1538<br>auc: 0.6755<br>B2: log_loss: 0.4717<br>brier: 0.1526<br>auc: 0.6936<br>M: log_loss: 0.4549<br>brier: 0.1472<br>auc: 0.7371<br>M_minus_B1: mean: -0.0199<br>ci95: -0.023, -0.017<br>M_minus_B2: mean: -0.0167<br>ci95: -0.0197, -0.0137 |
+| 120 | base_rate: 0.4009<br>models: B0: log_loss: 0.6735<br>brier: 0.2403<br>auc: None<br>B1: log_loss: 0.6399<br>brier: 0.2246<br>auc: 0.6494<br>B2: log_loss: 0.6359<br>brier: 0.2226<br>auc: 0.6593<br>M: log_loss: 0.6038<br>brier: 0.2087<br>auc: 0.7187<br>M_minus_B1: mean: -0.0361<br>ci95: -0.0404, -0.0319<br>M_minus_B2: mean: -0.0321<br>ci95: -0.036, -0.028 |
+| 180 | base_rate: 0.543<br>models: B0: log_loss: 0.6902<br>brier: 0.2485<br>auc: None<br>B1: log_loss: 0.6531<br>brier: 0.2304<br>auc: 0.6441<br>B2: log_loss: 0.6493<br>brier: 0.2287<br>auc: 0.6559<br>M: log_loss: 0.5937<br>brier: 0.2031<br>auc: 0.7457<br>M_minus_B1: mean: -0.0594<br>ci95: -0.0641, -0.0549<br>M_minus_B2: mean: -0.0556<br>ci95: -0.06, -0.051 |
+
+Face validity. 2025-06-01 snapshot, H=120: Topuria 0.48 (fought in 27 days), Holloway 0.51 (48), Dvalishvili 0.46 (6), Du Plessis 0.47 (76); Jon Jones 0.45 (never fought again), Strickland 0.49 (265), Belal Muhammad 0.41 (174), Aspinall 0.45 (146). The model separates groups well but is close to a coin flip for individual title-level fighters, whose timing is set by negotiation and PPV slots the data cannot see.
+
+Decision. informational: The model beats both baselines at every horizon on held-out 2022-2025 data (H=120: log loss 0.604 vs 0.636 for the own-gap baseline, paired 95% CI of the difference -0.036 to -0.028; AUC 0.719 vs 0.659). Calibration: overall under-predicts by about 2 points (0.38 vs 0.40 observed each test year) and by 5 to 8 points in the middle deciles, so a recalibration on recent years is needed before probabilities are shown. Separate track: no rating, rank or v1.0 rule is touched.
+
+Notes. Next steps: recalibrate (intercept or Platt on the latest 2 years), then step 2 (pairing model: rank the likely next opponents, scored by top-1/3/5/15 hit rate and mean reciprocal rank).
+
+Files: `experiments/results/EXP-2026-11-02-01/availability_backtest.json`
