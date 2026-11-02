@@ -1,13 +1,13 @@
 {
-  "updated_utc": "2026-10-26T13:04:12Z",
+  "updated_utc": "2026-10-26T18:58:30Z",
   "graded": 38,
-  "pending": 27,
+  "pending": 44,
   "void": 1,
   "no_pick": 0,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-10-26T13:04:12Z"
+    "checked_at_utc": "2026-10-26T18:58:30Z"
   },
   "record": {
     "correct": 18,
@@ -142,8 +142,8 @@
     {
       "event": "UFC Fight Night: Moicano vs. Nolan",
       "date": "2026-10-31",
-      "picks": 11,
-      "no_pick": 0,
+      "picks": 14,
+      "no_pick": 1,
       "locked_at_utc": "2026-10-12T21:30:18Z"
     },
     {
@@ -152,6 +152,13 @@
       "picks": 13,
       "no_pick": 0,
       "locked_at_utc": "2026-10-19T18:56:27Z"
+    },
+    {
+      "event": "UFC 334: Gane vs. Hokit",
+      "date": "2026-11-14",
+      "picks": 11,
+      "no_pick": 2,
+      "locked_at_utc": "2026-10-26T18:58:30Z"
     }
   ],
   "market": {

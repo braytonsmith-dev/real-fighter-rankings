@@ -97,14 +97,14 @@ The separate predictive model (performance-adjusted Elo, the specification a 520
 
 | Division | Fighter | Final | How he got there | Rating term | Ledger term | Form | Ledger detail | Last 5 |
 |---|---|---|---|---|---|---|---|---|
-| Bantamweight | Mario Bautista | #5 | score order #5 | +0.44 | +0.23 | -0.00 | +3.6 QW +0.0 proof -1.0 blowout -0.0 weak | 4-1 |
-| Bantamweight | Cory Sandhagen | #6 | score order #6 | +0.60 | +0.21 | -0.15 | +5.3 QW +0.0 proof -2.0 blowout -1.0 weak | 2-3 |
+| Bantamweight | Mario Bautista | #5 | score order #5 | +0.48 | +0.24 | -0.00 | +3.6 QW +0.0 proof -1.0 blowout -0.0 weak | 4-1 |
+| Bantamweight | Cory Sandhagen | #6 | score order #6 | +0.64 | +0.22 | -0.15 | +5.3 QW +0.0 proof -2.0 blowout -1.0 weak | 2-3 |
 | Light Heavyweight | Jiri Prochazka | #4 | score order #2; title cycle -> #4 | +0.52 | +0.28 | -0.00 | +6.5 QW +0.0 proof -2.0 blowout -0.0 weak | 3-2 |
 | Light Heavyweight | Khalil Rountree Jr. | #8 | score order #8 | +0.19 | +0.21 | -0.00 | +3.1 QW +0.0 proof -0.0 blowout -0.0 weak | 3-2 |
-| Heavyweight | Alex Pereira | #4 | score order #1; title cycle -> #4 | +0.77 | +0.46 | -0.00 | +10.5 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
-| Welterweight | Kamaru Usman | #10 | score order #10 | +0.74 | +0.25 | -0.60 | +5.2 QW +0.0 proof -1.0 blowout -0.0 weak | 1-4 |
-| Welterweight | Kevin Holland | #23 | score order #23 | +0.30 | -0.11 | -0.00 | +1.8 QW +0.0 proof -2.0 blowout -3.0 weak | 3-2 |
-| Flyweight | Brandon Moreno | #6 | score order #4; title cycle -> #6 | +0.37 | +0.31 | -0.00 | +6.6 QW +0.0 proof -0.0 blowout -1.0 weak | 3-2 |
+| Heavyweight | Alex Pereira | #4 | score order #1; title cycle -> #4 | +0.76 | +0.46 | -0.00 | +10.5 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
+| Welterweight | Kamaru Usman | #10 | score order #10 | +0.78 | +0.28 | -0.60 | +5.2 QW +0.0 proof -1.0 blowout -0.0 weak | 1-4 |
+| Welterweight | Kevin Holland | #24 | score order #24 | +0.32 | -0.12 | -0.00 | +1.8 QW +0.0 proof -2.0 blowout -3.0 weak | 3-2 |
+| Flyweight | Brandon Moreno | #6 | score order #4; title cycle -> #6 | +0.36 | +0.31 | -0.00 | +6.6 QW +0.0 proof -0.0 blowout -1.0 weak | 3-2 |
 | Lightweight | Max Holloway | #2 | score order #1; head-to-head -> #2 | +0.91 | +0.63 | -0.00 | +8.4 QW +0.0 proof -1.0 blowout -0.0 weak | 3-2 |
 
 ## 10. How REAL compares with published rating systems

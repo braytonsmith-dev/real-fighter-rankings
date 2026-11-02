@@ -33,3 +33,9 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061420:401928105,Talita Alencar,Piera Rodriguez,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.3277,0.6723,Piera Rodriguez,,,,,the-odds-api,"us,uk,eu",h2h
 600061420:401928104,Yana Santos,Luana Santos,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.3585,0.6415,Luana Santos,,,,,the-odds-api,"us,uk,eu",h2h
 600061420:401921310,Renato Moicano,Tom Nolan,2026-10-31,lock,2026-10-23T17:49:48Z,2026-11-01T00:00:00Z,4,0.4801,0.5199,Tom Nolan,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401931555,Ode Osbourne,Cody Durden,2026-10-31,lock,2026-10-26T18:58:30Z,2026-11-01T00:00:00Z,25,0.5156,0.4844,Ode Osbourne,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401931615,Francis Marshall,Dakota Hope,2026-10-31,lock,2026-10-26T18:58:30Z,2026-11-01T00:00:00Z,22,0.6808,0.3192,Francis Marshall,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401914105,Lucia Szabova,Tainara Lisboa,2026-10-31,lock,2026-10-26T18:58:30Z,2026-10-31T21:00:00Z,20,0.8204,0.1796,Lucia Szabova,,,,,the-odds-api,"us,uk,eu",h2h
+600061400:401922638,Kayla Harrison,Amanda Nunes,2026-11-14,lock,2026-10-26T18:58:30Z,2026-11-15T05:00:00Z,20,0.6363,0.3637,Kayla Harrison,,,,,the-odds-api,"us,uk,eu",h2h
+600061400:401913646,Ciryl Gane,Josh Hokit,2026-11-14,lock,2026-10-26T18:58:30Z,2026-11-15T05:30:00Z,19,0.689,0.311,Ciryl Gane,,,,,the-odds-api,"us,uk,eu",h2h
+600061420:401931616,Randy Brown,Jacobe Smith,2026-10-31,lock,2026-10-26T18:58:30Z,2026-11-01T00:00:00Z,15,0.3267,0.6733,Jacobe Smith,,,,,the-odds-api,"us,uk,eu",h2h
