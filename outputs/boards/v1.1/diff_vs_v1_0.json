@@ -1,6 +1,6 @@
 {
-  "top15_slots_compared": 193,
-  "top15_slots_changed": 110,
+  "top15_slots_compared": 194,
+  "top15_slots_changed": 113,
   "largest_moves": [
     {
       "division": "Bantamweight",
@@ -27,28 +27,28 @@
       "v1.1": 13
     },
     {
+      "division": "Flyweight",
+      "fighter": "Fabia Sintes",
+      "v1.0": 24,
+      "v1.1": 15
+    },
+    {
+      "division": "Lightweight",
+      "fighter": "Jim Miller",
+      "v1.0": 10,
+      "v1.1": 19
+    },
+    {
       "division": "Light Heavyweight",
       "fighter": "Jamahal Hill",
       "v1.0": 23,
       "v1.1": 14
     },
     {
-      "division": "Women's Flyweight",
-      "fighter": "Viviane Araujo",
-      "v1.0": 23,
-      "v1.1": 15
-    },
-    {
-      "division": "Lightweight",
-      "fighter": "Jim Miller",
-      "v1.0": 11,
-      "v1.1": 18
-    },
-    {
       "division": "Welterweight",
-      "fighter": "Joaquin Buckley",
-      "v1.0": 22,
-      "v1.1": 15
+      "fighter": "Neil Magny",
+      "v1.0": 15,
+      "v1.1": 23
     },
     {
       "division": "Lightweight",
@@ -57,10 +57,10 @@
       "v1.1": 22
     },
     {
-      "division": "Welterweight",
-      "fighter": "Neil Magny",
-      "v1.0": 15,
-      "v1.1": 22
+      "division": "Women's Flyweight",
+      "fighter": "Karine Silva",
+      "v1.0": 19,
+      "v1.1": 12
     },
     {
       "division": "Featherweight",
@@ -69,10 +69,16 @@
       "v1.1": 18
     },
     {
-      "division": "Flyweight",
-      "fighter": "Tim Elliott",
-      "v1.0": 9,
+      "division": "Welterweight",
+      "fighter": "Joaquin Buckley",
+      "v1.0": 21,
       "v1.1": 15
+    },
+    {
+      "division": "Bantamweight",
+      "fighter": "Jose Aldo",
+      "v1.0": 13,
+      "v1.1": 19
     },
     {
       "division": "Featherweight",
@@ -81,16 +87,10 @@
       "v1.1": 14
     },
     {
-      "division": "Bantamweight",
-      "fighter": "Vinicius Oliveira",
-      "v1.0": 17,
-      "v1.1": 12
-    },
-    {
-      "division": "Welterweight",
-      "fighter": "Kamaru Usman",
-      "v1.0": 10,
-      "v1.1": 5
+      "division": "Flyweight",
+      "fighter": "Ramazan Temirov",
+      "v1.0": 16,
+      "v1.1": 11
     }
   ]
 }
