@@ -1,13 +1,13 @@
 {
-  "updated_utc": "2026-11-02T22:03:48Z",
+  "updated_utc": "2026-11-06T19:54:42Z",
   "graded": 49,
   "pending": 44,
-  "void": 3,
+  "void": 4,
   "no_pick": 1,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-11-02T22:03:47Z"
+    "checked_at_utc": "2026-11-06T19:54:41Z"
   },
   "record": {
     "correct": 27,
@@ -134,13 +134,6 @@
   ],
   "upcoming": [
     {
-      "event": "UFC 333: Volkanovski vs. Evloev",
-      "date": "2026-10-24",
-      "picks": 1,
-      "no_pick": 0,
-      "locked_at_utc": "2026-10-05T21:29:43Z"
-    },
-    {
       "event": "UFC Fight Night: Moicano vs. Nolan",
       "date": "2026-10-31",
       "picks": 3,
@@ -157,7 +150,7 @@
     {
       "event": "UFC Fight Night: Cortes Acosta vs. Walker",
       "date": "2026-11-07",
-      "picks": 3,
+      "picks": 4,
       "no_pick": 1,
       "locked_at_utc": "2026-11-02T14:15:51Z"
     },

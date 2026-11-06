@@ -60,3 +60,16 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061400:401922643,Jim Miller,Terrance McKinney,2026-11-14,lock,2026-11-02T14:15:52Z,2026-11-15T01:00:00Z,2,0.3423,0.6577,Terrance McKinney,,,,,the-odds-api,"us,uk,eu",h2h
 600061400:401922642,Drew Dober,Chris Duncan,2026-11-14,lock,2026-11-02T14:15:52Z,2026-11-15T01:00:00Z,2,0.4497,0.5503,Chris Duncan,,,,,the-odds-api,"us,uk,eu",h2h
 600061400:401932013,Evan Elder,Samuel Sanches,2026-11-14,lock,2026-11-02T14:15:52Z,2026-11-15T01:00:00Z,2,0.5073,0.4927,Evan Elder,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401932012,Mitch Raposo,Marcos Degli,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-08T01:00:00Z,29,0.3282,0.6718,Marcos Degli,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401932715,Waldo Cortes Acosta,Johnny Walker,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-08T03:45:00Z,28,0.6667,0.3333,Waldo Cortes Acosta,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928113,Billy Elekana,Lucas Fernando,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-08T01:00:00Z,27,0.2679,0.7321,Lucas Fernando,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928119,Davey Grant,Elijah Smith,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-08T01:00:00Z,27,0.2745,0.7255,Elijah Smith,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928111,Tatiana Suarez,Virna Jandiroba,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-08T01:00:00Z,27,0.6439,0.3561,Tatiana Suarez,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928115,Karine Silva,Gabriella Fernandes,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:00:00Z,26,0.6626,0.3374,Karine Silva,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928116,Priscila Cachoeira,Nina Milosevic,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-08T01:00:00Z,26,0.2037,0.7963,Nina Milosevic,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401932011,Mantas Kondratavicius,Andre Petroski,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:55:00Z,25,0.7204,0.2796,Mantas Kondratavicius,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928120,Jose Delano,Murtazali Magomedov,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:00:00Z,24,0.5176,0.4824,Jose Delano,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401933235,Austin Bashi,Carlos Calderon,2026-11-07,lock,2026-11-06T19:54:42Z,2026-11-07T23:00:00Z,24,0.8206,0.1794,Austin Bashi,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401933235,Austin Bashi,Carlos Calderon,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T23:00:00Z,24,0.8206,0.1794,Austin Bashi,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401911642,Keiichiro Nakamura,Ollie Schmid,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:00:00Z,22,0.7441,0.2559,Keiichiro Nakamura,,,,,the-odds-api,"us,uk,eu",h2h
+600061268:401928118,Jonny Parsons,Jose Henrique,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:15:00Z,9,0.3306,0.6694,Jose Henrique,,,,,the-odds-api,"us,uk,eu",h2h
