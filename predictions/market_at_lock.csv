@@ -73,3 +73,4 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061268:401933235,Austin Bashi,Carlos Calderon,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T23:00:00Z,24,0.8206,0.1794,Austin Bashi,,,,,the-odds-api,"us,uk,eu",h2h
 600061268:401911642,Keiichiro Nakamura,Ollie Schmid,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:00:00Z,22,0.7441,0.2559,Keiichiro Nakamura,,,,,the-odds-api,"us,uk,eu",h2h
 600061268:401928118,Jonny Parsons,Jose Henrique,2026-11-07,last_before_event,2026-11-06T19:54:42Z,2026-11-07T22:15:00Z,9,0.3306,0.6694,Jose Henrique,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927850,Aljamain Sterling,Kevin Vallejos,2026-11-21,lock,2026-11-09T22:50:41Z,2026-11-21T17:00:00Z,4,0.4739,0.5261,Kevin Vallejos,,,,,the-odds-api,"us,uk,eu",h2h

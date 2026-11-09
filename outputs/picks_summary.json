@@ -1,72 +1,72 @@
 {
-  "updated_utc": "2026-11-06T19:54:42Z",
-  "graded": 49,
-  "pending": 44,
+  "updated_utc": "2026-11-09T22:50:42Z",
+  "graded": 61,
+  "pending": 31,
   "void": 4,
-  "no_pick": 1,
+  "no_pick": 2,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-11-06T19:54:41Z"
+    "checked_at_utc": "2026-11-09T22:50:41Z"
   },
   "record": {
-    "correct": 27,
-    "incorrect": 22,
-    "accuracy": 0.551,
+    "correct": 34,
+    "incorrect": 27,
+    "accuracy": 0.557,
     "accuracy_wilson95": [
-      0.413,
-      0.681
+      0.433,
+      0.675
     ],
-    "log_loss": 0.7,
-    "brier": 0.2531,
+    "log_loss": 0.6858,
+    "brier": 0.2465,
     "coin_flip_log_loss": 0.6931
   },
   "baselines_same_bouts": {
     "results_only_elo": {
-      "n": 49,
-      "accuracy": 0.49,
-      "log_loss": 0.6832,
-      "model_accuracy_same_bouts": 0.551,
-      "model_log_loss_same_bouts": 0.7,
+      "n": 61,
+      "accuracy": 0.508,
+      "log_loss": 0.6803,
+      "model_accuracy_same_bouts": 0.557,
+      "model_log_loss_same_bouts": 0.6858,
       "no_pick": 0
     },
     "real_board": {
-      "n": 29,
-      "accuracy": 0.448,
-      "log_loss": 0.7563,
-      "model_accuracy_same_bouts": 0.517,
-      "model_log_loss_same_bouts": 0.745,
+      "n": 37,
+      "accuracy": 0.486,
+      "log_loss": 0.7395,
+      "model_accuracy_same_bouts": 0.514,
+      "model_log_loss_same_bouts": 0.7295,
       "no_pick": 0
     },
     "shadow_v11": {
-      "n": 49,
-      "accuracy": 0.571,
-      "log_loss": 0.6936,
-      "model_accuracy_same_bouts": 0.551,
-      "model_log_loss_same_bouts": 0.7,
+      "n": 61,
+      "accuracy": 0.59,
+      "log_loss": 0.6826,
+      "model_accuracy_same_bouts": 0.557,
+      "model_log_loss_same_bouts": 0.6858,
       "no_pick": 0
     },
     "market_devigged_lock": {
-      "n": 22,
-      "accuracy": 0.773,
-      "log_loss": 0.5965,
-      "model_accuracy_same_bouts": 0.682,
-      "model_log_loss_same_bouts": 0.6466
+      "n": 32,
+      "accuracy": 0.75,
+      "log_loss": 0.6128,
+      "model_accuracy_same_bouts": 0.625,
+      "model_log_loss_same_bouts": 0.6521
     },
     "market_devigged_last_before_event": {
-      "n": 14,
-      "accuracy": 0.786,
-      "log_loss": 0.6731,
-      "model_accuracy_same_bouts": 0.643,
-      "model_log_loss_same_bouts": 0.6449
+      "n": 24,
+      "accuracy": 0.708,
+      "log_loss": 0.6589,
+      "model_accuracy_same_bouts": 0.583,
+      "model_log_loss_same_bouts": 0.653
     }
   },
   "by_confidence": [
     {
       "band": "50%-55%",
-      "n": 19,
-      "accuracy": 0.526,
-      "mean_p_pick": 0.522
+      "n": 25,
+      "accuracy": 0.52,
+      "mean_p_pick": 0.524
     },
     {
       "band": "55%-60%",
@@ -76,29 +76,45 @@
     },
     {
       "band": "60%-65%",
-      "n": 7,
-      "accuracy": 0.571,
-      "mean_p_pick": 0.634
+      "n": 9,
+      "accuracy": 0.556,
+      "mean_p_pick": 0.628
     },
     {
       "band": "65%-70%",
-      "n": 7,
-      "accuracy": 0.429,
-      "mean_p_pick": 0.667
+      "n": 8,
+      "accuracy": 0.375,
+      "mean_p_pick": 0.666
     },
     {
       "band": "70%+",
-      "n": 4,
-      "accuracy": 0.5,
-      "mean_p_pick": 0.742
+      "n": 7,
+      "accuracy": 0.714,
+      "mean_p_pick": 0.739
     }
   ],
   "feed_order_matches_ufcstats_first_listed": 1.0,
   "provisional": {
-    "n": 29,
-    "accuracy": 0.448
+    "n": 39,
+    "accuracy": 0.487
   },
   "by_event": [
+    {
+      "event": "UFC Fight Night: Bonfim vs. Brady",
+      "date": "2026-11-07",
+      "n": 8,
+      "correct": 5,
+      "no_pick": 0,
+      "log_loss": 0.5729
+    },
+    {
+      "event": "UFC Fight Night: Cortes Acosta vs. Walker",
+      "date": "2026-11-07",
+      "n": 4,
+      "correct": 2,
+      "no_pick": 1,
+      "log_loss": 0.7366
+    },
     {
       "event": "UFC Fight Night: Moicano vs. Nolan",
       "date": "2026-10-31",
@@ -143,16 +159,9 @@
     {
       "event": "UFC Fight Night: Bonfim vs. Brady",
       "date": "2026-11-07",
-      "picks": 13,
+      "picks": 5,
       "no_pick": 0,
       "locked_at_utc": "2026-10-19T18:56:27Z"
-    },
-    {
-      "event": "UFC Fight Night: Cortes Acosta vs. Walker",
-      "date": "2026-11-07",
-      "picks": 4,
-      "no_pick": 1,
-      "locked_at_utc": "2026-11-02T14:15:51Z"
     },
     {
       "event": "UFC 334: Gane vs. Hokit",
@@ -175,60 +184,60 @@
     "ledger": "predictions/market_at_lock.csv",
     "store_raw_prices": false,
     "favourite_rule": "fighter_a when p_a_market >= 0.5, same convention as the model's pick",
-    "graded_with_market": 22,
-    "graded_without_market": 27,
+    "graded_with_market": 32,
+    "graded_without_market": 29,
     "baselines_same_bouts": {
       "market_devigged_lock": {
-        "n": 22,
-        "accuracy": 0.773,
-        "log_loss": 0.5965,
-        "model_accuracy_same_bouts": 0.682,
-        "model_log_loss_same_bouts": 0.6466
+        "n": 32,
+        "accuracy": 0.75,
+        "log_loss": 0.6128,
+        "model_accuracy_same_bouts": 0.625,
+        "model_log_loss_same_bouts": 0.6521
       },
       "market_devigged_last_before_event": {
-        "n": 14,
-        "accuracy": 0.786,
-        "log_loss": 0.6731,
-        "model_accuracy_same_bouts": 0.643,
-        "model_log_loss_same_bouts": 0.6449
+        "n": 24,
+        "accuracy": 0.708,
+        "log_loss": 0.6589,
+        "model_accuracy_same_bouts": 0.583,
+        "model_log_loss_same_bouts": 0.653
       }
     },
     "detail": {
       "lock": {
-        "n": 22,
-        "accuracy": 0.773,
-        "log_loss": 0.5965,
-        "model_accuracy_same_bouts": 0.682,
-        "model_log_loss_same_bouts": 0.6466,
-        "brier": 0.2021,
-        "model_brier_same_bouts": 0.2283,
+        "n": 32,
+        "accuracy": 0.75,
+        "log_loss": 0.6128,
+        "model_accuracy_same_bouts": 0.625,
+        "model_log_loss_same_bouts": 0.6521,
+        "brier": 0.2105,
+        "model_brier_same_bouts": 0.2311,
         "pickem_bouts": 0,
-        "mean_n_books": 17.8,
-        "agreement_rate": 0.545,
+        "mean_n_books": 17.7,
+        "agreement_rate": 0.625,
         "when_model_and_market_disagree": {
-          "n": 10,
+          "n": 12,
           "model_correct": 4,
-          "market_correct": 6
+          "market_correct": 8
         },
-        "mean_market_p_for_model_pick": 0.508
+        "mean_market_p_for_model_pick": 0.546
       },
       "last_before_event": {
-        "n": 14,
-        "accuracy": 0.786,
-        "log_loss": 0.6731,
-        "model_accuracy_same_bouts": 0.643,
-        "model_log_loss_same_bouts": 0.6449,
-        "brier": 0.2362,
-        "model_brier_same_bouts": 0.2283,
+        "n": 24,
+        "accuracy": 0.708,
+        "log_loss": 0.6589,
+        "model_accuracy_same_bouts": 0.583,
+        "model_log_loss_same_bouts": 0.653,
+        "brier": 0.2317,
+        "model_brier_same_bouts": 0.232,
         "pickem_bouts": 0,
-        "mean_n_books": 22.3,
-        "agreement_rate": 0.429,
+        "mean_n_books": 23.7,
+        "agreement_rate": 0.542,
         "when_model_and_market_disagree": {
-          "n": 8,
-          "model_correct": 3,
-          "market_correct": 5
+          "n": 11,
+          "model_correct": 4,
+          "market_correct": 7
         },
-        "mean_market_p_for_model_pick": 0.457
+        "mean_market_p_for_model_pick": 0.527
       }
     }
   }

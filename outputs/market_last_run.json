@@ -1,30 +1,25 @@
 {
-  "fetched_at_utc": "2026-11-06T19:54:42Z",
-  "bouts_from_api": 68,
-  "bouts_with_consensus": 36,
-  "matched_to_pending_picks": 24,
-  "credits_remaining": "488",
-  "credits_used_this_month": "12",
+  "fetched_at_utc": "2026-11-09T22:50:41Z",
+  "bouts_from_api": 47,
+  "bouts_with_consensus": 22,
+  "matched_to_pending_picks": 13,
+  "credits_remaining": "485",
+  "credits_used_this_month": "15",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
-    "Austin Bashi vs Lucas Brennan (2026-11-07)",
-    "Gabriel Loren\u00e7o vs Alvin Hines (2026-11-07)",
-    "Mantas Kondratavicius vs Wes Schultz (2026-11-07)",
-    "Seokhyeon Ko vs Wellington Turman (2026-11-07)",
-    "Gabriel Bonfim vs Sean Brady (2026-11-07)",
     "Nazim Sadykhov vs Jefferson Nascimento (2026-11-14)",
     "Adrian Yanez vs Juan Diaz (2026-11-14)",
     "Stephen Thompson vs Charles Radtke (2026-11-14)",
-    "Gabriel Loren\u00e7o vs Thomas Petersen (2026-11-07)"
+    "Amir Albazi vs Alessandro Costa (2026-11-21)",
+    "Asu Almabayev vs Kyoji Horiguchi (2026-11-21)",
+    "Aleksandre Topuria vs Santiago Luna (2026-11-21)",
+    "Jake Matthews vs Tahir Abdullayev (2026-11-21)",
+    "Shamil Gaziev vs Tallison Teixeira (2026-11-21)",
+    "Jared Cannonier vs Ikram Aliskerov (2026-11-21)",
+    "Dan Hooker vs Brian Ortega (2026-11-21)"
   ],
   "unmatched_market_bouts": [
-    "Magomed Magomedov vs Lucas Gabriel (2026-11-07, 2 books)",
-    "Samuel Blasco vs Ermil Xhaferi (2026-11-07, 2 books)",
-    "Seok Hyun Ko vs Wellington Turman (2026-11-07, 26 books)",
-    "Jos\u00e9 Souza vs Jonny Parsons (2026-11-07, 13 books)",
-    "Manuel Del Valle vs Luan Duarte (2026-11-07, 2 books)",
-    "Thomas Petersen vs Gabriel Lourenco (2026-11-08, 25 books)",
-    "Stephen Thompson vs Charlie Radtke (2026-11-15, 6 books)"
+    "Stephen Thompson vs Charlie Radtke (2026-11-15, 22 books)"
   ]
 }
