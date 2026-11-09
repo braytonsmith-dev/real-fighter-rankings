@@ -1,6 +1,6 @@
 {
   "version": "v1.0",
-  "snapshots": 132,
+  "snapshots": 133,
   "freeze_date": "2026-10-01",
   "probability_map_slope": 1.36,
   "protocol": "PREREGISTRATION.md",
@@ -148,108 +148,108 @@
   },
   "prospective_since_freeze": {
     "primary_both_scored": {
-      "bouts": 37,
-      "real_concordance": 0.541,
+      "bouts": 45,
+      "real_concordance": 0.556,
       "real_concordance_wilson95": [
-        0.384,
-        0.69
+        0.412,
+        0.691
       ],
       "real_probability": {
-        "n": 37,
-        "log_loss": 0.7238,
-        "brier": 0.2625,
-        "accuracy": 0.5135
+        "n": 45,
+        "log_loss": 0.7157,
+        "brier": 0.2596,
+        "accuracy": 0.5333
       },
       "results_only_elo": {
-        "n": 37,
-        "log_loss": 0.7212,
-        "brier": 0.2643,
-        "accuracy": 0.3784
+        "n": 45,
+        "log_loss": 0.7157,
+        "brier": 0.2615,
+        "accuracy": 0.4222
       },
       "performance_adjusted_elo": {
-        "n": 37,
-        "log_loss": 0.7588,
-        "brier": 0.2806,
-        "accuracy": 0.4865
+        "n": 45,
+        "log_loss": 0.7436,
+        "brier": 0.2737,
+        "accuracy": 0.4889
       },
       "official_board": {
-        "bouts_both_ranked": 12,
-        "official_concordance": 0.5,
+        "bouts_both_ranked": 14,
+        "official_concordance": 0.571,
         "official_wilson95": [
-          0.254,
-          0.746
+          0.326,
+          0.786
         ],
-        "real_concordance_same_bouts": 0.667
+        "real_concordance_same_bouts": 0.714
       }
     },
     "secondary_both_top30": {
-      "bouts": 19,
-      "real_concordance": 0.632,
+      "bouts": 24,
+      "real_concordance": 0.667,
       "real_concordance_wilson95": [
-        0.41,
-        0.809
+        0.467,
+        0.82
       ],
       "real_probability": {
-        "n": 19,
-        "log_loss": 0.6803,
-        "brier": 0.2444,
-        "accuracy": 0.5789
+        "n": 24,
+        "log_loss": 0.656,
+        "brier": 0.2336,
+        "accuracy": 0.625
       },
       "results_only_elo": {
-        "n": 19,
-        "log_loss": 0.6739,
-        "brier": 0.2413,
-        "accuracy": 0.4737
+        "n": 24,
+        "log_loss": 0.6679,
+        "brier": 0.2382,
+        "accuracy": 0.5
       },
       "performance_adjusted_elo": {
-        "n": 19,
-        "log_loss": 0.7132,
-        "brier": 0.2598,
-        "accuracy": 0.5263
+        "n": 24,
+        "log_loss": 0.6784,
+        "brier": 0.2435,
+        "accuracy": 0.5417
       },
       "official_board": {
-        "bouts_both_ranked": 10,
-        "official_concordance": 0.5,
+        "bouts_both_ranked": 12,
+        "official_concordance": 0.583,
         "official_wilson95": [
-          0.237,
-          0.763
+          0.32,
+          0.807
         ],
-        "real_concordance_same_bouts": 0.7
+        "real_concordance_same_bouts": 0.75
       }
     },
     "secondary_both_top15": {
-      "bouts": 9,
-      "real_concordance": 0.778,
+      "bouts": 10,
+      "real_concordance": 0.8,
       "real_concordance_wilson95": [
-        0.453,
-        0.937
+        0.49,
+        0.943
       ],
       "real_probability": {
-        "n": 9,
-        "log_loss": 0.6238,
-        "brier": 0.2181,
-        "accuracy": 0.6667
+        "n": 10,
+        "log_loss": 0.6296,
+        "brier": 0.2207,
+        "accuracy": 0.7
       },
       "results_only_elo": {
-        "n": 9,
-        "log_loss": 0.6077,
-        "brier": 0.2093,
-        "accuracy": 0.6667
+        "n": 10,
+        "log_loss": 0.6266,
+        "brier": 0.2186,
+        "accuracy": 0.6
       },
       "performance_adjusted_elo": {
-        "n": 9,
-        "log_loss": 0.6755,
-        "brier": 0.2424,
-        "accuracy": 0.6667
+        "n": 10,
+        "log_loss": 0.6809,
+        "brier": 0.245,
+        "accuracy": 0.6
       },
       "official_board": {
-        "bouts_both_ranked": 9,
-        "official_concordance": 0.556,
+        "bouts_both_ranked": 10,
+        "official_concordance": 0.6,
         "official_wilson95": [
-          0.267,
-          0.811
+          0.313,
+          0.832
         ],
-        "real_concordance_same_bouts": 0.778
+        "real_concordance_same_bouts": 0.8
       }
     },
     "secondary_title_fights": {

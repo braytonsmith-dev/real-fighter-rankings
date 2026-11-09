@@ -8,3 +8,9 @@
 alex volkanovski: alexander volkanovski
 abusupyian magomedov: abus magomedov
 abdulrakhman yakhyaev: abdul rakhman yakhyaev
+
+# ESPN schedule spellings -> UFCStats names (weekly review 2026-11-09)
+# ESPN lists "Jose Henrique" (event 401928118, Henrique vs. Parsons, Nov 7, 2026); UFCStats lists the same bout as Jonny Parsons vs. Jose Souza
+# (fighter-details/20a0e4cc5227c117, also def. Ding Meng). Full name Jose Henrique Souza: https://www.rotowire.com/mma/player/jose-henrique-souza-2744 ;
+# https://www.thestatszone.com/ufc-fight-night-jonny-parsons-vs-jose-henrique-souza-preview-prediction-234641
+jose henrique: jose souza
