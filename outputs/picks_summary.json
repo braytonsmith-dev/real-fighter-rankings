@@ -1,13 +1,13 @@
 {
-  "updated_utc": "2026-11-09T22:50:42Z",
+  "updated_utc": "2026-11-13T20:26:11Z",
   "graded": 61,
-  "pending": 31,
-  "void": 4,
+  "pending": 29,
+  "void": 7,
   "no_pick": 2,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-11-09T22:50:41Z"
+    "checked_at_utc": "2026-11-13T20:26:10Z"
   },
   "record": {
     "correct": 34,
@@ -150,13 +150,6 @@
   ],
   "upcoming": [
     {
-      "event": "UFC Fight Night: Moicano vs. Nolan",
-      "date": "2026-10-31",
-      "picks": 3,
-      "no_pick": 0,
-      "locked_at_utc": "2026-10-12T21:30:18Z"
-    },
-    {
       "event": "UFC Fight Night: Bonfim vs. Brady",
       "date": "2026-11-07",
       "picks": 5,
@@ -166,7 +159,7 @@
     {
       "event": "UFC 334: Gane vs. Hokit",
       "date": "2026-11-14",
-      "picks": 12,
+      "picks": 13,
       "no_pick": 2,
       "locked_at_utc": "2026-10-26T18:58:30Z"
     },

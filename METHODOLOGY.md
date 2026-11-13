@@ -179,14 +179,14 @@ Section 12 records why no board carries an age term: a resume rank is earned aga
 
 **Model.** Three parts, every one computed from information available before the bout. A population curve f(age), piecewise linear with knots at 27, 30, 33 and 36, one per sex, fitted on bouts from 2011: the average residual at each age, which is the rating's own age bias. An individual level: the fighter's recency-weighted mean residual around that curve over his earlier bouts, shrunk toward zero by a pseudo-count of bouts. An individual slope: the recency-weighted trend of those residuals against age, shrunk toward zero. The prediction for a fighter is f(age) + level + slope x (age - mean prior age). The three shrinkage settings (level 32, slope 200, half-life 4.0 years) were chosen walk-forward: for each test year from the held-out performance of the years already tested, never from the test year, and they settled on the same values from 2019 on.
 
-**The population curve now** (fitted on 14,644 fighter-bouts through 2026-11-01, in residual units with the rating-point equivalent):
+**The population curve now** (fitted on 14,670 fighter-bouts through 2026-11-08, in residual units with the rating-point equivalent):
 
 | Age | 22 | 25 | 28 | 30 | 32 | 34 | 36 | 38 | 40 |
 |---|---|---|---|---|---|---|---|---|---|
-| Men | +0.088 (+61) | +0.070 (+49) | +0.046 (+32) | +0.021 (+15) | -0.014 (-10) | -0.046 (-32) | -0.076 (-53) | -0.111 (-77) | -0.146 (-102) |
-| Women | +0.049 (+34) | +0.045 (+31) | +0.029 (+20) | +0.001 (+1) | +0.003 (+2) | -0.020 (-14) | -0.069 (-48) | -0.096 (-66) | -0.122 (-85) |
+| Men | +0.089 (+62) | +0.070 (+49) | +0.045 (+31) | +0.021 (+15) | -0.014 (-9) | -0.046 (-32) | -0.075 (-52) | -0.111 (-77) | -0.147 (-102) |
+| Women | +0.049 (+34) | +0.045 (+31) | +0.029 (+20) | +0.002 (+1) | +0.003 (+2) | -0.020 (-14) | -0.069 (-48) | -0.096 (-67) | -0.124 (-86) |
 
-Read: a 22-year-old on the board typically performs as if his rating were about 61 points higher than it is; a 36-year-old as if it were 53 points lower, a 40-year-old 102 points lower. The women's curve is flatter until the early thirties and then falls at the same rate.
+Read: a 22-year-old on the board typically performs as if his rating were about 62 points higher than it is; a 36-year-old as if it were 52 points lower, a 40-year-old 102 points lower. The women's curve is flatter until the early thirties and then falls at the same rate.
 
 **Held-out evidence** (walk-forward by calendar year, test years 2016 to 2026, 10,702 fighter-bouts; experiments/REGISTER.md EXP-2026-10-21-01). The population curve explained 2.2% of the variance of the next bout's residual out of sample, positive in every test year; the realized residual by age bucket tracked the curve that predicted it:
 

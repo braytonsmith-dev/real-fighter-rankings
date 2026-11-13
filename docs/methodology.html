@@ -501,7 +501,7 @@
 <p>Section 12 records why no board carries an age term: a resume rank is earned against the fighters a man was matched with, and an older contender loses more often because he is matched with the best. The question the ranking cannot answer, and that readers ask first about an ageing champion or a rising prospect, is how far the rating now sits from the fighter's current level. The decline and rise index answers it beside the rank (<code>src/mmalab/decline.py</code>, settings in <code>config/decline.yaml</code>, shown in the Trajectory section of every profile page). No board reads it.</p>
 <p><strong>Outcome.</strong> For every fighter and decided bout, the residual is the engine's performance score minus the pre-fight expectation, r = s - e, where s is the score the resume engine already uses (finishes 1 or 0, decisions a blend of the judges' cards and the fight statistics, section 3) and e comes from the two resume ratings plus a corner credit fitted on the training rows (the first-listed, red-corner fighter is the matchmakers' favourite and wins about 64% of bouts against 53% expected by rating alone; without the credit a fighter who is usually the favourite would look like a riser). The rating update is K (s - e), so a run of same-signed residuals is exactly the drift the rating has not absorbed. One unit of residual sustained over many bouts corresponds to about 695 rating points (the slope of the expectation curve at e = 0.5).</p>
 <p><strong>Model.</strong> Three parts, every one computed from information available before the bout. A population curve f(age), piecewise linear with knots at 27, 30, 33 and 36, one per sex, fitted on bouts from 2011: the average residual at each age, which is the rating's own age bias. An individual level: the fighter's recency-weighted mean residual around that curve over his earlier bouts, shrunk toward zero by a pseudo-count of bouts. An individual slope: the recency-weighted trend of those residuals against age, shrunk toward zero. The prediction for a fighter is f(age) + level + slope x (age - mean prior age). The three shrinkage settings (level 32, slope 200, half-life 4.0 years) were chosen walk-forward: for each test year from the held-out performance of the years already tested, never from the test year, and they settled on the same values from 2019 on.</p>
-<p><strong>The population curve now</strong> (fitted on 14,644 fighter-bouts through 2026-11-01, in residual units with the rating-point equivalent):</p>
+<p><strong>The population curve now</strong> (fitted on 14,670 fighter-bouts through 2026-11-08, in residual units with the rating-point equivalent):</p>
 <table>
 <thead>
 <tr>
@@ -520,31 +520,31 @@
 <tbody>
 <tr>
 <td>Men</td>
-<td>+0.088 (+61)</td>
+<td>+0.089 (+62)</td>
 <td>+0.070 (+49)</td>
-<td>+0.046 (+32)</td>
+<td>+0.045 (+31)</td>
 <td>+0.021 (+15)</td>
-<td>-0.014 (-10)</td>
+<td>-0.014 (-9)</td>
 <td>-0.046 (-32)</td>
-<td>-0.076 (-53)</td>
+<td>-0.075 (-52)</td>
 <td>-0.111 (-77)</td>
-<td>-0.146 (-102)</td>
+<td>-0.147 (-102)</td>
 </tr>
 <tr>
 <td>Women</td>
 <td>+0.049 (+34)</td>
 <td>+0.045 (+31)</td>
 <td>+0.029 (+20)</td>
-<td>+0.001 (+1)</td>
+<td>+0.002 (+1)</td>
 <td>+0.003 (+2)</td>
 <td>-0.020 (-14)</td>
 <td>-0.069 (-48)</td>
-<td>-0.096 (-66)</td>
-<td>-0.122 (-85)</td>
+<td>-0.096 (-67)</td>
+<td>-0.124 (-86)</td>
 </tr>
 </tbody>
 </table>
-<p>Read: a 22-year-old on the board typically performs as if his rating were about 61 points higher than it is; a 36-year-old as if it were 53 points lower, a 40-year-old 102 points lower. The women's curve is flatter until the early thirties and then falls at the same rate.</p>
+<p>Read: a 22-year-old on the board typically performs as if his rating were about 62 points higher than it is; a 36-year-old as if it were 52 points lower, a 40-year-old 102 points lower. The women's curve is flatter until the early thirties and then falls at the same rate.</p>
 <p><strong>Held-out evidence</strong> (walk-forward by calendar year, test years 2016 to 2026, 10,702 fighter-bouts; experiments/REGISTER.md EXP-2026-10-21-01). The population curve explained 2.2% of the variance of the next bout's residual out of sample, positive in every test year; the realized residual by age bucket tracked the curve that predicted it:</p>
 <table>
 <thead>
@@ -764,4 +764,4 @@ penalty; division, head-to-head, title-cycle and reserved-spot rules; audit trai
 <h3>0.x (2026-09-29 to 2026-09-30)</h3>
 <p>Composite of six percentile dimensions, replaced after review because four dimensions carried no ranking signal and losses were
 counted three times.</p>
-<p>Independent fan and research project. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete.</p><p class='meta'>REAL v1.0 (registered method) · build 57d2c9e · data through 2026-11-07 · page built 2026-11-09 · <a href='https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/CHANGELOG.md'>changelog</a>. Independent fan research project built on public UFCStats data. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete. All trademarks belong to their owners and are used only to identify athletes and events.</p></body></html>
+<p>Independent fan and research project. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete.</p><p class='meta'>REAL v1.0 (registered method) · build 0df65c3 · data through 2026-11-07 · page built 2026-11-13 · <a href='https://github.com/braytonsmith-dev/real-fighter-rankings/blob/main/CHANGELOG.md'>changelog</a>. Independent fan research project built on public UFCStats data. Not affiliated with, sponsored or endorsed by UFC, Zuffa, LLC, TKO Group Holdings, or any athlete. All trademarks belong to their owners and are used only to identify athletes and events.</p></body></html>
