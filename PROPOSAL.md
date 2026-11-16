@@ -1,119 +1,122 @@
-# Weekly review proposal, 2026-11-09
+# Weekly review proposal, 2026-11-16
 
 Prepared by the scheduled weekly review for Brayton's approval. Nothing here is merged. Weights, rules, thresholds and `config/weights.yaml` are unchanged (frozen v1.0, SHA-256 still `ea1a823c...5cc2`). Merging this branch approves every change below. To reject one, revert that line before merging.
 
-Events covered: **UFC Fight Night: Cortes Acosta vs. Walker** (UFC Vegas 124, Nov 7, 2026), the only event since last week's review. Raw UFCStats CSVs and the martj42 rankings history (now through Nov 3) were refreshed. The board now runs through 2026-11-07. Next card: UFC 334, Nov 14 (Gane vs. Hokit, Harrison vs. Nunes).
+Events covered: **UFC 334: Gane vs. Hokit** (Nov 14, 2026, Madison Square Garden), the only event since last week's review. Raw UFCStats CSVs were refreshed (martj42 rankings history unchanged since last week). The board now runs through 2026-11-14. Next card: UFC Fight Night, Nov 21, Doha (Prochazka vs. Stirling).
 
-**Branch lineage.** Built on current main (`57d2c9e`, which includes the merged 2026-11-02 review). No older review branches are outstanding. `mmalab.checks --ref origin/main` passes and `pytest tests` passes (245 passed, 1 xfailed).
+**Branch lineage.** `weekly-review/2026-11-09` was never merged. This branch is built on current main (`9b665ef`) with that branch merged in, so its four config entries (three short-notice entries and the `jose henrique` alias) are carried forward unchanged; see `git show origin/weekly-review/2026-11-09:PROPOSAL.md` for their sources. Generated outputs and `predictions/picks.csv` were taken from main and rebuilt (the 11-09 branch had no pick rows that main lacks). **Merge this branch, then delete `weekly-review/2026-11-09`.** `mmalab.checks --ref origin/main` passes and `pytest tests` passes (245 passed, 1 xfailed).
 
-**Snapshot note.** This branch adds `outputs/history/board_2026-11-07.csv` (and the v1.1 twin), built with the config below. It is the pre-event snapshot for UFC 334 under PREREGISTRATION section 3, so it should be merged before Nov 14. If the Monday workflow commits its own `board_2026-11-07.csv` to main first, keep this branch's version when resolving the conflict (the only difference is the three short-notice entries).
+**Snapshot notes.**
+- `outputs/history/board_2026-11-07.csv` on main (committed Nov 9, before UFC 334) is the frozen pre-event snapshot for UFC 334 and was kept as is. Last week's suggestion to prefer the branch copy no longer applies: the event has passed, and PREREGISTRATION section 3 forbids rewriting it.
+- This branch adds `outputs/history/board_2026-11-14.csv` (and the v1.1 twin), the pre-event snapshot for the Nov 21 card. It should be merged before Nov 21. If the Monday workflow commits its own `board_2026-11-14.csv` to main first, keep this branch's version when resolving the conflict (it holds the Thompson exclusion and the short-notice entries below).
 
 ## 1. Proposed changes
 
 | # | File | Change | Why | Source |
 |---|---|---|---|---|
-| 1 | `config/short_notice.yaml` | Waldo Cortes Acosta, 2026-11-07 (L) | New main event after Sean Brady withdrew (staph infection) from Bonfim vs. Brady. Reported Oct 29, 9 days notice. Neither man was booked on the card before. | https://cagesidepress.com/2026/10/29/ufc-vegas-124-loses-bonfim-vs-brady-heavyweight-headliner/ ; https://heavy.com/sports/ufc/ufc-vegas-124-gets-brand-new-heavyweight-headliner/ |
-| 2 | `config/short_notice.yaml` | Johnny Walker, 2026-11-07 (W) | Same bout, 9 days notice. Won by R3 KO. | Same as item 1 ; https://mmasucka.com/news/waldo-cortes-acosta-vs-johnny-walker-set-as-new-ufc-vegas-124-main-event-after-sean-brady-withdraws/ |
-| 3 | `config/short_notice.yaml` | Carlos Calderon, 2026-11-07 (L) | Replaced Lucas Brennan (torn ACL) vs. Austin Bashi. Reported Nov 4, 4 days notice. Lost by R1 submission. | https://boxingnews.com/news/calderon-ufc-vegas-124-short-notice/ |
-| 4 | `config/name_aliases.yaml` | `jose henrique: jose souza` | ESPN listed "Jose Henrique" (event 401928118, Henrique vs. Parsons). UFCStats records the same bout as Jonny Parsons vs. **Jose Souza** (fighter-details/20a0e4cc5227c117, who also beat Ding Meng). Full name Jose Henrique Souza. Last week's note that he looked like a debutant was wrong. | https://www.rotowire.com/mma/player/jose-henrique-souza-2744 ; https://www.thestatszone.com/ufc-fight-night-jonny-parsons-vs-jose-henrique-souza-preview-prediction-234641 |
-| 5 | `data/external/ufc_media.csv`, `ufc_meta.csv` | Appended the ufc.com release labeled "Last updated: Saturday, Oct. 31" (as_of 2026-10-31, 176 rows each) | It already reflects Vegas 123 (Nolan up to media #13 and Meta #7, Luana Santos up). Ranks are read strictly before the fight date, so these rows serve Vegas 124 onward. Gane is stored as champion, not interim, as in prior weeks: only the image alt text says interim. The media panel has three ties, each stored as two rows: WW #9 Malott and Usman, HW #12 Lewis and Fortune, WBW #5 L. Santos and Pennington. Muhammad Saidov left the media LHW list, and Yakhyaev entered at #12. | https://www.ufc.com/rankings |
-| 6 | `data/raw/*`, `data/processed/*`, `outputs/*`, `docs/*`, `METHODOLOGY.md`, `predictions/picks.csv` (grades only) | Rebuilt with `run_all --quick` | Adds Vegas 124 and grades its picks. No new locks: the ESPN feed was unreachable from this run, so the saved copy was used. | Greco1899/scrape_ufc_stats, martj42/ufc_rankings_history |
+| 1 | `config/roster_exclusions.yaml` | Stephen Thompson, since 2026-11-15 | Announced UFC 334 as his last fight, then retired after the R3 spinning-kick KO of Charles Radtke. | https://heavy.com/sports/ufc/stephen-thompson-retires-after-ufc-334/ ; https://www.espn.com/mma/story/_/id/50486254/stephen-thompson-caps-career-spinning-kick-ko-ufc-334 |
+| 2 | `config/layoffs.yaml` | Kayla Harrison: `until: 2026-11-15` | She returned from neck surgery and submitted Amanda Nunes (R4) in the bantamweight title bout. Closed from the first board that holds the bout, as with Petr Yan. | https://sports.yahoo.com/articles/amanda-nunes-releases-statement-following-122311594.html |
+| 3 | `config/champions_override.yaml` | Ciryl Gane: `until: 2026-11-15` | His UD over Josh Hokit is an undisputed title bout in the data, which supersedes the override. The file's own instructions say to close the entry when that happens. He stays champion through the bout data, and the board is unchanged. | UFCStats event 402ea3b5ee233852 |
+| 4 | `config/short_notice.yaml` | Alatengheili, 2026-11-14 (L) | Replaced Adrian Yanez (withdrew, hospitalized) vs. Juan Diaz. First reported Nov 6 by Heavy, confirmed the same day by MMA Junkie, and confirmed by the UFC on Nov 10. That is 8 days notice. He lost a UD, so the loss costs 0.5x. Diaz was already booked, so like Bashi he gets no entry. | https://sports.yahoo.com/articles/hot-prospect-gets-ufc-334-004029780.html ; https://www.ufc.com/news/updates-polymarket-ufc-334-gane-vs-hokit |
+| 5 | `data/raw/*`, `data/processed/*`, `outputs/*`, `docs/*`, `METHODOLOGY.md`, `predictions/picks.csv` (grades only) | Rebuilt with `run_all --quick` | Adds UFC 334 and grades its picks. No new locks: the Nov 21 card was locked Nov 2. | Greco1899/scrape_ufc_stats |
 
-Item 4 cannot regrade the locked Parsons vs. "Jose Henrique" row, because rows are never edited and grading uses the names matched at lock time. That pick (Parsons, who lost by R1 KO) will void on Nov 17 under the 10-day rule. The alias fixes his future locks only.
+**Not done: `data/external/ufc_media.csv` and `ufc_meta.csv`.** The ufc.com/rankings fetch was refused this run (a permission prompt went unanswered in the unattended session). I did not try another route, so no release was appended. Rows dated Oct 31 still serve the Nov 21 card. The post-UFC 334 release should be appended next week, or by hand. Without it, the Nov 21 bouts read official ranks from before UFC 334.
 
 ### Checked, nothing to add
 
-- **Other Vegas 124 bouts:** Suarez vs. Jandiroba, Grant vs. Smith, Elekana vs. Fernando, Cachoeira vs. Milosevic, Raposo vs. Degli (booked Oct 1, not Nov 2 as I noted last week), Silva vs. Fernandes, Delano vs. Magomedov, Ko vs. Turman and Parsons vs. Souza were all booked by Sep 29 or Oct 1. There were no weight misses. Bashi only changed opponents, so he has no entry.
-- **Retirements and releases:** none took effect this week. Davey Grant said he will keep fighting (https://sports.yahoo.com/articles/gutted-davey-grant-issues-statement-144030427.html). Stephen Thompson confirmed that UFC 334 vs. Radtke is his last fight (https://heavy.com/sports/ufc/stephen-thompson-confirms-retirement-ufc-334/). His entry belongs in next week's review, dated Nov 15.
-- **Injuries and returns:** Kayla Harrison is confirmed for UFC 334 vs. Amanda Nunes. Her layoff entry closes after that bout (next week). Sean Brady (staph infection, no timeline) is at about 190 days and needs no entry yet. Aspinall and Shevchenko are unchanged.
-- **Titles:** unchanged. Prates vs. Morales for the interim WW title is still set for UFC 336, so no entry is needed until it happens.
-- **Division moves:** none confirmed. Makhachev only said a middleweight move is being discussed (https://bloodyelbow.com/2026/11/07/islam-makhachev-confirms-his-team-is-discussing-a-move-to-the-ufc-middleweight-division/). Johnny Walker moved to HW on his own: his last two bouts are there, so the weight-band rule placed him without an override.
-- **Drug-test overturns:** none. Jaqueline Amorim received a six-month CSAD suspension for contamination, and no result was overturned (https://www.ufc.com/news/statement-on-jaqueline-amorim).
-- **Unmatched names:** Calderon, Degli and Lorenço now match. Samuel Sanches (UFC 334) has a UFCStats page.
+- **Other UFC 334 bouts.** Almeida replaced Susurkaev against Donte Johnson about 26 days out. Sources disagree, and an Oct 8 card list may already show the pairing. Either way it falls outside about 3 weeks, so there is no entry. Sadykhov vs. Nascimento was cancelled. The other ten bouts were booked by early October. No missed weights were reported. Johnson vs. Almeida is recorded as a catchweight, and I found no reason given.
+- **Retirements and releases.** Only Thompson. Amanda Nunes is not retiring ("Back in the game", Instagram, Nov 15). Jim Miller (R1 TKO loss to McKinney) has said he plans to retire in 2027, with no announcement yet. No dated roster cuts were found this week.
+- **Titles.**
+  - HW: Gane retained.
+  - WBW: Harrison won. The board already listed her as champion, so there is no change.
+  - Aspinall is still out with no return date after further damage to his right eye (Nov 16). His reserved spot and layoff stay open (https://clutchpoints.com/ufc/ufc-news-tom-aspinall-eye-injury-return-update).
+  - Prates vs. Morales for the interim WW title is still set for UFC 336.
+- **Division moves:** none announced.
+- **Drug-test overturns:** none.
+- **Unmatched names:** none new. Samuel Sanches and Carlos Calderon now match.
 
 ## 2. Needs Brayton's judgment
 
-1. **Two more possible short-notice entries, sourced only by aggregators.** I did not add them.
-   - **Thomas Petersen** replaced Alvin Hines vs. Gabriel Lorenço. agentmma dates it Oct 25, which is 13 days. Petersen won by R3 KO. mmasucka says only "late October", and one agentmma headline reverses who replaced whom.
-   - **Andre Petroski** moved from Vegas 123 after Bekoev withdrew. He was paired Oct 23 with Mantas Kondratavicius, whose opponent Wes Schultz had dropped out. That is 15 days. Petroski won by R2 KO. Sources: agentmma and ufcalendar only.
-   - If you accept either, I will add it next week. Kondratavicius was already booked on the card, so like Bashi he gets no entry.
-2. **Grant Dawson.** roster.watch tags him "OUT" with no date or reason. I found no reputable confirmation, so there is no exclusion. He is Meta LW #11.
-3. **McGregor's "my last fight" post (Nov 1).** He means the last fight on his contract, not a retirement, so there is no entry.
-4. **Still open:** Naimov, Buzukja, Pennington and the other single-source departures, plus Pena's inactivity clock. **Jose Aldo resolved itself.** He reached 540 days without a documented injury and left the BW board (#13 -> out).
+1. **A Bloody Elbow headline from Nov 13: "UFC champion has his title stolen after no-showing press conference featuring Pereira and Oliveira".** The page would not load, and no other source I found reports a UFC title being stripped or vacated. I made no entry. If a title was in fact taken away, it belongs in `champions_override.yaml` and possibly `interim_champions.yaml`. Please check.
+2. **Still open from last week:**
+   - Petersen and Petroski short-notice entries (aggregator-only sources)
+   - Grant Dawson's "OUT" tag
+   - Naimov, Buzukja, Pennington and the other single-source departures
+   - Pena's inactivity clock (526 days, WBW #9). She leaves the board at 540 days, about Nov 28, unless a documented injury is added.
 
-## 3. Board movements, top 15 (versus main, data through Oct 31)
+## 3. Board movements, top 15 (versus main, data through Nov 7)
 
-The three short-notice entries change scores slightly but move no one. For example, Walker goes from 0.575 to 0.587 and Cortes Acosta from 0.458 to 0.501. Every move below comes from the Vegas 124 results and the calendar.
+The four config changes move no one inside the top 15. Thompson was outside the WW top 30 before he retired. Every move below comes from the UFC 334 results and the calendar.
 
 | Division | Fighter | Move | Cause |
 |---|---|---|---|
-| Heavyweight | Johnny Walker | LHW #12 -> HW #6 | R3 KO of Cortes Acosta. His last two bouts are at HW, so the board follows them. Score order #5, then head-to-head -> #6. |
-| Heavyweight | Waldo Cortes Acosta | 5 -> 7 | Same bout. Last five now 2-3 (L3). |
-| Heavyweight | Pavlovich / D. Lewis | 6 -> 5 / 9 -> 8 | Knock-on |
-| Heavyweight | V. Walker, Pinto, Pericic, Kuniev, Petrino, Wint, Saricam | each down one or two | Walker's entry. Faglier 15 -> 16. |
-| Light Heavyweight | Menifield, Baraniewski, Saidov | 13/14/15 -> 12/13/14 | Walker left the division |
-| Light Heavyweight | Lucas Fernando / Billy Elekana | 17 -> 15 / 16 -> 24 | Fernando's UD over Elekana |
-| Bantamweight | Elijah Smith | 18 -> 13 | 60-second KO of Davey Grant (4-0, W4). Grant 20 -> out of the top 30. |
-| Bantamweight | Jose Aldo | 13 -> out | 540-day inactivity limit, no injury entry |
-| Middleweight | Abus Magomedov | 17 -> 12 (no bout) | His Nov 4, 2023 loss to Borralho passed the three-year loss horizon (`decisive_loss_years: 3`). Aliskerov, Page and Nickal each down one. Susurkaev 15 -> 16. |
-| Welterweight | Rinat Fakhretdinov | 13 -> 15 | Inactivity penalty (428 days). Amosov 14 -> 13, Magny 15 -> 14. |
-| Women's Bantamweight | Nina Milosevic | 13 -> 10 | R2 KO of Cachoeira. Pereira, Montague and Rosa each down one. Croden 16 -> 15. |
-| Women's Strawweight | Denise Gomes | 8 -> 6 (no bout) | Her Nov 4, 2023 loss to Angela Hill passed the same three-year horizon. Godinez and Kline each down one. |
-| Women's Strawweight | Suarez / Jandiroba | 2 / 3, unchanged | Suarez's UD confirms the existing order |
+| Heavyweight | Josh Hokit | 2 -> 5 | UD loss to Gane in a title bout. The title-cycle rule steps him back. |
+| Heavyweight | Sergei Pavlovich | 5 -> 2 (no bout) | His R1 KO loss to Aspinall (Nov 11, 2023) passed the three-year horizon. Ledger 3.95 -> 4.95. |
+| Heavyweight | Johnny Walker | 6 -> 3 | Title-cycle reorder behind Hokit's loss |
+| Heavyweight | Curtis Blaydes | 3 -> 6 (no bout) | Same reorder. He stays behind the recent challengers. |
+| Women's Bantamweight | Bia Mesquita | 6 -> 1 | R1 submission of Macy Chiasson (4-0, W4). Score order #2, then title cycle -> #1. |
+| Women's Bantamweight | Amanda Nunes | out -> 4 | Back in the eligible pool after fighting. Score order #1, then title cycle -> #4 after losing to Harrison. |
+| Women's Bantamweight | Edwards, Perez, Dumont, L. Santos, Cavalcanti, Y. Santos, Pena | each down one or two | Mesquita's and Nunes's entries |
+| Women's Bantamweight | Macy Chiasson | 9 -> 19 | Same bout |
+| Lightweight | Jim Miller | 10 -> 34 | R1 TKO loss to Terrance McKinney. Last five now 2-3. |
+| Lightweight | Padilla, Ruffy, Fiziev, Nolan, Turner, Moicano | each up one | Behind Miller's drop |
+| Lightweight | Salkilld / Saint Denis | 7 -> 6 / 6 -> 7 (no bout) | Division rescaling, a margin under 0.01 |
+| Middleweight | Yousri Belgaroui | 11 -> 20 | UD loss to Borralho. Borralho stays at #9. |
+| Middleweight | Magomedov, Aliskerov, Page, Nickal, Susurkaev | each up one | Knock-on |
+| Flyweight | Bilal Hasan | 14 -> 27 | Split-decision loss to Luis Gurule |
+| Flyweight | Alessandro Costa | 17 -> 13 (no bout) | A weak loss aged out (ledger -2.0 -> -1.0). Lima 13 -> 14. |
+| Featherweight | Allen / Zalal | 9 -> 8 / 8 -> 9 (no bout) | Rescaling, a margin under 0.01 |
+| Women's Strawweight | Kline / Godinez, Luciano / Andrade | each one-place swap (no bout) | Rescaling |
 
-Champions are unchanged in every division.
+Champions and reserved spots are unchanged in every division. Welterweight's top 15 is unchanged: Medić and Holland drew and sit at #16 and #24.
 
 ## 4. Audit trail items that look wrong or need judgment
 
-1. **Abus Magomedov (+5) and Denise Gomes (+2) moved without fighting.** Both are caused by the same Nov 4, 2023 card aging out of the three-year loss window. The rule works as written. Abus's move counts toward the product endpoint "moves of more than three places without a new bout", so it is worth a line in any write-up.
-2. **Elijah Smith at BW #13 with zero top-15 wins** (ledger +0.2, a 4-0 run). This is the same pattern as Jacobe Smith last week: correct under v1.0, but thin.
-3. **Johnny Walker at HW #6 with a 3-2 last five.** His ledger is strong (3 top-10 wins, entrenched). The head-to-head rule drops him one place (score order #5 -> #6). I see nothing wrong.
-4. **Tyrell Fortune fell out of the HW top 30** (24 -> score order #33). Last week only a head-to-head lift held him at #24. Walker's arrival pushed him to score order #33, beyond the lift's reach (`max_gap_recent: 6`). He is media panel HW #12 (tied), so the comparison page will flag him.
+1. **Bia Mesquita at WBW #1 with one quality win** (ledger 1.0, T10 1, rank band 1 to 5). Her score is behind Nunes, and the title-cycle rule lifts her to #1. Perez (5-0, ledger 3.5) and Dumont (ledger 3.3) sit below her. This is correct under v1.0 and thin as a resume, and it is the most visible oddity on the board this week.
+2. **Amanda Nunes at WBW #4 with the division's highest score** (+1.03, against Harrison's +0.70). Her rating is far above everyone else's, and only the title-cycle rule holds her at #4. This works as designed, but it will draw questions.
+3. **Moves of three or more places without a bout:** Pavlovich +3, Blaydes -3, Costa +4. Costa's move is over three and counts toward the product endpoint (PREREGISTRATION section 5). Pavlovich's and Costa's moves come from the same loss-horizon aging that moved Abus Magomedov and Denise Gomes last week.
+4. **Alex Pereira at HW #4 with a score of +1.20** (equal to #1 Volkov). The title-cycle rule after his June loss to Gane holds him there. I see nothing wrong.
 
 ## 5. Forward validation (outputs/forward_validation.json, prospective since the Oct 1 freeze)
 
 | Primary population (both scored) | Value |
 |---|---|
-| Bouts | 45 |
-| REAL concordance | 55.6% (95% CI 41.2% to 69.1%) |
-| REAL log loss | 0.716 |
-| Results-only Elo log loss | 0.716 |
-| Performance-adjusted Elo log loss | 0.744 |
+| Bouts | 53 |
+| REAL concordance | 56.6% (95% CI 43.3% to 69.0%) |
+| REAL log loss | 0.733 |
+| Results-only Elo log loss | 0.712 |
+| Performance-adjusted Elo log loss | 0.725 |
 
 Secondary populations:
 
 | Population | Bouts | REAL concordance |
 |---|---|---|
-| Both fighters in the top 30 | 24 | 66.7% |
-| Both in the top 15 | 10 | 80.0% |
-| Title fights | 3 | 3 of 3 |
+| Both fighters in the top 30 | 27 | 70.4% |
+| Both in the top 15 | 13 | 84.6% |
+| Title fights | 4 | 4 of 4 |
 
-Where both fighters held an official rank (14 bouts), the official board was concordant in 57.1% and REAL in 71.4%. These numbers are interim and descriptive only (PREREGISTRATION section 2).
+Where both fighters held an official rank (16 bouts), the official board was concordant in 56.2% and REAL in 75.0%. On the primary population, REAL's log loss is now above both Elo baselines. These numbers are interim and descriptive only (PREREGISTRATION section 2).
 
 ## 6. Picks record (outputs/picks_summary.json)
 
-- **Graded 61: 34 correct, 27 incorrect (55.7%, Wilson 95% 43.3% to 67.5%).** Log loss is 0.686, against 0.693 for a coin flip.
-- **UFC Vegas 124: 7 of 12 correct.** One no-pick: the Cortes Acosta vs. Walker main event fell inside the two-point band at lock. The misses:
-  - Nakamura over Schmid
-  - Grant over Smith
-  - Jandiroba over Suarez
-  - Degli over Raposo
-  - Kondratavicius over Petroski
-- Same bouts: results-only Elo 50.8%, shadow v1.1 59.0% (log loss 0.683). Market at lock (32 bouts with odds): 75.0% (0.613 log loss), against the model's 62.5% (0.652) on those bouts.
-- **Pending 31. No-pick 2.**
-- **Void 4:**
-  - Kareckaite vs. Gatto: draw or no contest.
-  - Horth vs. Cerminara: the bout fell through.
-  - Mahjoub vs. Sutherland: the bout fell through.
-  - Allen vs. Pico: Keita replaced Allen. It voided at the 10-day rule on Nov 3.
+- **Graded 72: 42 correct, 30 incorrect (58.3%, Wilson 95% 46.8% to 69.0%).** Log loss is 0.681, against 0.693 for a coin flip.
+- **UFC 334: 8 of 11 correct.**
+  - The misses were Nunes over Harrison, Hasan over Gurule, and Johnson over Almeida.
+  - One no-pick: Borralho vs. Belgaroui fell inside the two-point band at lock.
+  - Shadow v1.1 had Harrison.
+- Same bouts: results-only Elo 51.4%, shadow v1.1 62.5% (log loss 0.688). Market at lock (41 bouts with odds): 75.6% (0.625 log loss), against the model's 63.4% (0.662) on those bouts.
+- **Pending 16. No-pick 3.**
+- **Void 8:**
+  - The four listed last week.
+  - The three Vegas 123 locks whose bouts changed (Brown vs. Leal, Marshall vs. Bolanos, Bekoev vs. Petroski). These voided at the 10-day rule.
+  - Medić vs. Holland (UFC 334): a majority draw.
 - **Coming voids:**
-  - Nov 10 (three Vegas 123 locks whose bouts changed):
-    - Brown vs. Leal
-    - Marshall vs. Bolanos
-    - Bekoev vs. Petroski
-  - Nov 17 (five Vegas 124 locks):
-    - Bonfim vs. Brady: Brady withdrew.
-    - Bashi vs. Brennan: Calderon replaced Brennan.
-    - Lorenço vs. Hines: Petersen replaced Hines.
-    - Kondratavicius vs. Schultz: Petroski replaced Schultz.
-    - Parsons vs. "Jose Henrique": a name mismatch (item 4). Parsons lost, so this void hides a miss.
+  - Nov 17 (the five Vegas 124 locks named last week):
+    - Bonfim vs. Brady
+    - Bashi vs. Brennan
+    - Lorenço vs. Hines
+    - Kondratavicius vs. Schultz
+    - Parsons vs. "Jose Henrique"
+  - Nov 24 (two UFC 334 locks):
+    - Yanez vs. Diaz: Yanez withdrew, and Alatengheili vs. Diaz was locked and graded separately.
+    - Sadykhov vs. Nascimento: the bout was cancelled. This was a no-pick lock.

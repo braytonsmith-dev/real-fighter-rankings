@@ -2510,3 +2510,15 @@ date,event,division,fighter_a,pos_a,fighter_b,pos_b,top10_bout,top15_bout,title_
 2026-11-07,UFC Fight Night: Cortes Acosta vs. Walker,Welterweight,Seokhyeon Ko,35,Wellington Turman,999,False,False,False,False,U-DEC
 2026-11-07,UFC Fight Night: Cortes Acosta vs. Walker,Women's Bantamweight,Priscila Cachoeira,26,Nina Milosevic,16,False,False,False,False,KO/TKO
 2026-11-07,UFC Fight Night: Cortes Acosta vs. Walker,Welterweight,Jonny Parsons,999,Jose Souza,62,False,False,False,False,KO/TKO
+2026-11-14,UFC 334: Gane vs. Hokit,Heavyweight,Ciryl Gane,1,Josh Hokit,5,True,True,True,False,U-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Women's Bantamweight,Kayla Harrison,1,Amanda Nunes,999,False,False,True,False,SUB
+2026-11-14,UFC 334: Gane vs. Hokit,Welterweight,Uros Medic,13,Kevin Holland,16,False,True,False,False,M-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Welterweight,Stephen Thompson,17,Charles Radtke,51,False,False,False,False,KO/TKO
+2026-11-14,UFC 334: Gane vs. Hokit,Bantamweight,Alatengheili,61,Juan Diaz,45,False,False,False,False,U-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Lightweight,Jared Gordon,35,Melquizael Costa,999,False,False,False,False,U-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Lightweight,Evan Elder,999,Samuel Sanches,999,False,False,False,False,U-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Middleweight,Caio Borralho,12,Yousri Belgaroui,11,False,True,False,False,U-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Lightweight,Jim Miller,45,Terrance McKinney,22,False,False,False,False,KO/TKO
+2026-11-14,UFC 334: Gane vs. Hokit,Lightweight,Drew Dober,36,Chris Duncan,20,False,False,False,False,U-DEC
+2026-11-14,UFC 334: Gane vs. Hokit,Women's Bantamweight,Macy Chiasson,17,Bia Mesquita,7,False,False,False,False,SUB
+2026-11-14,UFC 334: Gane vs. Hokit,Flyweight,Bilal Hasan,17,Luis Gurule,999,False,False,False,False,S-DEC
