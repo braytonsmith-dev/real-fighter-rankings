@@ -1,11 +1,11 @@
 {
   "top15_slots_compared": 194,
-  "top15_slots_changed": 111,
+  "top15_slots_changed": 109,
   "largest_moves": [
     {
       "division": "Bantamweight",
       "fighter": "Marlon Vera",
-      "v1.0": 59,
+      "v1.0": 58,
       "v1.1": 14
     },
     {
@@ -21,16 +21,16 @@
       "v1.1": 12
     },
     {
-      "division": "Flyweight",
-      "fighter": "Fabia Sintes",
-      "v1.0": 25,
-      "v1.1": 14
-    },
-    {
       "division": "Middleweight",
       "fighter": "Israel Adesanya",
       "v1.0": 25,
-      "v1.1": 14
+      "v1.1": 13
+    },
+    {
+      "division": "Flyweight",
+      "fighter": "Fabia Sintes",
+      "v1.0": 24,
+      "v1.1": 13
     },
     {
       "division": "Welterweight",
@@ -39,22 +39,16 @@
       "v1.1": 23
     },
     {
-      "division": "Lightweight",
-      "fighter": "Jim Miller",
-      "v1.0": 10,
-      "v1.1": 19
-    },
-    {
       "division": "Welterweight",
       "fighter": "Joaquin Buckley",
-      "v1.0": 24,
+      "v1.0": 23,
       "v1.1": 15
     },
     {
-      "division": "Light Heavyweight",
-      "fighter": "Jamahal Hill",
-      "v1.0": 21,
-      "v1.1": 13
+      "division": "Lightweight",
+      "fighter": "Jalin Turner",
+      "v1.0": 14,
+      "v1.1": 22
     },
     {
       "division": "Women's Flyweight",
@@ -63,16 +57,28 @@
       "v1.1": 12
     },
     {
-      "division": "Lightweight",
-      "fighter": "Jalin Turner",
-      "v1.0": 15,
-      "v1.1": 22
+      "division": "Middleweight",
+      "fighter": "Abus Magomedov",
+      "v1.0": 11,
+      "v1.1": 18
+    },
+    {
+      "division": "Light Heavyweight",
+      "fighter": "Jamahal Hill",
+      "v1.0": 21,
+      "v1.1": 14
+    },
+    {
+      "division": "Featherweight",
+      "fighter": "Melquizael Costa",
+      "v1.0": 20,
+      "v1.1": 14
     },
     {
       "division": "Middleweight",
-      "fighter": "Abus Magomedov",
-      "v1.0": 12,
-      "v1.1": 18
+      "fighter": "Bo Nickal",
+      "v1.0": 14,
+      "v1.1": 20
     },
     {
       "division": "Welterweight",
@@ -81,16 +87,10 @@
       "v1.1": 5
     },
     {
-      "division": "Flyweight",
-      "fighter": "Tim Elliott",
-      "v1.0": 10,
-      "v1.1": 15
-    },
-    {
-      "division": "Light Heavyweight",
-      "fighter": "Iwo Baraniewski",
-      "v1.0": 13,
-      "v1.1": 18
+      "division": "Bantamweight",
+      "fighter": "Brady Hiestand",
+      "v1.0": 12,
+      "v1.1": 17
     }
   ]
 }

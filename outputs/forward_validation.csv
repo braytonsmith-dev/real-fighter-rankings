@@ -984,3 +984,11 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2026-10-31,2026-11-07,True,Middleweight,False,Mantas Kondratavicius,36,-0.003,Andre Petroski,64,-0.4065,0.0,Andre Petroski,0.0,0.6339,False,False,99.0,99.0,,0.6637055287500576,0.4803668039780564,KO/TKO
 2026-10-31,2026-11-07,True,Featherweight,False,Jose Delano,32,0.072,Murtazali Magomedov,30,0.1105,0.0,Murtazali Magomedov,1.0,0.4869,False,False,99.0,99.0,,0.4612467196534641,0.4906175780118478,U-DEC
 2026-10-31,2026-11-07,True,Women's Bantamweight,False,Priscila Cachoeira,23,-1.3468,Nina Milosevic,13,-0.1172,0.0,Nina Milosevic,1.0,0.1581,True,False,99.0,99.0,,0.2476681522057763,0.3461140297627646,KO/TKO
+2026-11-07,2026-11-14,True,Heavyweight,True,Ciryl Gane,0,1.1704,Josh Hokit,2,0.5647,1.0,Ciryl Gane,1.0,0.695,True,True,0.0,4.0,1.0,0.657541928151042,0.5943748586545561,U-DEC
+2026-11-07,2026-11-14,True,Welterweight,False,Stephen Thompson,61,-0.4281,Charles Radtke,39,-0.0678,1.0,Stephen Thompson,0.0,0.3799,False,False,99.0,99.0,,0.6719147396374856,0.5516119741405109,KO/TKO
+2026-11-07,2026-11-14,True,Bantamweight,False,Alatengheili,49,-0.091,Juan Diaz,24,0.11,0.0,Juan Diaz,1.0,0.4321,False,False,99.0,99.0,,0.4369951927025252,0.5298693630237544,U-DEC
+2026-11-07,2026-11-14,True,Middleweight,False,Caio Borralho,9,0.5079,Yousri Belgaroui,11,0.3001,1.0,Caio Borralho,1.0,0.5702,True,True,5.0,99.0,,0.4907665150935003,0.6458542827442123,U-DEC
+2026-11-07,2026-11-14,True,Lightweight,False,Jim Miller,10,0.3689,Terrance McKinney,55,-0.1008,0.0,Terrance McKinney,0.0,0.6545,False,False,99.0,99.0,,0.379440668485081,0.6105457102606474,KO/TKO
+2026-11-07,2026-11-14,True,Lightweight,False,Drew Dober,48,-0.0524,Chris Duncan,41,0.003,0.0,Chris Duncan,1.0,0.4812,False,False,99.0,99.0,,0.3987209389829214,0.4599713323145165,U-DEC
+2026-11-07,2026-11-14,True,Women's Bantamweight,False,Macy Chiasson,9,0.1192,Bia Mesquita,6,0.1826,0.0,Bia Mesquita,1.0,0.4785,True,True,10.0,11.0,0.0,0.4194005594682701,0.3795775774176478,SUB
+2026-11-07,2026-11-14,True,Flyweight,False,Bilal Hasan,14,0.0644,Luis Gurule,49,-1.1489,0.0,Luis Gurule,0.0,0.8389,False,False,99.0,99.0,,0.7372269438163268,0.6923575319002119,S-DEC
