@@ -1,10 +1,10 @@
 {
-  "fetched_at_utc": "2026-11-16T22:42:10Z",
-  "bouts_from_api": 49,
-  "bouts_with_consensus": 19,
-  "matched_to_pending_picks": 11,
-  "credits_remaining": "479",
-  "credits_used_this_month": "21",
+  "fetched_at_utc": "2026-11-20T21:00:29Z",
+  "bouts_from_api": 57,
+  "bouts_with_consensus": 35,
+  "matched_to_pending_picks": 12,
+  "credits_remaining": "476",
+  "credits_used_this_month": "24",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
@@ -12,7 +12,19 @@
     "Dan Hooker vs Brian Ortega (2026-11-21)"
   ],
   "unmatched_market_bouts": [
-    "Kyoji Horiguchi vs Asu Almabaev (2026-11-21, 25 books)",
-    "Daniel Hooker vs Brian Ortega (2026-11-21, 27 books)"
+    "Dylan Smerillo vs Ray Hayes (2026-11-21, 2 books)",
+    "Benny Orozco vs Canon Swanson (2026-11-21, 2 books)",
+    "Marcos Breno vs Eduardo Matias Torres (2026-11-21, 2 books)",
+    "Patrik \u0160ebek vs Adrian Hamerski (2026-11-21, 2 books)",
+    "Jakub Batfalsky vs Ayton De Paepe (2026-11-21, 2 books)",
+    "Mateusz Legierski vs Ivan Buchinger (2026-11-21, 2 books)",
+    "Veronika Smolkova vs Ivana Petrovic (2026-11-21, 2 books)",
+    "Kamil Szkaradek vs Rogerio Bontorin (2026-11-21, 2 books)",
+    "Mateusz Pawlik vs Madars Fleminas (2026-11-21, 2 books)",
+    "Marcin Held vs Valeriu Mircea (2026-11-21, 2 books)",
+    "Roman Szymanski vs Marian Ziolkowski (2026-11-21, 2 books)",
+    "Sasha Moisa vs Wojciech Kawa (2026-11-21, 2 books)",
+    "Kyoji Horiguchi vs Asu Almabaev (2026-11-21, 27 books)",
+    "Daniel Hooker vs Brian Ortega (2026-11-21, 28 books)"
   ]
 }

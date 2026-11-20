@@ -1,6 +1,6 @@
 {
- "fetched_at_utc": "2026-11-16T22:42:09Z",
- "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261116-20261207",
+ "fetched_at_utc": "2026-11-20T21:00:27Z",
+ "url": "https://site.api.espn.com/apis/site/v2/sports/mma/ufc/scoreboard?dates=20261120-20261211",
  "events": [
   {
    "id": "600061665",
@@ -14,6 +14,132 @@
     "slug": "regular-season"
    },
    "competitions": [
+    {
+     "id": "401935762",
+     "uid": "s:3301~l:3321~e:600061665~c:401935762",
+     "date": "2026-11-21T15:00Z",
+     "endDate": "2026-11-21T15:00Z",
+     "type": {
+      "id": "986",
+      "abbreviation": "Lightweight"
+     },
+     "timeValid": true,
+     "neutralSite": false,
+     "playByPlayAvailable": false,
+     "recent": false,
+     "venue": {
+      "id": "11560",
+      "fullName": "ABHA Arena",
+      "address": {
+       "city": "Doha",
+       "country": "Qatar"
+      },
+      "indoor": true
+     },
+     "competitors": [
+      {
+       "id": "4712356",
+       "uid": "s:3301~a:4712356",
+       "type": "athlete",
+       "order": 1,
+       "winner": false,
+       "athlete": {
+        "fullName": "Shoaib Yousaf",
+        "displayName": "Shoaib Yousaf",
+        "shortName": "S. Yousaf",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+         "alt": "England",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "14-3-0"
+        }
+       ]
+      },
+      {
+       "id": "5080723",
+       "uid": "s:3301~a:5080723",
+       "type": "athlete",
+       "order": 2,
+       "winner": false,
+       "athlete": {
+        "fullName": "John Mitchell",
+        "displayName": "John Mitchell",
+        "shortName": "J. Mitchell",
+        "flag": {
+         "href": "https://a.espncdn.com/i/teamlogos/countries/500/irl.png",
+         "alt": "Ireland",
+         "rel": [
+          "country-flag"
+         ]
+        }
+       },
+       "records": [
+        {
+         "name": "overall",
+         "abbreviation": "TOT",
+         "type": "total",
+         "summary": "11-3-0"
+        }
+       ]
+      }
+     ],
+     "status": {
+      "clock": 0.0,
+      "displayClock": "-",
+      "period": 0,
+      "type": {
+       "id": "1",
+       "name": "STATUS_SCHEDULED",
+       "state": "pre",
+       "completed": false,
+       "description": "Scheduled",
+       "detail": "Sat, November 21st at 10:00 AM EST",
+       "shortDetail": "11/21 - 10:00 AM EST"
+      }
+     },
+     "broadcasts": [
+      {
+       "market": "national",
+       "names": [
+        "Paramount+"
+       ]
+      }
+     ],
+     "format": {
+      "regulation": {
+       "periods": 3
+      }
+     },
+     "startDate": "2026-11-21T15:00Z",
+     "broadcast": "Paramount+",
+     "geoBroadcasts": [
+      {
+       "type": {
+        "id": "4",
+        "shortName": "Streaming"
+       },
+       "market": {
+        "id": "1",
+        "type": "National"
+       },
+       "media": {
+        "shortName": "Paramount+"
+       },
+       "lang": "en",
+       "region": "us"
+      }
+     ],
+     "highlights": []
+    },
     {
      "id": "401934356",
      "uid": "s:3301~l:3321~e:600061665~c:401934356",
@@ -647,8 +773,8 @@
     {
      "id": "401927854",
      "uid": "s:3301~l:3321~e:600061665~c:401927854",
-     "date": "2026-11-21T18:00Z",
-     "endDate": "2026-11-21T18:00Z",
+     "date": "2026-11-21T15:00Z",
+     "endDate": "2026-11-21T15:00Z",
      "type": {
       "id": "970",
       "abbreviation": "Bantamweight"
@@ -732,8 +858,8 @@
        "state": "pre",
        "completed": false,
        "description": "Scheduled",
-       "detail": "Sat, November 21st at 1:00 PM EST",
-       "shortDetail": "11/21 - 1:00 PM EST"
+       "detail": "Sat, November 21st at 10:00 AM EST",
+       "shortDetail": "11/21 - 10:00 AM EST"
       }
      },
      "broadcasts": [
@@ -749,7 +875,7 @@
        "periods": 3
       }
      },
-     "startDate": "2026-11-21T18:00Z",
+     "startDate": "2026-11-21T15:00Z",
      "broadcast": "Paramount+",
      "geoBroadcasts": [
       {
@@ -2209,8 +2335,8 @@
     {
      "id": "401933600",
      "uid": "s:3301~l:3321~e:600062700~c:401933600",
-     "date": "2026-12-05T15:00Z",
-     "endDate": "2026-12-05T15:00Z",
+     "date": "2026-12-05T18:00Z",
+     "endDate": "2026-12-05T18:00Z",
      "type": {
       "id": "990",
       "abbreviation": "Light Heavyweight"
@@ -2294,8 +2420,8 @@
        "state": "pre",
        "completed": false,
        "description": "Scheduled",
-       "detail": "Sat, December 5th at 10:00 AM EST",
-       "shortDetail": "12/5 - 10:00 AM EST"
+       "detail": "Sat, December 5th at 1:00 PM EST",
+       "shortDetail": "12/5 - 1:00 PM EST"
       }
      },
      "broadcasts": [
@@ -2311,7 +2437,7 @@
        "periods": 3
       }
      },
-     "startDate": "2026-12-05T15:00Z",
+     "startDate": "2026-12-05T18:00Z",
      "broadcast": "Paramount+",
      "geoBroadcasts": [
       {
@@ -2335,8 +2461,8 @@
     {
      "id": "401933599",
      "uid": "s:3301~l:3321~e:600062700~c:401933599",
-     "date": "2026-12-05T15:00Z",
-     "endDate": "2026-12-05T15:00Z",
+     "date": "2026-12-05T18:00Z",
+     "endDate": "2026-12-05T18:00Z",
      "type": {
       "id": "986",
       "abbreviation": "Lightweight"
@@ -2420,8 +2546,8 @@
        "state": "pre",
        "completed": false,
        "description": "Scheduled",
-       "detail": "Sat, December 5th at 10:00 AM EST",
-       "shortDetail": "12/5 - 10:00 AM EST"
+       "detail": "Sat, December 5th at 1:00 PM EST",
+       "shortDetail": "12/5 - 1:00 PM EST"
       }
      },
      "broadcasts": [
@@ -2437,7 +2563,7 @@
        "periods": 3
       }
      },
-     "startDate": "2026-12-05T15:00Z",
+     "startDate": "2026-12-05T18:00Z",
      "broadcast": "Paramount+",
      "geoBroadcasts": [
       {
@@ -2461,8 +2587,8 @@
     {
      "id": "401933598",
      "uid": "s:3301~l:3321~e:600062700~c:401933598",
-     "date": "2026-12-05T15:00Z",
-     "endDate": "2026-12-05T15:00Z",
+     "date": "2026-12-05T18:00Z",
+     "endDate": "2026-12-05T18:00Z",
      "type": {
       "id": "969",
       "abbreviation": "Welterweight"
@@ -2546,8 +2672,8 @@
        "state": "pre",
        "completed": false,
        "description": "Scheduled",
-       "detail": "Sat, December 5th at 10:00 AM EST",
-       "shortDetail": "12/5 - 10:00 AM EST"
+       "detail": "Sat, December 5th at 1:00 PM EST",
+       "shortDetail": "12/5 - 1:00 PM EST"
       }
      },
      "broadcasts": [
@@ -2563,7 +2689,7 @@
        "periods": 3
       }
      },
-     "startDate": "2026-12-05T15:00Z",
+     "startDate": "2026-12-05T18:00Z",
      "broadcast": "Paramount+",
      "geoBroadcasts": [
       {

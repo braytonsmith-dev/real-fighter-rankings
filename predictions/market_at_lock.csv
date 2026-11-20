@@ -94,3 +94,14 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061665:401934355,Nikolas Motta,Dom Mar Fan,2026-11-21,lock,2026-11-16T22:42:10Z,2026-11-21T15:00:00Z,21,0.4167,0.5833,Dom Mar Fan,,,,,the-odds-api,"us,uk,eu",h2h
 600062700:401933595,Israel Adesanya,Shara Magomedov,2026-12-05,lock,2026-11-16T22:42:10Z,2026-12-05T17:00:00Z,20,0.577,0.423,Israel Adesanya,,,,,the-odds-api,"us,uk,eu",h2h
 600062700:401933596,Ian Machado Garry,Yaroslav Amosov,2026-12-05,lock,2026-11-16T22:42:10Z,2026-12-05T17:00:00Z,18,0.6129,0.3871,Ian Machado Garry,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927851,Jared Cannonier,Ikram Aliskerov,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T18:15:00Z,30,0.2799,0.7201,Ikram Aliskerov,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401922277,Jiri Prochazka,Navajo Stirling,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T20:15:00Z,29,0.3919,0.6081,Navajo Stirling,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927850,Aljamain Sterling,Kevin Vallejos,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T19:45:00Z,28,0.4577,0.5423,Kevin Vallejos,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927856,Amir Albazi,Alessandro Costa,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T16:45:00Z,26,0.4999,0.5001,Alessandro Costa,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927853,Jake Matthews,Tahir Abdullayev,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T16:15:00Z,26,0.6813,0.3187,Jake Matthews,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401934356,Diyar Nurgozhay,Alik Lorenz,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T15:35:00Z,26,0.6897,0.3103,Diyar Nurgozhay,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401934355,Nikolas Motta,Dom Mar Fan,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T16:00:00Z,26,0.4,0.6,Dom Mar Fan,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401935762,Shoaib Yousaf,John Mitchell,2026-11-21,lock,2026-11-20T21:00:29Z,2026-11-21T15:10:00Z,25,0.445,0.555,John Mitchell,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401935762,Shoaib Yousaf,John Mitchell,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T15:10:00Z,25,0.445,0.555,John Mitchell,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927854,Aleksandre Topuria,Santiago Luna,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T17:40:00Z,24,0.7128,0.2872,Aleksandre Topuria,,,,,the-odds-api,"us,uk,eu",h2h
+600061665:401927852,Shamil Gaziev,Tallison Teixeira,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T17:15:00Z,22,0.6392,0.3608,Shamil Gaziev,,,,,the-odds-api,"us,uk,eu",h2h
