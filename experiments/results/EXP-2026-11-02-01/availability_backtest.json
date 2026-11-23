@@ -1,0 +1,473 @@
+{
+ "60": {
+  "horizon_days": 60,
+  "train_rows": 54580,
+  "test_rows": 33940,
+  "test_fighters": 1148,
+  "test_snapshots": 48,
+  "test_base_rate": 0.2079,
+  "models": {
+   "B0": {
+    "log_loss": 0.5112,
+    "brier": 0.1647,
+    "auc": null
+   },
+   "B1": {
+    "log_loss": 0.4749,
+    "brier": 0.1538,
+    "auc": 0.6755
+   },
+   "B2": {
+    "log_loss": 0.4717,
+    "brier": 0.1526,
+    "auc": 0.6936
+   },
+   "M": {
+    "log_loss": 0.4549,
+    "brier": 0.1472,
+    "auc": 0.7371
+   }
+  },
+  "M_minus_B1_logloss": {
+   "mean": -0.0199,
+   "ci95": [
+    -0.023,
+    -0.017
+   ]
+  },
+  "M_minus_B2_logloss": {
+   "mean": -0.0167,
+   "ci95": [
+    -0.0197,
+    -0.0137
+   ]
+  },
+  "calibration_M": [
+   {
+    "decile": 0,
+    "n": 3394,
+    "mean_pred": 0.02,
+    "observed": 0.026
+   },
+   {
+    "decile": 1,
+    "n": 3394,
+    "mean_pred": 0.073,
+    "observed": 0.043
+   },
+   {
+    "decile": 2,
+    "n": 3394,
+    "mean_pred": 0.105,
+    "observed": 0.078
+   },
+   {
+    "decile": 3,
+    "n": 3394,
+    "mean_pred": 0.133,
+    "observed": 0.12
+   },
+   {
+    "decile": 4,
+    "n": 3394,
+    "mean_pred": 0.162,
+    "observed": 0.178
+   },
+   {
+    "decile": 5,
+    "n": 3394,
+    "mean_pred": 0.194,
+    "observed": 0.226
+   },
+   {
+    "decile": 6,
+    "n": 3394,
+    "mean_pred": 0.229,
+    "observed": 0.29
+   },
+   {
+    "decile": 7,
+    "n": 3394,
+    "mean_pred": 0.273,
+    "observed": 0.309
+   },
+   {
+    "decile": 8,
+    "n": 3394,
+    "mean_pred": 0.336,
+    "observed": 0.367
+   },
+   {
+    "decile": 9,
+    "n": 3394,
+    "mean_pred": 0.437,
+    "observed": 0.443
+   }
+  ],
+  "calibration_by_year_M": [
+   {
+    "year": 2022,
+    "n": 8358,
+    "mean_pred": 0.198,
+    "observed": 0.209
+   },
+   {
+    "year": 2023,
+    "n": 8601,
+    "mean_pred": 0.196,
+    "observed": 0.201
+   },
+   {
+    "year": 2024,
+    "n": 8534,
+    "mean_pred": 0.197,
+    "observed": 0.211
+   },
+   {
+    "year": 2025,
+    "n": 8447,
+    "mean_pred": 0.193,
+    "observed": 0.211
+   }
+  ],
+  "coefficients_std": {
+   "intercept": -1.727,
+   "log_days": -0.0064,
+   "log_days_sq": -1.052,
+   "log_gap": -0.219,
+   "log_ratio": 0.0332,
+   "log_ratio_sq": -0.3757,
+   "log_n": 0.055,
+   "debut_only": 0.0823,
+   "last_win": 0.1047,
+   "last_ko_loss": -0.0723,
+   "last_other_loss": -0.0457,
+   "last_nodecision": -0.0006,
+   "last_finish_win": 0.0855,
+   "streak": 0.0242,
+   "losses_last3": -0.2058,
+   "last_title": -0.0136,
+   "title_winner": -0.0949,
+   "age_c": -0.0205,
+   "age_c_sq": -0.0274,
+   "age_missing": 0.0,
+   "rating_pct": 0.1744,
+   "women": 0.0334,
+   "year_c": -0.002
+  }
+ },
+ "120": {
+  "horizon_days": 120,
+  "train_rows": 54580,
+  "test_rows": 33940,
+  "test_fighters": 1148,
+  "test_snapshots": 48,
+  "test_base_rate": 0.4009,
+  "models": {
+   "B0": {
+    "log_loss": 0.6735,
+    "brier": 0.2403,
+    "auc": null
+   },
+   "B1": {
+    "log_loss": 0.6399,
+    "brier": 0.2246,
+    "auc": 0.6494
+   },
+   "B2": {
+    "log_loss": 0.6359,
+    "brier": 0.2226,
+    "auc": 0.6593
+   },
+   "M": {
+    "log_loss": 0.6038,
+    "brier": 0.2087,
+    "auc": 0.7187
+   }
+  },
+  "M_minus_B1_logloss": {
+   "mean": -0.0361,
+   "ci95": [
+    -0.0404,
+    -0.0319
+   ]
+  },
+  "M_minus_B2_logloss": {
+   "mean": -0.0321,
+   "ci95": [
+    -0.036,
+    -0.028
+   ]
+  },
+  "calibration_M": [
+   {
+    "decile": 0,
+    "n": 3394,
+    "mean_pred": 0.11,
+    "observed": 0.093
+   },
+   {
+    "decile": 1,
+    "n": 3394,
+    "mean_pred": 0.183,
+    "observed": 0.145
+   },
+   {
+    "decile": 2,
+    "n": 3394,
+    "mean_pred": 0.236,
+    "observed": 0.245
+   },
+   {
+    "decile": 3,
+    "n": 3394,
+    "mean_pred": 0.286,
+    "observed": 0.339
+   },
+   {
+    "decile": 4,
+    "n": 3394,
+    "mean_pred": 0.339,
+    "observed": 0.396
+   },
+   {
+    "decile": 5,
+    "n": 3394,
+    "mean_pred": 0.391,
+    "observed": 0.47
+   },
+   {
+    "decile": 6,
+    "n": 3394,
+    "mean_pred": 0.446,
+    "observed": 0.508
+   },
+   {
+    "decile": 7,
+    "n": 3394,
+    "mean_pred": 0.514,
+    "observed": 0.553
+   },
+   {
+    "decile": 8,
+    "n": 3394,
+    "mean_pred": 0.593,
+    "observed": 0.595
+   },
+   {
+    "decile": 9,
+    "n": 3394,
+    "mean_pred": 0.695,
+    "observed": 0.665
+   }
+  ],
+  "calibration_by_year_M": [
+   {
+    "year": 2022,
+    "n": 8358,
+    "mean_pred": 0.382,
+    "observed": 0.402
+   },
+   {
+    "year": 2023,
+    "n": 8601,
+    "mean_pred": 0.38,
+    "observed": 0.395
+   },
+   {
+    "year": 2024,
+    "n": 8534,
+    "mean_pred": 0.38,
+    "observed": 0.403
+   },
+   {
+    "year": 2025,
+    "n": 8447,
+    "mean_pred": 0.375,
+    "observed": 0.404
+   }
+  ],
+  "coefficients_std": {
+   "intercept": -0.5281,
+   "log_days": -0.169,
+   "log_days_sq": -0.5118,
+   "log_gap": -0.2591,
+   "log_ratio": -0.1222,
+   "log_ratio_sq": -0.2043,
+   "log_n": 0.0609,
+   "debut_only": 0.0958,
+   "last_win": 0.0976,
+   "last_ko_loss": -0.0606,
+   "last_other_loss": -0.0469,
+   "last_nodecision": -0.0049,
+   "last_finish_win": 0.1,
+   "streak": 0.0714,
+   "losses_last3": -0.2407,
+   "last_title": -0.0131,
+   "title_winner": -0.1133,
+   "age_c": -0.0317,
+   "age_c_sq": -0.0335,
+   "age_missing": 0.0,
+   "rating_pct": 0.2141,
+   "women": 0.0463,
+   "year_c": 0.0023
+  }
+ },
+ "180": {
+  "horizon_days": 180,
+  "train_rows": 54580,
+  "test_rows": 33940,
+  "test_fighters": 1148,
+  "test_snapshots": 48,
+  "test_base_rate": 0.543,
+  "models": {
+   "B0": {
+    "log_loss": 0.6902,
+    "brier": 0.2485,
+    "auc": null
+   },
+   "B1": {
+    "log_loss": 0.6531,
+    "brier": 0.2304,
+    "auc": 0.6441
+   },
+   "B2": {
+    "log_loss": 0.6493,
+    "brier": 0.2287,
+    "auc": 0.6559
+   },
+   "M": {
+    "log_loss": 0.5937,
+    "brier": 0.2031,
+    "auc": 0.7457
+   }
+  },
+  "M_minus_B1_logloss": {
+   "mean": -0.0594,
+   "ci95": [
+    -0.0641,
+    -0.0549
+   ]
+  },
+  "M_minus_B2_logloss": {
+   "mean": -0.0556,
+   "ci95": [
+    -0.06,
+    -0.051
+   ]
+  },
+  "calibration_M": [
+   {
+    "decile": 0,
+    "n": 3394,
+    "mean_pred": 0.159,
+    "observed": 0.11
+   },
+   {
+    "decile": 1,
+    "n": 3394,
+    "mean_pred": 0.261,
+    "observed": 0.247
+   },
+   {
+    "decile": 2,
+    "n": 3394,
+    "mean_pred": 0.344,
+    "observed": 0.39
+   },
+   {
+    "decile": 3,
+    "n": 3394,
+    "mean_pred": 0.421,
+    "observed": 0.499
+   },
+   {
+    "decile": 4,
+    "n": 3394,
+    "mean_pred": 0.497,
+    "observed": 0.573
+   },
+   {
+    "decile": 5,
+    "n": 3394,
+    "mean_pred": 0.565,
+    "observed": 0.641
+   },
+   {
+    "decile": 6,
+    "n": 3394,
+    "mean_pred": 0.632,
+    "observed": 0.691
+   },
+   {
+    "decile": 7,
+    "n": 3394,
+    "mean_pred": 0.703,
+    "observed": 0.722
+   },
+   {
+    "decile": 8,
+    "n": 3394,
+    "mean_pred": 0.775,
+    "observed": 0.764
+   },
+   {
+    "decile": 9,
+    "n": 3394,
+    "mean_pred": 0.855,
+    "observed": 0.793
+   }
+  ],
+  "calibration_by_year_M": [
+   {
+    "year": 2022,
+    "n": 8358,
+    "mean_pred": 0.521,
+    "observed": 0.547
+   },
+   {
+    "year": 2023,
+    "n": 8601,
+    "mean_pred": 0.521,
+    "observed": 0.532
+   },
+   {
+    "year": 2024,
+    "n": 8534,
+    "mean_pred": 0.523,
+    "observed": 0.549
+   },
+   {
+    "year": 2025,
+    "n": 8447,
+    "mean_pred": 0.521,
+    "observed": 0.544
+   }
+  ],
+  "coefficients_std": {
+   "intercept": 0.1085,
+   "log_days": -0.3114,
+   "log_days_sq": -0.2651,
+   "log_gap": -0.28,
+   "log_ratio": -0.2609,
+   "log_ratio_sq": -0.3308,
+   "log_n": 0.0607,
+   "debut_only": 0.1039,
+   "last_win": 0.0749,
+   "last_ko_loss": -0.0391,
+   "last_other_loss": -0.0404,
+   "last_nodecision": -0.0093,
+   "last_finish_win": 0.1109,
+   "streak": 0.1436,
+   "losses_last3": -0.2871,
+   "last_title": -0.017,
+   "title_winner": -0.1224,
+   "age_c": -0.0421,
+   "age_c_sq": -0.0438,
+   "age_missing": 0.0,
+   "rating_pct": 0.2789,
+   "women": 0.0676,
+   "year_c": 0.0259
+  }
+ }
+}

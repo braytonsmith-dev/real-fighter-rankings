@@ -1,0 +1,395 @@
+{
+ "60": {
+  "horizon_days": 60,
+  "test_rows": 33940,
+  "observed_rate": 0.2079,
+  "models": {
+   "M_fixed": {
+    "log_loss": 0.4466,
+    "brier": 0.145,
+    "auc": 0.7488,
+    "mean_pred": 0.1949,
+    "ece": 0.0239
+   },
+   "M_roll": {
+    "log_loss": 0.4477,
+    "brier": 0.1447,
+    "auc": 0.7502,
+    "mean_pred": 0.2038,
+    "ece": 0.021
+   },
+   "M_cal": {
+    "log_loss": 0.448,
+    "brier": 0.1447,
+    "auc": 0.7499,
+    "mean_pred": 0.2094,
+    "ece": 0.0195
+   }
+  },
+  "M_cal_minus_M_fixed_logloss": {
+   "mean": 0.0014,
+   "ci95": [
+    -0.0007,
+    0.0039
+   ]
+  },
+  "calibration_M_cal": [
+   {
+    "decile": 0,
+    "n": 3394,
+    "mean_pred": 0.033,
+    "observed": 0.018
+   },
+   {
+    "decile": 1,
+    "n": 3394,
+    "mean_pred": 0.064,
+    "observed": 0.043
+   },
+   {
+    "decile": 2,
+    "n": 3394,
+    "mean_pred": 0.096,
+    "observed": 0.084
+   },
+   {
+    "decile": 3,
+    "n": 3394,
+    "mean_pred": 0.129,
+    "observed": 0.112
+   },
+   {
+    "decile": 4,
+    "n": 3394,
+    "mean_pred": 0.164,
+    "observed": 0.161
+   },
+   {
+    "decile": 5,
+    "n": 3394,
+    "mean_pred": 0.203,
+    "observed": 0.207
+   },
+   {
+    "decile": 6,
+    "n": 3394,
+    "mean_pred": 0.247,
+    "observed": 0.275
+   },
+   {
+    "decile": 7,
+    "n": 3394,
+    "mean_pred": 0.295,
+    "observed": 0.331
+   },
+   {
+    "decile": 8,
+    "n": 3394,
+    "mean_pred": 0.368,
+    "observed": 0.388
+   },
+   {
+    "decile": 9,
+    "n": 3394,
+    "mean_pred": 0.495,
+    "observed": 0.459
+   }
+  ],
+  "by_year": [
+   {
+    "year": 2022,
+    "observed": 0.209,
+    "M_fixed": 0.197,
+    "M_cal": 0.21,
+    "platt_a": 0.028,
+    "platt_b": 0.959
+   },
+   {
+    "year": 2023,
+    "observed": 0.201,
+    "M_fixed": 0.195,
+    "M_cal": 0.213,
+    "platt_a": 0.111,
+    "platt_b": 1.04
+   },
+   {
+    "year": 2024,
+    "observed": 0.211,
+    "M_fixed": 0.196,
+    "M_cal": 0.205,
+    "platt_a": -0.112,
+    "platt_b": 0.909
+   },
+   {
+    "year": 2025,
+    "observed": 0.211,
+    "M_fixed": 0.192,
+    "M_cal": 0.208,
+    "platt_a": 0.024,
+    "platt_b": 1.002
+   }
+  ]
+ },
+ "120": {
+  "horizon_days": 120,
+  "test_rows": 33940,
+  "observed_rate": 0.4009,
+  "models": {
+   "M_fixed": {
+    "log_loss": 0.5879,
+    "brier": 0.2024,
+    "auc": 0.7374,
+    "mean_pred": 0.3778,
+    "ece": 0.0306
+   },
+   "M_roll": {
+    "log_loss": 0.5856,
+    "brier": 0.2012,
+    "auc": 0.7391,
+    "mean_pred": 0.395,
+    "ece": 0.0215
+   },
+   "M_cal": {
+    "log_loss": 0.586,
+    "brier": 0.2013,
+    "auc": 0.7387,
+    "mean_pred": 0.4078,
+    "ece": 0.0224
+   }
+  },
+  "M_cal_minus_M_fixed_logloss": {
+   "mean": -0.0019,
+   "ci95": [
+    -0.004,
+    0.0004
+   ]
+  },
+  "calibration_M_cal": [
+   {
+    "decile": 0,
+    "n": 3394,
+    "mean_pred": 0.107,
+    "observed": 0.072
+   },
+   {
+    "decile": 1,
+    "n": 3394,
+    "mean_pred": 0.192,
+    "observed": 0.175
+   },
+   {
+    "decile": 2,
+    "n": 3394,
+    "mean_pred": 0.255,
+    "observed": 0.215
+   },
+   {
+    "decile": 3,
+    "n": 3394,
+    "mean_pred": 0.311,
+    "observed": 0.309
+   },
+   {
+    "decile": 4,
+    "n": 3394,
+    "mean_pred": 0.369,
+    "observed": 0.362
+   },
+   {
+    "decile": 5,
+    "n": 3394,
+    "mean_pred": 0.425,
+    "observed": 0.46
+   },
+   {
+    "decile": 6,
+    "n": 3394,
+    "mean_pred": 0.486,
+    "observed": 0.507
+   },
+   {
+    "decile": 7,
+    "n": 3394,
+    "mean_pred": 0.554,
+    "observed": 0.573
+   },
+   {
+    "decile": 8,
+    "n": 3394,
+    "mean_pred": 0.634,
+    "observed": 0.636
+   },
+   {
+    "decile": 9,
+    "n": 3394,
+    "mean_pred": 0.745,
+    "observed": 0.699
+   }
+  ],
+  "by_year": [
+   {
+    "year": 2022,
+    "observed": 0.402,
+    "M_fixed": 0.381,
+    "M_cal": 0.413,
+    "platt_a": 0.093,
+    "platt_b": 0.875
+   },
+   {
+    "year": 2023,
+    "observed": 0.395,
+    "M_fixed": 0.378,
+    "M_cal": 0.421,
+    "platt_a": 0.113,
+    "platt_b": 0.963
+   },
+   {
+    "year": 2024,
+    "observed": 0.403,
+    "M_fixed": 0.378,
+    "M_cal": 0.403,
+    "platt_a": 0.004,
+    "platt_b": 0.991
+   },
+   {
+    "year": 2025,
+    "observed": 0.404,
+    "M_fixed": 0.373,
+    "M_cal": 0.393,
+    "platt_a": -0.031,
+    "platt_b": 0.992
+   }
+  ]
+ },
+ "180": {
+  "horizon_days": 180,
+  "test_rows": 33940,
+  "observed_rate": 0.543,
+  "models": {
+   "M_fixed": {
+    "log_loss": 0.58,
+    "brier": 0.198,
+    "auc": 0.7582,
+    "mean_pred": 0.5199,
+    "ece": 0.0296
+   },
+   "M_roll": {
+    "log_loss": 0.5792,
+    "brier": 0.197,
+    "auc": 0.7592,
+    "mean_pred": 0.5374,
+    "ece": 0.022
+   },
+   "M_cal": {
+    "log_loss": 0.5802,
+    "brier": 0.1973,
+    "auc": 0.7585,
+    "mean_pred": 0.5547,
+    "ece": 0.0249
+   }
+  },
+  "M_cal_minus_M_fixed_logloss": {
+   "mean": 0.0002,
+   "ci95": [
+    -0.0021,
+    0.0025
+   ]
+  },
+  "calibration_M_cal": [
+   {
+    "decile": 0,
+    "n": 3394,
+    "mean_pred": 0.15,
+    "observed": 0.112
+   },
+   {
+    "decile": 1,
+    "n": 3394,
+    "mean_pred": 0.298,
+    "observed": 0.26
+   },
+   {
+    "decile": 2,
+    "n": 3394,
+    "mean_pred": 0.4,
+    "observed": 0.355
+   },
+   {
+    "decile": 3,
+    "n": 3394,
+    "mean_pred": 0.479,
+    "observed": 0.476
+   },
+   {
+    "decile": 4,
+    "n": 3394,
+    "mean_pred": 0.548,
+    "observed": 0.571
+   },
+   {
+    "decile": 5,
+    "n": 3394,
+    "mean_pred": 0.61,
+    "observed": 0.627
+   },
+   {
+    "decile": 6,
+    "n": 3394,
+    "mean_pred": 0.67,
+    "observed": 0.682
+   },
+   {
+    "decile": 7,
+    "n": 3394,
+    "mean_pred": 0.73,
+    "observed": 0.744
+   },
+   {
+    "decile": 8,
+    "n": 3394,
+    "mean_pred": 0.793,
+    "observed": 0.768
+   },
+   {
+    "decile": 9,
+    "n": 3394,
+    "mean_pred": 0.869,
+    "observed": 0.834
+   }
+  ],
+  "by_year": [
+   {
+    "year": 2022,
+    "observed": 0.547,
+    "M_fixed": 0.52,
+    "M_cal": 0.569,
+    "platt_a": 0.247,
+    "platt_b": 0.853
+   },
+   {
+    "year": 2023,
+    "observed": 0.532,
+    "M_fixed": 0.519,
+    "M_cal": 0.568,
+    "platt_a": 0.159,
+    "platt_b": 0.928
+   },
+   {
+    "year": 2024,
+    "observed": 0.549,
+    "M_fixed": 0.521,
+    "M_cal": 0.541,
+    "platt_a": -0.018,
+    "platt_b": 0.991
+   },
+   {
+    "year": 2025,
+    "observed": 0.544,
+    "M_fixed": 0.519,
+    "M_cal": 0.541,
+    "platt_a": -0.014,
+    "platt_b": 0.952
+   }
+  ]
+ }
+}

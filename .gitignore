@@ -20,3 +20,6 @@ outputs/decline_residuals.csv
 outputs/decline_report_research_*.json
 outputs/decline_index_research_*.csv
 outputs/decline_heldout_research_*.csv
+
+# matchmaking experiment intermediates (rebuilt by python -m mmalab.availability)
+outputs/matchmaking/*.csv.gz
