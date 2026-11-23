@@ -2522,3 +2522,15 @@ date,event,division,fighter_a,pos_a,fighter_b,pos_b,top10_bout,top15_bout,title_
 2026-11-14,UFC 334: Gane vs. Hokit,Lightweight,Drew Dober,36,Chris Duncan,20,False,False,False,False,U-DEC
 2026-11-14,UFC 334: Gane vs. Hokit,Women's Bantamweight,Macy Chiasson,17,Bia Mesquita,7,False,False,False,False,SUB
 2026-11-14,UFC 334: Gane vs. Hokit,Flyweight,Bilal Hasan,17,Luis Gurule,999,False,False,False,False,S-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Lightweight,Nikolas Motta,63,Dom Mar Fan,77,False,False,False,False,U-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Featherweight,Aljamain Sterling,2,Kevin Vallejos,8,True,True,False,True,U-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Welterweight,Jake Matthews,24,Tahir Abdullayev,62,False,False,False,False,U-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Bantamweight,Aleksandre Topuria,39,Santiago Luna,35,False,False,False,False,S-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Heavyweight,Shamil Gaziev,32,Tallison Teixeira,30,False,False,False,False,U-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Lightweight,Shoaib Yousaf,999,John Mitchell,999,False,False,False,False,KO/TKO
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Flyweight,Amir Albazi,26,Alessandro Costa,27,False,False,False,False,SUB
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Lightweight,Dan Hooker,48,Brian Ortega,999,False,False,False,False,U-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Middleweight,Jared Cannonier,21,Ikram Aliskerov,7,False,False,False,False,U-DEC
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Light Heavyweight,Jiri Prochazka,10,Navajo Stirling,4,True,True,False,True,KO/TKO
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Light Heavyweight,Diyar Nurgozhay,26,Alik Lorenz,999,False,False,False,False,KO/TKO
+2026-11-21,UFC Fight Night: Prochazka vs. Stirling,Flyweight,Kyoji Horiguchi,8,Asu Almabayev,7,True,True,False,True,U-DEC

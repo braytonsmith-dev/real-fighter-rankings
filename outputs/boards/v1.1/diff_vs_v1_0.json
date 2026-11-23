@@ -1,23 +1,23 @@
 {
-  "top15_slots_compared": 194,
-  "top15_slots_changed": 109,
+  "top15_slots_compared": 196,
+  "top15_slots_changed": 108,
   "largest_moves": [
     {
       "division": "Bantamweight",
       "fighter": "Marlon Vera",
       "v1.0": 58,
-      "v1.1": 14
+      "v1.1": 15
     },
     {
       "division": "Bantamweight",
       "fighter": "Deiveson Figueiredo",
-      "v1.0": 48,
-      "v1.1": 15
+      "v1.0": 47,
+      "v1.1": 14
     },
     {
       "division": "Light Heavyweight",
       "fighter": "Jan Blachowicz",
-      "v1.0": 25,
+      "v1.0": 26,
       "v1.1": 12
     },
     {
@@ -29,26 +29,32 @@
     {
       "division": "Flyweight",
       "fighter": "Fabia Sintes",
-      "v1.0": 24,
-      "v1.1": 13
-    },
-    {
-      "division": "Welterweight",
-      "fighter": "Neil Magny",
-      "v1.0": 14,
-      "v1.1": 23
-    },
-    {
-      "division": "Welterweight",
-      "fighter": "Joaquin Buckley",
       "v1.0": 23,
-      "v1.1": 15
+      "v1.1": 13
     },
     {
       "division": "Lightweight",
       "fighter": "Jalin Turner",
       "v1.0": 14,
-      "v1.1": 22
+      "v1.1": 23
+    },
+    {
+      "division": "Welterweight",
+      "fighter": "Neil Magny",
+      "v1.0": 15,
+      "v1.1": 23
+    },
+    {
+      "division": "Light Heavyweight",
+      "fighter": "Jamahal Hill",
+      "v1.0": 21,
+      "v1.1": 14
+    },
+    {
+      "division": "Welterweight",
+      "fighter": "Joaquin Buckley",
+      "v1.0": 22,
+      "v1.1": 15
     },
     {
       "division": "Women's Flyweight",
@@ -57,16 +63,10 @@
       "v1.1": 12
     },
     {
-      "division": "Middleweight",
-      "fighter": "Abus Magomedov",
+      "division": "Welterweight",
+      "fighter": "Kamaru Usman",
       "v1.0": 11,
-      "v1.1": 18
-    },
-    {
-      "division": "Light Heavyweight",
-      "fighter": "Jamahal Hill",
-      "v1.0": 21,
-      "v1.1": 14
+      "v1.1": 5
     },
     {
       "division": "Featherweight",
@@ -76,21 +76,21 @@
     },
     {
       "division": "Middleweight",
+      "fighter": "Abus Magomedov",
+      "v1.0": 12,
+      "v1.1": 18
+    },
+    {
+      "division": "Middleweight",
       "fighter": "Bo Nickal",
       "v1.0": 14,
       "v1.1": 20
     },
     {
-      "division": "Welterweight",
-      "fighter": "Kamaru Usman",
-      "v1.0": 11,
-      "v1.1": 5
-    },
-    {
-      "division": "Bantamweight",
-      "fighter": "Brady Hiestand",
-      "v1.0": 12,
-      "v1.1": 17
+      "division": "Light Heavyweight",
+      "fighter": "Iwo Baraniewski",
+      "v1.0": 13,
+      "v1.1": 18
     }
   ]
 }

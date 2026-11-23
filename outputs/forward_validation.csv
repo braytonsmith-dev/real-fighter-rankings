@@ -992,3 +992,12 @@ snapshot,date,prospective,division,title_fight,fighter_a,pos_a,score_a,fighter_b
 2026-11-07,2026-11-14,True,Lightweight,False,Drew Dober,48,-0.0524,Chris Duncan,41,0.003,0.0,Chris Duncan,1.0,0.4812,False,False,99.0,99.0,,0.3987209389829214,0.4599713323145165,U-DEC
 2026-11-07,2026-11-14,True,Women's Bantamweight,False,Macy Chiasson,9,0.1192,Bia Mesquita,6,0.1826,0.0,Bia Mesquita,1.0,0.4785,True,True,10.0,11.0,0.0,0.4194005594682701,0.3795775774176478,SUB
 2026-11-07,2026-11-14,True,Flyweight,False,Bilal Hasan,14,0.0644,Luis Gurule,49,-1.1489,0.0,Luis Gurule,0.0,0.8389,False,False,99.0,99.0,,0.7372269438163268,0.6923575319002119,S-DEC
+2026-11-14,2026-11-21,True,Lightweight,False,Nikolas Motta,64,-0.2195,Dom Mar Fan,56,-0.1482,0.0,Dom Mar Fan,1.0,0.4758,False,False,99.0,99.0,,0.5715893607256729,0.5592475132887887,U-DEC
+2026-11-14,2026-11-21,True,Featherweight,False,Aljamain Sterling,1,1.5762,Kevin Vallejos,7,0.5314,0.0,Kevin Vallejos,0.0,0.8055,True,True,4.0,9.0,0.0,0.6670751527728436,0.687814779327929,U-DEC
+2026-11-14,2026-11-21,True,Welterweight,False,Jake Matthews,21,0.202,Tahir Abdullayev,31,0.0258,0.0,Tahir Abdullayev,0.0,0.5596,False,False,99.0,99.0,,0.7080049756060858,0.670504807273817,U-DEC
+2026-11-14,2026-11-21,True,Bantamweight,False,Aleksandre Topuria,25,0.1006,Santiago Luna,43,-0.0293,0.0,Santiago Luna,0.0,0.544,False,False,99.0,99.0,,0.465489233367526,0.5612038714073374,S-DEC
+2026-11-14,2026-11-21,True,Heavyweight,False,Shamil Gaziev,24,0.0115,Tallison Teixeira,31,-0.0649,0.0,Tallison Teixeira,0.0,0.526,False,False,99.0,99.0,,0.4833257165741458,0.5471019182526117,U-DEC
+2026-11-14,2026-11-21,True,Flyweight,False,Amir Albazi,9,0.1759,Alessandro Costa,13,0.0874,1.0,Amir Albazi,1.0,0.53,True,True,9.0,99.0,,0.5015895261124824,0.5423147965541679,SUB
+2026-11-14,2026-11-21,True,Middleweight,False,Jared Cannonier,60,-0.3474,Ikram Aliskerov,12,0.2836,0.0,Ikram Aliskerov,1.0,0.2977,False,False,12.0,13.0,0.0,0.359050859166263,0.3864606717496052,U-DEC
+2026-11-14,2026-11-21,True,Light Heavyweight,False,Jiri Prochazka,4,0.8023,Navajo Stirling,5,0.4918,0.0,Navajo Stirling,0.0,0.604,True,True,2.0,5.0,0.0,0.3616335453242644,0.464235532046325,KO/TKO
+2026-11-14,2026-11-21,True,Flyweight,False,Kyoji Horiguchi,2,0.6082,Asu Almabayev,7,0.4312,1.0,Kyoji Horiguchi,1.0,0.5599,True,True,5.0,7.0,1.0,0.496566947473104,0.3297886047425937,U-DEC
