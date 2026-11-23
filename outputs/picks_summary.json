@@ -1,104 +1,112 @@
 {
-  "updated_utc": "2026-11-20T21:00:29Z",
-  "graded": 72,
-  "pending": 26,
+  "updated_utc": "2026-11-23T14:04:28Z",
+  "graded": 80,
+  "pending": 14,
   "void": 13,
-  "no_pick": 3,
+  "no_pick": 7,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
     "ok": true,
-    "checked_at_utc": "2026-11-20T21:00:27Z"
+    "checked_at_utc": "2026-11-23T14:04:27Z"
   },
   "record": {
-    "correct": 42,
-    "incorrect": 30,
-    "accuracy": 0.583,
+    "correct": 46,
+    "incorrect": 34,
+    "accuracy": 0.575,
     "accuracy_wilson95": [
-      0.468,
-      0.69
+      0.466,
+      0.677
     ],
-    "log_loss": 0.6812,
-    "brier": 0.244,
+    "log_loss": 0.6885,
+    "brier": 0.2474,
     "coin_flip_log_loss": 0.6931
   },
   "baselines_same_bouts": {
     "results_only_elo": {
-      "n": 72,
-      "accuracy": 0.514,
-      "log_loss": 0.692,
-      "model_accuracy_same_bouts": 0.583,
-      "model_log_loss_same_bouts": 0.6812,
+      "n": 80,
+      "accuracy": 0.5,
+      "log_loss": 0.7042,
+      "model_accuracy_same_bouts": 0.575,
+      "model_log_loss_same_bouts": 0.6885,
       "no_pick": 0
     },
     "real_board": {
-      "n": 45,
-      "accuracy": 0.489,
-      "log_loss": 0.7645,
-      "model_accuracy_same_bouts": 0.556,
-      "model_log_loss_same_bouts": 0.7157,
+      "n": 51,
+      "accuracy": 0.471,
+      "log_loss": 0.7762,
+      "model_accuracy_same_bouts": 0.549,
+      "model_log_loss_same_bouts": 0.7238,
       "no_pick": 0
     },
     "shadow_v11": {
-      "n": 72,
-      "accuracy": 0.625,
-      "log_loss": 0.6879,
-      "model_accuracy_same_bouts": 0.583,
-      "model_log_loss_same_bouts": 0.6812,
-      "no_pick": 0
+      "n": 78,
+      "accuracy": 0.641,
+      "log_loss": 0.6789,
+      "model_accuracy_same_bouts": 0.59,
+      "model_log_loss_same_bouts": 0.6846,
+      "no_pick": 2
     },
     "market_devigged_lock": {
-      "n": 41,
-      "accuracy": 0.756,
-      "log_loss": 0.6245,
-      "model_accuracy_same_bouts": 0.634,
-      "model_log_loss_same_bouts": 0.662
+      "n": 48,
+      "accuracy": 0.75,
+      "log_loss": 0.6219,
+      "model_accuracy_same_bouts": 0.625,
+      "model_log_loss_same_bouts": 0.6739
     },
     "market_devigged_last_before_event": {
-      "n": 33,
-      "accuracy": 0.697,
-      "log_loss": 0.6682,
-      "model_accuracy_same_bouts": 0.606,
-      "model_log_loss_same_bouts": 0.665
+      "n": 40,
+      "accuracy": 0.7,
+      "log_loss": 0.669,
+      "model_accuracy_same_bouts": 0.6,
+      "model_log_loss_same_bouts": 0.6788
     }
   },
   "by_confidence": [
     {
       "band": "50%-55%",
-      "n": 25,
-      "accuracy": 0.52,
-      "mean_p_pick": 0.524
+      "n": 26,
+      "accuracy": 0.538,
+      "mean_p_pick": 0.525
     },
     {
       "band": "55%-60%",
-      "n": 14,
-      "accuracy": 0.714,
+      "n": 16,
+      "accuracy": 0.625,
       "mean_p_pick": 0.572
     },
     {
       "band": "60%-65%",
-      "n": 15,
-      "accuracy": 0.6,
+      "n": 18,
+      "accuracy": 0.667,
       "mean_p_pick": 0.626
     },
     {
       "band": "65%-70%",
-      "n": 10,
-      "accuracy": 0.5,
+      "n": 11,
+      "accuracy": 0.455,
       "mean_p_pick": 0.668
     },
     {
       "band": "70%+",
-      "n": 8,
-      "accuracy": 0.625,
-      "mean_p_pick": 0.739
+      "n": 9,
+      "accuracy": 0.556,
+      "mean_p_pick": 0.736
     }
   ],
   "feed_order_matches_ufcstats_first_listed": 1.0,
   "provisional": {
-    "n": 45,
-    "accuracy": 0.489
+    "n": 49,
+    "accuracy": 0.49
   },
   "by_event": [
+    {
+      "event": "UFC Fight Night: Proch\u00e1zka vs. Stirling",
+      "date": "2026-11-21",
+      "n": 8,
+      "correct": 4,
+      "no_pick": 4,
+      "log_loss": 0.7543
+    },
     {
       "event": "UFC 334: Gane vs. Hokit",
       "date": "2026-11-14",
@@ -165,13 +173,6 @@
       "locked_at_utc": "2026-10-26T18:58:30Z"
     },
     {
-      "event": "UFC Fight Night: Proch\u00e1zka vs. Stirling",
-      "date": "2026-11-21",
-      "picks": 8,
-      "no_pick": 4,
-      "locked_at_utc": "2026-11-02T14:15:51Z"
-    },
-    {
       "event": "UFC Fight Night: Adesanya vs Magomedov",
       "date": "2026-12-05",
       "picks": 10,
@@ -185,60 +186,60 @@
     "ledger": "predictions/market_at_lock.csv",
     "store_raw_prices": false,
     "favourite_rule": "fighter_a when p_a_market >= 0.5, same convention as the model's pick",
-    "graded_with_market": 41,
-    "graded_without_market": 31,
+    "graded_with_market": 48,
+    "graded_without_market": 32,
     "baselines_same_bouts": {
       "market_devigged_lock": {
-        "n": 41,
-        "accuracy": 0.756,
-        "log_loss": 0.6245,
-        "model_accuracy_same_bouts": 0.634,
-        "model_log_loss_same_bouts": 0.662
+        "n": 48,
+        "accuracy": 0.75,
+        "log_loss": 0.6219,
+        "model_accuracy_same_bouts": 0.625,
+        "model_log_loss_same_bouts": 0.6739
       },
       "market_devigged_last_before_event": {
-        "n": 33,
-        "accuracy": 0.697,
-        "log_loss": 0.6682,
-        "model_accuracy_same_bouts": 0.606,
-        "model_log_loss_same_bouts": 0.665
+        "n": 40,
+        "accuracy": 0.7,
+        "log_loss": 0.669,
+        "model_accuracy_same_bouts": 0.6,
+        "model_log_loss_same_bouts": 0.6788
       }
     },
     "detail": {
       "lock": {
-        "n": 41,
-        "accuracy": 0.756,
-        "log_loss": 0.6245,
-        "model_accuracy_same_bouts": 0.634,
-        "model_log_loss_same_bouts": 0.662,
-        "brier": 0.2134,
-        "model_brier_same_bouts": 0.235,
+        "n": 48,
+        "accuracy": 0.75,
+        "log_loss": 0.6219,
+        "model_accuracy_same_bouts": 0.625,
+        "model_log_loss_same_bouts": 0.6739,
+        "brier": 0.2126,
+        "model_brier_same_bouts": 0.2405,
         "pickem_bouts": 0,
-        "mean_n_books": 15.4,
-        "agreement_rate": 0.683,
+        "mean_n_books": 14.6,
+        "agreement_rate": 0.667,
         "when_model_and_market_disagree": {
-          "n": 13,
-          "model_correct": 4,
-          "market_correct": 9
+          "n": 16,
+          "model_correct": 5,
+          "market_correct": 11
         },
-        "mean_market_p_for_model_pick": 0.562
+        "mean_market_p_for_model_pick": 0.56
       },
       "last_before_event": {
-        "n": 33,
-        "accuracy": 0.697,
-        "log_loss": 0.6682,
-        "model_accuracy_same_bouts": 0.606,
-        "model_log_loss_same_bouts": 0.665,
-        "brier": 0.2326,
-        "model_brier_same_bouts": 0.2367,
+        "n": 40,
+        "accuracy": 0.7,
+        "log_loss": 0.669,
+        "model_accuracy_same_bouts": 0.6,
+        "model_log_loss_same_bouts": 0.6788,
+        "brier": 0.2337,
+        "model_brier_same_bouts": 0.243,
         "pickem_bouts": 0,
-        "mean_n_books": 24.0,
-        "agreement_rate": 0.606,
+        "mean_n_books": 24.5,
+        "agreement_rate": 0.6,
         "when_model_and_market_disagree": {
-          "n": 13,
-          "model_correct": 5,
-          "market_correct": 8
+          "n": 16,
+          "model_correct": 6,
+          "market_correct": 10
         },
-        "mean_market_p_for_model_pick": 0.557
+        "mean_market_p_for_model_pick": 0.556
       }
     }
   }

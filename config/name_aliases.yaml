@@ -8,3 +8,17 @@
 alex volkanovski: alexander volkanovski
 abusupyian magomedov: abus magomedov
 abdulrakhman yakhyaev: abdul rakhman yakhyaev
+
+# ESPN schedule spellings -> UFCStats names (weekly review 2026-11-09)
+# ESPN lists "Jose Henrique" (event 401928118, Henrique vs. Parsons, Nov 7, 2026); UFCStats lists the same bout as Jonny Parsons vs. Jose Souza
+# (fighter-details/20a0e4cc5227c117, also def. Ding Meng). Full name Jose Henrique Souza: https://www.rotowire.com/mma/player/jose-henrique-souza-2744 ;
+# https://www.thestatszone.com/ufc-fight-night-jonny-parsons-vs-jose-henrique-souza-preview-prediction-234641
+jose henrique: jose souza
+
+# ESPN schedule spellings -> UFCStats names (weekly review 2026-11-23), both on the Dec 5, 2026 card (Adesanya vs. Magomedov)
+# UFC.com lists "Mehemmedeli Osmanli" as the alternate spelling of Mahammadali Osmanli (UFCStats fighter-details/2bbdbc925f4323ac, TUF 34 final Sept 26, 2026):
+# https://www.ufc.com/athlete/mehemmedeli-osmanli ; https://www.ufc.com/athlete/mahammadali-osmanli
+mehemmedeli osmanli: mahammadali osmanli
+# UFC.com's matthieu-letho-duclos page is Matthieu Duclos (UFCStats fighter-details/ec322adbabbfa6e7, def. Luis Felipe Dias Sept 5, 2026):
+# https://www.ufc.com/athlete/matthieu-letho-duclos ; https://www.espn.com/mma/fighter/history/_/id/5013686/matthieu-duclos
+matthieu letho duclos: matthieu duclos
