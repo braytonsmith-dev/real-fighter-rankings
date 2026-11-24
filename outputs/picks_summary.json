@@ -1,13 +1,16 @@
 {
-  "updated_utc": "2026-11-23T14:04:28Z",
+  "updated_utc": "2026-11-24T00:31:21Z",
   "graded": 80,
   "pending": 14,
   "void": 13,
   "no_pick": 7,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
-    "ok": true,
-    "checked_at_utc": "2026-11-23T14:04:27Z"
+    "ok": false,
+    "checked_at_utc": "2026-11-24T00:31:20Z",
+    "problems": [
+      "events[1].competitions[0].type: no weight class (abbreviation or text)"
+    ]
   },
   "record": {
     "correct": 46,

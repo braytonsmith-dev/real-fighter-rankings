@@ -1,30 +1,23 @@
 {
-  "fetched_at_utc": "2026-11-20T21:00:29Z",
-  "bouts_from_api": 57,
-  "bouts_with_consensus": 35,
-  "matched_to_pending_picks": 12,
-  "credits_remaining": "476",
-  "credits_used_this_month": "24",
+  "fetched_at_utc": "2026-11-24T00:31:21Z",
+  "bouts_from_api": 48,
+  "bouts_with_consensus": 23,
+  "matched_to_pending_picks": 8,
+  "credits_remaining": "473",
+  "credits_used_this_month": "27",
   "window_days": 2,
   "horizon_days": 14,
   "unmatched_pending_picks": [
-    "Asu Almabayev vs Kyoji Horiguchi (2026-11-21)",
-    "Dan Hooker vs Brian Ortega (2026-11-21)"
+    "Abdul Hussein vs Hecher Sosa (2026-12-05)",
+    "Marco Tulio vs JunYong Park (2026-12-05)",
+    "Uran Satybaldiev vs Ivan Gnizditskiy (2026-12-05)",
+    "Serghei Spivac vs Mario Pinto (2026-12-05)"
   ],
   "unmatched_market_bouts": [
-    "Dylan Smerillo vs Ray Hayes (2026-11-21, 2 books)",
-    "Benny Orozco vs Canon Swanson (2026-11-21, 2 books)",
-    "Marcos Breno vs Eduardo Matias Torres (2026-11-21, 2 books)",
-    "Patrik \u0160ebek vs Adrian Hamerski (2026-11-21, 2 books)",
-    "Jakub Batfalsky vs Ayton De Paepe (2026-11-21, 2 books)",
-    "Mateusz Legierski vs Ivan Buchinger (2026-11-21, 2 books)",
-    "Veronika Smolkova vs Ivana Petrovic (2026-11-21, 2 books)",
-    "Kamil Szkaradek vs Rogerio Bontorin (2026-11-21, 2 books)",
-    "Mateusz Pawlik vs Madars Fleminas (2026-11-21, 2 books)",
-    "Marcin Held vs Valeriu Mircea (2026-11-21, 2 books)",
-    "Roman Szymanski vs Marian Ziolkowski (2026-11-21, 2 books)",
-    "Sasha Moisa vs Wojciech Kawa (2026-11-21, 2 books)",
-    "Kyoji Horiguchi vs Asu Almabaev (2026-11-21, 27 books)",
-    "Daniel Hooker vs Brian Ortega (2026-11-21, 28 books)"
+    "Abdul Hussein vs Enrique Hecher Sosa (2026-12-05, 15 books)",
+    "Mateusz Rebecki vs Elves Brenner (2026-12-05, 7 books)",
+    "Luke Riley vs Gabriel Santos (2026-12-05, 11 books)",
+    "Marco Tulio Silva vs Jun Yong Park (2026-12-05, 15 books)",
+    "Sergey Spivak vs Mario Pinto (2026-12-05, 15 books)"
   ]
 }

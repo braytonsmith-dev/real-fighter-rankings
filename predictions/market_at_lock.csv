@@ -105,3 +105,9 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600061665:401935762,Shoaib Yousaf,John Mitchell,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T15:10:00Z,25,0.445,0.555,John Mitchell,,,,,the-odds-api,"us,uk,eu",h2h
 600061665:401927854,Aleksandre Topuria,Santiago Luna,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T17:40:00Z,24,0.7128,0.2872,Aleksandre Topuria,,,,,the-odds-api,"us,uk,eu",h2h
 600061665:401927852,Shamil Gaziev,Tallison Teixeira,2026-11-21,last_before_event,2026-11-20T21:00:29Z,2026-11-21T17:15:00Z,22,0.6392,0.3608,Shamil Gaziev,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933600,Magomed Tuchalov,Ion Cutelaba,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,18,0.6219,0.3781,Magomed Tuchalov,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933599,Mairon Santos,Akbar Abdullaev,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,18,0.2851,0.7149,Akbar Abdullaev,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933598,Levan Chokheli,Islam Dulatov,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,17,0.3367,0.6633,Islam Dulatov,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933601,Bruno Silva,Jafel Filho,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,16,0.4219,0.5781,Jafel Filho,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933605,Modestino Rodrigues,Matthieu Letho Duclos,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,11,0.4238,0.5762,Matthieu Letho Duclos,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933604,Pavel Andrusca,Mehemmedeli Osmanli,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,10,0.5562,0.4438,Pavel Andrusca,,,,,the-odds-api,"us,uk,eu",h2h
