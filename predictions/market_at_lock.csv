@@ -111,3 +111,6 @@ pick_id,fighter_a,fighter_b,event_date,snapshot_kind,fetched_at_utc,commence_tim
 600062700:401933601,Bruno Silva,Jafel Filho,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,16,0.4219,0.5781,Jafel Filho,,,,,the-odds-api,"us,uk,eu",h2h
 600062700:401933605,Modestino Rodrigues,Matthieu Letho Duclos,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,11,0.4238,0.5762,Matthieu Letho Duclos,,,,,the-odds-api,"us,uk,eu",h2h
 600062700:401933604,Pavel Andrusca,Mehemmedeli Osmanli,2026-12-05,lock,2026-11-24T00:31:21Z,2026-12-05T15:00:00Z,10,0.5562,0.4438,Pavel Andrusca,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401933602,Uran Satybaldiev,Ivan Gnizditskiy,2026-12-05,lock,2026-11-27T21:53:29Z,2026-12-05T15:00:00Z,23,0.5292,0.4708,Uran Satybaldiev,,,,,the-odds-api,"us,uk,eu",h2h
+600062700:401936244,Luke Riley,Gabriel Santos,2026-12-05,lock,2026-11-27T21:53:29Z,2026-12-05T15:00:00Z,23,0.5585,0.4415,Luke Riley,,,,,the-odds-api,"us,uk,eu",h2h
+600061401:401913649,Charles Oliveira,Diego Lopes,2026-12-12,lock,2026-11-27T21:53:29Z,2026-12-13T04:00:00Z,23,0.5601,0.4399,Charles Oliveira,,,,,the-odds-api,"us,uk,eu",h2h

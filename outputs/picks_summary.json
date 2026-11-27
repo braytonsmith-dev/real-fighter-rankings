@@ -1,16 +1,13 @@
 {
-  "updated_utc": "2026-11-24T00:31:21Z",
+  "updated_utc": "2026-11-27T21:53:29Z",
   "graded": 80,
-  "pending": 14,
-  "void": 13,
+  "pending": 22,
+  "void": 15,
   "no_pick": 7,
   "protocol": "PREREGISTRATION.md, appendix A",
   "feed_status": {
-    "ok": false,
-    "checked_at_utc": "2026-11-24T00:31:20Z",
-    "problems": [
-      "events[1].competitions[0].type: no weight class (abbreviation or text)"
-    ]
+    "ok": true,
+    "checked_at_utc": "2026-11-27T21:53:28Z"
   },
   "record": {
     "correct": 46,
@@ -169,18 +166,18 @@
   ],
   "upcoming": [
     {
-      "event": "UFC 334: Gane vs. Hokit",
-      "date": "2026-11-14",
-      "picks": 1,
-      "no_pick": 1,
-      "locked_at_utc": "2026-10-26T18:58:30Z"
-    },
-    {
       "event": "UFC Fight Night: Adesanya vs Magomedov",
       "date": "2026-12-05",
-      "picks": 10,
+      "picks": 12,
       "no_pick": 2,
       "locked_at_utc": "2026-11-16T22:42:10Z"
+    },
+    {
+      "event": "UFC 335: Oliveira vs. Lopes",
+      "date": "2026-12-12",
+      "picks": 7,
+      "no_pick": 1,
+      "locked_at_utc": "2026-11-27T21:53:29Z"
     }
   ],
   "market": {
